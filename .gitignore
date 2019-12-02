@@ -25,7 +25,7 @@ access_log
 !plugins/
 !themes/
 !README.md
-
+!*.txt
 # Ignore everything in "plugins" except certain plugins. #
 # ========================================================== #
 plugins/*

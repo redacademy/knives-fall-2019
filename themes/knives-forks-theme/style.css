@@ -231,3 +231,11 @@ th {
 /* Front page */
 .menu li {
   list-style: none; }
+
+.site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto; }

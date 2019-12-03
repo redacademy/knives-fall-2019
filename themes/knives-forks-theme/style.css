@@ -229,3 +229,5 @@ th {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.menu li {
+  list-style: none; }

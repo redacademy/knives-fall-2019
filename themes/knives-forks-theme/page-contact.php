@@ -22,13 +22,13 @@ get_header(); ?>
 	<section class="contact-form-container"> 
 
 	<h2>Looking for an opportunity? 
-We’d love to hear from you. </h2> </section>
+We’d love to hear from you. </h2> 
 	<?php the_content(); ?>
 
-	<div class="contact-page-container"> 
+	<div class="contact-container"> 
 
 <h3> Media Enquiries: </h3> 
-<p> info@knivesandforks.ca </p> </div>
+<p> info@knivesandforks.ca </p></div>
 
 <div class="social-links-container">
 

@@ -50,7 +50,7 @@ function register_acf_block_types() {
         'name'              => 'information blurbs',
         'title'             => __('Information Blurbs'),
         'description'       => __('A custom become a member block.'),
-        'render_template'   => 'template-parts/blocks/content/information-blurbs.php',
+        'render_template'   => 'template-parts/blocks/content-information-blurbs.php',
 		//'keywords'          => array( 'testimonial', 'quote' ),
 		//'enqueue_style'    	=> get_template_directory_uri(  ),
     ));

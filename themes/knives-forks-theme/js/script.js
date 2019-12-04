@@ -1,3 +1,6 @@
-const mobile = document.getElementById('mobile-logo');
+// const mobile = document.getElementById('mobile-logo');
 
-mobile.className = 'hidden';
+// const desktop = document.getElementById('desktop-logo');
+// mobile.className = 'hide';
+
+// desktop.classList.remove('hide');

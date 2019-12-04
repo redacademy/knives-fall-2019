@@ -348,9 +348,39 @@ article {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 0 auto; }
+  .site-info .hide {
+    display: none; }
   .site-info h4 {
     font-family: "Lora", serif; }
-  .site-info .copyright {
-    font-family: "Lato", sans-serif; }
-    .site-info .copyright span {
+  .site-info p.copyright {
+    font-family: "Lato", sans-serif;
+    font-size: 10px; }
+    .site-info p.copyright span {
       text-transform: capitalize; }
+  @media only screen and (min-width: 601px) and (max-width: 1440px) {
+    .site-info .entry-header {
+      width: 80%;
+      margin: 0 auto;
+      border: 1px dotted red;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap; }
+      .site-info .entry-header nav {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 50%;
+                flex: 1 0 50%;
+        margin: 0 auto; }
+      .site-info .entry-header .entry-title {
+        font-size: 2.7rem; }
+      .site-info .entry-header .entry-description {
+        font-size: 1.5rem; }
+      .site-info .entry-header p {
+        line-height: 1.5;
+        text-align: justify; }
+    .site-info .entry-content {
+      width: 80%;
+      margin: 0 auto; } }

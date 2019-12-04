@@ -267,6 +267,22 @@ h2,
 p {
   font: 16px Lato Regular, Serif; }
 
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'] {
+  padding: 3px; }
+
+textarea {
+  padding-left: 3px;
+  width: 100%; }
+
+.wpcf7-form-control {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px; }
+
 ul,
 li {
   list-style: none;

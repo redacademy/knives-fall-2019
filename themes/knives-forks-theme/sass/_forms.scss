@@ -48,21 +48,28 @@
 // 	}
 // }
 
-input[type='text'],
-input[type='email'],
-input[type='url'],
-input[type='password'],
-input[type='search'] {
-  padding: 3px;
+.wpcf7-submit {
+  color: $buttoncolorgreen;
+  border-color: 2px solid $buttoncolorgreen;
+  //   background:
+  //   width: 169px;
+  //   height: 40px;
+  border-radius: 20px;
+  font-family: lora;
+  font-size: $fontsize;
 }
 
-textarea {
-  padding-left: 3px;
-  width: 100%;
+.wpcf7-form {
+  color: $buttoncolorgreen;
+  font-family: $headfont, serif;
+
+  //   width: 40%;
 }
 
 .wpcf7-form-control {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  color: black;
+  border: 1px solid black;
+  //   width: 370px;
+  //   height: 491px;
+  //   width: 50%;
 }

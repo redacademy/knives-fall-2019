@@ -225,6 +225,18 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+.wpwpcf7-submit,
+.wpcf7-form-control {
+  background-color: white;
+  font-family: "Lato", sans-serif, sans-serif;
+  border-color: #378244 2px solid;
+  color: #378244; }
+
+.wpcf7-submit {
+  background-color: white;
+  color: #378244;
+  font-size: 16px; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/

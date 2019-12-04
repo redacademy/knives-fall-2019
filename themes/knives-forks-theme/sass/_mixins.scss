@@ -14,5 +14,12 @@
 @mixin desktop {
   @media (min-width: 1440px) {
     @content;
+
+    /*Contact Us*/
+
+    .hentry {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 }

@@ -45,4 +45,4 @@ themes/knives-forks-theme/node_modules/*
 themes/knives-forks-theme/gulpfile.js
 themes/knives-forks-theme/build/*
 
-gulpfile.js
+#gulpfile.#

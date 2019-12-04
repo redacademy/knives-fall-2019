@@ -12,15 +12,13 @@
 
 .contact-page-info {
   border-top: 1px solid black;
-
-  //   justify-content: space-between;
-  //   width: 1440px;
-  //   height: 754px;
 }
 
 .media-enquiries {
-  border-top: 1px solid black;
-  //   height: 470px;
-  //   width: 130px;
-  //   padding: 40px;
+  h3 {
+    border-top: 1px solid black;
+  }
+  p {
+    border-bottom: 1px solid black;
+  }
 }

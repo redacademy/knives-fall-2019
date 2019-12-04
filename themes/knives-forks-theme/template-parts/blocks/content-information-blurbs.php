@@ -46,14 +46,18 @@ $pitchs = get_field('make_a_pitch');
 
 while( have_rows('become_a_member') ) {
     the_row();?>
-    
-        <section class="become-member-container" style="background-color: <?php echo get_sub_field('background_color')?>">
+    <?php
+        $title = get_sub_field('title');
+        $content = get_sub_field('content');
+        $image = get_sub_field('image');
+        $background_color = get_sub_field('background_color');
+    ?>
+        <section class="become-member-container" style="background-color: <?php echo $background_color?>">
             <div class="become-member-text">
-                <h2 class="blurb-title"><?php the_sub_field('title');?></h2>
-                <p class="blurb-text"><?php the_sub_field('content')?></p>
+                <h2 class="blurb-title"><?php echo $title;?></h2>
+                <p class="blurb-text"><?php echo $content?></p>
             </div>
-            <?php
-            $image = get_sub_field('image');?>
+            
             <img class="become-member-image" src="<?php echo $image['url'];?>">
 
         </section>
@@ -62,12 +66,17 @@ while( have_rows('become_a_member') ) {
 
 while (have_rows('make_a_pitch')) {
     the_row();?>
-        <section class="make-pitch-container" style="background-color: <?php echo get_sub_field('background_color')?>">
+    <?php
+        $title = get_sub_field('title');
+        $content = get_sub_field('content');
+        $image = get_sub_field('image');
+        $background_color = get_sub_field('background_color');
+    ?>
+        <section class="make-pitch-container" style="background-color: <?php echo $background_color?>">
             <div class="make-pitch-text">
-                <h2 class="blurb-title"><?php the_sub_field('title');?></h2>
-                <p class="blurb-text"><?php the_sub_field('content');?></p>
+                <h2 class="blurb-title"><?php echo $title;?></h2>
+                <p class="blurb-text"><?php echo $content;?></p>
             </div>
-            <?php $image = get_sub_field('image');?>
             <img class="make-pitch-image" src="<?php echo $image['url'];?>">
         </section>
 <?php } ?>

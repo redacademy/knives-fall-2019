@@ -5,12 +5,14 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php while(have_posts()): the_post(); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'contact-wrapper' ); ?>>
 	<header class="entry-header-contact">
 
 <h2>Looking for an opportunity? 
 We’d love to hear from you. </h2> 
+
+<?php the_content(); ?>
 
 	</header><!-- .entry-header -->
 
@@ -34,9 +36,7 @@ We’d love to hear from you. </h2>
 
 
 	<div class="entry-content">
-		<?php while(have_posts()): the_post(); ?>
-			<?php the_content(); ?>
-		<?php endwhile; ?>
+
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
@@ -47,6 +47,7 @@ We’d love to hear from you. </h2>
 
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
+<?php endwhile; ?>
 
 
 

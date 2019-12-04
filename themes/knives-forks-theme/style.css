@@ -267,21 +267,26 @@ h2,
 p {
   font: 16px Lato Regular, Serif; }
 
-input[type='text'],
-input[type='email'],
-input[type='url'],
-input[type='password'],
-input[type='search'] {
-  padding: 3px; }
+.wpcf7-submit {
+  color: green;
+  border: 2px solid green;
+  width: 169px;
+  height: 40px;
+  border-radius: 20px;
+  font-family: lora;
+  font-size: 16px; }
 
-textarea {
+.wpcf7-form {
   padding-left: 3px;
-  width: 100%; }
+  width: 40%; }
 
 .wpcf7-form-control {
-  color: #666;
+  color: black;
   border: 1px solid #ccc;
-  border-radius: 3px; }
+  border-radius: 3px;
+  width: 370px;
+  height: 491px;
+  width: 50%; }
 
 ul,
 li {
@@ -337,6 +342,18 @@ input {
 article {
   width: 100%;
   height: inherit; }
+
+.contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.entry-header-contact {
+  width: 40%; }
 
 .menu li {
   list-style: none; }

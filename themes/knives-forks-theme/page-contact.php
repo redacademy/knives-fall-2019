@@ -19,18 +19,16 @@ get_header(); ?>
 
 
 	<div class="entry-content">
-	<section class="contact-form-container"> 
-
 	<h2>Looking for an opportunity? 
-We’d love to hear from you. </h2> 
+	We’d love to hear from you. </h2> 
+	<section class="contact-form-container"> 
 	<?php the_content(); ?>
 
-	<div class="contact-container"> 
+	<div class="media-enquiries"> 
 
 <h3> Media Enquiries: </h3> 
-<p> info@knivesandforks.ca </p></div>
+<p> info@knivesandforks.ca </p>
 
-<div class="social-links-container">
 
 <h3> Find us on social media! </h3> 
 <span class="social-links">
@@ -41,7 +39,9 @@ We’d love to hear from you. </h2>
 						 </p> 
 
 						 </div>
-						</span>
+						</span> 
+
+						</div>
 
 </section>
 

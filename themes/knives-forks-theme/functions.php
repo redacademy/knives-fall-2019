@@ -50,15 +50,15 @@ function register_acf_block_types() {
         'name'              => 'information blurbs',
         'title'             => __('Information Blurbs'),
         'description'       => __('A custom become a member block.'),
-        'render_template'   => 'template-parts/blocks/content/information-blurbs.php',
+        'render_template'   => 'template-parts/blocks/content-information-blurbs.php',
 		//'keywords'          => array( 'testimonial', 'quote' ),
 		//'enqueue_style'    	=> get_template_directory_uri(  ),
-    ));
+	));
 }
 
 // Check if function exists and hook into setup.
-if( function_exists('acf_register_block_type') ) {
-    add_action('acf/init', 'register_acf_block_types');
+if (function_exists('acf_register_block_type')) {
+	add_action('acf/init', 'register_acf_block_types');
 }
 
 /**
@@ -111,6 +111,7 @@ function red_starter_scripts()
 {
 	wp_enqueue_style('font-style', 'https://fonts.googleapis.com/css?family=Lato:400,700|Lora:400,700&display=swap');
 	wp_enqueue_style('style', get_template_directory_uri() . '/build/css/style.min.css');
+	wp_enqueue_script('script', get_template_directory_uri() . '/build/js/script.min.js', array(), '20151215', true);
 	wp_enqueue_script('red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true);
 	wp_enqueue_script('red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true);
 	wp_enqueue_style( 'red-starter-font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');

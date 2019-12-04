@@ -30,15 +30,20 @@
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
-				<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));
+				<a href="<?php bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/knives-forks-logo.svg" alt="logo"></a>
+				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button> -->
+				<?php //if( when it's width is 600 and more ) 
 				?>
+				<div></div>
+				<i class="fas fa-bars"></i>
+				<!-- <i class="fas fa-times"></i> -->
+				<?php wp_nav_menu(array('menu_id' => 'mobile-menu')); ?>
 			</nav><!-- #site-navigation -->
 			<!--START for BANNER's featured IMAGE with sayings-->
 			<section class="banner">
-			<nav class="banner-img">
-				<?=the_post_thumbnail('full')?>
-			</nav>
+				<nav class="banner-img">
+					<?= the_post_thumbnail('full') ?>
+				</nav>
 				<nav class="banner-content">
 					<h2>
 						Together at Knives & Forks, we’re harnessing the power of local capital — keeping it flowing within the community.

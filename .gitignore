@@ -10,7 +10,7 @@
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
-
+themes/knives-forks/theme/node_modules
 # Ignore logs and databases #
 # ========================= #
 *.log

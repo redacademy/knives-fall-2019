@@ -63,13 +63,46 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     .entry-header .entry-title {
       font-size: 2.7rem; }
     .entry-header .entry-description {
-      font-size: 1.5rem; }
+      font-size: 16px; }
     .entry-header p {
       line-height: 1.5;
       text-align: justify; }
   .entry-content {
     width: 80%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+    .entry-content nav {
+      width: 60%;
+      border: 1px dotted red;
+      padding: 2% 0;
+      text-align: center; }
+      .entry-content nav .btn {
+        margin: 0 1%;
+        width: 30%;
+        position: relative;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      .entry-content nav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        margin-bottom: 5%;
+        text-align: left; }
+        .entry-content nav ul li {
+          -webkit-box-flex: 1;
+              -ms-flex: 1 0 50%;
+                  flex: 1 0 50%; }
+          .entry-content nav ul li h3 {
+            font-family: "Lato", sans-serif;
+            font-size: 28px;
+            color: #e4936a; } }
 
 html {
   font-family: sans-serif;
@@ -258,14 +291,29 @@ th {
 --------------------------------------------------------------*/
 h2,
 .entry-title {
-  font-family: Lora Bold, Sans-serif; }
+  font-family: "Lora", serif; }
 
 .entry-description {
-  font-family: Lato Bold, Sans-serif;
+  font-family: "Lato", sans-serif;
   color: #378244; }
 
 p {
-  font: 16px Lato Regular, Serif; }
+  font: 16px "Lato", sans-serif; }
+
+.btn {
+  background: #378244;
+  color: white;
+  border: 0;
+  border-radius: 2em;
+  padding: 2% 3%;
+  font-size: 16px;
+  font-family: "Lato", sans-serif; }
+  .btn:hover {
+    cursor: pointer;
+    border: 1px solid #378244;
+    color: #378244;
+    background: white;
+    font-weight: 500; }
 
 ul,
 li {

@@ -392,18 +392,16 @@ article {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
-
-.contact-page-info {
-  border-top: 1px solid black;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.contact-page-info {
+  border-top: 1px solid black; }
+
 .media-enquiries {
-  border-top: 1px solid black;
-  height: 470px;
-  width: 130px; }
+  border-top: 1px solid black; }
 
 .menu li {
   list-style: none; }
@@ -444,10 +442,43 @@ article {
       .site-info .entry-header .entry-title {
         font-size: 2.7rem; }
       .site-info .entry-header .entry-description {
-        font-size: 1.5rem; }
+        font-size: 16px; }
       .site-info .entry-header p {
         line-height: 1.5;
         text-align: justify; }
     .site-info .entry-content {
       width: 80%;
-      margin: 0 auto; } }
+      margin: 0 auto; }
+      .site-info .entry-content nav {
+        width: 60%;
+        border: 1px dotted red;
+        padding: 2% 0;
+        text-align: center; }
+        .site-info .entry-content nav .btn {
+          margin: 0 1%;
+          width: 30%;
+          position: relative;
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+        .site-info .entry-content nav ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: row wrap;
+                  flex-flow: row wrap;
+          margin-bottom: 5%;
+          text-align: left; }
+          .site-info .entry-content nav ul li {
+            -webkit-box-flex: 1;
+                -ms-flex: 1 0 50%;
+                    flex: 1 0 50%; }
+            .site-info .entry-content nav ul li h3 {
+              font-family: "Lato", sans-serif;
+              font-size: 28px;
+              color: #e4936a; } }

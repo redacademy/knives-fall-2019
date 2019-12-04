@@ -276,11 +276,13 @@ p {
 
 .wpcf7-form {
   color: #378244;
-  font-family: "Lora", serif, serif; }
+  font-family: "Lato", sans-serif, serif;
+  font-weight: bold; }
 
 .wpcf7-form-control {
   color: black;
-  border: 1px solid black; }
+  border: 1px solid black;
+  border-radius: 5px; }
 
 ul,
 li {
@@ -349,14 +351,26 @@ article {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.contact-page-info {
-  border-top: 1px solid black; }
-
 .media-enquiries h3 {
-  border-top: 1px solid black; }
+  border-top: 1px solid black;
+  padding-top: 20px;
+  font-family: Lato, sans-serif;
+  font-size: 24px; }
 
-.media-enquiries p {
-  border-bottom: 20px solid black; }
+h2 {
+  line-height: 1em;
+  font-size: 36px;
+  font-family: Lato, sans-serif; }
+
+.fab {
+  color: white;
+  background: #378244;
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 60%; }
 
 .menu li {
   list-style: none; }

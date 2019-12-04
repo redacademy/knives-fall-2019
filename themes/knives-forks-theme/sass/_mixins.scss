@@ -1,6 +1,6 @@
 @mixin desktop {
   @media only screen and (min-width: 601px) and (max-width: 1440px) {
-    // @content;
+    @content;
     //************How it Works CONTENTS AREA
     .entry-header {
       width: 80%;

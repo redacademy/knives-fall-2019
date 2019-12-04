@@ -43,15 +43,14 @@ add_action('after_setup_theme', 'red_starter_setup');
 /** Function for adding Advanced Custom Fields 
  */
 
-function register_acf_block_types()
-{
+function register_acf_block_types() {
 
-	// register a testimonial block.
-	acf_register_block_type(array(
-		'name'              => 'information blurbs',
-		'title'             => __('Information Blurbs'),
-		'description'       => __('A custom become a member block.'),
-		'render_template'   => 'template-parts/blocks/content/information-blurbs.php',
+    // register a testimonial block.
+    acf_register_block_type(array(
+        'name'              => 'information blurbs',
+        'title'             => __('Information Blurbs'),
+        'description'       => __('A custom become a member block.'),
+        'render_template'   => 'template-parts/blocks/content-information-blurbs.php',
 		//'keywords'          => array( 'testimonial', 'quote' ),
 		//'enqueue_style'    	=> get_template_directory_uri(  ),
 	));

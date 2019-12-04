@@ -1,3 +1,19 @@
+//**************Button styles
+.btn {
+  background: $buttoncolor;
+  color: white;
+  border: 0;
+  border-radius: 2em;
+  padding: 2% 3%;
+  font-size: $fontsize;
+  font-family: $parafont;
+  &:hover {
+    cursor: pointer;
+    border: 1px solid $buttoncolor;
+    color: $buttoncolor;
+    background: white;
+    font-weight: 500;
+  }
 // /*--------------------------------------------------------------
 // # Forms
 // --------------------------------------------------------------*/

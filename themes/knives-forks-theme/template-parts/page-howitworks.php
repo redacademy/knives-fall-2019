@@ -20,7 +20,7 @@ $arrays=acf_get_fields('group_5de6dbd4e92e1');
             </h3>
             <p>
             If you’re looking to invest your money and share our love for great food in your local community, you’re in the right place!
-
+            <br><br>
              Or if you’re a food business in BC, we provide low interest loans and experienced mentorship.
             </p>
         </nav>

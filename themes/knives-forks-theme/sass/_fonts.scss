@@ -3,13 +3,13 @@
 --------------------------------------------------------------*/
 h2,
 .entry-title {
-  font-family: Lora Bold, Sans-serif;
+  font-family: $headfont;
 }
 
 .entry-description {
-  font-family: Lato Bold, Sans-serif;
-  color: #378244;
+  font-family: $parafont;
+  color: $buttoncolor;
 }
 p {
-  font: 16px Lato Regular, Serif;
+  font: 16px $parafont;
 }

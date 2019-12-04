@@ -9,33 +9,43 @@ get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'contact-wrapper' ); ?>>
 	<header class="entry-header-contact">
 
-<h2>Looking for an opportunity? 
-We’d love to hear from you. </h2> 
 
-<?php the_content(); ?>
+
 
 	</header><!-- .entry-header -->
 
 
-    <section class="contact-page-info"> 
+   
 
-   <h3> Media Enquiries: </h3> 
-   <p> info@knivesandforks.ca </p> 
 
-   <h3> Find us on social media! </h3> 
-   <span class="social-links">
-							<p>
-							<i class="fab fa-twitter"></i>	
-                            <i class="fab fa-facebook"></i>	
-							<i class="fab fa-linkedin-in"></i>							
-							</p>
-</span>
+	<div class="entry-content">
+	<section class="contact-form-container"> 
+
+	<h2>Looking for an opportunity? 
+We’d love to hear from you. </h2> </section>
+	<?php the_content(); ?>
+
+	<div class="contact-page-container"> 
+
+<h3> Media Enquiries: </h3> 
+<p> info@knivesandforks.ca </p> </div>
+
+<div class="social-links-container">
+
+<h3> Find us on social media! </h3> 
+<span class="social-links">
+						 <p>
+						 <i class="fab fa-twitter"></i>	
+						 <i class="fab fa-facebook"></i>	
+						 <i class="fab fa-linkedin-in"></i>							
+						 </p> 
+
+						 </div>
+						</span>
 
 </section>
 
 
-
-	<div class="entry-content">
 
 		<?php
 			wp_link_pages( array(

@@ -49,25 +49,26 @@
 // }
 
 .wpcf7-submit {
-  color: green;
-  border: 2px solid green;
-  width: 169px;
-  height: 40px;
+  color: $buttoncolorgreen;
+  border-color: 2px solid $buttoncolorgreen;
+  //   background:
+  //   width: 169px;
+  //   height: 40px;
   border-radius: 20px;
   font-family: lora;
-  font-size: 16px;
+  font-size: $fontsize;
 }
 
 .wpcf7-form {
-  padding-left: 3px;
-  width: 40%;
+  color: $buttoncolorgreen;
+
+  //   width: 40%;
 }
 
 .wpcf7-form-control {
   color: black;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  width: 370px;
-  height: 491px;
-  width: 50%;
+  border: 1px solid black;
+  //   width: 370px;
+  //   height: 491px;
+  //   width: 50%;
 }

@@ -268,25 +268,18 @@ p {
   font: 16px Lato Regular, Serif; }
 
 .wpcf7-submit {
-  color: green;
-  border: 2px solid green;
-  width: 169px;
-  height: 40px;
+  color: #378244;
+  border-color: 2px solid #378244;
   border-radius: 20px;
   font-family: lora;
   font-size: 16px; }
 
 .wpcf7-form {
-  padding-left: 3px;
-  width: 40%; }
+  color: #378244; }
 
 .wpcf7-form-control {
   color: black;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  width: 370px;
-  height: 491px;
-  width: 50%; }
+  border: 1px solid black; }
 
 ul,
 li {
@@ -347,13 +340,15 @@ article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1440px;
+  height: 754px; }
 
-.entry-header-contact {
-  width: 40%; }
+.contact-page-info {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; }
 
 .menu li {
   list-style: none; }

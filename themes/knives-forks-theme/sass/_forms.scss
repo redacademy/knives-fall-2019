@@ -60,34 +60,3 @@
 // 	padding-left: 3px;
 // 	width: 100%;
 // }
-
-//contact us form//
-
-// input[type='text'],
-// textarea {
-//   color: red;
-//   border: 1px solid #ccc;
-//   border-radius: 3px;
-
-//   &:focus {
-//     color: #111;
-//   }
-// }
-
-.wpwpcf7-submit,
-.wpcf7-form-control {
-  background-color: white;
-  font-family: $parafont, sans-serif;
-  border-color: $buttoncolor 2px solid;
-  color: $buttoncolor;
-}
-
-.wpcf7-submit {
-  background-color: white;
-  color: $buttoncolor;
-  font-size: $fontsize;
-}
-.wpcf7-form {
-  input[type='text'] {
-  }
-}

@@ -1,0 +1,50 @@
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+input {
+  border: 0;
+}
+//*******************FEATURED BANNER IMAGE for each page
+.banner {
+  width: fit-content;
+  display: block;
+  height: inherit;
+  .banner-img {
+    width: auto;
+    height: 60vmax;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .banner-content {
+    background: rgba(111, 143, 106, 0.76);
+    position: absolute;
+    display: flex;
+    width: 45%;
+    height: inherit;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 2% 5%;
+    top: 0;
+    transform: translateY(25rem);
+    h2 {
+      color: white;
+      font-size: 2.7rem;
+      line-height: 1.2;
+    }
+  }
+}
+//********* CONTENts area
+article {
+  width: 100%;
+  height: inherit;
+}

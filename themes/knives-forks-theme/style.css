@@ -43,10 +43,41 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+@media only screen and (min-width: 601px) and (max-width: 1440px) {
+  .entry-header {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px dotted red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; }
+    .entry-header nav {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 50%;
+              flex: 1 0 50%;
+      margin: 0 auto; }
+    .entry-header .entry-title {
+      font-size: 2.7rem; }
+    .entry-header .entry-description {
+      font-size: 1.5rem; }
+    .entry-header p {
+      line-height: 1.5;
+      text-align: justify; }
+  .entry-content {
+    width: 80%;
+    margin: 0 auto; } }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
+  html > *:after, html > *:before {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit; }
 
 body {
   margin: 0; }
@@ -162,9 +193,9 @@ select {
   text-transform: none; }
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   -webkit-appearance: button;
   cursor: pointer; }
 
@@ -180,23 +211,23 @@ input::-moz-focus-inner {
 input {
   line-height: normal; }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0; }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   height: auto; }
 
-input[type="search"] {
+input[type='search'] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
           box-sizing: content-box; }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
@@ -225,29 +256,68 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
-.wpwpcf7-submit,
-.wpcf7-form-control {
-  background-color: white;
-  font-family: "Lato", sans-serif, sans-serif;
-  border-color: #378244 2px solid;
+h2,
+.entry-title {
+  font-family: Lora Bold, Sans-serif; }
+
+.entry-description {
+  font-family: Lato Bold, Sans-serif;
   color: #378244; }
 
-.wpcf7-submit {
-  background-color: white;
-  color: #378244;
-  font-size: 16px; }
+p {
+  font: 16px Lato Regular, Serif; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
-.menu li {
-  list-style: none; }
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
-.site-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 0 auto; }
+a {
+  text-decoration: none; }
+
+input {
+  border: 0; }
+
+.banner {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  height: inherit; }
+  .banner .banner-img {
+    width: auto;
+    height: 60vmax; }
+    .banner .banner-img img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      height: 100%;
+      width: 100%; }
+  .banner .banner-content {
+    background: rgba(111, 143, 106, 0.76);
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 45%;
+    height: inherit;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2% 5%;
+    top: 0;
+    -webkit-transform: translateY(25rem);
+            transform: translateY(25rem); }
+    .banner .banner-content h2 {
+      color: white;
+      font-size: 2.7rem;
+      line-height: 1.2; }
+
+article {
+  width: 100%;
+  height: inherit; }

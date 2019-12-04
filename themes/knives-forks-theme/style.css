@@ -275,7 +275,8 @@ p {
   font-size: 16px; }
 
 .wpcf7-form {
-  color: #378244; }
+  color: #378244;
+  font-family: "Lora", serif, serif; }
 
 .wpcf7-form-control {
   color: black;
@@ -336,19 +337,25 @@ article {
   width: 100%;
   height: inherit; }
 
-.contact-wrapper {
+.contact-form-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 1440px;
-  height: 754px; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
 
 .contact-page-info {
   border-top: 1px solid black;
-  border-bottom: 1px solid black; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.media-enquiries {
+  border-top: 1px solid black;
+  height: 470px;
+  width: 130px; }
 
 .menu li {
   list-style: none; }

@@ -40,6 +40,27 @@ if (!function_exists('red_starter_setup')) :
 endif; // red_starter_setup
 add_action('after_setup_theme', 'red_starter_setup');
 
+/** Function for adding Advanced Custom Fields 
+ */
+
+function register_acf_block_types() {
+
+    // register a testimonial block.
+    acf_register_block_type(array(
+        'name'              => 'information blurbs',
+        'title'             => __('Information Blurbs'),
+        'description'       => __('A custom become a member block.'),
+        'render_template'   => 'template-parts/blocks/content/information-blurbs.php',
+		//'keywords'          => array( 'testimonial', 'quote' ),
+		//'enqueue_style'    	=> get_template_directory_uri(  ),
+    ));
+}
+
+// Check if function exists and hook into setup.
+if( function_exists('acf_register_block_type') ) {
+    add_action('acf/init', 'register_acf_block_types');
+}
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *

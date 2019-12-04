@@ -34,6 +34,7 @@
 				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button> -->
 				<?php //if( when it's width is 600 and more ) 
 				?>
+				<div></div>
 				<i class="fas fa-bars"></i>
 				<!-- <i class="fas fa-times"></i> -->
 				<?php wp_nav_menu(array('menu_id' => 'mobile-menu')); ?>

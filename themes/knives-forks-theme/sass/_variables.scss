@@ -1,18 +1,20 @@
-$fontsize: 16px;
+$fontsize: 1rem;
 $title_md: 28px;
+$margin: 1rem;
+$padding: 1rem;
 $font_weight_header: 600;
 $font_weight_body: 100;
 
 $greenbrand: rgba(111, 143, 106, 0.76);
 $buttoncolor: #378244;
 $greenbrand1: #6f8f6a;
-$buttoncolorgreen: #378244;
+$buttoncolorgreen: #378244; //TODO: which green are we keeping?
 $orangebrand: rgba(242, 144, 97, 0.17);
 $salmonbrand: #f29061;
 $greybackground: #dee3db;
 $bluebackground: #a3c9d6;
-$headfont: 'Lora', serif;
-$parafont: 'Lato', sans-serif;
+$headfont: "Lora", serif;
+$parafont: "Lato", sans-serif;
 
 //color palletes
 $orangecolor: #e4936a;

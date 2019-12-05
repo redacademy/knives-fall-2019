@@ -49,6 +49,7 @@
 				<nav class="banner-content">
 					<h2>
 						<!-- TODO please don't hardcode this text and use a custom field for this -->
+						<!--line below commented out because I(victor) need to see my mobile footer-->
 						<!-- Together at Knives & Forks, we’re harnessing the power of local capital — keeping it flowing within the community. -->
 					</h2>
 				</nav>

@@ -15,10 +15,7 @@ get_header(); ?>
 	</header><!-- .entry-header -->
 
 
-   
-
-
-	<div class="entry-content">
+	<div class="entry-content-contact">
 
 	<!-- //TO DO make a custom field for in order to make it dynamic later// -->
 	<h2 class="contact-opportunity" >Looking for an opportunity? <br>
@@ -33,17 +30,15 @@ get_header(); ?>
 
 
 <h3> Find us on social media! </h3> 
-<span class="social-links">
-						 <p>
-						 <i class="fab fa-twitter"></i>	
-						 <i class="fab fa-facebook-f"></i>	
-						 <i class="fab fa-linkedin-in"></i>							
-						 </p> 
+<div class="social-links">
+	<ul class="social-icons">
+		<li><i class="fab fa-twitter"></i></li>
+		<li><i class="fab fa-facebook-f"></i></li>
+		<li><i class="fab fa-linkedin-in"></i></li>
+	</ul> 				
+</div> 
 
-						 </div>
-						</span> 
-
-						</div>
+						</div><!-- .media-queries -->
 
 </section>
 

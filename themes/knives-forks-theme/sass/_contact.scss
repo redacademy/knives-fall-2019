@@ -1,44 +1,96 @@
 ///styles for the contact page////
 
-.post-14 {
-  background: url('../../assets/background-images/contact-bg@3x.png');
-  background-size: cover;
-}
-
 .contact-form-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
-// .entry-header-contact {
-//   // width: 50%;
-// }
+.post-14 {
+  width: 100%;
+  background-color: white;
+  margin-top: 80px;
 
-.contact-page-info {
-  // border-top: 1px solid black;
-}
+  @include desktop() {
+    background: url('../../assets/background-images/contact-bg@3x.png');
+    background-size: cover;
 
-.media-enquiries {
-  padding-right: 185px;
-  h3 {
-    border-top: 1px solid black;
-    padding-top: 20px;
-    font-family: Lato, sans-serif;
-    font-size: 24px;
-    // border-bottom: 1px solid black;
+    .contact-form-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .media-enquiries {
+      padding-left: 80px;
+      height: 130px;
+      width: 470px;
+    }
+    .fab {
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      padding: 5px;
+    }
+    .contact-opportunity {
+      line-height: 1em;
+      font-size: 1.12em;
+      font-family: $parafont, sans-serif;
+      text-align: left;
+    }
+
+    .asterix {
+      display: none;
+    }
   }
 }
 
+.social-icons {
+  display: flex;
+  padding: 0;
+  li {
+    background: $primary_green_med;
+    height: 42px;
+    width: 42px;
+    border-radius: 60%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/// alignment for the whole page
+
+.entry-content-contact {
+  width: 60%;
+  margin: 0 auto;
+}
+
+//// section for media enquiries contact
+
+.media-enquiries {
+  padding-left: 0px;
+
+  h3 {
+    border-top: 1px solid black;
+    padding-top: 20px;
+    font-family: $parafont, sans-serif;
+    font-size: 24px;
+  }
+}
+
+///mobile style for header for the form
+
 .contact-opportunity {
   line-height: 1em;
-  font-size: 36px;
+  font-size: 24px;
   font-family: $parafont, sans-serif;
+  text-align: center;
+  min-width: 100%;
 }
+
+////mobile style for font-awesome buttons
 
 .fab {
   color: white;
-  background: $buttoncolorgreen;
+  background: $primary_green_dark;
   height: 20px;
   width: 20px;
   font-size: 20px;
@@ -50,6 +102,6 @@
 
 .social-links {
   display: flex;
-  justify-content: left;
-  // padding: 10px;
+  justify-content: space-between;
+  padding: 0px;
 }

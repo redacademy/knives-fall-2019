@@ -1,6 +1,6 @@
 //**************Button styles
 .btn {
-  background: $buttoncolor;
+  background: $primary_green_dark;
   color: white;
   border: 0;
   border-radius: 2em;
@@ -9,8 +9,8 @@
   font-family: $parafont;
   &:hover {
     cursor: pointer;
-    border: 1px solid $buttoncolor;
-    color: $buttoncolor;
+    border: 1px solid $primary_green_dark;
+    color: $primary_green_dark;
     background: white;
     font-weight: 500;
   }
@@ -74,32 +74,54 @@
 // 	}
 // }
 
-.wpcf7-submit {
-  color: $buttoncolorgreen;
-  border-color: 2px solid $buttoncolorgreen;
-  //   background:
-  //   width: 169px;
-  //   height: 40px;
+.wpcf7-submit input[type='submit'] {
+  color: black;
+  border-color: 1px solid $primary_green_dark;
+  background: white;
 
   border-radius: 20px;
   font-family: lora;
   font-size: $fontsize;
 }
-
 .wpcf7-form {
-  color: $buttoncolorgreen;
+  color: $primary_green_dark;
   font-family: $parafont, serif;
   font-weight: bold;
-
-  //   width: 40%;
+  font-size: $fontsize;
 }
 
-.wpcf7-form-control {
-  color: black;
-  border: 1px solid black;
-  border-radius: 5px;
+.contact-submit-button {
+  display: flex;
+  justify-content: center;
 
-  //   width: 370px;
-  //   height: 491px;
-  //   width: 50%;
+  @include desktop {
+    justify-content: flex-start;
+  }
+}
+
+.wpcf7-form-control [type='submit'] {
+  border: 1px solid $primary_green_dark;
+  border-radius: 5px;
+  color: $primary_green_dark;
+  font-family: $parafont, serif;
+  max-width: 100%;
+}
+
+.wpcf7-submit {
+  width: 100%;
+  background-color: white;
+  color: $primary_green_dark;
+  border: 2px solid $primary_green_dark;
+  background: white;
+  border-radius: 20px;
+  gitfont-family: lora, sans-serif;
+  font-size: $fontsize;
+  width: 169px;
+  height: 40px;
+  text-align: center;
+
+  @include desktop() {
+    .first-name {
+    }
+  }
 }

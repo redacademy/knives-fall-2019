@@ -6,6 +6,7 @@
 .post-14 {
   width: 100%;
   background-color: white;
+  margin-top: 80px;
 
   @include desktop() {
     background: url('../../assets/background-images/contact-bg@3x.png');
@@ -66,8 +67,7 @@
 
 .media-enquiries {
   padding-left: 0px;
-  // height: 130px;
-  // width: 470px;
+
   h3 {
     border-top: 1px solid black;
     padding-top: 20px;
@@ -80,35 +80,20 @@
 
 .contact-opportunity {
   line-height: 1em;
-  font-size: 20px;
+  font-size: 24px;
   font-family: $parafont, sans-serif;
   text-align: center;
+  min-width: 100%;
 }
-
-////mobile style for contact form 7
-// .wpcf7 {
-//   height: 64px;
-//   width: 345px;
-// }
 
 ////mobile style for font-awesome buttons
 
 .fab {
   color: white;
-  // background: #378244;
-  // height: 40px;
-  // width: 42px;
-  // font-size: 24px;
-  // text-align: center;
-  // padding: 0px;
-  // border-radius: 60%;
-  // margin: 10px;
 }
 
 .social-links {
   display: flex;
   justify-content: space-between;
   padding: 0px;
-  // width: 263px;
-  // height: 94px;
 }

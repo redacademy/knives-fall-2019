@@ -71,6 +71,16 @@
   color: $buttoncolorgreen;
   font-family: $parafont, serif;
   font-weight: bold;
+  font-size: $fontsize;
+}
+
+.contact-submit-button {
+  display: flex;
+  justify-content: center;
+
+  @include desktop {
+    justify-content: flex-start;
+  }
 }
 
 .wpcf7-form-control {
@@ -79,22 +89,7 @@
   border-radius: 5px;
   color: black;
   font-family: $parafont, serif;
-  // font-weight: bold;
-  // height: 40px;
-  // width: 169px;
-
-  //   width: 370px;
-  //   height: 491px;
-  //   width: 50%;
-}
-
-.contact-submit-button {
-  display: inline-flex;
-  align-self: center;
-}
-
-.wpcf7-form p {
-  text-align: left;
+  max-width: 100%;
 }
 
 .wpcf7-submit {
@@ -108,8 +103,7 @@
   font-size: $fontsize;
   width: 169px;
   height: 40px;
-  display: inline-flex;
-  align-self: center;
+  text-align: center;
 
   @include desktop() {
     .first-name {

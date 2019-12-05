@@ -1,11 +1,12 @@
+// this hides mobile/desktop logo
+.hide {
+  display: none;
+}
+
 .site-info {
   display: flex;
-  //   width: 580px;
   justify-content: space-around;
   margin: 0 auto;
-  .hide {
-    display: none;
-  }
   h4 {
     font-family: $headfont;
   }
@@ -18,5 +19,20 @@
   }
   // desktop site
   @include desktop {
+  }
+}
+
+.desktop-logo {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+
+.mobile-logo {
+  display: block;
+
+  @include desktop {
+    display: none;
   }
 }

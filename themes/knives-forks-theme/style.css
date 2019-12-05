@@ -406,6 +406,9 @@ article {
 .menu li {
   list-style: none; }
 
+.hide {
+  display: none; }
+
 .site-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,8 +416,6 @@ article {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 0 auto; }
-  .site-info .hide {
-    display: none; }
   .site-info h4 {
     font-family: "Lora", serif; }
   .site-info p.copyright {
@@ -482,3 +483,133 @@ article {
               font-family: "Lato", sans-serif;
               font-size: 28px;
               color: #e4936a; } }
+
+.desktop-logo {
+  display: none; }
+  @media only screen and (min-width: 601px) and (max-width: 1440px) {
+    .desktop-logo {
+      display: block; }
+      .desktop-logo .entry-header {
+        width: 80%;
+        margin: 0 auto;
+        border: 1px dotted red;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap; }
+        .desktop-logo .entry-header nav {
+          -webkit-box-flex: 1;
+              -ms-flex: 1 0 50%;
+                  flex: 1 0 50%;
+          margin: 0 auto; }
+        .desktop-logo .entry-header .entry-title {
+          font-size: 2.7rem; }
+        .desktop-logo .entry-header .entry-description {
+          font-size: 16px; }
+        .desktop-logo .entry-header p {
+          line-height: 1.5;
+          text-align: justify; }
+      .desktop-logo .entry-content {
+        width: 80%;
+        margin: 0 auto; }
+        .desktop-logo .entry-content nav {
+          width: 60%;
+          border: 1px dotted red;
+          padding: 2% 0;
+          text-align: center; }
+          .desktop-logo .entry-content nav .btn {
+            margin: 0 1%;
+            width: 30%;
+            position: relative;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+          .desktop-logo .entry-content nav ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: row wrap;
+                    flex-flow: row wrap;
+            margin-bottom: 5%;
+            text-align: left; }
+            .desktop-logo .entry-content nav ul li {
+              -webkit-box-flex: 1;
+                  -ms-flex: 1 0 50%;
+                      flex: 1 0 50%; }
+              .desktop-logo .entry-content nav ul li h3 {
+                font-family: "Lato", sans-serif;
+                font-size: 28px;
+                color: #e4936a; } }
+
+.mobile-logo {
+  display: block; }
+  @media only screen and (min-width: 601px) and (max-width: 1440px) {
+    .mobile-logo {
+      display: none; }
+      .mobile-logo .entry-header {
+        width: 80%;
+        margin: 0 auto;
+        border: 1px dotted red;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap; }
+        .mobile-logo .entry-header nav {
+          -webkit-box-flex: 1;
+              -ms-flex: 1 0 50%;
+                  flex: 1 0 50%;
+          margin: 0 auto; }
+        .mobile-logo .entry-header .entry-title {
+          font-size: 2.7rem; }
+        .mobile-logo .entry-header .entry-description {
+          font-size: 16px; }
+        .mobile-logo .entry-header p {
+          line-height: 1.5;
+          text-align: justify; }
+      .mobile-logo .entry-content {
+        width: 80%;
+        margin: 0 auto; }
+        .mobile-logo .entry-content nav {
+          width: 60%;
+          border: 1px dotted red;
+          padding: 2% 0;
+          text-align: center; }
+          .mobile-logo .entry-content nav .btn {
+            margin: 0 1%;
+            width: 30%;
+            position: relative;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+          .mobile-logo .entry-content nav ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: row wrap;
+                    flex-flow: row wrap;
+            margin-bottom: 5%;
+            text-align: left; }
+            .mobile-logo .entry-content nav ul li {
+              -webkit-box-flex: 1;
+                  -ms-flex: 1 0 50%;
+                      flex: 1 0 50%; }
+              .mobile-logo .entry-content nav ul li h3 {
+                font-family: "Lato", sans-serif;
+                font-size: 28px;
+                color: #e4936a; } }

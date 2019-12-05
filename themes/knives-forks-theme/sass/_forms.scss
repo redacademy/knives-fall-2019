@@ -1,6 +1,6 @@
 //**************Button styles
 .btn {
-  background: $buttoncolor;
+  background: $primary_green_dark;
   color: white;
   border: 0;
   border-radius: 2em;
@@ -9,8 +9,8 @@
   font-family: $parafont;
   &:hover {
     cursor: pointer;
-    border: 1px solid $buttoncolor;
-    color: $buttoncolor;
+    border: 1px solid $primary_green_dark;
+    color: $primary_green_dark;
     background: white;
     font-weight: 500;
   }
@@ -65,10 +65,20 @@
 // 	}
 // }
 
+<<<<<<< HEAD
 ////targets just the button///
+=======
+.wpcf7-submit input[type='submit'] {
+  color: black;
+  border-color: 1px solid $primary_green_dark;
+  background: white;
 
-.wpcf7-form {
-  color: $buttoncolorgreen;
+  border-radius: 20px;
+  font-family: lora;
+  font-size: $fontsize;
+}
+>>>>>>>b91613c0a65caa02c711845b8942c285acc4f0ed .wpcf7-form {
+  color: $primary_green_dark;
   font-family: $parafont, serif;
   font-weight: bold;
   font-size: $fontsize;
@@ -83,11 +93,10 @@
   }
 }
 
-.wpcf7-form-control {
-  box-sizing: border-box;
-  border: 1px solid black;
+.wpcf7-form-control [type='submit'] {
+  border: 1px solid $primary_green_dark;
   border-radius: 5px;
-  color: black;
+  color: $primary_green_dark;
   font-family: $parafont, serif;
   max-width: 100%;
 }

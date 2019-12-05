@@ -45,7 +45,7 @@
   display: flex;
   padding: 0;
   li {
-    background: #378244;
+    background: $primary_green_med;
     height: 42px;
     width: 42px;
     border-radius: 60%;
@@ -90,6 +90,14 @@
 
 .fab {
   color: white;
+  background: $primary_green_dark;
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 60%;
+  margin: 10px;
 }
 
 .social-links {

@@ -38,6 +38,8 @@
 				<i class="fas fa-bars"></i>
 				<!-- <i class="fas fa-times"></i> -->
 				<?php wp_nav_menu(array('menu_id' => 'mobile-menu')); ?>
+				<?php wp_nav_menu(array('menu_id' => 'mobile-menu')); ?><!-- set 1 to primary menu & display none, display block-->
+
 			</nav><!-- #site-navigation -->
 			<?php
 			

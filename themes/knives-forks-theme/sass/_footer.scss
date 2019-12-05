@@ -7,11 +7,11 @@
   .cityline {
     width: 100%;
   }
-  .site-info {
+  .info-links {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: $padding*1.81 0 0 0;
+    padding: $padding * 1.81 0 0 0;
     h4 {
       font-family: $headfont;
       font-size: $fontsize * 0.75;
@@ -30,6 +30,9 @@
         text-transform: lowercase;
       }
     }
+  }
+  .subscribe {
+    display: none;
   }
   // desktop logo & mobile logo show/hide
   .desktop-logo {
@@ -65,4 +68,37 @@
 }
 // desktop site
 @include desktop {
+  .site-info {
+    display: flex;
+    justify-content: space-between;
+    .info-links {
+      padding: 0;
+      h4 {
+        margin: 0 0 $margin 0;
+      }
+    }
+    .subscribe {
+      display: block;
+      width: 369px;
+      h5 {
+        font-size: $fontsize * 1.125;
+        font-family: $parafont;
+        margin: 0 0 $margin * 1.875 0;
+      }
+      p {
+        font-size: $fontsize * 0.625;
+        margin: $margin * 0.625 0 0 0;
+      }
+      
+    }
+    .logo-container {
+      .desktop-logo {
+        padding: $padding * 0.3 0 0 0;
+        margin: 0 auto;
+      }
+      .copyright {
+        padding: $padding 0 0 0;
+      }
+    }
+  }
 }

@@ -65,9 +65,6 @@
 // 	}
 // }
 
-<<<<<<< HEAD
-////targets just the button///
-=======
 .wpcf7-submit input[type='submit'] {
   color: black;
   border-color: 1px solid $primary_green_dark;
@@ -77,7 +74,7 @@
   font-family: lora;
   font-size: $fontsize;
 }
->>>>>>>b91613c0a65caa02c711845b8942c285acc4f0ed .wpcf7-form {
+.wpcf7-form {
   color: $primary_green_dark;
   font-family: $parafont, serif;
   font-weight: bold;
@@ -104,11 +101,11 @@
 .wpcf7-submit {
   width: 100%;
   background-color: white;
-  color: $buttoncolorgreen;
-  border: 2px solid $buttoncolorgreen;
+  color: $primary_green_dark;
+  border: 2px solid $primary_green_dark;
   background: white;
   border-radius: 20px;
-  font-family: lora, sans-serif;
+  gitfont-family: lora, sans-serif;
   font-size: $fontsize;
   width: 169px;
   height: 40px;

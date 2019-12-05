@@ -315,9 +315,10 @@ p {
     background: white;
     font-weight: 500; }
 
-.wpcf7-submit {
-  color: #378244;
-  border-color: 2px solid #378244;
+.wpcf7-submit input[type='submit'] {
+  color: black;
+  border-color: 1px solid #378244;
+  background: white;
   border-radius: 20px;
   font-family: lora;
   font-size: 16px; }
@@ -327,10 +328,14 @@ p {
   font-family: "Lato", sans-serif, serif;
   font-weight: bold; }
 
-.wpcf7-form-control {
-  color: black;
-  border: 1px solid black;
-  border-radius: 5px; }
+.wpcf7-form-control [type='submit'] {
+  border: 1px solid #378244;
+  border-radius: 5px;
+  color: #378244;
+  font-family: "Lato", sans-serif, serif;
+  font-weight: bold;
+  height: 40px;
+  width: 169px; }
 
 ul,
 li {
@@ -388,6 +393,9 @@ article {
   height: inherit; }
 
 .post-14 {
+  background-color: white; }
+
+.post-14 {
   background: url("../../assets/background-images/contact-bg@3x.png");
   background-size: cover; }
 
@@ -398,17 +406,20 @@ article {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+          flex-direction: row; }
+
+.entry-content-contact {
+  width: 60%;
+  margin: 0 auto; }
 
 .media-enquiries {
-  padding-right: 185px; }
+  padding-left: 80px;
+  height: 130px;
+  width: 470px; }
   .media-enquiries h3 {
     border-top: 1px solid black;
     padding-top: 20px;
-    font-family: Lato, sans-serif;
+    font-family: "Lato", sans-serif, sans-serif;
     font-size: 24px; }
 
 .contact-opportunity {
@@ -431,9 +442,11 @@ article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 263px;
+  height: 94px; }
 
 .menu li {
   list-style: none; }
@@ -515,7 +528,6 @@ article {
               font-family: "Lato", sans-serif;
               font-size: 28px;
               color: #e4936a; } }
-<<<<<<< HEAD
 
 .desktop-logo {
   display: none; }
@@ -523,27 +535,6 @@ article {
     .desktop-logo {
       display: block; }
       .desktop-logo .entry-header {
-=======
-<<<<<<< HEAD
-
-.become-member-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  position: relative;
-  margin: 100px 0 100px 5vw; }
-  @media only screen and (min-width: 601px) and (max-width: 1440px) {
-    .become-member-container {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap; }
-      .become-member-container .entry-header {
->>>>>>> 71542427f506c08cea8f6658bb6a9f8368ab78d4
         width: 80%;
         margin: 0 auto;
         border: 1px dotted red;
@@ -554,16 +545,11 @@ article {
         -webkit-box-direction: normal;
             -ms-flex-flow: row nowrap;
                 flex-flow: row nowrap; }
-<<<<<<< HEAD
         .desktop-logo .entry-header nav {
-=======
-        .become-member-container .entry-header nav {
->>>>>>> 71542427f506c08cea8f6658bb6a9f8368ab78d4
           -webkit-box-flex: 1;
               -ms-flex: 1 0 50%;
                   flex: 1 0 50%;
           margin: 0 auto; }
-<<<<<<< HEAD
         .desktop-logo .entry-header .entry-title {
           font-size: 2.7rem; }
         .desktop-logo .entry-header .entry-description {
@@ -575,28 +561,11 @@ article {
         width: 80%;
         margin: 0 auto; }
         .desktop-logo .entry-content nav {
-=======
-        .become-member-container .entry-header .entry-title {
-          font-size: 2.7rem; }
-        .become-member-container .entry-header .entry-description {
-          font-size: 16px; }
-        .become-member-container .entry-header p {
-          line-height: 1.5;
-          text-align: justify; }
-      .become-member-container .entry-content {
-        width: 80%;
-        margin: 0 auto; }
-        .become-member-container .entry-content nav {
->>>>>>> 71542427f506c08cea8f6658bb6a9f8368ab78d4
           width: 60%;
           border: 1px dotted red;
           padding: 2% 0;
           text-align: center; }
-<<<<<<< HEAD
           .desktop-logo .entry-content nav .btn {
-=======
-          .become-member-container .entry-content nav .btn {
->>>>>>> 71542427f506c08cea8f6658bb6a9f8368ab78d4
             margin: 0 1%;
             width: 30%;
             position: relative;
@@ -606,11 +575,7 @@ article {
             -webkit-box-pack: center;
                 -ms-flex-pack: center;
                     justify-content: center; }
-<<<<<<< HEAD
           .desktop-logo .entry-content nav ul {
-=======
-          .become-member-container .entry-content nav ul {
->>>>>>> 71542427f506c08cea8f6658bb6a9f8368ab78d4
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -620,7 +585,6 @@ article {
                     flex-flow: row wrap;
             margin-bottom: 5%;
             text-align: left; }
-<<<<<<< HEAD
             .desktop-logo .entry-content nav ul li {
               -webkit-box-flex: 1;
                   -ms-flex: 1 0 50%;
@@ -694,7 +658,74 @@ article {
                 font-family: "Lato", sans-serif;
                 font-size: 28px;
                 color: #e4936a; } }
-=======
+
+.become-member-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  position: relative;
+  margin: 100px 0 100px 5vw; }
+  @media only screen and (min-width: 601px) and (max-width: 1440px) {
+    .become-member-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap; }
+      .become-member-container .entry-header {
+        width: 80%;
+        margin: 0 auto;
+        border: 1px dotted red;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap; }
+        .become-member-container .entry-header nav {
+          -webkit-box-flex: 1;
+              -ms-flex: 1 0 50%;
+                  flex: 1 0 50%;
+          margin: 0 auto; }
+        .become-member-container .entry-header .entry-title {
+          font-size: 2.7rem; }
+        .become-member-container .entry-header .entry-description {
+          font-size: 16px; }
+        .become-member-container .entry-header p {
+          line-height: 1.5;
+          text-align: justify; }
+      .become-member-container .entry-content {
+        width: 80%;
+        margin: 0 auto; }
+        .become-member-container .entry-content nav {
+          width: 60%;
+          border: 1px dotted red;
+          padding: 2% 0;
+          text-align: center; }
+          .become-member-container .entry-content nav .btn {
+            margin: 0 1%;
+            width: 30%;
+            position: relative;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+          .become-member-container .entry-content nav ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: row wrap;
+                    flex-flow: row wrap;
+            margin-bottom: 5%;
+            text-align: left; }
             .become-member-container .entry-content nav ul li {
               -webkit-box-flex: 1;
                   -ms-flex: 1 0 50%;
@@ -732,6 +763,3 @@ article {
 .blurb-text {
   font-weight: 100;
   line-height: 1.35rem; }
-=======
->>>>>>> fd7ea5fd0765f0d758659b896782981014642c3d
->>>>>>> 71542427f506c08cea8f6658bb6a9f8368ab78d4

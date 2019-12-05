@@ -65,12 +65,10 @@
 // 	}
 // }
 
-.wpcf7-submit {
-  color: $buttoncolorgreen;
-  border-color: 2px solid $buttoncolorgreen;
-  //   background:
-  //   width: 169px;
-  //   height: 40px;
+.wpcf7-submit input[type='submit'] {
+  color: black;
+  border-color: 1px solid $buttoncolorgreen;
+  background: white;
 
   border-radius: 20px;
   font-family: lora;
@@ -81,14 +79,16 @@
   color: $buttoncolorgreen;
   font-family: $parafont, serif;
   font-weight: bold;
-
-  //   width: 40%;
 }
 
-.wpcf7-form-control {
-  color: black;
-  border: 1px solid black;
+.wpcf7-form-control [type='submit'] {
+  border: 1px solid $buttoncolorgreen;
   border-radius: 5px;
+  color: $buttoncolorgreen;
+  font-family: $parafont, serif;
+  font-weight: bold;
+  height: 40px;
+  width: 169px;
 
   //   width: 370px;
   //   height: 491px;

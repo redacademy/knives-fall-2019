@@ -71,7 +71,6 @@
   //   background:
   //   width: 169px;
   //   height: 40px;
-
   border-radius: 20px;
   font-family: lora;
   font-size: $fontsize;
@@ -79,8 +78,7 @@
 
 .wpcf7-form {
   color: $buttoncolorgreen;
-  font-family: $parafont, serif;
-  font-weight: bold;
+  font-family: $headfont, serif;
 
   //   width: 40%;
 }
@@ -88,8 +86,6 @@
 .wpcf7-form-control {
   color: black;
   border: 1px solid black;
-  border-radius: 5px;
-
   //   width: 370px;
   //   height: 491px;
   //   width: 50%;

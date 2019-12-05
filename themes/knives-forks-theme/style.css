@@ -442,10 +442,148 @@ article {
       .site-info .entry-header .entry-title {
         font-size: 2.7rem; }
       .site-info .entry-header .entry-description {
-        font-size: 1.5rem; }
+        font-size: 16px; }
       .site-info .entry-header p {
         line-height: 1.5;
         text-align: justify; }
     .site-info .entry-content {
       width: 80%;
-      margin: 0 auto; } }
+      margin: 0 auto; }
+      .site-info .entry-content nav {
+        width: 60%;
+        border: 1px dotted red;
+        padding: 2% 0;
+        text-align: center; }
+        .site-info .entry-content nav .btn {
+          margin: 0 1%;
+          width: 30%;
+          position: relative;
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+        .site-info .entry-content nav ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: row wrap;
+                  flex-flow: row wrap;
+          margin-bottom: 5%;
+          text-align: left; }
+          .site-info .entry-content nav ul li {
+            -webkit-box-flex: 1;
+                -ms-flex: 1 0 50%;
+                    flex: 1 0 50%; }
+            .site-info .entry-content nav ul li h3 {
+              font-family: "Lato", sans-serif;
+              font-size: 28px;
+              color: #e4936a; } }
+
+.become-member-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  position: relative;
+  margin: 100px 0 100px 5vw; }
+  @media only screen and (min-width: 601px) and (max-width: 1440px) {
+    .become-member-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap; }
+      .become-member-container .entry-header {
+        width: 80%;
+        margin: 0 auto;
+        border: 1px dotted red;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap; }
+        .become-member-container .entry-header nav {
+          -webkit-box-flex: 1;
+              -ms-flex: 1 0 50%;
+                  flex: 1 0 50%;
+          margin: 0 auto; }
+        .become-member-container .entry-header .entry-title {
+          font-size: 2.7rem; }
+        .become-member-container .entry-header .entry-description {
+          font-size: 16px; }
+        .become-member-container .entry-header p {
+          line-height: 1.5;
+          text-align: justify; }
+      .become-member-container .entry-content {
+        width: 80%;
+        margin: 0 auto; }
+        .become-member-container .entry-content nav {
+          width: 60%;
+          border: 1px dotted red;
+          padding: 2% 0;
+          text-align: center; }
+          .become-member-container .entry-content nav .btn {
+            margin: 0 1%;
+            width: 30%;
+            position: relative;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+          .become-member-container .entry-content nav ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: row wrap;
+                    flex-flow: row wrap;
+            margin-bottom: 5%;
+            text-align: left; }
+            .become-member-container .entry-content nav ul li {
+              -webkit-box-flex: 1;
+                  -ms-flex: 1 0 50%;
+                      flex: 1 0 50%; }
+              .become-member-container .entry-content nav ul li h3 {
+                font-family: "Lato", sans-serif;
+                font-size: 28px;
+                color: #e4936a; } }
+  .become-member-container .become-member-text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 70%;
+    margin-left: 20%;
+    margin-right: 5%;
+    padding: 10% 5%;
+    margin-top: 50px; }
+  .become-member-container .become-member-image {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 60%;
+    height: auto;
+    position: absolute;
+    top: -30%;
+    left: -5%; }
+
+.make-pitch-container .make-pitch-text {
+  margin-top: 150px; }
+
+.blurb-title {
+  font-weight: 600;
+  font-size: 1.75rem; }
+
+.blurb-text {
+  font-weight: 100;
+  line-height: 1.35rem; }

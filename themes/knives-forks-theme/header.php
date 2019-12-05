@@ -39,22 +39,26 @@
 				<!-- <i class="fas fa-times"></i> -->
 				<?php wp_nav_menu(array('menu_id' => 'mobile-menu')); ?>
 			</nav><!-- #site-navigation -->
-
-			<!-- <?php if (is_front_page()) : ?> -->
-			<!--START for BANNER's featured IMAGE with sayings-->
-			<section class="banner">
-				<nav class="banner-img">
-					<?= the_post_thumbnail('full') ?>
-				</nav>
-				<nav class="banner-content">
-					<h2>
-						<!-- TODO please don't hardcode this text and use a custom field for this -->
-						<!--line below commented out because I(victor) need to see my mobile footer-->
-						<!-- Together at Knives & Forks, we’re harnessing the power of local capital — keeping it flowing within the community. -->
-					</h2>
-				</nav>
-			</section>
-			<!-- <?php endif; ?> -->
+			<?php
+			
+				if(is_page('how-it-works')){ //START for BANNER's featured IMAGE with sayings
+					echo '
+				
+					<section class="banner">
+						<nav class="banner-img">';
+						get_the_post_thumbnail('large');
+					echo '	</nav>
+						<nav class="banner-content">
+							<h2>
+								Together at Knives & Forks, we’re harnessing the power of local capital — keeping it flowing within the community.
+							</h2>
+						</nav>
+					</section>
+					';
+				}
+				
+			?>
+			
 
 		</header><!-- #masthead -->
 

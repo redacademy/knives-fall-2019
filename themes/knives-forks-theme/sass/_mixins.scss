@@ -1,60 +1,10 @@
 @mixin desktop {
-  @media only screen and (min-width: 601px) and (max-width: 1440px) {
+  @media only screen and (min-width: 601px) {
     @content;
-    //************How it Works CONTENTS AREA
-    .entry-header {
-      width: 80%;
-      margin: 0 auto;
-      border: 1px dotted red;
-      display: flex;
-      flex-flow: row nowrap;
-      nav {
-        flex: 1 0 50%;
-        margin: 0 auto;
-      }
-      .entry-title {
-        font-size: 2.7rem;
-      }
-      .entry-description {
-        font-size: $fontsize;
-      }
-      p {
-        line-height: 1.5;
-        text-align: justify;
-      }
-    }
-    .entry-content {
-      width: 80%;
-      margin: 0 auto;
-      nav {
-        width: 60%;
-        border: 1px dotted red;
-        padding: 2% 0;
-        text-align: center;
-        .btn {
-          margin: 0 1%;
-          width: 30%;
-          position: relative;
-          display: inline-flex;
-          justify-content: center;
-        }
-        ul {
-          display: flex;
-          flex-flow: row wrap;
-          margin-bottom: 5%;
-          text-align: left;
-          li {
-            flex: 1 0 50%;
-            h3 {
-              font-family: $parafont;
-              font-size: $title_md;
-              color: $orangecolor;
-            }
-          }
-        }
-      }
-    }
   }
 }
-
-@include desktop;
+@mixin mobile {
+  @media only screen and (min-width: 250px) and (max-width: 600px) {
+    @content;
+  }
+}

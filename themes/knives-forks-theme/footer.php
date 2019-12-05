@@ -11,7 +11,7 @@
 </div><!-- #content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
-	<img src="#" alt="footer image">
+	<img class="cityline" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cityline/cityline.svg" alt="footer image">
 	<div class="site-info">
 		<div>
 			<h4>our story</h4>

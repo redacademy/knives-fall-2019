@@ -2,7 +2,6 @@
 .hide {
   display: none;
 }
-
 .site-info {
   display: flex;
   justify-content: space-around;
@@ -10,18 +9,8 @@
   h4 {
     font-family: $headfont;
   }
-  p.copyright {
-    font-family: $parafont;
-    font-size: $fontsize * 0.625;
-    span {
-      text-transform: capitalize;
-    }
-  }
-  // desktop site
-  @include desktop {
-  }
 }
-
+// desktop logo & mobile logo show/hide
 .desktop-logo {
   display: none;
   @include desktop {
@@ -35,4 +24,18 @@
   @include desktop {
     display: none;
   }
+}
+// footer logo container
+.logo-container {
+  width: 253px;
+  margin: 0 auto;
+  .copyright {
+    font-size: $fontsize * 0.625;
+    span {
+      text-transform: capitalize;
+    }
+  }
+}
+// desktop site
+@include desktop {
 }

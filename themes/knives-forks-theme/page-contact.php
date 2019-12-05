@@ -19,8 +19,10 @@ get_header(); ?>
 
 
 	<div class="entry-content">
-	<h2>Looking for an opportunity? 
-	We’d love to hear from you. </h2> 
+
+	<!-- //TO DO make a custom field for in order to make it dynamic later// -->
+	<h2 class="contact-opportunity" >Looking for an opportunity? <br>
+	We’d love to hear from you </h2> 
 	<section class="contact-form-container"> 
 	<?php the_content(); ?>
 
@@ -34,7 +36,7 @@ get_header(); ?>
 <span class="social-links">
 						 <p>
 						 <i class="fab fa-twitter"></i>	
-						 <i class="fab fa-facebook"></i>	
+						 <i class="fab fa-facebook-f"></i>	
 						 <i class="fab fa-linkedin-in"></i>							
 						 </p> 
 

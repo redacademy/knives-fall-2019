@@ -65,15 +65,7 @@
 // 	}
 // }
 
-.wpcf7-submit input[type='submit'] {
-  color: black;
-  border-color: 1px solid $buttoncolorgreen;
-  background: white;
-
-  border-radius: 20px;
-  font-family: lora;
-  font-size: $fontsize;
-}
+////targets just the button///
 
 .wpcf7-form {
   color: $buttoncolorgreen;
@@ -81,16 +73,46 @@
   font-weight: bold;
 }
 
-.wpcf7-form-control [type='submit'] {
-  border: 1px solid $buttoncolorgreen;
+.wpcf7-form-control {
+  box-sizing: border-box;
+  border: 1px solid black;
   border-radius: 5px;
-  color: $buttoncolorgreen;
+  color: black;
   font-family: $parafont, serif;
-  font-weight: bold;
-  height: 40px;
-  width: 169px;
+  // font-weight: bold;
+  // height: 40px;
+  // width: 169px;
 
   //   width: 370px;
   //   height: 491px;
   //   width: 50%;
+}
+
+.contact-submit-button {
+  display: inline-flex;
+  align-self: center;
+}
+
+.wpcf7-form p {
+  text-align: left;
+}
+
+.wpcf7-submit {
+  width: 100%;
+  background-color: white;
+  color: $buttoncolorgreen;
+  border: 2px solid $buttoncolorgreen;
+  background: white;
+  border-radius: 20px;
+  font-family: lora, sans-serif;
+  font-size: $fontsize;
+  width: 169px;
+  height: 40px;
+  display: inline-flex;
+  align-self: center;
+
+  @include desktop() {
+    .first-name {
+    }
+  }
 }

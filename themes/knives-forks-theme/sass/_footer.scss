@@ -16,7 +16,7 @@
       font-family: $headfont;
       font-size: $fontsize * 0.75;
       text-transform: capitalize;
-      color: $buttoncolor;
+      color: $primary_green_med;
       span {
         text-transform: lowercase;
       }
@@ -83,13 +83,25 @@
       h5 {
         font-size: $fontsize * 1.125;
         font-family: $parafont;
-        margin: 0 0 $margin * 1.875 0;
+        margin: 0;
       }
       p {
         font-size: $fontsize * 0.625;
         margin: $margin * 0.625 0 0 0;
       }
-      
+      .email-form {
+        .email-field {
+          border: 1px solid $neutral_gray_med;
+          width: 95%;
+          padding: 0.5rem 0.5rem;
+          border-radius: 1rem;
+        }
+        .sub-btn {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
     }
     .logo-container {
       .desktop-logo {

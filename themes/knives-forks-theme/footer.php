@@ -37,7 +37,7 @@
 		<div class="subscribe">
 			<h5>Join our mailing list and never miss an update!</h5>
 			<form method="post" class="email-form">
-				<input type="email" placeholder="example@email.ca" name="user-email" class="email-area" size="40">
+				<input type="email" placeholder="example@email.ca" name="user-email" class="email-field" size="40">
 				<input type="submit" value="Subscribe" class="sub-btn">
 			</form>
 			<p>This document is provided for informational purposes only as of the date hereof and does not constitute an offer to sell or a solicitation of an offer to buy securities and may not be relied upon in connection with any offer or sale of securities. This document is not a prospectus or an advertisement, and the offering is not being made to the public.</p>

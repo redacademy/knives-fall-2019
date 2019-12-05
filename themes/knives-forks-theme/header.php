@@ -39,6 +39,8 @@
 				<!-- <i class="fas fa-times"></i> -->
 				<?php wp_nav_menu(array('menu_id' => 'mobile-menu')); ?>
 			</nav><!-- #site-navigation -->
+
+			<!-- <?php if(is_front_page()): ?> -->
 			<!--START for BANNER's featured IMAGE with sayings-->
 			<section class="banner">
 				<nav class="banner-img">
@@ -46,10 +48,12 @@
 				</nav>
 				<nav class="banner-content">
 					<h2>
+						<!-- TODO please don't hardcode this text and use a custom field for this -->
 						Together at Knives & Forks, we’re harnessing the power of local capital — keeping it flowing within the community.
 					</h2>
 				</nav>
 			</section>
+			<!-- <?php endif; ?> -->
 
 		</header><!-- #masthead -->
 

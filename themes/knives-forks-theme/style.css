@@ -441,153 +441,167 @@ article {
 .hide {
   display: none; }
 
-.site-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 0 auto; }
-  .site-info h4 {
-    font-family: "Lora", serif; }
-
-.desktop-logo {
-  display: none; }
-  @media only screen and (min-width: 601px) and (max-width: 1440px) {
-    .desktop-logo {
-      display: block; }
-      .desktop-logo .entry-header {
-        width: 80%;
-        margin: 0 auto;
-        border: 1px dotted red;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-flow: row nowrap;
-                flex-flow: row nowrap; }
-        .desktop-logo .entry-header nav {
-          -webkit-box-flex: 1;
-              -ms-flex: 1 0 50%;
-                  flex: 1 0 50%;
-          margin: 0 auto; }
-        .desktop-logo .entry-header .entry-title {
-          font-size: 2.7rem; }
-        .desktop-logo .entry-header .entry-description {
-          font-size: 1rem; }
-        .desktop-logo .entry-header p {
-          line-height: 1.5;
-          text-align: justify; }
-      .desktop-logo .entry-content {
-        width: 80%;
-        margin: 0 auto; }
-        .desktop-logo .entry-content nav {
-          width: 60%;
-          border: 1px dotted red;
-          padding: 2% 0;
-          text-align: center; }
-          .desktop-logo .entry-content nav .btn {
-            margin: 0 1%;
-            width: 30%;
-            position: relative;
-            display: -webkit-inline-box;
-            display: -ms-inline-flexbox;
-            display: inline-flex;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center; }
-          .desktop-logo .entry-content nav ul {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-                -ms-flex-flow: row wrap;
-                    flex-flow: row wrap;
-            margin-bottom: 5%;
-            text-align: left; }
-            .desktop-logo .entry-content nav ul li {
-              -webkit-box-flex: 1;
-                  -ms-flex: 1 0 50%;
-                      flex: 1 0 50%; }
-              .desktop-logo .entry-content nav ul li h3 {
-                font-family: "Lato", sans-serif;
-                font-size: 28px;
-                color: #e4936a; } }
-
-.mobile-logo {
-  display: block; }
-  @media only screen and (min-width: 601px) and (max-width: 1440px) {
-    .mobile-logo {
-      display: none; }
-      .mobile-logo .entry-header {
-        width: 80%;
-        margin: 0 auto;
-        border: 1px dotted red;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-flow: row nowrap;
-                flex-flow: row nowrap; }
-        .mobile-logo .entry-header nav {
-          -webkit-box-flex: 1;
-              -ms-flex: 1 0 50%;
-                  flex: 1 0 50%;
-          margin: 0 auto; }
-        .mobile-logo .entry-header .entry-title {
-          font-size: 2.7rem; }
-        .mobile-logo .entry-header .entry-description {
-          font-size: 1rem; }
-        .mobile-logo .entry-header p {
-          line-height: 1.5;
-          text-align: justify; }
-      .mobile-logo .entry-content {
-        width: 80%;
-        margin: 0 auto; }
-        .mobile-logo .entry-content nav {
-          width: 60%;
-          border: 1px dotted red;
-          padding: 2% 0;
-          text-align: center; }
-          .mobile-logo .entry-content nav .btn {
-            margin: 0 1%;
-            width: 30%;
-            position: relative;
-            display: -webkit-inline-box;
-            display: -ms-inline-flexbox;
-            display: inline-flex;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center; }
-          .mobile-logo .entry-content nav ul {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-                -ms-flex-flow: row wrap;
-                    flex-flow: row wrap;
-            margin-bottom: 5%;
-            text-align: left; }
-            .mobile-logo .entry-content nav ul li {
-              -webkit-box-flex: 1;
-                  -ms-flex: 1 0 50%;
-                      flex: 1 0 50%; }
-              .mobile-logo .entry-content nav ul li h3 {
-                font-family: "Lato", sans-serif;
-                font-size: 28px;
-                color: #e4936a; } }
-
-.logo-container {
-  width: 253px;
-  margin: 0 auto; }
-  .logo-container .copyright {
-    font-size: 0.625rem; }
-    .logo-container .copyright span {
+.site-footer {
+  padding-bottom: 0.75rem; }
+  .site-footer .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 auto; }
+    .site-footer .site-info h4 {
+      font-family: "Lora", serif;
+      font-size: 0.75rem;
+      text-transform: capitalize;
+      color: #378244; }
+      .site-footer .site-info h4 span {
+        text-transform: lowercase; }
+    .site-footer .site-info p {
+      font-size: 0.688rem;
       text-transform: capitalize; }
+      .site-footer .site-info p span {
+        text-transform: lowercase; }
+  .site-footer .desktop-logo {
+    display: none; }
+    @media only screen and (min-width: 601px) and (max-width: 1440px) {
+      .site-footer .desktop-logo {
+        display: block; }
+        .site-footer .desktop-logo .entry-header {
+          width: 80%;
+          margin: 0 auto;
+          border: 1px dotted red;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: row nowrap;
+                  flex-flow: row nowrap; }
+          .site-footer .desktop-logo .entry-header nav {
+            -webkit-box-flex: 1;
+                -ms-flex: 1 0 50%;
+                    flex: 1 0 50%;
+            margin: 0 auto; }
+          .site-footer .desktop-logo .entry-header .entry-title {
+            font-size: 2.7rem; }
+          .site-footer .desktop-logo .entry-header .entry-description {
+            font-size: 1rem; }
+          .site-footer .desktop-logo .entry-header p {
+            line-height: 1.5;
+            text-align: justify; }
+        .site-footer .desktop-logo .entry-content {
+          width: 80%;
+          margin: 0 auto; }
+          .site-footer .desktop-logo .entry-content nav {
+            width: 60%;
+            border: 1px dotted red;
+            padding: 2% 0;
+            text-align: center; }
+            .site-footer .desktop-logo .entry-content nav .btn {
+              margin: 0 1%;
+              width: 30%;
+              position: relative;
+              display: -webkit-inline-box;
+              display: -ms-inline-flexbox;
+              display: inline-flex;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center; }
+            .site-footer .desktop-logo .entry-content nav ul {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+                  -ms-flex-flow: row wrap;
+                      flex-flow: row wrap;
+              margin-bottom: 5%;
+              text-align: left; }
+              .site-footer .desktop-logo .entry-content nav ul li {
+                -webkit-box-flex: 1;
+                    -ms-flex: 1 0 50%;
+                        flex: 1 0 50%; }
+                .site-footer .desktop-logo .entry-content nav ul li h3 {
+                  font-family: "Lato", sans-serif;
+                  font-size: 28px;
+                  color: #e4936a; } }
+  .site-footer .mobile-logo {
+    display: block; }
+    @media only screen and (min-width: 601px) and (max-width: 1440px) {
+      .site-footer .mobile-logo {
+        display: none; }
+        .site-footer .mobile-logo .entry-header {
+          width: 80%;
+          margin: 0 auto;
+          border: 1px dotted red;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: row nowrap;
+                  flex-flow: row nowrap; }
+          .site-footer .mobile-logo .entry-header nav {
+            -webkit-box-flex: 1;
+                -ms-flex: 1 0 50%;
+                    flex: 1 0 50%;
+            margin: 0 auto; }
+          .site-footer .mobile-logo .entry-header .entry-title {
+            font-size: 2.7rem; }
+          .site-footer .mobile-logo .entry-header .entry-description {
+            font-size: 1rem; }
+          .site-footer .mobile-logo .entry-header p {
+            line-height: 1.5;
+            text-align: justify; }
+        .site-footer .mobile-logo .entry-content {
+          width: 80%;
+          margin: 0 auto; }
+          .site-footer .mobile-logo .entry-content nav {
+            width: 60%;
+            border: 1px dotted red;
+            padding: 2% 0;
+            text-align: center; }
+            .site-footer .mobile-logo .entry-content nav .btn {
+              margin: 0 1%;
+              width: 30%;
+              position: relative;
+              display: -webkit-inline-box;
+              display: -ms-inline-flexbox;
+              display: inline-flex;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center; }
+            .site-footer .mobile-logo .entry-content nav ul {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+                  -ms-flex-flow: row wrap;
+                      flex-flow: row wrap;
+              margin-bottom: 5%;
+              text-align: left; }
+              .site-footer .mobile-logo .entry-content nav ul li {
+                -webkit-box-flex: 1;
+                    -ms-flex: 1 0 50%;
+                        flex: 1 0 50%; }
+                .site-footer .mobile-logo .entry-content nav ul li h3 {
+                  font-family: "Lato", sans-serif;
+                  font-size: 28px;
+                  color: #e4936a; } }
+  .site-footer .logo-container {
+    margin: 0 auto;
+    width: 270px; }
+    .site-footer .logo-container img {
+      padding-left: 1rem; }
+    .site-footer .logo-container .copyright {
+      width: 270px;
+      margin: -1.25rem 0 0 0;
+      font-size: 0.5rem;
+      text-align: center; }
+      .site-footer .logo-container .copyright span {
+        text-transform: capitalize; }
 
 @media only screen and (min-width: 601px) and (max-width: 1440px) {
   .entry-header {

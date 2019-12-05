@@ -2,37 +2,58 @@
 .hide {
   display: none;
 }
-.site-info {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  h4 {
-    font-family: $headfont;
-  }
-}
-// desktop logo & mobile logo show/hide
-.desktop-logo {
-  display: none;
-  @include desktop {
-    display: block;
-  }
-}
-
-.mobile-logo {
-  display: block;
-
-  @include desktop {
-    display: none;
-  }
-}
-// footer logo container
-.logo-container {
-  width: 253px;
-  margin: 0 auto;
-  .copyright {
-    font-size: $fontsize * 0.625;
-    span {
+.site-footer {
+  padding-bottom: $padding * 0.75;
+  .site-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    h4 {
+      font-family: $headfont;
+      font-size: $fontsize * 0.75;
       text-transform: capitalize;
+      color: $buttoncolor;
+      span {
+        text-transform: lowercase;
+      }
+    }
+    p {
+      font-size: $fontsize * 0.688;
+      text-transform: capitalize;
+      span {
+        text-transform: lowercase;
+      }
+    }
+  }
+  // desktop logo & mobile logo show/hide
+  .desktop-logo {
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
+
+  .mobile-logo {
+    display: block;
+    @include desktop {
+      display: none;
+    }
+  }
+  // footer logo container
+  .logo-container {
+    margin: 0 auto;
+    width: 270px;
+    img {
+      padding-left: $padding;
+    }
+    .copyright {
+      width: 270px;
+      margin: $margin * -1.25 0 0 0;
+      font-size: $fontsize * 0.5;
+      text-align: center;
+      span {
+        text-transform: capitalize;
+      }
     }
   }
 }

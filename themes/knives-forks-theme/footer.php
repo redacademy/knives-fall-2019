@@ -34,8 +34,10 @@
 		</div>
 	</div>
 	<!--.site-info -->
-	<a href="<?php bloginfo('url') ?>"><img id="mobile-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo/knives-forks-logo.svg" alt="logo" class="hide mobile-logo"><img class="hide desktop-logo" id="desktop-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo/footer-logo.svg" alt="logo"></a>
-	<p class="copyright">&copy; <span>knives and forks community investment co-operative 2015 harness capital </span>develops, manages and operates investment co-ops.</p>
+	<div class="logo-container">
+		<a href="<?php bloginfo('url') ?>"><img id="mobile-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo/knives-forks-logo.svg" alt="logo" class="hide mobile-logo"><img class="hide desktop-logo" id="desktop-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo/footer-logo.svg" alt="logo"></a>
+		<p class="copyright">&copy; <span>knives and forks community investment co-operative 2015 harness capital </span>develops, manages and operates investment co-ops.</p>
+	</div>
 </footer><!-- #colophon -->
 </div><!-- #page -->
 

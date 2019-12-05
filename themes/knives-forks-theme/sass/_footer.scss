@@ -87,9 +87,10 @@
       }
       p {
         font-size: $fontsize * 0.625;
-        margin: $margin * 0.625 0 0 0;
+        margin: 0;
       }
       .email-form {
+        position: relative;
         .email-field {
           border: 1px solid $neutral_gray_med;
           width: 95%;
@@ -100,6 +101,7 @@
           position: absolute;
           right: 0;
           top: 0;
+          padding: 0.6rem 0;
         }
       }
     }

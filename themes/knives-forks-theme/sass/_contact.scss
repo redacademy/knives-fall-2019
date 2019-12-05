@@ -1,5 +1,10 @@
 ///styles for the contact page////
 
+.post-14 {
+  background: url('../../assets/background-images/contact-bg@3x.png');
+  background-size: cover;
+}
+
 .contact-form-container {
   display: flex;
   flex-direction: row;
@@ -15,6 +20,7 @@
 }
 
 .media-enquiries {
+  padding-right: 185px;
   h3 {
     border-top: 1px solid black;
     padding-top: 20px;
@@ -24,10 +30,10 @@
   }
 }
 
-h2 {
+.contact-opportunity {
   line-height: 1em;
   font-size: 36px;
-  font-family: Lato, sans-serif;
+  font-family: $parafont, sans-serif;
 }
 
 .fab {
@@ -39,4 +45,11 @@ h2 {
   text-align: center;
   padding: 5px;
   border-radius: 60%;
+  margin: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: left;
+  // padding: 10px;
 }

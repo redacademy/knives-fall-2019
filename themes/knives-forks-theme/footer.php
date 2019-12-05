@@ -15,18 +15,18 @@
 	<div class="site-info">
 		<div>
 			<h4>our story</h4>
-			<p>We're a co-op</p>
+			<p>We're <span>a</span> co-op</p>
 			<p>our investments</p>
 			<p>why we do it</p>
 			<p>our team</p>
 		</div>
 		<div>
-			<h4>how it works</h4>
+			<h4>how <span>it</span> works</h4>
 			<p>show me</p>
 		</div>
 		<div>
 			<h4>events</h4>
-			<p>apply to pitch</p>
+			<p>apply <span>to</span> pitch</p>
 			<p>past events</p>
 		</div>
 		<div>

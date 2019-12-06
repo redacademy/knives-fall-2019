@@ -33,11 +33,17 @@
 				<i class="fas fa-bars"></i>
 				<!-- <i class="fas fa-times"></i> -->
 				<!-- mobile menu -->
-				<?php wp_nav_menu(array('theme_location' => 'mobile', 'menu_id' => 'mobile-menu')); ?>
+				<div class="mobile-menu">
+					<?php wp_nav_menu(array('theme_location' => 'mobile', 'menu_id' => 'mobile-menu')); ?>
+				</div>
 				<!-- hidden menu -->
-				<?php wp_nav_menu(array('theme_location' => 'hidden', 'menu_id' => 'hidden-menu')); ?>
+				<div class="hidden-menu">
+					<?php wp_nav_menu(array('theme_location' => 'hidden', 'menu_id' => 'hidden-menu')); ?>
+				</div>
 				<!-- desktop menu -->
-				<?php wp_nav_menu(array('theme_location' => 'desktop', 'menu_id' => 'desktop-menu')); ?>
+				<div class="desktop-menu">
+					<?php wp_nav_menu(array('theme_location' => 'desktop', 'menu_id' => 'desktop-menu')); ?>
+				</div>
 
 				<!-- set 1 to primary menu & display none, display block-->
 

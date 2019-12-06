@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+//************* TEXT styles Sizes
+=======
 // $fontsize: 16px;
 // $title_md: 28px;
 
@@ -16,13 +19,32 @@
 // $orangecolor: #e4936a;
 
 //font-related
+>>>>>>> 00d4024b925ecb5b7f69edd84e2cfd08c7b0870a
 $fontsize: 1rem;
 $title_md: 28px;
+$title_sm: 24px;
+$content_md: 20px;
+
 $margin: 1rem;
 $padding: 1rem;
 $font_weight_header: 600;
 $font_weight_body: 100;
 
+<<<<<<< HEAD
+$greenbrand: rgba(111, 143, 106, 0.76);
+$buttoncolor: #378244;
+$greenbrand1: #6f8f6a;
+$buttoncolorgreen: #378244; //TODO: which green are we keeping?
+$orangebrand: rgba(242, 144, 97, 0.17);
+$salmonbrand: #f29061;
+$greybackground: #dee3db;
+$bluebackground: #a3c9d6;
+$headfont: 'Lora', serif;
+$parafont: 'Lato', sans-serif;
+
+//color palletes
+$orangecolor: #e4936a;
+=======
 //spacing-related
 $margin: 1rem;
 $padding: 1rem;
@@ -57,3 +79,4 @@ $neutral_gray_light: #f2f7ef;
 $neutral_blue_dark: #97bbc7;
 $neutral_blue_med: #a3c8d6;
 $neutral_blue_light: #bbd7e0;
+>>>>>>> 00d4024b925ecb5b7f69edd84e2cfd08c7b0870a

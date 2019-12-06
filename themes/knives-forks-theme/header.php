@@ -48,7 +48,7 @@
 				
 					<section class="banner">
 						<nav class="banner-img">';
-						get_the_post_thumbnail('large');
+						the_post_thumbnail('large');
 					echo '	</nav>
 						<nav class="banner-content">
 							<h2>

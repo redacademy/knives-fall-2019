@@ -99,7 +99,7 @@
         .email-field {
           border: 1px solid $neutral_gray_med;
           width: 85%;
-          padding: $padding;
+          padding: $padding * 0.5;
           border-radius: 2rem;
         }
         .sub-btn {
@@ -121,7 +121,7 @@
         margin: 0 auto;
       }
       .copyright {
-        padding: $padding * 3 0 0 0;
+        padding: $padding * 2 0 0 0;
       }
     }
   }

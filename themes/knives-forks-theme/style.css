@@ -600,8 +600,28 @@ article {
         font-size: 20px;
         text-align: right; } }
 
-.menu li {
-  list-style: none; }
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1rem 3rem #fff;
+          box-shadow: 0 1rem 3rem #fff; }
+  .main-navigation .hamburger {
+    font-size: 2rem;
+    padding: 1.5rem 1rem 0 0;
+    height: 35px; }
+  .main-navigation .menu li {
+    list-style: none; }
+  .main-navigation .mobile-menu {
+    display: none; }
+  .main-navigation .desktop-menu {
+    display: none; }
+  .main-navigation .hidden-menu {
+    display: none; }
 
 .hide {
   display: none; }
@@ -693,7 +713,7 @@ article {
         .site-info .subscribe .email-form .email-field {
           border: 1px solid #dee3db;
           width: 85%;
-          padding: 1rem;
+          padding: 0.5rem;
           border-radius: 2rem; }
         .site-info .subscribe .email-form .sub-btn {
           position: absolute;
@@ -709,6 +729,7 @@ article {
       padding: 0.3rem 0 0 0;
       margin: 0 auto; }
     .site-info .logo-container .copyright {
+<<<<<<< HEAD
       padding: 3rem 0 0 0; } }
 
 .copy-title {
@@ -725,6 +746,45 @@ article {
 .copy-text {
   font-weight: 100;
   line-height: 1rem; }
+=======
+      padding: 2rem 0 0 0; } }
+
+.become-member-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
+  .become-member-container .become-member-copy-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%; }
+  .become-member-container .become-member-text .btn {
+    width: 135px;
+    height: 20px;
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+
+.become-member-image {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding: 0;
+  margin: 0; }
+  .become-member-image img {
+    width: 100%;
+    height: auto; }
+>>>>>>> 43ebed02ae3dc8d9a7f2c8ca46dd74fc9b5fea90
 
 .custom-copy-block {
   display: -webkit-box;
@@ -732,6 +792,7 @@ article {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 100px; }
@@ -745,6 +806,18 @@ article {
           -ms-flex-pack: justify;
               justify-content: space-between; } }
   .custom-copy-block .copy-block-content {
+=======
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
+  @media only screen and (min-width: 1001px) {
+    .make-pitch-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      margin-top: 600px; } }
+  .make-pitch-container .make-pitch-text {
+>>>>>>> 43ebed02ae3dc8d9a7f2c8ca46dd74fc9b5fea90
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -786,6 +859,7 @@ article {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
+<<<<<<< HEAD
     width: 60%;
     position: relative;
     top: -50px; }
@@ -848,3 +922,31 @@ article {
                   order: 0;
           margin: 0;
           margin-left: 20px; } }
+=======
+    width: 70%;
+    height: auto; }
+  .make-pitch-container .btn {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 180px;
+    -webkit-transform: translateY(45%);
+            transform: translateY(45%);
+    -ms-flex-item-align: center;
+        align-self: center; }
+
+.blurb-title {
+  font-weight: 600;
+  font-size: 1.75rem; }
+  @media only screen and (min-width: 1001px) {
+    .blurb-title {
+      font-size: 2.5rem; } }
+
+.blurb-subtitle {
+  color: #296133;
+  font-size: 1.25rem; }
+
+.blurb-text {
+  font-weight: 100;
+  line-height: 1rem; }
+>>>>>>> 43ebed02ae3dc8d9a7f2c8ca46dd74fc9b5fea90

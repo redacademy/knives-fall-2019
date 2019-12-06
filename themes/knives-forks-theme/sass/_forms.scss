@@ -158,9 +158,4 @@ wpcf7-submit input[type='‘submit’'] {
   height: 40px;
   text-align: center;
   text-transform: uppercase;
-
-  @include desktop() {
-    .first-name {
-    }
-  }
 }

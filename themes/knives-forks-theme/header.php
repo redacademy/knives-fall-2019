@@ -38,18 +38,19 @@
 				<i class="fas fa-bars"></i>
 				<!-- <i class="fas fa-times"></i> -->
 				<?php wp_nav_menu(array('menu_id' => 'mobile-menu')); ?>
-				<?php wp_nav_menu(array('menu_id' => 'mobile-menu')); ?><!-- set 1 to primary menu & display none, display block-->
+				<?php wp_nav_menu(array('menu_id' => 'mobile-menu')); ?>
+				<!-- set 1 to primary menu & display none, display block-->
 
 			</nav><!-- #site-navigation -->
 			<?php
-			
-				if(is_page('how-it-works')){ //START for BANNER's featured IMAGE with sayings
-					echo '
+
+			if (is_page('how-it-works')) { //START for BANNER's featured IMAGE with sayings
+				echo '
 				
 					<section class="banner">
 						<nav class="banner-img">';
-						the_post_thumbnail('large');
-					echo '	</nav>
+				the_post_thumbnail('large');
+				echo '	</nav>
 						<nav class="banner-content">
 							<h2>
 								Together at Knives & Forks, we’re harnessing the power of local capital — keeping it flowing within the community.
@@ -57,10 +58,10 @@
 						</nav>
 					</section>
 					';
-				}
-				
+			}
+
 			?>
-			
+
 
 		</header><!-- #masthead -->
 

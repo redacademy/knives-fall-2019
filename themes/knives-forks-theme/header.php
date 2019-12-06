@@ -32,10 +32,9 @@
 				<div></div>
 				<i class="fas fa-bars"></i>
 				<!-- <i class="fas fa-times"></i> -->
-				<?php wp_nav_menu(array('menu_id' => 'mobile-menu')); ?>
-
-				<?php wp_nav_menu(array('menu_id' => 'hidden-menu')); ?>
-				<?php wp_nav_menu(array('menu_id' => 'primary-menu')); ?>
+				<?php wp_nav_menu(array('theme_location' => 'mobile-menu', 'menu_id' => 'mobile-menu')); ?>
+				<?php wp_nav_menu(array('theme_location' => 'hidden-menu', 'menu_id' => 'hidden-menu')); ?>
+				<?php wp_nav_menu(array('theme_location' => 'desktop-menu', 'menu_id' => 'desktop-menu')); ?>
 
 				<!-- set 1 to primary menu & display none, display block-->
 

@@ -58,11 +58,12 @@ while( have_rows('become_a_member') ) {
                 <h2 class="blurb-title"><?php echo $title;?></h2>
                 <h3 class="blurb-subtitle"><?php echo $subtitle; ?></h3>
                 <p class="blurb-text"><?php echo $content?></p>
+                <a href= "#" class='btn'>Become a Member</a>
             </div>
             
             <img class="become-member-image" src="<?php echo $image['url'];?>">
 
-            <a href= "#" class='btn'>Become a Member</a>
+            
 
         </section>
 <?php 
@@ -82,9 +83,10 @@ while (have_rows('make_a_pitch')) {
                 <h2 class="blurb-title"><?php echo $title;?></h2>
                 <h3 class="blurb-subtitle"><?php echo $subtitle; ?></h3>
                 <p class="blurb-text"><?php echo $content;?></p>
+                <a href= "#" class='btn'>Become an Entrepreneur</a>
+
             </div>
             <img class="make-pitch-image" src="<?php echo $image['url'];?>">
-            <a href= "#" class='btn'>Become an Entrepreneur</a>
 
         </section>
 <?php } ?>

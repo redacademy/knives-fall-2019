@@ -64,7 +64,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import 'media';
 @import 'setup';
 // @import 'page-templates';
-@import 'pages/contact';
+@import 'contact'; //DO NOT REMOVE,this is ariel's contact page
+
+@import 'pages/page-how';
 @import 'header';
 @import 'footer';
 @import 'information-blurbs';

@@ -48,6 +48,7 @@ while( have_rows('become_a_member') ) {
     the_row();?>
     <?php
         $title = get_sub_field('title');
+        $subtitle = get_sub_field('subtitle');
         $content = get_sub_field('content');
         $image = get_sub_field('image');
         $background_color = get_sub_field('background_color');
@@ -55,10 +56,14 @@ while( have_rows('become_a_member') ) {
         <section class="become-member-container" style="background-color: <?php echo $background_color?>">
             <div class="become-member-text">
                 <h2 class="blurb-title"><?php echo $title;?></h2>
+                <h3 class="blurb-subtitle"><?php echo $subtitle; ?></h3>
                 <p class="blurb-text"><?php echo $content?></p>
+                <a href= "#" class='btn'>Become a Member</a>
             </div>
             
             <img class="become-member-image" src="<?php echo $image['url'];?>">
+
+            
 
         </section>
 <?php 
@@ -68,6 +73,7 @@ while (have_rows('make_a_pitch')) {
     the_row();?>
     <?php
         $title = get_sub_field('title');
+        $subtitle = get_sub_field('subtitle');
         $content = get_sub_field('content');
         $image = get_sub_field('image');
         $background_color = get_sub_field('background_color');
@@ -75,9 +81,13 @@ while (have_rows('make_a_pitch')) {
         <section class="make-pitch-container" style="background-color: <?php echo $background_color?>">
             <div class="make-pitch-text">
                 <h2 class="blurb-title"><?php echo $title;?></h2>
+                <h3 class="blurb-subtitle"><?php echo $subtitle; ?></h3>
                 <p class="blurb-text"><?php echo $content;?></p>
+                <a href= "#" class='btn'>Become an Entrepreneur</a>
+
             </div>
             <img class="make-pitch-image" src="<?php echo $image['url'];?>">
+
         </section>
 <?php } ?>
 

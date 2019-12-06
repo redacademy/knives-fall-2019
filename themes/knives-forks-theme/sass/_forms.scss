@@ -1,19 +1,29 @@
 //**************Button styles
 .btn {
-  background: $buttoncolor;
+  background: $primary_green_dark;
   color: white;
   border: 0;
   border-radius: 2em;
-  padding: 2% 3%;
+  padding: 3% 4%;
   font-size: $fontsize;
   font-family: $parafont;
   &:hover {
     cursor: pointer;
-    border: 1px solid $buttoncolor;
-    color: $buttoncolor;
+    border: 1px solid $primary_green_dark;
+    color: $primary_green_dark;
     background: white;
     font-weight: 500;
   }
+}
+//************styles for PROFILE PICTURES
+.profile-pic {
+  width: 12em;
+  border-radius: 100%;
+  height: 12em;
+  object-fit: cover;
+  box-shadow: 0px 0px 1em white;
+}
+
 // /*--------------------------------------------------------------
 // # Forms
 // --------------------------------------------------------------*/
@@ -64,28 +74,88 @@
 // 	}
 // }
 
-.wpcf7-submit {
-  color: $buttoncolorgreen;
-  border-color: 2px solid $buttoncolorgreen;
-  //   background:
-  //   width: 169px;
-  //   height: 40px;
-  border-radius: 20px;
-  font-family: lora;
-  font-size: $fontsize;
+///styles for the inside the form//
+
+.wpcf7-form .wpcf7-textarea,
+input[type='text'],
+input[type='email'] {
+  // height: 4vh;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  font-family: $parafont, serif;
+  width: 100% !important;
+  resize: none;
+  line-height: 2em;
 }
+
+// input[type='textarea'] {
+//   border: 1px solid black;
+//   border-radius: 5px;
+//   color: black;
+//   font-family: $parafont, serif;
+//   width: 100% !important;
+// }
+
+////styles for the button
+
+wpcf7-submit input[type='‘submit’'] {
+  color: $primary_green_med;
+  border-color: 1px solid $primary_green_med;
+  background: white;
+  border-radius: 20px;
+  font-family: $parafont;
+  font-size: $fontsize;
+  font-weight: 200;
+}
+
+////styles for the form text
 
 .wpcf7-form {
-  color: $buttoncolorgreen;
-  font-family: $headfont, serif;
-
-  //   width: 40%;
+  color: $primary_green_med;
+  font-family: $parafont, serif;
+  font-weight: bold;
 }
 
-.wpcf7-form-control {
-  color: black;
-  border: 1px solid black;
-  //   width: 370px;
-  //   height: 491px;
-  //   width: 50%;
+.wpcf7-form p {
+  font-size: 1em;
+  line-height: 1.75em;
+}
+
+///styles for the submit button
+
+.contact-submit-button {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+
+  @include desktop {
+    justify-content: flex-start;
+  }
+}
+
+.wpcf7-form-control [type='‘submit’'] {
+  border: 2px solid $primary_green_med;
+  border-radius: 5px;
+  color: $primary_green_dark;
+  text-transform: uppercase;
+  font-family: $parafont;
+  max-width: 100%;
+}
+
+////button control
+
+.wpcf7-submit {
+  width: 100%;
+  background-color: white;
+  color: $primary_green_dark;
+  border: 2px solid $primary_green_dark;
+  background: white;
+  border-radius: 20px;
+  font-family: $parafont, sans-serif;
+  font-size: $fontsize;
+  width: 169px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
 }

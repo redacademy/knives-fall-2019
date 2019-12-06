@@ -25,7 +25,9 @@ if (!function_exists('red_starter_setup')) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(array(
-			'primary' => esc_html('Primary Menu'),
+			'primary' => esc_html('Primary Menu'), //add more menus here
+			'mobile' => esc_html('mobile menu'),
+			'hidden' => esc_html('hidden menu')
 		));
 
 		// Switch search form, comment form, and comments to output valid HTML5.
@@ -43,14 +45,15 @@ add_action('after_setup_theme', 'red_starter_setup');
 /** Function for adding Advanced Custom Fields 
  */
 
-function register_acf_block_types() {
+function register_acf_block_types()
+{
 
-    // register a testimonial block.
-    acf_register_block_type(array(
-        'name'              => 'information blurbs',
-        'title'             => __('Information Blurbs'),
-        'description'       => __('A custom become a member block.'),
-        'render_template'   => 'template-parts/blocks/content-information-blurbs.php',
+	// register a testimonial block.
+	acf_register_block_type(array(
+		'name'              => 'information blurbs',
+		'title'             => __('Information Blurbs'),
+		'description'       => __('A custom become a member block.'),
+		'render_template'   => 'template-parts/blocks/content-information-blurbs.php',
 		//'keywords'          => array( 'testimonial', 'quote' ),
 		//'enqueue_style'    	=> get_template_directory_uri(  ),
 	));
@@ -114,7 +117,7 @@ function red_starter_scripts()
 	wp_enqueue_script('script', get_template_directory_uri() . '/build/js/script.min.js', array(), '20151215', true);
 	wp_enqueue_script('red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true);
 	wp_enqueue_script('red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true);
-	wp_enqueue_style( 'red-starter-font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
+	wp_enqueue_style('red-starter-font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
@@ -131,3 +134,9 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+function apply_excerpt_length($length)
+{
+	return 80;
+}
+add_filter('excerpt_length', 'apply_excerpt_length', 999);

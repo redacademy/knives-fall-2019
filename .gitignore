@@ -10,11 +10,11 @@
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
-
+/**/**/node_modules
 # Ignore logs and databases #
 # ========================= #
 *.log
-*.sql
+!*.sql
 error_log
 access_log
 

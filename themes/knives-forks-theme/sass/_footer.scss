@@ -1,22 +1,128 @@
-.site-info {
-  display: flex;
-  //   width: 580px;
-  justify-content: space-around;
-  margin: 0 auto;
-  .hide {
-    display: none;
+// this hides mobile/desktop logo
+.hide {
+  display: none;
+}
+.site-footer {
+  padding: 0 $padding * 0.5 $padding * 0.75;
+  .cityline {
+    width: 100%;
   }
-  h4 {
-    font-family: $headfont;
-  }
-  p.copyright {
-    font-family: $parafont;
-    font-size: $fontsize * 0.625;
-    span {
+  .info-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: $padding * 1.81 0 0 0;
+    h4 {
+      font-family: $headfont;
+      font-size: $fontsize * 0.75;
       text-transform: capitalize;
+      color: $primary_green_med;
+      span {
+        text-transform: lowercase;
+      }
+    }
+    p {
+      padding-bottom: $padding * 0.5;
+      margin: 0;
+      font-size: $fontsize * 0.688;
+      text-transform: capitalize;
+      span {
+        text-transform: lowercase;
+      }
     }
   }
-  // desktop site
-  @include desktop {
+  .subscribe {
+    display: none;
+  }
+  // desktop logo & mobile logo show/hide
+  .desktop-logo {
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
+
+  .mobile-logo {
+    display: block;
+    @include desktop {
+      display: none;
+    }
+  }
+  // footer logo container
+  .logo-container {
+    margin: 0 auto;
+    width: 270px;
+    img {
+      padding-left: $padding;
+    }
+    .copyright {
+      width: 270px;
+      margin: $margin * -1.25 0 0 0;
+      font-size: $fontsize * 0.5;
+      text-align: center;
+      span {
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+// desktop site
+@include desktop {
+  .site-info {
+    display: flex;
+    justify-content: space-between;
+    padding: $padding * 1.68 0 0 0;
+    .info-links {
+      padding: 0;
+      width: 280px;
+      display: flex;
+      flex-wrap: wrap;
+      h4 {
+        margin: 0 0 $margin 0;
+      }
+    }
+    .subscribe {
+      display: block;
+      width: 369px;
+      h5 {
+        font-size: $fontsize * 1.125;
+        font-family: $parafont;
+        margin: 0;
+      }
+      p {
+        font-size: $fontsize * 0.625;
+        margin: 0;
+      }
+      .email-form {
+        position: relative;
+        margin: $margin * 1.5 0;
+        .email-field {
+          border: 1px solid $neutral_gray_med;
+          width: 85%;
+          padding: $padding;
+          border-radius: 2rem;
+        }
+        .sub-btn {
+          position: absolute;
+          width: 28%;
+          right: 5px;
+          top: 0;
+          padding: $padding 0;
+          border-radius: 0 2rem 2rem 0;
+          color: #fff;
+          background-color: $primary_green_med;
+          font-family: $parafont;
+        }
+      }
+    }
+    .logo-container {
+      .desktop-logo {
+        padding: $padding * 0.3 0 0 0;
+        margin: 0 auto;
+      }
+      .copyright {
+        padding: $padding * 2.2 0 0 0;
+      }
+    }
   }
 }

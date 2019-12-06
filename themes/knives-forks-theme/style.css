@@ -271,7 +271,7 @@ input[type='email'] {
   border-radius: 5px;
   color: black;
   font-family: "Lato", sans-serif, serif;
-  width: 100% !important;
+  width: 100%;
   resize: none;
   line-height: 2em; }
 
@@ -693,7 +693,7 @@ article {
         .site-info .subscribe .email-form .email-field {
           border: 1px solid #dee3db;
           width: 85%;
-          padding: 1rem;
+          padding: 0.5rem;
           border-radius: 2rem; }
         .site-info .subscribe .email-form .sub-btn {
           position: absolute;
@@ -709,7 +709,7 @@ article {
       padding: 0.3rem 0 0 0;
       margin: 0 auto; }
     .site-info .logo-container .copyright {
-      padding: 3rem 0 0 0; } }
+      padding: 2rem 0 0 0; } }
 
 .become-member-container {
   margin: 100px 0 100px 5vw;

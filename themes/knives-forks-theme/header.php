@@ -30,7 +30,7 @@
 				<?php //if( when it's width is 600 and more ) 
 				?>
 				<div></div>
-				<i class="fas fa-bars hamburger"></i>
+				<i class="fas fa-bars hamburger" id="hamburger"></i>
 				<!-- <i class="fas fa-times"></i> -->
 				<!-- mobile menu -->
 				<div class="mobile-menu">

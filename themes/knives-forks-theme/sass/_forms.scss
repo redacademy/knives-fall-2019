@@ -74,38 +74,76 @@
 // 	}
 // }
 
-.wpcf7-submit input[type='submit'] {
-  color: black;
-  border-color: 1px solid $primary_green_dark;
-  background: white;
+///styles for the inside the form//
 
-  border-radius: 20px;
-  font-family: lora;
-  font-size: $fontsize;
+.wpcf7-form .wpcf7-textarea,
+input[type='text'],
+input[type='email'] {
+  // height: 4vh;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  font-family: $parafont, serif;
+  width: 100% !important;
+  resize: none;
+  line-height: 2em;
 }
+
+// input[type='textarea'] {
+//   border: 1px solid black;
+//   border-radius: 5px;
+//   color: black;
+//   font-family: $parafont, serif;
+//   width: 100% !important;
+// }
+
+////styles for the button
+
+wpcf7-submit input[type='‘submit’'] {
+  color: $primary_green_med;
+  border-color: 1px solid $primary_green_med;
+  background: white;
+  border-radius: 20px;
+  font-family: $parafont;
+  font-size: $fontsize;
+  font-weight: 200;
+}
+
+////styles for the form text
+
 .wpcf7-form {
-  color: $primary_green_dark;
+  color: $primary_green_med;
   font-family: $parafont, serif;
   font-weight: bold;
-  font-size: $fontsize;
 }
+
+.wpcf7-form p {
+  font-size: 1em;
+  line-height: 1.75em;
+}
+
+///styles for the submit button
 
 .contact-submit-button {
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
 
   @include desktop {
     justify-content: flex-start;
   }
 }
 
-.wpcf7-form-control [type='submit'] {
-  border: 1px solid $primary_green_dark;
+.wpcf7-form-control [type='‘submit’'] {
+  border: 2px solid $primary_green_med;
   border-radius: 5px;
   color: $primary_green_dark;
-  font-family: $parafont, serif;
+  text-transform: uppercase;
+  font-family: $parafont;
   max-width: 100%;
 }
+
+////button control
 
 .wpcf7-submit {
   width: 100%;
@@ -114,11 +152,12 @@
   border: 2px solid $primary_green_dark;
   background: white;
   border-radius: 20px;
-  gitfont-family: lora, sans-serif;
+  font-family: $parafont, sans-serif;
   font-size: $fontsize;
   width: 169px;
   height: 40px;
   text-align: center;
+  text-transform: uppercase;
 
   @include desktop() {
     .first-name {

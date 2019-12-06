@@ -79,6 +79,54 @@
   }
   //************styles for TESTimonials
   .testimonials {
+<<<<<<< HEAD
+=======
+    padding: 0 10% 5% 10%;
+    margin: 0 auto;
+    position: relative;
+    background: url('../../assets/background-images/contact-bg@3x.png');
+    background-size: cover;
+    background-position: bottom right;
+    .site-title {
+      font-family: $headfont;
+      color: hsla(0, 0%, 0%, 0.15);
+      font-size: calc(9rem - 100%);
+      transform: translateX(-11%);
+    }
+    nav {
+      background: hsla(112, 18%, 41%, 0.75);
+      color: white;
+      border-radius: 1.5em;
+      text-align: center;
+      padding: 2%;
+      width: fit-content;
+      margin: 0 auto;
+      img {
+        position: relative;
+        top: 0;
+        transform: translateY(-50%);
+      }
+      p {
+        font-family: $parafont;
+        font-size: $title_sm;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 1.5;
+        transform: translateY(-2em);
+      }
+      .member-name {
+        font-family: $headfont;
+        font-size: $title_md;
+        font-weight: 600;
+        text-align: right;
+      }
+      .member-since {
+        font-family: $parafont;
+        font-size: $content_md;
+        text-align: right;
+      }
+    }
+>>>>>>> f9d1ec6ec785d1c6dc1a18760f9199b6c887ea39
     width: 80%;
     margin: 0 auto;
   }

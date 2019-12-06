@@ -1,26 +1,32 @@
 .become-member-container {
-  margin: 100px 0 100px 5vw;
+  //margin: 100px 0 100px 5vw;
   display: flex;
   flex-flow: column nowrap;
   @include desktop {
-    flex-flow: row nowrap;
-    margin: 0;
-    width: 100vw;
-    height: 375px;
+    // flex-flow: row nowrap;
+    // margin: 0;
+    // width: 100vw;
+    //height: 375px;
+  }
+
+  .become-member-copy-block {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
   }
   .become-member-text {
-    order: 1;
-    display: flex;
-    flex-flow: column nowrap;
-    padding-left: 20%;
-    padding-right: 5%;
-    transform: translateY(-10%);
+    //order: 1;
+    // display: flex;
+    // flex-flow: column nowrap;
+    // padding-left: 20%;
+    // padding-right: 5%;
+    // transform: translateY(-10%);
     @include desktop {
-      width: 45%;
-      padding-left: 10%;
-      padding-right: 5%;
-      transform: translateY(-60px);
-      align-self: flex-start;
+      //   width: 45%;
+      //   padding-left: 10%;
+      //   padding-right: 5%;
+      //   transform: translateY(-60px);
+      //   align-self: flex-start;
     }
     .btn {
       width: 135px;
@@ -29,20 +35,28 @@
       //transform: translateY(80%);
       //margin: auto;
       @include desktop {
-        transform: translateY(120px);
-        justify-self: center;
+        // transform: translateY(120px);
+        // justify-self: center;
       }
     }
   }
 }
 .become-member-image {
   order: 0;
-  width: 70%;
-  transform: translate(-10%, -20%);
+  //width: 70%;
+  flex-basis: 40%;
+  padding: 0;
+  margin: 0;
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  // transform: translate(-10%, -20%);
   @include desktop {
-    object-fit: cover;
-    transform: translate(40px, 50px);
-    width: 45%;
+    // object-fit: cover;
+    // transform: translate(40px, 50px);
+    // width: 45%;
   }
 }
 
@@ -52,7 +66,7 @@
   flex-flow: column nowrap;
   @include desktop {
     flex-flow: row nowrap;
-    margin-top: 200px;
+    margin-top: 600px;
   }
   .make-pitch-text {
     order: 1;
@@ -65,7 +79,7 @@
     order: 0;
     width: 70%;
     height: auto;
-    transform: translate(50%, -20%);
+    //transform: translate(50%, -20%);
     @include desktop {
     }
   }

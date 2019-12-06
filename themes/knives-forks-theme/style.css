@@ -600,17 +600,28 @@ article {
         font-size: 20px;
         text-align: right; } }
 
-.main-navigation .menu li {
-  list-style: none; }
-
-.main-navigation .mobile-menu {
-  display: none; }
-
-.main-navigation .desktop-menu {
-  display: none; }
-
-.main-navigation .hidden-menu {
-  display: none; }
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1rem 3rem #fff;
+          box-shadow: 0 1rem 3rem #fff; }
+  .main-navigation .hamburger {
+    font-size: 2rem;
+    padding: 1.5rem 1rem 0 0;
+    height: 35px; }
+  .main-navigation .menu li {
+    list-style: none; }
+  .main-navigation .mobile-menu {
+    display: none; }
+  .main-navigation .desktop-menu {
+    display: none; }
+  .main-navigation .hidden-menu {
+    display: none; }
 
 .hide {
   display: none; }

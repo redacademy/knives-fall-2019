@@ -4,6 +4,7 @@
   background-color: #fff;
   //box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
   box-shadow: 0 1rem 3rem #fff;
+  z-index: 1; // z-index for main-navigation
   .hamburger {
     font-size: $fontsize * 2;
     padding: $padding * 1.5 $padding 0 0;
@@ -13,12 +14,25 @@
     list-style: none;
   }
   .mobile-menu {
-    display: none;
-  }
-  .desktop-menu {
-    display: none;
-  }
-  .hidden-menu {
-    display: none;
+    .cross { //exits mobile menu
+      font-size: $fontsize * 2;
+    }
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    background-color: $neutral_green_med;
+    width: 100%;
+    li {
+      border-top: 1px solid #fff;
+      width: 100%;
+      a {
+        width: 100%;
+        padding: $padding;
+        display: inline-block;
+        position: relative;
+        right: 30px;
+      }
+    }
   }
 }

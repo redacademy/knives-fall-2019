@@ -609,7 +609,8 @@ article {
           justify-content: space-between;
   background-color: #fff;
   -webkit-box-shadow: 0 1rem 3rem #fff;
-          box-shadow: 0 1rem 3rem #fff; }
+          box-shadow: 0 1rem 3rem #fff;
+  z-index: 1; }
   .main-navigation .hamburger {
     font-size: 2rem;
     padding: 1.5rem 1rem 0 0;
@@ -617,11 +618,23 @@ article {
   .main-navigation .menu li {
     list-style: none; }
   .main-navigation .mobile-menu {
-    display: none; }
-  .main-navigation .desktop-menu {
-    display: none; }
-  .main-navigation .hidden-menu {
-    display: none; }
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    background-color: #6f8f6a;
+    width: 100%; }
+    .main-navigation .mobile-menu .cross {
+      font-size: 2rem; }
+    .main-navigation .mobile-menu li {
+      border-top: 1px solid #fff;
+      width: 100%; }
+      .main-navigation .mobile-menu li a {
+        width: 100%;
+        padding: 1rem;
+        display: inline-block;
+        position: relative;
+        right: 30px; }
 
 .hide {
   display: none; }

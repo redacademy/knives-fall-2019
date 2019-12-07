@@ -271,7 +271,7 @@ input[type='email'] {
   border-radius: 5px;
   color: black;
   font-family: "Lato", sans-serif, serif;
-  width: 100% !important;
+  width: 100%;
   resize: none;
   line-height: 2em; }
 

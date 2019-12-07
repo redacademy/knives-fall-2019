@@ -52,6 +52,11 @@
       } // end of a
     } // end of li
   } // end of mobile menu
+  @include mobile {
+    .desktop-menu {
+      display: none;
+    }
+  }
   @include tablet {
     .desktop-menu {
       display: block;

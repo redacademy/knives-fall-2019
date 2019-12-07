@@ -2,7 +2,7 @@
 $arrays=acf_get_fields('group_5de6dbd4e92e1');
 $args=array(
     'post_type'=>'member_testimonial',
-    'numberposts'=>1,
+    'numberposts'=>-1,
     'orderby'=>'post_date',
     'order'=>'ASC'
 );
@@ -65,20 +65,25 @@ $testimonials=get_posts($args);
         </nav>
         <img src="<?=get_field('how-img')?>" alt="how-it-works-hands" class="how-img">
     </div><!-- .entry-content -->
-     <!--section for TESTIMONY GUY-->
-     <section class="testimonials">
+     
+     
+</article><!-- #post-## -->
+<!--section for TESTIMONY GUY-->
+<section class="testimonials">
          <h1 class="site-title">
                 <?=get_bloginfo('title')?>
          </h1>
          <?php
             if(count($testimonials)>0){
                 $tmp='';
+                echo '<div class="carousel" data-flickity>';
                 foreach($testimonials as $x){
                     // the_post($x);
                     setup_postdata($x);
                     // $img=the_field('member_profile',$x->ID);
                     $tmp.='
-                        <nav>
+                    
+                        <nav class="carousel-cell">
                             <img src="'. get_field('member_profile',$x->ID) . '" alt="knives&fork-'. $x->post_title .'" class="profile-pic">
                             <p>
                                 '. get_the_excerpt($x) .'
@@ -90,13 +95,14 @@ $testimonials=get_posts($args);
                                 '.get_field('member_since',$x->ID).'
                             </p>
                         </nav>
+                    
                     ';
 
                 }
                 echo $tmp;
+                echo '</div>';
 
             }
          ?>
          
      </section>
-</article><!-- #post-## -->

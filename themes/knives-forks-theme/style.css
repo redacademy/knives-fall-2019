@@ -474,7 +474,14 @@ article {
           justify-content: space-between;
   padding: 0px; }
 
-@media only screen and (min-width: 250px) and (max-width: 600px) {
+h3.summary-title {
+  font-size: 1.5rem;
+  font-family: "Lora", serif, serif;
+  text-align: center;
+  font-display: bold;
+  color: black; }
+
+@media all and (max-width: 499px) {
   .banner .banner-img {
     width: 100%;
     height: 100vmax;
@@ -757,11 +764,7 @@ article {
       padding: 0.3rem 0 0 0;
       margin: 0 auto; }
     .site-info .logo-container .copyright {
-<<<<<<< HEAD
       padding: 2rem 0 0 0; } }
-=======
-      padding: 3rem 0 0 0; } }
->>>>>>> 047b7f5d9fcdbadcc0442ce413e804e1a4852dbf
 
 .copy-title {
   font-weight: 600;
@@ -900,36 +903,6 @@ article {
                   order: 0;
           margin: 0;
           margin-left: 20px; } }
-<<<<<<< HEAD
-=======
-=======
-    width: 70%;
-    height: auto; }
-  .make-pitch-container .btn {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    width: 180px;
-    -webkit-transform: translateY(45%);
-            transform: translateY(45%);
-    -ms-flex-item-align: center;
-        align-self: center; }
-
-.blurb-title {
-  font-weight: 600;
-  font-size: 1.75rem; }
-  @media only screen and (min-width: 1001px) {
-    .blurb-title {
-      font-size: 2.5rem; } }
-
-.blurb-subtitle {
-  color: #296133;
-  font-size: 1.25rem; }
-
-.blurb-text {
-  font-weight: 100;
-  line-height: 1rem; }
-<<<<<<< HEAD
 
 /* external css: flickity.css */
 * {
@@ -1000,7 +973,3 @@ body {
 /* hide disabled button */
 .flickity-prev-next-button:disabled {
   display: none; }
-=======
->>>>>>> 43ebed02ae3dc8d9a7f2c8ca46dd74fc9b5fea90
->>>>>>> 79eef09dab9c01cbab732878238c635b0df1c307
->>>>>>> 047b7f5d9fcdbadcc0442ce413e804e1a4852dbf

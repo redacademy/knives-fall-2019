@@ -1,9 +1,33 @@
 @include mobile {
+  //************How it Works CONTENTS AREA
+  .banner .banner-img {
+    width: 100%;
+    height: 100vmax;
+    overflow: hidden;
+    position: relative;
+    border: 1px dotted red;
+  }
+  .banner .banner-img img {
+    object-fit: fill;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    transform: translateX(-26em);
+  }
+  .banner .banner-content {
+    width: 80%;
+    top: calc(48em - 100%);
+    h2 {
+      font-size: calc((8vh - 100%) - 1vmin);
+    }
+  }
 }
 @include desktop {
   //************How it Works CONTENTS AREA
   .article-content {
-    padding-bottom: 5%;
+    // padding-bottom: 5%;
+    overflow: hidden;
+    position: relative;
   }
   .entry-header {
     width: 80%;
@@ -11,6 +35,7 @@
     display: flex;
     flex-flow: row nowrap;
     position: relative;
+    padding-bottom: 5vh;
     nav {
       width: 60%;
     }
@@ -18,10 +43,12 @@
       right: 0;
       top: 13%;
       width: auto;
-      height: 24vmax;
+      height: 15vw;
       -o-object-fit: cover;
       object-fit: cover;
       position: absolute;
+      background: white;
+      border-radius: 2em;
     }
     .entry-title {
       font-size: 2.7rem;
@@ -37,7 +64,7 @@
   .entry-content {
     width: 80%;
     margin: 0 auto;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     nav {
       width: 60%;
       padding: 2% 0;
@@ -73,23 +100,26 @@
       -o-object-fit: cover;
       object-fit: cover;
       position: absolute;
-      top: calc(124rem - 100%);
+      // top: calc(124rem - 100%);
       z-index: -1;
+      bottom: calc((63rem - 100%) - 1vmax);
     }
   }
   //************styles for TESTimonials
   .testimonials {
     padding: 0 10% 5% 10%;
-    margin: 0 auto;
     position: relative;
     background: url('../../assets/background-images/contact-bg@3x.png');
     background-size: cover;
     background-position: bottom right;
+    overflow: hidden;
+    width: 100%;
     .site-title {
       font-family: $headfont;
       color: hsla(0, 0%, 0%, 0.15);
       font-size: calc(9rem - 100%);
       transform: translateX(-11%);
+      margin: 0;
     }
     nav {
       background: hsla(112, 18%, 41%, 0.75);
@@ -99,6 +129,7 @@
       padding: 2%;
       width: fit-content;
       margin: 0 auto;
+      height: auto;
       img {
         position: relative;
         top: 0;
@@ -110,13 +141,15 @@
         width: 80%;
         margin: 0 auto;
         line-height: 1.5;
-        transform: translateY(-2em);
+        transform: translateY(-3em);
+        text-align: justify;
       }
       .member-name {
         font-family: $headfont;
         font-size: $title_md;
         font-weight: 600;
         text-align: right;
+        transform: translateY(-2em);
       }
       .member-since {
         font-family: $parafont;
@@ -124,7 +157,5 @@
         text-align: right;
       }
     }
-    width: 80%;
-    margin: 0 auto;
-  }
+  } //****************END of HOW it WORKS PAGE
 }

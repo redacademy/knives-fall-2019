@@ -1,0 +1,90 @@
+//**************STYLES for FLICKITY Carousels
+//----how-it-works Page
+/* external css: flickity.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.carousel {
+  background: transparent;
+}
+
+.testimonials {
+  //**************START of changes at FLICKITY
+  .carousel-cell.is-selected {
+    width: fit-content;
+    // height: fit-content;
+    // margin: 0 5%;
+  }
+
+  .flickity-page-dots .dot {
+    width: 1em;
+    height: 1em;
+  }
+  .flickity-button {
+    background: transparent;
+    width: 10%;
+    height: 10%;
+    opacity: 0.8;
+    &:hover {
+      background: transparent;
+      opacity: 1;
+    }
+  }
+}
+// .flickity-viewport {
+//   flex-flow: column nowrap;
+//   align-content: center;
+//   align-items: center;
+// }
+
+.flickity-slider {
+  margin-top: 5em;
+}
+
+.carousel-cell {
+  width: 50%;
+  height: auto;
+  margin-right: 5em;
+  background: #8c8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  //   content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.carousel-cell:after {
+  height: 100%;
+  border: 1px dotted red;
+}
+
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}

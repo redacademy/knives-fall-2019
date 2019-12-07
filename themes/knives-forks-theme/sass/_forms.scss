@@ -2,7 +2,7 @@
 .btn {
   background: $primary_green_dark;
   color: white;
-  border: 0;
+  border: 1px solid transparent;
   border-radius: 2em;
   padding: 3% 4%;
   font-size: $fontsize;

@@ -41,7 +41,7 @@
 					<?php wp_nav_menu(array('theme_location' => 'hidden', 'menu_id' => 'hidden-menu')); ?>
 				</div>
 				<!-- desktop menu -->
-				<div class="desktop-menu hide">
+				<div class="desktop-menu">
 					<!-- <i class="fas fa-times"></i> -->
 					<?php wp_nav_menu(array('theme_location' => 'desktop', 'menu_id' => 'desktop-menu')); ?>
 				</div>

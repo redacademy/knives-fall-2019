@@ -1,12 +1,9 @@
 ///styles for the contact page////
 
-.contact-form-container {
-}
-
 .post-14 {
   width: 100%;
   background-color: white;
-  margin-top: 80px;
+  margin-top: 60px;
 
   @include desktop() {
     background: url('../../assets/background-images/contact-bg@3x.png');
@@ -30,8 +27,8 @@
     }
     .contact-opportunity {
       line-height: 1em;
-      font-size: 1.12em;
-      font-family: $parafont, sans-serif;
+      font-size: 2em;
+      font-family: $headfont;
       text-align: left;
     }
 
@@ -59,11 +56,11 @@
 /// alignment for the whole page
 
 .entry-content-contact {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
 }
 
-//// section for media enquiries contact
+//// section for media enquiries
 
 .media-enquiries {
   padding-left: 0px;
@@ -79,9 +76,9 @@
 ///mobile style for header for the form
 
 .contact-opportunity {
-  line-height: 1em;
-  font-size: 24px;
-  font-family: $parafont, sans-serif;
+  line-height: 1.5em;
+  font-size: 1.3em;
+  font-family: $headfont;
   text-align: center;
   min-width: 100%;
 }
@@ -90,7 +87,6 @@
 
 .fab {
   color: white;
-  background: $primary_green_dark;
   height: 20px;
   width: 20px;
   font-size: 20px;

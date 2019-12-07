@@ -15,9 +15,11 @@ input {
   width: 100%;
   display: block;
   height: inherit;
+  position: relative;
   .banner-img {
     width: auto;
     height: 60vmax;
+
     img {
       object-fit: cover;
       height: 100%;
@@ -34,11 +36,11 @@ input {
     align-content: center;
     align-items: center;
     padding: 2% 5%;
-    top: 0;
-    transform: translateY(70vmin);
+    top: 20vh;
+    // transform: translateY(70vmin);
     h2 {
       color: white;
-      font-size: calc(8vmin - 100%);
+      font-size: calc((5.5vw - 100%) - 1vmin);
       line-height: 1.2;
       margin-left: 5%;
     }

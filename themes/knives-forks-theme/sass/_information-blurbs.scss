@@ -1,89 +1,231 @@
-.become-member-container {
-  display: flex;
-  flex-flow: column nowrap;
-  @include desktop {
-    flex-flow: row nowrap;
-    .become-member-image {
-      width: 45%;
-      height: auto;
-      /* position: absolute; */
-      /* top: 11%; */
-      /* right: 5%; */
-      transform: translate(-10%, 10%);
-    }
-  }
-  margin: 100px 0 100px 5vw;
-  .become-member-text {
-    order: 1;
-    /* width: 70%; */
-    margin-left: 20%;
-    margin-right: 5%;
-    /* padding: 10% 5%; */
-    transform: translateY(-20%);
-  }
-  .become-member-image {
-    order: 0;
-    width: 60%;
-    height: auto;
-    /* position: absolute; */
-    transform: translate(-20%, -40%);
-    /* top: -30%; */
-    /* left: -5%; */
-  }
-  .btn {
-    position: absolute;
-    bottom: -3%;
-    left: 33%;
-  }
-}
+// .become-member-container {
+//   margin: 100px 0 100px 5vw;
+//   display: flex;
+//   flex-flow: column nowrap;
+//   @include desktop {
+//     // flex-flow: row nowrap;
+//     // margin: 0;
+//     // width: 100vw;
+//     //height: 375px;
+//   }
 
-.make-pitch-container {
-  display: flex;
-  flex-flow: column nowrap;
-  position: relative;
-  margin: 100px 5vw 100px 0;
+//   .become-member-copy-block {
+//     display: flex;
+//     flex-direction: column;
+//     flex-basis: 40%;
+//   }
+//   .become-member-text {
+//     //order: 1;
+//     // display: flex;
+//     // flex-flow: column nowrap;
+//     // padding-left: 20%;
+//     // padding-right: 5%;
+//     // transform: translateY(-10%);
+//     @include desktop {
+//       //   width: 45%;
+//       //   padding-left: 10%;
+//       //   padding-right: 5%;
+//       //   transform: translateY(-60px);
+//       //   align-self: flex-start;
+//     }
+//     .btn {
+//       width: 135px;
+//       height: 20px;
+//       align-self: flex-start;
+//       //transform: translateY(80%);
+//       //margin: auto;
+//       @include desktop {
+//         // transform: translateY(120px);
+//         // justify-self: center;
+//       }
+//     }
+//   }
+// }
+// .become-member-image {
+//   order: 0;
+//   //width: 70%;
+//   flex-basis: 40%;
+//   padding: 0;
+//   margin: 0;
+//   img {
+//     width: 100%;
+//     height: auto;
+//   }
 
-  @include desktop {
-    flex-flow: row nowrap;
-  }
-  .make-pitch-text {
-    /*margin-top: 150px; */
-    order: 1;
-    /* width: 70%; */
-    margin-right: 20%;
-    margin-left: 5%;
-    /* padding: 10% 5%; */
-    transform: translateY(-20%);
-  }
+//   // transform: translate(-10%, -20%);
+//   @include desktop {
+//     // object-fit: cover;
+//     // transform: translate(40px, 50px);
+//     // width: 45%;
+//   }
+// }
 
-  .make-pitch-image {
-    order: 0;
-    width: 60%;
-    height: auto;
-    /* position: absolute; */
-    transform: translate(76%, -40%);
-    /* top: -30%; */
-    /* left: -5%; */
-  }
-  .btn {
-    position: absolute;
-    bottom: -20px;
-    left: 24%;
-  }
-}
+// .make-pitch-container {
+//   margin: 100px 5vw 100px 0;
+//   display: flex;
+//   flex-flow: column nowrap;
+//   @include desktop {
+//     flex-flow: row nowrap;
+//     margin-top: 600px;
+//   }
+//   .make-pitch-text {
+//     order: 1;
+//     margin-right: 20%;
+//     margin-left: 5%;
+//     transform: translateY(-10%);
+//   }
 
-.blurb-title {
+//   .make-pitch-image {
+//     order: 0;
+//     width: 70%;
+//     height: auto;
+//     //transform: translate(50%, -20%);
+//     @include desktop {
+//     }
+//   }
+//   .btn {
+//     order: 2;
+//     width: 180px;
+//     transform: translateY(45%);
+//     align-self: center;
+//   }
+// }
+
+.copy-title {
   font-weight: $font_weight_header;
   font-size: 1.75rem;
   @include desktop {
     font-size: 2.5rem;
   }
 }
-.blurb-subtitle {
+.copy-subtitle {
   color: $primary_green_dark;
   font-size: 1.25rem;
 }
-.blurb-text {
+.copy-text {
   font-weight: $font_weight_body;
   line-height: 1rem;
+}
+
+.custom-copy-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .copy-block-content {
+    order: 1;
+    position: relative;
+    top: -50px;
+
+    @include desktop {
+      width: 100%;
+      position: relative;
+      padding-right: 50px;
+      margin: auto 5%;
+      top: 0;
+    }
+    .copy-block-text {
+      @include desktop {
+        position: relative;
+        top: -60px;
+        width: 100%;
+      }
+      .copy-title {
+        @include desktop {
+          position: relative;
+        }
+      }
+      .copy-subtitle {
+      }
+      .copy-text {
+        @include desktop {
+          position: relative;
+          top: 40px;
+        }
+      }
+    }
+    .copy-block-btn {
+      display: block;
+      position: relative;
+      bottom: -75px;
+      width: 140px;
+      margin: auto;
+
+      @include tablet {
+        bottom: -80px;
+      }
+      @include desktop {
+        bottom: -25px;
+        position: absolute;
+      }
+    }
+  }
+  .copy-block-image {
+    order: 0;
+    width: 60%;
+    position: relative;
+    top: -50px;
+    @include desktop {
+      margin: 0px 1rem;
+      padding: 0px;
+      top: 75px;
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      @include desktop {
+        position: relative;
+        width: 90%;
+      }
+    }
+  }
+  &.image-copy {
+    margin-left: 30px;
+    @include desktop {
+      margin-left: 0;
+    }
+    .copy-block-image {
+      left: -70px;
+      @include desktop {
+        left: 50px;
+      }
+    }
+    .copy-block-content {
+      margin: 0 5% 10px 20%;
+      @include desktop {
+        margin: 0;
+        margin-left: 20px;
+      }
+    }
+  }
+  &.copy-image {
+    margin-right: 30px;
+    @include desktop {
+      margin-right: 0;
+    }
+    .copy-block-image {
+      order: 0;
+      right: -37.5%;
+      @include tablet {
+        right: -38.25%;
+      }
+      @include desktop {
+        order: 1;
+        right: 0;
+      }
+    }
+    .copy-block-content {
+      margin: 0 20% 10px 5%;
+      order: 1;
+      @include desktop {
+        order: 0;
+        margin: 0;
+        margin-left: 20px;
+      }
+    }
+  }
 }

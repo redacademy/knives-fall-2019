@@ -32,7 +32,7 @@
 				<i class="fas fa-bars hamburger" id="hamburger"></i>
 				<!-- mobile menu -->
 				<div class="mobile-menu hide">
-					<i class="fas fa-times cross"></i>
+					<i class="fas fa-times cross" id="cross"></i>
 					<?php wp_nav_menu(array('theme_location' => 'mobile', 'menu_id' => 'mobile-menu')); ?>
 				</div>
 				<!-- hidden menu -->

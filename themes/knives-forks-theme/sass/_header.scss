@@ -14,6 +14,12 @@
     list-style: none;
   }
   .mobile-menu {
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
     .cross {
       //exits mobile menu
       padding: $padding;
@@ -46,5 +52,9 @@
       } // end of a
     } // end of li
   } // end of mobile menu
-
+  @include tablet {
+    .desktop-menu {
+      display: block;
+    } // end of desktop menu
+  }
 } //end of main-navigation

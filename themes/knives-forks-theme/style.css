@@ -625,7 +625,9 @@ article {
     background-color: #6f8f6a;
     width: 100%; }
     .main-navigation .mobile-menu .cross {
-      font-size: 2rem; }
+      padding: 1rem;
+      font-size: 2rem;
+      color: #fff; }
     .main-navigation .mobile-menu li {
       border-top: 1px solid #fff;
       width: 100%; }
@@ -634,7 +636,12 @@ article {
         padding: 1rem;
         display: inline-block;
         position: relative;
-        right: 30px; }
+        right: 30px;
+        color: #fff; }
+        .main-navigation .mobile-menu li a:visited {
+          color: #fff; }
+        .main-navigation .mobile-menu li a:hover {
+          background-color: #90c194; }
 
 .hide {
   display: none; }

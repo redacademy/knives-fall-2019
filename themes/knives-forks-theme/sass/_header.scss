@@ -14,8 +14,11 @@
     list-style: none;
   }
   .mobile-menu {
-    .cross { //exits mobile menu
+    .cross {
+      //exits mobile menu
+      padding: $padding;
       font-size: $fontsize * 2;
+      color: #fff;
     }
     z-index: 2;
     position: absolute;
@@ -32,7 +35,16 @@
         display: inline-block;
         position: relative;
         right: 30px;
-      }
-    }
-  }
-}
+        color: #fff;
+        &:visited {
+          color: #fff;
+        }
+        //thinking about include the hover on desktop only
+        &:hover {
+          background-color: $neutral_green_light;
+        } // end of a:hover
+      } // end of a
+    } // end of li
+  } // end of mobile menu
+
+} //end of main-navigation

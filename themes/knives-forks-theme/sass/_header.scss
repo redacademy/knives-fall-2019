@@ -40,7 +40,7 @@
         padding: $padding;
         display: inline-block;
         position: relative;
-        right: 30px;
+        right: 0;
         color: #fff;
         &:visited {
           color: #fff;
@@ -52,6 +52,8 @@
       } // end of a
     } // end of li
   } // end of mobile menu
+
+  // START OF DESKTOP MENU
   @include mobile {
     .desktop-menu {
       display: none;
@@ -60,6 +62,30 @@
   @include tablet {
     .desktop-menu {
       display: block;
-    } // end of desktop menu
+      .menu {
+        display: flex;
+        justify-content: space-around;
+        li {
+          align-self: center;
+        }
+      }
+    }
+    .hamburger {
+      font-size: $fontsize * 1.5;
+    }
   }
+  // END OF DESKTOP MENU
+
+  // START OF HIDDEN MENU
+  @include mobile {
+    .hidden-menu {
+      display: none;
+    }
+  }
+  @include tablet {
+    .hidden-menu {
+      display: block;
+    }
+  }
+  // END OF HIDDEN MENU
 } //end of main-navigation

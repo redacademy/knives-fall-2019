@@ -152,8 +152,9 @@
       display: block;
       position: relative;
       bottom: -75px;
-      width: 140px;
+      width: 150px;
       margin: auto;
+      text-align: center;
 
       @include tablet {
         bottom: -80px;

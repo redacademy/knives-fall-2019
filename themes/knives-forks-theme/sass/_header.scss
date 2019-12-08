@@ -4,6 +4,7 @@
   background-color: #fff;
   //box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
   box-shadow: 0 1rem 3rem #fff;
+  z-index: 1; // z-index for main-navigation
   .hamburger {
     font-size: $fontsize * 2;
     padding: $padding * 1.5 $padding 0 0;
@@ -13,12 +14,78 @@
     list-style: none;
   }
   .mobile-menu {
-    display: none;
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
+    .cross {
+      //exits mobile menu
+      padding: $padding;
+      font-size: $fontsize * 2;
+      color: #fff;
+    }
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    background-color: $neutral_green_med;
+    width: 100%;
+    li {
+      border-top: 1px solid #fff;
+      width: 100%;
+      a {
+        width: 100%;
+        padding: $padding;
+        display: inline-block;
+        position: relative;
+        right: 0;
+        color: #fff;
+        &:visited {
+          color: #fff;
+        }
+        //thinking about include the hover on desktop only
+        &:hover {
+          background-color: $neutral_green_light;
+        } // end of a:hover
+      } // end of a
+    } // end of li
+  } // end of mobile menu
+
+  // START OF DESKTOP MENU
+  @include mobile {
+    .desktop-menu {
+      display: none;
+    }
   }
-  .desktop-menu {
-    display: none;
+  @include tablet {
+    .desktop-menu {
+      display: block;
+      .menu {
+        display: flex;
+        justify-content: space-around;
+        li {
+          align-self: center;
+        }
+      }
+    }
+    .hamburger {
+      font-size: $fontsize * 1.5;
+    }
   }
-  .hidden-menu {
-    display: none;
+  // END OF DESKTOP MENU
+
+  // START OF HIDDEN MENU
+  @include mobile {
+    .hidden-menu {
+      display: none;
+    }
   }
-}
+  @include tablet {
+    .hidden-menu {
+      display: block;
+    }
+  }
+  // END OF HIDDEN MENU
+} //end of main-navigation

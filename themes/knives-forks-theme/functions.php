@@ -64,6 +64,9 @@ if (function_exists('acf_register_block_type')) {
 	add_action('acf/init', 'register_acf_block_types');
 }
 
+//gravity forms
+
+//gravity_form( 1, $display_title = false, $display_description = false, $display_inactive = false, $field_values = null, $ajax = false, $tabindex, $echo = true );
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *

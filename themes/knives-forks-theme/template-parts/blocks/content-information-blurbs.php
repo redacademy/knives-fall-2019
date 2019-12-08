@@ -76,7 +76,7 @@ while (have_rows('make_a_pitch')) {
                     <h3 class="copy-subtitle"><?php echo $subtitle; ?></h3>
                     <p class="copy-text"><?php echo $content?></p>
                 </article>
-                <a href= "#" class='copy-block-btn btn'>Become a Member</a>
+                <a href= "#" class='copy-block-btn btn'>Apply to Pitch</a>
             </div>
             <figure class="copy-block-image">
                 <img src="<?php echo $image['url'];?>">

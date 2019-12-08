@@ -29,19 +29,20 @@
 				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('mobile menu'); ?></button> -->
 				<?php //if( when it's width is 600 and more ) 
 				?>
-				<div></div>
 				<i class="fas fa-bars hamburger" id="hamburger"></i>
-				<!-- <i class="fas fa-times"></i> -->
 				<!-- mobile menu -->
-				<div class="mobile-menu">
+				<div class="mobile-menu hide">
+					<i class="fas fa-times cross" id="cross"></i>
 					<?php wp_nav_menu(array('theme_location' => 'mobile', 'menu_id' => 'mobile-menu')); ?>
 				</div>
 				<!-- hidden menu -->
-				<div class="hidden-menu">
+				<div class="hidden-menu hide">
+					<!-- <i class="fas fa-times"></i> -->
 					<?php wp_nav_menu(array('theme_location' => 'hidden', 'menu_id' => 'hidden-menu')); ?>
 				</div>
 				<!-- desktop menu -->
 				<div class="desktop-menu">
+					<!-- <i class="fas fa-times"></i> -->
 					<?php wp_nav_menu(array('theme_location' => 'desktop', 'menu_id' => 'desktop-menu')); ?>
 				</div>
 

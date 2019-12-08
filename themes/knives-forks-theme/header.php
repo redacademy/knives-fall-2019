@@ -31,18 +31,18 @@
 				?>
 				<i class="fas fa-bars hamburger" id="hamburger"></i>
 				<!-- mobile menu -->
-				<div class="mobile-menu hide">
+				<div class="mobile-menu ">
 					<i class="fas fa-times cross" id="cross"></i>
 					<?php wp_nav_menu(array('theme_location' => 'mobile', 'menu_id' => 'mobile-menu')); ?>
 				</div>
 				<!-- hidden menu -->
-				<div class="hidden-menu hide">
+				<div class="hidden-menu ">
 					<!-- <i class="fas fa-times"></i> -->
 					<?php wp_nav_menu(array('theme_location' => 'hidden', 'menu_id' => 'hidden-menu')); ?>
 				</div>
 				<!-- desktop menu -->
 				<div class="desktop-menu">
-					<!-- <i class="fas fa-times"></i> -->
+					<i class="fas fa-times"></i>
 					<?php wp_nav_menu(array('theme_location' => 'desktop', 'menu_id' => 'desktop-menu')); ?>
 				</div>
 

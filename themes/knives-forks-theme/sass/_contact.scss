@@ -5,7 +5,7 @@
   background-color: white;
   margin-top: 60px;
 
-  @include desktop() {
+  @include desktop {
     background: url('../../assets/background-images/contact-bg@3x.png');
     background-size: cover;
 

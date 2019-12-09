@@ -25,33 +25,38 @@ get_header(); ?>
 			</h1>
 			<h2 class="upcoming-events-location">
 				<?php the_field('upcoming_event_location'); ?>
-			</h2>
-			<div class="banner-links">
-			<button class="buy-tickets-btn"><a href="#">Buy Tickets</a>
-			<button class="apply-to-pitch-btn"><a href="#">Apply To Pitch</a></div> 
+			</h2>	
+		</section> 
+
+			<section class="banner-links"> 
+		<button class="buy-tickets-btn"><a href="#">Buy Tickets</a>
+			<button class="apply-to-pitch-btn"><a href="#">Apply To Pitch</a>
 	
 
 	</section> 
 		</section>
-
- <?php
+		
+		<div class="pitch-summary">
+<?php
 		// check if the repeater field has rows of data
 		if( have_rows('pitch_summary') ): ?>
 
-		<section class="flex-layout">
+		<!-- <div class="pitch-summary-icons"> -->
 			<?php // loop through the rows of data
 			while ( have_rows('pitch_summary') ) : the_row(); ?>
 
-				<div class="flex-item-container">
-				<img alt="Summary Icons" src="<?php the_sub_field('image'); ?>"/>
-<h3 class="summary-title"><?php the_sub_field('title'); ?></h3>
-				<p class="summary-description"><?php the_sub_field('description'); ?></p>
+				<!-- <div class="flex-item-container"> -->
+			<div class="summary-image"><img alt="Summary Icons" src="<?php the_sub_field('image'); ?>"/></div> 
+ <h3 class="summary-title"><?php the_sub_field('title'); ?></h3>
+		<p class="summary-description"><?php the_sub_field('description'); ?></p>
 				
-				</div>
+				<!-- </div> -->
 
-			<?php endwhile; ?>
-			<a href='#'>Apply To Pitch</a>
+			<?php endwhile; ?>	
+		</div>	
 		</section>
+
+			<a href='#'>Apply To Pitch</a>
 		<?php else :
 		endif;
 		?>

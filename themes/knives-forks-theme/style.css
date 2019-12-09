@@ -301,7 +301,7 @@ wpcf7-submit input[type='‘submit’'] {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase; }
-  @media only screen and (min-width: 1001px) {
+  @media all and (min-width: 1001px) {
     .contact-submit-button {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
@@ -386,7 +386,7 @@ article {
   width: 100%;
   background-color: white;
   margin-top: 60px; }
-  @media only screen and (min-width: 1001px) {
+  @media all and (min-width: 1001px) {
     .post-14 {
       background: url("../../assets/background-images/contact-bg@3x.png");
       background-size: cover; }
@@ -474,16 +474,13 @@ article {
           justify-content: space-between;
   padding: 0px; }
 
-<<<<<<< HEAD
 h3.summary-title {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-family: "Lora", serif, serif;
   text-align: center;
   font-display: bold;
   color: black; }
 
-=======
->>>>>>> 6c54618f5f261c3bb9078ec9b6ba76be7657e541
 @media all and (max-width: 499px) {
   .banner .banner-img {
     width: 100%;
@@ -505,7 +502,7 @@ h3.summary-title {
     .banner .banner-content h2 {
       font-size: calc((8vh - 100%) - 1vmin); } }
 
-@media only screen and (min-width: 1001px) {
+@media all and (min-width: 1001px) {
   .article-content {
     overflow: hidden;
     position: relative; }
@@ -665,7 +662,7 @@ h3.summary-title {
     @media only screen and (min-width: 500px) and (max-width: 1000px) {
       .main-navigation .mobile-menu {
         display: none; } }
-    @media only screen and (min-width: 1001px) {
+    @media all and (min-width: 1001px) {
       .main-navigation .mobile-menu {
         display: none; } }
     .main-navigation .mobile-menu .cross {
@@ -744,12 +741,12 @@ h3.summary-title {
     display: none; }
   .site-footer .desktop-logo {
     display: none; }
-    @media only screen and (min-width: 1001px) {
+    @media all and (min-width: 1001px) {
       .site-footer .desktop-logo {
         display: block; } }
   .site-footer .mobile-logo {
     display: block; }
-    @media only screen and (min-width: 1001px) {
+    @media all and (min-width: 1001px) {
       .site-footer .mobile-logo {
         display: none; } }
   .site-footer .logo-container {
@@ -765,7 +762,7 @@ h3.summary-title {
       .site-footer .logo-container .copyright span {
         text-transform: capitalize; }
 
-@media only screen and (min-width: 1001px) {
+@media all and (min-width: 1001px) {
   .site-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -821,7 +818,7 @@ h3.summary-title {
 .copy-title {
   font-weight: 600;
   font-size: 1.75rem; }
-  @media only screen and (min-width: 1001px) {
+  @media all and (min-width: 1001px) {
     .copy-title {
       font-size: 2.5rem; } }
 
@@ -842,7 +839,7 @@ h3.summary-title {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 100px; }
-  @media only screen and (min-width: 1001px) {
+  @media all and (min-width: 1001px) {
     .custom-copy-block {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -857,22 +854,22 @@ h3.summary-title {
             order: 1;
     position: relative;
     top: -50px; }
-    @media only screen and (min-width: 1001px) {
+    @media all and (min-width: 1001px) {
       .custom-copy-block .copy-block-content {
         width: 100%;
         position: relative;
         padding-right: 50px;
         margin: auto 5%;
         top: 0; } }
-    @media only screen and (min-width: 1001px) {
+    @media all and (min-width: 1001px) {
       .custom-copy-block .copy-block-content .copy-block-text {
         position: relative;
         top: -60px;
         width: 100%; } }
-    @media only screen and (min-width: 1001px) {
+    @media all and (min-width: 1001px) {
       .custom-copy-block .copy-block-content .copy-block-text .copy-title {
         position: relative; } }
-    @media only screen and (min-width: 1001px) {
+    @media all and (min-width: 1001px) {
       .custom-copy-block .copy-block-content .copy-block-text .copy-text {
         position: relative;
         top: 40px; } }
@@ -880,12 +877,13 @@ h3.summary-title {
       display: block;
       position: relative;
       bottom: -75px;
-      width: 140px;
-      margin: auto; }
+      width: 150px;
+      margin: auto;
+      text-align: center; }
       @media only screen and (min-width: 500px) and (max-width: 1000px) {
         .custom-copy-block .copy-block-content .copy-block-btn {
           bottom: -80px; } }
-      @media only screen and (min-width: 1001px) {
+      @media all and (min-width: 1001px) {
         .custom-copy-block .copy-block-content .copy-block-btn {
           bottom: -25px;
           position: absolute; } }
@@ -896,7 +894,7 @@ h3.summary-title {
     width: 60%;
     position: relative;
     top: -50px; }
-    @media only screen and (min-width: 1001px) {
+    @media all and (min-width: 1001px) {
       .custom-copy-block .copy-block-image {
         margin: 0px 1rem;
         padding: 0px;
@@ -904,29 +902,29 @@ h3.summary-title {
         width: 100%; } }
     .custom-copy-block .copy-block-image img {
       width: 100%; }
-      @media only screen and (min-width: 1001px) {
+      @media all and (min-width: 1001px) {
         .custom-copy-block .copy-block-image img {
           position: relative;
           width: 90%; } }
   .custom-copy-block.image-copy {
     margin-left: 30px; }
-    @media only screen and (min-width: 1001px) {
+    @media all and (min-width: 1001px) {
       .custom-copy-block.image-copy {
         margin-left: 0; } }
     .custom-copy-block.image-copy .copy-block-image {
       left: -70px; }
-      @media only screen and (min-width: 1001px) {
+      @media all and (min-width: 1001px) {
         .custom-copy-block.image-copy .copy-block-image {
           left: 50px; } }
     .custom-copy-block.image-copy .copy-block-content {
       margin: 0 5% 10px 20%; }
-      @media only screen and (min-width: 1001px) {
+      @media all and (min-width: 1001px) {
         .custom-copy-block.image-copy .copy-block-content {
           margin: 0;
           margin-left: 20px; } }
   .custom-copy-block.copy-image {
     margin-right: 30px; }
-    @media only screen and (min-width: 1001px) {
+    @media all and (min-width: 1001px) {
       .custom-copy-block.copy-image {
         margin-right: 0; } }
     .custom-copy-block.copy-image .copy-block-image {
@@ -937,7 +935,7 @@ h3.summary-title {
       @media only screen and (min-width: 500px) and (max-width: 1000px) {
         .custom-copy-block.copy-image .copy-block-image {
           right: -38.25%; } }
-      @media only screen and (min-width: 1001px) {
+      @media all and (min-width: 1001px) {
         .custom-copy-block.copy-image .copy-block-image {
           -webkit-box-ordinal-group: 2;
               -ms-flex-order: 1;
@@ -948,7 +946,7 @@ h3.summary-title {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1; }
-      @media only screen and (min-width: 1001px) {
+      @media all and (min-width: 1001px) {
         .custom-copy-block.copy-image .copy-block-content {
           -webkit-box-ordinal-group: 1;
               -ms-flex-order: 0;

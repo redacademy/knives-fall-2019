@@ -1,3 +1,28 @@
+/// front banner section
+
+.events-banner a {
+}
+
+.upcoming-events {
+}
+
+h1.upcoming-events-title {
+}
+
+///video section style
+
+// .video-section {
+
+// }
+
+///pitch summary section //
+
+.flex-item-container {
+}
+
+.flex-item-container a {
+}
+
 h3.summary-title {
   font-size: 3rem;
   font-family: $headfont, serif;
@@ -27,11 +52,24 @@ p.summary-description {
   }
 }
 
-// .flex_item {
+// .flex-item {
 // }
 
 // // .summary-description
-// // }
 
 // @include desktop() {
 // }
+
+
+///past events loop
+.past-event { 
+
+  .past-events-date { 
+
+  }
+ .past-events-location { 
+
+ }
+.past-events-description { 
+
+}

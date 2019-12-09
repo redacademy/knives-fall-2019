@@ -5,13 +5,82 @@
 // .events-banner a {
 // }
 
-// .upcoming-events {
+// .events-banner {
+//   height: 100vh;
 // }
+
+.events-banner {
+  height: 100vh;
+  // width: 100vw;
+  background-size: center cover;
+  // background: no-repeat center center/cover;
+}
+
+@include desktop {
+  background: url('../../assets/events-images/coffee-cup.png');
+}
+
+.upcoming-events {
+  position: center;
+  background-color: #6f8f6a;
+  padding: 40px;
+  opacity: 0.85;
+  width: 80%;
+  height: 50%;
+}
 
 // h1.upcoming-events-title {
 // }
 
-// ///video section style
+h1.upcoming-events-title {
+  position: relative;
+
+  color: #fff;
+  font-family: $headfont;
+  font-style: bold;
+  font-size: 23px;
+
+  // padding-top: inherit;
+}
+
+h2.upcoming-events-location {
+  position: relative;
+  color: #fff;
+  font-size: 23px;
+}
+
+.banner-links {
+}
+
+.buy-tickets-button {
+  background: #fff;
+  color: $primary_green_med;
+  border: 3px solid $primary_green_med;
+  border-radius: 2em;
+  padding: 3% 4%;
+  font-size: $fontsize;
+  font-family: $parafont;
+  &:hover {
+    cursor: pointer;
+    border: 1px solid $primary_green_dark;
+    color: $primary_green_dark;
+    background: white;
+    font-weight: 500;
+  }
+}
+
+.apply-to-pitch-button {
+  background: #fff;
+  color: $primary_green_med;
+  border: 3px solid $primary_green_med;
+  border-radius: 2em;
+  padding: 3% 4%;
+  font-size: $fontsize;
+  font-family: $parafont;
+}
+///video section styling
+
+// TO DO add video image placeholder
 
 // // .video-section {
 

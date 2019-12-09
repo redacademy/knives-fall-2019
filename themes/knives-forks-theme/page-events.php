@@ -26,8 +26,10 @@ get_header(); ?>
 			<h2 class="upcoming-events-location">
 				<?php the_field('upcoming_event_location'); ?>
 			</h2>
-			<a href="#">Buy Tickets</a>
-			<a href="#">Apply To Pitch</a>
+			<div class="banner-links">
+			<button class="buy-tickets-btn"><a href="#">Buy Tickets</a>
+			<button class="apply-to-pitch-btn"><a href="#">Apply To Pitch</a></div> 
+	
 
 	</section> 
 		</section>

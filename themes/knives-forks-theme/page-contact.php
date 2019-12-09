@@ -17,7 +17,9 @@ get_header(); ?>
 
 	<div class="entry-content-contact">
 
-	<!-- //TO DO make a custom field for in order to make it dynamic later// -->
+	<!-- //TO DO make a custom field to make it dynamic later// -->
+	
+	
 	<h2 class="contact-opportunity" >Looking for an opportunity? <br>
 	We’d love to hear from you </h2> 
 	<section class="contact-form-container"> 

@@ -501,7 +501,7 @@ h2.upcoming-events-location {
   color: #fff;
   font-size: 23px; }
 
-.buy-tickets-button {
+.buy-tickets-btn {
   background: #fff;
   color: #378244;
   border: 3px solid #378244;
@@ -509,14 +509,14 @@ h2.upcoming-events-location {
   padding: 3% 4%;
   font-size: 1rem;
   font-family: "Lato", sans-serif; }
-  .buy-tickets-button:hover {
+  .buy-tickets-btn:hover {
     cursor: pointer;
     border: 1px solid #296133;
     color: #296133;
     background: white;
     font-weight: 500; }
 
-.apply-to-pitch-button {
+.apply-to-pitch-btn {
   background: #fff;
   color: #378244;
   border: 3px solid #378244;

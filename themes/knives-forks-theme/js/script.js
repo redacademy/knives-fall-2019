@@ -2,27 +2,27 @@
 const burger = document.getElementById('hamburger');
 
 const mobileMenu = document.getElementsByClassName('mobile-menu')[0];
-// closing menu 
+// closing menu
 const cross = document.getElementById('cross');
 
-burger.addEventListener('click', function () {
-    mobileMenu.classList.remove('hide');
+burger.addEventListener('click', function() {
+  mobileMenu.classList.remove('hide');
 });
 
-cross.addEventListener('click', function () {
-    mobileMenu.classList.add('hide');
+cross.addEventListener('click', function() {
+  mobileMenu.classList.add('hide');
 });
 // opens up & display menu items
 
 //
 
+(function($) {
+  //implement styling and element's position
+  $('.banner-content').css({
+    top: $('.banner').height() * 0.6
+  });
+  $('.entry-content  ul  li:last-child()').append($('.how-btn'));
 
-(function($){
-
-    //implement styling and element's position
-    $('.banner-content').css({
-        top: $('.banner').height() * 0.60
-      });
-    $('.entry-content  ul  li:last-child()').append($('.how-btn'));
-
-})(jQuery)
+  // next button stylings for make-a-pitch
+  $('.gform_next_button').addClass('btn');
+})(jQuery);

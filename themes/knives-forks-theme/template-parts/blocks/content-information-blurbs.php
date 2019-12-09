@@ -49,7 +49,7 @@ while( have_rows('become_a_member') ) {
                 <article class="copy-block-text">
                     <h2 class="copy-title"><?php echo $title;?></h2>
                     <h3 class="copy-subtitle"><?php echo $subtitle; ?></h3>
-                    <p class="copy-text"><?php echo $content?></p>
+                    <p class="copy-text"><?php echo $content?></p> 
                 </article>
                 <a href= "#" class='copy-block-btn btn'>Become a Member</a>
             </div>

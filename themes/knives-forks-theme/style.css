@@ -742,6 +742,31 @@ p.summary-description {
         font-size: 20px;
         text-align: right; } }
 
+#gform_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  #gform_2 .gf_page_steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-right: 1px solid black;
+    width: 33%; }
+  #gform_2 .gform_body {
+    width: 33%;
+    padding: 10px; }
+  #gform_2 .validation_error {
+    display: none; }
+  #gform_2::after {
+    content: 'asdasdasda';
+    background-color: blue;
+    width: 33%;
+    height: 200px; }
+
 .post-14 {
   width: 100%;
   background-color: white;
@@ -858,9 +883,6 @@ p.summary-description {
     text-align: right;
     background-color: #6f8f6a;
     width: 100%; }
-    @media only screen and (min-width: 500px) and (max-width: 999px) {
-      .main-navigation .mobile-menu {
-        display: none; } }
     @media all and (min-width: 1000px) {
       .main-navigation .mobile-menu {
         display: none; } }
@@ -882,27 +904,26 @@ p.summary-description {
           color: #fff; }
         .main-navigation .mobile-menu li a:hover {
           background-color: #90c194; }
-  @media all and (max-width: 499px) {
-    .main-navigation .desktop-menu {
-      display: none; } }
   @media only screen and (min-width: 500px) and (max-width: 999px) {
     .main-navigation .desktop-menu {
-      display: block; }
-      .main-navigation .desktop-menu .menu {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around; }
-        .main-navigation .desktop-menu .menu li {
-          -ms-flex-item-align: center;
-              align-self: center; }
-    .main-navigation .hamburger {
-      font-size: 1.5rem; } }
+      display: none; } }
+  @media all and (min-width: 1000px) {
+    .main-navigation .desktop-menu .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      padding: 1rem 0 0 0; }
+      .main-navigation .desktop-menu .menu li {
+        padding: 1rem 1rem; } }
   @media all and (max-width: 499px) {
     .main-navigation .hidden-menu {
       display: none; } }
   @media only screen and (min-width: 500px) and (max-width: 999px) {
+    .main-navigation .hidden-menu {
+      display: none; } }
+  @media all and (min-width: 1000px) {
     .main-navigation .hidden-menu {
       display: block; } }
 

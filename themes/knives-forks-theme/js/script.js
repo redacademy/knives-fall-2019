@@ -1,28 +1,25 @@
-// click the hamburger menu
-const burger = document.getElementById('hamburger');
-
-const mobileMenu = document.getElementsByClassName('mobile-menu')[0];
-// closing menu 
-const cross = document.getElementById('cross');
-
-burger.addEventListener('click', function () {
-    mobileMenu.classList.remove('hide');
-});
-
-cross.addEventListener('click', function () {
-    mobileMenu.classList.add('hide');
-});
-// opens up & display menu items
-
-//
-
-
-(function($){
-
+(function($) {
+  $(function() {
+    // when document is ready
+    // click the hamburger menu
+    const burger = $('#hamburger');
+    const mobileMenu = $('.mobile-menu');
+    // closing menu
+    const cross = $('#cross');
+    burger.click(function() {
+      mobileMenu.removeClass('hide');
+    });
+    cross.click(function() {
+      mobileMenu.addClass('hide');
+    });
+    // opens up & display menu items
+    //
     //implement styling and element's position
     $('.banner-content').css({
-        top: $('.banner').height() * 0.60
-      });
+      top: $('.banner').height() * 0.6
+    });
     $('.entry-content  ul  li:last-child()').append($('.how-btn'));
-
-})(jQuery)
+    // next button stylings for make-a-pitch
+    $('.gform_next_button').addClass('btn');
+  }); //when document is ready
+})(jQuery);

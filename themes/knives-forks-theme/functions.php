@@ -64,9 +64,7 @@ if (function_exists('acf_register_block_type')) {
 	add_action('acf/init', 'register_acf_block_types');
 }
 
-//gravity forms
 
-//gravity_form( 1, $display_title = false, $display_description = false, $display_inactive = false, $field_values = null, $ajax = false, $tabindex, $echo = true );
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -118,10 +116,10 @@ function red_starter_scripts()
 	wp_enqueue_style('font-style', 'https://fonts.googleapis.com/css?family=Lato:400,700|Lora:400,700&display=swap');
 	wp_enqueue_style('style', get_template_directory_uri() . '/build/css/style.min.css');
 	wp_enqueue_style('flickity-styles', 'https://npmcdn.com/flickity@2/dist/flickity.css');
-	
-	wp_enqueue_script('flickity-scripts','https://npmcdn.com/flickity@2/dist/flickity.pkgd.js', array(),false, true);
-	wp_enqueue_script('for-plugins', get_template_directory_uri() . '/build/js/for_plugins.min.js', array(), false, true);
-	wp_enqueue_script('script', get_template_directory_uri() . '/build/js/script.min.js', array(), '20151215', true);
+
+	wp_enqueue_script('flickity-scripts', 'https://npmcdn.com/flickity@2/dist/flickity.pkgd.js', array(), false, true);
+	wp_enqueue_script('for-plugins', get_template_directory_uri() . '/build/js/for_plugins.min.js', array('jquery'), false, true);
+	wp_enqueue_script('script', get_template_directory_uri() . '/build/js/script.min.js', array('jquery'), '20151215', true);
 	wp_enqueue_script('red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true);
 	wp_enqueue_script('red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true);
 	wp_enqueue_style('red-starter-font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');

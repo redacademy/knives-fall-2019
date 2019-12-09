@@ -1,0 +1,22 @@
+#gform_2 {
+  display: flex;
+  .gf_page_steps {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+    width: 33%;
+  }
+  .gform_body {
+    width: 33%;
+    padding: 10px;
+  }
+  .validation_error {
+    display: none;
+  }
+  &::after {
+    content: 'asdasdasda';
+    background-color: blue;
+    width: 33%;
+    height: 200px;
+  }
+}

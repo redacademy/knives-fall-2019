@@ -17,7 +17,9 @@
 }
 
 @include desktop {
-  background: url('../../assets/events-images/coffee-cup.png');
+  body {
+    background: url('../../assets/events-images/coffee-cup.png');
+  }
 }
 
 .upcoming-events {

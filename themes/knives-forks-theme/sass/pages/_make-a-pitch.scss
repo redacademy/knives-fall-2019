@@ -7,10 +7,16 @@
     width: 33%;
   }
   .gform_body {
-    width: 67%;
+    width: 33%;
     padding: 10px;
   }
   .validation_error {
     display: none;
+  }
+  &::after {
+    content: 'asdasdasda';
+    background-color: blue;
+    width: 33%;
+    height: 200px;
   }
 }

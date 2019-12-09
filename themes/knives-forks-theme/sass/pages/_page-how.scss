@@ -5,7 +5,7 @@
     height: 100vmax;
     overflow: hidden;
     position: relative;
-    border: 1px dotted red;
+    // border: 1px dotted red;
   }
   .banner .banner-img img {
     object-fit: fill;
@@ -16,29 +16,69 @@
   }
   .banner .banner-content {
     width: 80%;
-    top: calc(48em - 100%);
+    // top: calc(80rem - 100%);
     h2 {
-      font-size: calc((8vh - 100%) - 1vmin);
+      font-size: 1.5rem;
+    }
+  }
+  .how-icons{
+    display: none;
+  }
+  .site-main{
+    padding:0 5%;
+  }
+  article{
+    line-height: 1.5;
+    .how-icons{
+      display:block;
+      width: 80%;
+      height: auto;
+      margin: 5% auto;
+    }
+    .entry-title{
+      font-size:2rem;
+    }
+    .entry-description{
+      font-size:1.8rem;
+    }
+    p{
+      font-size:1rem;
+      text-align: justify;
+    }
+    .how-count{
+      font-size:4rem;
+      color:$secondary_orange_med;
+      margin:0;
+
+    }
+    .how-title{
+      font-size:1.2rem;
+    }
+    .entry-content{
+      ul{
+        display:flex;
+        flex-flow:column nowrap;
+        align-items: center;
+        align-content: center;
+        li{
+          .how-btn{
+            display:block;
+            width:90%;
+            margin:5% auto;
+            text-align: center;
+          }
+        }
+      }
     }
   }
 }
+
 @include desktop {
   //************How it Works CONTENTS AREA
   .article-content {
     // padding-bottom: 5%;
     overflow: hidden;
     position: relative;
-  }
-  .entry-header {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row nowrap;
-    position: relative;
-    padding-bottom: 5vh;
-    nav {
-      width: 60%;
-    }
     .how-icons {
       right: 0;
       top: 13%;
@@ -49,7 +89,21 @@
       position: absolute;
       background: white;
       border-radius: 2em;
+      display: none;
     }
+  }
+  .entry-header {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    padding-bottom: 5vh;
+    
+    nav {
+      width: 60%;
+    }
+    
     .entry-title {
       font-size: 2.7rem;
     }
@@ -97,8 +151,6 @@
       width: 100%;
       height: auto;
       left: 0;
-      -o-object-fit: cover;
-      object-fit: cover;
       position: absolute;
       // top: calc(124rem - 100%);
       z-index: -1;

@@ -19,7 +19,7 @@ p.summary-description {
   max-width: 33%;
 }
 
-@mixin desktop {
+@include desktop { //found this before it was " @mixin desktop ". From that Im getting an error like, " Mixin "desktop" does not accept a content block. "
   .flex_item {
     display: flex;
     justify-content: space-between;

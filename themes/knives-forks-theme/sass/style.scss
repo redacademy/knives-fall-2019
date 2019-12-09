@@ -63,13 +63,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import 'content';
 @import 'media';
 @import 'setup';
+@import 'pages/events';
+@import 'pages/page-how';
 // @import 'page-templates';
 @import 'contact'; //DO NOT REMOVE,this is ariel's contact page
-@import 'pages/events';
-@import 'page-how';
 @import 'header';
 @import 'footer';
 @import 'information-blurbs';
+
 
 //**********other plugin styles
 @import 'flickity';

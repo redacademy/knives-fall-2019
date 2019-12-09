@@ -15,3 +15,14 @@ cross.addEventListener('click', function () {
 // opens up & display menu items
 
 //
+
+
+(function($){
+
+    //implement styling and element's position
+    $('.banner-content').css({
+        top: $('.banner').height() * 0.60
+      });
+    $('.entry-content  ul  li:last-child()').append($('.how-btn'));
+
+})(jQuery)

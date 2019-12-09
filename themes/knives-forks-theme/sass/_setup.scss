@@ -35,12 +35,12 @@ input {
     justify-content: center;
     align-content: center;
     align-items: center;
-    padding: 2% 5%;
-    top: 20vh;
+    padding: 2%;
+    // top: 20%;
     // transform: translateY(70vmin);
     h2 {
       color: white;
-      font-size: calc((5.5vw - 100%) - 1vmin);
+      font-size: calc((8vh - 100%) - 1.5vmin);
       line-height: 1.2;
       margin-left: 5%;
     }
@@ -50,4 +50,10 @@ input {
 article {
   width: 100%;
   height: inherit;
+  h2{
+    text-transform: capitalize;
+  }
+}
+.site-content{
+  margin-top:5%;
 }

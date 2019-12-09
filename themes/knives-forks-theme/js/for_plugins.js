@@ -9,4 +9,5 @@
       // 'align-items': 'center'
     });
   });
+
 })(jQuery);

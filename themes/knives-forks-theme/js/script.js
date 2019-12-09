@@ -1,20 +1,23 @@
-// click the hamburger menu
-const burger = document.getElementById('hamburger');
+(function ($) {
+    $(function () {
+        // when document is ready
+        // click the hamburger menu
+        const burger = $('#hamburger');
 
-const mobileMenu = document.getElementsByClassName('mobile-menu')[0];
-// closing menu
-const cross = document.getElementById('cross');
+        const mobileMenu = $('.mobile-menu');
+        // closing menu 
+        const cross = $('#cross');
 
-burger.addEventListener('click', function() {
-  mobileMenu.classList.remove('hide');
-});
+        burger.click(function () {
+            mobileMenu.removeClass('hide');
+        });
 
-cross.addEventListener('click', function() {
-  mobileMenu.classList.add('hide');
-});
-// opens up & display menu items
+        cross.click(function () {
+            mobileMenu.addClass('hide');
+        });
+        // opens up & display menu items
 
-//
+        //
 
 (function($) {
   //implement styling and element's position

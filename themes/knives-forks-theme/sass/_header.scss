@@ -14,9 +14,6 @@
     list-style: none;
   }
   .mobile-menu {
-    @include tablet {
-      display: none;
-    }
     @include desktop {
       display: none;
     }
@@ -54,24 +51,21 @@
   } // end of mobile menu
 
   // START OF DESKTOP MENU
-  @include mobile {
+  @include tablet {
     .desktop-menu {
       display: none;
     }
   }
-  @include tablet {
+  @include desktop {
     .desktop-menu {
-      display: block;
       .menu {
         display: flex;
         justify-content: space-around;
+        padding: $padding 0 0 0;
         li {
-          align-self: center;
+          padding: $padding $padding;
         }
       }
-    }
-    .hamburger {
-      font-size: $fontsize * 1.5;
     }
   }
   // END OF DESKTOP MENU
@@ -83,6 +77,11 @@
     }
   }
   @include tablet {
+    .hidden-menu {
+      display: none;
+    }
+  }
+  @include desktop {
     .hidden-menu {
       display: block;
     }

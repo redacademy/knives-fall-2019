@@ -64,7 +64,7 @@ h2.upcoming-events-location {
   color: $primary_green_med;
   border: 3px solid $primary_green_med;
   border-radius: 1.5em;
-  padding: 15px;
+  // padding: 15px;
   font-size: $fontsize;
   font-family: $parafont;
   font-weight: 500;
@@ -88,7 +88,7 @@ h2.upcoming-events-location {
   color: $primary_green_med;
   border: 3px solid $primary_green_med;
   border-radius: 1.5em;
-  padding: 15px;
+  // padding: 15px;
   font-size: $fontsize;
   font-family: $parafont;
   font-weight: 500;
@@ -105,6 +105,20 @@ h2.upcoming-events-location {
 
 // ///pitch summary section //
 
+.pitch-summary {
+  display: flex;
+  width: 25%;
+  margin-left: 50px;
+  flex-direction: column;
+  align-items: center;
+
+  // max-height: 50vh;
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
 .flex-item-container {
   display: flex;
   justify-content: center;
@@ -112,15 +126,6 @@ h2.upcoming-events-location {
   // width: 33%;
   // max-height: 100vh;
   flex-direction: column;
-
-  @include desktop {
-    flex-flow: row;
-  }
-}
-
-.pitch-summary {
-  width: 33%;
-  margin: 0 auto;
 }
 
 // .summary-image {
@@ -139,35 +144,62 @@ p.summary-description {
   font-size: $fontsize;
   text-align: center;
 }
-// .flex-layout {
-//   display: flex;
-//   justify-content: space-between;
-//   flex-direction: row;
-//   max-width: 33%;
-// }
 
-//   .flex_item {
-//
-//   }
-// }
+.apply-to-pitch-btn-green {
+  background: $primary_green_med;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 2em;
+  // padding: 3% 4%;
+  font-size: $fontsize;
+  font-family: $parafont;
+  text-align: center;
+  // display: flex;
+  // justify-content: center;
+  text-transform: uppercase;
+  width: 217px;
+  height: 45px;
+  text-decoration: none;
+  font-weight: 500;
+  overflow: hidden;
 
-// // .flex-layout {
-// // }
+  &:visited {
+    cursor: pointer;
+    // border: 1px solid $primary_green_dark;
+    color: white;
+    // background: white;
+  }
 
-// // // .summary-description
+  // .flex-layout {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   flex-direction: row;
+  //   max-width: 33%;
+  // }
 
-// // @include desktop() {
-// // }
+  //   .flex_item {
+  //
+  //   }
+  // }
 
-// ///past events loop
-// .past-event {
+  // // .flex-layout {
+  // // }
 
-//   .past-events-date {
+  // // // .summary-description
 
-//   }
-//  .past-events-location {
+  // // @include desktop() {
+  // // }
 
-//  }
-// .past-events-description {
+  // ///past events loop
+  // .past-event {
 
-// }
+  //   .past-events-date {
+
+  //   }
+  //  .past-events-location {
+
+  //  }
+  // .past-events-description {
+
+  // }
+}

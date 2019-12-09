@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 /**
  * The template for displaying events page.
@@ -45,10 +45,10 @@ get_header(); ?>
 			<?php // loop through the rows of data
 			while ( have_rows('pitch_summary') ) : the_row(); ?>
 
-				<!-- <div class="flex-item-container"> -->
+			<div class="flex-item-container">
 			<div class="summary-image"><img alt="Summary Icons" src="<?php the_sub_field('image'); ?>"/></div> 
  <h3 class="summary-title"><?php the_sub_field('title'); ?></h3>
-		<p class="summary-description"><?php the_sub_field('description'); ?></p>
+		<p class="summary-description"><?php the_sub_field('description'); ?></p></div>
 				
 				<!-- </div> -->
 
@@ -91,4 +91,4 @@ get_header(); ?>
 </div>
 
 <?php //get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php get_footer(); ?> -->

@@ -114,7 +114,7 @@ h2.upcoming-events-location {
   flex-direction: column;
 
   @include desktop {
-    flex-flow: row;
+    flex-direction: row;
   }
 }
 

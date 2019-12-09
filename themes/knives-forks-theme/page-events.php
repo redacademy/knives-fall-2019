@@ -1,4 +1,4 @@
-<!-- <?php
+ <?php
 
 /**
  * The template for displaying events page.
@@ -29,8 +29,8 @@ get_header(); ?>
 		</section> 
 
 			<section class="banner-links"> 
-		<button class="buy-tickets-btn"><a href="#">Buy Tickets</a>
-			<button class="apply-to-pitch-btn"><a href="#">Apply To Pitch</a>
+		<button class="buy-tickets-btn"><a class="buy-tickets-btn" href="#">Buy Tickets</a>
+			<button class="apply-to-pitch-btn"><a class="apply-to-pitch-btn"href="#">Apply To Pitch<a>
 	
 
 	</section> 
@@ -45,18 +45,21 @@ get_header(); ?>
 			<?php // loop through the rows of data
 			while ( have_rows('pitch_summary') ) : the_row(); ?>
 
-			<div class="flex-item-container">
-			<div class="summary-image"><img alt="Summary Icons" src="<?php the_sub_field('image'); ?>"/></div> 
+			<section class="flex-item-container">
+			<div class="summary-image"><img alt="Summary Icons" src="<?php the_sub_field('image'); ?>"/></div>
  <h3 class="summary-title"><?php the_sub_field('title'); ?></h3>
-		<p class="summary-description"><?php the_sub_field('description'); ?></p></div>
+		<p class="summary-description"><?php the_sub_field('description'); ?></p></section>
+
 				
 				<!-- </div> -->
 
 			<?php endwhile; ?>	
+			<div><button class="apply-to-pitch-btn-green"><a class="apply-to-pitch-btn-green" href="#">Apply To Pitch</a></div>
 		</div>	
+	 
+
 		</section>
 
-			<a href='#'>Apply To Pitch</a>
 		<?php else :
 		endif;
 		?>

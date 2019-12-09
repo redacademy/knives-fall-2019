@@ -385,6 +385,7 @@ article {
 
 .site-content {
   margin-top: 5%; }
+<<<<<<< HEAD
 
 h3.summary-title {
   font-size: 3rem;
@@ -423,6 +424,138 @@ p.summary-description {
         -ms-flex-direction: row;
             flex-direction: row; } }
 
+=======
+
+.events-banner {
+  height: 100vh;
+  background-size: center cover; }
+
+@media all and (min-width: 1000px) {
+  background: url("../../assets/events-images/coffee-cup.png"); }
+
+.upcoming-events {
+  position: center;
+  background-color: #6f8f6a;
+  padding: 40px;
+  opacity: 0.85;
+  width: 80%;
+  height: 50%;
+  top: 25%; }
+
+h1.upcoming-events-title {
+  position: relative;
+  color: #fff;
+  font-family: "Lora", serif;
+  font-style: bold;
+  font-size: 1.5em; }
+
+h2.upcoming-events-location {
+  position: relative;
+  color: #fff;
+  font-size: 1em; }
+
+.banner-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 80px; }
+
+.buy-tickets-btn {
+  background: #fff;
+  color: #378244;
+  border: 3px solid #378244;
+  border-radius: 1.5em;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.apply-to-pitch-btn {
+  background: #fff;
+  text-decoration: none;
+  color: #378244;
+  border: 3px solid #378244;
+  border-radius: 1.5em;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+.pitch-summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  margin-left: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media all and (min-width: 1000px) {
+    .pitch-summary {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+
+.flex-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+h3.summary-title {
+  font-size: 1.5em;
+  font-family: "Lora", serif, serif;
+  text-align: center;
+  font-display: bold;
+  color: black; }
+
+p.summary-description {
+  font-size: 1rem;
+  text-align: center; }
+
+.apply-to-pitch-btn-green {
+  background: #378244;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 2em;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  width: 217px;
+  height: 45px;
+  text-decoration: none;
+  font-weight: 500;
+  overflow: hidden; }
+  .apply-to-pitch-btn-green:visited {
+    cursor: pointer;
+    color: white; }
+
+>>>>>>> 5ff898cbec186d99c8d30a01f6568e62c00ce9d2
 @media all and (max-width: 499px) {
   .banner .banner-img {
     width: 100%;

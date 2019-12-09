@@ -1,13 +1,16 @@
 (function ($) {
     $(function () {
-        // when document is ready
-        // click the hamburger menu
         const burger = $('#hamburger');
 
         const mobileMenu = $('.mobile-menu');
-        // closing menu 
+
         const cross = $('#cross');
 
+        const investor = $('.menu-item-64')
+        // when document is ready
+        // click the hamburger menu
+        // closing menu 
+        // opens up & display menu items
         burger.click(function () {
             mobileMenu.removeClass('hide');
         });
@@ -15,8 +18,8 @@
         cross.click(function () {
             mobileMenu.addClass('hide');
         });
-        // opens up & display menu items
-
+        // add 
+        investor.addClass('btn');
         //
 
 

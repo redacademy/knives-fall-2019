@@ -30,7 +30,7 @@
 				<?php //if( when it's width is 600 and more ) 
 				?>
 				<!-- mobile menu -->
-				<div class="mobile-menu">
+				<div class="mobile-menu hide">
 					<i class="fas fa-times cross" id="cross"></i>
 					<?php wp_nav_menu(array('theme_location' => 'mobile', 'menu_id' => 'mobile-menu')); ?>
 				</div>

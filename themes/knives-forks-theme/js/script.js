@@ -18,7 +18,7 @@
         cross.click(function () {
             mobileMenu.addClass('hide');
         });
-        // add 
+        // add .btn to menu item
         investor.addClass('btn');
         //
 

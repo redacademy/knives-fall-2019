@@ -385,38 +385,6 @@ article {
 
 .site-content {
   margin-top: 5%; }
-.post-14 {
-  width: 100%;
-  background-color: white;
-  margin-top: 60px; }
-  @media all and (min-width: 1001px) {
-    .post-14 {
-      background: url("../../assets/background-images/contact-bg@3x.png");
-      background-size: cover; }
-      .post-14 .contact-form-container {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row; }
-      .post-14 .media-enquiries {
-        padding-left: 80px;
-        height: 130px;
-        width: 470px; }
-      .post-14 .fab {
-        color: white;
-        font-size: 20px;
-        text-align: center;
-        padding: 5px; }
-      .post-14 .contact-opportunity {
-        line-height: 1em;
-        font-size: 2em;
-        font-family: "Lora", serif;
-        text-align: left; }
-      .post-14 .asterix {
-        display: none; } }
 
 h3.summary-title {
   font-size: 3rem;
@@ -454,109 +422,6 @@ p.summary-description {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; } }
-
-.events-banner {
-  height: 100vh;
-  background-size: center cover; }
-
-@media all and (min-width: 1001px) {
-  background: url("../../assets/events-images/coffee-cup.png"); }
-
-.upcoming-events {
-  position: center;
-  background-color: #6f8f6a;
-  padding: 40px;
-  opacity: 0.85;
-  width: 80%;
-  height: 50%;
-  top: 25%; }
-
-h1.upcoming-events-title {
-  position: relative;
-  color: #fff;
-  font-family: "Lora", serif;
-  font-style: bold;
-  font-size: 1.5em; }
-
-h2.upcoming-events-location {
-  position: relative;
-  color: #fff;
-  font-size: 1em; }
-
-.banner-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding: 20px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 80px; }
-
-.buy-tickets-btn {
-  background: #fff;
-  color: #378244;
-  border: 3px solid #378244;
-  border-radius: 1.5em;
-  padding: 15px;
-  font-size: 1rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: none; }
-
-.apply-to-pitch-btn {
-  background: #fff;
-  text-decoration: none;
-  color: #378244;
-  border: 3px solid #378244;
-  border-radius: 1.5em;
-  padding: 15px;
-  font-size: 1rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  text-transform: uppercase; }
-
-.flex-item-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  @media all and (min-width: 1001px) {
-    .flex-item-container {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row;
-              flex-flow: row; } }
-
-.pitch-summary {
-  width: 33%;
-  margin: 0 auto; }
-
-h3.summary-title {
-  font-size: 1.5em;
-  font-family: "Lora", serif, serif;
-  text-align: center;
-  font-display: bold;
-  color: black; }
-
-p.summary-description {
-  font-size: 1rem;
-  text-align: center; }
 
 @media all and (max-width: 499px) {
   .banner .banner-img {
@@ -867,9 +732,6 @@ p.summary-description {
     text-align: right;
     background-color: #6f8f6a;
     width: 100%; }
-    @media only screen and (min-width: 500px) and (max-width: 999px) {
-      .main-navigation .mobile-menu {
-        display: none; } }
     @media all and (min-width: 1000px) {
       .main-navigation .mobile-menu {
         display: none; } }
@@ -891,27 +753,26 @@ p.summary-description {
           color: #fff; }
         .main-navigation .mobile-menu li a:hover {
           background-color: #90c194; }
-  @media all and (max-width: 499px) {
-    .main-navigation .desktop-menu {
-      display: none; } }
   @media only screen and (min-width: 500px) and (max-width: 999px) {
     .main-navigation .desktop-menu {
-      display: block; }
-      .main-navigation .desktop-menu .menu {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around; }
-        .main-navigation .desktop-menu .menu li {
-          -ms-flex-item-align: center;
-              align-self: center; }
-    .main-navigation .hamburger {
-      font-size: 1.5rem; } }
+      display: none; } }
+  @media all and (min-width: 1000px) {
+    .main-navigation .desktop-menu .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      padding: 1rem 0 0 0; }
+      .main-navigation .desktop-menu .menu li {
+        padding: 1rem 1rem; } }
   @media all and (max-width: 499px) {
     .main-navigation .hidden-menu {
       display: none; } }
   @media only screen and (min-width: 500px) and (max-width: 999px) {
+    .main-navigation .hidden-menu {
+      display: none; } }
+  @media all and (min-width: 1000px) {
     .main-navigation .hidden-menu {
       display: block; } }
 
@@ -1026,11 +887,7 @@ p.summary-description {
 .copy-title {
   font-weight: 600;
   font-size: 1.75rem; }
-<<<<<<< HEAD
   @media all and (min-width: 1000px) {
-=======
-  @media all and (min-width: 1001px) {
->>>>>>> 5765586ab0cb57a893c62d0194d8ccb50644bbdd
     .copy-title {
       font-size: 2.5rem; } }
 

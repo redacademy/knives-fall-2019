@@ -18,7 +18,7 @@
     width: 80%;
     // top: calc(80rem - 100%);
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   }
   .how-icons{
@@ -39,7 +39,7 @@
       font-size:2rem;
     }
     .entry-description{
-      font-size:1.8rem;
+      font-size:1.2rem;
     }
     p{
       font-size:1rem;
@@ -55,20 +55,69 @@
       font-size:1.2rem;
     }
     .entry-content{
+      .how-img{
+        width: 100%;
+        height: 15em;
+        position: absolute;
+        z-index: -1;
+        transform: translateY(-27%);
+        left:0;
+      }
       ul{
         display:flex;
         flex-flow:column nowrap;
         align-items: center;
         align-content: center;
+        padding-bottom: 66%;
         li{
           .how-btn{
             display:block;
             width:90%;
             margin:5% auto;
             text-align: center;
+            text-transform: uppercase;
+            font-size:0.8rem;
+            word-spacing: 0.3em;
+            font-weight: 400;
+            background: $primary_green_light;
+            
           }
         }
       }
+    }
+  }
+
+  .knives-fork{
+    display:none;
+  }
+
+  //**********Testimonials Area
+  .testimonials{
+    margin-top:5%;
+    nav{
+      padding: 0 5%;
+    }
+    .flickity-button{
+      display:none;
+    }
+    .profile-pic{
+      height: 9em;
+      width:9em;
+      position: relative;
+      transform: translateY(-40%);
+    }
+    p{
+      transform: translateY(-10%);
+      font-size:1.5rem;
+    }
+    .member-name{
+      font-size: 1.2rem;
+      text-align: right;
+    }
+    .member-since{
+      font-size: 1.2rem;
+      text-align: right;
+      transform: translateY(-80%);
     }
   }
 }
@@ -126,7 +175,7 @@
 
       .btn {
         margin: 0 1%;
-        width: 30%;
+        width: fit-content;
         position: relative;
         display: inline-flex;
         justify-content: center;
@@ -161,9 +210,9 @@
   .testimonials {
     padding: 0 10% 5% 10%;
     position: relative;
-    background: url('../../assets/background-images/contact-bg@3x.png');
-    background-size: cover;
-    background-position: bottom right;
+    // background: url('../../assets/background-images/contact-bg@3x.png');
+    // background-size: cover;
+    // background-position: bottom right;
     overflow: hidden;
     width: 100%;
     .site-title {
@@ -174,10 +223,10 @@
       margin: 0;
     }
     nav {
-      background: hsla(112, 18%, 41%, 0.75);
-      color: white;
-      border-radius: 1.5em;
-      text-align: center;
+      // background: hsla(112, 18%, 41%, 0.75);
+      // color: white;
+      // border-radius: 1.5em;
+      // text-align: center;
       padding: 2%;
       width: fit-content;
       margin: 0 auto;

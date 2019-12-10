@@ -6,7 +6,9 @@
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+get_header(); 
+
+?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main events-page" role="main">
@@ -17,8 +19,7 @@ get_header(); ?>
 				height: 100vh;
 			}
 		</style>
-	
-	<section class="events-banner">
+	<!-- <section class="events-banner">
 	<section class="upcoming-events">
 		<h1 class="upcoming-events-title">
 			<?php the_field('upcoming_event_title'); ?>
@@ -34,7 +35,7 @@ get_header(); ?>
 	
 
 	</section> 
-		</section>
+		</section> -->
 		
 		<div class="pitch-summary">
 <?php

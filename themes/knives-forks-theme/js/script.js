@@ -17,7 +17,7 @@
       top: $('.banner').outerHeight() * 0.5
     });
     $(document).on('click', '.btn', function(e) {
-      alert('test');
+      //alert('test');
       e.preventDefault();
     });
     const burger = $('#hamburger');
@@ -64,10 +64,34 @@
     // opens up & display menu items
     // next button stylings for make-a-pitch
     $('.gform_next_button').addClass('btn');
-    $('#gform_page_2_1').addClass('name-default');
+    const $gField = $('.gfield');
+    const $requiredField = $(`input[type='text'][aria-required='true']`);
 
-    $("#gform_2 input[type='text']").change(iconColorChange);
+    $gField.addClass('name-default');
 
+    $requiredField.change(iconColorChange);
+    //jim
+    // loop thorugh each <li> (find common selector - gifeld??)
+    // loop through <li> inputs
+    //add change event listener
+    //check val():
+    //if(val().length !==0) {
+    //$(this.'<li>').removeClass('inactive').addClass('active');
+    //}
+
+    function iconColorChange() {
+      $.each($gField, function(index, value) {
+        console.log(value);
+        $.each($requiredField, function(index, value) {
+          console.log(value);
+          if ($requiredField.val().length !== 0) {
+            $(this.$gField)
+              .removeClass('name-default')
+              .addClass('name-valid');
+          }
+        });
+      });
+    }
     //work in progress for looping through each make-a-pitch section
 
     //anvit
@@ -105,25 +129,16 @@
     //     }
     // }
 
-    //jim
-    // loop thorugh each <li> (find common selector - gifeld??)
-    // loop through <li> inputs
-    //add change event listener
-    //check val():
-    //if(val().length !==0) {
-    //$(this.'<li>').removeClass('inactive').addClass('active');
-    //}
-
-    function iconColorChange() {
-      const $firstNameVal = $('#input_2_1_3').val();
-      const $lastNameVal = $('#input_2_1_6').val();
-      // if name fields (first name, last name) !=='', $('.gform_page_2_1').addClass('name-valid')
-      if ($firstNameVal.length !== 0 && $lastNameVal.length !== 0) {
-        console.log('filled');
-        $('#gform_page_2_1')
-          .removeClass('name-default')
-          .addClass('name-valid');
-      }
-    }
+    // function iconColorChange() {
+    //   const $firstNameVal = $('#input_2_1_3').val();
+    //   const $lastNameVal = $('#input_2_1_6').val();
+    //   // if name fields (first name, last name) !=='', $('.gform_page_2_1').addClass('name-valid')
+    //   if ($firstNameVal.length !== 0 && $lastNameVal.length !== 0) {
+    //     console.log('filled');
+    //     $('.pitch-name')
+    //       .removeClass('name-default')
+    //       .addClass('name-valid');
+    //   }
+    // }
   }); //when document is ready
 })(jQuery);

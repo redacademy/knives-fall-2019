@@ -17,6 +17,7 @@
     list-style: none;
   }
   .mobile-menu {
+    font-family: $parafont;
     @include desktop {
       display: none;
     }

@@ -822,6 +822,7 @@ p.summary-description {
   .main-navigation .menu li {
     list-style: none; }
   .main-navigation .mobile-menu {
+    font-family: "Lato", sans-serif;
     z-index: 2;
     position: absolute;
     right: 0;

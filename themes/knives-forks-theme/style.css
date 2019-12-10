@@ -387,11 +387,14 @@ article {
   margin-top: 5%; }
 
 .events-banner {
+  background: url("../../assets/events-images/event-hero@3x.png") no-repeat;
   height: 100vh;
-  background-size: center cover; }
-
-@media all and (min-width: 1000px) {
-  background: url("../../assets/events-images/coffee-cup.png"); }
+  background: contain;
+  background-position: bottom center; }
+  @media all and (min-width: 1000px) {
+    .events-banner {
+      background-image: url("../../assets/events-images/coffee-cup.jpg");
+      background: contain center; } }
 
 .upcoming-events {
   position: center;
@@ -427,7 +430,7 @@ h2.upcoming-events-location {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 80px; }
+  min-width: 1vw; }
 
 .buy-tickets-btn {
   background: #fff;
@@ -438,7 +441,10 @@ h2.upcoming-events-location {
   font-family: "Lato", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  margin: 2% 28%;
+  padding: 12px;
+  max-width: 34vw; }
 
 .apply-to-pitch-btn {
   background: #fff;
@@ -449,13 +455,30 @@ h2.upcoming-events-location {
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   font-weight: 500;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 2% 28%;
+  padding: 12px;
+  max-width: 34vw;
+  position: relative; }
+
+.video-section {
+  background: rgba(242, 144, 97, 0.17);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 75px;
+  background-size: 50%; }
+
+.controlsContainer {
+  --clickToPlay-size: 108px; }
 
 .pitch-summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 25%;
   margin-left: 50px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -463,7 +486,9 @@ h2.upcoming-events-location {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  width: 100%vw;
+  text-align: center; }
   @media all and (min-width: 1000px) {
     .pitch-summary {
       -webkit-box-orient: horizontal;
@@ -481,6 +506,7 @@ h2.upcoming-events-location {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 60px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -496,6 +522,14 @@ h3.summary-title {
 p.summary-description {
   font-size: 1rem;
   text-align: center; }
+
+.apply-to-pitch-btn-green-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .apply-to-pitch-btn-green {
   background: #378244;
@@ -707,6 +741,53 @@ p.summary-description {
         font-family: "Lato", sans-serif;
         font-size: 20px;
         text-align: right; } }
+
+#gform_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  #gform_2 .gf_page_steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-right: 1px solid black;
+    width: 33%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; }
+  #gform_2 .gform_body {
+    width: 33%;
+    padding: 10px; }
+  #gform_2 .name-default::after {
+    background-image: url("../../assets/icons/Forms - Unfilled/unfilled-name.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 200px;
+    content: 'abc';
+    font-size: 10rem;
+    color: rgba(0, 0, 0, 0);
+    position: relative;
+    top: -200px;
+    right: -400px; }
+  #gform_2 .name-valid::after {
+    background-image: url("../../assets/icons/Forms - filled/filled-name.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 200px;
+    content: 'abc';
+    font-size: 10rem;
+    color: rgba(0, 0, 0, 0);
+    position: relative;
+    top: -200px;
+    right: -400px; }
+  #gform_2 .validation_error {
+    display: none; }
 
 .post-14 {
   width: 100%;

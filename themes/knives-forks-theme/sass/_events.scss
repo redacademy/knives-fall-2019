@@ -67,7 +67,8 @@ h2.upcoming-events-location {
   text-decoration: none;
   margin: 2% 28%;
   padding: 12px;
-  max-width: 34vw;
+  width: 200px;
+  white-space: no-wrap;
 }
 
 // &:hover {
@@ -95,25 +96,44 @@ h2.upcoming-events-location {
   padding: 12px;
   max-width: 34vw;
   position: relative;
+  width: 200px;
+  white-space: no-wrap;
 }
 
 ///video section styling
 
+///TO DO change the control button
+
 .video-section {
-  background: rgba(242, 144, 97, 0.17);
-  // background-size: 75%;
+  position: relative;
   display: flex;
   justify-content: center;
   top: 75px;
-  background-size: 50%;
 }
 
-// .stackItem {
-//   width:
-// }
+.video-bg {
+  background: rgba(242, 144, 97, 0.17);
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  bottom: -20%;
+  z-index: -1;
+}
+
+.stackItem {
+  width: 20vw;
+}
 
 .controlsContainer {
+  --clickToPlay-size: 300px;
+  background-image: url(../assets/events-images/playbutton.svg);
+}
+
+.clickToPlay {
   --clickToPlay-size: 108px;
+
+  background-image: url(../assets/events-images/playbutton@2x.png);
 }
 // video {
 //   // height: 235px;
@@ -170,12 +190,10 @@ p.summary-description {
   color: white;
   border: 1px solid transparent;
   border-radius: 2em;
-  // padding: 3% 4%;
   font-size: $fontsize;
   font-family: $parafont;
   text-align: center;
-  // display: flex;
-  // justify-content: center;
+
   text-transform: uppercase;
   width: 217px;
   height: 45px;
@@ -183,43 +201,64 @@ p.summary-description {
   font-weight: 500;
   overflow: hidden;
 
-  &:visited {
-    cursor: pointer;
-    // border: 1px solid $primary_green_dark;
-    color: white;
-    // background: white;
+  // &:visited {
+  //   // cursor: pointer;
+  //   // // border: 1px solid $primary_green_dark;
+  //   // color: white;
+  //   // background: white;
+  // }
+}
+// .flex-layout {
+//   display: flex;
+//   justify-content: space-between;
+//   flex-direction: row;
+//   max-width: 33%;
+// }
+
+//   .flex_item {
+//
+//   }
+// }
+
+// // .flex-layout {
+// // }
+
+// // // .summary-description
+
+// // @include desktop() {
+// // }
+
+/////past events
+
+.past-events-container {
+  img {
+    width: 100vh;
+    align-items: center;
   }
+}
 
-  // .flex-layout {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   flex-direction: row;
-  //   max-width: 33%;
-  // }
+.past-events-container {
+  display: flex;
+  justify-content: center;
+  padding: 20%;
+  margin: 0 auto;
+  position: relative;
+}
 
-  //   .flex_item {
-  //
-  //   }
-  // }
-
-  // // .flex-layout {
-  // // }
-
-  // // // .summary-description
-
-  // // @include desktop() {
-  // // }
-
-  // ///past events loop
-  // .past-event {
-
-  //   .past-events-date {
-
-  //   }
-  //  .past-events-location {
-
-  //  }
-  // .past-events-description {
-
-  // }
+.past-events-date {
+  font-size: 1.75em;
+  text-align: center;
+  line-height: 1em;
+  padding-top: 0;
+}
+.past-events-location {
+  color: $primary_green_med;
+  font-size: 1.5em;
+  text-align: center;
+}
+.past-events-description {
+  font-size: $fontsize;
+  margin: 5% 5%;
+  line-height: $fontsize;
+  text-align: center;
 }

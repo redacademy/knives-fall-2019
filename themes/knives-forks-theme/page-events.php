@@ -20,6 +20,9 @@ get_header();
 			}
 		</style>
 	<!-- <section class="events-banner">
+	
+	
+	<section class="events-banner">
 	<section class="upcoming-events">
 		<h1 class="upcoming-events-title">
 			<?php the_field('upcoming_event_title'); ?>
@@ -30,8 +33,8 @@ get_header();
 		</section> 
 
 			<section class="banner-links"> 
-		<button class="buy-tickets-btn"><a class="buy-tickets-btn" href="#">Buy Tickets</a>
-			<button class="apply-to-pitch-btn"><a class="apply-to-pitch-btn"href="#">Apply To Pitch<a>
+		<button class="buy-tickets-btn">Buy Tickets</button>
+			<button class="apply-to-pitch-btn">Apply To Pitch</button>
 	
 
 	</section> 
@@ -48,15 +51,18 @@ get_header();
 
 			<section class="flex-item-container">
 			<div class="summary-image"><img alt="Summary Icons" src="<?php the_sub_field('image'); ?>"/></div>
- <h3 class="summary-title"><?php the_sub_field('title'); ?></h3>
+ 
+		<div><h3 class="summary-title"><?php the_sub_field('title'); ?></h3>
 		<p class="summary-description"><?php the_sub_field('description'); ?></p></section>
 
 				
 				<!-- </div> -->
 
 			<?php endwhile; ?>	
-			<div><button class="apply-to-pitch-btn-green"><a class="apply-to-pitch-btn-green" href="#">Apply To Pitch</a></div>
+		
+
 		</div>	
+		<div class="apply-to-pitch-btn-green-flex"><button class="apply-to-pitch-btn-green">Apply To Pitch</button></div>
 	 
 
 		</section>
@@ -66,7 +72,8 @@ get_header();
 		?>
 
 		<section class="video-section">
-			<video width="320" height="240" controls>
+		<video controls poster="<?= get_template_directory_uri(); ?>/assets/events-images/event-video@3x.png">
+
 				<source src="<?php the_field('video'); ?>" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>

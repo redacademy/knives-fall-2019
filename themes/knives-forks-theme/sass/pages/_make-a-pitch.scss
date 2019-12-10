@@ -5,18 +5,48 @@
     flex-direction: column;
     border-right: 1px solid black;
     width: 33%;
+    position: sticky;
+    top: 0;
   }
   .gform_body {
     width: 33%;
     padding: 10px;
+    // .gform_page {
+    //   &::after {
+    //     background-image: url('../../assets/icons/Forms - Unfilled/unfilled-application.svg');
+    //     width: 200px;
+    //     height: 200px;
+    //     content: '';
+    //   }
+    // }
+  }
+  .name-default::after {
+    background-image: url('../../assets/icons/Forms - Unfilled/unfilled-name.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 200px;
+    content: 'abc';
+    font-size: 10rem;
+    color: rgba(0, 0, 0, 0);
+    position: relative;
+    top: -200px;
+    right: -400px;
+  }
+  .name-valid::after {
+    background-image: url('../../assets/icons/Forms - filled/filled-name.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 200px;
+    content: 'abc';
+    font-size: 10rem;
+    color: rgba(0, 0, 0, 0);
+    position: relative;
+    top: -200px;
+    right: -400px;
   }
   .validation_error {
     display: none;
-  }
-  &::after {
-    content: 'asdasdasda';
-    background-color: blue;
-    width: 33%;
-    height: 200px;
   }
 }

@@ -25,7 +25,7 @@
 		<header id="masthead" class="site-header" role="banner">
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<a href="<?php bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo/knives-forks-logo.svg" alt="logo"></a>
+				<a class="home-logo" href="<?php bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo/knives-forks-logo.svg" alt="logo"></a>
 				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('mobile menu'); ?></button> -->
 				<?php //if( when it's width is 600 and more ) 
 				?>
@@ -40,8 +40,8 @@
 				</div>
 				<i class="fas fa-bars hamburger" id="hamburger"></i>
 				<!-- hidden menu -->
-				<div class="hidden-menu">
-					<!-- <i class="fas fa-times"></i> -->
+				<div class="hidden-menu hide">
+					<i class="fas fa-times cross" id="hid-cross"></i>
 					<?php wp_nav_menu(array('theme_location' => 'hidden', 'menu_id' => 'hidden-menu')); ?>
 				</div>
 

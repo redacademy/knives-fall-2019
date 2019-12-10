@@ -6,11 +6,20 @@
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+get_header(); 
+
+?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main events-page" role="main">
 		
+		<style>
+			.events-banner {
+				background: url('<?php the_field("events_page_banner_image"); ?>') no-repeat center center/cover;
+				height: 100vh;
+			}
+		</style>
+	<!-- <section class="events-banner">
 	
 	
 	<section class="events-banner">
@@ -29,7 +38,7 @@ get_header(); ?>
 	
 
 	</section> 
-		</section>
+		</section> -->
 		
 		<div class="pitch-summary">
 <?php

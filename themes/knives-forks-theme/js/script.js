@@ -6,15 +6,6 @@
     // when document is ready
     // click the hamburger menu
     // closing menu
-    burger.click(function() {
-      mobileMenu.removeClass('hide');
-    });
-    cross.click(function() {
-      mobileMenu.addClass('hide');
-    });
-    // opens up & display menu items
-    //
-    //implement styling and element's position
 
     if ($userWidth <= 499) {
       //**********************************for MOBILE

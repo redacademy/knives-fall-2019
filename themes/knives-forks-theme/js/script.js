@@ -64,6 +64,7 @@
     // opens up & display menu items
     // next button stylings for make-a-pitch
     $('.gform_next_button').addClass('btn');
+    $('.gform_previous_button').addClass('btn');
     const $gField = $('.gfield');
     const $requiredField = $(`input[type='text'][aria-required='true']`);
 

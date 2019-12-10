@@ -521,21 +521,20 @@ h2.upcoming-events-location {
           -ms-flex-direction: row;
               flex-direction: row; } }
 
+.summary-image img {
+  max-width: 100%;
+  height: auto; }
+
 .flex-item-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 60px;
+  margin: 0 60px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  height: 60vh; }
 
 h3.summary-title {
   font-size: 1.5em;
@@ -546,7 +545,8 @@ h3.summary-title {
 
 p.summary-description {
   font-size: 1rem;
-  text-align: center; }
+  text-align: center;
+  max-width: 500px; }
 
 .apply-to-pitch-btn-green-flex {
   display: -webkit-box;

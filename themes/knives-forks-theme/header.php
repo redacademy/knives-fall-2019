@@ -40,8 +40,8 @@
 				</div>
 				<i class="fas fa-bars hamburger" id="hamburger"></i>
 				<!-- hidden menu -->
-				<div class="hidden-menu">
-					<!-- <i class="fas fa-times"></i> -->
+				<div class="hidden-menu hide">
+					<i class="fas fa-times cross" id="hid-cross"></i>
 					<?php wp_nav_menu(array('theme_location' => 'hidden', 'menu_id' => 'hidden-menu')); ?>
 				</div>
 

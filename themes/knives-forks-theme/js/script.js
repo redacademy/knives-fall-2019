@@ -27,8 +27,12 @@
         hidCross.click(function () {
             hiddenMenu.addClass('hide');
         });
+
         // add .btn to menu item
         investor.addClass('btn');
+        
+        // create a new list item for the hidden menu and link to our investments
+        navHiddenMenu.prepend('<li><a href="#investments">Our Investments</a></li>')
 
 
 

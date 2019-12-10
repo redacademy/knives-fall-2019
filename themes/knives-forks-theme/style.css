@@ -391,8 +391,7 @@ article {
   background-size: center cover; }
 
 @media all and (min-width: 1000px) {
-  body {
-    background: url("../../assets/events-images/coffee-cup.png"); } }
+  background: url("../../assets/events-images/coffee-cup.jpg"); }
 
 .upcoming-events {
   position: center;
@@ -722,17 +721,39 @@ p.summary-description {
         -ms-flex-direction: column;
             flex-direction: column;
     border-right: 1px solid black;
-    width: 33%; }
+    width: 33%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; }
   #gform_2 .gform_body {
     width: 33%;
     padding: 10px; }
+  #gform_2 .name-default::after {
+    background-image: url("../../assets/icons/Forms - Unfilled/unfilled-name.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 200px;
+    content: 'abc';
+    font-size: 10rem;
+    color: rgba(0, 0, 0, 0);
+    position: relative;
+    top: -200px;
+    right: -400px; }
+  #gform_2 .name-valid::after {
+    background-image: url("../../assets/icons/Forms - filled/filled-name.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 200px;
+    content: 'abc';
+    font-size: 10rem;
+    color: rgba(0, 0, 0, 0);
+    position: relative;
+    top: -200px;
+    right: -400px; }
   #gform_2 .validation_error {
     display: none; }
-  #gform_2::after {
-    content: 'asdasdasda';
-    background-color: blue;
-    width: 33%;
-    height: 200px; }
 
 .post-14 {
   width: 100%;

@@ -883,6 +883,7 @@ p.summary-description {
       display: none; } }
   @media all and (min-width: 1000px) {
     .main-navigation .hidden-menu {
+      font-family: "Lato", sans-serif;
       z-index: 2;
       position: absolute;
       right: 0;

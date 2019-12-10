@@ -104,6 +104,7 @@
   }
   @include desktop {
     .hidden-menu {
+      font-family: $parafont;
       .cross {
         //exits mobile menu
         padding: $padding;

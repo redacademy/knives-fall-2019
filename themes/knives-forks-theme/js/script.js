@@ -33,8 +33,8 @@
       '<li><a href="#investment">Our Investment</a></li>'
     );
     const navHiddenMenu = $('#hidden-menu');
-    const investor = $('.menu-item-64');
-
+    // const investor = $('.menu-item-64'); //local
+    const investor = $('.menu-item-181'); //staging
     // when document is ready
     // click the hamburger menu
     // closing menu
@@ -64,12 +64,13 @@
     // opens up & display menu items
     // next button stylings for make-a-pitch
     $('.gform_next_button').addClass('btn');
+    $('.gform_previous_button').addClass('btn');
     const $gField = $('.gfield');
-    const $requiredField = $(`input[type='text'][aria-required='true']`);
+    //const $requiredField = $(`input[type='text'][aria-required='true']`);
 
-    $gField.addClass('name-default');
+    $gField.addClass('icon-default');
 
-    $requiredField.change(iconColorChange);
+    //$requiredField.change(iconColorChange);
     //jim
     // loop thorugh each <li> (find common selector - gifeld??)
     // loop through <li> inputs
@@ -79,66 +80,49 @@
     //$(this.'<li>').removeClass('inactive').addClass('active');
     //}
 
-    function iconColorChange() {
-      $.each($gField, function(index, value) {
-        console.log(value);
-        $.each($requiredField, function(index, value) {
-          console.log(value);
-          if ($requiredField.val().length !== 0) {
-            $(this.$gField)
-              .removeClass('name-default')
-              .addClass('name-valid');
-          }
-        });
+    // function iconColorChange() {
+    //   $.each($gField, function(index, value) {
+    //     console.log(value);
+    //     $.each($requiredField, function(index, value) {
+    //       console.log(value);
+    //       if ($requiredField.val().length !== 0) {
+    //         $(this.$gField)
+    //           .removeClass('name-default')
+    //           .addClass('name-valid');
+    //       }
+    //     });
+    //   });
+    // }
+
+    $.each($('.gfield'), function(index, value) {
+      const group = value;
+      const $inputs = $(this).children('input');
+      console.log($inputs);
+      $inputs.on('keyup', function() {
+        if ($(this).val() !== '') {
+          $(this).addClass('filled');
+          console.log('filled');
+        } else {
+          $(this).removeClass('filled');
+        }
+        checkInputs();
       });
-    }
+
+      function checkInputs() {
+        if ($(group).children('.filled').length === $inputs.length) {
+          $(group)
+            .removeClass('icon-default')
+            .addClass('icon-complete');
+        } else {
+          $(group).removeClass('icon-complete');
+        }
+      }
+    });
     //work in progress for looping through each make-a-pitch section
 
     //anvit
     // for (let i = 0; i < myValidation.length; i++) {
     //     const element = myValidation[i];
     //     $(element.className + ' input[type="text"]').change(element, fn);
-
-    // }
-    //myValidation [
-    //{'pitch-name'}: {
-    //valid: {}
-    //invalid: {}
-    //validation: {
-    //valid: ['', '', '']
-    //invalid: ['', '']
-    //}
-    //]
-    //{'pitch-email'}:
-    //}
-    // function fn(element) {
-    //     let flag = true;
-    //     for (let i = 0; i < element.value.validation.length; i++) {
-    //         const field = element.value.validation[i];
-    //         const $elem = $(element.className + " [aria-label=" + field + "]");
-    //         if (!$elem.length) {
-    //             flag = false;
-    //         }
-    //     }
-    //     if(flag === false) {
-    //         /// apply invalid class
-    //         // $('className).addClass('x-default')
-    //     } else {
-    //         // apply the valid class
-    //         // $('className').removeClass('x-default'). addClass('x-valid')
-    //     }
-    // }
-
-    // function iconColorChange() {
-    //   const $firstNameVal = $('#input_2_1_3').val();
-    //   const $lastNameVal = $('#input_2_1_6').val();
-    //   // if name fields (first name, last name) !=='', $('.gform_page_2_1').addClass('name-valid')
-    //   if ($firstNameVal.length !== 0 && $lastNameVal.length !== 0) {
-    //     console.log('filled');
-    //     $('.pitch-name')
-    //       .removeClass('name-default')
-    //       .addClass('name-valid');
-    //   }
-    // }
   }); //when document is ready
 })(jQuery);

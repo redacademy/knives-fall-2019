@@ -1,21 +1,23 @@
-.site-header {
-  position: relative;
-}
 .main-navigation {
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-  //box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
-  box-shadow: 0 1rem 2rem #fff;
-  z-index: $zdex + 99; // z-index for main-navigation
-  position: fixed;
+  position: fixed; //put parent
   top: 0;
+  background-color: #fff;
   width: 100%;
-  height: 45%;
-  padding: 2rem 0 0 0;
+  z-index: $zdex + 99;
+  // box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+  box-shadow: 0 1rem 2rem #fff;
+  .nav-container {
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: $padding * 2 0 0;
+  }
 
   .home-logo {
     flex-grow: 1;
+    img {
+      width: 230px;
+    }
   }
   .hamburger {
     font-size: $fontsize * 2;

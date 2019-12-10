@@ -28,7 +28,7 @@
     //   }
     // }
   }
-  .name-default::after {
+  .icon-default::after {
     background-image: url('../../assets/icons/Forms - Unfilled/unfilled-name.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -41,7 +41,7 @@
     top: -100px;
     right: -400px;
   }
-  .name-valid::after {
+  .icon-complete::after {
     background-image: url('../../assets/icons/Forms - filled/filled-name.svg');
     background-size: contain;
     background-repeat: no-repeat;

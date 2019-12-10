@@ -856,6 +856,9 @@ h2.past-events-title {
         font-size: 20px;
         text-align: right; } }
 
+.page-apply-to-pitch .site-content {
+  margin-top: 0; }
+
 #gform_2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -886,7 +889,7 @@ h2.past-events-title {
     font-size: 10rem;
     color: rgba(0, 0, 0, 0);
     position: relative;
-    top: -200px;
+    top: -100px;
     right: -400px; }
   #gform_2 .name-valid::after {
     background-image: url("../../assets/icons/Forms - filled/filled-name.svg");
@@ -898,7 +901,7 @@ h2.past-events-title {
     font-size: 10rem;
     color: rgba(0, 0, 0, 0);
     position: relative;
-    top: -200px;
+    top: -100px;
     right: -400px; }
   #gform_2 .validation_error {
     display: none; }
@@ -1275,7 +1278,7 @@ h2.past-events-title {
       display: block;
       position: relative;
       bottom: -75px;
-      width: 150px;
+      width: 160px;
       margin: auto;
       text-align: center; }
       @media only screen and (min-width: 500px) and (max-width: 999px) {
@@ -1289,7 +1292,7 @@ h2.past-events-title {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
-    width: 60%;
+    width: 70%;
     position: relative;
     top: -50px; }
     @media all and (min-width: 1000px) {
@@ -1329,10 +1332,10 @@ h2.past-events-title {
       -webkit-box-ordinal-group: 1;
           -ms-flex-order: 0;
               order: 0;
-      right: -37.5%; }
+      right: -27%; }
       @media only screen and (min-width: 500px) and (max-width: 999px) {
         .custom-copy-block.copy-image .copy-block-image {
-          right: -38.25%; } }
+          right: -28%; } }
       @media all and (min-width: 1000px) {
         .custom-copy-block.copy-image .copy-block-image {
           -webkit-box-ordinal-group: 2;

@@ -152,7 +152,7 @@
       display: block;
       position: relative;
       bottom: -75px;
-      width: 150px;
+      width: 160px;
       margin: auto;
       text-align: center;
 
@@ -167,7 +167,7 @@
   }
   .copy-block-image {
     order: 0;
-    width: 60%;
+    width: 70%;
     position: relative;
     top: -50px;
     @include desktop {
@@ -210,9 +210,9 @@
     }
     .copy-block-image {
       order: 0;
-      right: -37.5%;
+      right: -27%;
       @include tablet {
-        right: -38.25%;
+        right: -28%;
       }
       @include desktop {
         order: 1;

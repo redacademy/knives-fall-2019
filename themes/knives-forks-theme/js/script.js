@@ -9,7 +9,8 @@
         const cross = $('#cross');
         const hidCross = $('#hid-cross');
 
-        const navHiddenMenu = $('#hidden-menu')
+        const pendInvestment = $('<li><a href="#investment">Our Investment</a></li>');
+        const navHiddenMenu = $('#hidden-menu');
         const investor = $('.menu-item-64');
 
         // when document is ready
@@ -30,10 +31,10 @@
 
         // add .btn to menu item
         investor.addClass('btn');
-        
         // create a new list item for the hidden menu and link to our investments
         navHiddenMenu.prepend('<li><a href="#investments">Our Investments</a></li>')
-
+        // create new list item after <li> events
+        pendInvestment.insertAfter('.menu-item-45');
 
 
 

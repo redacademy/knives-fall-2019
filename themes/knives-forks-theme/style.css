@@ -879,7 +879,7 @@ h2.past-events-title {
   #gform_2 .gform_body {
     width: 33%;
     padding: 10px; }
-  #gform_2 .name-default::after {
+  #gform_2 .icon-default::after {
     background-image: url("../../assets/icons/Forms - Unfilled/unfilled-name.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -891,7 +891,7 @@ h2.past-events-title {
     position: relative;
     top: -100px;
     right: -400px; }
-  #gform_2 .name-valid::after {
+  #gform_2 .icon-complete::after {
     background-image: url("../../assets/icons/Forms - filled/filled-name.svg");
     background-size: contain;
     background-repeat: no-repeat;

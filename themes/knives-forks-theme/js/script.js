@@ -66,11 +66,11 @@
     $('.gform_next_button').addClass('btn');
     $('.gform_previous_button').addClass('btn');
     const $gField = $('.gfield');
-    const $requiredField = $(`input[type='text'][aria-required='true']`);
+    //const $requiredField = $(`input[type='text'][aria-required='true']`);
 
-    $gField.addClass('name-default');
+    $gField.addClass('icon-default');
 
-    $requiredField.change(iconColorChange);
+    //$requiredField.change(iconColorChange);
     //jim
     // loop thorugh each <li> (find common selector - gifeld??)
     // loop through <li> inputs
@@ -80,19 +80,44 @@
     //$(this.'<li>').removeClass('inactive').addClass('active');
     //}
 
-    function iconColorChange() {
-      $.each($gField, function(index, value) {
-        console.log(value);
-        $.each($requiredField, function(index, value) {
-          console.log(value);
-          if ($requiredField.val().length !== 0) {
-            $(this.$gField)
-              .removeClass('name-default')
-              .addClass('name-valid');
-          }
-        });
+    // function iconColorChange() {
+    //   $.each($gField, function(index, value) {
+    //     console.log(value);
+    //     $.each($requiredField, function(index, value) {
+    //       console.log(value);
+    //       if ($requiredField.val().length !== 0) {
+    //         $(this.$gField)
+    //           .removeClass('name-default')
+    //           .addClass('name-valid');
+    //       }
+    //     });
+    //   });
+    // }
+
+    $.each($('.gfield'), function(index, value) {
+      const group = value;
+      const $inputs = $(this).children('input');
+      console.log($inputs);
+      $inputs.on('keyup', function() {
+        if ($(this).val() !== '') {
+          $(this).addClass('filled');
+          console.log('filled');
+        } else {
+          $(this).removeClass('filled');
+        }
+        checkInputs();
       });
-    }
+
+      function checkInputs() {
+        if ($(group).children('.filled').length === $inputs.length) {
+          $(group)
+            .removeClass('icon-default')
+            .addClass('icon-complete');
+        } else {
+          $(group).removeClass('icon-complete');
+        }
+      }
+    });
     //work in progress for looping through each make-a-pitch section
 
     //anvit

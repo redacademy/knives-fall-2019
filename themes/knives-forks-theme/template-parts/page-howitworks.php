@@ -1,5 +1,6 @@
 <?php
-$arrays=acf_get_fields('group_5de6dbd4e92e1');
+// $arrays=acf_get_fields('group_5de6dbd4e92e1');
+$arrays=get_field('steps');
 $args=array(
     'post_type'=>'member_testimonial',
     'numberposts'=>-1,
@@ -9,10 +10,10 @@ $args=array(
 
 $testimonials=get_posts($args);
 
-    // echo '<pre>';
-    // echo var_dump($testimonials);
+//     echo '<pre>';
+//     echo print_r($arrays);
     
-    // echo '</pre>';
+//     echo '</pre>';
     
 ?>
 
@@ -32,36 +33,44 @@ $testimonials=get_posts($args);
             
         </nav>
         
-            <img src="<?=get_field('how-icons')?>" alt="how-it-works-icons" class="how-icons">
      
 	</header><!-- .entry-header -->
     
 	<div class="entry-content">
 		<nav>
-            <ul>
+            <ul class="steps-list">
                 <?php
                 $tmp='';
                 $tmpCount=1;
-                    foreach($arrays as $x){
-                        if($x['name']=='how-icons' ||$x['name']=='how-img' ){
-                            continue;
+                    if(have_rows('steps')){
+                        while(have_rows('steps')){
+                            the_row();
+                            
+                            
+                            // $img=is_null(get_sub_field('step-icon'))?null:get_sub_field('step-icon');
+                            $img=get_sub_field('step-icon');
+                            $tmpClass=($img)?'':'hide-this';
+                            // var_dump($img);
+                            $tmp.='<li>
+                            <h3 class="how-count">'. $tmpCount .'</h3>
+                            <p class="how-title"><b>'. get_sub_field('step-title') .'</b></p>
+                            <p class="how-description">
+                            '. get_sub_field('step-content') .'
+                            </p>';
+                            $tmp.='<img src="'. $img.'" alt="knives forks icons" class="how-icons '. $tmpClass .'">';
+                           
+
+                            $tmp.='</li>';
+                            $tmpCount++;
                         }
-                        $tmp.='<li>
-                        <h3 class="how-count">'.$tmpCount.'
-                        </h3>
-                        <p class="how-title"><b>'.$x['prepend'].'</b></p>
-                        <p class="how-description">
-                        '.$x['placeholder'].'
-                        </p>
-                        </li>';
-                        $tmpCount++;
+                    
                     }
                     echo $tmp;
                 ?>
             </ul>
            
-            <a href="#" class="btn">Become a Member</a>
-            <a href="#" class="btn">Become an Entrepreneur</a>
+            <a href="#" class="btn how-btn">Become a Member</a>
+            <a href="#" class="btn how-btn">Become Entrepreneur</a>
         </nav>
         <img src="<?=get_field('how-img')?>" alt="how-it-works-hands" class="how-img">
     </div><!-- .entry-content -->
@@ -70,7 +79,7 @@ $testimonials=get_posts($args);
 </article><!-- #post-## -->
 <!--section for TESTIMONY GUY-->
 <section class="testimonials">
-         <h1 class="site-title">
+         <h1 class="site-title knives-fork">
                 <?=get_bloginfo('title')?>
          </h1>
          <?php

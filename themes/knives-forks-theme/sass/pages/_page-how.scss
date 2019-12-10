@@ -5,7 +5,7 @@
     height: 100vmax;
     overflow: hidden;
     position: relative;
-    border: 1px dotted red;
+    // border: 1px dotted red;
   }
   .banner .banner-img img {
     object-fit: fill;
@@ -16,29 +16,118 @@
   }
   .banner .banner-content {
     width: 80%;
-    top: calc(48em - 100%);
+    // top: calc(80rem - 100%);
     h2 {
-      font-size: calc((8vh - 100%) - 1vmin);
+      font-size: 1.2rem;
+    }
+  }
+  .how-icons{
+    display: none;
+  }
+  .site-main{
+    padding:0 5%;
+  }
+  article{
+    line-height: 1.5;
+    .how-icons{
+      display:block;
+      width: 80%;
+      height: auto;
+      margin: 5% auto;
+    }
+    .entry-title{
+      font-size:2rem;
+    }
+    .entry-description{
+      font-size:1.2rem;
+    }
+    p{
+      font-size:1rem;
+      text-align: justify;
+    }
+    .how-count{
+      font-size:4rem;
+      color:$secondary_orange_med;
+      margin:0;
+
+    }
+    .how-title{
+      font-size:1.2rem;
+    }
+    .entry-content{
+      .how-img{
+        width: 100%;
+        height: 15em;
+        position: absolute;
+        z-index: -1;
+        transform: translateY(-27%);
+        left:0;
+      }
+      ul{
+        display:flex;
+        flex-flow:column nowrap;
+        align-items: center;
+        align-content: center;
+        padding-bottom: 66%;
+        li{
+          .how-btn{
+            display:block;
+            width:90%;
+            margin:5% auto;
+            text-align: center;
+            text-transform: uppercase;
+            font-size:0.8rem;
+            word-spacing: 0.3em;
+            font-weight: 400;
+            background: $primary_green_light;
+            
+          }
+        }
+      }
+    }
+  }
+
+  .knives-fork{
+    display:none;
+  }
+
+  //**********Testimonials Area
+  .testimonials{
+    margin-top:5%;
+    nav{
+      padding: 0 5%;
+    }
+    .flickity-button{
+      display:none;
+    }
+    .profile-pic{
+      height: 9em;
+      width:9em;
+      position: relative;
+      transform: translateY(-40%);
+    }
+    p{
+      transform: translateY(-10%);
+      font-size:1.5rem;
+    }
+    .member-name{
+      font-size: 1.2rem;
+      text-align: right;
+    }
+    .member-since{
+      font-size: 1.2rem;
+      text-align: right;
+      transform: translateY(-80%);
     }
   }
 }
+
 @include desktop {
   //************How it Works CONTENTS AREA
   .article-content {
     // padding-bottom: 5%;
     overflow: hidden;
     position: relative;
-  }
-  .entry-header {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row nowrap;
-    position: relative;
-    padding-bottom: 5vh;
-    nav {
-      width: 60%;
-    }
     .how-icons {
       right: 0;
       top: 13%;
@@ -49,7 +138,21 @@
       position: absolute;
       background: white;
       border-radius: 2em;
+      display: none;
     }
+  }
+  .entry-header {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    padding-bottom: 5vh;
+    
+    nav {
+      width: 60%;
+    }
+    
     .entry-title {
       font-size: 2.7rem;
     }
@@ -72,7 +175,7 @@
 
       .btn {
         margin: 0 1%;
-        width: 30%;
+        width: fit-content;
         position: relative;
         display: inline-flex;
         justify-content: center;
@@ -97,8 +200,6 @@
       width: 100%;
       height: auto;
       left: 0;
-      -o-object-fit: cover;
-      object-fit: cover;
       position: absolute;
       // top: calc(124rem - 100%);
       z-index: -1;
@@ -109,9 +210,9 @@
   .testimonials {
     padding: 0 10% 5% 10%;
     position: relative;
-    background: url('../../assets/background-images/contact-bg@3x.png');
-    background-size: cover;
-    background-position: bottom right;
+    // background: url('../../assets/background-images/contact-bg@3x.png');
+    // background-size: cover;
+    // background-position: bottom right;
     overflow: hidden;
     width: 100%;
     .site-title {
@@ -122,10 +223,10 @@
       margin: 0;
     }
     nav {
-      background: hsla(112, 18%, 41%, 0.75);
-      color: white;
-      border-radius: 1.5em;
-      text-align: center;
+      // background: hsla(112, 18%, 41%, 0.75);
+      // color: white;
+      // border-radius: 1.5em;
+      // text-align: center;
       padding: 2%;
       width: fit-content;
       margin: 0 auto;

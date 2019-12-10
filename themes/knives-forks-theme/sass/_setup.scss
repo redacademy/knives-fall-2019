@@ -10,6 +10,9 @@ a {
 input {
   border: 0;
 }
+.hide-this{
+  display:none !important;
+}
 //*******************FEATURED BANNER IMAGE for each page
 .banner {
   width: 100%;
@@ -35,12 +38,12 @@ input {
     justify-content: center;
     align-content: center;
     align-items: center;
-    padding: 2% 5%;
-    top: 20vh;
+    padding: 2%;
+    top: 20%;
     // transform: translateY(70vmin);
     h2 {
       color: white;
-      font-size: calc((5.5vw - 100%) - 1vmin);
+      font-size: calc((4em - 100%) - 1.5vmin);
       line-height: 1.2;
       margin-left: 5%;
     }
@@ -50,4 +53,24 @@ input {
 article {
   width: 100%;
   height: inherit;
+  h2{
+    text-transform: capitalize;
+  }
+}
+.site-content{
+  margin-top:5%;
+}
+
+
+//************Testimonials Area
+.testimonials{
+  background: url('../../assets/background-images/contact-bg@3x.png');
+    background-size: cover;
+    background-position: bottom right;
+    nav{
+      background: rgba(91,123,86,.75);
+      color: #fff;
+      border-radius: 1.5em;
+      text-align: center;
+    }
 }

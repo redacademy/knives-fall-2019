@@ -21,25 +21,30 @@
 
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
-		<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html('Skip to content'); ?></a>
 
 		<header id="masthead" class="site-header" role="banner">
-			<div class="site-branding">
-				<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
-				<p class="site-description"><?php bloginfo('description'); ?></p>
-			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<a href="<?php bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/knives-forks-logo.svg" alt="logo"></a>
-				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button> -->
+				<a class="home-logo" href="<?php bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo/knives-forks-logo.svg" alt="logo"></a>
+				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('mobile menu'); ?></button> -->
 				<?php //if( when it's width is 600 and more ) 
 				?>
-				<div></div>
-				<i class="fas fa-bars"></i>
-				<!-- <i class="fas fa-times"></i> -->
-				<?php wp_nav_menu(array('menu_id' => 'mobile-menu')); ?>
-				<?php wp_nav_menu(array('menu_id' => 'primary-menu')); ?>
-				<?php wp_nav_menu(array('menu_id' => 'hidden-menu')); ?>
+				<!-- mobile menu -->
+				<div class="mobile-menu hide">
+					<i class="fas fa-times cross" id="cross"></i>
+					<?php wp_nav_menu(array('theme_location' => 'mobile', 'menu_id' => 'mobile-menu')); ?>
+				</div>
+				<!-- desktop menu -->
+				<div class="desktop-menu">
+					<?php wp_nav_menu(array('theme_location' => 'desktop', 'menu_id' => 'desktop-menu')); ?>
+				</div>
+				<i class="fas fa-bars hamburger" id="hamburger"></i>
+				<!-- hidden menu -->
+				<div class="hidden-menu hide">
+					<i class="fas fa-times cross" id="hid-cross"></i>
+					<?php wp_nav_menu(array('theme_location' => 'hidden', 'menu_id' => 'hidden-menu')); ?>
+				</div>
+
 				<!-- set 1 to primary menu & display none, display block-->
 
 			</nav><!-- #site-navigation -->
@@ -50,7 +55,7 @@
 				
 					<section class="banner">
 						<nav class="banner-img">';
-				the_post_thumbnail('large');
+							the_post_thumbnail('large');
 				echo '	</nav>
 						<nav class="banner-content">
 							<h2>
@@ -60,6 +65,31 @@
 					</section>
 					';
 			}
+			else if(is_page('events')){
+				$arrays=get_field('featured-event');
+
+					echo '<pre>';
+					echo print_r($arrays);
+					
+					echo '</pre>';
+				if(have_rows()){
+					the_row();
+					$tmp.='
+						<section class="banner">
+							<nav class="banner-img">';
+								the_post_thumbnail('large');
+					$tmp.='	</nav>
+							<nav class="banner-content">
+								<h2 class="event-title">
+								</h2>
+							</nav>
+						</section>
+						';
+						echo $tmp;
+					}
+
+				}
+					
 
 			?>
 

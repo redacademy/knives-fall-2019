@@ -55,7 +55,7 @@
 				
 					<section class="banner">
 						<nav class="banner-img">';
-							the_post_thumbnail('large');
+				the_post_thumbnail('large');
 				echo '	</nav>
 						<nav class="banner-content">
 							<h2>
@@ -64,32 +64,31 @@
 						</nav>
 					</section>
 					';
+				// }
+				//  else if (is_page('events')) {
+				// 	$arrays = get_field('featured-event');
+
+				// 	echo '<pre>';
+				// 	echo print_r($arrays);
+
+				// 	echo '</pre>';
+				// 	if (have_rows()) {
+				// 		the_row();
+				// 		$tmp .= '
+				// 			<section class="banner">
+				// 				<nav class="banner-img">';
+				// 		the_post_thumbnail('large');
+				// 		$tmp .= '	</nav>
+				// 				<nav class="banner-content">
+				// 					<h2 class="event-title">
+				// 					</h2>
+				// 				</nav>
+				// 			</section>
+				// 			';
+				// 		echo $tmp;
+				// 	}
 			}
-			else if(is_page('events')){
-				$arrays=get_field('featured-event');
 
-					echo '<pre>';
-					echo print_r($arrays);
-					
-					echo '</pre>';
-				if(have_rows()){
-					the_row();
-					$tmp.='
-						<section class="banner">
-							<nav class="banner-img">';
-								the_post_thumbnail('large');
-					$tmp.='	</nav>
-							<nav class="banner-content">
-								<h2 class="event-title">
-								</h2>
-							</nav>
-						</section>
-						';
-						echo $tmp;
-					}
-
-				}
-					
 
 			?>
 

@@ -50,7 +50,7 @@
 			</nav><!-- #site-navigation -->
 			<?php
 
-			if (is_page('how-it-works')) { //START for BANNER's featured IMAGE with sayings
+			if (is_page('how-it-works') || is_front_page() || is_page('our-story')) { //START for BANNER's featured IMAGE with sayings
 				echo '
 				
 					<section class="banner">
@@ -72,7 +72,15 @@
 				// echo print_r($arrays);
 				
 				// echo '</pre>';
-				$img=get_field('events_page_banner_image');
+				if(wp_is_mobile()){
+					$img=get_field('events_page_banner_image');
+				
+				}
+				else{
+					$img=the_post_thumbnail('full');
+					$img=$img['url'];
+				}
+				
 						$tmp.='
 						<section class="banner">
 							<nav class="banner-img banner-events">

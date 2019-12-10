@@ -5,6 +5,9 @@
   //box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
   box-shadow: 0 1rem 3rem #fff;
   z-index: 1; // z-index for main-navigation
+  .home-logo {
+    flex-grow: 1;
+  }
   .hamburger {
     font-size: $fontsize * 2;
     padding: $padding * 1.5 $padding 0 0;
@@ -51,6 +54,11 @@
   } // end of mobile menu
 
   // START OF DESKTOP MENU
+  @include mobile {
+    .desktop-menu {
+      display: none;
+    }
+  }
   @include tablet {
     .desktop-menu {
       display: none;
@@ -58,15 +66,28 @@
   }
   @include desktop {
     .desktop-menu {
+      font-family: $parafont;
+      font-weight: 700;
+      padding: 0 $padding * 1.5 0 0;
       .menu {
         display: flex;
         justify-content: space-around;
         padding: $padding 0 0 0;
         li {
           padding: $padding $padding;
+          a {
+            color: #000;
+          }
+          &:last-child {
+            a {
+              color: #fff;
+              font-weight: 100;
+              font-size: $fontsize * 0.8;
+            }
+          }
         }
       }
-    }
+    } // end of .desktop-menu
   }
   // END OF DESKTOP MENU
 
@@ -83,7 +104,38 @@
   }
   @include desktop {
     .hidden-menu {
-      display: block;
+      .cross {
+        //exits mobile menu
+        padding: $padding;
+        font-size: $fontsize * 2;
+        color: #fff;
+      }
+
+      z-index: 2;
+      position: absolute;
+      right: 0;
+      text-align: right;
+      background-color: $neutral_green_med;
+      width: 100%;
+      li {
+        border-top: 1px solid #fff;
+        width: 100%;
+        a {
+          width: 100%;
+          padding: $padding;
+          display: inline-block;
+          position: relative;
+          right: 0;
+          color: #fff;
+          &:visited {
+            color: #fff;
+          }
+          //thinking about include the hover on desktop only
+          &:hover {
+            background-color: $neutral_green_light;
+          } // end of a:hover
+        } // end of a
+      } // end of li
     }
   }
   // END OF HIDDEN MENU

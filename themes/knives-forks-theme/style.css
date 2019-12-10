@@ -385,46 +385,6 @@ article {
 
 .site-content {
   margin-top: 5%; }
-<<<<<<< HEAD
-
-h3.summary-title {
-  font-size: 3rem;
-  font-family: "Lora", serif, serif;
-  text-align: center;
-  font-display: bold;
-  color: black; }
-
-p.summary-description {
-  font-size: 1rem;
-  border: 1px solid blue; }
-
-.flex-layout {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  max-width: 33%; }
-
-@media all and (min-width: 1000px) {
-  .flex_item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; } }
-
-=======
 
 .events-banner {
   height: 100vh;
@@ -555,7 +515,6 @@ p.summary-description {
     cursor: pointer;
     color: white; }
 
->>>>>>> 5ff898cbec186d99c8d30a01f6568e62c00ce9d2
 @media all and (max-width: 499px) {
   .banner .banner-img {
     width: 100%;
@@ -852,6 +811,10 @@ p.summary-description {
   -webkit-box-shadow: 0 1rem 3rem #fff;
           box-shadow: 0 1rem 3rem #fff;
   z-index: 1; }
+  .main-navigation .home-logo {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
   .main-navigation .hamburger {
     font-size: 2rem;
     padding: 1.5rem 1rem 0 0;
@@ -886,19 +849,32 @@ p.summary-description {
           color: #fff; }
         .main-navigation .mobile-menu li a:hover {
           background-color: #90c194; }
+  @media all and (max-width: 499px) {
+    .main-navigation .desktop-menu {
+      display: none; } }
   @media only screen and (min-width: 500px) and (max-width: 999px) {
     .main-navigation .desktop-menu {
       display: none; } }
   @media all and (min-width: 1000px) {
-    .main-navigation .desktop-menu .menu {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      padding: 1rem 0 0 0; }
-      .main-navigation .desktop-menu .menu li {
-        padding: 1rem 1rem; } }
+    .main-navigation .desktop-menu {
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      padding: 0 1.5rem 0 0; }
+      .main-navigation .desktop-menu .menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        padding: 1rem 0 0 0; }
+        .main-navigation .desktop-menu .menu li {
+          padding: 1rem 1rem; }
+          .main-navigation .desktop-menu .menu li a {
+            color: #000; }
+          .main-navigation .desktop-menu .menu li:last-child a {
+            color: #fff;
+            font-weight: 100;
+            font-size: 0.8rem; } }
   @media all and (max-width: 499px) {
     .main-navigation .hidden-menu {
       display: none; } }
@@ -907,7 +883,30 @@ p.summary-description {
       display: none; } }
   @media all and (min-width: 1000px) {
     .main-navigation .hidden-menu {
-      display: block; } }
+      z-index: 2;
+      position: absolute;
+      right: 0;
+      text-align: right;
+      background-color: #6f8f6a;
+      width: 100%; }
+      .main-navigation .hidden-menu .cross {
+        padding: 1rem;
+        font-size: 2rem;
+        color: #fff; }
+      .main-navigation .hidden-menu li {
+        border-top: 1px solid #fff;
+        width: 100%; }
+        .main-navigation .hidden-menu li a {
+          width: 100%;
+          padding: 1rem;
+          display: inline-block;
+          position: relative;
+          right: 0;
+          color: #fff; }
+          .main-navigation .hidden-menu li a:visited {
+            color: #fff; }
+          .main-navigation .hidden-menu li a:hover {
+            background-color: #90c194; } }
 
 .hide {
   display: none; }

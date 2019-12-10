@@ -486,14 +486,6 @@ h2.upcoming-events-location {
 .stackItem {
   width: 20vw; }
 
-.controlsContainer {
-  --clickToPlay-size: 300px;
-  background-image: url(../assets/events-images/playbutton.svg); }
-
-.clickToPlay {
-  --clickToPlay-size: 108px;
-  background-image: url(../assets/events-images/playbutton@2x.png); }
-
 .pitch-summary {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -565,11 +557,11 @@ p.summary-description {
   font-weight: 500;
   overflow: hidden; }
 
-.past-events-container img {
-  width: 100vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+h2.past-events-title {
+  text-align: center; }
+  @media all and (min-width: 1000px) {
+    h2.past-events-title {
+      text-align: left; } }
 
 .past-events-container {
   display: -webkit-box;
@@ -580,7 +572,30 @@ p.summary-description {
           justify-content: center;
   padding: 20%;
   margin: 0 auto;
-  position: relative; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  background-image: url(../../assets/events-images/event-journal.jpg);
+  background-size: no-repeat, 50%;
+  background-color: #e5e9ec; }
+  @media all and (min-width: 1000px) {
+    .past-events-container .past-event {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+
+.past-events-container img {
+  height: 30vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-left: 80px;
+  margin: 0 auto; }
 
 .past-events-date {
   font-size: 1.75em;

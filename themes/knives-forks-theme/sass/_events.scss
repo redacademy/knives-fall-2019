@@ -4,13 +4,8 @@
 
 .events-banner {
   background: url('../../assets/events-images/event-hero@3x.png') no-repeat;
-  // height: 60vmax;
   height: 100vh;
-  // height: 100vh;
-
   background: contain;
-  // background-size: 18rem;
-  // background: no-repeat;
   background-position: bottom center;
 
   @include desktop {
@@ -125,16 +120,16 @@ h2.upcoming-events-location {
   width: 20vw;
 }
 
-.controlsContainer {
-  --clickToPlay-size: 300px;
-  background-image: url(../assets/events-images/playbutton.svg);
-}
+// .controlsContainer {
+//   --clickToPlay-size: 300px;
+//   background-image: url(../assets/events-images/playbutton.svg);
+// }
 
-.clickToPlay {
-  --clickToPlay-size: 108px;
+// .clickToPlay {
+//   --clickToPlay-size: 108px;
 
-  background-image: url(../assets/events-images/playbutton@2x.png);
-}
+//   background-image: url(../assets/events-images/playbutton@2x.png);
+// }
 // video {
 //   // height: 235px;
 //   // width: 133px;
@@ -162,10 +157,6 @@ h2.upcoming-events-location {
   margin: 60px;
   flex-direction: column;
 }
-
-// .summary-image {
-//   height: 40px;
-// }
 
 h3.summary-title {
   font-size: 1.5em;
@@ -230,10 +221,11 @@ p.summary-description {
 
 /////past events
 
-.past-events-container {
-  img {
-    width: 100vh;
-    align-items: center;
+h2.past-events-title {
+  text-align: center;
+
+  @include desktop {
+    text-align: left;
   }
 }
 
@@ -242,7 +234,33 @@ p.summary-description {
   justify-content: center;
   padding: 20%;
   margin: 0 auto;
-  position: relative;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  background-image: url(../../assets/events-images/event-journal.jpg);
+  background-size: no-repeat, 50%;
+  background-color: #e5e9ec;
+
+  // position: relative;
+
+  .past-event {
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+}
+
+.past-events-container {
+  img {
+    height: 30vw;
+    justify-content: center;
+    position: relative;
+    padding-left: 80px;
+    margin: 0 auto;
+
+    @include desktop {
+      // width: 100vw;
+    }
+  }
 }
 
 .past-events-date {

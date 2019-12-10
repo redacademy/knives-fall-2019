@@ -66,31 +66,40 @@
 					';
 			}
 			else if(is_page('events')){
-				$arrays=get_field('featured-event');
+				// $arrays=get_field('featured-events');
 
-					echo '<pre>';
-					echo print_r($arrays);
-					
-					echo '</pre>';
-				if(have_rows()){
-					the_row();
-					$tmp.='
+				// echo '<pre>';
+				// echo print_r($arrays);
+				
+				// echo '</pre>';
+				$img=get_field('events_page_banner_image');
+						$tmp.='
 						<section class="banner">
-							<nav class="banner-img">';
-								the_post_thumbnail('large');
-					$tmp.='	</nav>
-							<nav class="banner-content">
-								<h2 class="event-title">
-								</h2>
+							<nav class="banner-img banner-events">
+								<img src="'. esc_url($img) .'" alt="knives-fork-events">
 							</nav>
+								<div class="banner-outer-content">
+									<nav class="banner-content">
+										<h2 class="event-title">
+										'. esc_attr(get_field('upcoming_event_title')) .'
+										</h2>
+										<p class="event-location">
+											'. esc_attr(get_field('upcoming_event_location')) .'
+										<p>
+									</nav>
+									<a href="#" alt="Buy Tickets" class="btn btn-event">buy tickets</a>
+									<a href="#" alt="Apply to Pitch" class="btn btn-event">apply to pitch</a>
+								</div>
 						</section>
 						';
+					
+					
 						echo $tmp;
-					}
+					
 
 				}
 					
-
+				
 			?>
 
 

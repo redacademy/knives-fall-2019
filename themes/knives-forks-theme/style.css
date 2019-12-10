@@ -349,20 +349,16 @@ input {
   display: block;
   height: inherit;
   position: relative; }
-  .banner .banner-img {
-    width: auto;
-    height: 60vmax; }
-    .banner .banner-img img {
-      -o-object-fit: cover;
-         object-fit: cover;
-      height: 100%;
-      width: 100%; }
   .banner .banner-content {
     background: rgba(111, 143, 106, 0.76);
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
     width: 45%;
     height: inherit;
     -webkit-box-pack: center;
@@ -380,6 +376,15 @@ input {
       font-size: calc((4em - 100%) - 1.5vmin);
       line-height: 1.2;
       margin-left: 5%; }
+
+.banner-img {
+  width: auto;
+  height: 60vmax; }
+  .banner-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%; }
 
 article {
   width: 100%;
@@ -564,12 +569,57 @@ p.summary-description {
     color: white; }
 
 @media all and (max-width: 499px) {
+  .banner .btn-event {
+    padding: 3% 5%;
+    background: white;
+    color: #378244;
+    border: 2px solid #378244;
+    font-size: 0.75rem;
+    text-transform: uppercase; }
+    .banner .btn-event:hover {
+      cursor: pointer;
+      background: #378244;
+      color: white;
+      font-weight: 600; }
+  .banner .banner-outer-content {
+    position: relative;
+    top: 0;
+    -webkit-transform: translateY(-25rem);
+            transform: translateY(-25rem);
+    width: 80%;
+    text-align: center; }
+    .banner .banner-outer-content .banner-content {
+      width: 100%;
+      position: relative;
+      margin-bottom: 5%;
+      text-align: left;
+      padding: 3%; }
+      .banner .banner-outer-content .banner-content .event-title {
+        margin: 0;
+        font-size: 1.5rem; }
+      .banner .banner-outer-content .banner-content .event-location {
+        font-size: 1rem;
+        font-weight: 600;
+        font-style: italic;
+        text-align: right;
+        text-transform: capitalize; }
+  .banner .banner-events {
+    z-index: -1; }
+    .banner .banner-events img {
+      -webkit-transform: unset;
+              transform: unset;
+      height: 100%;
+      width: 100%; }
+  .banner-content {
+    color: white; } }
+
+@media all and (max-width: 499px) {
   .banner .banner-img {
     width: 100%;
     height: 100vmax;
     overflow: hidden;
     position: relative; }
-  .banner .banner-img img {
+  .banner img {
     -o-object-fit: fill;
        object-fit: fill;
     height: 100%;

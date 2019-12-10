@@ -1003,6 +1003,7 @@ h2.past-events-title {
   top: 0;
   background-color: #fff;
   width: 100%;
+  z-index: 99;
   -webkit-box-shadow: 0 1rem 2rem #fff;
           box-shadow: 0 1rem 2rem #fff; }
   .main-navigation .nav-container {

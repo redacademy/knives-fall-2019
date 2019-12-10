@@ -903,15 +903,15 @@ h2.past-events-title {
   #gform_2 .validation_error {
     display: none; }
 
-.post-14 {
+.page-contact {
   width: 100%;
   background-color: white;
   margin-top: 60px; }
   @media all and (min-width: 1000px) {
-    .post-14 {
+    .page-contact {
       background: url("../../assets/background-images/contact-bg@3x.png");
       background-size: cover; }
-      .post-14 .contact-form-container {
+      .page-contact .contact-form-container {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -919,21 +919,21 @@ h2.past-events-title {
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row; }
-      .post-14 .media-enquiries {
+      .page-contact .media-enquiries {
         padding-left: 80px;
         height: 130px;
         width: 470px; }
-      .post-14 .fab {
+      .page-contact .fab {
         color: white;
         font-size: 20px;
         text-align: center;
         padding: 5px; }
-      .post-14 .contact-opportunity {
+      .page-contact .contact-opportunity {
         line-height: 1em;
         font-size: 2em;
         font-family: "Lora", serif;
         text-align: left; }
-      .post-14 .asterix {
+      .page-contact .asterix {
         display: none; } }
 
 .social-icons {

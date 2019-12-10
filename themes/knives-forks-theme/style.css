@@ -458,7 +458,8 @@ h2.upcoming-events-location {
   text-decoration: none;
   margin: 2% 28%;
   padding: 12px;
-  max-width: 34vw; }
+  width: 200px;
+  white-space: no-wrap; }
 
 .apply-to-pitch-btn {
   background: #fff;
@@ -473,21 +474,31 @@ h2.upcoming-events-location {
   margin: 2% 28%;
   padding: 12px;
   max-width: 34vw;
-  position: relative; }
+  position: relative;
+  width: 200px;
+  white-space: no-wrap; }
 
 .video-section {
-  background: rgba(242, 144, 97, 0.17);
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 75px;
-  background-size: 50%; }
+  top: 75px; }
 
-.controlsContainer {
-  --clickToPlay-size: 108px; }
+.video-bg {
+  background: rgba(242, 144, 97, 0.17);
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  bottom: -20%;
+  z-index: -1; }
+
+.stackItem {
+  width: 20vw; }
 
 .pitch-summary {
   display: -webkit-box;
@@ -559,9 +570,63 @@ p.summary-description {
   text-decoration: none;
   font-weight: 500;
   overflow: hidden; }
-  .apply-to-pitch-btn-green:visited {
-    cursor: pointer;
-    color: white; }
+
+h2.past-events-title {
+  text-align: center; }
+  @media all and (min-width: 1000px) {
+    h2.past-events-title {
+      text-align: left; } }
+
+.past-events-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20%;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  background-image: url(../../assets/events-images/event-journal.jpg);
+  background-size: no-repeat, 50%;
+  background-color: #e5e9ec; }
+  @media all and (min-width: 1000px) {
+    .past-events-container .past-event {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+
+.past-events-container img {
+  height: 30vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-left: 80px;
+  margin: 0 auto; }
+
+.past-events-date {
+  font-size: 1.75em;
+  text-align: center;
+  line-height: 1em;
+  padding-top: 0; }
+
+.past-events-location {
+  color: #378244;
+  font-size: 1.5em;
+  text-align: center; }
+
+.past-events-description {
+  font-size: 1rem;
+  margin: 5% 5%;
+  line-height: 1rem;
+  text-align: center; }
 
 @media all and (max-width: 499px) {
   .banner .banner-img {

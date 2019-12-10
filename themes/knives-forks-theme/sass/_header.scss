@@ -1,15 +1,16 @@
 .main-navigation {
-  position: fixed; //put parent 
+  position: fixed; //put parent
   top: 0;
   background-color: #fff;
   width: 100%;
+  z-index: $zdex + 99;
   // box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
   box-shadow: 0 1rem 2rem #fff;
   .nav-container {
     display: flex;
     max-width: 1140px;
     margin: 0 auto;
-    padding: $padding * 2 0 0 0;
+    padding: $padding * 2 0 0;
   }
 
   .home-logo {

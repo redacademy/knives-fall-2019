@@ -1003,6 +1003,7 @@ h2.past-events-title {
   top: 0;
   background-color: #fff;
   width: 100%;
+  z-index: 99;
   -webkit-box-shadow: 0 1rem 2rem #fff;
           box-shadow: 0 1rem 2rem #fff; }
   .main-navigation .nav-container {
@@ -1011,7 +1012,7 @@ h2.past-events-title {
     display: flex;
     max-width: 1140px;
     margin: 0 auto;
-    padding: 2rem 0 0 0; }
+    padding: 2rem 0 0; }
   .main-navigation .home-logo {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;

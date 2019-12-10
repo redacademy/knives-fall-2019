@@ -33,8 +33,8 @@
       '<li><a href="#investment">Our Investment</a></li>'
     );
     const navHiddenMenu = $('#hidden-menu');
-    const investor = $('.menu-item-64');
-
+    // const investor = $('.menu-item-64'); //local
+    const investor = $('.menu-item-181'); //staging
     // when document is ready
     // click the hamburger menu
     // closing menu
@@ -124,47 +124,5 @@
     // for (let i = 0; i < myValidation.length; i++) {
     //     const element = myValidation[i];
     //     $(element.className + ' input[type="text"]').change(element, fn);
-
-    // }
-    //myValidation [
-    //{'pitch-name'}: {
-    //valid: {}
-    //invalid: {}
-    //validation: {
-    //valid: ['', '', '']
-    //invalid: ['', '']
-    //}
-    //]
-    //{'pitch-email'}:
-    //}
-    // function fn(element) {
-    //     let flag = true;
-    //     for (let i = 0; i < element.value.validation.length; i++) {
-    //         const field = element.value.validation[i];
-    //         const $elem = $(element.className + " [aria-label=" + field + "]");
-    //         if (!$elem.length) {
-    //             flag = false;
-    //         }
-    //     }
-    //     if(flag === false) {
-    //         /// apply invalid class
-    //         // $('className).addClass('x-default')
-    //     } else {
-    //         // apply the valid class
-    //         // $('className').removeClass('x-default'). addClass('x-valid')
-    //     }
-    // }
-
-    // function iconColorChange() {
-    //   const $firstNameVal = $('#input_2_1_3').val();
-    //   const $lastNameVal = $('#input_2_1_6').val();
-    //   // if name fields (first name, last name) !=='', $('.gform_page_2_1').addClass('name-valid')
-    //   if ($firstNameVal.length !== 0 && $lastNameVal.length !== 0) {
-    //     console.log('filled');
-    //     $('.pitch-name')
-    //       .removeClass('name-default')
-    //       .addClass('name-valid');
-    //   }
-    // }
   }); //when document is ready
 })(jQuery);

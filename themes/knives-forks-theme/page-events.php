@@ -25,10 +25,10 @@ get_header();
 	<section class="events-banner">
 	<section class="upcoming-events">
 		<h1 class="upcoming-events-title">
-			<?php the_field('upcoming_event_title'); ?>
+			<?php //the_field('upcoming_event_title'); ?>
 			</h1>
 			<h2 class="upcoming-events-location">
-				<?php the_field('upcoming_event_location'); ?>
+				<?php //the_field('upcoming_event_location'); ?>
 			</h2>	
 		</section> 
 

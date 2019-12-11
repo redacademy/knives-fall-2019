@@ -46,7 +46,6 @@ $testimonials=get_posts($args);
                         while(have_rows('steps')){
                             the_row();
                             
-                            
                             // $img=is_null(get_sub_field('step-icon'))?null:get_sub_field('step-icon');
                             $img=get_sub_field('step-icon');
                             $tmpClass=($img)?'':'hide-this';
@@ -72,7 +71,7 @@ $testimonials=get_posts($args);
             <a href="#" class="btn how-btn">Become a Member</a>
             <a href="#" class="btn how-btn">Become Entrepreneur</a>
         </nav>
-        <img src="<?=get_field('how-img')?>" alt="how-it-works-hands" class="how-img">
+        <img src="<?php echo get_field('how-img');?>" alt="how-it-works-hands" class="how-img">
     </div><!-- .entry-content -->
      
      

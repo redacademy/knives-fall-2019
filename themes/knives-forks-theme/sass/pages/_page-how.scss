@@ -7,7 +7,7 @@
     position: relative;
     // border: 1px dotted red;
   }
-  .banner .banner-img img {
+  .banner img {
     object-fit: fill;
     height: 100%;
     width: auto;
@@ -21,100 +21,98 @@
       font-size: 1.2rem;
     }
   }
-  .how-icons{
+  .how-icons {
     display: none;
   }
-  .site-main{
-    padding:0 5%;
+  .site-main {
+    padding: 0 5%;
   }
-  article{
+  article {
     line-height: 1.5;
-    .how-icons{
-      display:block;
+    .how-icons {
+      display: block;
       width: 80%;
       height: auto;
       margin: 5% auto;
     }
-    .entry-title{
-      font-size:2rem;
+    .entry-title {
+      font-size: 2rem;
     }
-    .entry-description{
-      font-size:1.2rem;
+    .entry-description {
+      font-size: 1.2rem;
     }
-    p{
-      font-size:1rem;
+    p {
+      font-size: 1rem;
       text-align: justify;
     }
-    .how-count{
-      font-size:4rem;
-      color:$secondary_orange_med;
-      margin:0;
-
+    .how-count {
+      font-size: 4rem;
+      color: $secondary_orange_med;
+      margin: 0;
     }
-    .how-title{
-      font-size:1.2rem;
+    .how-title {
+      font-size: 1.2rem;
     }
-    .entry-content{
-      .how-img{
+    .entry-content {
+      .how-img {
         width: 100%;
         height: 15em;
         position: absolute;
         z-index: -1;
         transform: translateY(-27%);
-        left:0;
+        left: 0;
       }
-      ul{
-        display:flex;
-        flex-flow:column nowrap;
+      ul {
+        display: flex;
+        flex-flow: column nowrap;
         align-items: center;
         align-content: center;
         padding-bottom: 66%;
-        li{
-          .how-btn{
-            display:block;
-            width:90%;
-            margin:5% auto;
+        li {
+          .how-btn {
+            display: block;
+            width: 90%;
+            margin: 5% auto;
             text-align: center;
             text-transform: uppercase;
-            font-size:0.8rem;
+            font-size: 0.8rem;
             word-spacing: 0.3em;
             font-weight: 400;
             background: $primary_green_light;
-            
           }
         }
       }
     }
   }
 
-  .knives-fork{
-    display:none;
+  .knives-fork {
+    display: none;
   }
 
   //**********Testimonials Area
-  .testimonials{
-    margin-top:5%;
-    nav{
+  .testimonials {
+    margin-top: 5%;
+    nav {
       padding: 0 5%;
     }
-    .flickity-button{
-      display:none;
+    .flickity-button {
+      display: none;
     }
-    .profile-pic{
+    .profile-pic {
       height: 9em;
-      width:9em;
+      width: 9em;
       position: relative;
       transform: translateY(-40%);
     }
-    p{
+    p {
       transform: translateY(-10%);
-      font-size:1.5rem;
+      font-size: 1.5rem;
     }
-    .member-name{
+    .member-name {
       font-size: 1.2rem;
       text-align: right;
     }
-    .member-since{
+    .member-since {
       font-size: 1.2rem;
       text-align: right;
       transform: translateY(-80%);
@@ -148,11 +146,11 @@
     flex-flow: row nowrap;
     position: relative;
     padding-bottom: 5vh;
-    
+
     nav {
       width: 60%;
     }
-    
+
     .entry-title {
       font-size: 2.7rem;
     }

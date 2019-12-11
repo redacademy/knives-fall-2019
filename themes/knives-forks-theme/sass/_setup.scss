@@ -10,8 +10,8 @@ a {
 input {
   border: 0;
 }
-.hide-this{
-  display:none !important;
+.hide-this {
+  display: none !important;
 }
 //*******************FEATURED BANNER IMAGE for each page
 .banner {
@@ -19,20 +19,12 @@ input {
   display: block;
   height: inherit;
   position: relative;
-  .banner-img {
-    width: auto;
-    height: 60vmax;
 
-    img {
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-    }
-  }
   .banner-content {
     background: rgba(111, 143, 106, 0.76);
     position: absolute;
     display: flex;
+    flex-flow: column nowrap;
     width: 45%;
     height: inherit;
     justify-content: center;
@@ -49,28 +41,37 @@ input {
     }
   }
 }
+.banner-img {
+  width: auto;
+  height: 60vmax;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
 //********* CONTENts area
 article {
   width: 100%;
   height: inherit;
-  h2{
+  h2 {
     text-transform: capitalize;
   }
 }
-.site-content{
-  margin-top:5%;
+.site-content {
+  margin-top: 5%;
 }
 
-
 //************Testimonials Area
-.testimonials{
+.testimonials {
   background: url('../../assets/background-images/contact-bg@3x.png');
-    background-size: cover;
-    background-position: bottom right;
-    nav{
-      background: rgba(91,123,86,.75);
-      color: #fff;
-      border-radius: 1.5em;
-      text-align: center;
-    }
+  background-size: cover;
+  background-position: bottom right;
+  nav {
+    background: rgba(91, 123, 86, 0.75);
+    color: #fff;
+    border-radius: 1.5em;
+    text-align: center;
+  }
 }

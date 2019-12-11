@@ -1,0 +1,95 @@
+@include mobile {
+  //*************STYLES for Events Banner
+
+  .banner {
+    .btn-event {
+      padding: 3% 5%;
+      background: white;
+      color: $primary_green_light;
+      border: 2px solid $primary_green_light;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      &:hover {
+        cursor: pointer;
+        background: $primary_green_light;
+        color: white;
+        font-weight: 600;
+      }
+    }
+    .banner-outer-content {
+      position: relative;
+      top: 0;
+      transform: translateY(-25rem);
+      width: 80%;
+      text-align: center;
+      .banner-content {
+        width: 100%;
+        position: relative;
+        margin-bottom: 5%;
+        text-align: left;
+        padding: 3%;
+        .event-title {
+          margin: 0;
+          font-size: 1.5rem;
+        }
+        .event-location {
+          font-size: 1rem;
+          font-weight: 600;
+          font-style: italic;
+          text-align: right;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .banner-events {
+      z-index: -1;
+      img {
+        transform: unset;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .banner-content {
+    color: white;
+  }
+}
+// h3.summary-title {
+//   font-size: 3rem;
+//   font-family: $headfont, serif;
+//   text-align: center;
+//   font-display: bold;
+//   color: black;
+
+//   //
+// }
+
+// p.summary-description {
+//   font-size: $fontsize;
+//   border: 1px solid blue;
+// }
+// .flex-layout {
+//   display: flex;
+//   justify-content: space-between;
+//   flex-direction: row;
+//   max-width: 33%;
+// }
+
+// @include desktop {
+//   //found this before it was " @mixin desktop ". From that Im getting an error like, " Mixin "desktop" does not accept a content block. "
+//   .flex_item {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-direction: row;
+//   }
+// }
+
+// .flex_item {
+// }
+
+// // .summary-description
+// // }
+
+// @include desktop() {
+// }

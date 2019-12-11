@@ -1383,7 +1383,8 @@ h2.past-events-title {
 
 .copy-text {
   font-weight: 100;
-  line-height: 1rem; }
+  line-height: 1rem;
+  text-align: unset; }
 
 .custom-copy-block {
   display: -webkit-box;

@@ -345,6 +345,7 @@ input {
   display: none !important; }
 
 .banner {
+  margin-top: 3%;
   width: 100%;
   display: block;
   height: inherit;
@@ -359,7 +360,7 @@ input {
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    width: 45%;
+    width: 60%;
     height: inherit;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -484,26 +485,20 @@ h2.upcoming-events-location {
   white-space: no-wrap; }
 
 .video-section {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 75px; }
-
-.video-bg {
-  background: rgba(242, 144, 97, 0.17);
-  position: absolute;
-  top: 20%;
-  left: 0;
-  right: 0;
-  bottom: -20%;
-  z-index: -1; }
+  margin-top: 75px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(242, 144, 97, 0.17)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 25%, rgba(242, 144, 97, 0.17) 25%);
+  padding-bottom: 6.25rem;
+  margin-bottom: 10rem; }
 
 .stackItem {
-  width: 20vw; }
+  min-width: 20vw; }
 
 .pitch-summary {
   display: -webkit-box;
@@ -577,29 +572,39 @@ p.summary-description {
   overflow: hidden; }
 
 h2.past-events-title {
-  text-align: center; }
+  text-align: center;
+  font-size: 2em;
+  position: absolute; }
   @media all and (min-width: 1000px) {
     h2.past-events-title {
-      text-align: left; } }
+      text-align: left;
+      padding-left: 80px;
+      padding-bottom: 20px; } }
 
 .past-events-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20%;
-  margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap;
-  background-image: url(../../assets/events-images/event-journal.jpg);
-  background-size: no-repeat, 50%;
-  background-color: #e5e9ec; }
+  padding-top: 20px;
+  margin: 0 auto; }
+  .past-events-container .test-box {
+    border: 1px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 600px; }
+  @media all and (min-width: 1000px) {
+    .past-events-container {
+      background: #f2f7f7;
+      background-image: url(../../assets/events-images/event-journal.jpg);
+      width: 84%;
+      background-size: 100vh;
+      background-repeat: no-repeat;
+      background-position: top right; } }
   @media all and (min-width: 1000px) {
     .past-events-container .past-event {
       -webkit-box-orient: horizontal;
@@ -607,14 +612,23 @@ h2.past-events-title {
           -ms-flex-direction: row;
               flex-direction: row; } }
 
+@media all and (min-width: 1000px) {
+  .past-events-text {
+    width: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
 .past-events-container img {
-  height: 30vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 30vh;
   position: relative;
-  padding-left: 80px;
+  padding-left: 0;
   margin: 0 auto; }
+  @media all and (min-width: 1000px) {
+    .past-events-container img {
+      height: 25vw;
+      padding: 20px; } }
 
 .past-events-date {
   font-size: 1.75em;
@@ -677,6 +691,84 @@ h2.past-events-title {
       width: 100%; }
   .banner-content {
     color: white; } }
+
+@media only screen and (min-width: 500px) and (max-width: 999px) {
+  .banner .banner-content {
+    top: 5rem;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    text-align: center;
+    padding: 2%; }
+    .banner .banner-content h2 {
+      width: 100%;
+      word-break: break-word;
+      font-size: calc((2.7em - 100%) - 1.5vmin);
+      margin: 0;
+      text-align: left; }
+    .banner .banner-content p {
+      text-align: left;
+      width: 100%; }
+    .banner .banner-content .btn-event {
+      background: white;
+      color: #378244;
+      font-weight: 400;
+      padding: 3%;
+      margin: 0 2%;
+      text-transform: uppercase; }
+      .banner .banner-content .btn-event:hover {
+        background: #378244;
+        color: white;
+        font-weight: 600; } }
+
+@media all and (min-width: 1000px) {
+  .banner-outer-content {
+    position: relative;
+    top: 0;
+    -webkit-transform: translateY(-35rem);
+            transform: translateY(-35rem);
+    width: 60%;
+    text-align: center; }
+    .banner-outer-content .banner-content {
+      width: 100%;
+      position: relative;
+      color: white;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      padding: 10% 5%; }
+      .banner-outer-content .banner-content h2 {
+        margin: 0;
+        text-align: left;
+        width: 100%;
+        word-break: break-word;
+        font-size: 2.5rem; }
+      .banner-outer-content .banner-content .event-location {
+        width: 100%;
+        text-align: left;
+        font-size: 2rem; }
+      .banner-outer-content .banner-content .btn-event {
+        padding: 2%;
+        background: #fff;
+        color: #378244;
+        border: 2px solid #378244;
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin: 0 1%; }
+        .banner-outer-content .banner-content .btn-event:hover {
+          cursor: pointer;
+          background: #378244;
+          color: #fff;
+          font-weight: 600; } }
 
 @media all and (max-width: 499px) {
   .banner .banner-img {
@@ -1049,6 +1141,9 @@ h2.past-events-title {
           justify-content: space-between;
   padding: 0px; }
 
+.current {
+  border-bottom: 2px solid #378244; }
+
 .main-navigation {
   position: fixed;
   top: 0;
@@ -1127,6 +1222,8 @@ h2.past-events-title {
           padding: 1rem 1rem; }
           .main-navigation .desktop-menu .menu li a {
             color: #000; }
+            .main-navigation .desktop-menu .menu li a:hover {
+              border-bottom: 2px solid #000; }
           .main-navigation .desktop-menu .menu li:last-child a {
             color: #fff;
             font-weight: 100;

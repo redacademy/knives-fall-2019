@@ -73,19 +73,17 @@
 				// echo print_r($arrays);
 				
 				// echo '</pre>';
-				if(wp_is_mobile()){
-					$img=get_field('events_page_banner_image');
-				
-				}
-				else{
-					$img=the_post_thumbnail('full');
-					$img=$img['url'];
-				}
-				
+			
+				$img=get_field('events_page_banner_image');
+				$img2=get_field('page_desktop_banner');
+				// $img2=$img2['url'];
+				// var_dump($img2);
 						$tmp.='
 						<section class="banner">
 							<nav class="banner-img banner-events">
-								<img src="'. esc_url($img) .'" alt="knives-fork-events">
+								<img src="'. $img .'" 
+								srcset="'. esc_url($img2) .' 900w, '. $img .' 300w" 
+								 alt="knives-fork-events">
 							</nav>
 								<div class="banner-outer-content">
 									<nav class="banner-content">

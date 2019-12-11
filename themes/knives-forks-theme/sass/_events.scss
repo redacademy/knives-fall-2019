@@ -100,24 +100,23 @@ h2.upcoming-events-location {
 ///TO DO change the control button
 
 .video-section {
-  position: relative;
+  // position: relative;
   display: flex;
   justify-content: center;
-  top: 75px;
-}
-
-.video-bg {
-  background: rgba(242, 144, 97, 0.17);
-  position: absolute;
-  top: 20%;
-  left: 0;
-  right: 0;
-  bottom: -20%;
-  z-index: -1;
+  // top: 75px;
+  // height: 115vh;
+  margin-top: 75px;
+  background: linear-gradient(
+    to bottom,
+    rgba(white, 0) 25%,
+    rgba(242, 144, 97, 0.17) 25%
+  );
+  padding-bottom: 6.25rem;
+  margin-bottom: 10rem;
 }
 
 .stackItem {
-  width: 20vw;
+  min-width: 20vw;
 }
 
 // .controlsContainer {
@@ -214,39 +213,48 @@ p.summary-description {
 //   max-width: 33%;
 // }
 
-//   .flex_item {
-//
-//   }
-// }
-
-// // .flex-layout {
-// // }
-
-// // // .summary-description
-
-// // @include desktop() {
-// // }
-
 /////past events
 
 h2.past-events-title {
   text-align: center;
+  font-size: 2em;
+  position: absolute;
 
   @include desktop {
     text-align: left;
+    padding-left: 80px;
+    padding-bottom: 20px;
   }
 }
 
 .past-events-container {
   display: flex;
-  justify-content: center;
-  padding: 20%;
-  margin: 0 auto;
+  // flex-wrap: wrap;
   flex-direction: column;
-  flex-wrap: no-wrap;
-  background-image: url(../../assets/events-images/event-journal.jpg);
-  background-size: no-repeat, 50%;
-  background-color: #e5e9ec;
+  padding-top: 20px;
+  margin: 0 auto;
+  // border: 1px solid black;
+
+  .test-box {
+    border: 1px solid black;
+    display: flex;
+    max-width: 600px;
+  }
+
+  @include desktop {
+    background: #f2f7f7;
+    background-image: url(../../assets/events-images/event-journal.jpg);
+    width: 84%;
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-position: top right;
+    // background: #f2f7f7;
+    // // background-color: #e5e9ec;
+    // // position: relative;
+    // background-size: 150px;
+    // width: 300px;
+    // height: 300px;
+  }
 
   .past-event {
     @include desktop {
@@ -255,16 +263,23 @@ h2.past-events-title {
   }
 }
 
+.past-events-text {
+  @include desktop {
+    width: 100vh;
+    flex-direction: column;
+  }
+}
 .past-events-container {
   img {
-    height: 30vw;
-    justify-content: center;
+    height: 30vh;
+    // justify-content: center;
     position: relative;
-    padding-left: 80px;
+    padding-left: 0;
     margin: 0 auto;
 
     @include desktop {
-      // width: 100vw;
+      height: 25vw;
+      padding: 20px;
     }
   }
 }

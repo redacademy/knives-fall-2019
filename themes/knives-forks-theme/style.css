@@ -571,32 +571,27 @@ p.summary-description {
   overflow: hidden; }
 
 h2.past-events-title {
-  text-align: center; }
+  text-align: center;
+  font-size: 2em; }
   @media all and (min-width: 1000px) {
     h2.past-events-title {
-      text-align: left; } }
+      text-align: left;
+      padding-left: 80px;
+      padding-bottom: 20px; } }
 
 .past-events-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20%;
-  margin: 0 auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto; }
   @media all and (min-width: 1000px) {
     .past-events-container {
       background: #f2f7f7;
       background-image: url(../../assets/events-images/event-journal.jpg);
-      width: 100%;
-      background-size: 300px;
+      width: 84%;
+      background-size: 100vh;
       background-repeat: no-repeat;
       background-position: top right; } }
   @media all and (min-width: 1000px) {
@@ -606,14 +601,23 @@ h2.past-events-title {
           -ms-flex-direction: row;
               flex-direction: row; } }
 
+@media all and (min-width: 1000px) {
+  .past-events-text {
+    width: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
 .past-events-container img {
-  height: 30vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 30vh;
   position: relative;
-  padding-left: 80px;
+  padding-left: 0;
   margin: 0 auto; }
+  @media all and (min-width: 1000px) {
+    .past-events-container img {
+      height: 25vw;
+      padding: 20px; } }
 
 .past-events-date {
   font-size: 1.75em;

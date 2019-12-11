@@ -240,25 +240,29 @@ p.summary-description {
 
 h2.past-events-title {
   text-align: center;
+  font-size: 2em;
 
   @include desktop {
     text-align: left;
+    padding-left: 80px;
+    padding-bottom: 20px;
   }
 }
 
 .past-events-container {
   display: flex;
-  justify-content: center;
-  padding: 20%;
+  flex-wrap: wrap;
+  // justify-content: center;
+  // padding: 20%;
   margin: 0 auto;
-  flex-direction: column;
-  flex-wrap: no-wrap;
+  // flex-direction: column;
+  // flex-wrap: no-wrap;
 
   @include desktop {
     background: #f2f7f7;
     background-image: url(../../assets/events-images/event-journal.jpg);
-    width: 100%;
-    background-size: 300px;
+    width: 84%;
+    background-size: 100vh;
     background-repeat: no-repeat;
     background-position: top right;
     // background: #f2f7f7;
@@ -276,16 +280,23 @@ h2.past-events-title {
   }
 }
 
+.past-events-text {
+  @include desktop {
+    width: 100vh;
+    flex-direction: column;
+  }
+}
 .past-events-container {
   img {
-    height: 30vw;
-    justify-content: center;
+    height: 30vh;
+    // justify-content: center;
     position: relative;
-    padding-left: 80px;
+    padding-left: 0;
     margin: 0 auto;
 
     @include desktop {
-      // width: 100vw;
+      height: 25vw;
+      padding: 20px;
     }
   }
 }
@@ -307,14 +318,3 @@ h2.past-events-title {
   line-height: $fontsize;
   text-align: center;
 }
-
-// .past-events-bg {
-//   // background-size: no-repeat, 50%;
-//   // background-color: #e5e9ec;
-//   // position: absolute;
-//   // top: 20%;
-//   // left: 0;
-//   // right: 0;
-//   // bottom: -20%;
-//   // z-index: -1;
-// }

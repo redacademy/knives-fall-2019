@@ -38,12 +38,8 @@
             hiddenMenu.addClass('hide');
         });
         // create new list item after <li> events
-        const pendInvestment = $(
-            '<li><a href="#investment">Our Investment</a></li>'
-        );
-        const investor = $('.menu-item-64'); //local
         // const investor = $('.menu-item-181') //staging
-        pendInvestment.insertAfter('.menu-item-45'); //local
+        // pendInvestment.insertAfter('.menu-item-45'); //local
         pendInvestment.insertAfter('.menu-item-189'); //staging
         //====================
 

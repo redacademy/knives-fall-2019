@@ -479,24 +479,17 @@ h2.upcoming-events-location {
   white-space: no-wrap; }
 
 .video-section {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 75px;
-  height: 115vh; }
-
-.video-bg {
-  background: rgba(242, 144, 97, 0.17);
-  position: absolute;
-  top: 20%;
-  left: 0;
-  right: 0;
-  bottom: -20%;
-  z-index: -1; }
+  margin-top: 75px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(242, 144, 97, 0.17)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 25%, rgba(242, 144, 97, 0.17) 25%);
+  padding-bottom: 6.25rem;
+  margin-bottom: 10rem; }
 
 .stackItem {
   min-width: 20vw; }
@@ -592,10 +585,15 @@ h2.past-events-title {
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap;
-  background-image: url(../../assets/events-images/event-journal.jpg);
-  background-size: no-repeat, 50%;
-  background-color: #e5e9ec; }
+      flex-wrap: no-wrap; }
+  @media all and (min-width: 1000px) {
+    .past-events-container {
+      background: #f2f7f7;
+      background-image: url(../../assets/events-images/event-journal.jpg);
+      width: 100%;
+      background-size: 300px;
+      background-repeat: no-repeat;
+      background-position: top right; } }
   @media all and (min-width: 1000px) {
     .past-events-container .past-event {
       -webkit-box-orient: horizontal;

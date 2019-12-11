@@ -72,11 +72,11 @@ get_header();
 		?>
 
 		<section class="video-section">
-		<div><video controls poster="<?= get_template_directory_uri(); ?>/assets/events-images/event-video@3x.png">
+	<video controls poster="<?= get_template_directory_uri(); ?>/assets/events-images/event-video@3x.png">
 
 				<source src="<?php the_field('video'); ?>" type="video/mp4">
 				Your browser does not support the video tag.
-			</video> </div>
+			</video>
 			<div class="video-bg"></div>
 		</section> 
 
@@ -100,6 +100,8 @@ get_header();
 		endif;
 		?>
 		</div>
+		<div class="past-events-bg"></div>
+
 	</section>
 
 

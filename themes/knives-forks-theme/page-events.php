@@ -81,19 +81,22 @@ get_header();
 		</section> 
 
 
-<section class="past-events-container"> 
-<h2 class="past-events-title">Past Events</h2>
+		<h2 class="past-events-title">Past Events</h2>
+	
+		<section class="past-events-container"> 
 		<?php
 		if( have_rows('past_events') ): ?>
 
 		<!-- <div class="past-event"> -->
 			<?php // loop through the rows of data
 			while ( have_rows('past_events') ) : the_row(); ?>
+			<div class="test-box">
 		<img class="past-event-image" alt="Event Image" src="<?php the_sub_field('image'); ?>"/>
 		<div class="past-events-text">
 			<h3 class="past-events-date"><?php the_sub_field('date'); ?></h3>
 			<h3 class="past-events-location"><?php the_sub_field('location'); ?></h3>
 			<p class="past-events-description"><?php the_sub_field('description'); ?></p></div>
+			</div>
 			<?php endwhile; ?>
 		
 		<?php else :

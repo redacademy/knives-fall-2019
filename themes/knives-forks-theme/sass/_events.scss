@@ -218,6 +218,7 @@ p.summary-description {
 h2.past-events-title {
   text-align: center;
   font-size: 2em;
+  position: absolute;
 
   @include desktop {
     text-align: left;
@@ -228,9 +229,17 @@ h2.past-events-title {
 
 .past-events-container {
   display: flex;
-  flex-wrap: wrap;
-
+  // flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 20px;
   margin: 0 auto;
+  // border: 1px solid black;
+
+  .test-box {
+    border: 1px solid black;
+    display: flex;
+    max-width: 600px;
+  }
 
   @include desktop {
     background: #f2f7f7;

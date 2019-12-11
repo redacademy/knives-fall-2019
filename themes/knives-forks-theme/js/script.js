@@ -3,6 +3,7 @@
         //***********instance and declarations */
         const $userWidth = document.documentElement.clientWidth;
         // click the hamburger menu
+        // VICTOR'S VARIABLES
         const burger = $('#hamburger');
         const mobileMenu = $('.mobile-menu');
         const hiddenMenu = $('.hidden-menu');
@@ -13,6 +14,53 @@
         );
         const navHiddenMenu = $('#hidden-menu');
         const investor = $('.menu-item-64');
+        // END OF VICTOR'S VARIABLES
+
+
+        // VICTOR'S WORK
+
+        // add .btn to menu item
+        investor.addClass('btn');
+        // create a new list item for the hidden menu and link to our investments
+        // when document is ready
+        // click the hamburger menu
+        // closing menu
+        // opens up & display menu items
+        burger.click(function () {
+            mobileMenu.removeClass('hide');
+            hiddenMenu.removeClass('hide');
+        });
+
+        cross.click(function () {
+            mobileMenu.addClass('hide');
+        });
+        hidCross.click(function () {
+            hiddenMenu.addClass('hide');
+        });
+        const pendInvestment = $(
+            '<li><a href="#investment">Our Investment</a></li>'
+        );
+        const investor = $('.menu-item-64'); //local
+        // const investor = $('.menu-item-181') //staging
+        // when document is ready
+        // click the hamburger menu
+        // closing menu
+        // opens up & display menu items
+        // add .btn to menu item
+        // create new list item after <li> events
+        pendInvestment.insertAfter('.menu-item-45'); //local
+        pendInvestment.insertAfter('.menu-item-189'); //staging
+        burger.click(function () {
+            mobileMenu.removeClass('hide');
+            hiddenMenu.removeClass('hide');
+        });
+        //====================
+
+        //END OF  VICTOR'S WORK
+
+        // ===================
+
+
         const thePage = getTerms(window.location.pathname);
 
         //implement styling and element's position
@@ -31,7 +79,6 @@
             //     top: $('.banner').outerHeight() * 0.3
             //   });
             // } else {
-
             // }
         } else if (thePage == 'events') {
             if ($userWidth >= 500) {
@@ -39,35 +86,6 @@
             }
         }
 
-        // $(document).on('click','.btn',function(e){
-        //   alert('test');
-        //   e.preventDefault();
-        // });
-
-        // when document is ready
-        // click the hamburger menu
-        // closing menu
-        // opens up & display menu items
-        burger.click(function () {
-            mobileMenu.removeClass('hide');
-            hiddenMenu.removeClass('hide');
-        });
-
-        cross.click(function () {
-            mobileMenu.addClass('hide');
-        });
-        hidCross.click(function () {
-            hiddenMenu.addClass('hide');
-        });
-
-        // add .btn to menu item
-        investor.addClass('btn');
-        // create a new list item for the hidden menu and link to our investments
-        navHiddenMenu.prepend(
-            '<li><a href="#investments">Our Investments</a></li>'
-        );
-        // create new list item after <li> events
-        pendInvestment.insertAfter('.menu-item-45');
 
         // BROOKE'S WORK BELOW
         // opens up & display menu items
@@ -151,55 +169,6 @@
                 //   e.preventDefault();
                 // });
 
-                // when document is ready
-                // click the hamburger menu
-                // closing menu
-                // opens up & display menu items
-                burger.click(function () {
-                    mobileMenu.removeClass('hide');
-                    hiddenMenu.removeClass('hide');
-                });
-
-                cross.click(function () {
-                    mobileMenu.addClass('hide');
-                });
-                hidCross.click(function () {
-                    hiddenMenu.addClass('hide');
-                });
-
-                // add .btn to menu item
-                investor.addClass('btn');
-                // create a new list item for the hidden menu and link to our investments
-                navHiddenMenu.prepend(
-                    '<li><a href="#investments">Our Investments</a></li>'
-                );
-                // create new list item after <li> events
-                pendInvestment.insertAfter('.menu-item-45');
-
-                const pendInvestment = $(
-                    '<li><a href="#investment">Our Investment</a></li>'
-                );
-                const navHiddenMenu = $('#hidden-menu');
-                const investor = $('.menu-item-64'); //local
-                // const investor = $('.menu-item-181') //staging
-                // when document is ready
-                // click the hamburger menu
-                // closing menu
-                // opens up & display menu items
-                // add .btn to menu item
-                investor.addClass('btn');
-                // create a new list item for the hidden menu and link to our investments
-                navHiddenMenu.prepend(
-                    '<li><a href="#investments">Our Investments</a></li>'
-                );
-                // create new list item after <li> events
-                pendInvestment.insertAfter('.menu-item-45'); //local
-                pendInvestment.insertAfter('.menu-item-189'); //staging
-                burger.click(function () {
-                    mobileMenu.removeClass('hide');
-                    hiddenMenu.removeClass('hide');
-                });
-                //====================
 
                 // BROOKE'S WORK BELOW
                 // opens up & display menu items
@@ -212,8 +181,6 @@
                 $gField.addClass('icon-default');
 
 
-                // underline current active page
-                // BROOKE'S WORK BELOW
                 // next button stylings for make-a-pitch
                 $('.gform_next_button').addClass('btn');
                 $('.gform_previous_button').addClass('btn');

@@ -115,16 +115,6 @@ h2.upcoming-events-location {
   margin-bottom: 10rem;
 }
 
-.video-bg {
-  // background: rgba(242, 144, 97, 0.17);
-  // position: absolute;
-  // top: 20%;
-  // left: 0;
-  // right: 0;
-  // bottom: -20%;
-  // z-index: -1;
-}
-
 .stackItem {
   min-width: 20vw;
 }
@@ -223,19 +213,6 @@ p.summary-description {
 //   max-width: 33%;
 // }
 
-//   .flex_item {
-//
-//   }
-// }
-
-// // .flex-layout {
-// // }
-
-// // // .summary-description
-
-// // @include desktop() {
-// // }
-
 /////past events
 
 h2.past-events-title {
@@ -252,11 +229,8 @@ h2.past-events-title {
 .past-events-container {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
-  // padding: 20%;
+
   margin: 0 auto;
-  // flex-direction: column;
-  // flex-wrap: no-wrap;
 
   @include desktop {
     background: #f2f7f7;

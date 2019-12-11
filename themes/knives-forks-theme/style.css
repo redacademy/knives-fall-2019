@@ -577,12 +577,12 @@ p.summary-description {
 h2.past-events-title {
   text-align: center;
   font-size: 2em;
-  position: absolute; }
+  position: relative; }
   @media all and (min-width: 1000px) {
     h2.past-events-title {
       text-align: left;
-      padding-left: 80px;
-      padding-bottom: 20px; } }
+      padding-left: 221px;
+      padding-bottom: 10px; } }
 
 .past-events-container {
   display: -webkit-box;
@@ -594,12 +594,16 @@ h2.past-events-title {
           flex-direction: column;
   padding-top: 20px;
   margin: 0 auto; }
-  .past-events-container .test-box {
+  .past-events-container .past-event {
     border: 1px solid black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 600px; }
+    max-width: 600px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   @media all and (min-width: 1000px) {
     .past-events-container {
       background: #f2f7f7;
@@ -607,7 +611,12 @@ h2.past-events-title {
       width: 84%;
       background-size: 100vh;
       background-repeat: no-repeat;
-      background-position: top right; } }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      max-width: 1000px;
+      background-position: 143% -16%; } }
   @media all and (min-width: 1000px) {
     .past-events-container .past-event {
       -webkit-box-orient: horizontal;
@@ -615,22 +624,25 @@ h2.past-events-title {
           -ms-flex-direction: row;
               flex-direction: row; } }
 
-@media all and (min-width: 1000px) {
-  .past-events-text {
-    width: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; } }
+.past-events-text {
+  width: 60%; }
+  @media all and (min-width: 1000px) {
+    .past-events-text {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .past-events-container img {
-  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+  width: 200px;
   position: relative;
   padding-left: 0;
   margin: 0 auto; }
   @media all and (min-width: 1000px) {
     .past-events-container img {
-      height: 25vw;
       padding: 20px; } }
 
 .past-events-date {
@@ -1091,15 +1103,15 @@ h2.past-events-title {
   #gform_1 .validation_error {
     display: none; }
 
-.page-contact {
+.page-contact-us {
   width: 100%;
   background-color: white;
   margin-top: 60px; }
   @media all and (min-width: 1000px) {
-    .page-contact {
+    .page-contact-us {
       background: url("../../assets/background-images/contact-bg@3x.png");
       background-size: cover; }
-      .page-contact .contact-form-container {
+      .page-contact-us .contact-form-container {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1107,21 +1119,21 @@ h2.past-events-title {
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row; }
-      .page-contact .media-enquiries {
+      .page-contact-us .media-enquiries {
         padding-left: 80px;
         height: 130px;
         width: 470px; }
-      .page-contact .fab {
+      .page-contact-us .fab {
         color: white;
         font-size: 20px;
         text-align: center;
         padding: 5px; }
-      .page-contact .contact-opportunity {
+      .page-contact-us .contact-opportunity {
         line-height: 1em;
         font-size: 2em;
         font-family: "Lora", serif;
         text-align: left; }
-      .page-contact .asterix {
+      .page-contact-us .asterix {
         display: none; } }
 
 .social-icons {
@@ -1425,7 +1437,8 @@ h2.past-events-title {
 
 .copy-text {
   font-weight: 100;
-  line-height: 1rem; }
+  line-height: 1rem;
+  text-align: unset; }
 
 .custom-copy-block {
   display: -webkit-box;

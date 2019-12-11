@@ -37,23 +37,14 @@
         hidCross.click(function () {
             hiddenMenu.addClass('hide');
         });
+        // create new list item after <li> events
         const pendInvestment = $(
             '<li><a href="#investment">Our Investment</a></li>'
         );
         const investor = $('.menu-item-64'); //local
         // const investor = $('.menu-item-181') //staging
-        // when document is ready
-        // click the hamburger menu
-        // closing menu
-        // opens up & display menu items
-        // add .btn to menu item
-        // create new list item after <li> events
         pendInvestment.insertAfter('.menu-item-45'); //local
         pendInvestment.insertAfter('.menu-item-189'); //staging
-        burger.click(function () {
-            mobileMenu.removeClass('hide');
-            hiddenMenu.removeClass('hide');
-        });
         //====================
 
         //END OF  VICTOR'S WORK

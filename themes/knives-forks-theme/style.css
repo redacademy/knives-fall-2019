@@ -1106,7 +1106,9 @@ h2.past-events-title {
   -webkit-box-shadow: 0 1rem 2rem #fff;
           box-shadow: 0 1rem 2rem #fff; }
   .main-navigation .nav-container {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     max-width: 1140px;
     margin: 0 auto;
     padding: 2rem 0 0; }

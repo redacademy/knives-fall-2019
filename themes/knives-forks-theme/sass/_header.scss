@@ -89,6 +89,9 @@
           padding: $padding $padding;
           a {
             color: #000;
+            &:hover {
+              border-bottom: 2px solid #000;
+            }
           }
           &:last-child {
             a {

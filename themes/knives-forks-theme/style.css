@@ -679,6 +679,40 @@ h2.past-events-title {
   .banner-content {
     color: white; } }
 
+@media only screen and (min-width: 500px) and (max-width: 999px) {
+  .banner .banner-content {
+    top: 5rem;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    text-align: center;
+    padding: 2%; }
+    .banner .banner-content h2 {
+      width: 100%;
+      word-break: break-word;
+      font-size: calc((2.7em - 100%) - 1.5vmin);
+      margin: 0;
+      text-align: left; }
+    .banner .banner-content p {
+      text-align: left;
+      width: 100%; }
+    .banner .banner-content .btn-event {
+      background: white;
+      color: #378244;
+      font-weight: 400;
+      padding: 3%;
+      margin: 0 2%;
+      text-transform: uppercase; }
+      .banner .banner-content .btn-event:hover {
+        background: #378244;
+        color: white;
+        font-weight: 600; } }
+
 @media all and (min-width: 1000px) {
   .banner-outer-content {
     position: relative;
@@ -1103,7 +1137,9 @@ h2.past-events-title {
   -webkit-box-shadow: 0 1rem 2rem #fff;
           box-shadow: 0 1rem 2rem #fff; }
   .main-navigation .nav-container {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     max-width: 1140px;
     margin: 0 auto;
     padding: 2rem 0 0; }

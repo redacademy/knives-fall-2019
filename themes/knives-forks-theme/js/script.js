@@ -26,6 +26,13 @@
       $('.banner-content').css({
         top: $('.banner').outerHeight() * 0.5
       });
+      // if ($userWidth >= 500 && $userWidth <= 999) {
+      //   $('.banner-content').css({
+      //     top: $('.banner').outerHeight() * 0.3
+      //   });
+      // } else {
+
+      // }
     } else if (thePage == 'events') {
       if ($userWidth >= 500) {
         $('.btn-event').appendTo('.banner-content');

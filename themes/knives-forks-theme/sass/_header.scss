@@ -1,12 +1,23 @@
 .main-navigation {
-  display: flex;
-  justify-content: space-between;
+  position: fixed; //put parent
+  top: 0;
   background-color: #fff;
-  //box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
-  box-shadow: 0 1rem 3rem #fff;
-  z-index: 1; // z-index for main-navigation
+  width: 100%;
+  z-index: $zdex + 99;
+  // box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+  box-shadow: 0 1rem 2rem #fff;
+  .nav-container {
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: $padding * 2 0 0;
+  }
+
   .home-logo {
     flex-grow: 1;
+    img {
+      width: 230px;
+    }
   }
   .hamburger {
     font-size: $fontsize * 2;
@@ -113,7 +124,7 @@
         color: #fff;
       }
 
-      z-index: 2;
+      z-index: $zdex + 2;
       position: absolute;
       right: 0;
       text-align: right;

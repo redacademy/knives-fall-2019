@@ -25,28 +25,29 @@
 		<header id="masthead" class="site-header" role="banner">
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<a class="home-logo" href="<?php bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo/knives-forks-logo.svg" alt="logo"></a>
-				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('mobile menu'); ?></button> -->
-				<?php //if( when it's width is 600 and more ) 
-				?>
-				<!-- mobile menu -->
-				<div class="mobile-menu hide">
-					<i class="fas fa-times cross" id="cross"></i>
-					<?php wp_nav_menu(array('theme_location' => 'mobile', 'menu_id' => 'mobile-menu')); ?>
-				</div>
-				<!-- desktop menu -->
-				<div class="desktop-menu">
-					<?php wp_nav_menu(array('theme_location' => 'desktop', 'menu_id' => 'desktop-menu')); ?>
-				</div>
-				<i class="fas fa-bars hamburger" id="hamburger"></i>
-				<!-- hidden menu -->
-				<div class="hidden-menu hide">
-					<i class="fas fa-times cross" id="hid-cross"></i>
-					<?php wp_nav_menu(array('theme_location' => 'hidden', 'menu_id' => 'hidden-menu')); ?>
-				</div>
+				<div class="nav-container">
+					<a class="home-logo" href="<?php bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo/knives-forks-logo@2x.png" alt="logo"></a>
+					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('mobile menu'); ?></button> -->
+					<?php //if( when it's width is 600 and more ) 
+					?>
+					<!-- mobile menu -->
+					<div class="mobile-menu hide">
+						<i class="fas fa-times cross" id="cross"></i>
+						<?php wp_nav_menu(array('theme_location' => 'mobile', 'menu_id' => 'mobile-menu')); ?>
+					</div>
+					<!-- desktop menu -->
+					<div class="desktop-menu">
+						<?php wp_nav_menu(array('theme_location' => 'desktop', 'menu_id' => 'desktop-menu')); ?>
+					</div>
+					<i class="fas fa-bars hamburger" id="hamburger"></i>
+					<!-- hidden menu -->
+					<div class="hidden-menu hide">
+						<i class="fas fa-times cross" id="hid-cross"></i>
+						<?php wp_nav_menu(array('theme_location' => 'hidden', 'menu_id' => 'hidden-menu')); ?>
+					</div>
 
-				<!-- set 1 to primary menu & display none, display block-->
-
+					<!-- set 1 to primary menu & display none, display block-->
+				</div>
 			</nav><!-- #site-navigation -->
 			<?php
 
@@ -55,7 +56,7 @@
 				
 					<section class="banner">
 						<nav class="banner-img">';
-							the_post_thumbnail('large');
+				the_post_thumbnail('large');
 				echo '	</nav>
 						<nav class="banner-content">
 							<h2>

@@ -77,25 +77,30 @@ get_header();
 				<source src="<?php the_field('video'); ?>" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
+			<div class="video-bg"></div>
 		</section> 
 
-		<ul class="past-events">
+
+<section class="past-events-container"> 
+<h2 class="past-events-title">Past Events</h2>
+<div> 
 		<?php
 		if( have_rows('past_events') ): ?>
 
-		<li class="past-event">
+		<div class="past-event">
 			<?php // loop through the rows of data
 			while ( have_rows('past_events') ) : the_row(); ?>
-				<img alt="Event Image" src="<?php the_sub_field('image'); ?>"/>
-				<h3 class="past-events-date"><?php the_sub_field('date'); ?></h3>
-				<h3 class="past-events-location"><?php the_sub_field('location'); ?></h3>
-				<p class="past-events-description"><?php the_sub_field('description'); ?></p>
+			<img class="" alt="Event Image" src="<?php the_sub_field('image'); ?>"/>
+			<h3 class="past-events-date"><?php the_sub_field('date'); ?></h3>
+			<h3 class="past-events-location"><?php the_sub_field('location'); ?></h3>
+			<p class="past-events-description"><?php the_sub_field('description'); ?></p>
 			<?php endwhile; ?>
-		</li>
+		
 		<?php else :
 		endif;
 		?>
-		</ul> 
+		</div>
+	</section>
 
 
 	</main>

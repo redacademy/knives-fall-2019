@@ -486,7 +486,8 @@ h2.upcoming-events-location {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 75px; }
+  top: 75px;
+  height: 115vh; }
 
 .video-bg {
   background: rgba(242, 144, 97, 0.17);
@@ -498,7 +499,7 @@ h2.upcoming-events-location {
   z-index: -1; }
 
 .stackItem {
-  width: 20vw; }
+  min-width: 20vw; }
 
 .pitch-summary {
   display: -webkit-box;

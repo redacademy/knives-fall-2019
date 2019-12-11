@@ -104,6 +104,7 @@ h2.upcoming-events-location {
   display: flex;
   justify-content: center;
   top: 75px;
+  height: 115vh;
 }
 
 .video-bg {
@@ -117,7 +118,7 @@ h2.upcoming-events-location {
 }
 
 .stackItem {
-  width: 20vw;
+  min-width: 20vw;
 }
 
 // .controlsContainer {

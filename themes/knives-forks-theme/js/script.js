@@ -33,8 +33,8 @@
             '<li><a href="#investment">Our Investment</a></li>'
         );
         const navHiddenMenu = $('#hidden-menu');
-        // const investor = $('.menu-item-64'); //local
-        const investor = $('.menu-item-181') //staging
+        const investor = $('.menu-item-64'); //local
+        // const investor = $('.menu-item-181') //staging
         // when document is ready
         // click the hamburger menu
         // closing menu
@@ -58,7 +58,8 @@
             '<li><a href="#investments">Our Investments</a></li>'
         );
         // create new list item after <li> events
-        pendInvestment.insertAfter('.menu-item-45');
+        pendInvestment.insertAfter('.menu-item-45'); //local
+        pendInvestment.insertAfter('.menu-item-189'); //staging
 
         // BROOKE'S WORK BELOW
         // next button stylings for make-a-pitch

@@ -61,6 +61,7 @@
         pendInvestment.insertAfter('.menu-item-45'); //local
         pendInvestment.insertAfter('.menu-item-189'); //staging
 
+        // underline current active page
         // BROOKE'S WORK BELOW
         // next button stylings for make-a-pitch
         $('.gform_next_button').addClass('btn');

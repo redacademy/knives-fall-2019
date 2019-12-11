@@ -67,9 +67,8 @@
     // next button stylings for make-a-pitch
     $('.gform_next_button').addClass('btn');
     $('.gform_previous_button').addClass('btn');
-    const $gField = $('.gfield');
-    $('#gform_page_2_1').addClass('name-default');
-    $("#gform_2 input[type='text']").change(iconColorChange);
+    const $gField = $('.gform_page');
+    //const $requiredField = $(`input[type='text'][aria-required='true']`);
 
     $gField.addClass('icon-default');
 
@@ -113,11 +112,28 @@
           .addClass('name-valid');
       }
     }
-    $.each($('.gfield'), function(index, value) {
+
+    $.each($('.gform_page'), function(index, value) {
       const group = value;
-      const $inputs = $(this).children('input');
-      console.log($inputs);
+      const $inputs = $(this).find(`input[type='text']`);
+      const $inputsArea = $(this).find(`textarea`);
+
+      console.log('inputs', $inputs.length);
+      console.log('textareas', $inputsArea.length);
+
       $inputs.on('keyup', function() {
+        console.log('keyup');
+        if ($(this).val() !== '') {
+          $(this).addClass('filled');
+          console.log('filled');
+        } else {
+          $(this).removeClass('filled');
+        }
+        checkInputs();
+      });
+
+      $inputsArea.on('keyup', function() {
+        console.log('keyup');
         if ($(this).val() !== '') {
           $(this).addClass('filled');
           console.log('filled');
@@ -127,7 +143,13 @@
         checkInputs();
       });
       function checkInputs() {
-        if ($(group).children('.filled').length === $inputs.length) {
+        if ($(group).find('.filled').length === $inputs.length) {
+          console.log('all inputs in group filled');
+          $(group)
+            .removeClass('icon-default')
+            .addClass('icon-complete');
+        } else if ($(group).find('.filled').length === $inputsArea.length) {
+          console.log('textfields filled');
           $(group)
             .removeClass('icon-default')
             .addClass('icon-complete');

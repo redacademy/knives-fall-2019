@@ -954,11 +954,12 @@ h2.past-events-title {
 .page-apply-to-pitch .site-content {
   margin-top: 0; }
 
-#gform_2 {
+#gform_1 {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  #gform_2 .gf_page_steps {
+  display: flex;
+  margin-top: 200px; }
+  #gform_1 .gf_page_steps {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -971,10 +972,10 @@ h2.past-events-title {
     position: -webkit-sticky;
     position: sticky;
     top: 0; }
-  #gform_2 .gform_body {
+  #gform_1 .gform_body {
     width: 33%;
     padding: 10px; }
-  #gform_2 .icon-default::after {
+  #gform_1 .icon-default::after {
     background-image: url("../../assets/icons/Forms - Unfilled/unfilled-name.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -986,7 +987,7 @@ h2.past-events-title {
     position: relative;
     top: -100px;
     right: -400px; }
-  #gform_2 .icon-complete::after {
+  #gform_1 .icon-complete::after {
     background-image: url("../../assets/icons/Forms - filled/filled-name.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -998,7 +999,7 @@ h2.past-events-title {
     position: relative;
     top: -100px;
     right: -400px; }
-  #gform_2 .validation_error {
+  #gform_1 .validation_error {
     display: none; }
 
 .page-contact {

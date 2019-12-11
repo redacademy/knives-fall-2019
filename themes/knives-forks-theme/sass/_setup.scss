@@ -15,6 +15,7 @@ input {
 }
 //*******************FEATURED BANNER IMAGE for each page
 .banner {
+  margin-top: 3%;
   width: 100%;
   display: block;
   height: inherit;
@@ -25,7 +26,7 @@ input {
     position: absolute;
     display: flex;
     flex-flow: column nowrap;
-    width: 45%;
+    width: 60%;
     height: inherit;
     justify-content: center;
     align-content: center;

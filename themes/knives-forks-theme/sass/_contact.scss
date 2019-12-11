@@ -1,12 +1,11 @@
 ///styles for the contact page////
 
-.post-14 {
+.page-contact {
   width: 100%;
   background-color: white;
   margin-top: 60px;
 
   @include desktop {
-
     background: url('../../assets/background-images/contact-bg@3x.png');
     background-size: cover;
 
@@ -83,6 +82,8 @@
   text-align: center;
   min-width: 100%;
 }
+
+//TO DO replace btns with jpeg file from assets
 
 ////mobile style for font-awesome buttons
 

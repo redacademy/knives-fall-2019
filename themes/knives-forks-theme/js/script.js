@@ -2,39 +2,37 @@
   $(function() {
     //***********instance and declarations */
     const $userWidth = document.documentElement.clientWidth;
-
-    // when document is ready
     // click the hamburger menu
-    // closing menu
+    const burger = $('#hamburger');
+    const mobileMenu = $('.mobile-menu');
+    const hiddenMenu = $('.hidden-menu');
+    const cross = $('#cross');
+    const hidCross = $('#hid-cross');
+    const pendInvestment = $(
+      '<li><a href="#investment">Our Investment</a></li>'
+    );
+    const navHiddenMenu = $('#hidden-menu');
+    const investor = $('.menu-item-64');
+    const thePage = getTerms(window.location.pathname);
 
+    //implement styling and element's position
     if ($userWidth <= 499) {
       //**********************************for MOBILE
       // $('entry-content  ul  li:last-child()').append($('.how-btn'));
       $('.how-btn').appendTo('.steps-list li:last-child()');
       $('.how-img').appendTo('.steps-list li:last-child()');
     }
-    $('.banner-content').css({
-      top: $('.banner').outerHeight() * 0.5
-    });
-    $(document).on('click', '.btn', function(e) {
-      //alert('test');
-      e.preventDefault();
-    });
-    const burger = $('#hamburger');
+    if (thePage !== 'events') {
+      $('.banner-content').css({
+        top: $('.banner').outerHeight() * 0.5
+      });
+    }
 
-    const mobileMenu = $('.mobile-menu');
+    // $(document).on('click','.btn',function(e){
+    //   alert('test');
+    //   e.preventDefault();
+    // });
 
-    const hiddenMenu = $('.hidden-menu');
-
-    const cross = $('#cross');
-    const hidCross = $('#hid-cross');
-
-    const pendInvestment = $(
-      '<li><a href="#investment">Our Investment</a></li>'
-    );
-    const navHiddenMenu = $('#hidden-menu');
-    // const investor = $('.menu-item-64'); //local
-    const investor = $('.menu-item-181'); //staging
     // when document is ready
     // click the hamburger menu
     // closing menu
@@ -66,7 +64,8 @@
     $('.gform_next_button').addClass('btn');
     $('.gform_previous_button').addClass('btn');
     const $gField = $('.gfield');
-    //const $requiredField = $(`input[type='text'][aria-required='true']`);
+    $('#gform_page_2_1').addClass('name-default');
+    $("#gform_2 input[type='text']").change(iconColorChange);
 
     $gField.addClass('icon-default');
 
@@ -107,7 +106,23 @@
         }
         checkInputs();
       });
-
+      //**************FUNCTIONS DECLARATIOS********** */
+      function getTerms(pathname) {
+        pathname = pathname.replace('/kf/', '');
+        pathname = pathname.replace('/', '');
+        return pathname;
+      }
+      function iconColorChange() {
+        const $firstNameVal = $('#input_2_1_3').val();
+        const $lastNameVal = $('#input_2_1_6').val();
+        // if name fields (first name, last name) !=='', $('.gform_page_2_1').addClass('name-valid')
+        if ($firstNameVal.length !== 0 && $lastNameVal.length !== 0) {
+          console.log('filled');
+          $('#gform_page_2_1')
+            .removeClass('name-default')
+            .addClass('name-valid');
+        }
+      }
       function checkInputs() {
         if ($(group).children('.filled').length === $inputs.length) {
           $(group)

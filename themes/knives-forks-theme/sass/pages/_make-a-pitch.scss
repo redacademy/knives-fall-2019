@@ -3,8 +3,10 @@
     margin-top: 0;
   }
 }
-#gform_2 {
+#gform_1 //remember to change to gform_1 for staging// 
+ {
   display: flex;
+  margin-top: 200px;
   .gf_page_steps {
     display: flex;
     flex-direction: column;
@@ -28,7 +30,7 @@
     //   }
     // }
   }
-  .name-default::after {
+  .icon-default::after {
     background-image: url('../../assets/icons/Forms - Unfilled/unfilled-name.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -41,7 +43,7 @@
     top: -100px;
     right: -400px;
   }
-  .name-valid::after {
+  .icon-complete::after {
     background-image: url('../../assets/icons/Forms - filled/filled-name.svg');
     background-size: contain;
     background-repeat: no-repeat;

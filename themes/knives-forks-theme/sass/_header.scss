@@ -1,3 +1,6 @@
+.current {
+  border-bottom: 2px solid $primary_green_med;
+}
 .main-navigation {
   position: fixed; //put parent
   top: 0;
@@ -90,6 +93,9 @@
           padding: $padding $padding;
           a {
             color: #000;
+            &:hover {
+              border-bottom: 2px solid #000;
+            }
           }
           &:last-child {
             a {

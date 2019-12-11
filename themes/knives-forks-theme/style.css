@@ -345,6 +345,7 @@ input {
   display: none !important; }
 
 .banner {
+  margin-top: 3%;
   width: 100%;
   display: block;
   height: inherit;
@@ -359,7 +360,7 @@ input {
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    width: 45%;
+    width: 60%;
     height: inherit;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -677,6 +678,50 @@ h2.past-events-title {
       width: 100%; }
   .banner-content {
     color: white; } }
+
+@media all and (min-width: 1000px) {
+  .banner-outer-content {
+    position: relative;
+    top: 0;
+    -webkit-transform: translateY(-35rem);
+            transform: translateY(-35rem);
+    width: 60%;
+    text-align: center; }
+    .banner-outer-content .banner-content {
+      width: 100%;
+      position: relative;
+      color: white;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      padding: 10% 5%; }
+      .banner-outer-content .banner-content h2 {
+        margin: 0;
+        text-align: left;
+        width: 100%;
+        word-break: break-word;
+        font-size: 2.5rem; }
+      .banner-outer-content .banner-content .event-location {
+        width: 100%;
+        text-align: left;
+        font-size: 2rem; }
+      .banner-outer-content .banner-content .btn-event {
+        padding: 2%;
+        background: #fff;
+        color: #378244;
+        border: 2px solid #378244;
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin: 0 1%; }
+        .banner-outer-content .banner-content .btn-event:hover {
+          cursor: pointer;
+          background: #378244;
+          color: #fff;
+          font-weight: 600; } }
 
 @media all and (max-width: 499px) {
   .banner .banner-img {
@@ -1057,9 +1102,7 @@ h2.past-events-title {
   -webkit-box-shadow: 0 1rem 2rem #fff;
           box-shadow: 0 1rem 2rem #fff; }
   .main-navigation .nav-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     max-width: 1140px;
     margin: 0 auto;
     padding: 2rem 0 0; }

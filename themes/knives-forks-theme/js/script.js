@@ -26,6 +26,10 @@
       $('.banner-content').css({
         top: $('.banner').outerHeight() * 0.5
       });
+    } else if (thePage == 'events') {
+      if ($userWidth >= 500) {
+        $('.btn-event').appendTo('.banner-content');
+      }
     }
 
     // $(document).on('click','.btn',function(e){
@@ -92,7 +96,23 @@
     //     });
     //   });
     // }
-
+    //**************FUNCTIONS DECLARATIOS********** */
+    function getTerms(pathname) {
+      pathname = pathname.replace('/kf/', '');
+      pathname = pathname.replace('/', '');
+      return pathname;
+    }
+    function iconColorChange() {
+      const $firstNameVal = $('#input_2_1_3').val();
+      const $lastNameVal = $('#input_2_1_6').val();
+      // if name fields (first name, last name) !=='', $('.gform_page_2_1').addClass('name-valid')
+      if ($firstNameVal.length !== 0 && $lastNameVal.length !== 0) {
+        console.log('filled');
+        $('#gform_page_2_1')
+          .removeClass('name-default')
+          .addClass('name-valid');
+      }
+    }
     $.each($('.gfield'), function(index, value) {
       const group = value;
       const $inputs = $(this).children('input');
@@ -106,23 +126,6 @@
         }
         checkInputs();
       });
-      //**************FUNCTIONS DECLARATIOS********** */
-      function getTerms(pathname) {
-        pathname = pathname.replace('/kf/', '');
-        pathname = pathname.replace('/', '');
-        return pathname;
-      }
-      function iconColorChange() {
-        const $firstNameVal = $('#input_2_1_3').val();
-        const $lastNameVal = $('#input_2_1_6').val();
-        // if name fields (first name, last name) !=='', $('.gform_page_2_1').addClass('name-valid')
-        if ($firstNameVal.length !== 0 && $lastNameVal.length !== 0) {
-          console.log('filled');
-          $('#gform_page_2_1')
-            .removeClass('name-default')
-            .addClass('name-valid');
-        }
-      }
       function checkInputs() {
         if ($(group).children('.filled').length === $inputs.length) {
           $(group)
@@ -133,6 +136,7 @@
         }
       }
     });
+
     //work in progress for looping through each make-a-pitch section
 
     //anvit

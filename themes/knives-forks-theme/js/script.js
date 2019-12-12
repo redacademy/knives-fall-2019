@@ -110,7 +110,7 @@
     function checkInputs(group) {
       const $inputs = $(group).find('input:not(.button)');
       const $inputsArea = $(this).find('textarea');
-      //   console.log($inputs.length);
+      console.log($inputs.length);
       //   console.log($(group).find('.filled').length);
       //   console.log($(group).find('.filled').length);
       //   console.log($inputsArea.length);

@@ -1,7 +1,5 @@
 // /// front banner section
 
-/////TO DO change banner img to glass tumbler coffee cup for mobile
-
 .events-banner {
   background: url('../../assets/events-images/event-hero@3x.png') no-repeat;
   height: 100vh;
@@ -103,8 +101,6 @@ h2.upcoming-events-location {
   // position: relative;
   display: flex;
   justify-content: center;
-  // top: 75px;
-  // height: 115vh;
   margin-top: 75px;
   background: linear-gradient(
     to bottom,
@@ -112,7 +108,7 @@ h2.upcoming-events-location {
     rgba(242, 144, 97, 0.17) 25%
   );
   padding-bottom: 6.25rem;
-  margin-bottom: 10rem;
+  margin-bottom: 0rem;
 }
 
 .stackItem {
@@ -206,12 +202,6 @@ p.summary-description {
   //   // background: white;
   // }
 }
-// .flex-layout {
-//   display: flex;
-//   justify-content: space-between;
-//   flex-direction: row;
-//   max-width: 33%;
-// }
 
 /////past events
 
@@ -219,27 +209,26 @@ h2.past-events-title {
   text-align: center;
   font-size: 2em;
   position: relative;
+  padding: 55px;
 
   @include desktop {
     text-align: left;
-    padding-left: 221px;
-    padding-bottom: 10px;
+    padding-left: 100px;
   }
 }
 
 .past-events-container {
   display: flex;
-  // flex-wrap: wrap;
   flex-direction: column;
   padding-top: 20px;
   margin: 0 auto;
-  // border: 1px solid black;
 
   .past-event {
-    border: 1px solid black;
+    border: 2px solid transparent;
     display: flex;
-    max-width: 600px;
+    max-width: 1000px;
     flex-direction: column;
+    justify-self: right;
   }
 
   @include desktop {
@@ -248,9 +237,8 @@ h2.past-events-title {
     width: 84%;
     background-size: 100vh;
     background-repeat: no-repeat;
-    // background-position: top right;
     flex-direction: column;
-    max-width: 1000px;
+    max-width: 1150px;
     background-position: 143% -16%;
   }
 
@@ -262,45 +250,69 @@ h2.past-events-title {
 }
 
 .past-events-text {
-  // flex: 1;
-  width: 60%;
+  width: 70%;
+  margin: 5% auto;
+  font-size: 1.5em;
+  letter-spacing: 0.4px;
+
   @include desktop {
-    // width: 100vh;
     flex-direction: column;
   }
 }
 .past-events-container {
   img {
     object-fit: cover;
-    // height: 30vh;
-    height: 200px;
-    width: 200px;
-
-    // justify-content: center;
+    height: 300px;
+    width: 300px;
     position: relative;
     padding-left: 0;
     margin: 0 auto;
 
     @include desktop {
-      padding: 20px;
+      padding-top: 20px;
     }
   }
 }
 
 .past-events-date {
-  font-size: 1.75em;
+  font-size: 1.333em;
   text-align: center;
   line-height: 1em;
   padding-top: 0;
+  font-family: $parafont;
+  font-style: bold;
 }
+
 .past-events-location {
-  color: $primary_green_med;
-  font-size: 1.5em;
+  color: $primary_green_light;
+  font-size: 1.111em;
   text-align: center;
+  font-family: $parafont;
+
+  @include desktop {
+    text-align: left;
+    font-size: 1.33em;
+  }
 }
+
 .past-events-description {
-  font-size: $fontsize;
-  margin: 5% 5%;
+  font-size: 0.75em;
   line-height: $fontsize;
   text-align: center;
+  font-family: $parafont;
+  line-height: 1.3em;
+
+  @include desktop {
+    text-align: left;
+    width: 470px;
+    height: 181px;
+    letter-spacing: 0.27px;
+  }
+}
+
+.past-events-date {
+  @include desktop {
+    text-align: left;
+    font-size: 1.33em;
+  }
 }

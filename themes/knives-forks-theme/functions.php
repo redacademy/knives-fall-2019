@@ -72,7 +72,7 @@ function custom_team_block()
 			'name' 				=> 'our team',
 			'title' 			=> __('Our Team'),
 			'description' 		=> __('custom block for our team'),
-			'render_callback' 	=> 'act_block_render_callback',
+			'render_callback' 	=> 'acf_block_render_callback',
 			'category'			=> 'formatting',
 		));
 	}

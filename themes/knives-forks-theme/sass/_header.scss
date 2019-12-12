@@ -30,6 +30,9 @@
   }
   .menu li {
     list-style: none;
+    a {
+      text-transform: capitalize;
+    }
   }
   .mobile-menu {
     font-family: $parafont;
@@ -88,7 +91,7 @@
       .menu {
         display: flex;
         justify-content: space-around;
-        padding: $padding 0 0 0;
+        padding: $padding 0 0;
         li {
           padding: $padding $padding;
           a {

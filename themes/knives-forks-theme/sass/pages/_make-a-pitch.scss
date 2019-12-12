@@ -3,8 +3,8 @@
     margin-top: 0;
   }
 }
-#gform_1 //remember to change to gform_1 for staging// 
- {
+#gform_1,
+#gform_3 {
   display: flex;
   margin-top: 200px;
   .gf_page_steps {
@@ -14,6 +14,21 @@
     width: 33%;
     position: sticky;
     top: 0;
+    .gf_step {
+      opacity: 1;
+      filter: none;
+      color: $primary_green_dark;
+      font-size: $fontsize;
+      font-family: $parafont;
+      height: 30px;
+      margin: $margin;
+      width: auto;
+    }
+    .gf_step_active {
+      color: white;
+      background-color: $primary_green_dark;
+      font-weight: $font_weight_header;
+    }
     // span.fg_step_number {
     //   display: none;
     // }

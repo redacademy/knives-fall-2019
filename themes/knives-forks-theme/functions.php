@@ -58,10 +58,24 @@ function register_acf_block_types()
 		//'enqueue_style'    	=> get_template_directory_uri(  ),
 	));
 }
-
 // Check if function exists and hook into setup.
 if (function_exists('acf_register_block_type')) {
 	add_action('acf/init', 'register_acf_block_types');
+}
+
+// VICTOR'S CUSTOM BLOCK
+add_action('acf/init', 'custom_team_block');
+function custom_team_block()
+{
+	if (function_exists('acf_register_block')) {
+		acf_register_block(array(
+			'name' 				=> 'our team',
+			'title' 			=> __('Our Team'),
+			'description' 		=> __('custom block for our team'),
+			'render_callback' 	=> 'act_block_render_callback',
+			'category'			=> 'formatting',
+		));
+	}
 }
 
 

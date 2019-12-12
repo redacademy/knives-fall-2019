@@ -243,7 +243,7 @@ p {
 .btn {
   background: #296133;
   color: white;
-  border: 1px solid transparent;
+  border: 1px solid #296133;
   border-radius: 2em;
   padding: 2%;
   font-size: 1rem;
@@ -1055,12 +1055,14 @@ h2.past-events-title {
 .page-apply-to-pitch .site-content {
   margin-top: 0; }
 
-#gform_1 {
+#gform_1,
+#gform_3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 200px; }
-  #gform_1 .gf_page_steps {
+  #gform_1 .gf_page_steps,
+  #gform_3 .gf_page_steps {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1073,10 +1075,28 @@ h2.past-events-title {
     position: -webkit-sticky;
     position: sticky;
     top: 0; }
-  #gform_1 .gform_body {
+    #gform_1 .gf_page_steps .gf_step,
+    #gform_3 .gf_page_steps .gf_step {
+      opacity: 1;
+      -webkit-filter: none;
+              filter: none;
+      color: #296133;
+      font-size: 1rem;
+      font-family: "Lato", sans-serif;
+      height: 30px;
+      margin: 1rem;
+      width: auto; }
+    #gform_1 .gf_page_steps .gf_step_active,
+    #gform_3 .gf_page_steps .gf_step_active {
+      color: white;
+      background-color: #296133;
+      font-weight: 600; }
+  #gform_1 .gform_body,
+  #gform_3 .gform_body {
     width: 33%;
     padding: 10px; }
-  #gform_1 .icon-default::after {
+  #gform_1 .icon-default::after,
+  #gform_3 .icon-default::after {
     background-image: url("../../assets/icons/Forms - Unfilled/unfilled-name.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -1088,7 +1108,8 @@ h2.past-events-title {
     position: relative;
     top: -100px;
     right: -400px; }
-  #gform_1 .icon-complete::after {
+  #gform_1 .icon-complete::after,
+  #gform_3 .icon-complete::after {
     background-image: url("../../assets/icons/Forms - filled/filled-name.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -1100,7 +1121,8 @@ h2.past-events-title {
     position: relative;
     top: -100px;
     right: -400px; }
-  #gform_1 .validation_error {
+  #gform_1 .validation_error,
+  #gform_3 .validation_error {
     display: none; }
 
 .page-contact-us {
@@ -1225,6 +1247,8 @@ h2.past-events-title {
     height: 35px; }
   .main-navigation .menu li {
     list-style: none; }
+    .main-navigation .menu li a {
+      text-transform: capitalize; }
   .main-navigation .mobile-menu {
     font-family: "Lato", sans-serif;
     z-index: 2;
@@ -1271,7 +1295,7 @@ h2.past-events-title {
         display: flex;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-        padding: 1rem 0 0 0; }
+        padding: 1rem 0 0; }
         .main-navigation .desktop-menu .menu li {
           padding: 1rem 1rem; }
           .main-navigation .desktop-menu .menu li a {

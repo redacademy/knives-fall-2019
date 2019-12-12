@@ -7,7 +7,6 @@ $args=array(
     'orderby'=>'post_date',
     'order'=>'ASC'
 );
-
 $testimonials=get_posts($args);
 
 //     echo '<pre>';
@@ -71,7 +70,7 @@ $testimonials=get_posts($args);
             <a href="#" class="btn how-btn">Become a Member</a>
             <a href="#" class="btn how-btn">Become Entrepreneur</a>
         </nav>
-        <img src="<?php echo get_field('how-img');?>" alt="how-it-works-hands" class="how-img">
+        <img src="<?=get_field('how-img');?>" alt="how-it-works-hands" class="how-img">
     </div><!-- .entry-content -->
      
      
@@ -100,7 +99,7 @@ $testimonials=get_posts($args);
                                 '.get_field('member_name',$x->ID).'
                             </p>
                             <p class="member-since">
-                                '.get_field('member_since',$x->ID).'
+                                Member since '. date("Y",strtotime(get_field('member_since',$x->ID))).'
                             </p>
                         </nav>
                     

@@ -1,0 +1,37 @@
+h3.summary-title {
+  font-size: 3rem;
+  font-family: $headfont, serif;
+  text-align: center;
+  font-display: bold;
+  color: black;
+
+  //
+}
+
+p.summary-description {
+  font-size: $fontsize;
+  border: 1px solid blue;
+}
+.flex-layout {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 33%;
+}
+
+@include desktop { //found this before it was " @mixin desktop ". From that Im getting an error like, " Mixin "desktop" does not accept a content block. "
+  .flex_item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+// .flex_item {
+// }
+
+// // .summary-description
+// // }
+
+// @include desktop() {
+// }

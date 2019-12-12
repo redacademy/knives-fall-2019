@@ -38,6 +38,12 @@
 					<!-- desktop menu -->
 					<div class="desktop-menu">
 						<?php wp_nav_menu(array('theme_location' => 'desktop', 'menu_id' => 'desktop-menu')); ?>
+						<?php // if (is_page(array('our-story', 'how-it-work', 'events', 'become-investor'))) { } 
+						?>
+						<?php if (is_page('our-story')) { ?>
+
+							<body <?php body_class('current'); ?>>
+							<?php } ?>
 					</div>
 					<i class="fas fa-bars hamburger" id="hamburger"></i>
 					<!-- hidden menu -->
@@ -60,38 +66,37 @@
 				echo '	</nav>
 						<nav class="banner-content">
 							<h2>
-								Together at Knives & Forks, we’re harnessing the power of local capital — keeping it flowing within the community.
+								'. get_field('banner-description') .'
 							</h2>
 						</nav>
 					</section>
 					';
-			}
-			else if(is_page('events')){
+			} else if (is_page('events')) {
 				// $arrays=get_field('featured-events');
 
 				// echo '<pre>';
 				// echo print_r($arrays);
-				
+
 				// echo '</pre>';
-			
-				$img=get_field('events_page_banner_image');
-				$img2=get_field('page_desktop_banner');
+
+				$img = get_field('events_page_banner_image');
+				$img2 = get_field('page_desktop_banner');
 				// $img2=$img2['url'];
 				// var_dump($img2);
-						$tmp.='
+				$tmp .= '
 						<section class="banner">
 							<nav class="banner-img banner-events">
-								<img src="'. $img .'" 
-								srcset="'. esc_url($img2) .' 900w, '. $img .' 300w" 
+								<img src="' . $img . '" 
+								srcset="' . esc_url($img2) . ' 900w, ' . $img . ' 300w" 
 								 alt="knives-fork-events">
 							</nav>
 								<div class="banner-outer-content">
 									<nav class="banner-content">
 										<h2 class="event-title">
-										'. esc_attr(get_field('upcoming_event_title')) .'
+										' . esc_attr(get_field('upcoming_event_title')) . '
 										</h2>
 										<p class="event-location">
-											'. esc_attr(get_field('upcoming_event_location')) .'
+											' . esc_attr(get_field('upcoming_event_location')) . '
 										<p>
 									</nav>
 									<a href="#" alt="Buy Tickets" class="btn btn-event">buy tickets</a>
@@ -99,14 +104,12 @@
 								</div>
 						</section>
 						';
-					
-					
-						echo $tmp;
-					
 
-				}
-					
-				
+
+				echo $tmp;
+			}
+
+
 			?>
 
 

@@ -1,7 +1,11 @@
 (function($) {
+<<<<<<< HEAD
+  $(function() {
+=======
   $(document).ready(function() {
     //***********instance and declarations */
     const $userWidth = document.documentElement.clientWidth;
+>>>>>>> 63ee3c6b5c76e40536ebb87eb6a99a7c68d05723
     // click the hamburger menu
     // VICTOR'S VARIABLES
     const burger = $('#hamburger');
@@ -48,6 +52,8 @@
 
     // ===================
 
+<<<<<<< HEAD
+=======
     //const thePage = getTerms(window.location.pathname);
 
     //implement styling and element's position
@@ -58,6 +64,7 @@
       $('.how-img').appendTo('.steps-list li:last-child()');
     }
 
+>>>>>>> 63ee3c6b5c76e40536ebb87eb6a99a7c68d05723
     // BROOKE'S WORK BELOW
 
     $('.gform_page').on('click', '.download-agreement', function(event) {
@@ -89,6 +96,10 @@
         gField +
         ' textarea',
       function() {
+<<<<<<< HEAD
+        console.log('blur');
+=======
+>>>>>>> 63ee3c6b5c76e40536ebb87eb6a99a7c68d05723
         if ($(this).val() !== '') {
           $(this).addClass('filled');
         } else {

@@ -1225,6 +1225,8 @@ h2.past-events-title {
     height: 35px; }
   .main-navigation .menu li {
     list-style: none; }
+    .main-navigation .menu li a {
+      text-transform: capitalize; }
   .main-navigation .mobile-menu {
     font-family: "Lato", sans-serif;
     z-index: 2;
@@ -1271,7 +1273,7 @@ h2.past-events-title {
         display: flex;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-        padding: 1rem 0 0 0; }
+        padding: 1rem 0 0; }
         .main-navigation .desktop-menu .menu li {
           padding: 1rem 1rem; }
           .main-navigation .desktop-menu .menu li a {

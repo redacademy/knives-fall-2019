@@ -345,7 +345,7 @@ input {
   display: none !important; }
 
 .banner {
-  margin-top: 3%;
+  margin-top: 10%;
   width: 100%;
   display: block;
   height: inherit;
@@ -392,6 +392,9 @@ article {
   height: inherit; }
   article h2 {
     text-transform: capitalize; }
+  article .how-count {
+    font-family: "Lato", sans-serif;
+    font-size: 28px; }
 
 .site-content {
   margin-top: 5%; }
@@ -882,6 +885,45 @@ h2.past-events-title {
       text-align: right;
       -webkit-transform: translateY(-80%);
               transform: translateY(-80%); } }
+
+@media only screen and (min-width: 500px) and (max-width: 999px) {
+  .article-content {
+    padding: 0; }
+    .article-content .entry-header {
+      padding: 0 5%; }
+    .article-content .how-count {
+      color: #f2804a; }
+    .article-content .how-img {
+      width: 100%;
+      margin-top: 5%; }
+  .entry-content nav {
+    padding: 0 5%; }
+  .entry-content .how-icons {
+    display: none; }
+  .testimonials {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5%; }
+    .testimonials .knives-fork {
+      display: none; }
+    .testimonials .carousel-cell {
+      padding: 0 10%; }
+    .testimonials .profile-pic {
+      -webkit-transform: translateY(-40%);
+              transform: translateY(-40%);
+      margin-bottom: 1em; }
+    .testimonials p {
+      -webkit-transform: translateY(-40%);
+              transform: translateY(-40%);
+      line-height: 1.5; }
+    .testimonials .member-name,
+    .testimonials .member-since {
+      text-align: right; }
+    .testimonials .member-name {
+      font-weight: bold; }
+    .testimonials .member-since {
+      -webkit-transform: translateY(-2em);
+              transform: translateY(-2em); } }
 
 @media all and (min-width: 1000px) {
   .article-content {

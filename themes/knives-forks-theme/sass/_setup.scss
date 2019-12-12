@@ -15,7 +15,7 @@ input {
 }
 //*******************FEATURED BANNER IMAGE for each page
 .banner {
-  margin-top: 3%;
+  margin-top: 10%;
   width: 100%;
   display: block;
   height: inherit;
@@ -58,6 +58,10 @@ article {
   height: inherit;
   h2 {
     text-transform: capitalize;
+  }
+  .how-count {
+    font-family: $parafont;
+    font-size: $title_md;
   }
 }
 .site-content {

@@ -81,9 +81,10 @@ get_header();
 		</section> 
 
 
-		<h2 class="past-events-title">Past Events</h2>
 	
 		<section class="past-events-container"> 
+		<h2 class="past-events-title">Past Events</h2>
+
 		<?php
 		if( have_rows('past_events') ): ?>
 

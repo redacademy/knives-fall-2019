@@ -66,7 +66,7 @@
 				echo '	</nav>
 						<nav class="banner-content">
 							<h2>
-								Together at Knives & Forks, we’re harnessing the power of local capital — keeping it flowing within the community.
+								'. get_field('banner-description') .'
 							</h2>
 						</nav>
 					</section>

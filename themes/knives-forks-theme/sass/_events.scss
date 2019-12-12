@@ -94,6 +94,30 @@ h2.upcoming-events-location {
 
 ///video section styling
 
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  // max-width: 90%;
+
+  // min-height: 300px;
+  // height: auto;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 60%;
+  // height: 100%;
+}
 ///TO DO change the control button
 
 .video-section {
@@ -127,6 +151,7 @@ h2.upcoming-events-location {
   @include desktop {
     flex-direction: row;
     width: 970px;
+    margin-left: 225px;
   }
 }
 
@@ -255,7 +280,7 @@ h2.past-events-title {
 
     @include desktop {
       padding-top: 20px;
-      margin: 0;
+      margin: 50;
     }
   }
 }

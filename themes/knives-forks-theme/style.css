@@ -490,6 +490,16 @@ h2.upcoming-events-location {
   width: 200px;
   white-space: no-wrap; }
 
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  text-align: center; }
+
 .video-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -520,7 +530,8 @@ h2.upcoming-events-location {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      width: 970px; } }
+      width: 970px;
+      margin-left: 225px; } }
 
 .summary-image img {
   max-width: 100%;
@@ -647,7 +658,7 @@ h2.past-events-title {
   @media all and (min-width: 1000px) {
     .past-events-container img {
       padding-top: 20px;
-      margin: 0; } }
+      margin: 50; } }
 
 .past-events-date {
   font-size: 24px;

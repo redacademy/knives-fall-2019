@@ -82,7 +82,7 @@ function team_acf_block_render_callback($team)
 {
 
 	// convert name ("acf/team") into path friendly slug ("team")
-	$slug = str_replace('acf/', '', $team['name']);
+	$slug = $team['name'];
 
 	// include a template part from within the "template-parts/block" folder
 	if (file_exists(get_theme_file_path("/template-parts/blocks/content-{$slug}.php"))) {

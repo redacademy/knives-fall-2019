@@ -1,5 +1,7 @@
 // /// front banner section
 
+/////TO DO change banner img to glass tumbler coffee cup for mobile
+
 .events-banner {
   background: url('../../assets/events-images/event-hero@3x.png') no-repeat;
   height: 100vh;
@@ -99,6 +101,8 @@ h2.upcoming-events-location {
 .video-section {
   display: flex;
   justify-content: center;
+  // top: 75px;
+  // height: 115vh;
   margin-top: 75px;
   background: linear-gradient(
     to bottom,
@@ -106,7 +110,7 @@ h2.upcoming-events-location {
     rgba(242, 144, 97, 0.17) 25%
   );
   padding-bottom: 6.25rem;
-  margin-bottom: 0rem;
+  margin-bottom: 10rem;
 }
 
 // .stackItem {
@@ -185,6 +189,12 @@ p.summary-description {
   //   // background: white;
   // }
 }
+// .flex-layout {
+//   display: flex;
+//   justify-content: space-between;
+//   flex-direction: row;
+//   max-width: 33%;
+// }
 
 /////past events
 
@@ -196,22 +206,24 @@ h2.past-events-title {
 
   @include desktop {
     text-align: left;
-    padding-left: 100px;
+    padding-left: 221px;
+    padding-bottom: 10px;
   }
 }
 
 .past-events-container {
   display: flex;
+  // flex-wrap: wrap;
   flex-direction: column;
   padding-top: 20px;
   margin: 0 auto;
+  // border: 1px solid black;
 
   .past-event {
-    border: 2px solid transparent;
+    border: 1px solid black;
     display: flex;
-    max-width: 1000px;
+    max-width: 600px;
     flex-direction: column;
-    justify-self: right;
   }
 
   @include desktop {
@@ -220,8 +232,9 @@ h2.past-events-title {
     width: 84%;
     background-size: 100vh;
     background-repeat: no-repeat;
+    // background-position: top right;
     flex-direction: column;
-    max-width: 1150px;
+    max-width: 1000px;
     background-position: 143% -16%;
   }
 
@@ -240,6 +253,7 @@ h2.past-events-title {
   line-height: 0.5em;
 
   @include desktop {
+    // width: 100vh;
     flex-direction: column;
     width: 42%;
   }
@@ -272,7 +286,6 @@ h2.past-events-title {
     font-size: 28px;
   }
 }
-
 .past-events-location {
   color: $primary_green_light;
   font-size: 20px;
@@ -285,7 +298,6 @@ h2.past-events-title {
     font-size: 24px;
   }
 }
-
 .past-events-description {
   font-size: 16px;
   line-height: $fontsize;

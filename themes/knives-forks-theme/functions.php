@@ -77,6 +77,22 @@ function custom_team_block()
 		));
 	}
 }
+//SERVIN custom BLOCK for Investor's PROFILE
+add_action('acf/init', 'investors_block');
+function investors_block(){
+	if(function_exists('acf_register_block')){
+		acf_register_block(array(
+			'name'=>'investor_profile',
+			'title'=>__('Investor\'s Profile'),
+			'description'=>__('A Custom Block for Investor\'s Profile'),
+			// 'render_callback'=>'acf_block_render_callback',
+			'render_template'=>'template-parts/blocks/content-business_investors.php',
+			'icon'=>'editor-paste-text',
+			'keywords'=>array('investors','business_investors','investor_profile')
+
+		));
+	}
+}
 
 function team_acf_block_render_callback($team)
 {

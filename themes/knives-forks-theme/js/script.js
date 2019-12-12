@@ -84,7 +84,10 @@
     // TODO check the code below for issues?
     $(document).on(
       'blur',
-      gField + ' input:not(.button), ' + gField + ' textarea',
+      gField +
+        ' input:not(.button):not([type="hidden"]), ' +
+        gField +
+        ' textarea',
       function() {
         if ($(this).val() !== '') {
           $(this).addClass('filled');
@@ -108,7 +111,7 @@
     // );
 
     function checkInputs(group) {
-      const $inputs = $(group).find('input:not(.button)');
+      const $inputs = $(group).find('input:not(.button):not([type="hidden"])');
       const $inputsArea = $(this).find('textarea');
       console.log($inputs.length);
       //   console.log($(group).find('.filled').length);

@@ -1107,14 +1107,12 @@ h2.past-events-title {
 .page-apply-to-pitch .site-content {
   margin-top: 0; }
 
-#gform_1,
-#gform_3 {
+.gform_wrapper form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 200px; }
-  #gform_1 .gf_page_steps,
-  #gform_3 .gf_page_steps {
+  .gform_wrapper form .gf_page_steps {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1127,8 +1125,7 @@ h2.past-events-title {
     position: -webkit-sticky;
     position: sticky;
     top: 0; }
-    #gform_1 .gf_page_steps .gf_step,
-    #gform_3 .gf_page_steps .gf_step {
+    .gform_wrapper form .gf_page_steps .gf_step {
       opacity: 1;
       -webkit-filter: none;
               filter: none;
@@ -1138,20 +1135,16 @@ h2.past-events-title {
       height: 30px;
       margin: 1rem;
       width: auto; }
-      #gform_1 .gf_page_steps .gf_step .gf_step_number,
-      #gform_3 .gf_page_steps .gf_step .gf_step_number {
+      .gform_wrapper form .gf_page_steps .gf_step .gf_step_number {
         display: none; }
-    #gform_1 .gf_page_steps .gf_step_active,
-    #gform_3 .gf_page_steps .gf_step_active {
+    .gform_wrapper form .gf_page_steps .gf_step_active {
       color: white;
       background-color: #296133;
       font-weight: 600; }
-  #gform_1 .gform_body,
-  #gform_3 .gform_body {
+  .gform_wrapper form .gform_body {
     width: 33%;
     padding: 10px; }
-  #gform_1 .icon-default::after,
-  #gform_3 .icon-default::after {
+  .gform_wrapper form .icon-default::after {
     background-image: url("../../assets/icons/Forms - Unfilled/unfilled-name.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -1163,8 +1156,7 @@ h2.past-events-title {
     position: relative;
     top: -100px;
     right: -400px; }
-  #gform_1 .icon-complete::after,
-  #gform_3 .icon-complete::after {
+  .gform_wrapper form .icon-complete::after {
     background-image: url("../../assets/icons/Forms - filled/filled-name.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -1176,8 +1168,7 @@ h2.past-events-title {
     position: relative;
     top: -100px;
     right: -400px; }
-  #gform_1 .validation_error,
-  #gform_3 .validation_error {
+  .gform_wrapper form .validation_error {
     display: none; }
 
 .page-contact-us {

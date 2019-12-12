@@ -72,8 +72,9 @@ function custom_team_block()
 			'name' 				=> 'team',
 			'title' 			=> __('Team'),
 			'description' 		=> __('custom block for our team'),
-			'render_callback' 	=> 'acf_block_render_callback',
-			'category'			=> 'formatting',
+			// 'render_callback' 	=> 'team_acf_block_render_callback',
+			'render_template'   => 'template-parts/blocks/content-team.php',
+			'category'			=> 'common blocks',
 		));
 	}
 }

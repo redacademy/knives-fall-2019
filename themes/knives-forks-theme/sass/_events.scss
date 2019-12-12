@@ -202,10 +202,7 @@ h2.past-events-title {
   text-align: center;
   font-size: 2em;
   position: relative;
-<<<<<<< HEAD
-=======
   padding: 29px;
->>>>>>> 9510ae7cfaf4a30019b30faa91a06eccc79714cb
 
   @include desktop {
     text-align: left;
@@ -249,17 +246,12 @@ h2.past-events-title {
 }
 
 .past-events-text {
-<<<<<<< HEAD
-  // flex: 1;
-  width: 60%;
-=======
   width: 70%;
   margin: 0 auto;
   // font-size: 1.5em;
   letter-spacing: 0.4px;
   line-height: 0.5em;
 
->>>>>>> 9510ae7cfaf4a30019b30faa91a06eccc79714cb
   @include desktop {
     // width: 100vh;
     flex-direction: column;
@@ -269,41 +261,23 @@ h2.past-events-title {
 .past-events-container {
   img {
     object-fit: cover;
-<<<<<<< HEAD
-    // height: 30vh;
-    height: 200px;
-    width: 200px;
-
-    // justify-content: center;
-=======
     height: 244px;
     width: 244px;
->>>>>>> 9510ae7cfaf4a30019b30faa91a06eccc79714cb
     position: relative;
     padding-left: 0;
     margin: 0 auto;
 
     @include desktop {
-<<<<<<< HEAD
-      padding: 20px;
-=======
       padding-top: 20px;
       margin: 0;
->>>>>>> 9510ae7cfaf4a30019b30faa91a06eccc79714cb
     }
   }
 }
 
 .past-events-date {
-<<<<<<< HEAD
-  font-size: 1.75em;
-=======
   font-size: 24px;
->>>>>>> 9510ae7cfaf4a30019b30faa91a06eccc79714cb
   text-align: center;
   padding-top: 0;
-<<<<<<< HEAD
-=======
   font-family: $parafont;
   font-style: bold;
 
@@ -311,14 +285,8 @@ h2.past-events-title {
     text-align: left;
     font-size: 28px;
   }
->>>>>>> 9510ae7cfaf4a30019b30faa91a06eccc79714cb
 }
 .past-events-location {
-<<<<<<< HEAD
-  color: $primary_green_med;
-  font-size: 1.5em;
-  text-align: center;
-=======
   color: $primary_green_light;
   font-size: 20px;
   text-align: center;
@@ -329,15 +297,8 @@ h2.past-events-title {
     text-align: left;
     font-size: 24px;
   }
->>>>>>> 9510ae7cfaf4a30019b30faa91a06eccc79714cb
 }
 .past-events-description {
-<<<<<<< HEAD
-  font-size: $fontsize;
-  margin: 5% 5%;
-  line-height: $fontsize;
-  text-align: center;
-=======
   font-size: 16px;
   line-height: $fontsize;
   text-align: center;
@@ -351,5 +312,4 @@ h2.past-events-title {
     letter-spacing: 0.27px;
     font-size: 16px;
   }
->>>>>>> 9510ae7cfaf4a30019b30faa91a06eccc79714cb
 }

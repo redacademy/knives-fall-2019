@@ -97,7 +97,7 @@
           a {
             color: #000;
             &:hover {
-              border-bottom: 2px solid #000;
+              color: $primary_green_dark;
             }
           }
           &:last-child {

@@ -1326,7 +1326,7 @@ h2.past-events-title {
           .main-navigation .desktop-menu .menu li a {
             color: #000; }
             .main-navigation .desktop-menu .menu li a:hover {
-              border-bottom: 2px solid #000; }
+              color: #296133; }
           .main-navigation .desktop-menu .menu li:last-child a {
             color: #fff;
             font-weight: 100;

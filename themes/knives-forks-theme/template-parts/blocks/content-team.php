@@ -6,8 +6,7 @@
  * This is the template that displays the testimonial block.
  */
 
-$avatar = get_field('memeber_avatar');
-
+$avatar = get_field('member_avatar');
 $id = 'team-' . $team['id'];
 
 $align_class = $team['align'] ? 'align' . $team['align'] : '';

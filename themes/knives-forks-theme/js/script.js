@@ -59,100 +59,98 @@
             $('.how-btn').appendTo('.steps-list li:last-child()');
             $('.how-img').appendTo('.steps-list li:last-child()');
         }
+        checkInputs('#gform_page_' + gFormId + '_' + gFormCurrentPage);
+      }
+    );
 
-        if (thePage !== 'events') {
-            $('.banner-content').css({
-                top: $('.banner').outerHeight() * 0.5
-            });
-            // if ($userWidth >= 500 && $userWidth <= 999) {
-            //   $('.banner-content').css({
-            //     top: $('.banner').outerHeight() * 0.3
-            //   });
-            // } else {
-            // }
-        } else if (thePage == 'events') {
-            if ($userWidth >= 500) {
-                $('.btn-event').appendTo('.banner-content');
-            }
+    $.each(
+      $(gField).find(
+        'input',
+        gField + ' input:not(.button), ' + gField + ' textarea',
+        function() {
+          if ($(this).val() !== '') {
+            $(this).addClass('filled');
+          }
+          checkInputs('#gform_page_' + gFormId + '_' + gFormCurrentPage);
         }
+      )
+    );
 
-        //**************FUNCTIONS DECLARATIOS********** */
-        function getTerms(pathname) {
-            pathname = pathname.replace('/kf/', '');
-            pathname = pathname.replace('/', '');
-            return pathname;
-        }
+    // $(document).bind('gform_post_render', function(
+    //   event,
+    //   form_id,
+    //   current_page
+    // ) {
+    //   console.log('gform loading?');
+    //   // code to be trigger when next/previous page is loaded
+    //   // const $form = $( '.gform_page_' + form_id + '_' + current_page );
+    //   console.log('.gform_page_' + form_id + '_' + current_page);
+    // });
 
+    // $.each($('.gform_page'), function(index, value) {
+    //   const group = value;
+    //   const $inputs = $(this).find(`input[type='text']`);
+    //   const $inputsArea = $(this).find(`textarea`);
 
-        // BROOKE'S WORK BELOW
-        // opens up & display menu items
-        // next button stylings for make-a-pitch
-        $('.gform_next_button').addClass('btn');
-        $('.gform_previous_button').addClass('btn');
-        const $gField = $('.gform_page');
-        //const $requiredField = $(`input[type='text'][aria-required='true']`);
+    //   //console.log('inputs', $inputs.length);
+    //   //console.log('textareas', $inputsArea.length);
 
-        $gField.addClass('icon-default');
+    //   $inputs.on('blur', function() {
+    //     //console.log('keyup');
+    //     if ($(this).val() !== '') {
+    //       $(this).addClass('filled');
+    //       //console.log('filled');
+    //     } else {
+    //       $(this).removeClass('filled');
+    //     }
+    //     checkInputs();
+    //   });
 
+    //   $inputsArea.on('blur', function() {
+    //     //console.log('keyup');
+    //     if ($(this).val() !== '') {
+    //       $(this).addClass('filled');
+    //       //console.log('filled');
+    //     } else {
+    //       $(this).removeClass('filled');
+    //     }
+    //     checkInputs();
+    //   });
+    // });
 
-        // next button stylings for make-a-pitch
-        $('.gform_next_button').addClass('btn');
-        $('.gform_previous_button').addClass('btn');
+    function checkInputs(group) {
+      const $inputs = $(group).find('input:not(.button)');
+      const $inputsArea = $(this).find('textarea');
+      console.log($inputs.length);
+      console.log($(group).find('.filled').length);
 
-        //**************FUNCTIONS DECLARATIOS********** */
+      console.log($(group).find('.filled').length);
+      console.log($inputsArea.length);
+      if (
+        $(group).find('.filled').length === $inputs.length &&
+        $inputs.length > 0
+      ) {
+        console.log('all inputs in group filled');
+        $(group)
+          .removeClass('icon-default')
+          .addClass('icon-complete');
+      } else if (
+        $(group).find('.filled').length === $inputsArea.length &&
+        $inputsArea.length > 0
+      ) {
+        console.log('textfields filled');
+        $(group)
+          .removeClass('icon-default')
+          .addClass('icon-complete');
+      } else {
+        $(group).removeClass('icon-complete');
+      }
+    }
+    //work in progress for looping through each make-a-pitch section
 
-
-        $.each($('.gform_page'), function (index, value) {
-            const group = value;
-            const $inputs = $(this).find(`input[type='text']`);
-            const $inputsArea = $(this).find(`textarea`);
-
-            console.log('inputs', $inputs.length);
-            console.log('textareas', $inputsArea.length);
-
-            $inputs.on('blur', function () {
-                console.log('keyup');
-                if ($(this).val() !== '') {
-                    $(this).addClass('filled');
-                    console.log('filled');
-                } else {
-                    $(this).removeClass('filled');
-                }
-                checkInputs();
-            });
-
-            $inputsArea.on('blur', function () {
-                console.log('keyup');
-                if ($(this).val() !== '') {
-                    $(this).addClass('filled');
-                    console.log('filled');
-                } else {
-                    $(this).removeClass('filled');
-                }
-                checkInputs();
-            });
-            function checkInputs() {
-                if ($(group).find('.filled').length === $inputs.length) {
-                    console.log('all inputs in group filled');
-                    $(group)
-                        .removeClass('icon-default')
-                        .addClass('icon-complete');
-                } else if ($(group).find('.filled').length === $inputsArea.length) {
-                    console.log('textfields filled');
-                    $(group)
-                        .removeClass('icon-default')
-                        .addClass('icon-complete');
-                } else {
-                    $(group).removeClass('icon-complete');
-                }
-            }
-        });
-
-        //work in progress for looping through each make-a-pitch section
-
-        //anvit
-        // for (let i = 0; i < myValidation.length; i++) {
-        //     const element = myValidation[i];
-        //     $(element.className + ' input[type="text"]').change(element, fn);
-    }); //when document is ready
-})(jQuery)
+    //anvit
+    // for (let i = 0; i < myValidation.length; i++) {
+    //     const element = myValidation[i];
+    //     $(element.className + ' input[type="text"]').change(element, fn);
+  }); //when document is ready
+})(jQuery);

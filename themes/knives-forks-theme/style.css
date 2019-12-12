@@ -344,6 +344,9 @@ input {
 .hide-this {
   display: none !important; }
 
+.steps-list {
+  margin-bottom: 5%; }
+
 .banner {
   margin-top: 10%;
   width: 100%;

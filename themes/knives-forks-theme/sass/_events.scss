@@ -96,28 +96,33 @@ h2.upcoming-events-location {
 
 .embed-container {
   position: relative;
-  padding-bottom: 56.25%;
   overflow: hidden;
   max-width: 100%;
   height: auto;
-  width: 100%;
+  min-width: 100%;
   margin: 0;
   text-align: center;
+
+  iframe {
+    width: 70%;
+
+    @include desktop {
+      width: 50%;
+    }
+  }
 }
 
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-  // max-width: 90%;
-
-  // min-height: 300px;
-  // height: auto;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // width: 60%;
-  // height: 100%;
-}
+// .embed-container iframe,
+// .embed-container object,
+// .embed-container embed {
+//   // min-height: 300px;
+//   // height: auto;
+//   // position: absolute;
+//   // top: 0;
+//   // left: 0;
+//   // width: 60%;
+//   // height: 100%;
+// }
 ///TO DO change the control button
 
 .video-section {
@@ -129,13 +134,16 @@ h2.upcoming-events-location {
     rgba(white, 0) 25%,
     rgba(242, 144, 97, 0.17) 25%
   );
-  padding-bottom: 6.25rem;
+  padding-bottom: 4rem;
   margin-bottom: 0rem;
-}
+  margin-left: -6%;
+  margin-right: -5.9%;
 
-// .stackItem {
-//   min-width: 20vw;
-// }
+  @include desktop {
+    margin-left: 6%;
+    margin-right: 9%;
+  }
+}
 
 // ///pitch summary section //
 

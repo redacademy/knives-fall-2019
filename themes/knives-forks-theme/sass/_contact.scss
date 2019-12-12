@@ -19,17 +19,31 @@
       height: 130px;
       width: 470px;
     }
+    // .fab {
+    //   color: white;
+    //   font-size: 20px;
+    //   text-align: center;
+    // }
+
     .fab {
       color: white;
+      height: 20px;
+      width: 20px;
       font-size: 20px;
       text-align: center;
-      padding: 5px;
+      border-radius: 60%;
+      margin: 10px;
     }
     .contact-opportunity {
-      line-height: 1em;
+      line-height: 1.5em;
       font-size: 2em;
       font-family: $headfont;
       text-align: left;
+      margin-left: 46px;
+
+      @include desktop {
+        padding-left: 160px;
+      }
     }
 
     .asterix {
@@ -43,6 +57,7 @@
   padding: 0;
   li {
     background: $primary_green_med;
+    color: white;
     height: 42px;
     width: 42px;
     border-radius: 60%;
@@ -58,6 +73,10 @@
 .entry-content-contact {
   width: 90%;
   margin: 0 auto;
+
+  @include desktop {
+    width: 70%;
+  }
 }
 
 //// section for media enquiries
@@ -86,17 +105,6 @@
 //TO DO replace btns with jpeg file from assets
 
 ////mobile style for font-awesome buttons
-
-.fab {
-  color: white;
-  height: 20px;
-  width: 20px;
-  font-size: 20px;
-  text-align: center;
-  padding: 5px;
-  border-radius: 60%;
-  margin: 10px;
-}
 
 .social-links {
   display: flex;

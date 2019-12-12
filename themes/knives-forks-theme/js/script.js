@@ -1,5 +1,6 @@
 (function ($) {
-  $(function () {
+  $(document).ready(function () {
+
     //***********instance and declarations */
     const $userWidth = document.documentElement.clientWidth;
     // click the hamburger menu

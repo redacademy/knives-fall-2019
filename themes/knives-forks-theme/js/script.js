@@ -12,8 +12,8 @@
         const pendInvestment = $(
             '<li><a href="#investment">Our Investment</a></li>'
         );
-        // const navHiddenMenu = $('#hidden-menu');
-        const investor = $('.menu-item-64');
+        const navHiddenMenu = $('#hidden-menu');
+        const investor = $('.menu-item-201');
         // END OF VICTOR'S VARIABLES
 
 
@@ -41,6 +41,8 @@
         // const investor = $('.menu-item-181') //staging
         // pendInvestment.insertAfter('.menu-item-45'); //local
         pendInvestment.insertAfter('.menu-item-189'); //staging
+
+        navHiddenMenu.prepend('<li><a href="#investment">Our Investment</a></li>');
         //====================
 
         //END OF  VICTOR'S WORK

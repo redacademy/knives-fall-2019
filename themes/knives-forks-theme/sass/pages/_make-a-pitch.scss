@@ -23,6 +23,9 @@
       height: 30px;
       margin: $margin;
       width: auto;
+      .gf_step_number {
+        display: none;
+      }
     }
     .gf_step_active {
       color: white;

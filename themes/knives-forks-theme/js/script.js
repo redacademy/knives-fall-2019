@@ -1,5 +1,11 @@
 (function($) {
+<<<<<<< HEAD
   $(function() {
+=======
+  $(document).ready(function() {
+    //***********instance and declarations */
+    const $userWidth = document.documentElement.clientWidth;
+>>>>>>> 63ee3c6b5c76e40536ebb87eb6a99a7c68d05723
     // click the hamburger menu
     // VICTOR'S VARIABLES
     const burger = $('#hamburger');
@@ -46,11 +52,31 @@
 
     // ===================
 
+<<<<<<< HEAD
+=======
+    //const thePage = getTerms(window.location.pathname);
+
+    //implement styling and element's position
+    if ($userWidth <= 499) {
+      //**********************************for MOBILE
+      // $('entry-content  ul  li:last-child()').append($('.how-btn'));
+      $('.how-btn').appendTo('.steps-list li:last-child()');
+      $('.how-img').appendTo('.steps-list li:last-child()');
+    }
+
+>>>>>>> 63ee3c6b5c76e40536ebb87eb6a99a7c68d05723
     // BROOKE'S WORK BELOW
-    // next button stylings for make-a-pitch
+
+    $('.gform_page').on('click', '.download-agreement', function(event) {
+      event.preventDefault();
+      window.open(knivesforks_vars.invest_download_file);
+    });
+
+    // button stylings for make-a-pitch
     $('.gform_next_button').addClass('btn');
     $('.gform_previous_button').addClass('btn');
     $('.gform_button').addClass('btn');
+
     const gFormCurrentPage = parseInt(
       $('.gf_step_active .gf_step_number').text()
     );
@@ -61,39 +87,44 @@
     );
     const gField = '#gform_page_' + gFormId + '_' + gFormCurrentPage;
     $(gField).addClass('icon-default');
+
+    // TODO check the code below for issues?
     $(document).on(
       'blur',
       gField + ' input:not(.button), ' + gField + ' textarea',
       function() {
+<<<<<<< HEAD
         console.log('blur');
+=======
+>>>>>>> 63ee3c6b5c76e40536ebb87eb6a99a7c68d05723
         if ($(this).val() !== '') {
           $(this).addClass('filled');
-          //console.log('filled');
         } else {
           $(this).removeClass('filled');
         }
         checkInputs('#gform_page_' + gFormId + '_' + gFormCurrentPage);
       }
     );
-    $.each(
-      $(gField).find(
-        'input',
-        gField + ' input:not(.button), ' + gField + ' textarea',
-        function() {
-          if ($(this).val() !== '') {
-            $(this).addClass('filled');
-          }
-          checkInputs('#gform_page_' + gFormId + '_' + gFormCurrentPage);
-        }
-      )
-    );
+    // $.each(
+    //   $(gField).find(
+    //     'input',
+    //     gField + ' input:not(.button), ' + gField + ' textarea',
+    //     function() {
+    //       if ($(this).val() !== '') {
+    //         $(this).addClass('filled');
+    //       }
+    //       checkInputs('#gform_page_' + gFormId + '_' + gFormCurrentPage);
+    //     }
+    //   )
+    // );
+
     function checkInputs(group) {
       const $inputs = $(group).find('input:not(.button)');
       const $inputsArea = $(this).find('textarea');
       console.log($inputs.length);
-      console.log($(group).find('.filled').length);
-      console.log($(group).find('.filled').length);
-      console.log($inputsArea.length);
+      //   console.log($(group).find('.filled').length);
+      //   console.log($(group).find('.filled').length);
+      //   console.log($inputsArea.length);
       if (
         $(group).find('.filled').length === $inputs.length &&
         $inputs.length > 0
@@ -114,6 +145,7 @@
         $(group).removeClass('icon-complete');
       }
     }
+
     //=================
 
     // END OF BROOKE'S WORK

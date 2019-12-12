@@ -72,8 +72,9 @@ function custom_team_block()
 			'name' 				=> 'team',
 			'title' 			=> __('Team'),
 			'description' 		=> __('custom block for our team'),
-			'render_callback' 	=> 'acf_block_render_callback',
-			'category'			=> 'formatting',
+			// 'render_callback' 	=> 'team_acf_block_render_callback',
+			'render_template'   => 'template-parts/blocks/content-team.php',
+			'category'			=> 'common blocks',
 		));
 	}
 }
@@ -166,6 +167,21 @@ function red_starter_scripts()
 	wp_enqueue_script('red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array('jquery'), '20151215', true);
 	wp_enqueue_script('red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array('jquery'), '20151215', true);
 	wp_enqueue_style('red-starter-font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
+
+	wp_enqueue_script('fit-vids', 'https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js', array('jquery'), '', true); 
+	
+	// TODO add this to a JavaScript file to help scale embedded videos
+	// $('.embed-container').fitVids();
+
+		$localize = array(
+			'invest_download_file' => get_field('agreement_document', get_the_ID())		);
+		wp_localize_script( 'script', 'knivesforks_vars', $localize );
+
+		
+
+		
+
+	
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');

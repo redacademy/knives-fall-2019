@@ -1,7 +1,5 @@
-(function ($) {
-  $(function () {
-    //***********instance and declarations */
-    const $userWidth = document.documentElement.clientWidth;
+(function($) {
+  $(function() {
     // click the hamburger menu
     // VICTOR'S VARIABLES
     const burger = $('#hamburger');
@@ -16,7 +14,6 @@
     const investor = $('.menu-item-201 a');
     // END OF VICTOR'S VARIABLES
 
-
     // VICTOR'S WORK
 
     // add .btn to menu item
@@ -26,15 +23,15 @@
     // click the hamburger menu
     // closing menu
     // opens up & display menu items
-    burger.click(function () {
+    burger.click(function() {
       mobileMenu.removeClass('hide');
       hiddenMenu.removeClass('hide');
     });
 
-    cross.click(function () {
+    cross.click(function() {
       mobileMenu.addClass('hide');
     });
-    hidCross.click(function () {
+    hidCross.click(function() {
       hiddenMenu.addClass('hide');
     });
     // create new list item after <li> events
@@ -48,17 +45,6 @@
     //END OF  VICTOR'S WORK
 
     // ===================
-
-    const thePage = getTerms(window.location.pathname);
-
-    //implement styling and element's position
-    if ($userWidth <= 499) {
-      //**********************************for MOBILE
-      // $('entry-content  ul  li:last-child()').append($('.how-btn'));
-      $('.how-btn').appendTo('.steps-list li:last-child()');
-      $('.how-img').appendTo('.steps-list li:last-child()');
-    }
-
 
     // BROOKE'S WORK BELOW
     // next button stylings for make-a-pitch
@@ -78,7 +64,7 @@
     $(document).on(
       'blur',
       gField + ' input:not(.button), ' + gField + ' textarea',
-      function () {
+      function() {
         console.log('blur');
         if ($(this).val() !== '') {
           $(this).addClass('filled');
@@ -93,7 +79,7 @@
       $(gField).find(
         'input',
         gField + ' input:not(.button), ' + gField + ' textarea',
-        function () {
+        function() {
           if ($(this).val() !== '') {
             $(this).addClass('filled');
           }
@@ -133,6 +119,5 @@
     // END OF BROOKE'S WORK
 
     //====================
-
   }); //when document is ready
 })(jQuery);

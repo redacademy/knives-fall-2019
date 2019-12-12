@@ -113,11 +113,10 @@
   let scrollIndex = 0;
   let prevIndex = 0;
   let tmpBool = false;
-  let lastBool = false;
   $(window).on('scroll', function() {
-    console.clear();
+    // console.clear();
     scrollIndex = $(window).scrollTop();
-    console.log(scrollIndex);
+    // console.log(scrollIndex);
     if (scrollIndex > 100 && scrollIndex < 130) {
       tmpBool = true;
       prevIndex = scrollIndex;

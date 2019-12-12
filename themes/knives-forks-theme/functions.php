@@ -143,6 +143,7 @@ function red_starter_scripts()
 	wp_enqueue_style('style', get_template_directory_uri() . '/build/css/style.min.css');
 	wp_enqueue_style('flickity-styles', 'https://npmcdn.com/flickity@2/dist/flickity.css');
 
+	wp_enqueue_script('servin-scripts', get_template_directory_uri() . '/build/js/servin.min.js', array('jquery'), false, true);
 	wp_enqueue_script('flickity-scripts', 'https://npmcdn.com/flickity@2/dist/flickity.pkgd.js', array('jquery'), false, true);
 	wp_enqueue_script('for-plugins', get_template_directory_uri() . '/build/js/forplugins.min.js', array('jquery'), false, true);
 	wp_enqueue_script('script', get_template_directory_uri() . '/build/js/script.min.js', array('jquery'), '20151215', true);

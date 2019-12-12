@@ -97,7 +97,6 @@ h2.upcoming-events-location {
 ///TO DO change the control button
 
 .video-section {
-  // position: relative;
   display: flex;
   justify-content: center;
   margin-top: 75px;
@@ -110,23 +109,8 @@ h2.upcoming-events-location {
   margin-bottom: 0rem;
 }
 
-.stackItem {
-  min-width: 20vw;
-}
-
-// .controlsContainer {
-//   --clickToPlay-size: 300px;
-//   background-image: url(../assets/events-images/playbutton.svg);
-// }
-
-// .clickToPlay {
-//   --clickToPlay-size: 108px;
-
-//   background-image: url(../assets/events-images/playbutton@2x.png);
-// }
-// video {
-//   // height: 235px;
-//   // width: 133px;
+// .stackItem {
+//   min-width: 20vw;
 // }
 
 // ///pitch summary section //
@@ -135,13 +119,14 @@ h2.upcoming-events-location {
   display: flex;
   // margin-left: 50px;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   width: 100%vw;
   text-align: center;
   padding-bottom: 34px;
 
   @include desktop {
     flex-direction: row;
+    width: 970px;
   }
 }
 
@@ -154,11 +139,8 @@ h2.upcoming-events-location {
 
 .flex-item-container {
   display: flex;
-  // justify-content: center;
-  // align-items: center;
   margin: 0 60px;
   flex-direction: column;
-  // height: 60vh;
 }
 
 h3.summary-title {
@@ -210,7 +192,7 @@ h2.past-events-title {
   text-align: center;
   font-size: 2em;
   position: relative;
-  padding: 55px;
+  padding: 29px;
 
   @include desktop {
     text-align: left;
@@ -252,52 +234,60 @@ h2.past-events-title {
 
 .past-events-text {
   width: 70%;
-  margin: 5% auto;
-  font-size: 1.5em;
+  margin: 0 auto;
+  // font-size: 1.5em;
   letter-spacing: 0.4px;
+  line-height: 0.5em;
 
   @include desktop {
     flex-direction: column;
+    width: 42%;
   }
 }
 .past-events-container {
   img {
     object-fit: cover;
-    height: 300px;
-    width: 300px;
+    height: 244px;
+    width: 244px;
     position: relative;
     padding-left: 0;
     margin: 0 auto;
 
     @include desktop {
       padding-top: 20px;
+      margin: 0;
     }
   }
 }
 
 .past-events-date {
-  font-size: 1.333em;
+  font-size: 24px;
   text-align: center;
-  line-height: 1em;
   padding-top: 0;
   font-family: $parafont;
   font-style: bold;
+
+  @include desktop {
+    text-align: left;
+    font-size: 28px;
+  }
 }
 
 .past-events-location {
   color: $primary_green_light;
-  font-size: 1.111em;
+  font-size: 20px;
   text-align: center;
   font-family: $parafont;
+  font-weight: 500;
 
   @include desktop {
     text-align: left;
-    font-size: 1.33em;
+    font-size: 24px;
   }
 }
 
 .past-events-description {
-  font-size: 0.75em;
+  font-size: 16px;
   line-height: $fontsize;
   text-align: center;
   font-family: $parafont;
@@ -308,12 +298,6 @@ h2.past-events-title {
     width: 470px;
     height: 181px;
     letter-spacing: 0.27px;
-  }
-}
-
-.past-events-date {
-  @include desktop {
-    text-align: left;
-    font-size: 1.33em;
+    font-size: 16px;
   }
 }

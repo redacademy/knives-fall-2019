@@ -14,7 +14,7 @@ $align_class = $team['align'] ? 'align' . $team['align'] : '';
 
 $name = the_field('our_team');
 
-$role = the_field('organeization_role');
+$role = the_field('organization_role');
 ?>
 <blockquote id="<?php echo $id; ?>" class="team <?php echo $align_class; ?>">
     <p><?php $name; ?></p>

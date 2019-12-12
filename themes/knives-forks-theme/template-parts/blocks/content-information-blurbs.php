@@ -51,9 +51,10 @@ while( have_rows('become_a_member') ) {
                     <h3 class="copy-subtitle"><?php echo $subtitle; ?></h3>
                     <p class="copy-text"><?php echo $content?></p> 
                 </article>
-                <a href= "<?php get_page_uri(165)?>" class='copy-block-btn btn'>Become a Member</a>
+                <?php $investor = get_page_by_title('Become an Investor'); ?>
+                <a href="<?php echo get_permalink($investor); ?>" class='copy-block-btn btn'>Become a Member</a>
             </div>
-            <figure class="copy-block-image">
+            <figure class="copy-block-image"> 
                 <img src="<?php echo $image['url'];?>">
             </figure>
         </section>
@@ -76,7 +77,8 @@ while (have_rows('make_a_pitch')) {
                     <h3 class="copy-subtitle"><?php echo $subtitle; ?></h3>
                     <p class="copy-text"><?php echo $content?></p>
                 </article>
-                <a href= "#" class='copy-block-btn btn'>Apply to Pitch</a>
+                <?php $pitch = get_page_by_title('apply to pitch');?>
+                <a href= "<?php the_permalink($pitch)?>" class='copy-block-btn btn'>Apply to Pitch</a>
             </div>
             <figure class="copy-block-image">
                 <img src="<?php echo $image['url'];?>">

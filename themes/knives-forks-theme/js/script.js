@@ -1,6 +1,5 @@
-(function ($) {
-  $(document).ready(function () {
-
+(function($) {
+  $(document).ready(function() {
     //***********instance and declarations */
     const $userWidth = document.documentElement.clientWidth;
     // click the hamburger menu
@@ -17,7 +16,6 @@
     const investor = $('.menu-item-201 a');
     // END OF VICTOR'S VARIABLES
 
-
     // VICTOR'S WORK
 
     // add .btn to menu item
@@ -27,15 +25,15 @@
     // click the hamburger menu
     // closing menu
     // opens up & display menu items
-    burger.click(function () {
+    burger.click(function() {
       mobileMenu.removeClass('hide');
       hiddenMenu.removeClass('hide');
     });
 
-    cross.click(function () {
+    cross.click(function() {
       mobileMenu.addClass('hide');
     });
-    hidCross.click(function () {
+    hidCross.click(function() {
       hiddenMenu.addClass('hide');
     });
     // create new list item after <li> events
@@ -50,7 +48,7 @@
 
     // ===================
 
-    const thePage = getTerms(window.location.pathname);
+    //const thePage = getTerms(window.location.pathname);
 
     //implement styling and element's position
     if ($userWidth <= 499) {
@@ -60,9 +58,14 @@
       $('.how-img').appendTo('.steps-list li:last-child()');
     }
 
-
     // BROOKE'S WORK BELOW
-    // next button stylings for make-a-pitch
+
+    $('.gform_page').on('click', '.download-agreement', function(event) {
+      event.preventDefault();
+      window.open(knivesforks_vars.invest_download_file);
+    });
+
+    // button stylings for make-a-pitch
     $('.gform_next_button').addClass('btn');
     $('.gform_previous_button').addClass('btn');
     $('.gform_button').addClass('btn');
@@ -76,10 +79,12 @@
     );
     const gField = '#gform_page_' + gFormId + '_' + gFormCurrentPage;
     $(gField).addClass('icon-default');
+
+    // TODO check the code below for issues?
     $(document).on(
       'blur',
       gField + ' input:not(.button), ' + gField + ' textarea',
-      function () {
+      function() {
         console.log('blur');
         if ($(this).val() !== '') {
           $(this).addClass('filled');
@@ -90,25 +95,26 @@
         checkInputs('#gform_page_' + gFormId + '_' + gFormCurrentPage);
       }
     );
-    $.each(
-      $(gField).find(
-        'input',
-        gField + ' input:not(.button), ' + gField + ' textarea',
-        function () {
-          if ($(this).val() !== '') {
-            $(this).addClass('filled');
-          }
-          checkInputs('#gform_page_' + gFormId + '_' + gFormCurrentPage);
-        }
-      )
-    );
+    // $.each(
+    //   $(gField).find(
+    //     'input',
+    //     gField + ' input:not(.button), ' + gField + ' textarea',
+    //     function() {
+    //       if ($(this).val() !== '') {
+    //         $(this).addClass('filled');
+    //       }
+    //       checkInputs('#gform_page_' + gFormId + '_' + gFormCurrentPage);
+    //     }
+    //   )
+    // );
+
     function checkInputs(group) {
       const $inputs = $(group).find('input:not(.button)');
       const $inputsArea = $(this).find('textarea');
-      console.log($inputs.length);
-      console.log($(group).find('.filled').length);
-      console.log($(group).find('.filled').length);
-      console.log($inputsArea.length);
+      //   console.log($inputs.length);
+      //   console.log($(group).find('.filled').length);
+      //   console.log($(group).find('.filled').length);
+      //   console.log($inputsArea.length);
       if (
         $(group).find('.filled').length === $inputs.length &&
         $inputs.length > 0
@@ -129,11 +135,11 @@
         $(group).removeClass('icon-complete');
       }
     }
+
     //=================
 
     // END OF BROOKE'S WORK
 
     //====================
-
   }); //when document is ready
 })(jQuery);

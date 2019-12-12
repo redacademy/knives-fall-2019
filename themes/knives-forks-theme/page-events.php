@@ -92,6 +92,7 @@ get_header();
 
 
 	
+		<div class="past-events-wrapper">
 		<section class="past-events-container"> 
 		<h2 class="past-events-title">Past Events</h2>
 
@@ -115,6 +116,7 @@ get_header();
 			<?php else : endif; ?>
 		<!-- </div> -->
 	</section>
+	</div>
 
 
 	</main>

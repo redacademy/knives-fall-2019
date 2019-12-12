@@ -51,13 +51,13 @@ while( have_rows('become_a_member') ) {
                     <h3 class="copy-subtitle"><?php echo $subtitle; ?></h3>
                     <p class="copy-text"><?php echo $content?></p> 
                 </article>
-                <a href= "#" class='copy-block-btn btn'>Become a Member</a>
+                <a href= "<?php get_page_uri(165)?>" class='copy-block-btn btn'>Become a Member</a>
             </div>
             <figure class="copy-block-image">
                 <img src="<?php echo $image['url'];?>">
             </figure>
         </section>
-<?php 
+<?php  
 }
 
 while (have_rows('make_a_pitch')) {

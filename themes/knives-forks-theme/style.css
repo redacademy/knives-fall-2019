@@ -514,6 +514,7 @@ h2.upcoming-events-location {
   margin-top: 75px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(242, 144, 97, 0.17)));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 25%, rgba(242, 144, 97, 0.17) 25%);
+<<<<<<< HEAD
   padding-bottom: 4rem;
   margin-bottom: 0rem;
   margin-left: -6%;
@@ -522,6 +523,10 @@ h2.upcoming-events-location {
     .video-section {
       margin-left: 6%;
       margin-right: 9%; } }
+=======
+  padding-bottom: 6.25rem;
+  margin-bottom: 10rem; }
+>>>>>>> 9ea16171f3e93d61ab6a8b107409286851f9748f
 
 .pitch-summary {
   display: -webkit-box;
@@ -601,7 +606,8 @@ h2.past-events-title {
   @media all and (min-width: 1000px) {
     h2.past-events-title {
       text-align: left;
-      padding-left: 100px; } }
+      padding-left: 221px;
+      padding-bottom: 10px; } }
 
 .past-events-container {
   display: -webkit-box;
@@ -614,16 +620,15 @@ h2.past-events-title {
   padding-top: 20px;
   margin: 0 auto; }
   .past-events-container .past-event {
-    border: 2px solid transparent;
+    border: 1px solid black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 1000px;
+    max-width: 600px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    justify-self: right; }
+            flex-direction: column; }
   @media all and (min-width: 1000px) {
     .past-events-container {
       background: #f2f7f7;
@@ -635,7 +640,7 @@ h2.past-events-title {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      max-width: 1150px;
+      max-width: 1000px;
       background-position: 143% -16%; } }
   @media all and (min-width: 1000px) {
     .past-events-container .past-event {
@@ -1347,7 +1352,7 @@ h2.past-events-title {
           .main-navigation .desktop-menu .menu li a {
             color: #000; }
             .main-navigation .desktop-menu .menu li a:hover {
-              border-bottom: 2px solid #000; }
+              color: #378244; }
           .main-navigation .desktop-menu .menu li:last-child a {
             color: #fff;
             font-weight: 100;

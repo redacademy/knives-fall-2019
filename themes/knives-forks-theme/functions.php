@@ -69,12 +69,24 @@ function custom_team_block()
 {
 	if (function_exists('acf_register_block')) {
 		acf_register_block(array(
-			'name' 				=> 'our team',
-			'title' 			=> __('Our Team'),
+			'name' 				=> 'team',
+			'title' 			=> __('Team'),
 			'description' 		=> __('custom block for our team'),
 			'render_callback' 	=> 'acf_block_render_callback',
 			'category'			=> 'formatting',
 		));
+	}
+}
+
+function team_acf_block_render_callback($team)
+{
+
+	// convert name ("acf/team") into path friendly slug ("team")
+	$slug = str_replace('acf/', '', $team['name']);
+
+	// include a template part from within the "template-parts/block" folder
+	if (file_exists(get_theme_file_path("/template-parts/blocks/content-{$slug}.php"))) {
+		include(get_theme_file_path("/template-parts/blocks/content-{$slug}.php"));
 	}
 }
 

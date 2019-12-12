@@ -490,6 +490,20 @@ h2.upcoming-events-location {
   width: 200px;
   white-space: no-wrap; }
 
+.embed-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  min-width: 100%;
+  margin: 0;
+  text-align: center; }
+  .embed-container iframe {
+    width: 70%; }
+    @media all and (min-width: 1000px) {
+      .embed-container iframe {
+        width: 50%; } }
+
 .video-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,8 +514,19 @@ h2.upcoming-events-location {
   margin-top: 75px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(242, 144, 97, 0.17)));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 25%, rgba(242, 144, 97, 0.17) 25%);
+<<<<<<< HEAD
+  padding-bottom: 4rem;
+  margin-bottom: 0rem;
+  margin-left: -6%;
+  margin-right: -5.9%; }
+  @media all and (min-width: 1000px) {
+    .video-section {
+      margin-left: 6%;
+      margin-right: 9%; } }
+=======
   padding-bottom: 6.25rem;
   margin-bottom: 10rem; }
+>>>>>>> 9ea16171f3e93d61ab6a8b107409286851f9748f
 
 .pitch-summary {
   display: -webkit-box;
@@ -520,7 +545,8 @@ h2.upcoming-events-location {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      width: 970px; } }
+      width: 970px;
+      margin-left: 225px; } }
 
 .summary-image img {
   max-width: 100%;
@@ -647,7 +673,7 @@ h2.past-events-title {
   @media all and (min-width: 1000px) {
     .past-events-container img {
       padding-top: 20px;
-      margin: 0; } }
+      margin: 50; } }
 
 .past-events-date {
   font-size: 24px;

@@ -3,4 +3,6 @@
     the_post(); ?>
     <?php the_content(); ?>
 <?php endwhile; ?>
+<?php get_template_part('blocks/content-team'); ?>  
+
 <?php get_footer(); ?>

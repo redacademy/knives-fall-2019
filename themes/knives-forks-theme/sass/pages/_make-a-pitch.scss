@@ -20,6 +20,8 @@
     width: 80%;
     margin: auto;
     margin-bottom: 30px;
+    position: sticky;
+    top: 100px;
 
     @include tablet {
       flex-direction: column;
@@ -46,6 +48,7 @@
       opacity: 1;
       background-color: white;
       border-radius: 10px;
+
       border: 2px solid $primary_green_dark;
       color: rgba(0, 0, 0, 0);
 
@@ -168,4 +171,12 @@
   .validation_error {
     display: none;
   }
+}
+
+//gform confirmation message
+
+.gform_confirmation_message {
+  width: 80%;
+  text-align: center;
+  margin: auto;
 }

@@ -493,16 +493,13 @@ h2.upcoming-events-location {
 .embed-container {
   position: relative;
   overflow: hidden;
-  max-width: 100%;
   height: auto;
-  min-width: 100%;
-  margin: 0;
+  width: 300px;
+  margin: 0 auto;
   text-align: center; }
-  .embed-container iframe {
-    width: 70%; }
-    @media all and (min-width: 1000px) {
-      .embed-container iframe {
-        width: 50%; } }
+  @media all and (min-width: 1000px) {
+    .embed-container {
+      width: 600px; } }
 
 .video-section {
   display: -webkit-box;
@@ -611,10 +608,10 @@ h2.past-events-title {
   margin-top: 150px; }
   @media all and (min-width: 1000px) {
     .past-events-wrapper {
-      background-image: url(../../assets/events-images/event-journal.jpg);
+      background-image: url(../../assets/events-images/pasteventsbg@2x-cropped.png);
       background-repeat: no-repeat;
       background-position: top right;
-      background-size: 500px; } }
+      background-size: 300px; } }
 
 .past-events-container {
   display: -webkit-box;
@@ -673,11 +670,10 @@ h2.past-events-title {
   width: 244px;
   position: relative;
   padding-left: 0;
-  margin: 0 auto; }
+  margin: 0 20%; }
   @media all and (min-width: 1000px) {
     .past-events-container img {
-      padding-top: 20px;
-      margin: 50; } }
+      margin-right: 2%; } }
 
 .past-events-date {
   font-size: 24px;
@@ -1137,7 +1133,10 @@ h2.past-events-title {
     border: none;
     width: 80%;
     margin: auto;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px; }
     @media only screen and (min-width: 500px) and (max-width: 999px) {
       .gform_wrapper form .gf_page_steps {
         -webkit-box-orient: vertical;
@@ -1288,6 +1287,79 @@ h2.past-events-title {
     left: 200px; }
   .gform_wrapper form .validation_error {
     display: none; }
+
+.gform_confirmation_message {
+  width: 80%;
+  text-align: center;
+  margin: auto; }
+
+.investor-profile-logo {
+  width: 70%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 5%; }
+
+.investor-section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 65vmax;
+  margin-top: 8%; }
+  .investor-section .investor-bg-img {
+    width: 100%;
+    position: absolute;
+    z-index: -1; }
+  .investor-section div {
+    width: 70%;
+    margin: 2% auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap; }
+    .investor-section div .investor-top {
+      line-height: 1.5; }
+      .investor-section div .investor-top > * {
+        width: 100%;
+        text-align: center;
+        margin: 0; }
+    .investor-section div .investor-mid ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      width: 100%;
+      text-align: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      margin: 0; }
+      .investor-section div .investor-mid ul li {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 30%;
+                flex: 0 1 30%; }
+        .investor-section div .investor-mid ul li a {
+          color: #378244; }
+    .investor-section div .investor-bottom {
+      line-height: 2; }
+      .investor-section div .investor-bottom a {
+        width: 80%;
+        margin: 0 auto; }
+      .investor-section div .investor-bottom > * {
+        width: 100%;
+        text-align: center;
+        margin: 0; }
 
 .page-contact-us {
   width: 100%;

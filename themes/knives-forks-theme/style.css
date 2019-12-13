@@ -1137,7 +1137,10 @@ h2.past-events-title {
     border: none;
     width: 80%;
     margin: auto;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px; }
     @media only screen and (min-width: 500px) and (max-width: 999px) {
       .gform_wrapper form .gf_page_steps {
         -webkit-box-orient: vertical;
@@ -1288,6 +1291,11 @@ h2.past-events-title {
     left: 200px; }
   .gform_wrapper form .validation_error {
     display: none; }
+
+.gform_confirmation_message {
+  width: 80%;
+  text-align: center;
+  margin: auto; }
 
 .page-contact-us {
   width: 100%;

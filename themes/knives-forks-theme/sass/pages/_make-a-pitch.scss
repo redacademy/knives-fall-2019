@@ -1,6 +1,7 @@
-.page-apply-to-pitch {
+.page-apply-to-pitch,
+.page-become-investor {
   .site-content {
-    margin-top: 0;
+    margin-top: 100px;
   }
 }
 .gform_wrapper form {
@@ -56,8 +57,9 @@
     content: 'abc';
     font-size: 10rem;
     color: rgba(0, 0, 0, 0);
+    display: block;
     position: relative;
-    top: -100px;
+    top: -200px;
     right: -400px;
   }
   .icon-complete::after {
@@ -69,8 +71,9 @@
     content: 'abc';
     font-size: 10rem;
     color: rgba(0, 0, 0, 0);
+    display: block;
     position: relative;
-    top: -100px;
+    top: -200px;
     right: -400px;
   }
 

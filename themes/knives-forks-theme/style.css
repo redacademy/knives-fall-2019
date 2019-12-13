@@ -1104,8 +1104,9 @@ h2.past-events-title {
         font-size: 20px;
         text-align: right; } }
 
-.page-apply-to-pitch .site-content {
-  margin-top: 0; }
+.page-apply-to-pitch .site-content,
+.page-become-investor .site-content {
+  margin-top: 100px; }
 
 .gform_wrapper form {
   display: -webkit-box;
@@ -1153,8 +1154,9 @@ h2.past-events-title {
     content: 'abc';
     font-size: 10rem;
     color: rgba(0, 0, 0, 0);
+    display: block;
     position: relative;
-    top: -100px;
+    top: -200px;
     right: -400px; }
   .gform_wrapper form .icon-complete::after {
     background-image: url("../../assets/icons/Forms - filled/filled-name.svg");
@@ -1165,8 +1167,9 @@ h2.past-events-title {
     content: 'abc';
     font-size: 10rem;
     color: rgba(0, 0, 0, 0);
+    display: block;
     position: relative;
-    top: -100px;
+    top: -200px;
     right: -400px; }
   .gform_wrapper form .validation_error {
     display: none; }

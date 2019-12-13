@@ -1,7 +1,5 @@
 // /// front banner section
 
-/////TO DO change banner img to glass tumbler coffee cup for mobile
-
 .events-banner {
   background: url('../../assets/events-images/event-hero@3x.png') no-repeat;
   height: 100vh;
@@ -30,8 +28,6 @@ h1.upcoming-events-title {
   font-family: $headfont;
   font-style: bold;
   font-size: 1.5em;
-
-  // padding-top: inherit;
 }
 
 h2.upcoming-events-location {
@@ -65,16 +61,6 @@ h2.upcoming-events-location {
   width: 200px;
   white-space: no-wrap;
 }
-
-// &:hover {
-//   cursor: pointer;
-//   border: 1px solid $primary_green_dark;
-//   color: $primary_green_dark;
-//   background: white;
-//   font-weight: 500;
-// }
-//   }
-// }
 
 .apply-to-pitch-btn {
   background: #fff;
@@ -114,24 +100,11 @@ h2.upcoming-events-location {
   }
 }
 
-// .embed-container iframe,
-// .embed-container object,
-// .embed-container embed {
-//   // min-height: 300px;
-//   // height: auto;
-//   // position: absolute;
-//   // top: 0;
-//   // left: 0;
-//   // width: 60%;
-//   // height: 100%;
-// }
-///TO DO change the control button
+///TO DO change the control button? TBD
 
 .video-section {
   display: flex;
   justify-content: center;
-  // top: 75px;
-  // height: 115vh;
   margin-top: 75px;
   background: linear-gradient(
     to bottom,
@@ -149,13 +122,11 @@ h2.upcoming-events-location {
   }
 }
 
-// ///pitch summary section //
+/// pitch summary section ///
 
 .pitch-summary {
   display: flex;
-  // margin-left: 50px;
   flex-direction: column;
-  // align-items: center;
   width: 100%vw;
   text-align: center;
   padding-bottom: 34px;
@@ -215,20 +186,7 @@ p.summary-description {
   text-decoration: none;
   font-weight: 500;
   overflow: hidden;
-
-  // &:visited {
-  //   // cursor: pointer;
-  //   // // border: 1px solid $primary_green_dark;
-  //   // color: white;
-  //   // background: white;
-  // }
 }
-// .flex-layout {
-//   display: flex;
-//   justify-content: space-between;
-//   flex-direction: row;
-//   max-width: 33%;
-// }
 
 /////past events
 
@@ -291,12 +249,10 @@ h2.past-events-title {
 .past-events-text {
   width: 70%;
   margin: 0 auto;
-  // font-size: 1.5em;
   letter-spacing: 0.4px;
   line-height: 0.5em;
 
   @include desktop {
-    // width: 100vh;
     flex-direction: column;
     width: 42%;
   }

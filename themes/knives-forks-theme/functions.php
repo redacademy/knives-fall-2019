@@ -67,13 +67,13 @@ if (function_exists('acf_register_block_type')) {
 add_action('acf/init', 'custom_team_block');
 function custom_team_block()
 {
-	if (function_exists('acf_register_block')) {
-		acf_register_block(array(
+	if (function_exists('acf_register_block_type')) {
+		acf_register_block_type(array(
 			'name' 				=> 'team',
-			'title' 			=> __('Team'),
+			'title' 			=> __('Our Team'),
 			'description' 		=> __('custom block for our team'),
 			'render_template'   => 'template-parts/blocks/content-team.php',
-			'category'			=> 'common blocks',
+			'category'			=> 'common',
 		));
 	}
 }

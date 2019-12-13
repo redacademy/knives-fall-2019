@@ -234,21 +234,22 @@ p.summary-description {
 
 h2.past-events-title {
   text-align: center;
-  font-size: 2em;
+  font-size: 28px;
   position: relative;
   padding: 29px;
 
   @include desktop {
     text-align: left;
-    // padding-left: 221px;
     padding-bottom: 10px;
+    font-size: 40px;
   }
 }
 
 .past-events-wrapper {
   background: #f2f7f7;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 150px;
+
   @include desktop {
     background-image: url(../../assets/events-images/event-journal.jpg);
     background-repeat: no-repeat;
@@ -266,23 +267,18 @@ h2.past-events-title {
   // border: 1px solid black;
 
   .past-event {
-    // border: 1px solid black;
     display: flex;
     max-width: 600px;
     flex-direction: column;
     margin: auto;
     @include desktop {
       margin: 0;
+
+      @include desktop {
+        flex-direction: column;
+        max-width: 1000px;
+      }
     }
-  }
-
-  @include desktop {
-    // width: 84%;
-    // background-size: 100vh;
-
-    // background-position: top right;
-    flex-direction: column;
-    max-width: 1000px;
   }
 
   .past-event {

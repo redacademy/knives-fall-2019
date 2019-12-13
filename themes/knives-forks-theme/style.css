@@ -514,7 +514,6 @@ h2.upcoming-events-location {
   margin-top: 75px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(242, 144, 97, 0.17)));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 25%, rgba(242, 144, 97, 0.17) 25%);
-<<<<<<< HEAD
   padding-bottom: 4rem;
   margin-bottom: 0rem;
   margin-left: -6%;
@@ -523,10 +522,6 @@ h2.upcoming-events-location {
     .video-section {
       margin-left: 6%;
       margin-right: 9%; } }
-=======
-  padding-bottom: 6.25rem;
-  margin-bottom: 10rem; }
->>>>>>> 9ea16171f3e93d61ab6a8b107409286851f9748f
 
 .pitch-summary {
   display: -webkit-box;
@@ -573,7 +568,8 @@ h3.summary-title {
 p.summary-description {
   font-size: 1.05em;
   text-align: center;
-  max-width: 500px; }
+  max-width: 500px;
+  margin: auto; }
 
 .apply-to-pitch-btn-green-flex {
   display: -webkit-box;
@@ -600,14 +596,25 @@ p.summary-description {
 
 h2.past-events-title {
   text-align: center;
-  font-size: 2em;
+  font-size: 28px;
   position: relative;
   padding: 29px; }
   @media all and (min-width: 1000px) {
     h2.past-events-title {
       text-align: left;
-      padding-left: 221px;
-      padding-bottom: 10px; } }
+      padding-bottom: 10px;
+      font-size: 40px; } }
+
+.past-events-wrapper {
+  background: #f2f7f7;
+  width: 100%;
+  margin-top: 150px; }
+  @media all and (min-width: 1000px) {
+    .past-events-wrapper {
+      background-image: url(../../assets/events-images/event-journal.jpg);
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 500px; } }
 
 .past-events-container {
   display: -webkit-box;
@@ -617,10 +624,9 @@ h2.past-events-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 20px;
+  padding-top: 100px;
   margin: 0 auto; }
   .past-events-container .past-event {
-    border: 1px solid black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -628,20 +634,18 @@ h2.past-events-title {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
-  @media all and (min-width: 1000px) {
-    .past-events-container {
-      background: #f2f7f7;
-      background-image: url(../../assets/events-images/event-journal.jpg);
-      width: 84%;
-      background-size: 100vh;
-      background-repeat: no-repeat;
+            flex-direction: column;
+    margin: auto; }
+    @media all and (min-width: 1000px) {
+      .past-events-container .past-event {
+        margin: 0; } }
+  @media all and (min-width: 1000px) and (min-width: 1000px) {
+    .past-events-container .past-event {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      max-width: 1000px;
-      background-position: 143% -16%; } }
+      max-width: 1000px; } }
   @media all and (min-width: 1000px) {
     .past-events-container .past-event {
       -webkit-box-orient: horizontal;

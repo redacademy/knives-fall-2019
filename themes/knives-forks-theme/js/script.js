@@ -94,7 +94,7 @@
         } else {
           $(this).removeClass('filled');
         }
-        checkInputs('#gform_page_' + gFormId + '_' + gFormCurrentPage);
+        checkInputs(gField);
       }
     );
     // $.each(
@@ -110,31 +110,31 @@
     //   )
     // );
 
-    function checkInputs(group) {
-      const $inputs = $(group).find('input:not(.button):not([type="hidden"])');
+    function checkInputs(gField) {
+      const $inputs = $(gField).find('input:not(.button):not([type="hidden"])');
       const $inputsArea = $(this).find('textarea');
       console.log($inputs.length);
-      //   console.log($(group).find('.filled').length);
+      //console.log($(gField).find('.filled').length);
       //   console.log($(group).find('.filled').length);
       //   console.log($inputsArea.length);
       if (
-        $(group).find('.filled').length === $inputs.length &&
+        $(gField).find('.filled').length === $inputs.length &&
         $inputs.length > 0
       ) {
-        console.log('all inputs in group filled');
-        $(group)
+        //console.log('all inputs in group filled');
+        $(gField)
           .removeClass('icon-default')
           .addClass('icon-complete');
       } else if (
-        $(group).find('.filled').length === $inputsArea.length &&
+        $(gField).find('.filled').length === $inputsArea.length &&
         $inputsArea.length > 0
       ) {
-        console.log('textfields filled');
-        $(group)
+        //console.log('textfields filled');
+        $(gField)
           .removeClass('icon-default')
           .addClass('icon-complete');
       } else {
-        $(group).removeClass('icon-complete');
+        $(gField).removeClass('icon-complete');
       }
     }
 

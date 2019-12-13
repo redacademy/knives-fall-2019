@@ -7,48 +7,75 @@
 .gform_wrapper form {
   display: flex;
   margin-top: 200px;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+  }
+  @include desktop {
+    flex-direction: row;
+  }
   .gf_page_steps {
     display: flex;
-    flex-direction: column;
-    border-right: 1px solid black;
-    width: 33%;
-    position: sticky;
-    top: 0;
+
+    @include tablet {
+      flex-direction: column;
+      border-right: 1px solid black;
+      width: 33%;
+      position: sticky;
+      top: 0;
+    }
+    @include desktop {
+      flex-direction: column;
+      border-right: 1px solid black;
+      width: 33%;
+      position: sticky;
+      top: 0;
+    }
     .gf_step {
-      opacity: 1;
-      filter: none;
-      color: $primary_green_dark;
-      font-size: $fontsize;
-      font-family: $parafont;
-      height: 30px;
-      margin: $margin;
-      width: auto;
+      @include tablet {
+        opacity: 1;
+        filter: none;
+        color: $primary_green_dark;
+        font-size: $fontsize;
+        font-family: $parafont;
+        height: 30px;
+        margin: $margin;
+        width: auto;
+      }
+      @include desktop {
+        opacity: 1;
+        filter: none;
+        color: $primary_green_dark;
+        font-size: $fontsize;
+        font-family: $parafont;
+        height: 30px;
+        margin: $margin;
+        width: auto;
+      }
       .gf_step_number {
         display: none;
       }
     }
     .gf_step_active {
-      color: white;
-      background-color: $primary_green_dark;
-      font-weight: $font_weight_header;
+      @include tablet {
+        color: white;
+        background-color: $primary_green_dark;
+        font-weight: $font_weight_header;
+      }
+      @include desktop {
+        color: white;
+        background-color: $primary_green_dark;
+        font-weight: $font_weight_header;
+      }
     }
-    // span.fg_step_number {
-    //   display: none;
-    // }
   }
   .gform_body {
-    width: 33%;
-    padding: 10px;
-    // .gform_page {
-    //   &::after {
-    //     background-image: url('../../assets/icons/Forms - Unfilled/unfilled-application.svg');
-    //     width: 200px;
-    //     height: 200px;
-    //     content: '';
-    //   }
-    // }
+    @include desktop {
+      width: 66%;
+      padding: 10px;
+    }
   }
-  .icon-default::after {
+  .icon-default::before {
     background-image: url('../../assets/icons/Forms - Unfilled/unfilled-name.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -59,10 +86,10 @@
     color: rgba(0, 0, 0, 0);
     display: block;
     position: relative;
-    top: -200px;
-    right: -400px;
+    top: 0px;
+    left: 200px;
   }
-  .icon-complete::after {
+  .icon-complete::before {
     background-image: url('../../assets/icons/Forms - filled/filled-name.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -73,8 +100,8 @@
     color: rgba(0, 0, 0, 0);
     display: block;
     position: relative;
-    top: -200px;
-    right: -400px;
+    top: 0px;
+    left: 200px;
   }
 
   //use nth-of-type()

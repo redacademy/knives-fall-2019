@@ -34,9 +34,9 @@ get_header(); ?>
 							<h3> Find us on social media! </h3>
 							<div class="social-links">
 								<ul class="social-icons">
-									<li><i class="fab fa-twitter"></i></li>
-									<li><i class="fab fa-facebook-f"></i></li>
-									<li><i class="fab fa-linkedin-in"></i></li>
+									<li><a href="https://twitter.com/knivesforkscoop?lang=en" id="twitter-link"><i class="fab fa-twitter"></a></i></li>
+									<li><a href="https://www.facebook.com/knivesandforkscoop/" id="facebook-link"><i class="fab fa-facebook-f"></i></a></li>    
+									<li><a href="https://www.linkedin.com/company/knives-and-forks-community-investment-co-op/?viewAsMember=true" id="linkedin-link"><i class="fab fa-linkedin-in"></a></i></li>
 								</ul>
 							</div>
 

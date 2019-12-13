@@ -213,10 +213,11 @@ h2.past-events-title {
   margin-top: 150px;
 
   @include desktop {
-    background-image: url(../../assets/events-images/pasteventsbg@2x.jpg);
+    background-image: url(../../assets/events-images/pasteventsbg@2x-cropped.png);
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 500px;
+    background-size: 300px;
+    // width: 100%;
   }
 }
 

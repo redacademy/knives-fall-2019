@@ -615,10 +615,10 @@ h2.past-events-title {
   margin-top: 150px; }
   @media all and (min-width: 1000px) {
     .past-events-wrapper {
-      background-image: url(../../assets/events-images/pasteventsbg@2x.jpg);
+      background-image: url(../../assets/events-images/pasteventsbg@2x-cropped.png);
       background-repeat: no-repeat;
       background-position: top right;
-      background-size: 500px; } }
+      background-size: 300px; } }
 
 .past-events-container {
   display: -webkit-box;

@@ -1821,30 +1821,34 @@ h2.past-events-title {
           margin: 0;
           margin-left: 20px; } }
 
-@media all and (max-width: 499px) {
-  .team-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; }
-    .team-grid .team-member {
-      margin: 0 auto; }
-      .team-grid .team-member:first-child {
-        grid-column: 1 / 3; }
-      .team-grid .team-member .portrait {
-        width: 150px;
-        height: 150px;
-        -o-object-fit: cover;
-           object-fit: cover;
-        border-radius: 5rem; }
-      .team-grid .team-member .desc {
-        padding: 1rem 0; }
-        .team-grid .team-member .desc p {
-          text-align: center;
-          text-transform: capitalize; }
-          .team-grid .team-member .desc p.name {
-            font-weight: bold;
-            margin: 0; }
-          .team-grid .team-member .desc p.role {
-            margin: 0; } }
+.team h2 {
+  text-align: center; }
+
+.team .team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .team .team-grid .team-member {
+    margin: 0 auto; }
+    .team .team-grid .team-member:first-child {
+      grid-column: 1 / 3; }
+    .team .team-grid .team-member:last-child:not(:nth-child(odd)) {
+      grid-column: 1 / 3; }
+    .team .team-grid .team-member .portrait {
+      width: 150px;
+      height: 150px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      border-radius: 5rem; }
+    .team .team-grid .team-member .desc {
+      padding: 1rem 0; }
+      .team .team-grid .team-member .desc p {
+        text-align: center;
+        text-transform: capitalize; }
+        .team .team-grid .team-member .desc p.name {
+          font-weight: bold;
+          margin: 0; }
+        .team .team-grid .team-member .desc p.role {
+          margin: 0; }
 
 /* external css: flickity.css */
 * {

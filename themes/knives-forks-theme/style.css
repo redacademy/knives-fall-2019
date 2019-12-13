@@ -1133,7 +1133,11 @@ h2.past-events-title {
   .gform_wrapper form .gf_page_steps {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    border: none;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px; }
     @media only screen and (min-width: 500px) and (max-width: 999px) {
       .gform_wrapper form .gf_page_steps {
         -webkit-box-orient: vertical;
@@ -1156,57 +1160,110 @@ h2.past-events-title {
         position: -webkit-sticky;
         position: sticky;
         top: 0; } }
-    @media only screen and (min-width: 500px) and (max-width: 999px) {
-      .gform_wrapper form .gf_page_steps .gf_step {
-        opacity: 1;
-        -webkit-filter: none;
-                filter: none;
-        color: #296133;
-        font-size: 1rem;
-        font-family: "Lato", sans-serif;
-        height: 30px;
-        margin: 1rem;
-        width: auto; } }
-    @media all and (min-width: 1000px) {
-      .gform_wrapper form .gf_page_steps .gf_step {
-        opacity: 1;
-        -webkit-filter: none;
-                filter: none;
-        color: #296133;
-        font-size: 1rem;
-        font-family: "Lato", sans-serif;
-        height: 30px;
-        margin: 1rem;
-        width: auto; } }
-    .gform_wrapper form .gf_page_steps .gf_step .gf_step_number {
-      display: none; }
-    @media only screen and (min-width: 500px) and (max-width: 999px) {
-      .gform_wrapper form .gf_page_steps .gf_step_active {
-        color: white;
-        background-color: #296133;
-        font-weight: 600; } }
-    @media all and (min-width: 1000px) {
-      .gform_wrapper form .gf_page_steps .gf_step_active {
-        color: white;
-        background-color: #296133;
-        font-weight: 600; } }
+    .gform_wrapper form .gf_page_steps .gf_step {
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 10px;
+      width: 10px;
+      opacity: 1;
+      background-color: white;
+      border-radius: 5px;
+      border: 2px solid #296133;
+      color: rgba(0, 0, 0, 0); }
+      .gform_wrapper form .gf_page_steps .gf_step .gf_step_active {
+        background-color: #296133; }
+        @media only screen and (min-width: 500px) and (max-width: 999px) {
+          .gform_wrapper form .gf_page_steps .gf_step .gf_step_active {
+            color: white;
+            height: 30px;
+            width: auto;
+            border: 2px solid #296133; } }
+        @media all and (min-width: 1000px) {
+          .gform_wrapper form .gf_page_steps .gf_step .gf_step_active {
+            color: #296133; } }
+      @media only screen and (min-width: 500px) and (max-width: 999px) {
+        .gform_wrapper form .gf_page_steps .gf_step {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          opacity: 1;
+          -webkit-filter: none;
+                  filter: none;
+          color: #296133;
+          font-size: 1rem;
+          font-family: "Lato", sans-serif;
+          height: 30px;
+          margin: 1rem;
+          width: auto;
+          border: none; } }
+      @media all and (min-width: 1000px) {
+        .gform_wrapper form .gf_page_steps .gf_step {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          opacity: 1;
+          -webkit-filter: none;
+                  filter: none;
+          color: #296133;
+          font-size: 1rem;
+          font-family: "Lato", sans-serif;
+          height: 30px;
+          margin: 1rem;
+          width: auto;
+          border: none; } }
+      .gform_wrapper form .gf_page_steps .gf_step .gf_step_number {
+        display: none; }
+    .gform_wrapper form .gf_page_steps .gf_step_active {
+      background-color: #296133;
+      height: 10px;
+      width: 10px;
+      border-radius: 5px; }
+      @media only screen and (min-width: 500px) and (max-width: 999px) {
+        .gform_wrapper form .gf_page_steps .gf_step_active {
+          color: white;
+          background-color: #296133;
+          font-weight: 600; } }
+      @media all and (min-width: 1000px) {
+        .gform_wrapper form .gf_page_steps .gf_step_active {
+          color: white;
+          background-color: #296133;
+          font-weight: 600; } }
   @media all and (min-width: 1000px) {
     .gform_wrapper form .gform_body {
       width: 66%;
       padding: 10px; } }
+  .gform_wrapper form .gform_page {
+    padding: 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: center; }
+    .gform_wrapper form .gform_page .gform_fields {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
   .gform_wrapper form .icon-default::before {
     background-image: url("../../assets/icons/Forms - Unfilled/unfilled-name.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 33%;
-    height: 200px;
+    width: 100%;
     content: 'abc';
     font-size: 10rem;
     color: rgba(0, 0, 0, 0);
-    display: block;
-    position: relative;
-    top: 0px;
-    left: 200px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto; }
   .gform_wrapper form .icon-complete::before {
     background-image: url("../../assets/icons/Forms - filled/filled-name.svg");
     background-size: contain;

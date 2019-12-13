@@ -596,18 +596,19 @@ p.summary-description {
 
 h2.past-events-title {
   text-align: center;
-  font-size: 2em;
+  font-size: 28px;
   position: relative;
   padding: 29px; }
   @media all and (min-width: 1000px) {
     h2.past-events-title {
       text-align: left;
-      padding-bottom: 10px; } }
+      padding-bottom: 10px;
+      font-size: 40px; } }
 
 .past-events-wrapper {
   background: #f2f7f7;
   width: 100%;
-  margin-top: 50px; }
+  margin-top: 150px; }
   @media all and (min-width: 1000px) {
     .past-events-wrapper {
       background-image: url(../../assets/events-images/event-journal.jpg);
@@ -638,8 +639,8 @@ h2.past-events-title {
     @media all and (min-width: 1000px) {
       .past-events-container .past-event {
         margin: 0; } }
-  @media all and (min-width: 1000px) {
-    .past-events-container {
+  @media all and (min-width: 1000px) and (min-width: 1000px) {
+    .past-events-container .past-event {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -1104,67 +1105,175 @@ h2.past-events-title {
         font-size: 20px;
         text-align: right; } }
 
-.page-apply-to-pitch .site-content {
-  margin-top: 0; }
+.page-apply-to-pitch .site-content,
+.page-become-investor .site-content {
+  margin-top: 100px; }
 
-#gform_1,
-#gform_3 {
+.gform_wrapper form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 200px; }
-  #gform_1 .gf_page_steps,
-  #gform_3 .gf_page_steps {
+  margin-top: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media only screen and (min-width: 500px) and (max-width: 999px) {
+    .gform_wrapper form {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+  @media all and (min-width: 1000px) {
+    .gform_wrapper form {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+  .gform_wrapper form .gf_page_steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px; }
+    @media only screen and (min-width: 500px) and (max-width: 999px) {
+      .gform_wrapper form .gf_page_steps {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        border-right: 1px solid black;
+        width: 33%;
+        position: -webkit-sticky;
+        position: sticky;
+        margin: 0; } }
+    @media all and (min-width: 1000px) {
+      .gform_wrapper form .gf_page_steps {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        border-right: 1px solid black;
+        width: 33%;
+        position: -webkit-sticky;
+        position: sticky;
+        margin: 0;
+        top: 0; } }
+    .gform_wrapper form .gf_page_steps .gf_step {
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 12px;
+      width: 12px;
+      opacity: 1;
+      background-color: white;
+      border-radius: 10px;
+      border: 2px solid #296133;
+      color: rgba(0, 0, 0, 0); }
+      @media only screen and (min-width: 500px) and (max-width: 999px) {
+        .gform_wrapper form .gf_page_steps .gf_step {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          opacity: 1;
+          -webkit-filter: none;
+                  filter: none;
+          color: #296133;
+          font-size: 1rem;
+          font-family: "Lato", sans-serif;
+          height: 30px;
+          margin: 1rem;
+          width: auto;
+          border: none; } }
+      @media all and (min-width: 1000px) {
+        .gform_wrapper form .gf_page_steps .gf_step {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          opacity: 1;
+          -webkit-filter: none;
+                  filter: none;
+          color: #296133;
+          font-size: 1rem;
+          font-family: "Lato", sans-serif;
+          height: 30px;
+          margin: 1rem;
+          width: auto;
+          border: none; } }
+      .gform_wrapper form .gf_page_steps .gf_step .gf_step_number {
+        display: none; }
+    .gform_wrapper form .gf_page_steps .gf_step_active {
+      background-color: #296133;
+      height: 12px;
+      width: 12px;
+      border-radius: 10px; }
+      @media only screen and (min-width: 500px) and (max-width: 999px) {
+        .gform_wrapper form .gf_page_steps .gf_step_active {
+          color: white;
+          height: 30px;
+          background-color: #296133;
+          width: auto;
+          border-radius: 5px;
+          padding-top: 3px; } }
+      @media all and (min-width: 1000px) {
+        .gform_wrapper form .gf_page_steps .gf_step_active {
+          color: white;
+          height: 30px;
+          background-color: #296133;
+          width: auto;
+          border-radius: 5px;
+          padding-top: 3px; } }
+  @media all and (min-width: 1000px) {
+    .gform_wrapper form .gform_body {
+      width: 66%;
+      padding: 10px; } }
+  .gform_wrapper form .gform_page {
+    padding: 0 7%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    border-right: 1px solid black;
-    width: 33%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0; }
-    #gform_1 .gf_page_steps .gf_step,
-    #gform_3 .gf_page_steps .gf_step {
-      opacity: 1;
-      -webkit-filter: none;
-              filter: none;
-      color: #296133;
-      font-size: 1rem;
-      font-family: "Lato", sans-serif;
-      height: 30px;
-      margin: 1rem;
-      width: auto; }
-      #gform_1 .gf_page_steps .gf_step .gf_step_number,
-      #gform_3 .gf_page_steps .gf_step .gf_step_number {
-        display: none; }
-    #gform_1 .gf_page_steps .gf_step_active,
-    #gform_3 .gf_page_steps .gf_step_active {
-      color: white;
-      background-color: #296133;
-      font-weight: 600; }
-  #gform_1 .gform_body,
-  #gform_3 .gform_body {
-    width: 33%;
-    padding: 10px; }
-  #gform_1 .icon-default::after,
-  #gform_3 .icon-default::after {
+            flex-direction: column; }
+    .gform_wrapper form .gform_page .gform_fields {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .gform_wrapper form .gform_page .gform_fields textarea {
+        border-radius: 5px; }
+  .gform_wrapper form .icon-default::before {
     background-image: url("../../assets/icons/Forms - Unfilled/unfilled-name.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 33%;
+    width: 100%;
     height: 200px;
     content: 'abc';
     font-size: 10rem;
     color: rgba(0, 0, 0, 0);
+    display: block;
     position: relative;
-    top: -100px;
-    right: -400px; }
-  #gform_1 .icon-complete::after,
-  #gform_3 .icon-complete::after {
+    top: 0px; }
+    @media only screen and (min-width: 500px) and (max-width: 999px) {
+      .gform_wrapper form .icon-default::before {
+        left: 150px;
+        width: 60%; } }
+    @media all and (min-width: 1000px) {
+      .gform_wrapper form .icon-default::before {
+        height: 200px;
+        width: 33%;
+        display: block;
+        position: relative;
+        top: 0px;
+        left: 200px; } }
+  .gform_wrapper form .icon-complete::before {
     background-image: url("../../assets/icons/Forms - filled/filled-name.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -1173,11 +1282,11 @@ h2.past-events-title {
     content: 'abc';
     font-size: 10rem;
     color: rgba(0, 0, 0, 0);
+    display: block;
     position: relative;
-    top: -100px;
-    right: -400px; }
-  #gform_1 .validation_error,
-  #gform_3 .validation_error {
+    top: 0px;
+    left: 200px; }
+  .gform_wrapper form .validation_error {
     display: none; }
 
 .investor-profile-logo {
@@ -1268,14 +1377,6 @@ h2.past-events-title {
         padding-left: 80px;
         height: 130px;
         width: 470px; }
-      .page-contact-us .fab {
-        color: white;
-        height: 20px;
-        width: 20px;
-        font-size: 20px;
-        text-align: center;
-        border-radius: 60%;
-        margin: 10px; }
       .page-contact-us .contact-opportunity {
         line-height: 1.5em;
         font-size: 2em;
@@ -1309,7 +1410,18 @@ h2.past-events-title {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    font-size: 20px;
+    margin: 10px; }
+    .social-icons li:hover, .social-icons li:visited, .social-icons li:active {
+      cursor: pointer;
+      border: 1px solid primary_green_dark;
+      color: white;
+      background: #296133;
+      text-decoration: none; }
+    .social-icons li a {
+      color: white;
+      text-decoration: none; }
 
 .entry-content-contact {
   width: 90%;
@@ -1332,15 +1444,6 @@ h2.past-events-title {
   font-family: "Lora", serif;
   text-align: center;
   min-width: 100%; }
-
-.social-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0px; }
 
 .current {
   border-bottom: 2px solid #378244; }
@@ -1597,7 +1700,8 @@ h2.past-events-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 100px; }
+  margin-top: 100px;
+  margin-bottom: 100px; }
   @media all and (min-width: 1000px) {
     .custom-copy-block {
       -webkit-box-orient: horizontal;
@@ -1712,6 +1816,10 @@ h2.past-events-title {
                   order: 0;
           margin: 0;
           margin-left: 20px; } }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
 
 /* external css: flickity.css */
 * {

@@ -3,22 +3,32 @@
 /**
  * Block Name: Team
  *
- * This is the template that displays the testimonial block.
+ * @param   array $block The block settings and attributes.
+ * @param   string $content The block inner HTML (empty).
+ * @param   bool $is_preview True during AJAX preview.
+ * @param   (int|string) $post_id The post ID this block is saved to.
  */
 
-$avatar = get_field('member_avatar');
-$id = 'team-' . $team['id'];
 
-$align_class = $team['align'] ? 'align' . $team['align'] : '';
+while (have_rows('our_team')) {
 
-$name = the_field('our_team');
+    the_row();
+    $heading = get_field('our_team');
 
-$role = the_field('organization_role');
-?>
-<blockquote id="<?php echo $id; ?>" class="team <?php echo $align_class; ?>">
-    <p><?php $name; ?></p>
-    <cite>
-        <img src="<?php echo $avatar['url']; ?>" alt="<?php echo $avatar['alt']; ?>" />
-        <span><?php the_field('author'); ?></span>
-    </cite>
-</blockquote>
+    $name = get_sub_field('name');
+
+    $img = get_sub_field('portrait');
+
+    $role = get_sub_field('role');
+
+    $bgColor = get_field('background_color'); ?>
+
+    <section class="team-grid" style="background-color: <?php echo $bgColor; ?>">
+        <h2><?php echo $heading ?></h2>
+        <div class="team-member">
+            <img class="portrait" src="<?php echo $img['url']; ?>" alt="picture of <?php $name; ?>">
+            <p class="name"><?php echo $name; ?></p>
+            <p class="role"><?php echo $role; ?></p>
+        </div>
+    </section>
+<?php } ?>

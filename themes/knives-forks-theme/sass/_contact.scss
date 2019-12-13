@@ -20,15 +20,6 @@
       width: 470px;
     }
 
-    .fab {
-      color: white;
-      height: 20px;
-      width: 20px;
-      font-size: 20px;
-      text-align: center;
-      border-radius: 60%;
-      margin: 10px;
-    }
     .contact-opportunity {
       line-height: 1.5em;
       font-size: 2em;
@@ -60,6 +51,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    margin: 10px;
+
+    &:hover,
+    &:visited,
+    &:active {
+      cursor: pointer;
+      border: 1px solid primary_green_dark;
+      color: white;
+      background: $primary_green_dark;
+      text-decoration: none;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
 }
 
@@ -95,14 +102,4 @@
   font-family: $headfont;
   text-align: center;
   min-width: 100%;
-}
-
-//TO DO replace btns with jpeg file from assets
-
-////mobile style for font-awesome buttons
-
-.social-links {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px;
 }

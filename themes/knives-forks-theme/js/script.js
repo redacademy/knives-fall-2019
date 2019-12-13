@@ -1,11 +1,7 @@
 (function($) {
-<<<<<<< HEAD
-  $(function() {
-=======
   $(document).ready(function() {
     //***********instance and declarations */
     const $userWidth = document.documentElement.clientWidth;
->>>>>>> 63ee3c6b5c76e40536ebb87eb6a99a7c68d05723
     // click the hamburger menu
     // VICTOR'S VARIABLES
     const burger = $('#hamburger');
@@ -52,8 +48,6 @@
 
     // ===================
 
-<<<<<<< HEAD
-=======
     //const thePage = getTerms(window.location.pathname);
 
     //implement styling and element's position
@@ -64,7 +58,6 @@
       $('.how-img').appendTo('.steps-list li:last-child()');
     }
 
->>>>>>> 63ee3c6b5c76e40536ebb87eb6a99a7c68d05723
     // BROOKE'S WORK BELOW
 
     $('.gform_page').on('click', '.download-agreement', function(event) {
@@ -91,18 +84,17 @@
     // TODO check the code below for issues?
     $(document).on(
       'blur',
-      gField + ' input:not(.button), ' + gField + ' textarea',
+      gField +
+        ' input:not(.button):not([type="hidden"]), ' +
+        gField +
+        ' textarea',
       function() {
-<<<<<<< HEAD
-        console.log('blur');
-=======
->>>>>>> 63ee3c6b5c76e40536ebb87eb6a99a7c68d05723
         if ($(this).val() !== '') {
           $(this).addClass('filled');
         } else {
           $(this).removeClass('filled');
         }
-        checkInputs('#gform_page_' + gFormId + '_' + gFormCurrentPage);
+        checkInputs(gField);
       }
     );
     // $.each(
@@ -118,31 +110,31 @@
     //   )
     // );
 
-    function checkInputs(group) {
-      const $inputs = $(group).find('input:not(.button)');
+    function checkInputs(gField) {
+      const $inputs = $(gField).find('input:not(.button):not([type="hidden"])');
       const $inputsArea = $(this).find('textarea');
       console.log($inputs.length);
-      //   console.log($(group).find('.filled').length);
+      //console.log($(gField).find('.filled').length);
       //   console.log($(group).find('.filled').length);
       //   console.log($inputsArea.length);
       if (
-        $(group).find('.filled').length === $inputs.length &&
+        $(gField).find('.filled').length === $inputs.length &&
         $inputs.length > 0
       ) {
-        console.log('all inputs in group filled');
-        $(group)
+        //console.log('all inputs in group filled');
+        $(gField)
           .removeClass('icon-default')
           .addClass('icon-complete');
       } else if (
-        $(group).find('.filled').length === $inputsArea.length &&
+        $(gField).find('.filled').length === $inputsArea.length &&
         $inputsArea.length > 0
       ) {
-        console.log('textfields filled');
-        $(group)
+        //console.log('textfields filled');
+        $(gField)
           .removeClass('icon-default')
           .addClass('icon-complete');
       } else {
-        $(group).removeClass('icon-complete');
+        $(gField).removeClass('icon-complete');
       }
     }
 

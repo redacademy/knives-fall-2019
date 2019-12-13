@@ -8,10 +8,7 @@
  * @param   bool $is_preview True during AJAX preview.
  * @param   (int|string) $post_id The post ID this block is saved to.
  */
-$field = get_field('our_team');
-echo '<pre>';
-print_r($field);
-echo '</pre>';
+
 
 while (have_rows('our_team')) {
 

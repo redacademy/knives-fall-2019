@@ -121,6 +121,10 @@ h2.upcoming-events-location {
     margin-right: 9%;
   }
 }
+.embed-container {
+  max-width: 600px;
+  margin: 0px auto;
+}
 
 /// pitch summary section ///
 
@@ -209,7 +213,7 @@ h2.past-events-title {
   margin-top: 150px;
 
   @include desktop {
-    background-image: url(../../assets/events-images/event-journal.jpg);
+    background-image: url(../../assets/events-images/pasteventsbg@2x.jpg);
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 500px;

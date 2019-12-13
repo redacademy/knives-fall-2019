@@ -523,6 +523,10 @@ h2.upcoming-events-location {
       margin-left: 6%;
       margin-right: 9%; } }
 
+.embed-container {
+  max-width: 600px;
+  margin: 0px auto; }
+
 .pitch-summary {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -611,7 +615,7 @@ h2.past-events-title {
   margin-top: 150px; }
   @media all and (min-width: 1000px) {
     .past-events-wrapper {
-      background-image: url(../../assets/events-images/event-journal.jpg);
+      background-image: url(../../assets/events-images/pasteventsbg@2x.jpg);
       background-repeat: no-repeat;
       background-position: top right;
       background-size: 500px; } }

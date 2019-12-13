@@ -140,6 +140,8 @@
 
     //=================
 
+    $('.embed-container').fitVids();
+
     // END OF BROOKE'S WORK
 
     //====================

@@ -3,7 +3,6 @@
     the_post(); ?>
     <?php the_content(); ?>
 <?php endwhile; ?>
-<div class="team-grid">
-    <?php get_template_part('blocks/content', 'team'); ?>
-</div>
+<?php get_template_part('blocks/content-team'); ?>  
+
 <?php get_footer(); ?>

@@ -1,5 +1,7 @@
 (function($) {
   $(document).ready(function() {
+    $('.embed-container').fitVids();
+
     //***********instance and declarations */
     const $userWidth = document.documentElement.clientWidth;
     // click the hamburger menu

@@ -9,26 +9,26 @@
  * @param   (int|string) $post_id The post ID this block is saved to.
  */
 
-$img = get_sub_field('portrait');
 
-$name = get_sub_field('name');
+while (have_rows('our_team')) {
 
-$role = get_sub_field('role');
-$bgColor = get_sub_field('background_color');
+    the_row();
+    $heading = get_field('our_team');
 
+    $name = get_sub_field('name');
 
-$team = get_field('our_team');
-if ($team) : ?>
-    <div id="team">
-        <img src="<?php echo esc_url($team['image']['url']); ?>" alt="<?php echo esc_attr($team['image']['alt']); ?>" />
-        <div class="content">
-            <?php echo $team['name']; ?>
-            <a href="<?php echo esc_url($team['link']['url']); ?>"><?php echo esc_html($team['link']['title']); ?></a>
+    $img = get_sub_field('portrait');
+
+    $role = get_sub_field('role');
+
+    $bgColor = get_field('background_color'); ?>
+
+    <section class="team-grid" style="background-color: <?php echo $bgColor; ?>">
+        <h2><?php echo $heading ?></h2>
+        <div class="team-member">
+            <img class="portrait" src="<?php echo $img['url']; ?>" alt="picture of <?php $name; ?>">
+            <p class="name"><?php echo $name; ?></p>
+            <p class="role"><?php echo $role; ?></p>
         </div>
-    </div>
-    <style type="text/css">
-        #team {
-            background-color: <?php echo esc_attr($team['color']); ?>;
-        }
-    </style>
-<?php endif; ?>
+    </section>
+<?php } ?>

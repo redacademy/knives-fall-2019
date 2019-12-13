@@ -63,7 +63,6 @@
     $('.gform_page').on('click', '.download-agreement', function(event) {
       event.preventDefault();
       window.open(knivesforks_vars.invest_download_file);
-      console.log(knivesforks_vars.invest_download_file);
     });
 
     // button stylings for make-a-pitch
@@ -85,7 +84,10 @@
     // TODO check the code below for issues?
     $(document).on(
       'blur',
-      gField + ' input:not(.button), ' + gField + ' textarea',
+      gField +
+        ' input:not(.button):not([type="hidden"]), ' +
+        gField +
+        ' textarea',
       function() {
         if ($(this).val() !== '') {
           $(this).addClass('filled');
@@ -109,10 +111,9 @@
     // );
 
     function checkInputs(group) {
-      const $inputs = $(this).find('input:not(.button)');
+      const $inputs = $(group).find('input:not(.button):not([type="hidden"])');
       const $inputsArea = $(this).find('textarea');
-      const $consent = $(this).find('input[type="checkbox"');
-      //   console.log($inputs.length);
+      console.log($inputs.length);
       //   console.log($(group).find('.filled').length);
       //   console.log($(group).find('.filled').length);
       //   console.log($inputsArea.length);
@@ -129,13 +130,6 @@
         $inputsArea.length > 0
       ) {
         console.log('textfields filled');
-        $(group)
-          .removeClass('icon-default')
-          .addClass('icon-complete');
-      } else if (
-        $(group).find('.filled').length === $consent.length &&
-        $consent.length > 0
-      ) {
         $(group)
           .removeClass('icon-default')
           .addClass('icon-complete');

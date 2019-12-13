@@ -85,18 +85,16 @@ h2.upcoming-events-location {
 .embed-container {
   position: relative;
   overflow: hidden;
-  max-width: 100%;
   height: auto;
-  min-width: 100%;
-  margin: 0;
+  width: 300px;
+  margin: 0 auto;
   text-align: center;
 
-  iframe {
-    width: 70%;
+  // iframe {
+  //   width: 70%;
 
-    @include desktop {
-      width: 50%;
-    }
+  @include desktop {
+    width: 600px;
   }
 }
 
@@ -120,10 +118,6 @@ h2.upcoming-events-location {
     margin-left: 6%;
     margin-right: 9%;
   }
-}
-.embed-container {
-  max-width: 600px;
-  margin: 0px auto;
 }
 
 /// pitch summary section ///
@@ -204,6 +198,7 @@ h2.past-events-title {
     text-align: left;
     padding-bottom: 10px;
     font-size: 40px;
+    // padding: 196px;
   }
 }
 
@@ -217,17 +212,14 @@ h2.past-events-title {
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 300px;
-    // width: 100%;
   }
 }
 
 .past-events-container {
   display: flex;
-  // flex-wrap: wrap;
   flex-direction: column;
   padding-top: 100px;
   margin: 0 auto;
-  // border: 1px solid black;
 
   .past-event {
     display: flex;
@@ -269,11 +261,11 @@ h2.past-events-title {
     width: 244px;
     position: relative;
     padding-left: 0;
-    margin: 0 auto;
+    margin: 0 20%;
 
     @include desktop {
-      padding-top: 20px;
-      margin: 50;
+      // padding-top: 20px;
+      margin-right: 2%;
     }
   }
 }

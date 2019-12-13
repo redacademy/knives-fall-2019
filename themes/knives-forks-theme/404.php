@@ -12,18 +12,22 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<section class="error-404 not-found">
+			
 				<header class="page-header">
 				</header><!-- .page-header -->
-				
-				<div class="error-page-wrapper">
 
-				<img class="error-img" src = '<?php bloginfo('template_directory'); ?>"/assets/404-images/404@2x.png"' alt = '404-picture' />
+				<section class="error-404 not-found">
+				
+				<div class="error-page-container">
+					<section class="error-404-image">
+
+				<img class="error-img" src='<?php echo get_stylesheet_directory_uri(); ?>/assets/404-images/404.svg' alt='404-picture' /></section>
 
 			
-				<div class="error-message">
-					<h3 class="error-message"><?php _e( 'Error 404 - Oh Dear... It looks like the page you were looking for cannot be found.' ); ?></h3>
-					<p><?php _e( '' ); ?></p></div>
+
+			
+				<div class="error-message-container">
+					<p class="error-message"><span>Error 404</span> &mdash; Oh dear... It looks like the page you were looking for cannot be found.</p></div>
 
 
 				

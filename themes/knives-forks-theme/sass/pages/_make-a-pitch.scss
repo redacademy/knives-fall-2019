@@ -16,23 +16,41 @@
   }
   .gf_page_steps {
     display: flex;
+    border: none;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
 
     @include tablet {
       flex-direction: column;
       border-right: 1px solid black;
       width: 33%;
       position: sticky;
-      top: 0;
+      margin: 0;
+      //top: -200px;
     }
     @include desktop {
       flex-direction: column;
       border-right: 1px solid black;
       width: 33%;
       position: sticky;
+      margin: 0;
       top: 0;
     }
     .gf_step {
+      margin: auto;
+      display: flex;
+      //justify-content: space-around;
+      height: 12px;
+      width: 12px;
+      opacity: 1;
+      background-color: white;
+      border-radius: 10px;
+      border: 2px solid $primary_green_dark;
+      color: rgba(0, 0, 0, 0);
+
       @include tablet {
+        display: flex;
         opacity: 1;
         filter: none;
         color: $primary_green_dark;
@@ -41,8 +59,10 @@
         height: 30px;
         margin: $margin;
         width: auto;
+        border: none;
       }
       @include desktop {
+        display: flex;
         opacity: 1;
         filter: none;
         color: $primary_green_dark;
@@ -51,21 +71,34 @@
         height: 30px;
         margin: $margin;
         width: auto;
+        border: none;
       }
       .gf_step_number {
         display: none;
       }
     }
+
     .gf_step_active {
+      background-color: $primary_green_dark;
+      height: 12px;
+      width: 12px;
+      border-radius: 10px;
       @include tablet {
         color: white;
+        height: 30px;
         background-color: $primary_green_dark;
-        font-weight: $font_weight_header;
+        width: auto;
+        border-radius: 5px;
+        padding-top: 3px;
       }
+
       @include desktop {
         color: white;
+        height: 30px;
         background-color: $primary_green_dark;
-        font-weight: $font_weight_header;
+        width: auto;
+        border-radius: 5px;
+        padding-top: 3px;
       }
     }
   }
@@ -75,11 +108,27 @@
       padding: 10px;
     }
   }
+  .gform_page {
+    padding: 0 7%;
+    display: flex;
+    flex-direction: column;
+    //justify-items: center;
+
+    .gform_fields {
+      display: flex;
+      flex-direction: column;
+      textarea {
+        border-radius: 5px;
+      }
+      @include desktop {
+      }
+    }
+  }
   .icon-default::before {
     background-image: url('../../assets/icons/Forms - Unfilled/unfilled-name.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 33%;
+    width: 100%;
     height: 200px;
     content: 'abc';
     font-size: 10rem;
@@ -87,7 +136,18 @@
     display: block;
     position: relative;
     top: 0px;
-    left: 200px;
+    @include tablet {
+      left: 150px;
+      width: 60%;
+    }
+    @include desktop {
+      height: 200px;
+      width: 33%;
+      display: block;
+      position: relative;
+      top: 0px;
+      left: 200px;
+    }
   }
   .icon-complete::before {
     background-image: url('../../assets/icons/Forms - filled/filled-name.svg');

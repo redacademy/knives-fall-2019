@@ -48,7 +48,7 @@ add_action('after_setup_theme', 'red_starter_setup');
 function register_acf_block_types()
 {
 
-	// register a testimonial block.
+	// register a information blurb block.
 	acf_register_block_type(array(
 		'name'              => 'information blurbs',
 		'title'             => __('Information Blurbs'),

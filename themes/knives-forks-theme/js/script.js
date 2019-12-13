@@ -89,7 +89,6 @@
         gField +
         ' textarea',
       function() {
-        console.log('blur');
         if ($(this).val() !== '') {
           $(this).addClass('filled');
         } else {

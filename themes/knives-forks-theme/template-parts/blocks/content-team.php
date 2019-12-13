@@ -7,18 +7,11 @@
  */
 
 $avatar = get_field('member_avatar');
-$id = 'team-' . $team['id'];
 
-$align_class = $team['align'] ? 'align' . $team['align'] : '';
+$name = get_field('our_team');
 
-$name = the_field('our_team');
-
-$role = the_field('organization_role');
+$role = get_field('organization_role');
 ?>
-<blockquote id="<?php echo $id; ?>" class="team <?php echo $align_class; ?>">
-    <p><?php $name; ?></p>
-    <cite>
-        <img src="<?php echo $avatar['url']; ?>" alt="<?php echo $avatar['alt']; ?>" />
-        <span><?php the_field('author'); ?></span>
-    </cite>
-</blockquote>
+    <img src="<?php echo $avatar['url']; ?>" alt="<?php echo $avatar['alt']; ?>" />
+    <p><?php echo $name ?></p>
+    <p><?php echo $role ?></p>

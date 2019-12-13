@@ -3,19 +3,32 @@
 /**
  * Block Name: Team
  *
- * This is the template that displays the testimonial block.
+ * @param   array $block The block settings and attributes.
+ * @param   string $content The block inner HTML (empty).
+ * @param   bool $is_preview True during AJAX preview.
+ * @param   (int|string) $post_id The post ID this block is saved to.
  */
-$avatar = get_field('member_avatar');
 
-$name = get_field('our_team');
+$img = get_sub_field('portrait');
 
-$role = get_field('organization_role');
-?>
-<section>
-    <h2 class='team-block-title'>Our Team</h2>
-    <div class="team-member-container">
-        <img src="<?php echo $avatar['url']; ?>" alt="<?php echo $avatar['alt']; ?>" class="team-member-image"/>
-        <p class="team-member-name"><?php echo $name ?></p>
-        <p class="team-member-role"><?php echo $role ?></p>
+$name = get_sub_field('name');
+
+$role = get_sub_field('role');
+$bgColor = get_sub_field('background_color');
+
+
+$team = get_field('our_team');
+if ($team) : ?>
+    <div id="team">
+        <img src="<?php echo esc_url($team['image']['url']); ?>" alt="<?php echo esc_attr($team['image']['alt']); ?>" />
+        <div class="content">
+            <?php echo $team['name']; ?>
+            <a href="<?php echo esc_url($team['link']['url']); ?>"><?php echo esc_html($team['link']['title']); ?></a>
+        </div>
     </div>
-</section>
+    <style type="text/css">
+        #team {
+            background-color: <?php echo esc_attr($team['color']); ?>;
+        }
+    </style>
+<?php endif; ?>

@@ -602,7 +602,6 @@ h2.past-events-title {
   @media all and (min-width: 1000px) {
     h2.past-events-title {
       text-align: left;
-<<<<<<< HEAD
       padding-bottom: 10px;
       font-size: 40px; } }
 
@@ -610,20 +609,6 @@ h2.past-events-title {
   background: #f2f7f7;
   width: 100%;
   margin-top: 150px; }
-  @media all and (min-width: 1000px) {
-    .past-events-wrapper {
-      background-image: url(../../assets/events-images/event-journal.jpg);
-      background-repeat: no-repeat;
-      background-position: top right;
-      background-size: 500px; } }
-=======
-      padding-bottom: 10px; } }
->>>>>>> 3ff621770417785b3ddea6a3214eeed3779227d5
-
-.past-events-wrapper {
-  background: #f2f7f7;
-  width: 100%;
-  margin-top: 50px; }
   @media all and (min-width: 1000px) {
     .past-events-wrapper {
       background-image: url(../../assets/events-images/event-journal.jpg);
@@ -654,13 +639,8 @@ h2.past-events-title {
     @media all and (min-width: 1000px) {
       .past-events-container .past-event {
         margin: 0; } }
-<<<<<<< HEAD
   @media all and (min-width: 1000px) and (min-width: 1000px) {
     .past-events-container .past-event {
-=======
-  @media all and (min-width: 1000px) {
-    .past-events-container {
->>>>>>> 3ff621770417785b3ddea6a3214eeed3779227d5
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;

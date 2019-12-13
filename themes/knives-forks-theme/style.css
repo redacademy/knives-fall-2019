@@ -600,7 +600,8 @@ h2.past-events-title {
     h2.past-events-title {
       text-align: left;
       padding-bottom: 10px;
-      font-size: 40px; } }
+      font-size: 40px;
+      padding: 201px; } }
 
 .past-events-wrapper {
   background: #f2f7f7;
@@ -611,7 +612,7 @@ h2.past-events-title {
       background-image: url(../../assets/events-images/pasteventsbg@2x-cropped.png);
       background-repeat: no-repeat;
       background-position: top right;
-      background-size: 300px; } }
+      background-size: 400px; } }
 
 .past-events-container {
   display: -webkit-box;

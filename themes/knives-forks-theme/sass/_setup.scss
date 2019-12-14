@@ -83,3 +83,9 @@ article {
     text-align: center;
   }
 }
+
+//********************SET FORCE the ordering at OUR STORY PAGE
+.site-content {
+  display: flex;
+  flex-flow: column nowrap;
+}

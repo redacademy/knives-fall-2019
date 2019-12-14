@@ -18,6 +18,11 @@
     const investor = $('.menu-item-201 a');
     // END OF VICTOR'S VARIABLES
 
+    //*************Refresh the DOM when change ORIENTATION */
+    $(window).on('orientationchange', function() {
+      document.location.reload();
+    });
+
     // VICTOR'S WORK
 
     // add .btn to menu item

@@ -54,6 +54,19 @@ $testimonials=get_posts($args);
 
             }
          ?>
+	<section class="support-container">
+        <div>
+        <h3 class="initiative">An Initiative By:</h3>
+<img class="slow-money" src='<?php echo get_stylesheet_directory_uri(); ?>/assets/homepage-images/slowmoney@2x.png' alt='slowmoney-icon' /></div>
+
+
+
+<div>
+<h3 class="supported-by">Supported By:</h3>
+<img class="vancity" src='<?php echo get_stylesheet_directory_uri(); ?>/assets/homepage-images/vancitylogo@2x.png' alt='vancity-icon' /></div>
+
+</section>
+
          
      </section>
 <?php get_footer();?>

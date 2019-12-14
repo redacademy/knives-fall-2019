@@ -1,0 +1,20 @@
+.support-container {
+  padding-top: 20%;
+}
+
+.initiative {
+  img {
+  }
+}
+.support-container img {
+  width: 50%;
+}
+
+h3.initiative,
+h3.support-container,
+h3.supported-by {
+  font-family: $headfont;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}

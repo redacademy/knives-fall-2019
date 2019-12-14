@@ -735,6 +735,20 @@ p.error-message {
 .error-message span {
   font-weight: bold; }
 
+.support-container {
+  padding-top: 20%; }
+
+.support-container img {
+  width: 50%; }
+
+h3.initiative,
+h3.support-container,
+h3.supported-by {
+  font-family: "Lora", serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold; }
+
 @media all and (max-width: 499px) {
   .banner .btn-event {
     padding: 3% 5%;

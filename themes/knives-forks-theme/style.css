@@ -518,7 +518,8 @@ h2.upcoming-events-location {
   @media all and (min-width: 1000px) {
     .video-section {
       margin-left: 6%;
-      margin-right: 9%; } }
+      margin-right: 9%;
+      margin-bottom: 10%; } }
 
 .pitch-summary {
   display: -webkit-box;
@@ -528,7 +529,7 @@ h2.upcoming-events-location {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%vw;
+  width: 100%;
   text-align: center;
   padding-bottom: 34px; }
   @media all and (min-width: 1000px) {
@@ -538,7 +539,7 @@ h2.upcoming-events-location {
           -ms-flex-direction: row;
               flex-direction: row;
       width: 970px;
-      margin-left: 225px; } }
+      margin-left: 16%; } }
 
 .summary-image img {
   max-width: 100%;
@@ -601,18 +602,18 @@ h2.past-events-title {
       text-align: left;
       padding-bottom: 10px;
       font-size: 40px;
-      padding: 201px; } }
+      padding-left: 232px; } }
 
 .past-events-wrapper {
   background: #f2f7f7;
   width: 100%;
-  margin-top: 150px; }
+  margin-top: 0px; }
   @media all and (min-width: 1000px) {
     .past-events-wrapper {
       background-image: url(../../assets/events-images/pasteventsbg@2x-cropped.png);
       background-repeat: no-repeat;
-      background-position: top right;
-      background-size: 400px; } }
+      background-position: right;
+      background-size: 20%; } }
 
 .past-events-container {
   display: -webkit-box;
@@ -622,8 +623,7 @@ h2.past-events-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 100px;
-  margin: 0 auto; }
+  margin: 0 10%; }
   .past-events-container .past-event {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -643,7 +643,8 @@ h2.past-events-title {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      max-width: 1000px; } }
+      max-width: 1000px;
+      margin: 0 3%; } }
   @media all and (min-width: 1000px) {
     .past-events-container .past-event {
       -webkit-box-orient: horizontal;

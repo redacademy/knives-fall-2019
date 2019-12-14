@@ -1534,6 +1534,8 @@ h3.supported-by {
         padding: 1rem 0 0; }
         .main-navigation .desktop-menu .menu li {
           padding: 1rem 1rem; }
+          .main-navigation .desktop-menu .menu li:last-child {
+            padding: 0; }
           .main-navigation .desktop-menu .menu li a {
             color: #000; }
             .main-navigation .desktop-menu .menu li a:hover {
@@ -1541,7 +1543,9 @@ h3.supported-by {
           .main-navigation .desktop-menu .menu li:last-child a {
             color: #fff;
             font-weight: 100;
-            font-size: 0.8rem; } }
+            font-size: 0.8rem;
+            display: inline-block;
+            padding: 1rem; } }
   @media all and (max-width: 499px) {
     .main-navigation .hidden-menu {
       display: none; } }

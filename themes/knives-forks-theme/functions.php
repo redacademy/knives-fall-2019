@@ -83,15 +83,6 @@ function investors_block()
 {
 	if (function_exists('acf_register_block')) {
 		acf_register_block(array(
-<<<<<<< HEAD
-			'name'=>'investor_profile',
-			'title'=>__('Investor\'s Profile'),
-			'description'=>__('A Custom Block for Investor\'s Profile'),
-			'render_callback'=>'render_callback',
-			// 'render_template'=>'template-parts/blocks/content-business_investors.php',
-			'icon'=>'editor-paste-text',
-			'keywords'=>array('investors','business_investors')
-=======
 			'name' => 'investor_profile',
 			'title' => __('Investor\'s Profile'),
 			'description' => __('A Custom Block for Investor\'s Profile'),
@@ -99,28 +90,11 @@ function investors_block()
 			'render_template' => 'template-parts/blocks/content-business_investors.php',
 			'icon' => 'editor-paste-text',
 			'keywords' => array('investors', 'business_investors', 'investor_profile')
->>>>>>> 0426a348ad94c88b06f94d1b6cb2dda52b6403a7
 
 		));
 	}
 }
 
-<<<<<<< HEAD
-function render_callback($block)
-{
-
-	// convert name ("acf/team") into path friendly slug ("team")
-	// $slug = $block['name'];
-	
-	$slug = str_replace('acf/', '', $block['name']);
-	// echo $slug;
-	// include a template part from within the "template-parts/block" folder
-	if (file_exists(get_theme_file_path("/template-parts/blocks/content-{$slug}.php"))) {
-		include(get_theme_file_path("/template-parts/blocks/content-{$slug}.php"));
-	}
-}
-=======
->>>>>>> 0426a348ad94c88b06f94d1b6cb2dda52b6403a7
 
 
 /**

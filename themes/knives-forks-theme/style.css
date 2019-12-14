@@ -765,7 +765,7 @@ p.error-message {
 
 .slowmoney-icon,
 .vancity-icon {
-  background-color: rgba(55, 130, 68, 0.3);
+  background-color: rgba(55, 130, 68, 0.2);
   border-radius: 90%;
   width: 20%;
   height: 15%;
@@ -791,21 +791,24 @@ p.error-message {
       height: 100px;
       width: 100px; } }
 
-@media all and (min-width: 1000px) {
-  .slowmoney-icon img {
-    height: 31vh;
-    margin: -26%;
-    margin-left: -35%; } }
+.slowmoney-icon img {
+  margin: -26%;
+  height: 16vh; }
+  @media all and (min-width: 1000px) {
+    .slowmoney-icon img {
+      height: 22vh;
+      margin: 0;
+      margin-right: -130%; } }
 
 .vancity-icon img {
-  height: 16vh;
+  height: 11vh;
   margin: 15%; }
   @media all and (min-width: 1000px) {
     .vancity-icon img {
       padding-right: 150px;
-      height: 15vh;
+      height: 11vh;
       margin: 34%;
-      margin-right: -252%; } }
+      margin-right: -275%; } }
 
 h3.initiative-title,
 h3.supported-by-title {

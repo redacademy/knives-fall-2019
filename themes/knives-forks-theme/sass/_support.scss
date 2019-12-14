@@ -10,7 +10,7 @@
 }
 .slowmoney-icon,
 .vancity-icon {
-  background-color: rgba(55, 130, 68, 0.3);
+  background-color: rgba(55, 130, 68, 0.2);
   border-radius: 90%;
   width: 20%;
   height: 15%;
@@ -32,23 +32,25 @@
 
 .slowmoney-icon {
   img {
+    margin: -26%;
+    height: 16vh;
     @include desktop {
-      height: 31vh;
-      margin: -26%;
-      margin-left: -35%;
+      height: 22vh;
+      margin: 0;
+      margin-right: -130%;
     }
   }
 }
 .vancity-icon {
   img {
-    height: 16vh;
+    height: 11vh;
     margin: 15%;
 
     @include desktop {
       padding-right: 150px;
-      height: 15vh;
+      height: 11vh;
       margin: 34%;
-      margin-right: -252%;
+      margin-right: -275%;
     }
   }
 }

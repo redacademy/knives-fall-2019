@@ -1,27 +1,72 @@
 .support-container {
-  padding-top: 20%;
-}
-
-.initiative {
-  img {
-  }
-}
-.support-container img {
-  width: 50%;
-}
-
-h3.initiative,
-h3.support-container,
-h3.supported-by {
-  font-family: $headfont;
-  font-size: 20px;
-  text-align: center;
-  font-weight: bold;
   display: flex;
   flex-direction: column;
-
   @include desktop {
     flex-direction: row;
+    justify-content: space-around;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+.slowmoney-icon,
+.vancity-icon {
+  background-color: rgba(55, 130, 68, 0.3);
+  border-radius: 90%;
+  width: 20%;
+  height: 15%;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 60%;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+
+  @include desktop {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.slowmoney-icon {
+  img {
+    @include desktop {
+      height: 31vh;
+      margin: -26%;
+      margin-left: -35%;
+    }
+  }
+}
+.vancity-icon {
+  img {
+    height: 16vh;
+    margin: 15%;
+
+    @include desktop {
+      padding-right: 150px;
+      height: 15vh;
+      margin: 34%;
+      margin-right: -252%;
+    }
+  }
+}
+
+h3.initiative-title,
+h3.supported-by-title {
+  padding: 20px;
+  font-family: $headfont;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  @include desktop {
     color: $primary_green_med;
+    font-size: 20px;
+    font-family: $parafont;
+    font-weight: 400;
+    flex-direction: column;
   }
 }

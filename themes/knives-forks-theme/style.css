@@ -745,18 +745,6 @@ p.error-message {
   font-weight: bold; }
 
 .support-container {
-  padding-top: 20%; }
-
-.support-container img {
-  width: 50%; }
-
-h3.initiative,
-h3.support-container,
-h3.supported-by {
-  font-family: "Lora", serif;
-  font-size: 20px;
-  text-align: center;
-  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -765,14 +753,83 @@ h3.supported-by {
       -ms-flex-direction: column;
           flex-direction: column; }
   @media all and (min-width: 1000px) {
-    h3.initiative,
-    h3.support-container,
-    h3.supported-by {
+    .support-container {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      color: #378244; } }
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      padding-left: 200px;
+      padding-right: 200px; } }
+
+.slowmoney-icon,
+.vancity-icon {
+  background-color: rgba(55, 130, 68, 0.3);
+  border-radius: 90%;
+  width: 20%;
+  height: 15%;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 60%;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto; }
+  @media all and (min-width: 1000px) {
+    .slowmoney-icon,
+    .vancity-icon {
+      height: 100px;
+      width: 100px; } }
+
+@media all and (min-width: 1000px) {
+  .slowmoney-icon img {
+    height: 31vh;
+    margin: -26%;
+    margin-left: -35%; } }
+
+.vancity-icon img {
+  height: 16vh;
+  margin: 15%; }
+  @media all and (min-width: 1000px) {
+    .vancity-icon img {
+      padding-right: 150px;
+      height: 15vh;
+      margin: 34%;
+      margin-right: -252%; } }
+
+h3.initiative-title,
+h3.supported-by-title {
+  padding: 20px;
+  font-family: "Lora", serif;
+  font-size: 18px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media all and (min-width: 1000px) {
+    h3.initiative-title,
+    h3.supported-by-title {
+      color: #378244;
+      font-size: 20px;
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 @media all and (max-width: 499px) {
   .banner .btn-event {

@@ -62,6 +62,7 @@
 
     // BROOKE'S WORK BELOW
 
+    //for downloading the memorandum of association
     $('.gform_page').on('click', '.download-agreement', function(event) {
       event.preventDefault();
       window.open(knivesforks_vars.invest_download_file);
@@ -72,6 +73,7 @@
     $('.gform_previous_button').addClass('btn');
     $('.gform_button').addClass('btn');
 
+    // adding icon as ::before to each form page
     const gFormCurrentPage = parseInt(
       $('.gf_step_active .gf_step_number').text()
     );
@@ -83,7 +85,6 @@
     const gField = '#gform_page_' + gFormId + '_' + gFormCurrentPage;
     $(gField).addClass('icon-default');
 
-    // TODO check the code below for issues?
     $(document).on(
       'blur',
       gField +
@@ -99,6 +100,8 @@
         checkInputs(gField);
       }
     );
+
+    // TODO check the code below for issues?
     // $.each(
     //   $(gField).find(
     //     'input',
@@ -140,6 +143,25 @@
       }
     }
 
+    // make step progression sticky
+
+    //const headerHeight = $('.main-navigation').height();
+    const stickySteps = $('.gf_page_steps');
+
+    $.each(stickySteps, function(index, value) {
+      console.log(value.offsetTop);
+    });
+
+    $(window).scroll(function() {
+      let scrollY = $(window).scrollTop();
+      console.log(scrollY);
+      if (scrollY > 0) {
+        console.log('sticking point');
+        $(stickySteps).addClass('sticky');
+      } else {
+        $(stickySteps).removeClass('sticky');
+      }
+    });
     //=================
 
     // END OF BROOKE'S WORK

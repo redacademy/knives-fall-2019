@@ -1,0 +1,38 @@
+////styles for body
+
+.error-404 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+////styles for image
+
+.error-404-image {
+  img {
+    text-align: center;
+    padding-top: 147px;
+    width: 60%;
+
+    @include desktop {
+      // height: 400px;
+    }
+  }
+}
+
+///styles for error message text
+
+p.error-message {
+  line-height: 1;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 4%;
+
+  @include desktop {
+    font-size: 1.25em;
+    width: 50%;
+  }
+}
+
+.error-message span {
+  font-weight: bold;
+}

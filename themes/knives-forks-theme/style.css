@@ -747,7 +747,23 @@ h3.supported-by {
   font-family: "Lora", serif;
   font-size: 20px;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media all and (min-width: 1000px) {
+    h3.initiative,
+    h3.support-container,
+    h3.supported-by {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      color: #378244; } }
 
 @media all and (max-width: 499px) {
   .banner .btn-event {

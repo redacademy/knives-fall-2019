@@ -17,4 +17,11 @@ h3.supported-by {
   font-size: 20px;
   text-align: center;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+    color: $primary_green_med;
+  }
 }

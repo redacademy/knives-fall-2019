@@ -1,12 +1,16 @@
 .page-apply-to-pitch,
 .page-become-investor {
+  .main-navigation {
+    box-shadow: none;
+    border-bottom: 1px solid black;
+  }
   .site-content {
     margin-top: 100px;
   }
 }
 .gform_wrapper form {
   display: flex;
-  margin-top: 200px;
+  //margin-top: 200px;
   flex-direction: column;
   @include tablet {
     flex-direction: row;
@@ -20,14 +24,13 @@
     width: 80%;
     margin: auto;
     margin-bottom: 30px;
-    position: sticky;
-    top: 100px;
+    //position: fixed;
+    top: 150px;
 
     @include tablet {
       flex-direction: column;
       border-right: 1px solid black;
       width: 33%;
-      position: sticky;
       margin: 0;
       //top: -200px;
     }
@@ -35,7 +38,6 @@
       flex-direction: column;
       border-right: 1px solid black;
       width: 33%;
-      position: sticky;
       margin: 0;
       top: 0;
     }
@@ -63,6 +65,7 @@
         margin: $margin;
         width: auto;
         border: none;
+        text-align: right;
       }
       @include desktop {
         display: flex;
@@ -106,8 +109,11 @@
     }
   }
   .gform_body {
-    @include desktop {
+    @include tablet {
+      margin-left: auto;
       width: 66%;
+    }
+    @include desktop {
       padding: 10px;
     }
   }
@@ -131,7 +137,7 @@
     background-image: url('../../assets/icons/Forms - Unfilled/unfilled-name.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 200px;
     height: 200px;
     content: 'abc';
     font-size: 10rem;
@@ -139,8 +145,9 @@
     display: block;
     position: relative;
     top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
     @include tablet {
-      left: 150px;
       width: 60%;
     }
     @include desktop {
@@ -149,7 +156,7 @@
       display: block;
       position: relative;
       top: 0px;
-      left: 200px;
+      //left: 200px;
     }
   }
   .icon-complete::before {
@@ -165,6 +172,9 @@
     position: relative;
     top: 0px;
     left: 200px;
+    &:nth-of-type(2) {
+      background-image: url('../../assets/icons/Forms - filled/filled-email.svg');
+    }
   }
 
   //use nth-of-type()
@@ -176,7 +186,14 @@
 //gform confirmation message
 
 .gform_confirmation_message {
+  .thank-you-icon {
+  }
   width: 80%;
   text-align: center;
   margin: auto;
+}
+
+.sticky {
+  position: fixed;
+  //top: 20px;
 }

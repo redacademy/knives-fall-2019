@@ -115,7 +115,7 @@
   let tmpBool = false;
   $(window).on('scroll', function() {
     // console.clear();
-    scrollIndex = $(window).scrollTop();
+    scrollIndex = $(document).scrollTop();
     // console.log(scrollIndex);
     if (scrollIndex > 100 && scrollIndex < 130) {
       tmpBool = true;

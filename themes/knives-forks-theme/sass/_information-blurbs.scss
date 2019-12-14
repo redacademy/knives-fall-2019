@@ -112,11 +112,11 @@
   display: flex;
   flex-direction: column;
   margin-top: 100px;
-  margin-bottom: 100px;
 
   @include desktop {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 200px;
   }
   .copy-block-content {
     order: 1;

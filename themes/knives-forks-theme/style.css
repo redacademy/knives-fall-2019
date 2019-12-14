@@ -1736,8 +1736,7 @@ p.error-message {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 100px;
-  margin-bottom: 100px; }
+  margin-top: 100px; }
   @media all and (min-width: 1000px) {
     .custom-copy-block {
       -webkit-box-orient: horizontal;
@@ -1746,7 +1745,8 @@ p.error-message {
               flex-direction: row;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
-              justify-content: space-between; } }
+              justify-content: space-between;
+      margin-bottom: 200px; } }
   .custom-copy-block .copy-block-content {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;

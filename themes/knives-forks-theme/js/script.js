@@ -156,9 +156,9 @@
     let unstickPoint = window.innerHeight - footerHeight;
     console.log(unstickPoint);
 
-    $.each(stickySteps, function(index, value) {
-      //console.log(value.offsetTop);
-    });
+    // $.each(stickySteps, function(index, value) {
+    //   //console.log(value.offsetTop);
+    // });
 
     $(window).scroll(function() {
       let scrollY = $(window).scrollTop();

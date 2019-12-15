@@ -7,6 +7,11 @@
   .site-content {
     margin-top: 0;
   }
+  .site-footer {
+    position: relative;
+    z-index: 98;
+    background-color: white;
+  }
 }
 .gform_wrapper form {
   display: flex;
@@ -35,12 +40,13 @@
     @include tablet {
       flex-direction: column;
       border-right: 1px solid black;
+      padding: 135px 1%;
       width: 33%;
       margin: 0;
       height: auto;
       &.sticky {
         position: fixed;
-        top: 48px;
+        top: 15px;
         height: auto;
       }
     }
@@ -49,6 +55,7 @@
       border-right: 1px solid black;
       width: 33%;
       margin: 0;
+      padding: 128px 1%;
       top: 0;
       &.sticky {
         position: fixed;
@@ -80,6 +87,7 @@
         margin: $margin;
         width: auto;
         border: none;
+        justify-content: flex-end;
         //text-align: right;
       }
       @include desktop {
@@ -92,10 +100,14 @@
         height: 30px;
         margin: $margin;
         width: auto;
+        justify-content: flex-end;
         border: none;
       }
       .gf_step_number {
         display: none;
+      }
+      .gf_step_label {
+        padding: 2px 5px;
       }
     }
 
@@ -135,11 +147,17 @@
     }
   }
   .gform_page {
-    margin-top: 2rem;
+    margin-top: 100px;
     padding: 0 7%;
     display: flex;
     flex-direction: column;
     //justify-items: center;
+    @include tablet {
+      margin-top: 120px;
+    }
+    @include desktop {
+      margin-top: 120px;
+    }
 
     .gform_fields {
       display: flex;
@@ -216,9 +234,18 @@
 //gform confirmation message
 
 .gform_confirmation_message {
-  .thank-you-icon {
-  }
   width: 80%;
   text-align: center;
   margin: auto;
+  margin-top: 120px;
+  .thank-you-icon {
+    width: 60%;
+    height: auto;
+    @include tablet {
+      width: 40%;
+    }
+    @include desktop {
+      width: 40%;
+    }
+  }
 }

@@ -171,7 +171,7 @@
         // console.log('sticking point');
         $(stickySteps).addClass('sticky');
       } else {
-        //console.log('out of my depth');
+        console.log('unstick');
         $(stickySteps).removeClass('sticky');
       }
       //});

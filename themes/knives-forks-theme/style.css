@@ -401,7 +401,6 @@ article {
 
 .site-content {
   margin-top: 5%; }
-<<<<<<< HEAD
 
 .testimonials {
   background: url("../../assets/background-images/contact-bg@3x.png");
@@ -462,68 +461,6 @@ h2.upcoming-events-location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-=======
-
-.testimonials {
-  background: url("../../assets/background-images/contact-bg@3x.png");
-  background-size: cover;
-  background-position: bottom right; }
-  .testimonials nav {
-    background: rgba(91, 123, 86, 0.75);
-    color: #fff;
-    border-radius: 1.5em;
-    text-align: center; }
-
-.site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap; }
-
-.testimonials {
-  -webkit-box-ordinal-group: 100;
-      -ms-flex-order: 99;
-          order: 99; }
-
-.events-banner {
-  background: url("../../assets/events-images/event-hero@3x.png") no-repeat;
-  height: 100vh;
-  background: contain;
-  background-position: bottom center; }
-  @media all and (min-width: 1000px) {
-    .events-banner {
-      background-image: url("../../assets/events-images/coffee-cup.jpg");
-      background: contain center; } }
-
-.upcoming-events {
-  position: center;
-  background-color: #6f8f6a;
-  padding: 40px;
-  opacity: 0.85;
-  width: 80%;
-  height: 50%;
-  top: 25%; }
-
-h1.upcoming-events-title {
-  position: relative;
-  color: #fff;
-  font-family: "Lora", serif;
-  font-style: bold;
-  font-size: 1.5em; }
-
-h2.upcoming-events-location {
-  position: relative;
-  color: #fff;
-  font-size: 1em; }
-
-.banner-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
->>>>>>> 76011a86fd2746d13f7ac2b36f16a9ef1a7f00cb
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 20px;
@@ -595,12 +532,8 @@ h2.upcoming-events-location {
   @media all and (min-width: 1000px) {
     .video-section {
       margin-left: 6%;
-<<<<<<< HEAD
-      margin-right: 9%; } }
-=======
       margin-right: 9%;
       margin-bottom: 10%; } }
->>>>>>> 76011a86fd2746d13f7ac2b36f16a9ef1a7f00cb
 
 .pitch-summary {
   display: -webkit-box;
@@ -610,11 +543,7 @@ h2.upcoming-events-location {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-  width: 100%vw;
-=======
   width: 100%;
->>>>>>> 76011a86fd2746d13f7ac2b36f16a9ef1a7f00cb
   text-align: center;
   padding-bottom: 34px; }
   @media all and (min-width: 1000px) {
@@ -624,11 +553,7 @@ h2.upcoming-events-location {
           -ms-flex-direction: row;
               flex-direction: row;
       width: 970px;
-<<<<<<< HEAD
-      margin-left: 225px; } }
-=======
       margin-left: 16%; } }
->>>>>>> 76011a86fd2746d13f7ac2b36f16a9ef1a7f00cb
 
 .summary-image img {
   max-width: 100%;
@@ -691,31 +616,18 @@ h2.past-events-title {
       text-align: left;
       padding-bottom: 10px;
       font-size: 40px;
-<<<<<<< HEAD
-      padding: 201px; } }
-=======
       padding-left: 232px; } }
->>>>>>> 76011a86fd2746d13f7ac2b36f16a9ef1a7f00cb
 
 .past-events-wrapper {
   background: #f2f7f7;
   width: 100%;
-<<<<<<< HEAD
-  margin-top: 150px; }
-=======
   margin-top: 0px; }
->>>>>>> 76011a86fd2746d13f7ac2b36f16a9ef1a7f00cb
   @media all and (min-width: 1000px) {
     .past-events-wrapper {
       background-image: url(../../assets/events-images/pasteventsbg@2x-cropped.png);
       background-repeat: no-repeat;
-<<<<<<< HEAD
-      background-position: top right;
-      background-size: 400px; } }
-=======
       background-position: right;
       background-size: 20%; } }
->>>>>>> 76011a86fd2746d13f7ac2b36f16a9ef1a7f00cb
 
 .past-events-container {
   display: -webkit-box;
@@ -725,12 +637,7 @@ h2.past-events-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-  padding-top: 100px;
-  margin: 0 auto; }
-=======
   margin: 0 10%; }
->>>>>>> 76011a86fd2746d13f7ac2b36f16a9ef1a7f00cb
   .past-events-container .past-event {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -750,12 +657,8 @@ h2.past-events-title {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-<<<<<<< HEAD
-      max-width: 1000px; } }
-=======
       max-width: 1000px;
       margin: 0 3%; } }
->>>>>>> 76011a86fd2746d13f7ac2b36f16a9ef1a7f00cb
   @media all and (min-width: 1000px) {
     .past-events-container .past-event {
       -webkit-box-orient: horizontal;
@@ -846,7 +749,6 @@ p.error-message {
 .error-message span {
   font-weight: bold; }
 
-<<<<<<< HEAD
 @media all and (max-width: 499px) {
   .banner .btn-event {
     padding: 3% 5%;
@@ -1248,9 +1150,6 @@ p.error-message {
   margin-top: 100px; }
 
 .gform_wrapper form {
-=======
-.support-container {
->>>>>>> 76011a86fd2746d13f7ac2b36f16a9ef1a7f00cb
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1258,7 +1157,6 @@ p.error-message {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-<<<<<<< HEAD
   @media only screen and (min-width: 500px) and (max-width: 999px) {
     .gform_wrapper form {
       -webkit-box-orient: horizontal;
@@ -1512,7 +1410,6 @@ p.error-message {
   width: 90%;
   margin: 0 auto; }
   @media all and (min-width: 1000px) {
-=======
   @media all and (min-width: 1000px) {
     .support-container {
       -webkit-box-orient: horizontal;
@@ -2280,7 +2177,6 @@ h3.supported-by-title {
   width: 90%;
   margin: 0 auto; }
   @media all and (min-width: 1000px) {
->>>>>>> 76011a86fd2746d13f7ac2b36f16a9ef1a7f00cb
     .entry-content-contact {
       width: 70%; } }
 
@@ -2380,11 +2276,8 @@ h3.supported-by-title {
         padding: 1rem 0 0; }
         .main-navigation .desktop-menu .menu li {
           padding: 1rem 1rem; }
-<<<<<<< HEAD
-=======
           .main-navigation .desktop-menu .menu li:last-child {
             padding: 0; }
->>>>>>> 76011a86fd2746d13f7ac2b36f16a9ef1a7f00cb
           .main-navigation .desktop-menu .menu li a {
             color: #000; }
             .main-navigation .desktop-menu .menu li a:hover {
@@ -2392,13 +2285,9 @@ h3.supported-by-title {
           .main-navigation .desktop-menu .menu li:last-child a {
             color: #fff;
             font-weight: 100;
-<<<<<<< HEAD
-            font-size: 0.8rem; } }
-=======
             font-size: 0.8rem;
             display: inline-block;
             padding: 1rem; } }
->>>>>>> 76011a86fd2746d13f7ac2b36f16a9ef1a7f00cb
   @media all and (max-width: 499px) {
     .main-navigation .hidden-menu {
       display: none; } }
@@ -2682,36 +2571,6 @@ h3.supported-by-title {
           margin: 0;
           margin-left: 20px; } }
 
-<<<<<<< HEAD
-.team h2 {
-  text-align: center; }
-
-.team .team-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr; }
-  .team .team-grid .team-member {
-    margin: 0 auto; }
-    .team .team-grid .team-member:first-child {
-      grid-column: 1 / 3; }
-    .team .team-grid .team-member:last-child:not(:nth-child(odd)) {
-      grid-column: 1 / 3; }
-    .team .team-grid .team-member .portrait {
-      width: 150px;
-      height: 150px;
-      -o-object-fit: cover;
-         object-fit: cover;
-      border-radius: 5rem; }
-    .team .team-grid .team-member .desc {
-      padding: 1rem 0; }
-      .team .team-grid .team-member .desc p {
-        text-align: center;
-        text-transform: capitalize; }
-        .team .team-grid .team-member .desc p.name {
-          font-weight: bold;
-          margin: 0; }
-        .team .team-grid .team-member .desc p.role {
-          margin: 0; }
-=======
 .team {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
@@ -2768,7 +2627,6 @@ h3.supported-by-title {
             margin: 0; }
           .team .team-grid .team-member .desc p.role {
             margin: 0; }
->>>>>>> 76011a86fd2746d13f7ac2b36f16a9ef1a7f00cb
 
 /* external css: flickity.css */
 * {
@@ -2837,3 +2695,4 @@ body {
 /* hide disabled button */
 .flickity-prev-next-button:disabled {
   display: none; }
+  }

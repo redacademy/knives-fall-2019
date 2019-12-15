@@ -1,16 +1,23 @@
 .support-container {
   display: flex;
   flex-direction: column;
+  order: 4;
+  margin: 0 auto;
+
   @include desktop {
     flex-direction: row;
     justify-content: space-around;
     padding-left: 200px;
     padding-right: 200px;
+    border-top: 1px solid #e0dbdb;
+    width: 1220px;
+    margin-left: 5%;
+    margin-right: 20%;
   }
 }
 .slowmoney-icon,
 .vancity-icon {
-  background-color: rgba(55, 130, 68, 0.2);
+  background-color: rgba(55, 130, 68, 0.1);
   border-radius: 90%;
   width: 20%;
   height: 15%;
@@ -70,5 +77,7 @@ h3.supported-by-title {
     font-family: $parafont;
     font-weight: 400;
     flex-direction: column;
+    padding-left: 57px;
+    padding-top: 7em;
   }
 }

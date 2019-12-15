@@ -174,7 +174,7 @@
     background-image: url('../../assets/icons/Forms - filled/filled-name.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 33%;
+    width: 200px;
     height: 200px;
     content: 'abc';
     font-size: 10rem;
@@ -182,7 +182,19 @@
     display: block;
     position: relative;
     top: 0px;
-    left: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include tablet {
+      width: 60%;
+    }
+    @include desktop {
+      height: 200px;
+      width: 33%;
+      display: block;
+      position: relative;
+      top: 0px;
+      //left: 200px;
+    }
     &:nth-of-type(2) {
       background-image: url('../../assets/icons/Forms - filled/filled-email.svg');
     }

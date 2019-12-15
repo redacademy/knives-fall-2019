@@ -5,7 +5,7 @@
     border-bottom: 1px solid black;
   }
   .site-content {
-    margin-top: 100px;
+    margin-top: 0;
   }
 }
 .gform_wrapper form {
@@ -19,20 +19,23 @@
     flex-direction: row;
   }
   .gf_page_steps {
+    padding-top: 72px;
     display: flex;
     border: none;
     width: 80%;
     margin: auto;
     margin-bottom: 30px;
-    //position: fixed;
-    top: 150px;
 
     @include tablet {
       flex-direction: column;
       border-right: 1px solid black;
       width: 33%;
       margin: 0;
-      //top: -200px;
+      &.sticky {
+        position: fixed;
+        top: 48px;
+        height: 100vw;
+      }
     }
     @include desktop {
       flex-direction: column;
@@ -40,6 +43,11 @@
       width: 33%;
       margin: 0;
       top: 0;
+      &.sticky {
+        position: fixed;
+        top: 48px;
+        height: 100vw;
+      }
     }
     .gf_step {
       margin: auto;
@@ -65,7 +73,7 @@
         margin: $margin;
         width: auto;
         border: none;
-        text-align: right;
+        //text-align: right;
       }
       @include desktop {
         display: flex;
@@ -91,7 +99,7 @@
       border-radius: 10px;
       @include tablet {
         color: white;
-        height: 30px;
+        height: auto;
         background-color: $primary_green_dark;
         width: auto;
         border-radius: 5px;
@@ -115,9 +123,12 @@
     }
     @include desktop {
       padding: 10px;
+      width: 66%;
+      margin-left: auto;
     }
   }
   .gform_page {
+    margin-top: 2rem;
     padding: 0 7%;
     display: flex;
     flex-direction: column;
@@ -163,7 +174,7 @@
     background-image: url('../../assets/icons/Forms - filled/filled-name.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 33%;
+    width: 200px;
     height: 200px;
     content: 'abc';
     font-size: 10rem;
@@ -171,7 +182,19 @@
     display: block;
     position: relative;
     top: 0px;
-    left: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include tablet {
+      width: 60%;
+    }
+    @include desktop {
+      height: 200px;
+      width: 33%;
+      display: block;
+      position: relative;
+      top: 0px;
+      //left: 200px;
+    }
     &:nth-of-type(2) {
       background-image: url('../../assets/icons/Forms - filled/filled-email.svg');
     }
@@ -191,9 +214,4 @@
   width: 80%;
   text-align: center;
   margin: auto;
-}
-
-.sticky {
-  position: fixed;
-  //top: 20px;
 }

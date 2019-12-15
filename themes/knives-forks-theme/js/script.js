@@ -162,6 +162,19 @@
       console.log(scrollY);
       if (scrollY > 0) {
         console.log('sticking point');
+    let footerHeight = $('.site-footer').height();
+    let unstickPoint = window.innerHeight - footerHeight;
+    console.log(unstickPoint);
+
+    // $.each(stickySteps, function(index, value) {
+    //   //console.log(value.offsetTop);
+    // });
+
+    $(window).scroll(function() {
+      let scrollY = $(window).scrollTop();
+      //console.log(scrollY);
+      if (scrollY > 0 && scrollY < unstickPoint) {
+        //console.log('sticking point');
         $(stickySteps).addClass('sticky');
       } else {
         $(stickySteps).removeClass('sticky');

@@ -1,5 +1,4 @@
 # COMMUNITY PROJECT GITIGNORE #
-
 # Ignore OS files #
 # =============== #
 .DS_Store
@@ -17,7 +16,6 @@ ehthumbs.db
 !*.sql
 error_log
 access_log
-
 # Ignore everything in "wp-content" except the "plugins" and "themes" directories. #
 # ================================================================================ #
 /*
@@ -30,19 +28,15 @@ access_log
 # ========================================================== #
 plugins/*
 !plugins/knives-forks-functionality/
-
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
 themes/*
 !themes/knives-forks-theme
-
 # Ignore npm packages #
 # =================== #
 themes/knives-forks-theme/node_modules/*
-
 # Ignore build files #
 # ================== #
 themes/knives-forks-theme/gulpfile.js
 themes/knives-forks-theme/build/*
-
 #gulpfile.#

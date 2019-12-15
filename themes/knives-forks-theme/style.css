@@ -1237,7 +1237,7 @@ h3.supported-by-title {
 
 .page-apply-to-pitch .site-content,
 .page-become-investor .site-content {
-  margin-top: 100px; }
+  margin-top: 0; }
 
 .gform_wrapper form {
   display: -webkit-box;
@@ -1260,14 +1260,14 @@ h3.supported-by-title {
           -ms-flex-direction: row;
               flex-direction: row; } }
   .gform_wrapper form .gf_page_steps {
+    padding-top: 72px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     border: none;
     width: 80%;
     margin: auto;
-    margin-bottom: 30px;
-    top: 150px; }
+    margin-bottom: 30px; }
     @media only screen and (min-width: 500px) and (max-width: 999px) {
       .gform_wrapper form .gf_page_steps {
         -webkit-box-orient: vertical;
@@ -1276,7 +1276,11 @@ h3.supported-by-title {
                 flex-direction: column;
         border-right: 1px solid black;
         width: 33%;
-        margin: 0; } }
+        margin: 0; }
+        .gform_wrapper form .gf_page_steps.sticky {
+          position: fixed;
+          top: 48px;
+          height: 100vw; } }
     @media all and (min-width: 1000px) {
       .gform_wrapper form .gf_page_steps {
         -webkit-box-orient: vertical;
@@ -1286,7 +1290,11 @@ h3.supported-by-title {
         border-right: 1px solid black;
         width: 33%;
         margin: 0;
-        top: 0; } }
+        top: 0; }
+        .gform_wrapper form .gf_page_steps.sticky {
+          position: fixed;
+          top: 48px;
+          height: 100vw; } }
     .gform_wrapper form .gf_page_steps .gf_step {
       margin: auto;
       display: -webkit-box;
@@ -1313,8 +1321,7 @@ h3.supported-by-title {
           height: 30px;
           margin: 1rem;
           width: auto;
-          border: none;
-          text-align: right; } }
+          border: none; } }
       @media all and (min-width: 1000px) {
         .gform_wrapper form .gf_page_steps .gf_step {
           display: -webkit-box;
@@ -1340,7 +1347,7 @@ h3.supported-by-title {
       @media only screen and (min-width: 500px) and (max-width: 999px) {
         .gform_wrapper form .gf_page_steps .gf_step_active {
           color: white;
-          height: 30px;
+          height: auto;
           background-color: #296133;
           width: auto;
           border-radius: 5px;
@@ -1359,8 +1366,11 @@ h3.supported-by-title {
       width: 66%; } }
   @media all and (min-width: 1000px) {
     .gform_wrapper form .gform_body {
-      padding: 10px; } }
+      padding: 10px;
+      width: 66%;
+      margin-left: auto; } }
   .gform_wrapper form .gform_page {
+    margin-top: 2rem;
     padding: 0 7%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1426,9 +1436,6 @@ h3.supported-by-title {
   width: 80%;
   text-align: center;
   margin: auto; }
-
-.sticky {
-  position: fixed; }
 
 .page-contact-us {
   width: 100%;

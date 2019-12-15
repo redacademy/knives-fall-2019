@@ -532,7 +532,8 @@ h2.upcoming-events-location {
   @media all and (min-width: 1000px) {
     .video-section {
       margin-left: 6%;
-      margin-right: 9%; } }
+      margin-right: 9%;
+      margin-bottom: 10%; } }
 
 .pitch-summary {
   display: -webkit-box;
@@ -542,7 +543,7 @@ h2.upcoming-events-location {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%vw;
+  width: 100%;
   text-align: center;
   padding-bottom: 34px; }
   @media all and (min-width: 1000px) {
@@ -552,7 +553,7 @@ h2.upcoming-events-location {
           -ms-flex-direction: row;
               flex-direction: row;
       width: 970px;
-      margin-left: 225px; } }
+      margin-left: 16%; } }
 
 .summary-image img {
   max-width: 100%;
@@ -615,18 +616,18 @@ h2.past-events-title {
       text-align: left;
       padding-bottom: 10px;
       font-size: 40px;
-      padding: 201px; } }
+      padding-left: 232px; } }
 
 .past-events-wrapper {
   background: #f2f7f7;
   width: 100%;
-  margin-top: 150px; }
+  margin-top: 0px; }
   @media all and (min-width: 1000px) {
     .past-events-wrapper {
       background-image: url(../../assets/events-images/pasteventsbg@2x-cropped.png);
       background-repeat: no-repeat;
-      background-position: top right;
-      background-size: 400px; } }
+      background-position: right;
+      background-size: 20%; } }
 
 .past-events-container {
   display: -webkit-box;
@@ -636,8 +637,7 @@ h2.past-events-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 100px;
-  margin: 0 auto; }
+  margin: 0 10%; }
   .past-events-container .past-event {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -657,7 +657,8 @@ h2.past-events-title {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      max-width: 1000px; } }
+      max-width: 1000px;
+      margin: 0 3%; } }
   @media all and (min-width: 1000px) {
     .past-events-container .past-event {
       -webkit-box-orient: horizontal;
@@ -747,6 +748,96 @@ p.error-message {
 
 .error-message span {
   font-weight: bold; }
+
+.support-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media all and (min-width: 1000px) {
+    .support-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      padding-left: 200px;
+      padding-right: 200px; } }
+
+.slowmoney-icon,
+.vancity-icon {
+  background-color: rgba(55, 130, 68, 0.2);
+  border-radius: 90%;
+  width: 20%;
+  height: 15%;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 60%;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto; }
+  @media all and (min-width: 1000px) {
+    .slowmoney-icon,
+    .vancity-icon {
+      height: 100px;
+      width: 100px; } }
+
+.slowmoney-icon img {
+  margin: -26%;
+  height: 16vh; }
+  @media all and (min-width: 1000px) {
+    .slowmoney-icon img {
+      height: 22vh;
+      margin: 0;
+      margin-right: -130%; } }
+
+.vancity-icon img {
+  height: 11vh;
+  margin: 15%; }
+  @media all and (min-width: 1000px) {
+    .vancity-icon img {
+      padding-right: 150px;
+      height: 11vh;
+      margin: 34%;
+      margin-right: -275%; } }
+
+h3.initiative-title,
+h3.supported-by-title {
+  padding: 20px;
+  font-family: "Lora", serif;
+  font-size: 18px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media all and (min-width: 1000px) {
+    h3.initiative-title,
+    h3.supported-by-title {
+      color: #378244;
+      font-size: 20px;
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 @media all and (max-width: 499px) {
   .banner .btn-event {
@@ -1508,6 +1599,8 @@ p.error-message {
         padding: 1rem 0 0; }
         .main-navigation .desktop-menu .menu li {
           padding: 1rem 1rem; }
+          .main-navigation .desktop-menu .menu li:last-child {
+            padding: 0; }
           .main-navigation .desktop-menu .menu li a {
             color: #000; }
             .main-navigation .desktop-menu .menu li a:hover {
@@ -1515,7 +1608,9 @@ p.error-message {
           .main-navigation .desktop-menu .menu li:last-child a {
             color: #fff;
             font-weight: 100;
-            font-size: 0.8rem; } }
+            font-size: 0.8rem;
+            display: inline-block;
+            padding: 1rem; } }
   @media all and (max-width: 499px) {
     .main-navigation .hidden-menu {
       display: none; } }
@@ -1799,34 +1894,62 @@ p.error-message {
           margin: 0;
           margin-left: 20px; } }
 
-.team h2 {
-  text-align: center; }
-
-.team .team-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr; }
-  .team .team-grid .team-member {
-    margin: 0 auto; }
-    .team .team-grid .team-member:first-child {
-      grid-column: 1 / 3; }
-    .team .team-grid .team-member:last-child:not(:nth-child(odd)) {
-      grid-column: 1 / 3; }
-    .team .team-grid .team-member .portrait {
-      width: 150px;
-      height: 150px;
-      -o-object-fit: cover;
-         object-fit: cover;
-      border-radius: 5rem; }
-    .team .team-grid .team-member .desc {
-      padding: 1rem 0; }
-      .team .team-grid .team-member .desc p {
-        text-align: center;
-        text-transform: capitalize; }
-        .team .team-grid .team-member .desc p.name {
-          font-weight: bold;
-          margin: 0; }
-        .team .team-grid .team-member .desc p.role {
-          margin: 0; }
+.team {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4; }
+  .team h2 {
+    text-align: center; }
+  .team .team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    @media all and (min-width: 1000px) {
+      .team .team-grid {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 1fr 1fr; } }
+    .team .team-grid .team-member {
+      margin: 0 auto; }
+      .team .team-grid .team-member:first-child {
+        grid-column: 1 / 3; }
+        @media all and (min-width: 1000px) {
+          .team .team-grid .team-member:first-child {
+            grid-column: 2 / 4; } }
+      @media all and (min-width: 1000px) {
+        .team .team-grid .team-member:nth-child(2) {
+          grid-column: 4 / 6; } }
+      @media all and (min-width: 1000px) {
+        .team .team-grid .team-member:nth-child(3) {
+          grid-column: 6 / 8; } }
+      @media all and (min-width: 1000px) {
+        .team .team-grid .team-member:nth-child(4) {
+          grid-column: 8 / 10; } }
+      @media all and (min-width: 1000px) {
+        .team .team-grid .team-member:nth-child(5) {
+          grid-column: 3 / 5; } }
+      @media all and (min-width: 1000px) {
+        .team .team-grid .team-member:nth-child(6) {
+          grid-column: 5 / 7; } }
+      @media all and (min-width: 1000px) {
+        .team .team-grid .team-member:nth-child(7) {
+          grid-column: 7 / 9; } }
+      .team .team-grid .team-member:last-child:not(:nth-child(odd)) {
+        grid-column: 1 / 3; }
+      .team .team-grid .team-member .portrait {
+        width: 150px;
+        height: 150px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        border-radius: 5rem; }
+      .team .team-grid .team-member .desc {
+        padding: 1rem 0; }
+        .team .team-grid .team-member .desc p {
+          text-align: center;
+          text-transform: capitalize; }
+          .team .team-grid .team-member .desc p.name {
+            font-weight: bold;
+            margin: 0; }
+          .team .team-grid .team-member .desc p.role {
+            margin: 0; }
 
 /* external css: flickity.css */
 * {

@@ -1,7 +1,5 @@
 // /// front banner section
 
-/////TO DO change banner img to glass tumbler coffee cup for mobile
-
 .events-banner {
   background: url('../../assets/events-images/event-hero@3x.png') no-repeat;
   height: 100vh;
@@ -30,8 +28,6 @@ h1.upcoming-events-title {
   font-family: $headfont;
   font-style: bold;
   font-size: 1.5em;
-
-  // padding-top: inherit;
 }
 
 h2.upcoming-events-location {
@@ -66,24 +62,13 @@ h2.upcoming-events-location {
   white-space: no-wrap;
 }
 
-// &:hover {
-//   cursor: pointer;
-//   border: 1px solid $primary_green_dark;
-//   color: $primary_green_dark;
-//   background: white;
-//   font-weight: 500;
-// }
-//   }
-// }
-
 .apply-to-pitch-btn {
   background: #fff;
   text-decoration: none;
-  color: $primary_green_med;
-  border: 3px solid $primary_green_med;
+  color: $primary_green_light;
+  border: 3px solid $primary_green_light;
   border-radius: 1.5em;
-  // padding: 15px;
-  font-size: $fontsize;
+  font-size: 0.9rem;
   font-family: $parafont;
   font-weight: 500;
   text-transform: uppercase;
@@ -97,55 +82,57 @@ h2.upcoming-events-location {
 
 ///video section styling
 
-///TO DO change the control button
+.embed-container {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+
+  // iframe {
+  //   width: 70%;
+
+  @include desktop {
+    width: 600px;
+  }
+}
+
+///TO DO change the control button? TBD
 
 .video-section {
-  // position: relative;
   display: flex;
   justify-content: center;
-  // top: 75px;
-  // height: 115vh;
   margin-top: 75px;
   background: linear-gradient(
     to bottom,
     rgba(white, 0) 25%,
     rgba(242, 144, 97, 0.17) 25%
   );
-  padding-bottom: 6.25rem;
-  margin-bottom: 10rem;
+  padding-bottom: 4rem;
+  margin-bottom: 0rem;
+  margin-left: -6%;
+  margin-right: -5.9%;
+
+  @include desktop {
+    margin-left: 6%;
+    margin-right: 9%;
+  }
 }
 
-.stackItem {
-  min-width: 20vw;
-}
-
-// .controlsContainer {
-//   --clickToPlay-size: 300px;
-//   background-image: url(../assets/events-images/playbutton.svg);
-// }
-
-// .clickToPlay {
-//   --clickToPlay-size: 108px;
-
-//   background-image: url(../assets/events-images/playbutton@2x.png);
-// }
-// video {
-//   // height: 235px;
-//   // width: 133px;
-// }
-
-// ///pitch summary section //
+/// pitch summary section ///
 
 .pitch-summary {
   display: flex;
-  margin-left: 50px;
   flex-direction: column;
-  align-items: center;
   width: 100%vw;
   text-align: center;
+  padding-bottom: 34px;
 
   @include desktop {
     flex-direction: row;
+    width: 970px;
+    margin-left: 225px;
   }
 }
 
@@ -158,11 +145,8 @@ h2.upcoming-events-location {
 
 .flex-item-container {
   display: flex;
-  // justify-content: center;
-  // align-items: center;
   margin: 0 60px;
   flex-direction: column;
-  height: 60vh;
 }
 
 h3.summary-title {
@@ -171,12 +155,14 @@ h3.summary-title {
   text-align: center;
   font-display: bold;
   color: black;
+  margin: 0;
 }
 
 p.summary-description {
-  font-size: $fontsize;
+  font-size: 1.05em;
   text-align: center;
   max-width: 500px;
+  margin: auto;
 }
 
 .apply-to-pitch-btn-green-flex {
@@ -198,60 +184,57 @@ p.summary-description {
   text-decoration: none;
   font-weight: 500;
   overflow: hidden;
-
-  // &:visited {
-  //   // cursor: pointer;
-  //   // // border: 1px solid $primary_green_dark;
-  //   // color: white;
-  //   // background: white;
-  // }
 }
-// .flex-layout {
-//   display: flex;
-//   justify-content: space-between;
-//   flex-direction: row;
-//   max-width: 33%;
-// }
 
 /////past events
 
 h2.past-events-title {
   text-align: center;
-  font-size: 2em;
+  font-size: 28px;
   position: relative;
+  padding: 29px;
 
   @include desktop {
     text-align: left;
-    padding-left: 221px;
     padding-bottom: 10px;
+    font-size: 40px;
+    padding: 201px;
+  }
+}
+
+.past-events-wrapper {
+  background: #f2f7f7;
+  width: 100%;
+  margin-top: 150px;
+
+  @include desktop {
+    background-image: url(../../assets/events-images/pasteventsbg@2x-cropped.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 400px;
+    // padding-top: 0px;
   }
 }
 
 .past-events-container {
   display: flex;
-  // flex-wrap: wrap;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 100px;
   margin: 0 auto;
-  // border: 1px solid black;
 
   .past-event {
-    border: 1px solid black;
     display: flex;
     max-width: 600px;
     flex-direction: column;
-  }
+    margin: auto;
+    @include desktop {
+      margin: 0;
 
-  @include desktop {
-    background: #f2f7f7;
-    background-image: url(../../assets/events-images/event-journal.jpg);
-    width: 84%;
-    background-size: 100vh;
-    background-repeat: no-repeat;
-    // background-position: top right;
-    flex-direction: column;
-    max-width: 1000px;
-    background-position: 143% -16%;
+      @include desktop {
+        flex-direction: column;
+        max-width: 1000px;
+      }
+    }
   }
 
   .past-event {
@@ -262,45 +245,67 @@ h2.past-events-title {
 }
 
 .past-events-text {
-  // flex: 1;
-  width: 60%;
+  width: 70%;
+  margin: 0 auto;
+  letter-spacing: 0.4px;
+  line-height: 0.5em;
+
   @include desktop {
-    // width: 100vh;
     flex-direction: column;
+    width: 42%;
   }
 }
 .past-events-container {
   img {
     object-fit: cover;
-    // height: 30vh;
-    height: 200px;
-    width: 200px;
-
-    // justify-content: center;
+    height: 244px;
+    width: 244px;
     position: relative;
     padding-left: 0;
-    margin: 0 auto;
+    margin: 0 20%;
 
     @include desktop {
-      padding: 20px;
+      margin-right: 2%;
     }
   }
 }
 
 .past-events-date {
-  font-size: 1.75em;
+  font-size: 24px;
   text-align: center;
-  line-height: 1em;
   padding-top: 0;
+  font-family: $parafont;
+  font-style: bold;
+
+  @include desktop {
+    text-align: left;
+    font-size: 28px;
+  }
 }
 .past-events-location {
-  color: $primary_green_med;
-  font-size: 1.5em;
+  color: $primary_green_light;
+  font-size: 20px;
   text-align: center;
+  font-family: $parafont;
+  font-weight: 500;
+
+  @include desktop {
+    text-align: left;
+    font-size: 24px;
+  }
 }
 .past-events-description {
-  font-size: $fontsize;
-  margin: 5% 5%;
+  font-size: 16px;
   line-height: $fontsize;
   text-align: center;
+  font-family: $parafont;
+  line-height: 1.3em;
+
+  @include desktop {
+    text-align: left;
+    width: 470px;
+    height: 181px;
+    letter-spacing: 0.27px;
+    font-size: 16px;
+  }
 }

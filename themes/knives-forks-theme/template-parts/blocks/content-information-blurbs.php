@@ -30,7 +30,7 @@ if( !empty($block['align']) ) {
 
 $members = get_field('become_a_member');
 $pitchs = get_field('make_a_pitch');
-
+$tmpCount=1;
 // foreach($members as $member) {
 //     echo $member['title'];
 // }
@@ -43,21 +43,25 @@ while( have_rows('become_a_member') ) {
         $content = get_sub_field('content');
         $image = get_sub_field('image');
         $background_color = get_sub_field('background_color');
+        
     ?>
-        <section class="custom-copy-block image-copy" style="background-color: <?php echo $background_color?>">
+        <section class="custom-copy-block image-copy" style="order:<?=$tmpCount?>;background-color: 
+        <?php $tmpCount+=2;
+        echo $background_color?>">
             <div class="copy-block-content">
                 <article class="copy-block-text">
                     <h2 class="copy-title"><?php echo $title;?></h2>
                     <h3 class="copy-subtitle"><?php echo $subtitle; ?></h3>
                     <p class="copy-text"><?php echo $content?></p> 
                 </article>
-                <a href= "#" class='copy-block-btn btn'>Become a Member</a>
+                <?php $investor = get_page_by_title('Become an Investor'); ?>
+                <a href="<?php echo get_permalink($investor); ?>" class='copy-block-btn btn'>Become a Member</a>
             </div>
-            <figure class="copy-block-image">
+            <figure class="copy-block-image"> 
                 <img src="<?php echo $image['url'];?>">
             </figure>
         </section>
-<?php 
+<?php  
 }
 
 while (have_rows('make_a_pitch')) {
@@ -69,14 +73,16 @@ while (have_rows('make_a_pitch')) {
         $image = get_sub_field('image');
         $background_color = get_sub_field('background_color');
     ?>
-        <section class="custom-copy-block copy-image" style="background-color: <?php echo $background_color?>">
+        <section class="custom-copy-block copy-image" style="order:<?=$tmpCount?>;
+        background-color: <?php echo $background_color?>">
         <div class="copy-block-content">
                 <article class="copy-block-text">
                     <h2 class="copy-title"><?php echo $title;?></h2>
                     <h3 class="copy-subtitle"><?php echo $subtitle; ?></h3>
                     <p class="copy-text"><?php echo $content?></p>
                 </article>
-                <a href= "#" class='copy-block-btn btn'>Apply to Pitch</a>
+                <?php $pitch = get_page_by_title('apply to pitch');?>
+                <a href= "<?php the_permalink($pitch)?>" class='copy-block-btn btn'>Apply to Pitch</a>
             </div>
             <figure class="copy-block-image">
                 <img src="<?php echo $image['url'];?>">

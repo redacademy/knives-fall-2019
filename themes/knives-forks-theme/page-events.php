@@ -72,18 +72,30 @@ get_header();
 		?>
 
 		<section class="video-section">
-	<video controls poster="<?= get_template_directory_uri(); ?>/assets/events-images/event-video@3x.png">
 
-				<source src="<?php the_field('video'); ?>" type="video/mp4">
+
+		<div class="embed-container">
+			<?php the_field('video'); ?>
+		</div>
+
+
+
+	<!-- <video controls poster="<?= get_template_directory_uri(); ?>/assets/events-images/event-video@3x.png"> -->
+
+
+
+				<!-- <source src="<?php // the_field('video'); ?>" type="video/mp4">
 				Your browser does not support the video tag.
-			</video>
+			</video> -->
 			<div class="video-bg"></div>
 		</section> 
 
 
-		<h2 class="past-events-title">Past Events</h2>
 	
+		<div class="past-events-wrapper">
 		<section class="past-events-container"> 
+		<h2 class="past-events-title">Past Events</h2>
+
 		<?php
 		if( have_rows('past_events') ): ?>
 
@@ -104,10 +116,11 @@ get_header();
 			<?php else : endif; ?>
 		<!-- </div> -->
 	</section>
+	</div>
 
 
 	</main>
 </div>
 
 <?php //get_sidebar(); ?>
-<?php get_footer(); ?> -->
+<?php get_footer(); ?> 

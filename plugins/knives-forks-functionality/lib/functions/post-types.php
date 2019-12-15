@@ -6,114 +6,7 @@
  * @link  http://codex.wordpress.org/Function_Reference/register_post_type
  */
 
-// Add your custom post types here...
-// Register Custom Post Type
-// Register Custom Post Type
-
-// function post_products()
-// {
-
-//     $labels = array(
-//         'name'                  => 'Products',
-//         'singular_name'         => 'Product',
-//         'menu_name'             => 'Post Products',
-//         'name_admin_bar'        => 'Product',
-//         'archives'              => 'Item Archives',
-//         'attributes'            => 'Item Attributes',
-//         'parent_item_colon'     => 'Parent Product:',
-//         'all_items'             => 'All Products',
-//         'add_new_item'          => 'Add New Product',
-//         'add_new'               => 'New Product',
-//         'new_item'              => 'New Item',
-//         'edit_item'             => 'Edit Product',
-//         'update_item'           => 'Update Product',
-//         'view_item'             => 'View Product',
-//         'view_items'            => 'View Items',
-//         'search_items'          => 'Search products',
-//         'not_found'             => 'No products found',
-//         'not_found_in_trash'    => 'No products found in Trash',
-//         'featured_image'        => 'Featured Image',
-//         'set_featured_image'    => 'Set featured image',
-//         'remove_featured_image' => 'Remove featured image',
-//         'use_featured_image'    => 'Use as featured image',
-//         'insert_into_item'      => 'Insert into item',
-//         'uploaded_to_this_item' => 'Uploaded to this item',
-//         'items_list'            => 'Items list',
-//         'items_list_navigation' => 'Items list navigation',
-//         'filter_items_list'     => 'Filter items list',
-//     );
-//     $args = array(
-//         'label'                 => 'Product',
-//         'description'           => 'Product information pages.',
-//         'labels'                => $labels,
-//         'supports'              => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields', 'post-formats'),
-//         // 'taxonomies'            => array('category', 'products_type'),
-//         'hierarchical'          => true,
-//         'public'                => true,
-//         'show_ui'               => true,
-//         'show_in_menu'          => true,
-//         'menu_position'         => 5,
-//         'show_in_admin_bar'     => true,
-//         'show_in_nav_menus'     => true,
-//         'can_export'            => true,
-//         'has_archive'           => true,
-//         'exclude_from_search'   => false,
-//         'publicly_queryable'    => true,
-//         'capability_type'       => 'page',
-//     );
-//     register_post_type('product', $args);
-//     //************MULTI POST TYPES********adventures below */
-//     $labels = array(
-// 		'name'                  => 'adventures',
-// 		'singular_name'         => 'post_adventure',
-// 		'menu_name'             => 'Post Adventures',
-// 		'name_admin_bar'        => 'Post Adventures',
-// 		'archives'              => 'Adventures Archives',
-// 		'attributes'            => 'Adventures Attributes',
-// 		'parent_item_colon'     => 'Parent Item:',
-// 		'all_items'             => 'All Items',
-// 		'add_new_item'          => 'Add New Item',
-// 		'add_new'               => 'Add New',
-// 		'new_item'              => 'New Item',
-// 		'edit_item'             => 'Edit Item',
-// 		'update_item'           => 'Update Item',
-// 		'view_item'             => 'View Item',
-// 		'view_items'            => 'View Items',
-// 		'search_items'          => 'Search Item',
-// 		'not_found'             => 'Not found',
-// 		'not_found_in_trash'    => 'Not found in Trash',
-// 		'featured_image'        => 'Featured Image',
-// 		'set_featured_image'    => 'Set featured image',
-// 		'remove_featured_image' => 'Remove featured image',
-// 		'use_featured_image'    => 'Use as featured image',
-// 		'insert_into_item'      => 'Insert into item',
-// 		'uploaded_to_this_item' => 'Uploaded to this item',
-// 		'items_list'            => 'Items list',
-// 		'items_list_navigation' => 'Items list navigation',
-// 		'filter_items_list'     => 'Filter items list',
-// 	);
-// 	$args = array(
-// 		'label'                 => 'post_adventure',
-// 		'description'           => 'adventures description',
-// 		'labels'                => $labels,
-// 		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields' ),
-// 		// 'taxonomies'            => array( 'category', 'post_tag' ),
-// 		'hierarchical'          => true,
-// 		'public'                => true,
-// 		'show_ui'               => true,
-// 		'show_in_menu'          => true,
-// 		'menu_position'         => 5,
-// 		'show_in_admin_bar'     => true,
-// 		'show_in_nav_menus'     => true,
-// 		'can_export'            => true,
-// 		'has_archive'           => true,
-// 		'exclude_from_search'   => false,
-// 		'publicly_queryable'    => true,
-// 		'capability_type'       => 'page',
-// 	);
-// 	register_post_type( 'adventures', $args );
-// }
-// Register Custom Post Type
+// Register Custom Post Types HERE
 function apply_testimonial() {
 
 	$labels = array(
@@ -169,3 +62,65 @@ function apply_testimonial() {
 
 }
 add_action( 'init', 'apply_testimonial', 0 );
+
+
+if ( ! function_exists('business_investors') ) {
+
+	// Register Custom Post Type
+	function business_investors() {
+	
+		$labels = array(
+			'name'                  => 'The Business Investors',
+			'singular_name'         => 'business_investors',
+			'menu_name'             => 'Investors Profile',
+			'name_admin_bar'        => 'Investors Profile',
+			'archives'              => 'Item Archives',
+			'attributes'            => 'Item Attributes',
+			'parent_item_colon'     => 'Parent Item:',
+			'all_items'             => 'All Items',
+			'add_new_item'          => 'Add New Item',
+			'add_new'               => 'Add New',
+			'new_item'              => 'New Item',
+			'edit_item'             => 'Edit Item',
+			'update_item'           => 'Update Item',
+			'view_item'             => 'View Item',
+			'view_items'            => 'View Items',
+			'search_items'          => 'Search Item',
+			'not_found'             => 'Not found',
+			'not_found_in_trash'    => 'Not found in Trash',
+			'featured_image'        => 'Featured Image',
+			'set_featured_image'    => 'Set featured image',
+			'remove_featured_image' => 'Remove featured image',
+			'use_featured_image'    => 'Use as featured image',
+			'insert_into_item'      => 'Insert into item',
+			'uploaded_to_this_item' => 'Uploaded to this item',
+			'items_list'            => 'Items list',
+			'items_list_navigation' => 'Items list navigation',
+			'filter_items_list'     => 'Filter items list',
+		);
+		$args = array(
+			'label'                 => 'business_investors',
+			'description'           => 'All Related Business Investor type put here',
+			'labels'                => $labels,
+			'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields' ),
+			'taxonomies'            => array( 'category', 'post_tag' ),
+			'hierarchical'          => true,
+			'public'                => true,
+			'show_ui'               => true,
+			'show_in_menu'          => true,
+			'show_in_rest'	=>	true,
+			'menu_position'         => 10,
+			'show_in_admin_bar'     => true,
+			'show_in_nav_menus'     => true,
+			'can_export'            => true,
+			'has_archive'           => true,
+			'exclude_from_search'   => false,
+			'publicly_queryable'    => true,
+			'capability_type'       => 'page',
+		);
+		register_post_type( 'business_investors', $args );
+	
+	}
+	add_action( 'init', 'business_investors', 0 );
+	
+	}

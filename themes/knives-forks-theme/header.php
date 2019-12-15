@@ -87,7 +87,7 @@
 						<section class="banner">
 							<nav class="banner-img banner-events">
 								<img src="' . $img . '" 
-								srcset="' . esc_url($img2) . ' 900w, ' . $img . ' 300w" 
+								srcset="' . esc_url($img2) . ' 1000w, ' . $img . ' 600w" 
 								 alt="knives-fork-events">
 							</nav>
 								<div class="banner-outer-content">

@@ -1,0 +1,38 @@
+.team {
+  h2 {
+    text-align: center;
+  }
+  .team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .team-member {
+      margin: 0 auto;
+      &:first-child {
+        grid-column: 1 / 3;
+      }
+      &:last-child:not(:nth-child(odd)) {
+        grid-column: 1 / 3;
+      }
+      .portrait {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5rem;
+      }
+      .desc {
+        padding: $padding 0;
+        p {
+          text-align: center;
+          text-transform: capitalize;
+          &.name {
+            font-weight: bold;
+            margin: 0;
+          }
+          &.role {
+            margin: 0;
+          }
+        }
+      } // end of desc
+    } // end of team member
+  } // end of team grid
+} // end of team

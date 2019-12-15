@@ -756,7 +756,11 @@ p.error-message {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  margin: 0 auto; }
   @media all and (min-width: 1000px) {
     .support-container {
       -webkit-box-orient: horizontal;
@@ -766,11 +770,15 @@ p.error-message {
       -ms-flex-pack: distribute;
           justify-content: space-around;
       padding-left: 200px;
-      padding-right: 200px; } }
+      padding-right: 200px;
+      border-top: 1px solid #e0dbdb;
+      width: 1220px;
+      margin-left: 5%;
+      margin-right: 20%; } }
 
 .slowmoney-icon,
 .vancity-icon {
-  background-color: rgba(55, 130, 68, 0.2);
+  background-color: rgba(55, 130, 68, 0.1);
   border-radius: 90%;
   width: 20%;
   height: 15%;
@@ -837,7 +845,9 @@ h3.supported-by-title {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column;
+      padding-left: 57px;
+      padding-top: 7em; } }
 
 @media all and (max-width: 499px) {
   .banner .btn-event {
@@ -1493,7 +1503,9 @@ h3.supported-by-title {
   @media all and (min-width: 1000px) {
     .page-contact-us {
       background: url("../../assets/background-images/contact-bg@3x.png");
-      background-size: cover; }
+      background-size: cover;
+      background-size: 100%;
+      background-repeat: no-repeat; }
       .page-contact-us .contact-form-container {
         display: -webkit-box;
         display: -ms-flexbox;

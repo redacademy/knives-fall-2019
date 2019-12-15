@@ -8,6 +8,8 @@
   @include desktop {
     background: url('../../assets/background-images/contact-bg@3x.png');
     background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
 
     .contact-form-container {
       display: flex;

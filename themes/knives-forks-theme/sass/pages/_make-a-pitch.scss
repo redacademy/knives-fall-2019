@@ -41,7 +41,7 @@
       &.sticky {
         position: fixed;
         top: 48px;
-        height: 100vw;
+        height: auto;
       }
     }
     @include desktop {
@@ -53,7 +53,7 @@
       &.sticky {
         position: fixed;
         top: 48px;
-        height: 100vw;
+        height: auto;
       }
     }
     .gf_step {
@@ -115,7 +115,7 @@
 
       @include desktop {
         color: white;
-        height: 30px;
+        height: auto;
         background-color: $primary_green_dark;
         width: auto;
         border-radius: 5px;

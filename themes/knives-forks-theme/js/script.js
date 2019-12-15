@@ -153,23 +153,29 @@
     //const headerHeight = $('.main-navigation').height();
     const stickySteps = $('.gf_page_steps');
     let footerHeight = $('.site-footer').height();
-    let unstickPoint = window.innerHeight - footerHeight;
+    let unstickPoint = $(document).height() - footerHeight;
+    console.log(footerHeight);
+    console.log($(document).height());
     console.log(unstickPoint);
 
     // $.each(stickySteps, function(index, value) {
     //   //console.log(value.offsetTop);
     // });
+    //$.each(gField, function() {
+    $(window).scroll(stickyProgression);
 
-    $(window).scroll(function() {
+    function stickyProgression() {
       let scrollY = $(window).scrollTop();
       //console.log(scrollY);
-      if (scrollY > 0 && scrollY < unstickPoint) {
-        //console.log('sticking point');
+      if (0 < scrollY < unstickPoint) {
+        // console.log('sticking point');
         $(stickySteps).addClass('sticky');
       } else {
+        //console.log('out of my depth');
         $(stickySteps).removeClass('sticky');
       }
-    });
+      //});
+    }
     //=================
 
     // END OF BROOKE'S WORK

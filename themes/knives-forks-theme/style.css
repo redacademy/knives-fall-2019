@@ -1260,14 +1260,18 @@ h3.supported-by-title {
           -ms-flex-direction: row;
               flex-direction: row; } }
   .gform_wrapper form .gf_page_steps {
-    padding-top: 72px;
+    padding: 72px 10% 30px 10%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     border: none;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 30px; }
+    width: 100%; }
+    .gform_wrapper form .gf_page_steps.sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 70px;
+      background-color: white;
+      z-index: 98; }
     @media only screen and (min-width: 500px) and (max-width: 999px) {
       .gform_wrapper form .gf_page_steps {
         -webkit-box-orient: vertical;
@@ -1276,7 +1280,8 @@ h3.supported-by-title {
                 flex-direction: column;
         border-right: 1px solid black;
         width: 33%;
-        margin: 0; }
+        margin: 0;
+        height: auto; }
         .gform_wrapper form .gf_page_steps.sticky {
           position: fixed;
           top: 48px;
@@ -1418,7 +1423,7 @@ h3.supported-by-title {
     background-image: url("../../assets/icons/Forms - filled/filled-name.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 33%;
+    width: 200px;
     height: 200px;
     content: 'abc';
     font-size: 10rem;
@@ -1426,7 +1431,19 @@ h3.supported-by-title {
     display: block;
     position: relative;
     top: 0px;
-    left: 200px; }
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    @media only screen and (min-width: 500px) and (max-width: 999px) {
+      .gform_wrapper form .icon-complete::before {
+        width: 60%; } }
+    @media all and (min-width: 1000px) {
+      .gform_wrapper form .icon-complete::before {
+        height: 200px;
+        width: 33%;
+        display: block;
+        position: relative;
+        top: 0px; } }
     .gform_wrapper form .icon-complete::before:nth-of-type(2) {
       background-image: url("../../assets/icons/Forms - filled/filled-email.svg"); }
   .gform_wrapper form .validation_error {

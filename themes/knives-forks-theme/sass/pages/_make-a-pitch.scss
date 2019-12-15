@@ -19,18 +19,25 @@
     flex-direction: row;
   }
   .gf_page_steps {
-    padding-top: 72px;
+    padding: 72px 10% 30px 10%;
     display: flex;
     border: none;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 30px;
+    width: 100%;
+    //margin: auto;
+    //margin-bottom: 30px;
+    &.sticky {
+      position: sticky;
+      top: 70px;
+      background-color: white;
+      z-index: 98;
+    }
 
     @include tablet {
       flex-direction: column;
       border-right: 1px solid black;
       width: 33%;
       margin: 0;
+      height: auto;
       &.sticky {
         position: fixed;
         top: 48px;

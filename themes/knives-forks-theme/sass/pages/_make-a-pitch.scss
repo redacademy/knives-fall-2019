@@ -242,10 +242,18 @@
     width: 60%;
     height: auto;
     @include tablet {
-      width: 40%;
+      width: 30%;
     }
     @include desktop {
-      width: 40%;
+      width: 25%;
     }
+  }
+  .thank-you-header {
+    font-family: $parafont;
+    font-size: 2rem;
+  }
+  .thank-you-text {
+    font-size: 1.5rem;
+    font-weight: $font_weight_body;
   }
 }

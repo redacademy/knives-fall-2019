@@ -92,7 +92,7 @@ h2.upcoming-events-location {
   text-align: center;
 
   @include desktop {
-    width: 600px;
+    width: 700px;
   }
 }
 
@@ -101,7 +101,7 @@ h2.upcoming-events-location {
 .video-section {
   display: flex;
   justify-content: center;
-  margin-top: 75px;
+  margin-top: 96px;
   background: linear-gradient(
     to bottom,
     rgba(white, 0) 25%,
@@ -150,17 +150,19 @@ h2.upcoming-events-location {
 
 h3.summary-title {
   font-size: 1.5em;
-  font-family: $headfont, serif;
+  font-family: $parafont, sans-serif;
   text-align: center;
   font-display: bold;
   color: black;
   margin: 0;
+  padding-bottom: 8px;
 }
 
 p.summary-description {
-  font-size: 1.05em;
+  font-size: 1em;
+  line-height: 1;
   text-align: center;
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
 }
 
@@ -189,28 +191,28 @@ p.summary-description {
 
 h2.past-events-title {
   text-align: center;
-  font-size: 28px;
-  position: relative;
-  padding: 29px;
+  font-size: 1.5em;
+  // position: relative;
+  // padding: 29px;
 
   @include desktop {
     text-align: left;
-    padding-bottom: 10px;
-    font-size: 40px;
-    padding-left: 232px;
+    // padding-bottom: 10px;
+    font-size: 2.5em;
+    padding-left: 12%;
   }
 }
 
 .past-events-wrapper {
   background: #f2f7f7;
   width: 100%;
-  margin-top: 0px;
+  margin-top: 20%;
 
   @include desktop {
     background-image: url(../../assets/events-images/pasteventsbg@2x-cropped.png);
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 20%;
+    background-position: 98% 7%;
+    background-size: 21%;
   }
 }
 
@@ -256,11 +258,11 @@ h2.past-events-title {
 .past-events-container {
   img {
     object-fit: cover;
-    height: 244px;
-    width: 244px;
+    height: 215px;
+    width: 215px;
     position: relative;
     padding-left: 0;
-    margin: 0 20%;
+    margin: 0 auto;
 
     @include desktop {
       margin-right: 2%;

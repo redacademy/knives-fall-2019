@@ -106,32 +106,14 @@
       }
     );
 
-    // TODO check the code below for issues?
-    // $.each(
-    //   $(gField).find(
-    //     'input',
-    //     gField + ' input:not(.button), ' + gField + ' textarea',
-    //     function() {
-    //       if ($(this).val() !== '') {
-    //         $(this).addClass('filled');
-    //       }
-    //       checkInputs('#gform_page_' + gFormId + '_' + gFormCurrentPage);
-    //     }
-    //   )
-    // );
-
     function checkInputs(gField) {
       const $inputs = $(gField).find('input:not(.button):not([type="hidden"])');
       const $inputsArea = $(this).find('textarea');
       console.log($inputs.length);
-      //console.log($(gField).find('.filled').length);
-      //   console.log($(group).find('.filled').length);
-      //   console.log($inputsArea.length);
       if (
         $(gField).find('.filled').length === $inputs.length &&
         $inputs.length > 0
       ) {
-        //console.log('all inputs in group filled');
         $(gField)
           .removeClass('icon-default')
           .addClass('icon-complete');
@@ -139,7 +121,6 @@
         $(gField).find('.filled').length === $inputsArea.length &&
         $inputsArea.length > 0
       ) {
-        //console.log('textfields filled');
         $(gField)
           .removeClass('icon-default')
           .addClass('icon-complete');
@@ -150,7 +131,6 @@
 
     // make step progression sticky
 
-    //const headerHeight = $('.main-navigation').height();
     const stickySteps = $('.gf_page_steps');
     let footerHeight = $('.site-footer').height();
     let unstickPoint = $(document).height() - footerHeight;
@@ -158,10 +138,6 @@
     console.log($(document).height());
     console.log(unstickPoint);
 
-    // $.each(stickySteps, function(index, value) {
-    //   //console.log(value.offsetTop);
-    // });
-    //$.each(gField, function() {
     $(window).scroll(stickyProgression);
 
     function stickyProgression() {

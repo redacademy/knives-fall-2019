@@ -17,6 +17,16 @@
     line-height: 1.5rem;
   }
 }
+.site-content {
+  section {
+    &:before {
+      border-top: 1px solid gray;
+    }
+    &:after {
+      border-bottom: 1px solid gray;
+    }
+  }
+}
 
 .custom-copy-block {
   display: flex;

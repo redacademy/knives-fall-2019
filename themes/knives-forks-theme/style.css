@@ -431,6 +431,10 @@ article {
       -ms-flex-order: 4;
           order: 4; }
 
+@media only screen and (min-width: 500px) and (max-width: 999px) {
+  .banner-img img {
+    height: auto; } }
+
 .events-banner {
   background: url("../../assets/events-images/event-hero@3x.png") no-repeat;
   height: 100vh;
@@ -972,6 +976,10 @@ h3.supported-by-title {
           font-weight: 600; } }
 
 @media all and (max-width: 499px) {
+  .testimonials .carousel-cell {
+    padding: 0 2%; }
+    .testimonials .carousel-cell p {
+      font-size: 1.2rem; }
   .banner .banner-img {
     width: 100%;
     height: 100vmax;
@@ -1423,7 +1431,7 @@ h3.supported-by-title {
       .gform_wrapper form .gform_page .gform_fields textarea {
         border-radius: 5px; }
   .gform_wrapper form .icon-default::before {
-    background-image: url("../../assets/icons/Forms - Unfilled/unfilled-name.svg");
+    background-image: url("../../assets/icons/Forms - Unfilled/unfilled-application.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 200px;
@@ -1448,7 +1456,7 @@ h3.supported-by-title {
         position: relative;
         top: 0px; } }
   .gform_wrapper form .icon-complete::before {
-    background-image: url("../../assets/icons/Forms - filled/filled-name.svg");
+    background-image: url("../../assets/icons/Forms - filled/filled-application.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 200px;
@@ -1472,8 +1480,6 @@ h3.supported-by-title {
         display: block;
         position: relative;
         top: 0px; } }
-    .gform_wrapper form .icon-complete::before:nth-of-type(2) {
-      background-image: url("../../assets/icons/Forms - filled/filled-email.svg"); }
   .gform_wrapper form .validation_error {
     display: none; }
 
@@ -1487,10 +1493,16 @@ h3.supported-by-title {
     height: auto; }
     @media only screen and (min-width: 500px) and (max-width: 999px) {
       .gform_confirmation_message .thank-you-icon {
-        width: 40%; } }
+        width: 30%; } }
     @media all and (min-width: 1000px) {
       .gform_confirmation_message .thank-you-icon {
-        width: 40%; } }
+        width: 25%; } }
+  .gform_confirmation_message .thank-you-header {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem; }
+  .gform_confirmation_message .thank-you-text {
+    font-size: 1.5rem;
+    font-weight: 100; }
 
 .page-contact-us {
   width: 100%;
@@ -1860,6 +1872,12 @@ h3.supported-by-title {
   @media all and (min-width: 1000px) {
     .copy-text {
       line-height: 1.5rem; } }
+
+.site-content section:before {
+  border-top: 1px solid gray; }
+
+.site-content section:after {
+  border-bottom: 1px solid gray; }
 
 .custom-copy-block {
   display: -webkit-box;

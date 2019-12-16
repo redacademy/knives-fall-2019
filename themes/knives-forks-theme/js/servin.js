@@ -25,6 +25,11 @@ function getTerms(pathname) {
   } else if (thePage == 'events') {
     if ($userWidth >= 500) {
       $('.btn-event').appendTo('.banner-content');
+      if ($userWidth <= 999) {
+        $('.banner-content').css({
+          top: $('.banner').outerHeight() * 0.4
+        });
+      }
     }
   }
   $(document).on('click', '.investment-nav', function() {

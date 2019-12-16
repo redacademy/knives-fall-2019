@@ -9,12 +9,15 @@
   z-index: $zdex + 99;
   // box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
   box-shadow: 0 1rem 2rem #fff;
+  @include desktop {
+    height: 75px;
+  }
   .nav-container {
     display: flex;
     // display: none;
     max-width: 1140px;
     margin: 0 auto;
-    padding: $padding * 2 0 0;
+    padding: $padding * 0.4 0 0;
   }
 
   .home-logo {
@@ -27,6 +30,9 @@
     font-size: $fontsize * 2;
     padding: $padding * 1.5 $padding 0 0;
     height: 35px;
+    @include desktop {
+      padding: $padding $padding 0 0;
+    }
   }
   .menu li {
     list-style: none;
@@ -91,7 +97,7 @@
       .menu {
         display: flex;
         justify-content: space-around;
-        padding: $padding 0 0;
+        padding: $padding * 0.4 0 0;
         li {
           padding: $padding $padding;
           &:last-child {

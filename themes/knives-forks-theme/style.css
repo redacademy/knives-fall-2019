@@ -670,7 +670,7 @@ h2.past-events-title {
   width: 70%;
   margin: 0 auto;
   letter-spacing: 0.4px;
-  line-height: 0.5em; }
+  line-height: 1; }
   @media all and (min-width: 1000px) {
     .past-events-text {
       -webkit-box-orient: vertical;
@@ -715,10 +715,9 @@ h2.past-events-title {
 
 .past-events-description {
   font-size: 16px;
-  line-height: 1rem;
   text-align: center;
   font-family: "Lato", sans-serif;
-  line-height: 1.3em; }
+  line-height: 1.2; }
   @media all and (min-width: 1000px) {
     .past-events-description {
       text-align: left;
@@ -976,16 +975,13 @@ h3.supported-by-title {
   .banner .banner-img {
     width: 100%;
     height: 100vmax;
-    overflow: hidden;
     position: relative; }
   .banner img {
-    -o-object-fit: fill;
-       object-fit: fill;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 100%;
-    width: auto;
-    position: absolute;
-    -webkit-transform: translateX(-26em);
-            transform: translateX(-26em); }
+    width: 100%;
+    position: absolute; }
   .banner .banner-content {
     width: 80%; }
     .banner .banner-content h2 {
@@ -993,7 +989,7 @@ h3.supported-by-title {
   .how-icons {
     display: none; }
   .site-main {
-    padding: 0 5%; }
+    padding: 0; }
   article {
     line-height: 1.5; }
     article .how-icons {
@@ -1517,7 +1513,8 @@ h3.supported-by-title {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
-                flex-direction: row; }
+                flex-direction: row;
+        line-height: 1; }
       .page-contact-us h2.contact-opportunity {
         padding-top: 10%; }
       .page-contact-us .media-enquiries {
@@ -1541,7 +1538,8 @@ h3.supported-by-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0; }
+  padding: 0;
+  padding-top: 2%; }
   .social-icons li {
     background: #378244;
     color: white;
@@ -1559,7 +1557,7 @@ h3.supported-by-title {
         -ms-flex-align: center;
             align-items: center;
     font-size: 20px;
-    margin: 10px; }
+    margin-right: 2%; }
     .social-icons li:hover, .social-icons li:visited, .social-icons li:active {
       cursor: pointer;
       border: 1px solid primary_green_dark;
@@ -1579,18 +1577,29 @@ h3.supported-by-title {
 
 .media-enquiries {
   padding-left: 0px; }
+  .media-enquiries p {
+    margin: 0;
+    margin-bottom: 5%; }
   .media-enquiries h3 {
     border-top: 1px solid black;
     padding-top: 20px;
     font-family: "Lato", sans-serif, sans-serif;
-    font-size: 24px; }
+    font-size: 24px;
+    margin: 0; }
 
 .contact-opportunity {
   line-height: 1.5em;
   font-size: 1.3em;
   font-family: "Lora", serif;
   text-align: center;
-  min-width: 100%; }
+  min-width: 100%;
+  margin-top: 10%; }
+
+@media all and (max-width: 499px) {
+  div.wpcf7 .ajax-loader {
+    display: none; }
+  .contact-opportunity {
+    margin-top: 20%; } }
 
 .current {
   border-bottom: 2px solid #378244; }

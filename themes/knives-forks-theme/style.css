@@ -1838,6 +1838,9 @@ h3.supported-by-title {
   font-weight: 100;
   line-height: 1rem;
   text-align: unset; }
+  @media all and (min-width: 1000px) {
+    .copy-text {
+      line-height: 1.5rem; } }
 
 .custom-copy-block {
   display: -webkit-box;

@@ -1,5 +1,11 @@
 @include mobile {
   //************How it Works CONTENTS AREA
+  .testimonials .carousel-cell {
+    padding: 0 2%;
+    p {
+      font-size: 1.2rem;
+    }
+  }
   .banner .banner-img {
     width: 100%;
     height: 100vmax;

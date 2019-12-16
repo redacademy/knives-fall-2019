@@ -1,0 +1,199 @@
+@import 'normalize';
+a{
+    text-decoration: none;
+    text-decoration-color: white;
+    &:hover{
+        cursor: pointer;
+    }
+}
+ul,li{
+    list-style: none;
+}
+.login h1{
+    width:10%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: baseline;
+    flex:0 1 10%;
+    .login-logo{
+        margin:0;padding:0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        width:100%;
+    }
+    
+}
+
+.login-content{
+    position: relative;
+
+    overflow: hidden;
+
+    max-width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-flow: column nowrap;
+
+    justify-content: flex-end;
+    video{
+        display:none;
+    }
+    .bg-video{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index:-1;
+        object-fit: cover;
+        filter: brightness(75%);
+    }
+
+    #login, .login{
+        width: 40%;
+        padding:0 0 0 1%;
+        display: flex;
+        background: rgba(255, 255, 255,0.25);
+        flex-flow: row wrap;
+        align-self: center;
+        right: 0;
+        position: absolute;
+        border-radius: 0.5em;
+        bottom: 20%;
+        // transform: translateX(90%) ;
+        margin:0;
+        overflow: hidden;
+        z-index: 10;
+        &:focus,&:hover {
+            // opacity: 100%;
+            background: white;
+        }
+
+        a{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        #loginform{
+            flex: 1 0 70%;
+            border-left: 0.5px solid gray;
+            border-top:unset;
+            border-bottom: unset;
+            border-right: unset;
+            background: transparent;
+            input{
+                background: transparent;
+            }
+            #wp-submit{
+                background: dodgerblue;
+            }
+        }
+        #nav , #backtoblog{
+            flex: 1 0 30%;
+            margin: 0;
+            padding: 0 5% 2% 0;
+            text-align: right;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.login #login_error {
+    position: absolute;
+right: 0;
+border-left:unset;
+    border-right: 2em solid #dc3232;
+
+}
+
+.login .message, .login .success {
+    border-right: 2em solid #00a0d2;
+    position: absolute;
+right: 0;
+border-left:unset;
+}
+
+//********LOGIN FOOTER**********
+.login-footer{
+    width: 100%;
+    background:white;
+    color:#296133;
+    opacity: 75%;
+    &:focus,&:hover{
+        opacity: 100%;
+    }
+    .kf-group{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: center;
+        li{
+            margin: 0 2%;
+            h1{
+                width:max-content;
+                font-family: Lato, Arial Round;
+                font-size: 1rem;
+                font-weight: 500;
+                text-transform: lowercase;
+                &:hover{
+                    cursor: pointer;
+                    color:red;
+                }
+            }
+            a{
+                font-family: Lora,Robuto;
+                width: max-content;
+                word-break: unset;
+                color:#296133;
+                font-size: 0.80rem;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media only  screen and (min-width:250px) and (max-width:900px){
+    picture,video{
+        display: none;
+    }
+    .login-content #login, .login-content .login{
+        width:90% !important;
+        margin:0 auto;
+        display: block;
+        position: relative;
+        bottom: 5%;
+        right: unset;
+        padding:20% 0;
+    }
+    .login-logo, #login h1 a, .login h1 a{
+        background-image: url('../../../assets/login/original-logo.png');
+        background-size: contain;
+    }
+    .login h1{
+        width:100%;
+        height: 20%;
+        position:static;
+        display: block;
+    }
+    .login-content .login #loginform input[type=submit]{
+        background: dodgerblue !important;
+    }
+    .login-content #login #loginform, .login-content .login #loginform{
+        border:0;
+    }
+    .login #login_error{
+        position: relative;
+    }
+    .login-footer{
+        .kf-group{
+            flex-flow:column;
+        }
+    }
+}

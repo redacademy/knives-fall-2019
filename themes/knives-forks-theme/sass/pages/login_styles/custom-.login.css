@@ -1,0 +1,47 @@
+body > *:after, body > *::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-color: white;
+}
+a:hover {
+  cursor: pointer;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.login-content {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+.login-content .bg-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  filter: brightness(75%);
+}
+.login-content #login {
+  width: max-content;
+  padding: 0;
+  display: flex;
+  background: white;
+  flex-flow: row nowrap;
+  height: max-content;
+  align-self: center;
+  margin-bottom: 25%;
+  right: 0;
+  position: absolute;
+}
+
+/*# sourceMappingURL=custom-.login.css.map */

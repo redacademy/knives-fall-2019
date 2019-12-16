@@ -204,3 +204,27 @@ function apply_excerpt_length($length)
 	return 80;
 }
 add_filter('excerpt_length', 'apply_excerpt_length', 999);
+
+//****************CUSTOMIZED LOGIN STYLES BELOW */
+function kf_custom_login() {
+    wp_enqueue_style( 'custom-login-style', get_stylesheet_directory_uri() . '/sass/pages/login_styles/custom-login.css' );
+    wp_enqueue_script( 'custom-login-script', get_template_directory_uri(). '/sass/pages/login_styles/custom-login.js',array('jquery'), false, true );
+}
+add_action( 'login_enqueue_scripts', 'kf_custom_login' );
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return get_option('name');
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+function my_login_logo() { 
+	echo '<style type="text/css">
+        .login-logo, #login h1 a, .login h1 a {
+            background-image: url('.get_template_directory_uri().'/assets/login/kf-logo-sideways.png);
+        }
+    </style>';}
+add_action( 'login_enqueue_scripts', 'my_login_logo' );

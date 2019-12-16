@@ -1965,7 +1965,8 @@ h3.supported-by-title {
       -ms-flex-order: 4;
           order: 4; }
   .team h2 {
-    text-align: center; }
+    text-align: center;
+    font-size: 2.5rem; }
   .team .team-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; }

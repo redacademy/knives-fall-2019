@@ -2008,7 +2008,8 @@ h3.supported-by-title {
 .team {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
-          order: 4; }
+          order: 4;
+  padding: 0 0 3rem; }
   .team h2 {
     text-align: center;
     font-size: 2.5rem; }

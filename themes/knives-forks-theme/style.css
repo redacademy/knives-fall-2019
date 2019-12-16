@@ -513,7 +513,7 @@ h2.upcoming-events-location {
   text-align: center; }
   @media all and (min-width: 1000px) {
     .embed-container {
-      width: 600px; } }
+      width: 700px; } }
 
 .video-section {
   display: -webkit-box;
@@ -522,7 +522,7 @@ h2.upcoming-events-location {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 75px;
+  margin-top: 96px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(242, 144, 97, 0.17)));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 25%, rgba(242, 144, 97, 0.17) 25%);
   padding-bottom: 4rem;
@@ -567,16 +567,18 @@ h2.upcoming-events-location {
 
 h3.summary-title {
   font-size: 1.5em;
-  font-family: "Lora", serif, serif;
+  font-family: "Lato", sans-serif, sans-serif;
   text-align: center;
   font-display: bold;
   color: black;
-  margin: 0; }
+  margin: 0;
+  padding-bottom: 8px; }
 
 p.summary-description {
-  font-size: 1.05em;
+  font-size: 1em;
+  line-height: 1;
   text-align: center;
-  max-width: 500px;
+  max-width: 600px;
   margin: auto; }
 
 .apply-to-pitch-btn-green-flex {
@@ -604,26 +606,23 @@ p.summary-description {
 
 h2.past-events-title {
   text-align: center;
-  font-size: 28px;
-  position: relative;
-  padding: 29px; }
+  font-size: 1.5em; }
   @media all and (min-width: 1000px) {
     h2.past-events-title {
       text-align: left;
-      padding-bottom: 10px;
-      font-size: 40px;
-      padding-left: 232px; } }
+      font-size: 2.5em;
+      padding-left: 12%; } }
 
 .past-events-wrapper {
   background: #f2f7f7;
   width: 100%;
-  margin-top: 0px; }
+  margin-top: 20%; }
   @media all and (min-width: 1000px) {
     .past-events-wrapper {
       background-image: url(../../assets/events-images/pasteventsbg@2x-cropped.png);
       background-repeat: no-repeat;
-      background-position: right;
-      background-size: 20%; } }
+      background-position: 98% 7%;
+      background-size: 21%; } }
 
 .past-events-container {
   display: -webkit-box;
@@ -678,11 +677,11 @@ h2.past-events-title {
 .past-events-container img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 244px;
-  width: 244px;
+  height: 215px;
+  width: 215px;
   position: relative;
   padding-left: 0;
-  margin: 0 20%; }
+  margin: 0 auto; }
   @media all and (min-width: 1000px) {
     .past-events-container img {
       margin-right: 2%; } }

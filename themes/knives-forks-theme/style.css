@@ -496,23 +496,6 @@ h2.upcoming-events-location {
   width: 200px;
   white-space: no-wrap; }
 
-.apply-to-pitch-btn {
-  background: #fff;
-  text-decoration: none;
-  color: #00883f;
-  border: 3px solid #00883f;
-  border-radius: 1.5em;
-  font-size: 0.9rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin: 2% 28%;
-  padding: 12px;
-  max-width: 34vw;
-  position: relative;
-  width: 200px;
-  white-space: no-wrap; }
-
 .embed-container {
   position: relative;
   overflow: hidden;
@@ -761,8 +744,8 @@ p.error-message {
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
+      -ms-flex-order: 4s;
+          order: 4s;
   margin: 0 auto; }
   @media all and (min-width: 1000px) {
     .support-container {
@@ -774,14 +757,15 @@ p.error-message {
           justify-content: space-around;
       padding-left: 200px;
       padding-right: 200px;
-      border-top: 1px solid #e0dbdb;
+      border-top: 2px solid #e0dbdb;
       width: 1220px;
       margin-left: 5%;
-      margin-right: 20%; } }
+      margin-right: 20%;
+      margin-bottom: 5%; } }
 
 .slowmoney-icon,
 .vancity-icon {
-  background-color: rgba(55, 130, 68, 0.1);
+  background-color: rgba(55, 130, 68, 0.2);
   border-radius: 90%;
   width: 20%;
   height: 15%;
@@ -808,49 +792,51 @@ p.error-message {
       width: 100px; } }
 
 .slowmoney-icon img {
-  margin: -26%;
-  height: 16vh; }
+  margin: -36%;
+  height: 14vh; }
   @media all and (min-width: 1000px) {
     .slowmoney-icon img {
-      height: 22vh;
-      margin: 0;
-      margin-right: -130%; } }
+      height: 25vh;
+      margin: -22%;
+      margin-right: -166%; } }
 
 .vancity-icon img {
-  height: 11vh;
+  height: 8vh;
   margin: 15%; }
   @media all and (min-width: 1000px) {
     .vancity-icon img {
-      padding-right: 150px;
-      height: 11vh;
-      margin: 34%;
+      padding-right: 101px;
+      height: 12vh;
+      margin: 28%;
       margin-right: -275%; } }
 
 h3.initiative-title,
 h3.supported-by-title {
   padding: 20px;
   font-family: "Lora", serif;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  color: black;
+  padding-bottom: 2em; }
   @media all and (min-width: 1000px) {
     h3.initiative-title,
     h3.supported-by-title {
-      color: #378244;
-      font-size: 20px;
+      font-size: 24px;
       font-family: "Lato", sans-serif;
       font-weight: 400;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding-left: 57px;
-      padding-top: 7em; } }
+      padding-left: 152px;
+      padding-top: 4em;
+      color: #00883f; } }
 
 @media all and (max-width: 499px) {
   .banner .btn-event {
@@ -2007,6 +1993,9 @@ h3.supported-by-title {
                   order: 0;
           margin: 0;
           margin-left: 20px; } }
+
+.front-page .image-copy {
+  border-bottom: 1px solid grey; }
 
 .team {
   -webkit-box-ordinal-group: 5;

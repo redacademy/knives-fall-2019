@@ -11,6 +11,45 @@
 </div><!-- #content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
+
+<?php if(is_front_page()): ?>
+
+
+<div>
+
+
+<section class="support-container">
+         <div>
+     <h3 class="initiative-title">An initiative by:</h3>
+
+
+     <div class="slowmoney-icon">
+
+<img class="slow-money" src='<?php echo get_stylesheet_directory_uri(); ?>/assets/homepage-images/Slowmoney@2x.png' alt='slowmoney-icon' />
+<div class="slowmoney-icon-bg"></div>
+</div>
+        </div>
+
+<div>
+
+<h3 class="supported-by-title">Generously supported by:</h3>
+
+
+<div class="vancity-icon">
+
+<img class="vancity" src='<?php echo get_stylesheet_directory_uri(); ?>/assets/homepage-images/vancitylogo@3x.png' alt='vancity-icon' />
+<div class="vancity-icon-bg"></div>
+		</div>
+
+<?php endif; ?>
+		
+
+
+
+
+</section>
+        </div>
+
 	<img class="cityline" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cityline/cityline.svg" alt="footer image">
 	<div class="site-info">
 		<div class="info-links">

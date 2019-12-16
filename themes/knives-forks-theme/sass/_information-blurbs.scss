@@ -40,6 +40,7 @@
     width: 95%;
     align-self: flex-end;
   }
+
   .copy-block-content {
     order: 1;
     position: relative;
@@ -152,5 +153,10 @@
         margin-left: 20px;
       }
     }
+  }
+}
+.front-page {
+  .image-copy {
+    border-bottom: 1px solid grey;
   }
 }

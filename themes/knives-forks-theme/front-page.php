@@ -69,7 +69,7 @@ $testimonials=get_posts($args);
 
      <div class="slowmoney-icon">
 
-<img class="slow-money" src='<?php echo get_stylesheet_directory_uri(); ?>/assets/homepage-images/slowmoney@2x.png' alt='slowmoney-icon' />
+<img class="slow-money" src='<?php echo get_stylesheet_directory_uri(); ?>/assets/homepage-images/Slowmoney@2x.png' alt='slowmoney-icon' />
 <div class="slowmoney-icon-bg"></div>
 </div>
         </div>

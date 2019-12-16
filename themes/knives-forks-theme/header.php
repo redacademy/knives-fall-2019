@@ -40,10 +40,6 @@
 						<?php wp_nav_menu(array('theme_location' => 'desktop', 'menu_id' => 'desktop-menu')); ?>
 						<?php // if (is_page(array('our-story', 'how-it-work', 'events', 'become-investor'))) { } 
 						?>
-						<?php if (is_page('our-story')) { ?>
-
-							<body <?php body_class('current'); ?>>
-							<?php } ?>
 					</div>
 					<i class="fas fa-bars hamburger" id="hamburger"></i>
 					<!-- hidden menu -->

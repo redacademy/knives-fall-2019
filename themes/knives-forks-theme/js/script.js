@@ -12,7 +12,7 @@
     const cross = $('#cross');
     const hidCross = $('#hid-cross');
     const pendInvestment = $(
-      '<li><a href="#investment">Our Investment</a></li>'
+      '<li class="investment-nav"><a href="#investment">Our Investment</a></li>'
     );
     const navHiddenMenu = $('#hidden-menu');
     const investor = $('.menu-item-201 a');
@@ -48,7 +48,9 @@
     // pendInvestment.insertAfter('.menu-item-45'); //local
     pendInvestment.insertAfter('.menu-item-189'); //staging
 
-    navHiddenMenu.prepend('<li><a href="#investment">Our Investment</a></li>');
+    navHiddenMenu.prepend(
+      '<li class="investment-nav"><a href="#investment">Our Investment</a></li>'
+    );
     //====================
 
     //END OF  VICTOR'S WORK
@@ -123,7 +125,7 @@
     function checkInputs(gField) {
       const $inputs = $(gField).find('input:not(.button):not([type="hidden"])');
       const $inputsArea = $(this).find('textarea');
-      console.log($inputs.length);
+      // console.log($inputs.length);
       //console.log($(gField).find('.filled').length);
       //   console.log($(group).find('.filled').length);
       //   console.log($inputsArea.length);
@@ -154,9 +156,9 @@
     const stickySteps = $('.gf_page_steps');
     let footerHeight = $('.site-footer').height();
     let unstickPoint = $(document).height() - footerHeight;
-    console.log(footerHeight);
-    console.log($(document).height());
-    console.log(unstickPoint);
+    // console.log(footerHeight);
+    // console.log($(document).height());
+    // console.log(unstickPoint);
 
     // $.each(stickySteps, function(index, value) {
     //   //console.log(value.offsetTop);

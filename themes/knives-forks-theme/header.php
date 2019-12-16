@@ -62,7 +62,7 @@
 				
 					<section class="banner">
 						<nav class="banner-img">';
-				the_post_thumbnail('large');
+				the_post_thumbnail('full');
 				echo '	</nav>
 						<nav class="banner-content">
 							<h2>

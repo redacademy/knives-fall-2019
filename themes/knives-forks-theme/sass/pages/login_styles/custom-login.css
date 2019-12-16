@@ -225,7 +225,8 @@ a:hover {
   cursor: pointer;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -234,7 +235,7 @@ ul, li {
   display: flex;
   flex-flow: column nowrap;
   align-items: baseline;
-  flex: 0 1 10%;
+  flex: 0 1 15%;
 }
 .login h1 .login-logo {
   margin: 0;
@@ -266,7 +267,8 @@ ul, li {
   object-fit: cover;
   filter: brightness(75%);
 }
-.login-content #login, .login-content .login {
+.login-content #login,
+.login-content .login {
   width: 40%;
   padding: 0 0 0 1%;
   display: flex;
@@ -281,13 +283,17 @@ ul, li {
   overflow: hidden;
   z-index: 10;
 }
-.login-content #login:focus, .login-content #login:hover, .login-content .login:focus, .login-content .login:hover {
+.login-content #login:focus, .login-content #login:hover,
+.login-content .login:focus,
+.login-content .login:hover {
   background: white;
 }
-.login-content #login a:hover, .login-content .login a:hover {
+.login-content #login a:hover,
+.login-content .login a:hover {
   text-decoration: underline;
 }
-.login-content #login #loginform, .login-content .login #loginform {
+.login-content #login #loginform,
+.login-content .login #loginform {
   flex: 1 0 70%;
   border-left: 0.5px solid gray;
   border-top: unset;
@@ -295,13 +301,18 @@ ul, li {
   border-right: unset;
   background: transparent;
 }
-.login-content #login #loginform input, .login-content .login #loginform input {
+.login-content #login #loginform input,
+.login-content .login #loginform input {
   background: transparent;
 }
-.login-content #login #loginform #wp-submit, .login-content .login #loginform #wp-submit {
+.login-content #login #loginform #wp-submit,
+.login-content .login #loginform #wp-submit {
   background: dodgerblue;
 }
-.login-content #login #nav, .login-content #login #backtoblog, .login-content .login #nav, .login-content .login #backtoblog {
+.login-content #login #nav,
+.login-content #login #backtoblog,
+.login-content .login #nav,
+.login-content .login #backtoblog {
   flex: 1 0 30%;
   margin: 0;
   padding: 0 5% 2% 0;
@@ -316,7 +327,8 @@ ul, li {
   border-right: 2em solid #dc3232;
 }
 
-.login .message, .login .success {
+.login .message,
+.login .success {
   border-right: 2em solid #00a0d2;
   position: absolute;
   right: 0;
@@ -365,11 +377,13 @@ ul, li {
 }
 
 @media only screen and (min-width: 250px) and (max-width: 900px) {
-  picture, video {
+  picture,
+video {
     display: none;
   }
 
-  .login-content #login, .login-content .login {
+  .login-content #login,
+.login-content .login {
     width: 90% !important;
     margin: 0 auto;
     display: block;
@@ -379,7 +393,9 @@ ul, li {
     padding: 20% 0;
   }
 
-  .login-logo, #login h1 a, .login h1 a {
+  .login-logo,
+#login h1 a,
+.login h1 a {
     background-image: url("../../../assets/login/original-logo.png");
     background-size: contain;
   }
@@ -395,7 +411,8 @@ ul, li {
     background: dodgerblue !important;
   }
 
-  .login-content #login #loginform, .login-content .login #loginform {
+  .login-content #login #loginform,
+.login-content .login #loginform {
     border: 0;
   }
 

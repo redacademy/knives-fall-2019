@@ -1723,6 +1723,11 @@ h3.supported-by-title {
 
 .site-footer {
   padding: 4% 0.5rem 0.75rem; }
+  .site-footer a {
+    text-decoration: none;
+    color: #000; }
+    .site-footer a:visited {
+      color: #000; }
   .site-footer .cityline {
     width: 100%; }
   .site-footer .info-links {
@@ -1739,6 +1744,8 @@ h3.supported-by-title {
       font-size: 0.75rem;
       text-transform: capitalize;
       color: #378244; }
+      .site-footer .info-links h4 a:visited {
+        color: #378244; }
       .site-footer .info-links h4 span {
         text-transform: lowercase; }
     .site-footer .info-links p {

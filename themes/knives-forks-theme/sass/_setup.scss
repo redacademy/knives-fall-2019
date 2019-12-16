@@ -89,6 +89,9 @@ article {
   display: flex;
   flex-flow: column nowrap;
 }
+.support-container{
+  order:5;
+}
 .testimonials {
-  order: 99;
+  order: 4;
 }

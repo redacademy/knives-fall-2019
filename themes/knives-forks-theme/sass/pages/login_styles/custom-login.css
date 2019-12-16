@@ -1,0 +1,411 @@
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html > *:after, html > *:before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-color: white;
+}
+a:hover {
+  cursor: pointer;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.login h1 {
+  width: 10%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: baseline;
+  flex: 0 1 10%;
+}
+.login h1 .login-logo {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.login-content {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+.login-content video {
+  display: none;
+}
+.login-content .bg-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  filter: brightness(75%);
+}
+.login-content #login, .login-content .login {
+  width: 40%;
+  padding: 0 0 0 1%;
+  display: flex;
+  background: rgba(255, 255, 255, 0.25);
+  flex-flow: row wrap;
+  align-self: center;
+  right: 0;
+  position: absolute;
+  border-radius: 0.5em;
+  bottom: 20%;
+  margin: 0;
+  overflow: hidden;
+  z-index: 10;
+}
+.login-content #login:focus, .login-content #login:hover, .login-content .login:focus, .login-content .login:hover {
+  background: white;
+}
+.login-content #login a:hover, .login-content .login a:hover {
+  text-decoration: underline;
+}
+.login-content #login #loginform, .login-content .login #loginform {
+  flex: 1 0 70%;
+  border-left: 0.5px solid gray;
+  border-top: unset;
+  border-bottom: unset;
+  border-right: unset;
+  background: transparent;
+}
+.login-content #login #loginform input, .login-content .login #loginform input {
+  background: transparent;
+}
+.login-content #login #loginform #wp-submit, .login-content .login #loginform #wp-submit {
+  background: dodgerblue;
+}
+.login-content #login #nav, .login-content #login #backtoblog, .login-content .login #nav, .login-content .login #backtoblog {
+  flex: 1 0 30%;
+  margin: 0;
+  padding: 0 5% 2% 0;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.login #login_error {
+  position: absolute;
+  right: 0;
+  border-left: unset;
+  border-right: 2em solid #dc3232;
+}
+
+.login .message, .login .success {
+  border-right: 2em solid #00a0d2;
+  position: absolute;
+  right: 0;
+  border-left: unset;
+}
+
+.login-footer {
+  width: 100%;
+  background: white;
+  color: #296133;
+  opacity: 75%;
+}
+.login-footer:focus, .login-footer:hover {
+  opacity: 100%;
+}
+.login-footer .kf-group {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+}
+.login-footer .kf-group li {
+  margin: 0 2%;
+}
+.login-footer .kf-group li h1 {
+  width: max-content;
+  font-family: Lato, Arial Round;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+.login-footer .kf-group li h1:hover {
+  cursor: pointer;
+  color: red;
+}
+.login-footer .kf-group li a {
+  font-family: Lora, Robuto;
+  width: max-content;
+  word-break: unset;
+  color: #296133;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 250px) and (max-width: 900px) {
+  picture, video {
+    display: none;
+  }
+
+  .login-content #login, .login-content .login {
+    width: 90% !important;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    bottom: 5%;
+    right: unset;
+    padding: 20% 0;
+  }
+
+  .login-logo, #login h1 a, .login h1 a {
+    background-image: url("../../../assets/login/original-logo.png");
+    background-size: contain;
+  }
+
+  .login h1 {
+    width: 100%;
+    height: 20%;
+    position: static;
+    display: block;
+  }
+
+  .login-content .login #loginform input[type=submit] {
+    background: dodgerblue !important;
+  }
+
+  .login-content #login #loginform, .login-content .login #loginform {
+    border: 0;
+  }
+
+  .login #login_error {
+    position: relative;
+  }
+
+  .login-footer .kf-group {
+    flex-flow: column;
+  }
+}
+
+/*# sourceMappingURL=custom-login.css.map */

@@ -421,10 +421,15 @@ article {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap; }
 
+.support-container {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5; }
+
 .testimonials {
-  -webkit-box-ordinal-group: 100;
-      -ms-flex-order: 99;
-          order: 99; }
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4; }
 
 .events-banner {
   background: url("../../assets/events-images/event-hero@3x.png") no-repeat;
@@ -1714,7 +1719,7 @@ h3.supported-by-title {
   display: none; }
 
 .site-footer {
-  padding: 0 0.5rem 0.75rem; }
+  padding: 4% 0.5rem 0.75rem; }
   .site-footer .cityline {
     width: 100%; }
   .site-footer .info-links {
@@ -1964,7 +1969,8 @@ h3.supported-by-title {
       -ms-flex-order: 4;
           order: 4; }
   .team h2 {
-    text-align: center; }
+    text-align: center;
+    font-size: 2.5rem; }
   .team .team-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; }

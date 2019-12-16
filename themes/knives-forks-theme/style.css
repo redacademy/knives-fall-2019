@@ -1620,32 +1620,23 @@ h3.supported-by-title {
   z-index: 99;
   -webkit-box-shadow: 0 1rem 2rem #fff;
           box-shadow: 0 1rem 2rem #fff; }
-  @media all and (min-width: 1000px) {
-    .main-navigation {
-      height: 68px; } }
   .main-navigation .nav-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     max-width: 1140px;
     margin: 0 auto;
-    padding: 0.4rem 0 0; }
+    padding: 2rem 0 0; }
   .main-navigation .home-logo {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
     .main-navigation .home-logo img {
       width: 230px; }
-      @media all and (min-width: 1000px) {
-        .main-navigation .home-logo img {
-          margin: -0.5rem 0 0; } }
   .main-navigation .hamburger {
     font-size: 2rem;
     padding: 1.5rem 1rem 0 0;
     height: 35px; }
-    @media all and (min-width: 1000px) {
-      .main-navigation .hamburger {
-        padding: 1rem 1rem 0 0; } }
   .main-navigation .menu li {
     list-style: none; }
     .main-navigation .menu li a {
@@ -1696,10 +1687,9 @@ h3.supported-by-title {
         display: flex;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-        padding: 0.2rem 0 0; }
+        padding: 1rem 0 0; }
         .main-navigation .desktop-menu .menu li {
-          padding: 1rem 2rem;
-          height: 20px; }
+          padding: 1rem 1rem; }
           .main-navigation .desktop-menu .menu li:last-child {
             padding: 0; }
           .main-navigation .desktop-menu .menu li a {

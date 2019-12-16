@@ -38,4 +38,8 @@ function getTerms(pathname) {
       href: location.origin + location.pathname + 'our-story/#investment'
     });
   });
+
+  // $('iframe').done(function() {
+  //   alert('Video LOADED!');
+  // });
 })(jQuery);

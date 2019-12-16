@@ -1427,7 +1427,7 @@ h3.supported-by-title {
       .gform_wrapper form .gform_page .gform_fields textarea {
         border-radius: 5px; }
   .gform_wrapper form .icon-default::before {
-    background-image: url("../../assets/icons/Forms - Unfilled/unfilled-name.svg");
+    background-image: url("../../assets/icons/Forms - Unfilled/unfilled-application.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 200px;
@@ -1452,7 +1452,7 @@ h3.supported-by-title {
         position: relative;
         top: 0px; } }
   .gform_wrapper form .icon-complete::before {
-    background-image: url("../../assets/icons/Forms - filled/filled-name.svg");
+    background-image: url("../../assets/icons/Forms - filled/filled-application.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 200px;
@@ -1476,8 +1476,6 @@ h3.supported-by-title {
         display: block;
         position: relative;
         top: 0px; } }
-    .gform_wrapper form .icon-complete::before:nth-of-type(2) {
-      background-image: url("../../assets/icons/Forms - filled/filled-email.svg"); }
   .gform_wrapper form .validation_error {
     display: none; }
 
@@ -1491,10 +1489,16 @@ h3.supported-by-title {
     height: auto; }
     @media only screen and (min-width: 500px) and (max-width: 999px) {
       .gform_confirmation_message .thank-you-icon {
-        width: 40%; } }
+        width: 30%; } }
     @media all and (min-width: 1000px) {
       .gform_confirmation_message .thank-you-icon {
-        width: 40%; } }
+        width: 25%; } }
+  .gform_confirmation_message .thank-you-header {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem; }
+  .gform_confirmation_message .thank-you-text {
+    font-size: 1.5rem;
+    font-weight: 100; }
 
 .page-contact-us {
   width: 100%;
@@ -1599,13 +1603,16 @@ h3.supported-by-title {
   z-index: 99;
   -webkit-box-shadow: 0 1rem 2rem #fff;
           box-shadow: 0 1rem 2rem #fff; }
+  @media all and (min-width: 1000px) {
+    .main-navigation {
+      height: 75px; } }
   .main-navigation .nav-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     max-width: 1140px;
     margin: 0 auto;
-    padding: 2rem 0 0; }
+    padding: 0.4rem 0 0; }
   .main-navigation .home-logo {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -1616,6 +1623,9 @@ h3.supported-by-title {
     font-size: 2rem;
     padding: 1.5rem 1rem 0 0;
     height: 35px; }
+    @media all and (min-width: 1000px) {
+      .main-navigation .hamburger {
+        padding: 1rem 1rem 0 0; } }
   .main-navigation .menu li {
     list-style: none; }
     .main-navigation .menu li a {
@@ -1666,7 +1676,7 @@ h3.supported-by-title {
         display: flex;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-        padding: 1rem 0 0; }
+        padding: 0.4rem 0 0; }
         .main-navigation .desktop-menu .menu li {
           padding: 1rem 1rem; }
           .main-navigation .desktop-menu .menu li:last-child {

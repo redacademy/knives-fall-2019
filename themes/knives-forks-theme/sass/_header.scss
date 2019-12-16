@@ -111,6 +111,10 @@
               font-size: $fontsize * 0.8;
               display: inline-block;
               padding: $padding;
+              &:hover {
+                border-color: 2px solid $primary_green_med;
+                color: $primary_green_med;
+              }
             }
           }
         }

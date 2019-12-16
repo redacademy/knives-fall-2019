@@ -14,6 +14,9 @@ function getTerms(pathname) {
     // $('entry-content  ul  li:last-child()').append($('.how-btn'));
     $('.how-btn').appendTo('.steps-list li:last-child()');
     $('.how-img').appendTo('.steps-list li:last-child()');
+    $('.banner .banner-events img').css({
+      height: $('.banner').outerHeight()
+    });
   }
   if (thePage !== 'events') {
     $('.banner-content').css({
@@ -22,6 +25,17 @@ function getTerms(pathname) {
   } else if (thePage == 'events') {
     if ($userWidth >= 500) {
       $('.btn-event').appendTo('.banner-content');
+      if ($userWidth <= 999) {
+        $('.banner-content').css({
+          top: $('.banner').outerHeight() * 0.4
+        });
+      }
     }
   }
+  $(document).on('click', '.investment-nav', function() {
+    // console.log(location.origin + ' ' + location.pathname);
+    $('.investment-nav a').attr({
+      href: location.origin + location.pathname + 'our-story/#investment'
+    });
+  });
 })(jQuery);

@@ -170,7 +170,7 @@
     }
   }
   .icon-default::before {
-    background-image: url('../../assets/icons/Forms - Unfilled/unfilled-name.svg');
+    background-image: url('../../assets/icons/Forms - Unfilled/unfilled-application.svg');
     background-size: contain;
     background-repeat: no-repeat;
     width: 200px;
@@ -196,7 +196,7 @@
     }
   }
   .icon-complete::before {
-    background-image: url('../../assets/icons/Forms - filled/filled-name.svg');
+    background-image: url('../../assets/icons/Forms - filled/filled-application.svg');
     background-size: contain;
     background-repeat: no-repeat;
     width: 200px;
@@ -220,9 +220,6 @@
       top: 0px;
       //left: 200px;
     }
-    &:nth-of-type(2) {
-      background-image: url('../../assets/icons/Forms - filled/filled-email.svg');
-    }
   }
 
   //use nth-of-type()
@@ -242,10 +239,18 @@
     width: 60%;
     height: auto;
     @include tablet {
-      width: 40%;
+      width: 30%;
     }
     @include desktop {
-      width: 40%;
+      width: 25%;
     }
+  }
+  .thank-you-header {
+    font-family: $parafont;
+    font-size: 2rem;
+  }
+  .thank-you-text {
+    font-size: 1.5rem;
+    font-weight: $font_weight_body;
   }
 }

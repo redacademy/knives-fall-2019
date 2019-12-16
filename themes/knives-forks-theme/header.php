@@ -15,7 +15,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora:400,700&display=swap" rel="stylesheet"> -->
 	<?php wp_head(); ?>
 </head>
 
@@ -40,10 +39,6 @@
 						<?php wp_nav_menu(array('theme_location' => 'desktop', 'menu_id' => 'desktop-menu')); ?>
 						<?php // if (is_page(array('our-story', 'how-it-work', 'events', 'become-investor'))) { } 
 						?>
-						<?php if (is_page('our-story')) { ?>
-
-							<body <?php body_class('current'); ?>>
-							<?php } ?>
 					</div>
 					<i class="fas fa-bars hamburger" id="hamburger"></i>
 					<!-- hidden menu -->
@@ -62,11 +57,11 @@
 				
 					<section class="banner">
 						<nav class="banner-img">';
-				the_post_thumbnail('large');
+				the_post_thumbnail('full');
 				echo '	</nav>
 						<nav class="banner-content">
 							<h2>
-								'. get_field('banner-description') .'
+								' . get_field('banner-description') . '
 							</h2>
 						</nav>
 					</section>

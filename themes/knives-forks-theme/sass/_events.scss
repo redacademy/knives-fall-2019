@@ -248,7 +248,7 @@ h2.past-events-title {
   width: 70%;
   margin: 0 auto;
   letter-spacing: 0.4px;
-  line-height: 0.5em;
+  line-height: 1;
 
   @include desktop {
     flex-direction: column;
@@ -296,10 +296,9 @@ h2.past-events-title {
 }
 .past-events-description {
   font-size: 16px;
-  line-height: $fontsize;
   text-align: center;
   font-family: $parafont;
-  line-height: 1.3em;
+  line-height: 1.2;
 
   @include desktop {
     text-align: left;

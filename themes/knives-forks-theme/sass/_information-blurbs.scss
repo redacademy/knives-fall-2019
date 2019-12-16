@@ -13,6 +13,19 @@
   font-weight: $font_weight_body;
   line-height: 1rem;
   text-align: unset;
+  @include desktop {
+    line-height: 1.5rem;
+  }
+}
+.site-content {
+  section {
+    &:before {
+      border-top: 1px solid gray;
+    }
+    &:after {
+      border-bottom: 1px solid gray;
+    }
+  }
 }
 
 .custom-copy-block {
@@ -24,6 +37,8 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 150px;
+    width: 95%;
+    align-self: flex-end;
   }
 
   .copy-block-content {
@@ -49,8 +64,7 @@
           position: relative;
         }
       }
-      .copy-subtitle {
-      }
+
       .copy-text {
         @include desktop {
           position: relative;
@@ -131,6 +145,7 @@
     }
     .copy-block-content {
       margin: 0 20% 10px 5%;
+      padding-left: 5%;
       order: 1;
       @include desktop {
         order: 0;

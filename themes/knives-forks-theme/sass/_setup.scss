@@ -89,9 +89,16 @@ article {
   display: flex;
   flex-flow: column nowrap;
 }
-.support-container{
-  order:5;
+.support-container {
+  order: 5;
 }
 .testimonials {
   order: 4;
+}
+
+//DEFAULT setup for BANNER
+@include tablet {
+  .banner-img img {
+    height: auto;
+  }
 }

@@ -27,6 +27,8 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 150px;
+    width: 95%;
+    align-self: flex-end;
   }
   .copy-block-content {
     order: 1;
@@ -51,8 +53,7 @@
           position: relative;
         }
       }
-      .copy-subtitle {
-      }
+
       .copy-text {
         @include desktop {
           position: relative;
@@ -133,6 +134,7 @@
     }
     .copy-block-content {
       margin: 0 20% 10px 5%;
+      padding-left: 5%;
       order: 1;
       @include desktop {
         order: 0;

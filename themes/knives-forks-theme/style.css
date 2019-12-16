@@ -1860,7 +1860,10 @@ h3.supported-by-title {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      margin-bottom: 150px; } }
+      margin-bottom: 150px;
+      width: 95%;
+      -ms-flex-item-align: end;
+          align-self: flex-end; } }
   .custom-copy-block .copy-block-content {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -1956,6 +1959,7 @@ h3.supported-by-title {
           right: 0; } }
     .custom-copy-block.copy-image .copy-block-content {
       margin: 0 20% 10px 5%;
+      padding-left: 5%;
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1; }

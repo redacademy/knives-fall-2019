@@ -1858,7 +1858,7 @@ h3.supported-by-title {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      margin-bottom: 200px; } }
+      margin-bottom: 150px; } }
   .custom-copy-block .copy-block-content {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;

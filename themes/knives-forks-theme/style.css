@@ -1245,6 +1245,12 @@ h3.supported-by-title {
 .page-become-investor .site-content {
   margin-top: 0; }
 
+.page-apply-to-pitch .site-footer,
+.page-become-investor .site-footer {
+  position: relative;
+  z-index: 98;
+  background-color: white; }
+
 .gform_wrapper form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1285,12 +1291,13 @@ h3.supported-by-title {
             -ms-flex-direction: column;
                 flex-direction: column;
         border-right: 1px solid black;
+        padding: 135px 1%;
         width: 33%;
         margin: 0;
         height: auto; }
         .gform_wrapper form .gf_page_steps.sticky {
           position: fixed;
-          top: 48px;
+          top: 15px;
           height: auto; } }
     @media all and (min-width: 1000px) {
       .gform_wrapper form .gf_page_steps {
@@ -1301,6 +1308,7 @@ h3.supported-by-title {
         border-right: 1px solid black;
         width: 33%;
         margin: 0;
+        padding: 128px 1%;
         top: 0; }
         .gform_wrapper form .gf_page_steps.sticky {
           position: fixed;
@@ -1332,7 +1340,10 @@ h3.supported-by-title {
           height: 30px;
           margin: 1rem;
           width: auto;
-          border: none; } }
+          border: none;
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end; } }
       @media all and (min-width: 1000px) {
         .gform_wrapper form .gf_page_steps .gf_step {
           display: -webkit-box;
@@ -1347,9 +1358,14 @@ h3.supported-by-title {
           height: 30px;
           margin: 1rem;
           width: auto;
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end;
           border: none; } }
       .gform_wrapper form .gf_page_steps .gf_step .gf_step_number {
         display: none; }
+      .gform_wrapper form .gf_page_steps .gf_step .gf_step_label {
+        padding: 2px 5px; }
     .gform_wrapper form .gf_page_steps .gf_step_active {
       background-color: #296133;
       height: 12px;
@@ -1381,7 +1397,7 @@ h3.supported-by-title {
       width: 66%;
       margin-left: auto; } }
   .gform_wrapper form .gform_page {
-    margin-top: 2rem;
+    margin-top: 100px;
     padding: 0 7%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1390,6 +1406,12 @@ h3.supported-by-title {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    @media only screen and (min-width: 500px) and (max-width: 999px) {
+      .gform_wrapper form .gform_page {
+        margin-top: 120px; } }
+    @media all and (min-width: 1000px) {
+      .gform_wrapper form .gform_page {
+        margin-top: 120px; } }
     .gform_wrapper form .gform_page .gform_fields {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1458,7 +1480,17 @@ h3.supported-by-title {
 .gform_confirmation_message {
   width: 80%;
   text-align: center;
-  margin: auto; }
+  margin: auto;
+  margin-top: 120px; }
+  .gform_confirmation_message .thank-you-icon {
+    width: 60%;
+    height: auto; }
+    @media only screen and (min-width: 500px) and (max-width: 999px) {
+      .gform_confirmation_message .thank-you-icon {
+        width: 40%; } }
+    @media all and (min-width: 1000px) {
+      .gform_confirmation_message .thank-you-icon {
+        width: 40%; } }
 
 .page-contact-us {
   width: 100%;

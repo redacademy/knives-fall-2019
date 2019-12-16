@@ -1610,8 +1610,8 @@ h3.supported-by-title {
   background-color: #fff;
   width: 100%;
   z-index: 99;
-  -webkit-box-shadow: 0 1rem 2rem #fff;
-          box-shadow: 0 1rem 2rem #fff; }
+  -webkit-box-shadow: 0 0.5rem 1.5rem #fff;
+          box-shadow: 0 0.5rem 1.5rem #fff; }
   @media all and (min-width: 1000px) {
     .main-navigation {
       height: 68px; } }

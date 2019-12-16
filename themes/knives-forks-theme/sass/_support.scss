@@ -1,7 +1,7 @@
 .support-container {
   display: flex;
   flex-direction: column;
-  order: 4;
+  order: 4s;
   margin: 0 auto;
 
   @include desktop {
@@ -9,7 +9,7 @@
     justify-content: space-around;
     padding-left: 200px;
     padding-right: 200px;
-    border-top: 1px solid #e0dbdb;
+    border-top: 2px solid #e0dbdb;
     width: 1220px;
     margin-left: 5%;
     margin-right: 20%;
@@ -42,9 +42,9 @@
     margin: -26%;
     height: 16vh;
     @include desktop {
-      height: 22vh;
-      margin: 0;
-      margin-right: -130%;
+      height: 25vh;
+      margin: -22%;
+      margin-right: -166%;
     }
   }
 }
@@ -54,9 +54,9 @@
     margin: 15%;
 
     @include desktop {
-      padding-right: 150px;
-      height: 11vh;
-      margin: 34%;
+      padding-right: 101px;
+      height: 12vh;
+      margin: 28%;
       margin-right: -275%;
     }
   }
@@ -70,14 +70,14 @@ h3.supported-by-title {
   text-align: center;
   display: flex;
   justify-content: center;
+  color: $primary_green_light;
 
   @include desktop {
-    color: $primary_green_med;
-    font-size: 20px;
+    font-size: 24px;
     font-family: $parafont;
     font-weight: 400;
     flex-direction: column;
-    padding-left: 57px;
-    padding-top: 7em;
+    padding-left: 152px;
+    padding-top: 4em;
   }
 }

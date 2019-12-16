@@ -741,8 +741,8 @@ p.error-message {
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
+      -ms-flex-order: 4s;
+          order: 4s;
   margin: 0 auto; }
   @media all and (min-width: 1000px) {
     .support-container {
@@ -754,7 +754,7 @@ p.error-message {
           justify-content: space-around;
       padding-left: 200px;
       padding-right: 200px;
-      border-top: 1px solid #e0dbdb;
+      border-top: 2px solid #e0dbdb;
       width: 1220px;
       margin-left: 5%;
       margin-right: 20%; } }
@@ -792,18 +792,18 @@ p.error-message {
   height: 16vh; }
   @media all and (min-width: 1000px) {
     .slowmoney-icon img {
-      height: 22vh;
-      margin: 0;
-      margin-right: -130%; } }
+      height: 25vh;
+      margin: -22%;
+      margin-right: -166%; } }
 
 .vancity-icon img {
   height: 11vh;
   margin: 15%; }
   @media all and (min-width: 1000px) {
     .vancity-icon img {
-      padding-right: 150px;
-      height: 11vh;
-      margin: 34%;
+      padding-right: 101px;
+      height: 12vh;
+      margin: 28%;
       margin-right: -275%; } }
 
 h3.initiative-title,
@@ -817,20 +817,20 @@ h3.supported-by-title {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  color: #00883f; }
   @media all and (min-width: 1000px) {
     h3.initiative-title,
     h3.supported-by-title {
-      color: #378244;
-      font-size: 20px;
+      font-size: 24px;
       font-family: "Lato", sans-serif;
       font-weight: 400;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding-left: 57px;
-      padding-top: 7em; } }
+      padding-left: 152px;
+      padding-top: 4em; } }
 
 @media all and (max-width: 499px) {
   .banner .btn-event {

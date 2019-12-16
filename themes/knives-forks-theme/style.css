@@ -1605,7 +1605,7 @@ h3.supported-by-title {
           box-shadow: 0 1rem 2rem #fff; }
   @media all and (min-width: 1000px) {
     .main-navigation {
-      height: 75px; } }
+      height: 68px; } }
   .main-navigation .nav-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1619,6 +1619,9 @@ h3.supported-by-title {
             flex-grow: 1; }
     .main-navigation .home-logo img {
       width: 230px; }
+      @media all and (min-width: 1000px) {
+        .main-navigation .home-logo img {
+          margin: -0.5rem 0 0; } }
   .main-navigation .hamburger {
     font-size: 2rem;
     padding: 1.5rem 1rem 0 0;
@@ -1676,9 +1679,10 @@ h3.supported-by-title {
         display: flex;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-        padding: 0.4rem 0 0; }
+        padding: 0.2rem 0 0; }
         .main-navigation .desktop-menu .menu li {
-          padding: 1rem 1rem; }
+          padding: 1rem 2rem;
+          height: 20px; }
           .main-navigation .desktop-menu .menu li:last-child {
             padding: 0; }
           .main-navigation .desktop-menu .menu li a {

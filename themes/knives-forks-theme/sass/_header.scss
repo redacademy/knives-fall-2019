@@ -126,9 +126,9 @@
                 color: $primary_green_med;
               }
             }
-          }
-        }
-      }
+          } // end of li:last-child
+        } // end of li
+      } // end of .menu
     } // end of .desktop-menu
   }
   // END OF DESKTOP MENU

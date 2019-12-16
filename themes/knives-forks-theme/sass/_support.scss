@@ -13,11 +13,12 @@
     width: 1220px;
     margin-left: 5%;
     margin-right: 20%;
+    margin-bottom: 5%;
   }
 }
 .slowmoney-icon,
 .vancity-icon {
-  background-color: rgba(55, 130, 68, 0.1);
+  background-color: rgba(55, 130, 68, 0.2);
   border-radius: 90%;
   width: 20%;
   height: 15%;
@@ -39,8 +40,8 @@
 
 .slowmoney-icon {
   img {
-    margin: -26%;
-    height: 16vh;
+    margin: -36%;
+    height: 14vh;
     @include desktop {
       height: 25vh;
       margin: -22%;
@@ -50,7 +51,7 @@
 }
 .vancity-icon {
   img {
-    height: 11vh;
+    height: 8vh;
     margin: 15%;
 
     @include desktop {
@@ -66,11 +67,12 @@ h3.initiative-title,
 h3.supported-by-title {
   padding: 20px;
   font-family: $headfont;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   display: flex;
   justify-content: center;
-  color: $primary_green_light;
+  color: black;
+  padding-bottom: 2em;
 
   @include desktop {
     font-size: 24px;
@@ -79,5 +81,6 @@ h3.supported-by-title {
     flex-direction: column;
     padding-left: 152px;
     padding-top: 4em;
+    color: $primary_green_light;
   }
 }

@@ -50,9 +50,7 @@ while (have_rows('become_a_member')) {
     $background_color = get_sub_field('background_color');
 
     ?>
-    <section class="custom-copy-block image-copy" style="order:<?= $tmpCount ?>;background-color: 
-        <?php //$tmpCount++;
-                                                                echo $background_color ?>">
+    <section class="custom-copy-block image-copy" style="background-color: <?php echo $background_color ?>;">
         <div class="copy-block-content">
             <article class="copy-block-text">
                 <h2 class="copy-title"><?php echo $title; ?></h2>
@@ -67,19 +65,18 @@ while (have_rows('become_a_member')) {
         </figure>
     </section>
 <?php
-                                                            }
+                                                                        }
 
-                                                            while (have_rows('make_a_pitch')) {
-                                                                the_row(); ?>
+                                                                        while (have_rows('make_a_pitch')) {
+                                                                            the_row(); ?>
     <?php
-                                                                $title = get_sub_field('title');
-                                                                $subtitle = get_sub_field('subtitle');
-                                                                $content = get_sub_field('content');
-                                                                $image = get_sub_field('image');
-                                                                $background_color = get_sub_field('background_color');
+                                                                            $title = get_sub_field('title');
+                                                                            $subtitle = get_sub_field('subtitle');
+                                                                            $content = get_sub_field('content');
+                                                                            $image = get_sub_field('image');
+                                                                            $background_color = get_sub_field('background_color');
     ?>
-    <section class="custom-copy-block copy-image" style="order:<?= $tmpCount ?>;
-        background-color: <?php echo $background_color ?>">
+    <section class="custom-copy-block copy-image" style="background-color: <?php echo $background_color ?>">
         <div class="copy-block-content">
             <article class="copy-block-text">
                 <h2 class="copy-title"><?php echo $title; ?></h2>

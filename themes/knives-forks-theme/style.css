@@ -1669,8 +1669,8 @@ h3.supported-by-title {
   background-color: #fff;
   width: 100%;
   z-index: 99;
-  -webkit-box-shadow: 0 1rem 2rem #fff;
-          box-shadow: 0 1rem 2rem #fff; }
+  -webkit-box-shadow: 0 0.2rem 2rem #fff;
+          box-shadow: 0 0.2rem 2rem #fff; }
   @media all and (min-width: 1000px) {
     .main-navigation {
       height: 68px; } }
@@ -1688,7 +1688,7 @@ h3.supported-by-title {
       width: 230px; }
   .main-navigation .hamburger {
     font-size: 2rem;
-    padding: 1.5rem 1rem 0 0;
+    padding: 1.3rem 1rem 0 0;
     height: 35px; }
   .main-navigation .menu li {
     list-style: none; }
@@ -1742,7 +1742,7 @@ h3.supported-by-title {
             justify-content: space-around;
         padding: 0.6rem 0 0; }
         .main-navigation .desktop-menu .menu li {
-          padding: 1rem 1rem; }
+          padding: 1rem 2rem; }
           .main-navigation .desktop-menu .menu li:last-child {
             padding: 0; }
           .main-navigation .desktop-menu .menu li a {

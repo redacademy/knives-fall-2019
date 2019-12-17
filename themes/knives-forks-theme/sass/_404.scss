@@ -25,13 +25,20 @@ p.error-message {
   text-align: center;
   margin: 0 auto;
   padding-top: 4%;
+  width: 50%;
 
   @include desktop {
     font-size: 1.25em;
-    width: 50%;
   }
 }
 
 .error-message span {
   font-weight: bold;
+}
+
+.home-btn {
+  margin-top: 25%;
+  @include desktop {
+    display: none;
+  }
 }

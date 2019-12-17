@@ -29,6 +29,8 @@ get_header(); ?>
 				<div class="error-message-container">
 					<p class="error-message"><span>Error 404</span> &mdash; Oh dear... It looks like the page you were looking for cannot be found.</p></div>
 
+					<div class="home-btn"><button class="btn-green btn">Home</button></div>
+
 
 				
 			</section><!-- .error-404 -->

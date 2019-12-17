@@ -1679,8 +1679,7 @@ h3.supported-by-title {
     display: -ms-flexbox;
     display: flex;
     max-width: 1140px;
-    margin: 0 auto;
-    padding: 2rem 0 0; }
+    margin: 0 auto; }
   .main-navigation .home-logo {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;

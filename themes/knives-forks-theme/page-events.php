@@ -46,7 +46,14 @@ get_header();
 		endif;
 		?>
 
-		<section class="video-section">
+
+<?php 
+$bg_color = get_field('video_background_color');
+?>
+
+		<section class="video-section" style="<?php echo  
+		'background: linear-gradient(to bottom,' . '#fff' . ' 25%,' . $bg_color . ' 25%)'
+		?>">
 
 
 		<div class="embed-container">

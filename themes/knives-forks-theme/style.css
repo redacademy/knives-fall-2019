@@ -483,8 +483,8 @@ h2.upcoming-events-location {
 
 .buy-tickets-btn {
   background: #fff;
-  color: #378244;
-  border: 3px solid #378244;
+  color: #00883f;
+  border: 3px solid #00883f;
   border-radius: 1.5em;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
@@ -493,6 +493,23 @@ h2.upcoming-events-location {
   text-decoration: none;
   margin: 2% 28%;
   padding: 12px;
+  width: 200px;
+  white-space: no-wrap; }
+
+.apply-to-pitch-btn {
+  background: #fff;
+  text-decoration: none;
+  color: #00883f;
+  border: 3px solid #00883f;
+  border-radius: 1.5em;
+  font-size: 0.9rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 2% 28%;
+  padding: 12px;
+  max-width: 34vw;
+  position: relative;
   width: 200px;
   white-space: no-wrap; }
 
@@ -515,8 +532,6 @@ h2.upcoming-events-location {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 96px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(242, 144, 97, 0.17)));
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 25%, rgba(242, 144, 97, 0.17) 25%);
   padding-bottom: 4rem;
   margin-bottom: 0rem; }
   @media all and (min-width: 1000px) {
@@ -757,11 +772,11 @@ p.error-message {
           justify-content: space-around;
       padding-left: 200px;
       padding-right: 200px;
-      border-top: 2px solid #e0dbdb;
+      border-top: 2px solid #a3a1a1;
       width: 1220px;
       margin-left: 5%;
       margin-right: 20%;
-      margin-bottom: 5%; } }
+      margin-bottom: 15%; } }
 
 .slowmoney-icon,
 .vancity-icon {
@@ -810,9 +825,12 @@ p.error-message {
       margin: 28%;
       margin-right: -275%; } }
 
+h3.initiative-title {
+  margin-bottom: 5%;
+  padding: 15px; }
+
 h3.initiative-title,
 h3.supported-by-title {
-  padding: 20px;
   font-family: "Lora", serif;
   font-size: 20px;
   text-align: center;
@@ -822,8 +840,7 @@ h3.supported-by-title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: black;
-  padding-bottom: 2em; }
+  color: black; }
   @media all and (min-width: 1000px) {
     h3.initiative-title,
     h3.supported-by-title {

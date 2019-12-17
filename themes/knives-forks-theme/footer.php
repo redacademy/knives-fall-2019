@@ -11,27 +11,66 @@
 </div><!-- #content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
+
+<?php if(is_front_page()): ?>
+
+
+<div>
+
+
+<section class="support-container">
+         <div>
+     <h3 class="initiative-title">An initiative by:</h3>
+
+
+     <div class="slowmoney-icon">
+
+<img class="slow-money" src='<?php echo get_stylesheet_directory_uri(); ?>/assets/homepage-images/Slowmoney@2x.png' alt='slowmoney-icon' />
+<div class="slowmoney-icon-bg"></div>
+</div>
+        </div>
+
+<div>
+
+<h3 class="supported-by-title">Generously supported by:</h3>
+
+
+<div class="vancity-icon">
+
+<img class="vancity" src='<?php echo get_stylesheet_directory_uri(); ?>/assets/homepage-images/vancitylogo@3x.png' alt='vancity-icon' />
+<div class="vancity-icon-bg"></div>
+		</div>
+
+<?php endif; ?>
+		
+
+
+
+
+</section>
+        </div>
+
 	<img class="cityline" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cityline/cityline.svg" alt="footer image">
 	<div class="site-info">
 		<div class="info-links">
 			<div>
-				<h4>our story</h4>
+				<h4><a href="<?php echo get_permalink(); ?>">our story</a></h4>
 				<p>We're <span>a</span> co-op</p>
-				<p>our investments</p>
+				<p><a href="#investment">our investments</a></p>
 				<p>why we do it</p>
 				<p>our team</p>
 			</div>
 			<div>
-				<h4>how <span>it</span> works</h4>
+				<h4><a href="<?php echo get_permalink(); ?>">how <span>it</span> works</a></h4>
 				<p>show me</p>
 			</div>
 			<div>
-				<h4>events</h4>
+				<h4><a href="<?php echo get_permalink(); ?>">events</a></h4>
 				<p>apply <span>to</span> pitch</p>
-				<p>past events</p>
+				<p>past events</a></p>
 			</div>
 			<div>
-				<h4>contact us</h4>
+				<h4><a href="<?php echo get_permalink(); ?>">contact us</a></h4>
 			</div>
 		</div><!-- end of .info-links -->
 		<div class="subscribe">

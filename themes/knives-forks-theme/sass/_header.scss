@@ -9,6 +9,10 @@
   z-index: $zdex + 99;
   // box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
   box-shadow: 0 1rem 2rem #fff;
+  @include desktop {
+    height: 68px;
+  }
+
   .nav-container {
     display: flex;
     // display: none;
@@ -111,10 +115,14 @@
               font-size: $fontsize * 0.8;
               display: inline-block;
               padding: $padding;
+              &:hover {
+                border-color: 2px solid $primary_green_med;
+                color: $primary_green_med;
+              }
             }
-          }
-        }
-      }
+          } // end of li:last-child
+        } // end of li
+      } // end of .menu
     } // end of .desktop-menu
   }
   // END OF DESKTOP MENU

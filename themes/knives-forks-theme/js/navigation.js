@@ -108,40 +108,54 @@
   })(container);
 })();
 
-// (function($) {
-//   //************DECLARATIONS and INSTANCES here */
-//   let scrollIndex = 0;
-//   let prevIndex = 0;
-//   let tmpBool = false;
-//   $(window).on('scroll', function() {
-//     // console.clear();
-//     scrollIndex = $(document).scrollTop();
-//     // console.log(scrollIndex);
-//     if (scrollIndex > 100 && scrollIndex < 130) {
-//       tmpBool = true;
-//       prevIndex = scrollIndex;
-//       // console.log('outside nav menu HEIGHT');
-//     } else if (scrollIndex < 100) {
-//       prevIndex = 0;
-//       tmpBool = false;
-//       // console.log('back to DEFAULT');
-//       return;
-//     }
+(function($) {
+  //************DECLARATIONS and INSTANCES here */
+  const thePage = getTerms(window.location.pathname);
+  let scrollIndex = 0;
+  let prevIndex = 0;
+  let tmpBool = false;
 
-//     if (scrollIndex > prevIndex) {
-//       if (tmpBool) {
-//         // console.log(scrollIndex + ' going DOWN! ' + prevIndex);
-//         $('.nav-container').fadeOut('fast');
-//       }
-//       tmpBool = false;
-//       prevIndex = scrollIndex;
-//     } else if (scrollIndex <= prevIndex) {
-//       if (!tmpBool) {
-//         // console.log(scrollIndex + ' going UP! ' + prevIndex);
-//         $('.nav-container').show('fast');
-//       }
-//       tmpBool = true;
-//       prevIndex = scrollIndex;
-//     }
-//   });
-// })(jQuery);
+  function getTerms(pathname) {
+    pathname = pathname.replace('/kf/', '');
+    pathname = pathname.replace('/', '');
+    return pathname;
+  }
+
+  if (thePage == 'apply-to-pitch') {
+    return;
+  }
+  $(window).on('scroll', function() {
+    // console.clear();
+    scrollIndex = $(document).scrollTop();
+    // console.log(scrollIndex);
+    if (scrollIndex > 100 && scrollIndex < 130) {
+      tmpBool = true;
+      prevIndex = scrollIndex;
+      // console.log('outside nav menu HEIGHT');
+    } else if (scrollIndex < 100) {
+      prevIndex = 0;
+      tmpBool = false;
+      // console.log('back to DEFAULT');
+      return;
+    }
+
+    if (scrollIndex > prevIndex) {
+      if (tmpBool) {
+        // console.log(scrollIndex + ' going DOWN! ' + prevIndex);
+        $('.main-navigation').fadeOut('fast');
+      }
+      tmpBool = false;
+      prevIndex = scrollIndex;
+    } else if (scrollIndex <= prevIndex) {
+      if (!tmpBool) {
+        // console.log(scrollIndex + ' going UP! ' + prevIndex);
+        $('.main-navigation').show('fast');
+      }
+      tmpBool = true;
+      prevIndex = scrollIndex;
+    } else {
+      tmpBool = false;
+      prevIndex = scrollIndex;
+    }
+  });
+})(jQuery);

@@ -54,9 +54,10 @@
   line-height: 2;
   padding-bottom: 5%;
 }
-.investor-section div .investor-bottom a {
+.investor-section div .investor-bottom .btn {
   width: 80%;
   margin: 0 auto;
+  text-shadow: unset;
 }
 .investor-section div .investor-bottom > * {
   width: 100%;

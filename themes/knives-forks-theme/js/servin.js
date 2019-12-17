@@ -20,10 +20,10 @@
     });
   }
   if (thePage !== 'events') {
-    $('.banner-content').css({
-      top: $('.banner').outerHeight() * 0.5
-    });
-  } else if (thePage === 'events') {
+    // $('.banner-content').css({
+    //   top: $('.banner').outerHeight() * 0.5
+    // });
+  } else if (thePage == 'events') {
     if ($userWidth >= 500) {
       $('.btn-event').appendTo('.banner-content');
       if ($userWidth <= 999) {

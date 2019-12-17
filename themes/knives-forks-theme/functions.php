@@ -86,23 +86,24 @@ function investors_block()
 			'name' => 'investor-profile',
 			'title' => __('Investor\'s Profile'),
 			'description' => __('A Custom Block for Investor\'s Profile'),
-			'render_callback'=>'acf_render_callback',
+			'render_callback' => 'acf_render_callback',
 			// 'render_template' => 'template-parts/blocks/content-business_investors.php',
 			'icon' => 'editor-paste-text',
 			'keywords' => array('investors', 'business_investors', 'investor_profile'),
-			'enqueue_style'=>get_template_directory_uri().'/template-parts/blocks/investor-profile.css'
+			'enqueue_style' => get_template_directory_uri() . '/template-parts/blocks/investor-profile.css'
 
 		));
 	}
 }
-function acf_render_callback( $block ) {
-	
+function acf_render_callback($block)
+{
+
 	// convert name ("acf/testimonial") into path friendly slug ("testimonial")
 	$slug = str_replace('acf/', '', $block['name']);
 
 	// include a template part from within the "template-parts/block" folder
-	if( file_exists( get_theme_file_path("/template-parts/blocks/content-{$slug}.php") ) ) {
-		include( get_theme_file_path("/template-parts/blocks/content-{$slug}.php") );
+	if (file_exists(get_theme_file_path("/template-parts/blocks/content-{$slug}.php"))) {
+		include(get_theme_file_path("/template-parts/blocks/content-{$slug}.php"));
 	}
 }
 
@@ -169,28 +170,33 @@ function apply_excerpt_length($length)
 add_filter('excerpt_length', 'apply_excerpt_length', 999);
 
 //****************CUSTOMIZED LOGIN STYLES BELOW */
-function kf_custom_login() {
-    wp_enqueue_style( 'custom-login-style', get_stylesheet_directory_uri() . '/sass/pages/login_styles/custom-login.css' );
-    wp_enqueue_script( 'custom-login-script', get_template_directory_uri(). '/sass/pages/login_styles/custom-login.js',array('jquery'), false, true );
+function kf_custom_login()
+{
+	wp_enqueue_style('custom-login-style', get_stylesheet_directory_uri() . '/sass/pages/login_styles/custom-login.css');
+	wp_enqueue_script('custom-login-script', get_template_directory_uri() . '/sass/pages/login_styles/custom-login.js', array('jquery'), false, true);
 }
-add_action( 'login_enqueue_scripts', 'kf_custom_login' );
-function my_login_logo_url() {
-    return home_url();
+add_action('login_enqueue_scripts', 'kf_custom_login');
+function my_login_logo_url()
+{
+	return home_url();
 }
-add_filter( 'login_headerurl', 'my_login_logo_url' );
+add_filter('login_headerurl', 'my_login_logo_url');
 
-function my_login_logo_url_title() {
-    return get_option('name');
+function my_login_logo_url_title()
+{
+	return get_option('name');
 }
-add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+add_filter('login_headertitle', 'my_login_logo_url_title');
 
-function my_login_logo() { 
+function my_login_logo()
+{
 	echo '<style type="text/css">
         .login-logo, #login h1 a, .login h1 a {
-            background-image: url('.get_template_directory_uri().'/assets/login/kf-logo-sideways.png);
+            background-image: url(' . get_template_directory_uri() . '/assets/login/kf-logo-sideways.png);
         }
-    </style>';}
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
+    </style>';
+}
+add_action('login_enqueue_scripts', 'my_login_logo');
 
 /**
  * Enqueue scripts and styles.
@@ -219,7 +225,7 @@ function red_starter_scripts()
 	$localize = array(
 		'invest_download_file' => get_field('agreement_document', get_the_ID())
 	);
-	wp_localize_script('script', 'knives_forks_vars', $localize);
+	wp_localize_script('script', 'knivesForksVars', $localize);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');

@@ -25,29 +25,30 @@ input {
   position: relative;
 
   .banner-content {
-    background: rgba(111, 143, 106, 0.76);
+    background: rgba(111, 143, 106, 0.66);
     position: absolute;
     display: flex;
     flex-flow: column nowrap;
-    width: 60%;
+    width: 57%;
     height: inherit;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding: 2%;
-    top: 20%;
+    // justify-content: center;
+    // align-content: center;
+    // align-items: center;
+    // padding: 2.5%;
+    // top: 20px;
     // transform: translateY(70vmin);
     h2 {
       color: white;
-      font-size: calc((4em - 100%) - 1.5vmin);
-      line-height: 1.2;
-      margin-left: 5%;
+      font-size: calc((4.5em - 100%) - 1.5vmin);
+      line-height: 1.5;
+      margin-left: 15%;
+      font-weight: 600;
     }
   }
 }
 .banner-img {
-  width: auto;
-  height: 60vmax;
+  // width: auto;
+  // height: 60vmax;
 
   img {
     object-fit: cover;

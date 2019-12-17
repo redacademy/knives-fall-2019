@@ -1657,8 +1657,8 @@ h3.supported-by-title {
   background-color: #fff;
   width: 100%;
   z-index: 99;
-  -webkit-box-shadow: 0 1rem 2rem #fff;
-          box-shadow: 0 1rem 2rem #fff; }
+  -webkit-box-shadow: 0 0.2rem 2rem #fff;
+          box-shadow: 0 0.2rem 2rem #fff; }
   @media all and (min-width: 1000px) {
     .main-navigation {
       height: 68px; } }
@@ -1667,8 +1667,7 @@ h3.supported-by-title {
     display: -ms-flexbox;
     display: flex;
     max-width: 1140px;
-    margin: 0 auto;
-    padding: 2rem 0 0; }
+    margin: 0 auto; }
   .main-navigation .home-logo {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -1677,7 +1676,7 @@ h3.supported-by-title {
       width: 230px; }
   .main-navigation .hamburger {
     font-size: 2rem;
-    padding: 1.5rem 1rem 0 0;
+    padding: 1.3rem 1rem 0 0;
     height: 35px; }
   .main-navigation .menu li {
     list-style: none; }
@@ -1729,9 +1728,9 @@ h3.supported-by-title {
         display: flex;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-        padding: 1rem 0 0; }
+        padding: 0.6rem 0 0; }
         .main-navigation .desktop-menu .menu li {
-          padding: 1rem 1rem; }
+          padding: 1rem 2rem; }
           .main-navigation .desktop-menu .menu li:last-child {
             padding: 0; }
           .main-navigation .desktop-menu .menu li a {
@@ -1780,6 +1779,8 @@ h3.supported-by-title {
             color: #fff; }
           .main-navigation .hidden-menu li a:hover {
             background-color: #90c194; } }
+  .main-navigation .desktop-menu .current-menu-item a {
+    border-bottom: 3px solid #296133; }
 
 .hide {
   display: none; }
@@ -2060,6 +2061,9 @@ h3.supported-by-title {
       -ms-flex-order: 4;
           order: 4;
   padding: 0 0 3rem; }
+  @media all and (max-width: 499px) {
+    .team {
+      background-color: transparent; } }
   .team h2 {
     text-align: center;
     font-size: 2.5rem; }

@@ -8,7 +8,7 @@
   width: 100%;
   z-index: $zdex + 99;
   // box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
-  box-shadow: 0 1rem 2rem #fff;
+  box-shadow: 0 0.2rem 2rem #fff;
   @include desktop {
     height: 68px;
   }
@@ -18,7 +18,6 @@
     // display: none;
     max-width: 1140px;
     margin: 0 auto;
-    padding: $padding * 2 0 0;
   }
 
   .home-logo {
@@ -29,7 +28,7 @@
   }
   .hamburger {
     font-size: $fontsize * 2;
-    padding: $padding * 1.5 $padding 0 0;
+    padding: $padding * 1.3 $padding 0 0;
     height: 35px;
   }
   .menu li {
@@ -95,9 +94,10 @@
       .menu {
         display: flex;
         justify-content: space-around;
-        padding: $padding 0 0;
+        padding: $padding * 0.6 0 0;
         li {
-          padding: $padding $padding;
+          padding: $padding $padding * 2;
+          font-size: $fontsize * 1.2;
           &:last-child {
             padding: 0;
           }
@@ -112,7 +112,7 @@
             a {
               color: #fff;
               font-weight: 100;
-              font-size: $fontsize * 0.8;
+              font-size: $fontsize;
               display: inline-block;
               padding: $padding;
               &:hover {
@@ -176,4 +176,9 @@
     }
   }
   // END OF HIDDEN MENU
+
+  //current menu item
+  .desktop-menu .current-menu-item a {
+    border-bottom: 3px solid $primary_green_med;
+  }
 } //end of main-navigation

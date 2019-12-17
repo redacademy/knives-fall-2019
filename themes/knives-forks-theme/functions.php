@@ -226,7 +226,7 @@ function red_starter_scripts()
 		'invest_download_file' => get_field('agreement_document', get_the_ID())
 	);
 	wp_localize_script('script', 'knivesForksVars', $localize);
-
+ 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}

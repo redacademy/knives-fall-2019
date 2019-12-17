@@ -34,7 +34,7 @@ input {
     display: flex;
     flex-flow: column nowrap;
     width: 70%;
-    height: auto;
+    //height: auto;
     @include desktop {
       bottom: 200px;
     }
@@ -60,7 +60,7 @@ input {
   }
 }
 .banner-img {
-  width: auto;
+  width: 100%;
   height: 60vmax;
 
   img {

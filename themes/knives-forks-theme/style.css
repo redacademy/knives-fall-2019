@@ -392,6 +392,9 @@ input {
        object-fit: cover;
     height: 100%;
     width: 100%; }
+    .banner-img img:before, .banner-img img:after {
+      -webkit-transition: ease-in-out 1s;
+      transition: ease-in-out 1s; }
     @media only screen and (min-width: 500px) and (max-width: 999px) {
       .banner-img img {
         height: 100vh; } }

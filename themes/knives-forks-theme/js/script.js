@@ -3,7 +3,6 @@
     $('.embed-container').fitVids();
 
     //***********instance and declarations */
-    const $userWidth = document.documentElement.clientWidth;
     // click the hamburger menu
     // VICTOR'S VARIABLES
     const burger = $('#hamburger');
@@ -27,11 +26,6 @@
 
     // add .btn to menu item
     investor.addClass('btn');
-    // create a new list item for the hidden menu and link to our investments
-    // when document is ready
-    // click the hamburger menu
-    // closing menu
-    // opens up & display menu items
     burger.click(function() {
       mobileMenu.removeClass('hide');
       hiddenMenu.removeClass('hide');
@@ -59,22 +53,12 @@
 
     //const thePage = getTerms(window.location.pathname);
 
-    //implement styling and element's position
-    if ($userWidth <= 499) {
-      //**********************************for MOBILE
-      // $('entry-content  ul  li:last-child()').append($('.how-btn'));
-      $('.how-btn').appendTo('.steps-list li:last-child()');
-      $('.how-img').appendTo('.steps-list li:last-child()');
-    }
-
     // BROOKE'S WORK BELOW
-
     //for downloading the memorandum of association
     $('.gform_page').on('click', '.download-agreement', function(event) {
       event.preventDefault();
-      window.open(knivesforks_vars.invest_download_file);
+      window.open(knives_forks_vars.invest_download_file);
     });
-
     // button stylings for make-a-pitch
     $('.gform_next_button').addClass('btn');
     $('.gform_previous_button').addClass('btn');
@@ -84,7 +68,7 @@
     const gFormCurrentPage = parseInt(
       $('.gf_step_active .gf_step_number').text()
     );
-    const gFormId = parseInt(
+    let gFormId = parseInt(
       $('.gform_wrapper')
         .attr('id')
         .replace('gform_wrapper_', '')
@@ -115,7 +99,7 @@
       //console.log($(gField).find('.filled').length);
       //   console.log($(group).find('.filled').length);
       //   console.log($inputsArea.length);
-      console.log($inputs.length);
+      // console.log($inputs.length);
       if (
         $(gField).find('.filled').length === $inputs.length &&
         $inputs.length > 0
@@ -138,25 +122,19 @@
     // make step progression sticky
 
     const stickySteps = $('.gf_page_steps');
-    let footerHeight = $('.site-footer').height();
-    let unstickPoint = $(document).height() - footerHeight;
-    // console.log(footerHeight);
-    // console.log($(document).height());
-    // console.log(unstickPoint);
+    const footerHeight = $('.site-footer').height();
+    const unstickPoint = $(document).height() - footerHeight;
 
     $(window).scroll(stickyProgression);
 
     function stickyProgression() {
       let scrollY = $(window).scrollTop();
-      //console.log(scrollY);
       if (0 < scrollY < unstickPoint) {
-        // console.log('sticking point');
         $(stickySteps).addClass('sticky');
       } else {
-        console.log('unstick');
+        // console.log('unstick');
         $(stickySteps).removeClass('sticky');
       }
-      //});
     }
     //=================
 

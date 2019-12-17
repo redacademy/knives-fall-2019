@@ -13,6 +13,9 @@
 <!-- <pre>
 <?php //print_r( $block ); ?>
 </pre> -->
+
+<div class="blurb-container">
+
 <?php
 $id = 'information-blurbs-' . $block['id'];
 if( !empty($block['anchor']) ) {
@@ -88,6 +91,7 @@ while (have_rows('make_a_pitch')) {
                 <img src="<?php echo $image['url'];?>">
             </figure>
         </section>
+        </div>
 <?php } ?>
 
  

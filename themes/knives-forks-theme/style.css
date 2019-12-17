@@ -247,7 +247,10 @@ p {
   border-radius: 2em;
   padding: 5px 2%;
   font-size: 1rem;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content; }
   .btn:hover {
     cursor: pointer;
     border: 1px solid #378244;

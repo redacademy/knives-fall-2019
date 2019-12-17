@@ -94,7 +94,7 @@
       .menu {
         display: flex;
         justify-content: space-around;
-        padding: $padding 0 0;
+        padding: $padding * 0.6 0 0;
         li {
           padding: $padding $padding;
           &:last-child {

@@ -1740,7 +1740,7 @@ h3.supported-by-title {
         display: flex;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-        padding: 1rem 0 0; }
+        padding: 0.6rem 0 0; }
         .main-navigation .desktop-menu .menu li {
           padding: 1rem 1rem; }
           .main-navigation .desktop-menu .menu li:last-child {

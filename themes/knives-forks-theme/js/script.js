@@ -27,11 +27,6 @@
 
     // add .btn to menu item
     investor.addClass('btn');
-    // create a new list item for the hidden menu and link to our investments
-    // when document is ready
-    // click the hamburger menu
-    // closing menu
-    // opens up & display menu items
     burger.click(function() {
       mobileMenu.removeClass('hide');
       hiddenMenu.removeClass('hide');
@@ -75,7 +70,7 @@
       window.open(knivesforks_vars.invest_download_file);
     });
 
-    // button stylings for make-a-pitch
+    // button stylings
     $('.gform_next_button').addClass('btn');
     $('.gform_previous_button').addClass('btn');
     $('.gform_button').addClass('btn');
@@ -162,10 +157,6 @@
     function checkInputs(gField) {
       const $inputs = $(gField).find('input:not(.button):not([type="hidden"])');
       const $inputsArea = $(this).find('textarea');
-      // console.log($inputs.length);
-      //console.log($(gField).find('.filled').length);
-      //   console.log($(group).find('.filled').length);
-      //   console.log($inputsArea.length);
       console.log($inputs.length);
       if (
         $(gField).find('.filled').length === $inputs.length &&
@@ -208,25 +199,19 @@
     // make step progression sticky
 
     const stickySteps = $('.gf_page_steps');
-    let footerHeight = $('.site-footer').height();
-    let unstickPoint = $(document).height() - footerHeight;
-    // console.log(footerHeight);
-    // console.log($(document).height());
-    // console.log(unstickPoint);
+    const footerHeight = $('.site-footer').height();
+    const unstickPoint = $(document).height() - footerHeight;
 
     $(window).scroll(stickyProgression);
 
     function stickyProgression() {
       let scrollY = $(window).scrollTop();
-      //console.log(scrollY);
       if (0 < scrollY < unstickPoint) {
-        // console.log('sticking point');
         $(stickySteps).addClass('sticky');
       } else {
         console.log('unstick');
         $(stickySteps).removeClass('sticky');
       }
-      //});
     }
     //=================
 

@@ -1779,6 +1779,8 @@ h3.supported-by-title {
             color: #fff; }
           .main-navigation .hidden-menu li a:hover {
             background-color: #90c194; } }
+  .main-navigation .desktop-menu .current-menu-item a {
+    border-bottom: 3px solid #296133; }
 
 .hide {
   display: none; }

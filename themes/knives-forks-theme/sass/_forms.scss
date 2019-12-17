@@ -1,16 +1,16 @@
 //**************Button styles
 .btn {
-  background: $primary_green_dark;
+  background: $primary_green_med;
   color: white;
-  border: 1px solid $primary_green_dark;
+  border: 1px solid $primary_green_med;
   border-radius: 2em;
-  padding: 2%;
+  padding: 5px 2%;
   font-size: $fontsize;
   font-family: $parafont;
   &:hover {
     cursor: pointer;
-    border: 1px solid $primary_green_dark;
-    color: $primary_green_dark;
+    border: 1px solid $primary_green_med;
+    color: $primary_green_med;
     background: white;
     font-weight: 500;
   }

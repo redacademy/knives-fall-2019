@@ -97,6 +97,7 @@
         padding: $padding * 0.6 0 0;
         li {
           padding: $padding $padding * 2;
+          font-size: $fontsize * 1.2;
           &:last-child {
             padding: 0;
           }
@@ -111,7 +112,7 @@
             a {
               color: #fff;
               font-weight: 100;
-              font-size: $fontsize * 0.8;
+              font-size: $fontsize;
               display: inline-block;
               padding: $padding;
               &:hover {
@@ -175,4 +176,9 @@
     }
   }
   // END OF HIDDEN MENU
+
+  //current menu item
+  .desktop-menu .current-menu-item a {
+    border-bottom: 3px solid $primary_green_med;
+  }
 } //end of main-navigation

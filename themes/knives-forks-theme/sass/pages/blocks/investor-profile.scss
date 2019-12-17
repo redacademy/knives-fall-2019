@@ -52,9 +52,10 @@
     .investor-bottom {
       line-height: 2;
       padding-bottom: 5%;
-      a {
+      .btn {
         width: 80%;
         margin: 0 auto;
+        text-shadow: unset;
       }
       & > * {
         width: 100%;

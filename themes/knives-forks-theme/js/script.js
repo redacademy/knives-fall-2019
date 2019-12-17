@@ -90,7 +90,58 @@
         .replace('gform_wrapper_', '')
     );
     const gField = '#gform_page_' + gFormId + '_' + gFormCurrentPage;
-    $(gField).addClass('icon-default');
+
+    //$(gField).addClass('icon-default');
+
+    switch (gField) {
+      //name
+      case '#gform_page_3_1':
+      case '#gform_page_1_1':
+      case '#gform_page_4_1':
+        console.log('name');
+        $(gField).addClass('gform_name');
+        break;
+
+      //email
+      case '#gform_page_3_2':
+      case '#gform_page_1_2':
+      case '#gform_page_4_2':
+        $(gField).addClass('gform_email');
+        break;
+      //business adress
+      case '#gform_page_1_3':
+        $(gField).addClass('gform_home');
+        break;
+      //phone
+      case '#gform_page_1_4':
+        $(gField).addClass('gform_phone');
+        break;
+      //company name
+      case '#gform_page_1_5':
+        $(gField).addClass('gform_company');
+        break;
+      //details
+      case '#gform_page_1_6':
+        $(gField).addClass('gform_details');
+        break;
+      //application form
+      case '#gform_page_3_3':
+      case '#gform_page_4_3':
+        $(gField).addClass('gform_application');
+        break;
+      //memorandum
+      case '#gform_page_3_4':
+      case '#gform_page_4_4':
+        $(gField).addClass('gform_memo');
+        break;
+      //fee
+      case '#gform_page_3_5':
+      case '#gform_page_4_5':
+        $(gField).addClass('gform_fee');
+        break;
+      default:
+        $(gField).addClass('gform_appliation');
+    }
 
     $(document).on(
       'blur',
@@ -120,20 +171,39 @@
         $(gField).find('.filled').length === $inputs.length &&
         $inputs.length > 0
       ) {
-        $(gField)
-          .removeClass('icon-default')
-          .addClass('icon-complete');
+        $(gField).addClass('gform_check');
       } else if (
         $(gField).find('.filled').length === $inputsArea.length &&
         $inputsArea.length > 0
       ) {
-        $(gField)
-          .removeClass('icon-default')
-          .addClass('icon-complete');
+        $(gField).addClass('gform_check');
       } else {
         $(gField).removeClass('icon-complete');
       }
     }
+
+    // function checkInputs(gField) {
+    //   const $inputs = $(gField).find('input:not(.button):not([type="hidden"])');
+    //   const $inputsArea = $(this).find('textarea');
+    //   //console.log($inputs.length);
+    //   if (
+    //     $(gField).find('.filled').length === $inputs.length &&
+    //     $inputs.length > 0
+    //   ) {
+    //     $(gField)
+    //       .removeClass('icon-default')
+    //       .addClass('icon-complete');
+    //   } else if (
+    //     $(gField).find('.filled').length === $inputsArea.length &&
+    //     $inputsArea.length > 0
+    //   ) {
+    //     $(gField)
+    //       .removeClass('icon-default')
+    //       .addClass('icon-complete');
+    //   } else {
+    //     $(gField).removeClass('icon-complete');
+    //   }
+    // }
 
     // make step progression sticky
 

@@ -142,14 +142,14 @@
     if (scrollIndex > prevIndex) {
       if (tmpBool) {
         // console.log(scrollIndex + ' going DOWN! ' + prevIndex);
-        $('.nav-container').fadeOut('fast');
+        $('.main-navigation').fadeOut('fast');
       }
       tmpBool = false;
       prevIndex = scrollIndex;
     } else if (scrollIndex <= prevIndex) {
       if (!tmpBool) {
         // console.log(scrollIndex + ' going UP! ' + prevIndex);
-        $('.nav-container').show('fast');
+        $('.main-navigation').show('fast');
       }
       tmpBool = true;
       prevIndex = scrollIndex;

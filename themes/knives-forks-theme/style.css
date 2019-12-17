@@ -1369,7 +1369,8 @@ h3.supported-by-title {
       .gform_wrapper form .gf_page_steps .gf_step .gf_step_number {
         display: none; }
       .gform_wrapper form .gf_page_steps .gf_step .gf_step_label {
-        padding: 2px 5px; }
+        padding: 2px 5px;
+        text-align: right; }
     .gform_wrapper form .gf_page_steps .gf_step_active {
       background-color: #296133;
       height: 12px;
@@ -1426,60 +1427,6 @@ h3.supported-by-title {
               flex-direction: column; }
       .gform_wrapper form .gform_page .gform_fields textarea {
         border-radius: 5px; }
-  .gform_wrapper form .icon-default::before {
-    background-image: url("../../assets/icons/Forms - Unfilled/unfilled-name.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    content: 'abc';
-    font-size: 10rem;
-    color: rgba(0, 0, 0, 0);
-    display: block;
-    position: relative;
-    top: 0px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
-    @media only screen and (min-width: 500px) and (max-width: 999px) {
-      .gform_wrapper form .icon-default::before {
-        width: 60%; } }
-    @media all and (min-width: 1000px) {
-      .gform_wrapper form .icon-default::before {
-        height: 200px;
-        width: 33%;
-        display: block;
-        position: relative;
-        top: 0px; } }
-  .gform_wrapper form .icon-complete::before {
-    background-image: url("../../assets/icons/Forms - filled/filled-name.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    content: 'abc';
-    font-size: 10rem;
-    color: rgba(0, 0, 0, 0);
-    display: block;
-    position: relative;
-    top: 0px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
-    @media only screen and (min-width: 500px) and (max-width: 999px) {
-      .gform_wrapper form .icon-complete::before {
-        width: 60%; } }
-    @media all and (min-width: 1000px) {
-      .gform_wrapper form .icon-complete::before {
-        height: 200px;
-        width: 33%;
-        display: block;
-        position: relative;
-        top: 0px; } }
-    .gform_wrapper form .icon-complete::before:nth-of-type(2) {
-      background-image: url("../../assets/icons/Forms - filled/filled-email.svg"); }
-  .gform_wrapper form .validation_error {
-    display: none; }
 
 .gform_confirmation_message {
   width: 80%;
@@ -1491,10 +1438,115 @@ h3.supported-by-title {
     height: auto; }
     @media only screen and (min-width: 500px) and (max-width: 999px) {
       .gform_confirmation_message .thank-you-icon {
-        width: 40%; } }
+        width: 30%; } }
     @media all and (min-width: 1000px) {
       .gform_confirmation_message .thank-you-icon {
-        width: 40%; } }
+        width: 25%; } }
+  .gform_confirmation_message .thank-you-header {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem; }
+  .gform_confirmation_message .thank-you-text {
+    font-size: 1.5rem;
+    font-weight: 100; }
+
+.gform_name::before,
+.gform_email::before,
+.gform_address::before,
+.gform_phone::before,
+.gform_company::before,
+.gform_details::before,
+.gform_application::before,
+.gform_memo::before,
+.gform_fee::before {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  content: 'abc';
+  font-size: 10rem;
+  color: rgba(0, 0, 0, 0);
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+  @media only screen and (min-width: 500px) and (max-width: 999px) {
+    .gform_name::before,
+    .gform_email::before,
+    .gform_address::before,
+    .gform_phone::before,
+    .gform_company::before,
+    .gform_details::before,
+    .gform_application::before,
+    .gform_memo::before,
+    .gform_fee::before {
+      width: 60%; } }
+  @media all and (min-width: 1000px) {
+    .gform_name::before,
+    .gform_email::before,
+    .gform_address::before,
+    .gform_phone::before,
+    .gform_company::before,
+    .gform_details::before,
+    .gform_application::before,
+    .gform_memo::before,
+    .gform_fee::before {
+      height: 200px;
+      width: 33%;
+      display: block;
+      position: relative;
+      top: 0px; } }
+
+.gform_name::before {
+  background-image: url("../../assets/icons/Forms - unfilled/unfilled-name.svg"); }
+
+.gform_email::before {
+  background-image: url("../../assets/icons/Forms - unfilled/unfilled-email.svg"); }
+
+.gform_address::before {
+  background-image: url("../../assets/icons/Forms - unfilled/unfilled-home.svg"); }
+
+.gform_phone::before {
+  background-image: url("../../assets/icons/Forms - unfilled/unfilled-phone.svg"); }
+
+.gform_company::before {
+  background-image: url("../../assets/icons/Forms - unfilled/unfilled-business.svg"); }
+
+.gform_details::before {
+  background-image: url("../../assets/icons/Forms - unfilled/unfilled-rules.svg"); }
+
+.gform_application::before {
+  background-image: url("../../assets/icons/Forms - unfilled/unfilled-application.svg"); }
+
+.gform_memo::before {
+  background-image: url("../../assets/icons/Forms - unfilled/unfilled-rules.svg"); }
+
+.gform_fee::before {
+  background-image: url("../../assets/icons/Forms - unfilled/unfilled-payment.svg"); }
+
+.gform_check::after {
+  content: '\f00c';
+  font-family: 'Font Awesome 5 Free';
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  color: #378244;
+  font-size: 110px;
+  font-weight: 900; }
+  @media only screen and (min-width: 500px) and (max-width: 999px) {
+    .gform_check::after {
+      top: 225px;
+      left: 75%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); } }
+  @media all and (min-width: 1000px) {
+    .gform_check::after {
+      font-size: 100px;
+      top: 225px;
+      left: 72%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); } }
 
 .page-contact-us {
   width: 100%;

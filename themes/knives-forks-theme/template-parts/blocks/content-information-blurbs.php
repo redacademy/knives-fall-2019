@@ -14,7 +14,7 @@
 <?php //print_r( $block ); ?>
 </pre> -->
 
-<div class="blurb-container">
+<!-- <div class="blurb-container"> -->
 
 <?php
 $id = 'information-blurbs-' . $block['id'];
@@ -91,7 +91,7 @@ while (have_rows('make_a_pitch')) {
                 <img src="<?php echo $image['url'];?>">
             </figure>
         </section>
-        </div>
+        <!--</div> -->
 <?php } ?>
 
  

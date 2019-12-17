@@ -2046,7 +2046,12 @@ h3.supported-by-title {
         height: 150px;
         -o-object-fit: cover;
            object-fit: cover;
-        border-radius: 5rem; }
+        border-radius: 50%; }
+        @media all and (min-width: 1000px) {
+          .team .team-grid .team-member .portrait {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; } }
       .team .team-grid .team-member .desc {
         padding: 1rem 0; }
         .team .team-grid .team-member .desc p {

@@ -60,7 +60,12 @@
         width: 150px;
         height: 150px;
         object-fit: cover;
-        border-radius: 5rem;
+        border-radius: 50%;
+        @include desktop {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+        }
       }
       .desc {
         padding: $padding 0;

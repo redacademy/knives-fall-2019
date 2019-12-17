@@ -60,7 +60,7 @@ echo '<section class="'.$className.'-section" >
         </blockquote>
         <div class="'.$className.'-bottom">
                 <h2 class="entry-title">
-                Want to see your business here
+                Want to see your business here?
             </h2>
             <a href="#" alt="apply-to-pitch" class="btn">
                 Apply to Pitch
@@ -70,4 +70,3 @@ echo '<section class="'.$className.'-section" >
 </section>';
 
                 }
-?>

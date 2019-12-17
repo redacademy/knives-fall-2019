@@ -1,5 +1,8 @@
 .team {
   order: 4;
+  @include mobile {
+    margin: $margin * 3.125 0 0;
+  }
   h2 {
     text-align: center;
     font-size: $fontsize * 2.5;

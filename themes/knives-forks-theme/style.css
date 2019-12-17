@@ -2001,6 +2001,9 @@ h3.supported-by-title {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4; }
+  @media all and (max-width: 499px) {
+    .team {
+      margin: 3.125rem 0 0; } }
   .team h2 {
     text-align: center;
     font-size: 2.5rem; }

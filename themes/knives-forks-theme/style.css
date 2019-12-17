@@ -1952,11 +1952,11 @@ h3.supported-by-title {
     .copy-text {
       line-height: 1.12rem; } }
 
-.blurb-container section {
+section {
   position: relative; }
-  .blurb-container section:nth-of-type(1):after {
+  section:nth-of-type(1):after {
     display: none; }
-  .blurb-container section:after {
+  section:after {
     border-top: 1px solid #a3a1a1;
     width: 1240px;
     height: 20px;
@@ -1967,12 +1967,12 @@ h3.supported-by-title {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
 
-.page-our-story .blurb-container section {
+.page-our-story section {
   position: relative; }
-  .page-our-story .blurb-container section:after {
+  .page-our-story section:after {
     display: none; }
 
-.page-our-story .blurb-container:after {
+.page-our-story:after {
   border-top: 1px solid #a3a1a1;
   width: 1240px;
   height: 20px;
@@ -2022,7 +2022,7 @@ h3.supported-by-title {
       .custom-copy-block .copy-block-content .copy-block-text {
         position: relative;
         top: -60px;
-        width: 100%; } }
+        width: 90%; } }
     @media all and (min-width: 1000px) {
       .custom-copy-block .copy-block-content .copy-block-text .copy-title {
         position: relative; } }

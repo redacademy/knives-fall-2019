@@ -22,12 +22,12 @@
     $('.banner-content').css({
       top: $('.banner').outerHeight() * 0.5
     });
-  } else if (thePage == 'events') {
+  } else if (thePage === 'events') {
     if ($userWidth >= 500) {
       $('.btn-event').appendTo('.banner-content');
       if ($userWidth <= 999) {
         $('.banner-content').css({
-          top: $('.banner').outerHeight() * 0.4
+          top: $('.banner').outerHeight() * 0.2
         });
       }
     }

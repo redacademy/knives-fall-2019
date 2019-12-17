@@ -3,6 +3,7 @@
   const $userWidth = document.documentElement.clientWidth;
   const thePage = getTerms(window.location.pathname);
 
+  // console.log(window.location.pathname);
   function getTerms(pathname) {
     pathname = pathname.replace('/kf/', '');
     pathname = pathname.replace('/', '');

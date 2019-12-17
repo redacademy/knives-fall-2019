@@ -68,7 +68,7 @@ $testimonials=get_posts($args);
             </ul>
            
             <a href="#" class="btn how-btn">Become a Member</a>
-            <a href="#" class="btn how-btn">Become an Entrepreneur</a>
+            <a href="#" class="btn how-btn">Become Entrepreneur</a>
         </nav>
         <img src="<?=get_field('how-img');?>" alt="how-it-works-hands" class="how-img">
     </div><!-- .entry-content -->

@@ -18,7 +18,7 @@ input {
 }
 //*******************FEATURED BANNER IMAGE for each page
 .banner {
-  margin-top: 10%;
+  margin-top: 5%;
   width: 100%;
   display: block;
   height: inherit;
@@ -28,7 +28,7 @@ input {
   }
 
   .banner-content {
-    background: rgba(111, 143, 106, 0.75);
+    background: rgba(111, 143, 106, 0.76);
     position: absolute;
     bottom: 100px;
     display: flex;
@@ -60,8 +60,8 @@ input {
   }
 }
 .banner-img {
-  // width: auto;
-  // height: 60vmax;
+  width: auto;
+  height: 60vmax;
 
   img {
     object-fit: cover;

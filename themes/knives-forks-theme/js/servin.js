@@ -1,13 +1,13 @@
-//***********SERvin instances and declarations */
-const $userWidth = document.documentElement.clientWidth;
-const thePage = getTerms(window.location.pathname);
-
-function getTerms(pathname) {
-  pathname = pathname.replace('/kf/', '');
-  pathname = pathname.replace('/', '');
-  return pathname;
-}
 (function($) {
+  //***********SERvin instances and declarations */
+  const $userWidth = document.documentElement.clientWidth;
+  const thePage = getTerms(window.location.pathname);
+
+  function getTerms(pathname) {
+    pathname = pathname.replace('/kf/', '');
+    pathname = pathname.replace('/', '');
+    return pathname;
+  }
   //implement styling and element's position
   if ($userWidth <= 499) {
     //**********************************for MOBILE
@@ -27,7 +27,7 @@ function getTerms(pathname) {
       $('.btn-event').appendTo('.banner-content');
       if ($userWidth <= 999) {
         $('.banner-content').css({
-          top: $('.banner').outerHeight() * 0.4
+          top: $('.banner').outerHeight() * 0.2
         });
       }
     }

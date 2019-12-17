@@ -3,7 +3,6 @@
     $('.embed-container').fitVids();
 
     //***********instance and declarations */
-    const $userWidth = document.documentElement.clientWidth;
     // click the hamburger menu
     // VICTOR'S VARIABLES
     const burger = $('#hamburger');
@@ -54,23 +53,13 @@
 
     //const thePage = getTerms(window.location.pathname);
 
-    //implement styling and element's position
-    if ($userWidth <= 499) {
-      //**********************************for MOBILE
-      // $('entry-content  ul  li:last-child()').append($('.how-btn'));
-      $('.how-btn').appendTo('.steps-list li:last-child()');
-      $('.how-img').appendTo('.steps-list li:last-child()');
-    }
-
     // BROOKE'S WORK BELOW
-
     //for downloading the memorandum of association
     $('.gform_page').on('click', '.download-agreement', function(event) {
       event.preventDefault();
-      window.open(knivesforks_vars.invest_download_file);
+      window.open(knives_forks_vars.invest_download_file);
     });
-
-    // button stylings
+    // button stylings for make-a-pitch
     $('.gform_next_button').addClass('btn');
     $('.gform_previous_button').addClass('btn');
     $('.gform_button').addClass('btn');
@@ -79,64 +68,13 @@
     const gFormCurrentPage = parseInt(
       $('.gf_step_active .gf_step_number').text()
     );
-    const gFormId = parseInt(
+    let gFormId = parseInt(
       $('.gform_wrapper')
         .attr('id')
         .replace('gform_wrapper_', '')
     );
     const gField = '#gform_page_' + gFormId + '_' + gFormCurrentPage;
-
-    //$(gField).addClass('icon-default');
-
-    switch (gField) {
-      //name
-      case '#gform_page_3_1':
-      case '#gform_page_1_1':
-      case '#gform_page_4_1':
-        console.log('name');
-        $(gField).addClass('gform_name');
-        break;
-
-      //email
-      case '#gform_page_3_2':
-      case '#gform_page_1_2':
-      case '#gform_page_4_2':
-        $(gField).addClass('gform_email');
-        break;
-      //business adress
-      case '#gform_page_1_3':
-        $(gField).addClass('gform_home');
-        break;
-      //phone
-      case '#gform_page_1_4':
-        $(gField).addClass('gform_phone');
-        break;
-      //company name
-      case '#gform_page_1_5':
-        $(gField).addClass('gform_company');
-        break;
-      //details
-      case '#gform_page_1_6':
-        $(gField).addClass('gform_details');
-        break;
-      //application form
-      case '#gform_page_3_3':
-      case '#gform_page_4_3':
-        $(gField).addClass('gform_application');
-        break;
-      //memorandum
-      case '#gform_page_3_4':
-      case '#gform_page_4_4':
-        $(gField).addClass('gform_memo');
-        break;
-      //fee
-      case '#gform_page_3_5':
-      case '#gform_page_4_5':
-        $(gField).addClass('gform_fee');
-        break;
-      default:
-        $(gField).addClass('gform_appliation');
-    }
+    $(gField).addClass('icon-default');
 
     $(document).on(
       'blur',
@@ -157,44 +95,29 @@
     function checkInputs(gField) {
       const $inputs = $(gField).find('input:not(.button):not([type="hidden"])');
       const $inputsArea = $(this).find('textarea');
-      console.log($inputs.length);
+      // console.log($inputs.length);
+      //console.log($(gField).find('.filled').length);
+      //   console.log($(group).find('.filled').length);
+      //   console.log($inputsArea.length);
+      // console.log($inputs.length);
       if (
         $(gField).find('.filled').length === $inputs.length &&
         $inputs.length > 0
       ) {
-        $(gField).addClass('gform_check');
+        $(gField)
+          .removeClass('icon-default')
+          .addClass('icon-complete');
       } else if (
         $(gField).find('.filled').length === $inputsArea.length &&
         $inputsArea.length > 0
       ) {
-        $(gField).addClass('gform_check');
+        $(gField)
+          .removeClass('icon-default')
+          .addClass('icon-complete');
       } else {
         $(gField).removeClass('icon-complete');
       }
     }
-
-    // function checkInputs(gField) {
-    //   const $inputs = $(gField).find('input:not(.button):not([type="hidden"])');
-    //   const $inputsArea = $(this).find('textarea');
-    //   //console.log($inputs.length);
-    //   if (
-    //     $(gField).find('.filled').length === $inputs.length &&
-    //     $inputs.length > 0
-    //   ) {
-    //     $(gField)
-    //       .removeClass('icon-default')
-    //       .addClass('icon-complete');
-    //   } else if (
-    //     $(gField).find('.filled').length === $inputsArea.length &&
-    //     $inputsArea.length > 0
-    //   ) {
-    //     $(gField)
-    //       .removeClass('icon-default')
-    //       .addClass('icon-complete');
-    //   } else {
-    //     $(gField).removeClass('icon-complete');
-    //   }
-    // }
 
     // make step progression sticky
 
@@ -209,7 +132,7 @@
       if (0 < scrollY < unstickPoint) {
         $(stickySteps).addClass('sticky');
       } else {
-        console.log('unstick');
+        // console.log('unstick');
         $(stickySteps).removeClass('sticky');
       }
     }

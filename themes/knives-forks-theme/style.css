@@ -1905,16 +1905,17 @@ h3.supported-by-title {
       font-size: 2.5rem; } }
 
 .copy-subtitle {
-  color: #296133;
-  font-size: 1.25rem; }
+  color: #00883f;
+  font-size: 1.25rem;
+  font-weight: 500; }
 
 .copy-text {
-  font-weight: 100;
+  font-weight: "Lato", sans-serif;
   line-height: 1rem;
   text-align: unset; }
   @media all and (min-width: 1000px) {
     .copy-text {
-      line-height: 1.5rem; } }
+      line-height: 1.12rem; } }
 
 .site-content section:before {
   border-top: 1px solid gray; }
@@ -1930,7 +1931,7 @@ h3.supported-by-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 100px; }
+  margin-top: 60px; }
   @media all and (min-width: 1000px) {
     .custom-copy-block {
       -webkit-box-orient: horizontal;

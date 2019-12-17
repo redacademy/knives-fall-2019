@@ -6,15 +6,16 @@
   }
 }
 .copy-subtitle {
-  color: $primary_green_dark;
+  color: $primary_green_light;
   font-size: 1.25rem;
+  font-weight: 500;
 }
 .copy-text {
-  font-weight: $font_weight_body;
+  font-weight: $parafont;
   line-height: 1rem;
   text-align: unset;
   @include desktop {
-    line-height: 1.5rem;
+    line-height: 1.12rem;
   }
 }
 .site-content {
@@ -31,7 +32,7 @@
 .custom-copy-block {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 60px;
 
   @include desktop {
     flex-direction: row;

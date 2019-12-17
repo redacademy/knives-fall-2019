@@ -67,10 +67,10 @@ input {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    // @include tablet {
-    //   height: 100vw;
-    //   width: auto;
-    // }
+    &:before,
+    &:after {
+      transition: ease-in-out 1s;
+    }
     @include tablet {
       height: 100vh;
     }

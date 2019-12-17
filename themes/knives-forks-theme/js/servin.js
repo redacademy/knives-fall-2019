@@ -3,10 +3,13 @@
   const $userWidth = document.documentElement.clientWidth;
   const thePage = getTerms(window.location.pathname);
 
-  // console.log(window.location.pathname);
   function getTerms(pathname) {
-    pathname = pathname.replace('/kf/', '');
-    pathname = pathname.replace('/', '');
+    if (window.location.protocol == 'https:') {
+      pathname = pathname.replace('/', '');
+    } else {
+      pathname = pathname.replace('/kf/', '');
+      pathname = pathname.replace('/', '');
+    }
     return pathname;
   }
   //implement styling and element's position

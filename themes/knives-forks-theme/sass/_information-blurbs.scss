@@ -18,16 +18,11 @@
     line-height: 1.12rem;
   }
 }
-.blurb-container {
-  section {
-    position: relative;
+//.blurb-container {
+section {
+  position: relative;
 
-    &:nth-of-type(1) {
-      &:after {
-        display: none;
-      }
-    }
-
+<<<<<<< HEAD
     &:last-child {
       &::before {
         @include desktop {
@@ -56,9 +51,30 @@
       }
     }
   }
+=======
+  &:nth-of-type(1) {
+    &:after {
+      display: none;
+    }
+  }
+
+  &:after {
+    border-top: 1px solid #a3a1a1;
+    width: 1240px;
+    height: 20px;
+    content: '';
+    top: -50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+//}
+>>>>>>> 88a04a1234ddc8d4fa531b9cc5c05112e5643c4e
 
   // TO DO:  THERE MIGHT BE AN EASIER WAY TO DO THIS IF SO PLEASE LMK!
 
+<<<<<<< HEAD
   .page-our-story {
     .blurb-container {
       section {
@@ -79,8 +95,29 @@
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
+=======
+.page-our-story {
+  //.blurb-container {
+  section {
+    position: relative;
+
+    &:after {
+      display: none;
+>>>>>>> 88a04a1234ddc8d4fa531b9cc5c05112e5643c4e
     }
   }
+
+  &:after {
+    border-top: 1px solid #a3a1a1;
+    width: 1240px;
+    height: 20px;
+    content: '';
+    top: -50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  //}
 }
 
 .custom-copy-block {
@@ -112,7 +149,7 @@
       @include desktop {
         position: relative;
         top: -60px;
-        width: 100%;
+        width: 90%;
       }
       .copy-title {
         @include desktop {

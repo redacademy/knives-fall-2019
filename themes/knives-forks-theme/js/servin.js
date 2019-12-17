@@ -1,13 +1,13 @@
-//***********SERvin instances and declarations */
-const $userWidth = document.documentElement.clientWidth;
-const thePage = getTerms(window.location.pathname);
-
-function getTerms(pathname) {
-  pathname = pathname.replace('/kf/', '');
-  pathname = pathname.replace('/', '');
-  return pathname;
-}
 (function($) {
+  //***********SERvin instances and declarations */
+  const $userWidth = document.documentElement.clientWidth;
+  const thePage = getTerms(window.location.pathname);
+
+  function getTerms(pathname) {
+    pathname = pathname.replace('/kf/', '');
+    pathname = pathname.replace('/', '');
+    return pathname;
+  }
   //implement styling and element's position
   if ($userWidth <= 499) {
     //**********************************for MOBILE
@@ -19,15 +19,15 @@ function getTerms(pathname) {
     });
   }
   if (thePage !== 'events') {
-    $('.banner-content').css({
-      top: $('.banner').outerHeight() * 0.5
-    });
+    // $('.banner-content').css({
+    //   top: $('.banner').outerHeight() * 0.5
+    // });
   } else if (thePage == 'events') {
     if ($userWidth >= 500) {
       $('.btn-event').appendTo('.banner-content');
       if ($userWidth <= 999) {
         $('.banner-content').css({
-          top: $('.banner').outerHeight() * 0.4
+          top: $('.banner').outerHeight() * 0.2
         });
       }
     }

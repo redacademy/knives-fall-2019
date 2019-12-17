@@ -18,6 +18,8 @@
   width: 100%;
   position: absolute;
   z-index: -1;
+  height: 100%;
+  object-fit: cover;
 }
 .investor-section div {
   width: 70%;

@@ -121,7 +121,7 @@
     return pathname;
   }
 
-  if (thePage == 'apply-to-pitch') {
+  if (thePage === 'apply-to-pitch') {
     return;
   }
   $(window).on('scroll', function() {
@@ -149,7 +149,7 @@
     } else if (scrollIndex <= prevIndex) {
       if (!tmpBool) {
         // console.log(scrollIndex + ' going UP! ' + prevIndex);
-        $('.main-navigation').show('fast');
+        $('.main-navigation').fadeIn('fast');
       }
       tmpBool = true;
       prevIndex = scrollIndex;

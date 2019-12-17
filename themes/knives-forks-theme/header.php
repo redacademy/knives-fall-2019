@@ -54,17 +54,31 @@
 			<?php
 
 			if (is_page('how-it-works') || is_front_page() || is_page('our-story')) { //START for BANNER's featured IMAGE with sayings
+				// echo '
+				
+				// 	<section class="banner">
+				// 		<nav class="banner-img">';
+				// the_post_thumbnail('full');
+				// echo '	</nav>
+				// 		<nav class="banner-content">
+				// 			<h2>
+				// 				'. get_field('banner-description') .'
+				// 			</h2>
+				// 		</nav>
+				// 	</section>
+				// 	';
+
 				echo '
 				
 					<section class="banner">
 						<nav class="banner-img">';
 				the_post_thumbnail('full');
-				echo '	</nav>
-						<nav class="banner-content">
-							<h2>
-								'. get_field('banner-description') .'
-							</h2>
-						</nav>
+				echo '	<nav class="banner-content">
+				<h2>
+					'. get_field('banner-description') .'
+				</h2>
+			</nav> </nav>
+						
 					</section>
 					';
 			} else if (is_page('events')) {

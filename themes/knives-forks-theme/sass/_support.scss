@@ -9,11 +9,11 @@
     justify-content: space-around;
     padding-left: 200px;
     padding-right: 200px;
-    border-top: 2px solid #a3a1a1;
+    border-top: 2px solid #e0dbdb;
     width: 1220px;
     margin-left: 5%;
     margin-right: 20%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
 }
 .slowmoney-icon,
@@ -63,21 +63,16 @@
   }
 }
 
-h3.initiative-title {
-  margin-bottom: 5%;
-  padding: 15px;
-}
-
 h3.initiative-title,
 h3.supported-by-title {
+  padding: 20px;
   font-family: $headfont;
   font-size: 20px;
   text-align: center;
   display: flex;
   justify-content: center;
   color: black;
-  // padding-bottom: 2em;
-  // margin-bottom: 5%;
+  padding-bottom: 2em;
 
   @include desktop {
     font-size: 24px;

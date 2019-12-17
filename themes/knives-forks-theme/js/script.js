@@ -27,11 +27,6 @@
 
     // add .btn to menu item
     investor.addClass('btn');
-    // create a new list item for the hidden menu and link to our investments
-    // when document is ready
-    // click the hamburger menu
-    // closing menu
-    // opens up & display menu items
     burger.click(function() {
       mobileMenu.removeClass('hide');
       hiddenMenu.removeClass('hide');
@@ -43,9 +38,7 @@
     hidCross.click(function() {
       hiddenMenu.addClass('hide');
     });
-    // create new list item after <li> events
-    // const investor = $('.menu-item-181') //staging
-    // pendInvestment.insertAfter('.menu-item-45'); //local
+
     pendInvestment.insertAfter('.menu-item-189'); //staging
 
     navHiddenMenu.prepend(
@@ -72,10 +65,10 @@
     //for downloading the memorandum of association
     $('.gform_page').on('click', '.download-agreement', function(event) {
       event.preventDefault();
-      window.open(knivesforks_vars.invest_download_file);
+      window.open(knivesForksVars.invest_download_file);
     });
 
-    // button stylings for make-a-pitch
+    // button stylings
     $('.gform_next_button').addClass('btn');
     $('.gform_previous_button').addClass('btn');
     $('.gform_button').addClass('btn');
@@ -90,8 +83,6 @@
         .replace('gform_wrapper_', '')
     );
     const gField = '#gform_page_' + gFormId + '_' + gFormCurrentPage;
-
-    //$(gField).addClass('icon-default');
 
     switch (gField) {
       //name
@@ -162,10 +153,6 @@
     function checkInputs(gField) {
       const $inputs = $(gField).find('input:not(.button):not([type="hidden"])');
       const $inputsArea = $(this).find('textarea');
-      // console.log($inputs.length);
-      //console.log($(gField).find('.filled').length);
-      //   console.log($(group).find('.filled').length);
-      //   console.log($inputsArea.length);
       console.log($inputs.length);
       if (
         $(gField).find('.filled').length === $inputs.length &&
@@ -182,45 +169,15 @@
       }
     }
 
-    // function checkInputs(gField) {
-    //   const $inputs = $(gField).find('input:not(.button):not([type="hidden"])');
-    //   const $inputsArea = $(this).find('textarea');
-    //   //console.log($inputs.length);
-    //   if (
-    //     $(gField).find('.filled').length === $inputs.length &&
-    //     $inputs.length > 0
-    //   ) {
-    //     $(gField)
-    //       .removeClass('icon-default')
-    //       .addClass('icon-complete');
-    //   } else if (
-    //     $(gField).find('.filled').length === $inputsArea.length &&
-    //     $inputsArea.length > 0
-    //   ) {
-    //     $(gField)
-    //       .removeClass('icon-default')
-    //       .addClass('icon-complete');
-    //   } else {
-    //     $(gField).removeClass('icon-complete');
-    //   }
-    // }
-
-    // make step progression sticky
-
     const stickySteps = $('.gf_page_steps');
     let footerHeight = $('.site-footer').height();
     let unstickPoint = $(document).height() - footerHeight;
-    // console.log(footerHeight);
-    // console.log($(document).height());
-    // console.log(unstickPoint);
 
     $(window).scroll(stickyProgression);
 
     function stickyProgression() {
       let scrollY = $(window).scrollTop();
-      //console.log(scrollY);
       if (0 < scrollY < unstickPoint) {
-        // console.log('sticking point');
         $(stickySteps).addClass('sticky');
       } else {
         console.log('unstick');

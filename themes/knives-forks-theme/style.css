@@ -2059,6 +2059,9 @@ h3.supported-by-title {
       -ms-flex-order: 4;
           order: 4;
   padding: 0 0 3rem; }
+  @media all and (max-width: 499px) {
+    .team {
+      background-color: transparent; } }
   .team h2 {
     text-align: center;
     font-size: 2.5rem; }

@@ -1,9 +1,5 @@
 .team {
   order: 4;
-  padding: 0 0 $padding * 3;
-  @include mobile {
-    background-color: transparent;
-  }
   h2 {
     text-align: center;
     font-size: $fontsize * 2.5;

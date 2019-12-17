@@ -6,24 +6,62 @@
   }
 }
 .copy-subtitle {
-  color: $primary_green_dark;
+  color: $primary_green_light;
   font-size: 1.25rem;
+  font-weight: 500;
 }
 .copy-text {
-  font-weight: $font_weight_body;
+  font-weight: $parafont;
   line-height: 1rem;
   text-align: unset;
   @include desktop {
-    line-height: 1.5rem;
+    line-height: 1.12rem;
   }
 }
-.site-content {
+.blurb-container {
   section {
-    &:before {
-      border-top: 1px solid gray;
+    position: relative;
+
+    &:nth-of-type(1) {
+      &:after {
+        display: none;
+      }
     }
+
     &:after {
-      border-bottom: 1px solid gray;
+      border-top: 1px solid #a3a1a1;
+      width: 1240px;
+      height: 20px;
+      content: '';
+      top: -50px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+// TO DO:  THERE MIGHT BE AN EASIER WAY TO DO THIS IF SO PLEASE LMK!
+
+.page-our-story {
+  .blurb-container {
+    section {
+      position: relative;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      border-top: 1px solid #a3a1a1;
+      width: 1240px;
+      height: 20px;
+      content: '';
+      top: -50px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
@@ -31,7 +69,7 @@
 .custom-copy-block {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 60px;
 
   @include desktop {
     flex-direction: row;

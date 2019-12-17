@@ -241,17 +241,17 @@ p {
   font: 16px "Lato", sans-serif; }
 
 .btn {
-  background: #378244;
+  background: #296133;
   color: white;
-  border: 1px solid #378244;
+  border: 1px solid #296133;
   border-radius: 2em;
-  padding: 5px 2%;
+  padding: 2%;
   font-size: 1rem;
   font-family: "Lato", sans-serif; }
   .btn:hover {
     cursor: pointer;
-    border: 1px solid #378244;
-    color: #378244;
+    border: 1px solid #296133;
+    color: #296133;
     background: white;
     font-weight: 500; }
 
@@ -357,11 +357,7 @@ input {
     .banner {
       height: 100vh; } }
   .banner .banner-content {
-<<<<<<< HEAD
-    background: rgba(111, 143, 106, 0.75);
-=======
     background: rgba(111, 143, 106, 0.76);
->>>>>>> df347692062d399c49be99039ca4d5d08fa9f519
     position: absolute;
     bottom: 100px;
     display: -webkit-box;
@@ -371,9 +367,7 @@ input {
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-<<<<<<< HEAD
-    width: 70%;
-    height: auto; }
+    width: 70%; }
     @media all and (min-width: 1000px) {
       .banner .banner-content {
         bottom: 200px; } }
@@ -390,45 +384,20 @@ input {
         .banner .banner-content h2 {
           font-size: 3rem; } }
 
-.banner-img img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: auto; }
-  @media only screen and (min-width: 500px) and (max-width: 999px) {
-    .banner-img img {
-      height: 100vh; } }
-  @media all and (min-width: 1000px) {
-    .banner-img img {
-      height: 100%; } }
-=======
-    width: 60%;
-    height: inherit;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 2%;
-    top: 20%; }
-    .banner .banner-content h2 {
-      color: white;
-      font-size: calc((4em - 100%) - 1.5vmin);
-      line-height: 1.2;
-      margin-left: 5%; }
-
 .banner-img {
-  width: auto;
+  width: 100%;
   height: 60vmax; }
   .banner-img img {
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%;
     width: 100%; }
->>>>>>> df347692062d399c49be99039ca4d5d08fa9f519
+    @media only screen and (min-width: 500px) and (max-width: 999px) {
+      .banner-img img {
+        height: 100vh; } }
+    @media all and (min-width: 1000px) {
+      .banner-img img {
+        height: 100%; } }
 
 article {
   width: 100%;
@@ -1723,12 +1692,7 @@ h3.supported-by-title {
             justify-content: space-around;
         padding: 1rem 0 0; }
         .main-navigation .desktop-menu .menu li {
-<<<<<<< HEAD
-          padding: 1rem 2rem;
-          font-size: 1.2rem; }
-=======
           padding: 1rem 1rem; }
->>>>>>> df347692062d399c49be99039ca4d5d08fa9f519
           .main-navigation .desktop-menu .menu li:last-child {
             padding: 0; }
           .main-navigation .desktop-menu .menu li a {
@@ -1738,7 +1702,7 @@ h3.supported-by-title {
           .main-navigation .desktop-menu .menu li:last-child a {
             color: #fff;
             font-weight: 100;
-            font-size: 1rem;
+            font-size: 0.8rem;
             display: inline-block;
             padding: 1rem; }
             .main-navigation .desktop-menu .menu li:last-child a:hover {
@@ -1777,11 +1741,6 @@ h3.supported-by-title {
             color: #fff; }
           .main-navigation .hidden-menu li a:hover {
             background-color: #90c194; } }
-<<<<<<< HEAD
-  .main-navigation .desktop-menu .current-menu-item a {
-    border-bottom: 3px solid #378244; }
-=======
->>>>>>> df347692062d399c49be99039ca4d5d08fa9f519
 
 .hide {
   display: none; }

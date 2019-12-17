@@ -1,13 +1,13 @@
-//***********SERvin instances and declarations */
-const $userWidth = document.documentElement.clientWidth;
-const thePage = getTerms(window.location.pathname);
+(function ($) {
+  //***********SERvin instances and declarations */
+  const $userWidth = document.documentElement.clientWidth;
+  const thePage = getTerms(window.location.pathname);
 
-function getTerms(pathname) {
-  pathname = pathname.replace('/kf/', '');
-  pathname = pathname.replace('/', '');
-  return pathname;
-}
-(function($) {
+  function getTerms(pathname) {
+    pathname = pathname.replace('/kf/', '');
+    pathname = pathname.replace('/', '');
+    return pathname;
+  }
   //implement styling and element's position
   if ($userWidth <= 499) {
     //**********************************for MOBILE
@@ -32,7 +32,7 @@ function getTerms(pathname) {
       }
     }
   }
-  $(document).on('click', '.investment-nav', function() {
+  $(document).on('click', '.investment-nav', function () {
     // console.log(location.origin + ' ' + location.pathname);
     $('.investment-nav a').attr({
       href: location.origin + location.pathname + 'our-story/#investment'

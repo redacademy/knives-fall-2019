@@ -23,14 +23,21 @@ input {
   display: block;
   height: inherit;
   position: relative;
+  @include tablet {
+    height: 100vh;
+  }
 
   .banner-content {
-    background: rgba(111, 143, 106, 0.66);
+    background: rgba(111, 143, 106, 0.75);
     position: absolute;
+    bottom: 100px;
     display: flex;
     flex-flow: column nowrap;
-    width: 57%;
-    height: inherit;
+    width: 70%;
+    height: auto;
+    @include desktop {
+      bottom: 200px;
+    }
     // justify-content: center;
     // align-content: center;
     // align-items: center;
@@ -39,10 +46,16 @@ input {
     // transform: translateY(70vmin);
     h2 {
       color: white;
-      font-size: calc((4.5em - 100%) - 1.5vmin);
       line-height: 1.5;
-      margin-left: 15%;
+      margin: auto 10%;
+      font-size: 1.75rem;
       font-weight: 600;
+      @include tablet {
+        font-size: 2rem;
+      }
+      @include desktop {
+        font-size: 3rem;
+      }
     }
   }
 }
@@ -53,7 +66,17 @@ input {
   img {
     object-fit: cover;
     height: 100%;
-    width: 100%;
+    width: auto;
+    // @include tablet {
+    //   height: 100vw;
+    //   width: auto;
+    // }
+    @include tablet {
+      height: 100vh;
+    }
+    @include desktop {
+      height: 100%;
+    }
   }
 }
 //********* CONTENts area
@@ -100,6 +123,10 @@ article {
 //DEFAULT setup for BANNER
 @include tablet {
   .banner-img img {
-    height: auto;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: right;
+    position: absolute;
   }
 }

@@ -65,7 +65,7 @@
     //for downloading the memorandum of association
     $('.gform_page').on('click', '.download-agreement', function(event) {
       event.preventDefault();
-      window.open(knivesforks_vars.invest_download_file);
+      window.open(knivesForksVars.invest_download_file);
     });
 
     // button stylings

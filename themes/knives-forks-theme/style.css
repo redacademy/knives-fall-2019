@@ -241,9 +241,9 @@ p {
   font: 16px "Lato", sans-serif; }
 
 .btn {
-  background: #378244;
+  background: #00883f;
   color: white;
-  border: 1px solid #378244;
+  border: 1px solid #00883f;
   border-radius: 2em;
   padding: 2%;
   font-size: 1rem;
@@ -251,6 +251,8 @@ p {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content; }
+  .btn.btn-wide {
+    padding: 1% 3%; }
   .btn:hover {
     cursor: pointer;
     border: 1px solid #378244;
@@ -750,21 +752,6 @@ p.summary-description {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.apply-to-pitch-btn-green {
-  background: #378244;
-  color: white;
-  border: 1px solid transparent;
-  border-radius: 2em;
-  font-size: 1rem;
-  font-family: "Lato", sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  width: 217px;
-  height: 45px;
-  text-decoration: none;
-  font-weight: 500;
-  overflow: hidden; }
-
 h2.past-events-title {
   text-align: center;
   font-size: 1.5em; }
@@ -906,15 +893,21 @@ p.error-message {
 .error-message span {
   font-weight: bold; }
 
-.btn-green {
-  margin-top: 33%;
-  width: 30%;
-  text-transform: uppercase;
-  font-size: 0.88em; }
-  @media all and (min-width: 1000px) {
-    .btn-green {
-      display: none;
-      visibility: hidden; } }
+.btn-wide.home {
+  padding: 3% 18%; }
+
+.error-btn-container {
+  margin-top: 20%; }
+
+@media only screen and (min-width: 500px) and (max-width: 999px) {
+  .error-btn-container .btn-wide {
+    display: none;
+    visibility: hidden; } }
+
+@media all and (min-width: 1000px) {
+  .error-btn-container .btn-wide {
+    display: none;
+    visibility: hidden; } }
 
 .support-container {
   display: -webkit-box;

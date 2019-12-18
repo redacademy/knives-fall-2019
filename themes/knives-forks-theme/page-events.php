@@ -37,7 +37,7 @@ get_header();
 		
 
 		</div>	
-		<div class="apply-to-pitch-btn-green-flex"><button class="apply-to-pitch-btn-green btn">Apply To Pitch</button></div>
+		<div class="apply-to-pitch-btn-green-flex"><button class="btn btn-wide pitch">Apply To Pitch</button></div>
 	 
 
 		</section>

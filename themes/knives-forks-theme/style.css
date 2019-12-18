@@ -226,33 +226,20 @@ td,
 th {
   padding: 0; }
 
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
-h2,
-.entry-title {
-  font-family: "Lora", serif; }
-
-.entry-description {
-  font-family: "Lato", sans-serif;
-  color: #296133; }
-
-p {
-  font: 16px "Lato", sans-serif; }
-
 .btn {
-  background: #00883f;
+  background: #378244;
   color: white;
-  border: 1px solid #00883f;
+  border: 1px solid #378244;
   border-radius: 2em;
   padding: 2%;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   height: -webkit-min-content;
   height: -moz-min-content;
-  height: min-content; }
+  height: min-content;
+  text-transform: uppercase; }
   .btn.btn-wide {
-    padding: 1% 3%; }
+    min-width: 120px; }
   .btn:hover {
     cursor: pointer;
     border: 1px solid #378244;
@@ -772,6 +759,9 @@ p.summary-description {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.btn-wide.pitch {
+  padding: 1% 3%; }
+
 h2.past-events-title {
   text-align: center;
   font-size: 1.5em; }
@@ -1053,6 +1043,8 @@ article .how-count {
     width: 80%; }
     .banner .banner-content h2 {
       font-size: 1.25rem; }
+  .how-title {
+    margin-top: -10px; }
   .how-icons {
     display: none; }
   .site-main {
@@ -1068,7 +1060,9 @@ article .how-count {
     article .entry-header {
       width: 100%;
       padding: 0 5% 10% 5%;
-      margin: 0 auto; } }
+      margin: 0 auto; }
+      article .entry-header p {
+        font-size: 1rem; } }
 
 @media all and (max-width: 499px) {
     article .banner .banner-img {
@@ -1167,6 +1161,7 @@ article .how-count {
   .article-content {
     padding: 0; }
     .article-content .how-count {
+      font-size: 3rem;
       margin-bottom: 0;
       color: #f2804a; }
     .article-content .how-title {
@@ -1571,31 +1566,31 @@ article .how-count {
       top: 0px; } }
 
 .gform_name::before {
-  background-image: url("../../assets/icons/Forms - unfilled/unfilled-name.svg"); }
+  background-image: url("../../assets/icons/Form-Unfilled/unfilled-name.svg"); }
 
 .gform_email::before {
-  background-image: url("../../assets/icons/Forms - unfilled/unfilled-email.svg"); }
+  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-email.svg"); }
 
 .gform_address::before {
-  background-image: url("../../assets/icons/Forms - unfilled/unfilled-home.svg"); }
+  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-home.svg"); }
 
 .gform_phone::before {
-  background-image: url("../../assets/icons/Forms - unfilled/unfilled-phone.svg"); }
+  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-phone.svg"); }
 
 .gform_company::before {
-  background-image: url("../../assets/icons/Forms - unfilled/unfilled-business.svg"); }
+  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-business.svg"); }
 
 .gform_details::before {
-  background-image: url("../../assets/icons/Forms - unfilled/unfilled-rules.svg"); }
+  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-rules.svg"); }
 
 .gform_application::before {
-  background-image: url("../../assets/icons/Forms - unfilled/unfilled-application.svg"); }
+  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-application.svg"); }
 
 .gform_memo::before {
-  background-image: url("../../assets/icons/Forms - unfilled/unfilled-rules.svg"); }
+  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-rules.svg"); }
 
 .gform_fee::before {
-  background-image: url("../../assets/icons/Forms - unfilled/unfilled-payment.svg"); }
+  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-payment.svg"); }
 
 .gform_check::after {
   content: '\f00c';
@@ -2221,9 +2216,11 @@ article .how-count {
         text-transform: capitalize; }
         .team .team-grid .team-member .desc p.name {
           font-weight: bold;
-          margin: 0; }
+          margin: 0;
+          font-size: 1.125rem; }
         .team .team-grid .team-member .desc p.role {
-          margin: 0; }
+          margin: 0;
+          font-size: 1rem; }
 
 /* external css: flickity.css */
 * {

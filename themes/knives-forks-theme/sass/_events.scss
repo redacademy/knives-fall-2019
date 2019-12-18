@@ -347,19 +347,11 @@ p.summary-description {
   justify-content: center;
 }
 
-// .apply-to-pitch-btn-green {
-//   display: block;
-//   background: $primary_green_light;
-//   color: white;
-//   border: 1px solid transparent;
-//   border-radius: 2em;
-//   font-family: $parafont;
-//   text-align: center;
-//   width: 20%;
-//   height: min-content;
-//   font-size: 0.88em;
-//   padding: 3% 14%;
-// }
+.btn-wide {
+  &.pitch {
+    padding: 1% 3%;
+  }
+}
 
 /////past events
 

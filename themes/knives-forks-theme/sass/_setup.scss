@@ -49,13 +49,13 @@ input {
       color: white;
       line-height: 1.5;
       // margin: auto 10%;
-      font-size: 1.75rem;
+      // font-size: 1.75rem;
       font-weight: 600;
       width: 95%;
       margin: 0 auto;
-      @include tablet {
-        font-size: calc(12vh - 100%);
-      }
+      // @include tablet {
+      //   font-size: calc(12vh - 100%);
+      // }
       // @include desktop {
       //   font-size: 3rem;
       // }

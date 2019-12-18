@@ -1056,17 +1056,20 @@ h3.supported-by-title {
       margin: 5% auto; } }
   @media all and (max-width: 499px) and (max-width: 499px) {
     article .entry-header {
-      max-width: 100%;
-      padding: 3%; } }
+      width: 100%;
+      padding: 0 5%;
+      margin: 0 auto; } }
 
 @media all and (max-width: 499px) {
     article .entry-title {
-      font-size: 2rem; }
+      font-size: 2rem;
+      margin-bottom: 0; }
     article .entry-description {
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #378244; }
     article p {
-      font-size: 1rem;
-      text-align: justify; }
+      font-size: 1rem; }
     article .how-count {
       font-size: 4rem;
       color: #f29061;

@@ -44,19 +44,22 @@
     }
     .entry-header {
       @include mobile {
-        max-width: 100%;
-        padding: 3%;
+        width: 100%;
+        padding: 0 5%;
+        margin: 0 auto;
       }
     }
     .entry-title {
       font-size: 2rem;
+      margin-bottom: 0;
     }
     .entry-description {
       font-size: 1.2rem;
+      margin-top: 10px;
+      color: $primary_green_med;
     }
     p {
       font-size: 1rem;
-      text-align: justify;
     }
     .how-count {
       font-size: 4rem;

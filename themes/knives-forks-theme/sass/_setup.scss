@@ -18,25 +18,26 @@ input {
 }
 //*******************FEATURED BANNER IMAGE for each page
 .banner {
-  margin-top: 5%;
+  // top: 28%;
+  // margin-top: 5%;
   width: 100%;
   display: block;
-  height: inherit;
   position: relative;
-  @include tablet {
-    height: 100vh;
+  .banner-outer-content {
+    background: unset;
   }
-
   .banner-content {
     background: rgba(111, 143, 106, 0.76);
     position: absolute;
-    bottom: 100px;
+    // bottom: 5%;
     display: flex;
     flex-flow: column nowrap;
-    width: 70%;
+    width: 50%;
+    overflow: hidden;
+    padding: 2% 0;
     //height: auto;
     @include desktop {
-      bottom: 200px;
+      // bottom: 200px;
     }
     // justify-content: center;
     // align-content: center;
@@ -47,15 +48,17 @@ input {
     h2 {
       color: white;
       line-height: 1.5;
-      margin: auto 10%;
+      // margin: auto 10%;
       font-size: 1.75rem;
       font-weight: 600;
+      width: 95%;
+      margin: 0 auto;
       @include tablet {
-        font-size: 2rem;
+        font-size: calc(12vh - 100%);
       }
-      @include desktop {
-        font-size: 3rem;
-      }
+      // @include desktop {
+      //   font-size: 3rem;
+      // }
     }
   }
 }
@@ -92,7 +95,7 @@ article {
   }
 }
 .site-content {
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 //************Testimonials Area

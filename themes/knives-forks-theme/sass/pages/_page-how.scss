@@ -91,14 +91,17 @@
           .how-btn {
             display: block;
             width: 70%;
-            margin: 5% auto;
-            padding: $padding 0;
+            margin: 10% auto;
+            padding: $padding * 0.9 0;
             text-align: center;
             text-transform: uppercase;
             font-size: 0.8rem;
             word-spacing: 0.3em;
             font-weight: 400;
             background: $primary_green_light;
+            @include tablet {
+              
+            }
           }
         }
       }

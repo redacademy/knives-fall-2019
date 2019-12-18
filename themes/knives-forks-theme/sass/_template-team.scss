@@ -91,9 +91,11 @@
           &.name {
             font-weight: bold;
             margin: 0;
+            font-size: $fontsize * 1.125;
           }
           &.role {
             margin: 0;
+            font-size: $fontsize;
           }
         }
       } // end of desc

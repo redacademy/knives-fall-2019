@@ -198,8 +198,11 @@ section {
     border-bottom: 1px solid grey;
   }
 }
-.site-content div {
-  &:nth-child(2) {
-    order: 3;
+
+.page-our-story {
+  .site-content div {
+    &:nth-child(2) {
+      order: 3;
+    }
   }
 }

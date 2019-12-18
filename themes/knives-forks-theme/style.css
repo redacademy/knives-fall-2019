@@ -1848,8 +1848,8 @@ article .how-count {
   height: 100%;
   width: 100%;
   position: absolute;
-  -o-object-position: right;
-     object-position: right; }
+  -o-object-position: center;
+     object-position: center; }
 
 .hide {
   display: none; }

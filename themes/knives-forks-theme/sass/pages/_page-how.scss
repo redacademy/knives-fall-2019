@@ -18,12 +18,12 @@ article {
     position: relative;
     // border: 1px dotted red;
   }
-  .banner img {
+  .banner-image img {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    object-position: right;
     position: absolute;
+    object-position: right;
     // transform: translateX(-26em);
   }
   .banner .banner-content {

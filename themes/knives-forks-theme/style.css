@@ -1020,14 +1020,14 @@ article .how-count {
     width: 100%;
     height: 100vmax;
     position: relative; }
-  .banner img {
+  .banner-image img {
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%;
     width: 100%;
+    position: absolute;
     -o-object-position: right;
-       object-position: right;
-    position: absolute; }
+       object-position: right; }
   .banner .banner-content {
     width: 80%; }
     .banner .banner-content h2 {

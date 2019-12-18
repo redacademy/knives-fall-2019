@@ -21,8 +21,11 @@ input {
   margin-top: 5%;
   width: 100%;
   display: block;
-  height: inherit;
+  height: 100vh;
   position: relative;
+  .banner-image img {
+    object-position: center;
+  }
   @include tablet {
     height: 100vh;
   }

@@ -1,4 +1,31 @@
 //**************STYLES for FLICKITY Carousels
+
+@include desktop {
+  .testimonials {
+    .knives-fork {
+      color: hsla(0, 0%, 0%, 0.15);
+    }
+    .carousel-cell,
+    nav {
+      p {
+        font-size: 2rem;
+        transform: translateY(-32%);
+        padding: 1% 10% 0 10%;
+      }
+      .member-name,
+      .member-since {
+        text-align: right;
+      }
+      .member-since {
+        transform: translateY(-2em);
+      }
+      .member-name {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
 //----how-it-works Page
 /* external css: flickity.css */
 
@@ -16,18 +43,20 @@ body {
 
 .testimonials {
   //**************START of changes at FLICKITY
-  .flick-container {
-    width: 65%;
+  // .flick-container {
+  //   width: 65%;
+  //   margin: 0 auto;
+  // }
+  .flickity-enabled {
+    width: 75%;
     margin: 0 auto;
   }
   .carousel-cell {
-    width: auto;
-    height: auto;
-    margin: 0 auto;
+    // margin: 0 auto;
     // background: #8c8;
     counter-increment: gallery-cell;
     img {
-      transform: translateY(-40%);
+      transform: translateY(-35%);
     }
   }
   .carousel-cell.is-selected {

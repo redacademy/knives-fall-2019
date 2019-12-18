@@ -23,7 +23,11 @@
     font-weight: 500;
   }
 }
-
+.btn-event {
+  background: white;
+  border-color: #378244;
+  color: #378244;
+}
 .btn-wide {
   &.next {
     // padding: 1% 5%;

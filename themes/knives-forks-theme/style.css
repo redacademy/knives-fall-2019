@@ -226,6 +226,17 @@ td,
 th {
   padding: 0; }
 
+h2,
+.entry-title {
+  font-family: "Lora", serif; }
+
+.entry-description {
+  font-family: "Lato", sans-serif;
+  color: #296133; }
+
+p {
+  font: 16px "Lato", sans-serif; }
+
 .btn {
   background: #378244;
   color: white;
@@ -248,10 +259,9 @@ th {
     font-weight: 500; }
 
 .btn-event {
-  padding: 2%;
-  background: #fff;
-  color: #378244;
-  text-transform: uppercase; }
+  background: white;
+  border-color: #378244;
+  color: #378244; }
 
 .profile-pic {
   width: 14em;
@@ -541,7 +551,6 @@ article {
           width: 100%;
           font-size: calc((3em - 100%) - 1.5vmax); }
         .banner .banner-outer-content .banner-content .btn-event {
-          font-weight: 400;
           padding: 3%;
           margin: 0 2%; }
           .banner .banner-outer-content .banner-content .btn-event:hover {
@@ -1231,6 +1240,7 @@ article .how-count {
 
 @media screen and (min-width: 500px) and (max-width: 999px) {
   .testimonials {
+    padding-top: 1%;
     position: relative;
     overflow: hidden;
     width: 100%; }
@@ -2222,6 +2232,28 @@ article .how-count {
           margin: 0;
           font-size: 1rem; }
 
+@media all and (min-width: 1000px) {
+  .testimonials .knives-fork {
+    color: rgba(0, 0, 0, 0.15); }
+  .testimonials .carousel-cell p,
+  .testimonials nav p {
+    font-size: 2rem;
+    -webkit-transform: translateY(-32%);
+            transform: translateY(-32%);
+    padding: 1% 10% 0 10%; }
+  .testimonials .carousel-cell .member-name,
+  .testimonials .carousel-cell .member-since,
+  .testimonials nav .member-name,
+  .testimonials nav .member-since {
+    text-align: right; }
+  .testimonials .carousel-cell .member-since,
+  .testimonials nav .member-since {
+    -webkit-transform: translateY(-2em);
+            transform: translateY(-2em); }
+  .testimonials .carousel-cell .member-name,
+  .testimonials nav .member-name {
+    font-weight: 600; } }
+
 /* external css: flickity.css */
 * {
   -webkit-box-sizing: border-box;
@@ -2233,18 +2265,15 @@ body {
 .carousel {
   background: transparent; }
 
-.testimonials .flick-container {
-  width: 65%;
+.testimonials .flickity-enabled {
+  width: 75%;
   margin: 0 auto; }
 
 .testimonials .carousel-cell {
-  width: auto;
-  height: auto;
-  margin: 0 auto;
   counter-increment: gallery-cell; }
   .testimonials .carousel-cell img {
-    -webkit-transform: translateY(-40%);
-            transform: translateY(-40%); }
+    -webkit-transform: translateY(-35%);
+            transform: translateY(-35%); }
 
 .testimonials .carousel-cell.is-selected {
   width: 100%; }

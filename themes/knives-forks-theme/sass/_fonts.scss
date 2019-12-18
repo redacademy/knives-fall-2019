@@ -1,0 +1,15 @@
+/*--------------------------------------------------------------
+# Embedded Fonts
+--------------------------------------------------------------*/
+h2,
+.entry-title {
+  font-family: $headfont;
+}
+
+.entry-description {
+  font-family: $parafont;
+  color: $primary_green_dark;
+}
+p {
+  font: 16px $parafont;
+}

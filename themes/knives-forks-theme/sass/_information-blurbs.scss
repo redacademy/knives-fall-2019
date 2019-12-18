@@ -59,6 +59,7 @@
 .blurb-container {
   margin: 0 auto;
   @include desktop {
+    padding: $padding * 2 0 0;
     border-bottom: 2px solid #a3a1a1;
     width: 80%;
     // margin-left: -10%;
@@ -81,7 +82,7 @@
   @include desktop {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 30%;
+    margin-bottom: 15%;
     width: 95%;
     align-self: flex-end;
   }

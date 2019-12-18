@@ -2201,6 +2201,9 @@ body {
   height: auto;
   margin: 0 auto;
   counter-increment: gallery-cell; }
+  .testimonials .carousel-cell img {
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%); }
 
 .testimonials .carousel-cell.is-selected {
   width: 100%; }

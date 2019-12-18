@@ -26,6 +26,9 @@ body {
     margin: 0 auto;
     // background: #8c8;
     counter-increment: gallery-cell;
+    img {
+      transform: translateY(-40%);
+    }
   }
   .carousel-cell.is-selected {
     width: 100%;

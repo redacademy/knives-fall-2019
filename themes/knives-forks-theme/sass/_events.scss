@@ -341,14 +341,11 @@ p.summary-description {
 h2.past-events-title {
   text-align: center;
   font-size: 1.5em;
-  // position: relative;
-  // padding: 29px;
 
   @include desktop {
     text-align: left;
-    // padding-bottom: 10px;
     font-size: 2.5em;
-    padding-left: 12%;
+    padding-left: 13%;
   }
 }
 

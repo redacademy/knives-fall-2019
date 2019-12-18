@@ -944,6 +944,8 @@ p.error-message {
       -ms-flex-pack: distribute;
           justify-content: space-around;
       border-top: 2px solid #e0dbdb;
+      margin-left: 10%;
+      margin-right: 10%;
       margin-bottom: 5%; } }
 
 .slowmoney-icon,

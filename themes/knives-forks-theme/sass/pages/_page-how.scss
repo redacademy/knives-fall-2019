@@ -45,7 +45,7 @@
     .entry-header {
       @include mobile {
         width: 100%;
-        padding: 0 5%;
+        padding: 0 5% 10% 5%;
         margin: 0 auto;
       }
     }
@@ -65,9 +65,11 @@
       font-size: 4rem;
       color: $secondary_orange_med;
       margin: 0;
+      font-family: $headfont;
     }
     .how-title {
       font-size: 1.2rem;
+      margin-top: 0;
     }
     .entry-content {
       .how-img {

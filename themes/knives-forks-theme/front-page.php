@@ -23,6 +23,7 @@ $testimonials=get_posts($args);
          <h1 class="site-title knives-fork">
                 <?=get_bloginfo('title')?>
          </h1>
+         <div class="flick-container">
          <?php
             if(count($testimonials)>0){
                 $tmp='';
@@ -54,7 +55,7 @@ $testimonials=get_posts($args);
 
             }
             ?>
-
+</div>
 
 
          

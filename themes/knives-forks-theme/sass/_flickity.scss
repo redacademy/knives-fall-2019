@@ -16,19 +16,24 @@ body {
 
 .testimonials {
   //**************START of changes at FLICKITY
+  .flick-container {
+    width: 65%;
+    margin: 0 auto;
+  }
   .carousel-cell {
     width: auto;
     height: auto;
-    margin:0 auto;
+    margin: 0 auto;
     // background: #8c8;
     counter-increment: gallery-cell;
-   
+    img {
+      transform: translateY(-40%);
+    }
   }
   .carousel-cell.is-selected {
     width: 100%;
-    
+
     // height: fit-content;
-    
   }
 
   .flickity-page-dots .dot {
@@ -47,6 +52,8 @@ body {
   }
 }
 // .flickity-viewport {
+// width: 65%;
+// margin: 0 auto;
 //   flex-flow: column nowrap;
 //   align-content: center;
 //   align-items: center;
@@ -56,8 +63,6 @@ body {
   margin-top: 5em;
 }
 
-
-
 /* cell number */
 .carousel-cell:before {
   display: block;
@@ -66,11 +71,11 @@ body {
   line-height: 200px;
   font-size: 80px;
   color: white;
-  margin:0 1%;
+  margin: 0 1%;
 }
 .carousel-cell:after {
   height: 100%;
-  margin:0 1%;
+  margin: 0 1%;
 }
 
 .flickity-prev-next-button {

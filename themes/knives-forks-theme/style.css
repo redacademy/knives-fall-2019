@@ -1484,8 +1484,6 @@ h3.supported-by-title {
               flex-direction: column; }
       .gform_wrapper form .gform_page .gform_fields textarea {
         border-radius: 5px; }
-  .gform_wrapper form .validation_error {
-    display: none; }
 
 .gform_confirmation_message {
   width: 80%;
@@ -1521,7 +1519,7 @@ h3.supported-by-title {
   background-repeat: no-repeat;
   width: 200px;
   height: 200px;
-  content: "abc";
+  content: 'abc';
   font-size: 10rem;
   color: rgba(0, 0, 0, 0);
   display: block;
@@ -1585,8 +1583,8 @@ h3.supported-by-title {
   background-image: url("../../assets/icons/Forms - unfilled/unfilled-payment.svg"); }
 
 .gform_check::after {
-  content: "\f00c";
-  font-family: "Font Awesome 5 Free";
+  content: '\f00c';
+  font-family: 'Font Awesome 5 Free';
   position: absolute;
   top: 350px;
   left: 50%;
@@ -1983,42 +1981,13 @@ h3.supported-by-title {
     .copy-text {
       line-height: 1.12rem; } }
 
-/* .blurb-container section {
-  position: relative; }
-  .blurb-container section:nth-of-type(1):after {
-    display: none; }
-  .blurb-container section:after {
-    border-top: 1px solid #a3a1a1;
-    width: 1240px;
-    height: 20px;
-    content: '';
-    top: -50px;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
-
-.page-our-story .blurb-container section {
-  position: relative; }
-  .page-our-story .blurb-container section:after {
-    display: none; }
-
-.page-our-story .blurb-container:after {
-  border-top: 1px solid #a3a1a1;
-  width: 1240px;
-  height: 20px;
-  content: '';
-  top: -50px;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); } */
 .blurb-container {
-  margin: 0 auto; }
+  margin: 0 auto;
+  border-bottom: 2px solid #a3a1a1;
+  width: 80%; }
   @media all and (min-width: 1000px) {
     .blurb-container {
-      border-bottom: 2px solid #a3a1a1;
-      width: 80%; } }
+      border-bottom: transparent; } }
 
 .page-our-story .blurb-container {
   margin: 0 auto;

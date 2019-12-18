@@ -1185,9 +1185,7 @@ article .how-count {
         font-size: 1.2rem;
         text-align: right;
         -webkit-transform: translateY(-80%);
-                transform: translateY(-80%); } }
-
-@media screen and (min-width: 500px) and (max-width: 999px) and (min-width: 500px) and (max-width: 999px) {
+                transform: translateY(-80%); }
   .article-content {
     padding: 0; }
     .article-content .how-count {
@@ -1222,9 +1220,7 @@ article .how-count {
       font-weight: bold; }
     .testimonials .member-since {
       -webkit-transform: translateY(-2em);
-              transform: translateY(-2em); } }
-
-@media screen and (min-width: 500px) and (max-width: 999px) {
+              transform: translateY(-2em); }
   .testimonials {
     position: relative;
     overflow: hidden;

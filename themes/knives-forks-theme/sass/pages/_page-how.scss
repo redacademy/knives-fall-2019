@@ -145,9 +145,7 @@ article {
     text-align: right;
     transform: translateY(-80%);
   }
-}
-
-// end of @mobile
+} // end of @mobile
 
 .btn-container {
   margin: 0 auto;
@@ -206,57 +204,57 @@ article {
       }
     }
   }
-  @include tablet {
-    .article-content {
-      padding: 0;
-      .how-count {
-        color: $secondary_orange_dark;
-      }
-      .how-img {
-        width: 100%;
-        margin-top: 5%;
-      }
-    }
-    .entry-content {
-      nav {
-        padding: 0 5%;
-      }
-      .how-icons {
-        display: none;
-      }
-    }
 
-    .testimonials {
-      width: 90%;
-      margin: 0 auto;
-      padding-top: 5%;
-
-      .knives-fork {
-        display: none;
-      }
-      .carousel-cell {
-        padding: 0 10%;
-      }
-      .profile-pic {
-        transform: translateY(-40%);
-        margin-bottom: 1em;
-      }
-      p {
-        transform: translateY(-40%);
-        line-height: 1.5;
-      }
-      .member-name,
-      .member-since {
-        text-align: right;
-      }
-      .member-name {
-        font-weight: bold;
-      }
-      .member-since {
-        transform: translateY(-2em);
-      }
+  .article-content {
+    padding: 0;
+    .how-count {
+      color: $secondary_orange_dark;
+    }
+    .how-img {
+      width: 100%;
+      margin-top: 5%;
     }
   }
+  .entry-content {
+    nav {
+      padding: 0 5%;
+    }
+    .how-icons {
+      display: none;
+    }
+  }
+
+  .testimonials {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5%;
+
+    .knives-fork {
+      display: none;
+    }
+    .carousel-cell {
+      padding: 0 10%;
+    }
+    .profile-pic {
+      transform: translateY(-40%);
+      margin-bottom: 1em;
+    }
+    p {
+      transform: translateY(-40%);
+      line-height: 1.5;
+    }
+    .member-name,
+    .member-since {
+      text-align: right;
+    }
+    .member-name {
+      font-weight: bold;
+    }
+    .member-since {
+      transform: translateY(-2em);
+    }
+  }
+
   @include desktop {
     //************How it Works CONTENTS AREA
     .article-content {

@@ -1,21 +1,32 @@
-# RED Starter
+# Knives and Forks Community Investment Co-op
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+## A RED Academy Community Partner Project
 
-## Installation
+A mult-page website with a responsive layout and WordPress as content management system. The Knives and Forks website is a RED Academy Community Partner project, designed by UX/UI students, and created by the Web Development team.
 
-### 1. Download me (don't clone me!)
+## Technologies Used
 
-Then add me to your `wp-content` directory.
+- CSS3
+- Gulp
+- HTML5
+- JavaScript
+- jQuery
+- PHP
+- SQL
+- WordPress
 
-### 2. Rename the `redstarter-master` directory
+## Plug-Ins Used
 
-Make sure that the theme directory name is project appropriate!
+- Advanced Custom Fields
+- Contact Form 7
+- Gravity Forms
+- WordPress Importer
+- WP Migrate DB Pro
+- Flickity Styles
 
-### 3. Install the dev dependencies
+## Project Goals
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+The Dev team is dedicated to bringing the original design put together by the UX/UI team to life. Our goal as Dev was two-fold:
 
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+- to make the site as responsive as possible
+- to make the site as customizable as possible so our clients at Knives and Forks can have as much control over the content as they might need

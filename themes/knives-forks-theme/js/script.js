@@ -53,7 +53,7 @@
 
     // BROOKE'S WORK BELOW
 
-    //for downloading the memorandum of association
+    //for downloading memorandum of association
     $('.gform_page').on('click', '.download-agreement', function(event) {
       event.preventDefault();
       window.open(knivesForksVars.invest_download_file);

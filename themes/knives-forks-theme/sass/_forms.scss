@@ -1,16 +1,18 @@
 //**************Button styles
 .btn {
-  background: $primary_green_light;
+  background: $primary_green_med;
   color: white;
-  border: 1px solid $primary_green_light;
+  border: 1px solid $primary_green_med;
   border-radius: 2em;
   padding: 2%;
   font-size: $fontsize;
   font-family: $parafont;
   height: min-content;
+  text-transform: uppercase;
 
   &.btn-wide {
-    padding: 1% 3%;
+    // padding: 1% 3%;
+    min-width: 120px;
   }
 
   &:hover {
@@ -21,12 +23,14 @@
     font-weight: 500;
   }
 }
-.btn-event {
-  padding: 2%;
-  background: #fff;
-  color: #378244;
-  text-transform: uppercase;
+
+.btn-wide {
+  &.next {
+    // padding: 1% 5%;
+    // min-width: 120px;
+  }
 }
+
 //************styles for PROFILE PICTURES
 .profile-pic {
   width: 14em;

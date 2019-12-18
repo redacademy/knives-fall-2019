@@ -226,33 +226,20 @@ td,
 th {
   padding: 0; }
 
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
-h2,
-.entry-title {
-  font-family: "Lora", serif; }
-
-.entry-description {
-  font-family: "Lato", sans-serif;
-  color: #296133; }
-
-p {
-  font: 16px "Lato", sans-serif; }
-
 .btn {
-  background: #00883f;
+  background: #378244;
   color: white;
-  border: 1px solid #00883f;
+  border: 1px solid #378244;
   border-radius: 2em;
   padding: 2%;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   height: -webkit-min-content;
   height: -moz-min-content;
-  height: min-content; }
+  height: min-content;
+  text-transform: uppercase; }
   .btn.btn-wide {
-    padding: 1% 3%; }
+    min-width: 120px; }
   .btn:hover {
     cursor: pointer;
     border: 1px solid #378244;
@@ -756,6 +743,9 @@ p.summary-description {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.btn-wide.pitch {
+  padding: 1% 3%; }
 
 h2.past-events-title {
   text-align: center;

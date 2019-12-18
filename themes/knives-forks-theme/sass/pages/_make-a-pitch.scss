@@ -223,10 +223,10 @@
   //   }
   // }
 
-  //use nth-of-type()
-  .validation_error {
-    display: none;
-  }
+  // //use nth-of-type()
+  // .validation_error {
+  //   display: none;
+  // }
 }
 
 //gform confirmation message
@@ -269,7 +269,7 @@
   background-repeat: no-repeat;
   width: 200px;
   height: 200px;
-  content: "abc";
+  content: 'abc';
   font-size: 10rem;
   color: rgba(0, 0, 0, 0);
   display: block;
@@ -291,36 +291,36 @@
 }
 
 .gform_name::before {
-  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-name.svg");
+  background-image: url('../../assets/icons/Forms - unfilled/unfilled-name.svg');
 }
 .gform_email::before {
-  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-email.svg");
+  background-image: url('../../assets/icons/Forms - unfilled/unfilled-email.svg');
 }
 .gform_address::before {
-  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-home.svg");
+  background-image: url('../../assets/icons/Forms - unfilled/unfilled-home.svg');
 }
 .gform_phone::before {
-  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-phone.svg");
+  background-image: url('../../assets/icons/Forms - unfilled/unfilled-phone.svg');
 }
 .gform_company::before {
-  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-business.svg");
+  background-image: url('../../assets/icons/Forms - unfilled/unfilled-business.svg');
 }
 .gform_details::before {
-  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-rules.svg");
+  background-image: url('../../assets/icons/Forms - unfilled/unfilled-rules.svg');
 }
 .gform_application::before {
-  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-application.svg");
+  background-image: url('../../assets/icons/Forms - unfilled/unfilled-application.svg');
 }
 .gform_memo::before {
-  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-rules.svg");
+  background-image: url('../../assets/icons/Forms - unfilled/unfilled-rules.svg');
 }
 .gform_fee::before {
-  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-payment.svg");
+  background-image: url('../../assets/icons/Forms - unfilled/unfilled-payment.svg');
 }
 
 .gform_check::after {
-  content: "\f00c";
-  font-family: "Font Awesome 5 Free";
+  content: '\f00c';
+  font-family: 'Font Awesome 5 Free';
   position: absolute;
   top: 350px;
   left: 50%;

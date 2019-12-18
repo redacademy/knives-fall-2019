@@ -3,7 +3,6 @@
     $('.embed-container').fitVids();
 
     //***********instance and declarations */
-    const $userWidth = document.documentElement.clientWidth;
     // click the hamburger menu
     // VICTOR'S VARIABLES
     const burger = $('#hamburger');
@@ -51,14 +50,6 @@
     // ===================
 
     //const thePage = getTerms(window.location.pathname);
-
-    //implement styling and element's position
-    if ($userWidth <= 499) {
-      //**********************************for MOBILE
-      // $('entry-content  ul  li:last-child()').append($('.how-btn'));
-      $('.how-btn').appendTo('.steps-list li:last-child()');
-      $('.how-img').appendTo('.steps-list li:last-child()');
-    }
 
     // BROOKE'S WORK BELOW
 

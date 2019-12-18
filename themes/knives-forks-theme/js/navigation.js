@@ -110,18 +110,22 @@
 
 (function($) {
   //************DECLARATIONS and INSTANCES here */
-  const thePage = getTerms(window.location.pathname);
+  let thePage = getTerms(location.pathname);
   let scrollIndex = 0;
   let prevIndex = 0;
   let tmpBool = false;
 
   function getTerms(pathname) {
-    pathname = pathname.replace('/kf/', '');
-    pathname = pathname.replace('/', '');
+    if (window.location.protocol === 'https:') {
+      pathname = pathname.replace('/', '');
+    } else {
+      pathname = pathname.replace('/kf/', '');
+      pathname = pathname.replace('/', '');
+    }
     return pathname;
   }
 
-  if (thePage === 'apply-to-pitch') {
+  if (thePage == 'apply-to-pitch' || thePage == 'become-investor') {
     return;
   }
   $(window).on('scroll', function() {

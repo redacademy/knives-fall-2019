@@ -102,7 +102,7 @@
       @include desktop {
         position: relative;
         top: -60px;
-        width: 90%;
+        width: 100%;
       }
       .copy-title {
         @include desktop {
@@ -203,13 +203,5 @@
 .front-page {
   .image-copy {
     border-bottom: 1px solid grey;
-  }
-}
-
-.page-our-story {
-  .site-content div {
-    &:nth-child(2) {
-      order: 3;
-    }
   }
 }

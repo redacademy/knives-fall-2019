@@ -1,3 +1,160 @@
+//************START of SERVIN's styling
+@include mobile {
+  //*************STYLES for Events Banner
+
+  .banner {
+    .btn-event {
+      padding: 3% 5%;
+      background: white;
+      color: $primary_green_light;
+      border: 2px solid $primary_green_light;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      &:hover {
+        cursor: pointer;
+        background: $primary_green_light;
+        color: white;
+        font-weight: 600;
+      }
+    }
+    .banner-outer-content {
+      position: relative;
+      top: 0;
+      transform: translateY(-25rem);
+      width: 80%;
+      text-align: center;
+      .banner-content {
+        width: 100%;
+        position: relative;
+        margin-bottom: 5%;
+        text-align: left;
+        padding: 3%;
+        .event-title {
+          margin: 0;
+          font-size: 1.5rem;
+        }
+        .event-location {
+          font-size: 1rem;
+          font-weight: 600;
+          font-style: italic;
+          text-align: right;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .banner-events {
+      z-index: -1;
+      img {
+        transform: unset;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .banner-content {
+    color: white;
+  }
+}
+
+@include tablet {
+  .page-events {
+    .banner {
+      .banner-img {
+        img {
+          width: auto;
+          transform: translateX(calc(100vw - 100%));
+        }
+      }
+      .banner-content {
+        top: 5rem;
+        color: white;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        padding: 2%;
+        justify-content: center;
+        height: auto;
+        h2 {
+          width: 100%;
+          word-break: break-word;
+          font-size: calc((3.7rem - 100%) - 1.5vmin);
+          margin: 0;
+          text-align: left;
+        }
+        p {
+          display: none;
+        }
+        .event-location {
+          display: block;
+          text-align: right;
+          width: 100%;
+          font-size: calc((3rem - 100%) - 1.5vmin);
+        }
+        .btn-event {
+          background: white;
+          color: #378244;
+          font-weight: 400;
+          padding: 3%;
+          margin: 0 2%;
+          text-transform: uppercase;
+          &:hover {
+            background: #378244;
+            color: white;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .banner-outer-content {
+    position: relative;
+    top: 0;
+    transform: translateY(-35rem);
+    width: 60%;
+    text-align: center;
+    .banner-content {
+      width: 100%;
+      position: relative;
+      color: white;
+      display: flex;
+      flex-flow: row wrap;
+      padding: 10% 5%;
+      h2 {
+        margin: 0;
+        text-align: left;
+        width: 100%;
+        word-break: break-word;
+        font-size: 2.5rem;
+      }
+      .event-location {
+        width: 100%;
+        text-align: left;
+        font-size: 2rem;
+      }
+      .btn-event {
+        padding: 2%;
+        background: #fff;
+        color: #378244;
+        border: 2px solid #378244;
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin: 0 1%;
+        &:hover {
+          cursor: pointer;
+          background: #378244;
+          color: #fff;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+//*****************End of SERVIN's Style
 // /// front banner section
 
 .events-banner {

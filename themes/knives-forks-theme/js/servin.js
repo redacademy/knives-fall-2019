@@ -1,8 +1,7 @@
 (function($) {
   //***********SERvin instances and declarations */
-  let $userWidth = window.documentElement.clientWidth;
+  let $userWidth = document.documentElement.clientWidth;
   let $thePage = getTerms(location.pathname);
-
   function getTerms(pathname) {
     if (window.location.protocol === 'https:') {
       pathname = pathname.replace('/', '');
@@ -18,15 +17,15 @@
     // $('entry-content  ul  li:last-child()').append($('.how-btn'));
     $('.how-btn').appendTo('.steps-list li:last-child()');
     $('.how-img').appendTo('.steps-list li:last-child()');
-    $('.banner .banner-outer-content').css({
-      top: $('.banner').outerHeight() * 0.2
-    });
+    // $('.banner .banner-outer-content').css({
+    //   top: $('.banner').height() * 0.3
+    // });
   }
   $('.btn-event').appendTo('.banner-content');
 
   if ($thePage !== 'events') {
     $('.banner-content').css({
-      top: $('.banner').outerHeight() * 0.2
+      top: $('.banner').height() * 0.85 - $('.banner-content h2').height()
     });
   } else if ($thePage == 'events') {
     $('.banner-outer-content').css({
@@ -35,10 +34,10 @@
     });
 
     if ($userWidth >= 500) {
-      $('.banner').css({
-        top: $('.main-navigation').height() * 2,
-        'margin-bottom': $('.main-navigation').height() * 2
-      });
+      // $('.banner').css({
+      //   top: $('.main-navigation').height() * 1,
+      //   'margin-bottom': $('.main-navigation').height() * 1
+      // });
       if ($userWidth <= 999) {
         // $('.banner .banner-outer-content').css({
         //   top: $('.banner').height() * 0.4

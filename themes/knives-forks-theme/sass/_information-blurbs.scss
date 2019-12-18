@@ -62,7 +62,7 @@ section {
     border-top: 1px solid #a3a1a1;
     width: 1240px;
     height: 20px;
-    content: '';
+    content: "";
     top: -50px;
     position: absolute;
     left: 50%;
@@ -111,7 +111,7 @@ section {
     border-top: 1px solid #a3a1a1;
     width: 1240px;
     height: 20px;
-    content: '';
+    content: "";
     top: -50px;
     position: absolute;
     left: 50%;
@@ -250,5 +250,13 @@ section {
 .front-page {
   .image-copy {
     border-bottom: 1px solid grey;
+  }
+}
+
+.page-our-story {
+  .site-content div {
+    &:nth-child(2) {
+      order: 3;
+    }
   }
 }

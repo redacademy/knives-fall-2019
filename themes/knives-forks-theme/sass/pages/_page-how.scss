@@ -1,10 +1,57 @@
-.how-it-works {
-  @include mobile {
-    //************How it Works CONTENTS AREA
-    .testimonials .carousel-cell {
-      padding: 0 2%;
-      p {
-        font-size: 1.2rem;
+article {
+  .how-count {
+    font-family: $headfont;
+  }
+}
+@include mobile {
+  //************How it Works CONTENTS AREA
+  .testimonials .carousel-cell {
+    padding: 0 2%;
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  .banner .banner-img {
+    width: 100%;
+    height: 100vmax;
+    // overflow: hidden;
+    position: relative;
+    // border: 1px dotted red;
+  }
+  .banner img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: right;
+    position: absolute;
+    // transform: translateX(-26em);
+  }
+  .banner .banner-content {
+    width: 80%;
+    // top: calc(80rem - 100%);
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+  .how-icons {
+    display: none;
+  }
+  .site-main {
+    padding: 0;
+  }
+  article {
+    line-height: 1.5;
+    .how-icons {
+      display: block;
+      width: 80%;
+      height: auto;
+      margin: 5% auto;
+    }
+    .entry-header {
+      @include mobile {
+        width: 100%;
+        padding: 0 5% 10% 5%;
+        margin: 0 auto;
       }
     }
     .banner .banner-img {
@@ -28,8 +75,10 @@
         font-size: 1.25rem;
       }
     }
-    .how-icons {
-      display: none;
+    .how-count {
+      font-size: 4rem;
+      color: $secondary_orange_med;
+      margin: 0;
     }
     .site-main {
       padding: 0;
@@ -42,75 +91,83 @@
         height: auto;
         margin: 5% auto;
       }
-      .entry-header {
-        @include mobile {
-          width: 100%;
-          padding: 0 5% 10% 5%;
-          margin: 0 auto;
-        }
-      }
-      .entry-title {
-        font-size: 2rem;
-        margin-bottom: 0;
-      }
-      .entry-description {
-        font-size: 1.2rem;
-        margin-top: 10px;
-        color: $primary_green_med;
-      }
-      p {
-        font-size: 1rem;
-      }
-      .how-count {
-        font-size: 4rem;
-        color: $secondary_orange_med;
-        margin: 0;
-        font-family: $headfont;
-      }
-      .how-title {
-        font-size: 1.2rem;
-        margin-top: -10px;
-      }
-      .entry-content {
-        padding: 5%;
-        .how-img {
-          width: 100%;
-          height: 15em;
-          position: absolute;
-          z-index: -1;
-          transform: translateY(-27%);
-          left: 0;
-        }
-        ul {
-          display: flex;
-          flex-flow: column nowrap;
-          align-items: center;
-          align-content: center;
-          padding-bottom: 66%;
-          li {
-            .how-btn {
-              display: block;
-              width: 70%;
-              margin: 5% auto;
-              padding: $padding 0;
-              text-align: center;
-              text-transform: uppercase;
-              font-size: 0.8rem;
-              word-spacing: 0.3em;
-              font-weight: 400;
-              background: $primary_green_light;
-            }
-          }
-        }
-      }
-    }
+      ul {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        align-content: center;
+        padding-bottom: 66%;
+        li {
+          .how-btn {
+            display: block;
+            width: 70%;
+            margin: 10% auto;
+            padding: $padding * 0.9 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            word-spacing: 0.3em;
+            font-weight: 400;
+            background: $primary_green_light;
+          } // end of how-btn
+        } // end of li
+      } // end of ul
+    } // end of entry-content
+  } // end of article
 
-    .knives-fork {
-      display: none;
-    }
+  .knives-fork {
+    display: none;
+  }
+  .profile-pic {
+    height: 9em;
+    width: 9em;
+    position: relative;
+    transform: translateY(-40%);
+  }
+  p {
+    transform: translateY(-10%);
+    font-size: 1.5rem;
+  }
+  .member-name {
+    font-size: 1.2rem;
+    text-align: right;
+  }
+  .member-since {
+    font-size: 1.2rem;
+    text-align: right;
+    transform: translateY(-80%);
+  }
+}
 
-    //**********Testimonials Area
-    .testimonials {
+// end of @mobile
+
+.btn-container {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.how-btn {
+  margin: $margin 0;
+}
+.entry-header {
+  @include tablet {
+    padding: 0 $padding;
+  }
+}
+@include tablet {
+  .article-content {
+    padding: 0;
+    .how-count {
+      margin-bottom: 0;
+      color: $secondary_orange_dark;
+    }
+    .how-title {
+      margin-top: 0;
+    }
+    .how-img {
+      width: 100%;
       margin-top: 5%;
 
       nav {
@@ -265,15 +322,55 @@
           }
         }
       }
-
-      .how-img {
-        width: 100%;
-        height: auto;
-        left: 0;
-        position: absolute;
-        // top: calc(124rem - 100%);
-        z-index: -1;
-        bottom: calc((63rem - 100%) - 1vmax);
+    }
+    .how-img {
+      width: 100%;
+      height: auto;
+      left: 0;
+      position: absolute;
+      // top: calc(124rem - 100%);
+      z-index: -1;
+      bottom: calc((63rem - 100%) - 1vmax);
+    }
+  } //end of
+  //************styles for TESTimonials
+  .testimonials {
+    // padding: 0 10% 5% 10%;
+    position: relative;
+    // background: url('../../assets/background-images/contact-bg@3x.png');
+    // background-size: cover;
+    // background-position: bottom right;
+    overflow: hidden;
+    width: 100%;
+    .site-title {
+      font-family: $headfont;
+      color: hsla(0, 0%, 0%, 0.15);
+      font-size: calc(9rem - 100%);
+      transform: translateX(-11%);
+      margin: 0;
+    }
+    nav {
+      // background: hsla(112, 18%, 41%, 0.75);
+      // color: white;
+      // border-radius: 1.5em;
+      // text-align: center;
+      padding: 2%;
+      width: fit-content;
+      margin: 0 auto;
+      height: auto;
+      img {
+        position: relative;
+        top: 0;
+        transform: translateY(-50%);
+      }
+      p {
+        font-family: $parafont;
+        font-size: $title_sm;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 1.5;
+        transform: translateY(-3em);
+        text-align: justify;
       }
     }
     //************styles for TESTimonials

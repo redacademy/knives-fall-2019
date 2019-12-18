@@ -1980,6 +1980,7 @@ h3.supported-by-title {
   margin: 0 auto; }
   @media all and (min-width: 1000px) {
     .blurb-container {
+      padding: 2rem 0 0;
       border-bottom: 2px solid #a3a1a1;
       width: 80%; } }
 
@@ -2005,7 +2006,7 @@ h3.supported-by-title {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      margin-bottom: 30%;
+      margin-bottom: 15%;
       width: 95%;
       -ms-flex-item-align: end;
           align-self: flex-end; } }
@@ -2190,6 +2191,10 @@ body {
 
 .carousel {
   background: transparent; }
+
+.testimonials .flick-container {
+  width: 65%;
+  margin: 0 auto; }
 
 .testimonials .carousel-cell {
   width: auto;

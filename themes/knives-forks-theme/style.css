@@ -916,13 +916,6 @@ p.error-message {
       display: none;
       visibility: hidden; } }
 
-.error404 .site-footer,
-.error404 .cityline,
-.error404 .info-links {
-  background-color: white;
-  visibility: hidden;
-  display: none; }
-
 .support-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1982,9 +1975,7 @@ h3.supported-by-title {
   width: 80%; }
   @media all and (min-width: 1000px) {
     .blurb-container {
-<<<<<<< HEAD
-      border-bottom: transparent; } }
-=======
+      border-bottom: transparent;
       padding: 2rem 0 0;
       border-bottom: 2px solid #a3a1a1;
       width: 95%; } }
@@ -1993,7 +1984,6 @@ h3.supported-by-title {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3; }
->>>>>>> 1b1b894a4df4ae8a12c53b49a106db2ecff9a29a
 
 .page-our-story .blurb-container {
   margin: 0 auto;

@@ -62,15 +62,12 @@
   width: 80%;
 
   @include desktop {
-<<<<<<< HEAD
     border-bottom: transparent;
-=======
     padding: $padding * 2 0 0;
     border-bottom: 2px solid #a3a1a1;
     width: 95%;
     // margin-left: -10%;
     // margin-right: -5%;
->>>>>>> 1b1b894a4df4ae8a12c53b49a106db2ecff9a29a
   }
 }
 

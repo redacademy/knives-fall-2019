@@ -49,23 +49,23 @@ p.error-message {
   }
 }
 
-.error404 {
-  .site-footer,
-  .cityline,
-  .info-links {
-    background-color: white;
-    visibility: hidden;
-    display: none;
-  }
-}
-.error404 {
-  .site-footer,
-  .cityline,
-  .info-links {
-    @mixin tablet {
-      display: block;
-      visibility: visible;
-      width: 100%;
-    }
-  }
-}
+// .error404 {
+//   .site-footer,
+//   .cityline,
+//   .info-links {
+//     background-color: white;
+//     visibility: hidden;
+//     display: none;
+//   }
+// }
+// .error404 {
+//   .site-footer,
+//   .cityline,
+//   .info-links {
+//     @mixin tablet {
+//       display: block;
+//       visibility: visible;
+//       width: 100%;
+//     }
+//   }
+// }

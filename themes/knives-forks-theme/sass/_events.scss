@@ -9,8 +9,9 @@
       font-size: 0.75rem;
       display: block;
       margin-bottom: 2%;
-      width: 50%;
+      width: 60%;
       margin: 0 auto 2% auto;
+      text-align: center;
       &:hover {
         cursor: pointer;
         background: $primary_green_light;
@@ -58,6 +59,10 @@
   }
   .banner-content {
     color: white;
+    // top: 65%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
   }
 }
 
@@ -124,12 +129,18 @@
 @include desktop {
   .banner-content {
     top: 40%;
+    text-align: center;
+    h2 {
+      font-size: calc(3em - 100%);
+    }
   }
   .banner-outer-content {
+    //style for this  outer background green content
     position: absolute;
     // top: 20%;
     padding-bottom: 5%;
     text-align: center;
+
     // transform: translateY(-35rem);
     width: 50%;
     text-align: center;
@@ -139,8 +150,8 @@
       color: white;
       display: flex;
       flex-flow: row wrap;
-      padding: 1% 5%;
-
+      padding: 2% 5%;
+      justify-content: center;
       h2 {
         margin: 0;
         text-align: left;
@@ -157,6 +168,8 @@
         font-size: 1rem;
         margin: 0 1%;
         text-transform: capitalize;
+        width: 30%;
+        font-weight: 600;
         &:hover {
           cursor: pointer;
           background: #378244;

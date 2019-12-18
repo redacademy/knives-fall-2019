@@ -101,13 +101,13 @@
             background: $primary_green_light;
             @include tablet {
               display: flex;
-              justify-content: center;  
+              justify-content: center;
             }
           } // end of how-btn
         } // end of li
       } // end of ul
     } // end of entry-content
-  }
+  } // end of article
 
   .knives-fork {
     display: none;

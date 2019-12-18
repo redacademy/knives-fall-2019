@@ -943,13 +943,7 @@ p.error-message {
               flex-direction: row;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-      padding-left: 200px;
-      padding-right: 200px;
       border-top: 2px solid #e0dbdb;
-      width: 100%;
-      max-width: 100%;
-      margin-left: 5%;
-      margin-right: 20%;
       margin-bottom: 5%; } }
 
 .slowmoney-icon,
@@ -989,7 +983,7 @@ p.error-message {
       margin-right: -166%; } }
 
 .vancity-icon img {
-  height: 8vh;
+  height: 60%;
   margin: 15%; }
   @media all and (min-width: 1000px) {
     .vancity-icon img {

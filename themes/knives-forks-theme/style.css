@@ -1038,6 +1038,8 @@ article .how-count {
     width: 80%; }
     .banner .banner-content h2 {
       font-size: 1.25rem; }
+  .how-title {
+    margin-top: -10px; }
   .how-icons {
     display: none; }
   .site-main {
@@ -1053,7 +1055,9 @@ article .how-count {
     article .entry-header {
       width: 100%;
       padding: 0 5% 10% 5%;
-      margin: 0 auto; } }
+      margin: 0 auto; }
+      article .entry-header p {
+        font-size: 1rem; } }
 
 @media all and (max-width: 499px) {
     article .banner .banner-img {

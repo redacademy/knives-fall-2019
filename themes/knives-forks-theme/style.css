@@ -226,6 +226,17 @@ td,
 th {
   padding: 0; }
 
+h2,
+.entry-title {
+  font-family: "Lora", serif; }
+
+.entry-description {
+  font-family: "Lato", sans-serif;
+  color: #296133; }
+
+p {
+  font: 16px "Lato", sans-serif; }
+
 .btn {
   background: #378244;
   color: white;
@@ -246,12 +257,6 @@ th {
     color: #378244;
     background: white;
     font-weight: 500; }
-
-.btn-event {
-  padding: 2%;
-  background: #fff;
-  color: #378244;
-  text-transform: uppercase; }
 
 .profile-pic {
   width: 14em;

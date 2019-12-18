@@ -2079,6 +2079,7 @@ h3.supported-by-title {
           position: relative;
           width: 90%; } }
   .custom-copy-block.image-copy {
+    padding-right: 5%;
     margin-left: 30px; }
     @media all and (min-width: 1000px) {
       .custom-copy-block.image-copy {
@@ -2095,6 +2096,7 @@ h3.supported-by-title {
           margin: 0;
           margin-left: 20px; } }
   .custom-copy-block.copy-image {
+    padding-left: 5%;
     margin-right: 30px; }
     @media all and (min-width: 1000px) {
       .custom-copy-block.copy-image {

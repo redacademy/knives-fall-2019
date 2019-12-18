@@ -164,6 +164,7 @@
     }
   }
   &.image-copy {
+    padding-right: 5%;
     margin-left: 30px;
     @include desktop {
       margin-left: 0;
@@ -183,6 +184,7 @@
     }
   }
   &.copy-image {
+    padding-left: 5%;
     margin-right: 30px;
     @include desktop {
       margin-right: 0;

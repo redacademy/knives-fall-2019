@@ -60,9 +60,9 @@
     });
 
     // button stylings
-    $('.gform_next_button').addClass('btn');
-    $('.gform_previous_button').addClass('btn');
-    $('.gform_button').addClass('btn');
+    $('.gform_next_button').addClass('btn btn-wide pitch');
+    $('.gform_previous_button').addClass('btn btn-wide pitch');
+    $('.gform_button').addClass('btn btn-wide pitch');
 
     // adding icon as ::before to each form page
     const gFormCurrentPage = parseInt(

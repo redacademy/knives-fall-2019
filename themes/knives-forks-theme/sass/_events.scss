@@ -320,6 +320,12 @@ p.summary-description {
   justify-content: center;
 }
 
+.btn-wide {
+  &.pitch {
+    padding: 1% 3%;
+  }
+}
+
 // .apply-to-pitch-btn-green {
 //   display: block;
 //   background: $primary_green_light;

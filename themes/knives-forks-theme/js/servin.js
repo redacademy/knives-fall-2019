@@ -6,7 +6,7 @@
     if (window.location.protocol === 'https:') {
       pathname = pathname.replace('/', '');
     } else {
-      pathname = pathname.replace('/kf/', '');
+      pathname = pathname.replace('/knivesforks/', '');
       pathname = pathname.replace('/', '');
     }
     return pathname;

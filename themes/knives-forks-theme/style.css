@@ -1077,39 +1077,41 @@ h3.supported-by-title {
       font-family: "Lora", serif; }
     article .how-title {
       font-size: 1.2rem;
-      margin-top: 0; }
-    article .entry-content .how-img {
-      width: 100%;
-      height: 15em;
-      position: absolute;
-      z-index: -1;
-      -webkit-transform: translateY(-27%);
-              transform: translateY(-27%);
-      left: 0; }
-    article .entry-content ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: column nowrap;
-              flex-flow: column nowrap;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -ms-flex-line-pack: center;
-          align-content: center;
-      padding-bottom: 66%; }
-      article .entry-content ul li .how-btn {
-        display: block;
-        width: 90%;
-        margin: 5% auto;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        word-spacing: 0.3em;
-        font-weight: 400;
-        background: #00883f; }
+      margin-top: -10px; }
+    article .entry-content {
+      padding: 5%; }
+      article .entry-content .how-img {
+        width: 100%;
+        height: 15em;
+        position: absolute;
+        z-index: -1;
+        -webkit-transform: translateY(-27%);
+                transform: translateY(-27%);
+        left: 0; }
+      article .entry-content ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        padding-bottom: 66%; }
+        article .entry-content ul li .how-btn {
+          display: block;
+          width: 90%;
+          margin: 5% auto;
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          word-spacing: 0.3em;
+          font-weight: 400;
+          background: #00883f; }
   .knives-fork {
     display: none; }
   .testimonials {
@@ -1140,8 +1142,6 @@ h3.supported-by-title {
 @media only screen and (min-width: 500px) and (max-width: 999px) {
   .article-content {
     padding: 0; }
-    .article-content .entry-header {
-      padding: 0 5%; }
     .article-content .how-count {
       color: #f2804a; }
     .article-content .how-img {

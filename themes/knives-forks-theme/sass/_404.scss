@@ -3,6 +3,7 @@
 .error-404 {
   margin: 0 auto;
   text-align: center;
+  line-height: 1;
 }
 
 ////styles for image
@@ -21,14 +22,15 @@
 ///styles for error message text
 
 p.error-message {
-  line-height: 1;
   text-align: center;
   margin: 0 auto;
   padding-top: 4%;
   width: 50%;
+  margin-top: 9%;
+  font-size: 1.12em;
 
   @include desktop {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 }
 
@@ -36,9 +38,34 @@ p.error-message {
   font-weight: bold;
 }
 
-.home-btn {
-  margin-top: 25%;
+.btn-green {
+  margin-top: 33%;
+  width: 30%;
+  text-transform: uppercase;
+  font-size: 0.88em;
   @include desktop {
     display: none;
+    visibility: hidden;
+  }
+}
+
+.error404 {
+  .site-footer,
+  .cityline,
+  .info-links {
+    background-color: white;
+    visibility: hidden;
+    display: none;
+  }
+}
+.error404 {
+  .site-footer,
+  .cityline,
+  .info-links {
+    @mixin tablet {
+      display: block;
+      visibility: visible;
+      width: 100%;
+    }
   }
 }

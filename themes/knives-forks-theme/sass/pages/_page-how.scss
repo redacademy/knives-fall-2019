@@ -42,25 +42,37 @@
       height: auto;
       margin: 5% auto;
     }
+    .entry-header {
+      @include mobile {
+        width: 100%;
+        padding: 0 5% 10% 5%;
+        margin: 0 auto;
+      }
+    }
     .entry-title {
       font-size: 2rem;
+      margin-bottom: 0;
     }
     .entry-description {
       font-size: 1.2rem;
+      margin-top: 10px;
+      color: $primary_green_med;
     }
     p {
       font-size: 1rem;
-      text-align: justify;
     }
     .how-count {
       font-size: 4rem;
       color: $secondary_orange_med;
       margin: 0;
+      font-family: $headfont;
     }
     .how-title {
       font-size: 1.2rem;
+      margin-top: -10px;
     }
     .entry-content {
+      padding: 5%;
       .how-img {
         width: 100%;
         height: 15em;
@@ -78,8 +90,9 @@
         li {
           .how-btn {
             display: block;
-            width: 90%;
+            width: 70%;
             margin: 5% auto;
+            padding: $padding 0;
             text-align: center;
             text-transform: uppercase;
             font-size: 0.8rem;
@@ -130,10 +143,6 @@
 @include tablet {
   .article-content {
     padding: 0;
-
-    .entry-header {
-      padding: 0 5%;
-    }
     .how-count {
       color: $secondary_orange_dark;
     }

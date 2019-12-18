@@ -1053,7 +1053,13 @@ h3.supported-by-title {
       display: block;
       width: 80%;
       height: auto;
-      margin: 5% auto; }
+      margin: 5% auto; } }
+  @media all and (max-width: 499px) and (max-width: 499px) {
+    article .entry-header {
+      max-width: 100%;
+      padding: 3%; } }
+
+@media all and (max-width: 499px) {
     article .entry-title {
       font-size: 2rem; }
     article .entry-description {

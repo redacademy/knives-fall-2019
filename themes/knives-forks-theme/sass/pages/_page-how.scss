@@ -42,6 +42,12 @@
       height: auto;
       margin: 5% auto;
     }
+    .entry-header {
+      @include mobile {
+        max-width: 100%;
+        padding: 3%;
+      }
+    }
     .entry-title {
       font-size: 2rem;
     }

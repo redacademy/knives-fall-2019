@@ -904,7 +904,7 @@ p.error-message {
 .error-btn-container {
   margin-top: 20%; }
 
-@media only screen and (min-width: 500px) and (max-width: 999px) {
+@media screen and (min-width: 500px) and (max-width: 999px) {
   .error-btn-container .btn-wide {
     display: none;
     visibility: hidden; } }
@@ -1031,6 +1031,8 @@ article .how-count {
     height: 100%;
     width: auto;
     position: absolute;
+    -o-object-position: right;
+       object-position: right;
     right: -60%; }
   .banner .banner-content {
     width: 80%; }
@@ -1142,7 +1144,7 @@ article .how-count {
 .how-btn {
   margin: 1rem 0; }
 
-@media only screen and (min-width: 500px) and (max-width: 999px) {
+@media screen and (min-width: 500px) and (max-width: 999px) {
   .entry-header {
     padding: 0 1rem; } }
 
@@ -1150,6 +1152,7 @@ article .how-count {
   .article-content {
     padding: 0; }
     .article-content .how-count {
+      font-size: 3rem;
       margin-bottom: 0;
       color: #f2804a; }
     .article-content .how-title {
@@ -1180,7 +1183,7 @@ article .how-count {
         -webkit-transform: translateY(-80%);
                 transform: translateY(-80%); } }
 
-@media only screen and (min-width: 500px) and (max-width: 999px) and (min-width: 500px) and (max-width: 999px) {
+@media screen and (min-width: 500px) and (max-width: 999px) and (min-width: 500px) and (max-width: 999px) {
   .article-content {
     padding: 0; }
     .article-content .how-count {
@@ -1217,7 +1220,7 @@ article .how-count {
       -webkit-transform: translateY(-2em);
               transform: translateY(-2em); } }
 
-@media only screen and (min-width: 500px) and (max-width: 999px) {
+@media screen and (min-width: 500px) and (max-width: 999px) {
   .testimonials {
     position: relative;
     overflow: hidden;
@@ -2204,9 +2207,11 @@ article .how-count {
         text-transform: capitalize; }
         .team .team-grid .team-member .desc p.name {
           font-weight: bold;
-          margin: 0; }
+          margin: 0;
+          font-size: 1.125rem; }
         .team .team-grid .team-member .desc p.role {
-          margin: 0; }
+          margin: 0;
+          font-size: 1rem; }
 
 /* external css: flickity.css */
 * {

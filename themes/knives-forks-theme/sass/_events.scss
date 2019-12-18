@@ -320,21 +320,19 @@ p.summary-description {
   justify-content: center;
 }
 
-.apply-to-pitch-btn-green {
-  background: $primary_green_med;
-  color: white;
-  border: 1px solid transparent;
-  border-radius: 2em;
-  font-size: $fontsize;
-  font-family: $parafont;
-  text-align: center;
-  text-transform: uppercase;
-  width: 217px;
-  height: 45px;
-  text-decoration: none;
-  font-weight: 500;
-  overflow: hidden;
-}
+// .apply-to-pitch-btn-green {
+//   display: block;
+//   background: $primary_green_light;
+//   color: white;
+//   border: 1px solid transparent;
+//   border-radius: 2em;
+//   font-family: $parafont;
+//   text-align: center;
+//   width: 20%;
+//   height: min-content;
+//   font-size: 0.88em;
+//   padding: 3% 14%;
+// }
 
 /////past events
 

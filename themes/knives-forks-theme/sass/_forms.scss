@@ -1,13 +1,18 @@
 //**************Button styles
 .btn {
-  background: $primary_green_med;
+  background: $primary_green_light;
   color: white;
-  border: 1px solid $primary_green_med;
+  border: 1px solid $primary_green_light;
   border-radius: 2em;
   padding: 2%;
   font-size: $fontsize;
   font-family: $parafont;
   height: min-content;
+
+  &.btn-wide {
+    padding: 1% 3%;
+  }
+
   &:hover {
     cursor: pointer;
     border: 1px solid $primary_green_med;
@@ -16,6 +21,7 @@
     font-weight: 500;
   }
 }
+
 //************styles for PROFILE PICTURES
 .profile-pic {
   width: 14em;

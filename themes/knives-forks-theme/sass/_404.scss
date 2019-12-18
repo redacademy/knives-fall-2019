@@ -38,34 +38,25 @@ p.error-message {
   font-weight: bold;
 }
 
-.btn-green {
-  margin-top: 33%;
-  width: 30%;
-  text-transform: uppercase;
-  font-size: 0.88em;
-  @include desktop {
-    display: none;
-    visibility: hidden;
+.btn-wide {
+  &.home {
+    padding: 3% 18%;
   }
 }
 
-.error404 {
-  .site-footer,
-  .cityline,
-  .info-links {
-    background-color: white;
-    visibility: hidden;
-    display: none;
-  }
+.error-btn-container {
+  margin-top: 20%;
 }
-.error404 {
-  .site-footer,
-  .cityline,
-  .info-links {
-    @mixin tablet {
-      display: block;
-      visibility: visible;
-      width: 100%;
+
+.error-btn-container {
+  .btn-wide {
+    @include tablet {
+      display: none;
+      visibility: hidden;
+    }
+    @include desktop {
+      display: none;
+      visibility: hidden;
     }
   }
 }

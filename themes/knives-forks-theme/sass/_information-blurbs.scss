@@ -58,7 +58,11 @@
 
 .blurb-container {
   margin: 0 auto;
+  border-bottom: 2px solid #a3a1a1;
+  width: 80%;
+
   @include desktop {
+    border-bottom: transparent;
     padding: $padding * 2 0 0;
     border-bottom: 2px solid #a3a1a1;
     width: 95%;

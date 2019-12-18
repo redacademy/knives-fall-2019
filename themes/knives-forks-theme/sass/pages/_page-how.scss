@@ -1,3 +1,8 @@
+article {
+  .how-count {
+    font-family: $headfont;
+  }
+}
 @include mobile {
   //************How it Works CONTENTS AREA
   .testimonials .carousel-cell {
@@ -65,7 +70,6 @@
       font-size: 4rem;
       color: $secondary_orange_med;
       margin: 0;
-      font-family: $headfont;
     }
     .how-title {
       font-size: 1.2rem;
@@ -139,12 +143,32 @@
       transform: translateY(-80%);
     }
   }
+} // end of @mobile
+
+.btn-container {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.how-btn {
+  margin: $margin 0;
+}
+.entry-header {
+  @include tablet {
+    padding: 0 $padding;
+  }
 }
 @include tablet {
   .article-content {
     padding: 0;
     .how-count {
+      margin-bottom: 0;
       color: $secondary_orange_dark;
+    }
+    .how-title {
+      margin-top: 0;
     }
     .how-img {
       width: 100%;
@@ -274,7 +298,7 @@
       z-index: -1;
       bottom: calc((63rem - 100%) - 1vmax);
     }
-  }
+  } //end of
   //************styles for TESTimonials
   .testimonials {
     // padding: 0 10% 5% 10%;

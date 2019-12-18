@@ -1022,6 +1022,9 @@ h3.supported-by-title {
       padding-top: 4em;
       color: #00883f; } }
 
+article .how-count {
+  font-family: "Lora", serif; }
+
 @media all and (max-width: 499px) {
   .testimonials .carousel-cell {
     padding: 0 2%; }
@@ -1073,8 +1076,7 @@ h3.supported-by-title {
     article .how-count {
       font-size: 4rem;
       color: #f29061;
-      margin: 0;
-      font-family: "Lora", serif; }
+      margin: 0; }
     article .how-title {
       font-size: 1.2rem;
       margin-top: -10px; }
@@ -1140,11 +1142,33 @@ h3.supported-by-title {
       -webkit-transform: translateY(-80%);
               transform: translateY(-80%); } }
 
+.btn-container {
+  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center; }
+
+.how-btn {
+  margin: 1rem 0; }
+
+@media only screen and (min-width: 500px) and (max-width: 999px) {
+  .entry-header {
+    padding: 0 1rem; } }
+
 @media only screen and (min-width: 500px) and (max-width: 999px) {
   .article-content {
     padding: 0; }
     .article-content .how-count {
+      margin-bottom: 0;
       color: #f2804a; }
+    .article-content .how-title {
+      margin-top: 0; }
     .article-content .how-img {
       width: 100%;
       margin-top: 5%; }

@@ -99,10 +99,6 @@
             word-spacing: 0.3em;
             font-weight: 400;
             background: $primary_green_light;
-            @include tablet {
-              display: flex;
-              justify-content: center;
-            }
           } // end of how-btn
         } // end of li
       } // end of ul
@@ -269,7 +265,6 @@
         }
       }
     }
-
     .how-img {
       width: 100%;
       height: auto;

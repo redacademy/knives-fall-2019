@@ -991,50 +991,88 @@ h3.supported-by-title {
       padding-top: 4em;
       color: #00883f; } }
 
-article .how-count {
+.page-how-it-works article .how-count {
   font-family: "Lora", serif; }
 
+.page-how-it-works article .how-title {
+  margin-top: -10px; }
+
 @media all and (max-width: 499px) {
-  .testimonials .carousel-cell {
+  .page-how-it-works .testimonials .carousel-cell {
     padding: 0 2%; }
-    .testimonials .carousel-cell p {
+    .page-how-it-works .testimonials .carousel-cell p {
       font-size: 1.2rem; }
-  .how-title {
-    margin-top: -10px; }
-  .how-icons {
+  .page-how-it-works .banner .banner-img {
+    width: 100%;
+    height: 95vmax;
+    position: relative; }
+  .page-how-it-works .banner-image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    -o-object-position: right;
+       object-position: right;
+    right: -60%; }
+  .page-how-it-works .banner .banner-content {
+    width: 80%; }
+    .page-how-it-works .banner .banner-content h2 {
+      font-size: 1.25rem; }
+  .page-how-it-works .how-description {
+    font-size: 1rem; }
+  .page-how-it-works .how-icons {
     display: none; }
-  .site-main {
+  .page-how-it-works .how-img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain; }
+  .page-how-it-works .site-main {
     padding: 0; }
-  article {
+  .page-how-it-works article {
     line-height: 1.5; }
-    article .how-icons {
+    .page-how-it-works article .how-icons {
       display: block;
       width: 80%;
       height: auto;
       margin: 5% auto; } }
   @media all and (max-width: 499px) and (max-width: 499px) {
-    article .entry-header {
+    .page-how-it-works article .entry-header {
       width: 100%;
       padding: 0 5% 10% 5%;
       margin: 0 auto; }
-      article .entry-header p {
+      .page-how-it-works article .entry-header p {
         font-size: 1rem; } }
 
 @media all and (max-width: 499px) {
-    article .how-count {
+    .page-how-it-works article .banner .banner-img {
+      width: 100%;
+      height: 100vmax;
+      position: relative; }
+    .page-how-it-works article .banner-image img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      height: 100%;
+      width: 100%;
+      position: absolute; }
+    .page-how-it-works article .banner .banner-content {
+      width: 80%; }
+      .page-how-it-works article .banner .banner-content h2 {
+        font-size: 1.25rem; }
+    .page-how-it-works article .how-count {
       font-size: 4rem;
       color: #f29061;
       margin: 0; }
-    article .site-main {
+    .page-how-it-works article .site-main {
       padding: 0; }
-    article article {
+    .page-how-it-works article article {
       line-height: 1.5; }
-      article article .how-icons {
+      .page-how-it-works article article .how-icons {
         display: block;
         width: 80%;
         height: auto;
         margin: 5% auto; }
-      article article ul {
+      .page-how-it-works article article ul {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1048,7 +1086,7 @@ article .how-count {
         -ms-flex-line-pack: center;
             align-content: center;
         padding-bottom: 66%; }
-        article article ul li .how-btn {
+        .page-how-it-works article article ul li .how-btn {
           display: block;
           width: 70%;
           margin: 10% auto;
@@ -1059,28 +1097,28 @@ article .how-count {
           word-spacing: 0.3em;
           font-weight: 400;
           background: #00883f; }
-  .knives-fork {
+  .page-how-it-works .knives-fork {
     display: none; }
-  .profile-pic {
+  .page-how-it-works .profile-pic {
     height: 9em;
     width: 9em;
     position: relative;
     -webkit-transform: translateY(-40%);
             transform: translateY(-40%); }
-  p {
+  .page-how-it-works p {
     -webkit-transform: translateY(-10%);
             transform: translateY(-10%);
     font-size: 1.5rem; }
-  .member-name {
+  .page-how-it-works .member-name {
     font-size: 1.2rem;
     text-align: right; }
-  .member-since {
+  .page-how-it-works .member-since {
     font-size: 1.2rem;
     text-align: right;
     -webkit-transform: translateY(-80%);
             transform: translateY(-80%); } }
 
-.btn-container {
+.page-how-it-works .btn-container {
   margin: 0 auto;
   width: 100%;
   display: -webkit-box;
@@ -1092,84 +1130,280 @@ article .how-count {
           flex-direction: column;
   text-align: center; }
 
-.how-btn {
+.page-how-it-works .how-btn {
   margin: 1rem 0; }
 
 @media screen and (min-width: 500px) and (max-width: 999px) {
-  .entry-header {
+  .page-how-it-works .entry-header {
     padding: 0 1rem; } }
 
 @media screen and (min-width: 500px) and (max-width: 999px) {
-  .article-content {
+  .page-how-it-works .article-content {
     padding: 0; }
-    .article-content .how-count {
+    .page-how-it-works .article-content .how-count {
       font-size: 3rem;
       margin-bottom: 0;
       color: #f2804a; }
-    .article-content .how-title {
+    .page-how-it-works .article-content .how-title {
       margin-top: 0; }
-    .article-content .how-img {
+    .page-how-it-works .article-content .how-img {
       width: 100%;
       margin-top: 5%; }
-      .article-content .how-img nav {
+      .page-how-it-works .article-content .how-img nav {
         padding: 0 5%; }
-      .article-content .how-img .flickity-button {
+      .page-how-it-works .article-content .how-img .flickity-button {
         display: none; }
-      .article-content .how-img .profile-pic {
+      .page-how-it-works .article-content .how-img .profile-pic {
         height: 9em;
         width: 9em;
         position: relative;
         -webkit-transform: translateY(-40%);
                 transform: translateY(-40%); }
-      .article-content .how-img p {
+      .page-how-it-works .article-content .how-img p {
         -webkit-transform: translateY(-10%);
                 transform: translateY(-10%);
         font-size: 1.5rem; }
-      .article-content .how-img .member-name {
+      .page-how-it-works .article-content .how-img .member-name {
         font-size: 1.2rem;
         text-align: right; }
-      .article-content .how-img .member-since {
+      .page-how-it-works .article-content .how-img .member-since {
         font-size: 1.2rem;
         text-align: right;
         -webkit-transform: translateY(-80%);
-                transform: translateY(-80%); } }
-
-@media screen and (min-width: 500px) and (max-width: 999px) and (min-width: 500px) and (max-width: 999px) {
-  .article-content {
-    padding: 0; }
-    .article-content .how-count {
-      color: #f2804a; }
-    .article-content .how-img {
-      width: 100%;
-      margin-top: 5%; }
-  .entry-content nav {
+                transform: translateY(-80%); }
+  .page-how-it-works .entry-content nav {
     padding: 0 5%; }
-  .entry-content .how-icons {
+  .page-how-it-works .entry-content .how-icons {
     display: none; }
-  .testimonials {
+  .page-how-it-works .testimonials {
     width: 90%;
     margin: 0 auto;
     padding-top: 5%; }
-    .testimonials .knives-fork {
+    .page-how-it-works .testimonials .knives-fork {
       display: none; }
-    .testimonials .carousel-cell {
+    .page-how-it-works .testimonials .carousel-cell {
       padding: 0 10%; }
-    .testimonials .profile-pic {
+    .page-how-it-works .testimonials .profile-pic {
       -webkit-transform: translateY(-40%);
               transform: translateY(-40%);
       margin-bottom: 1em; }
-    .testimonials p {
+    .page-how-it-works .testimonials p {
       -webkit-transform: translateY(-40%);
               transform: translateY(-40%);
       line-height: 1.5; }
-    .testimonials .member-name,
-    .testimonials .member-since {
+    .page-how-it-works .testimonials .member-name,
+    .page-how-it-works .testimonials .member-since {
       text-align: right; }
-    .testimonials .member-name {
+    .page-how-it-works .testimonials .member-name {
       font-weight: bold; }
-    .testimonials .member-since {
+    .page-how-it-works .testimonials .member-since {
       -webkit-transform: translateY(-2em);
               transform: translateY(-2em); } }
+
+@media all and (min-width: 1000px) {
+  .page-how-it-works .article-content {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative; }
+    .page-how-it-works .article-content .how-icons {
+      right: 0;
+      top: 13%;
+      width: auto;
+      height: 15vw;
+      -o-object-fit: cover;
+      object-fit: cover;
+      position: absolute;
+      background: white;
+      border-radius: 2em;
+      display: none; }
+  .page-how-it-works .entry-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    position: relative;
+    padding-bottom: 5vh; }
+    .page-how-it-works .entry-header nav {
+      width: 60%; }
+    .page-how-it-works .entry-header .entry-title {
+      font-size: 2.7rem; }
+    .page-how-it-works .entry-header .entry-description {
+      font-size: 1rem; }
+    .page-how-it-works .entry-header p {
+      line-height: 1.5;
+      text-align: justify; }
+  .page-how-it-works .entry-content {
+    position: relative; }
+    .page-how-it-works .entry-content .how-img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1; }
+  .page-how-it-works .steps-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .page-how-it-works .steps-list li {
+      width: 50%; } }
+
+.page-how-it-works .testimonials {
+  padding-top: 1%;
+  position: relative;
+  overflow: hidden;
+  width: 100%; }
+  .page-how-it-works .testimonials .site-title {
+    font-family: "Lora", serif;
+    color: rgba(0, 0, 0, 0.15);
+    font-size: calc(9rem - 100%);
+    -webkit-transform: translateX(-11%);
+            transform: translateX(-11%);
+    margin: 0; }
+  .page-how-it-works .testimonials nav {
+    padding: 2%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    height: auto; }
+    .page-how-it-works .testimonials nav img {
+      position: relative;
+      top: 0;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .page-how-it-works .testimonials nav p {
+      font-family: "Lato", sans-serif;
+      font-size: 24px;
+      width: 80%;
+      margin: 0 auto;
+      padding-bottom: 5%; }
+      .page-how-it-works .testimonials nav p nav {
+        width: 60%;
+        padding: 2% 0;
+        text-align: center; }
+        .page-how-it-works .testimonials nav p nav .btn {
+          margin: 0 1%;
+          width: -webkit-fit-content;
+          width: -moz-fit-content;
+          width: fit-content;
+          position: relative;
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+        .page-how-it-works .testimonials nav p nav ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: row wrap;
+                  flex-flow: row wrap;
+          margin-bottom: 5%;
+          text-align: left;
+          width: 100%; }
+          .page-how-it-works .testimonials nav p nav ul li {
+            -webkit-box-flex: 1;
+                -ms-flex: 1 0 50%;
+                    flex: 1 0 50%; }
+            .page-how-it-works .testimonials nav p nav ul li h3 {
+              font-family: "Lato", sans-serif;
+              font-size: 28px;
+              color: #f2804a; }
+    .page-how-it-works .testimonials nav .how-img {
+      width: 100%;
+      height: auto;
+      left: 0;
+      position: absolute;
+      z-index: -1;
+      bottom: calc((63rem - 100%) - 1vmax); }
+  .page-how-it-works .testimonials .testimonials {
+    position: relative;
+    overflow: hidden;
+    width: 100%; }
+    .page-how-it-works .testimonials .testimonials .site-title {
+      font-family: "Lora", serif;
+      color: rgba(0, 0, 0, 0.15);
+      font-size: calc(9rem - 100%);
+      -webkit-transform: translateX(-11%);
+              transform: translateX(-11%);
+      margin: 0; }
+    .page-how-it-works .testimonials .testimonials nav {
+      padding: 2%;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin: 0 auto;
+      height: auto; }
+      .page-how-it-works .testimonials .testimonials nav img {
+        position: relative;
+        top: 0;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
+      .page-how-it-works .testimonials .testimonials nav p {
+        font-family: "Lato", sans-serif;
+        font-size: 24px;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 1.5;
+        -webkit-transform: translateY(-3em);
+                transform: translateY(-3em);
+        text-align: justify; }
+    .page-how-it-works .testimonials .testimonials .testimonials {
+      position: relative;
+      overflow: hidden;
+      width: 100%; }
+      .page-how-it-works .testimonials .testimonials .testimonials .site-title {
+        font-family: "Lora", serif;
+        color: rgba(0, 0, 0, 0.15);
+        font-size: calc(9rem - 100%);
+        -webkit-transform: translateX(-11%);
+                transform: translateX(-11%);
+        margin: 0; }
+      .page-how-it-works .testimonials .testimonials .testimonials nav {
+        padding: 2%;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 0 auto;
+        height: auto; }
+        .page-how-it-works .testimonials .testimonials .testimonials nav img {
+          position: relative;
+          top: 0;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%); }
+        .page-how-it-works .testimonials .testimonials .testimonials nav p {
+          font-family: "Lato", sans-serif;
+          font-size: 24px;
+          width: 80%;
+          margin: 0 auto;
+          line-height: 1.5;
+          -webkit-transform: translateY(-3em);
+                  transform: translateY(-3em);
+          text-align: justify; }
+        .page-how-it-works .testimonials .testimonials .testimonials nav .member-name {
+          font-family: "Lora", serif;
+          font-size: 28px;
+          font-weight: 600;
+          text-align: right;
+          -webkit-transform: translateY(-2em);
+                  transform: translateY(-2em); }
+        .page-how-it-works .testimonials .testimonials .testimonials nav .member-since {
+          font-family: "Lato", sans-serif;
+          font-size: 20px;
+          text-align: right; }
 
 .page-apply-to-pitch .main-navigation,
 .page-become-investor .main-navigation {

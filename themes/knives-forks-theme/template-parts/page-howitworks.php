@@ -15,36 +15,25 @@ $testimonials = get_posts($args);
 //     echo '</pre>';
 
 ?>
-<div class="computer-wrapper">
-    <article class="article-content">
 
-        <header class="entry-header">
-            <nav>
-                <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
-                <h3 class="entry-description">
-                    We create meaningful relationships between members and local food businesses.
-                </h3>
-                <p>
-                    If you’re looking to invest your money and share our love for great food in your local community, you’re in the right place!
-                    <br><br>
-                    Or if you’re a food business in BC, we provide low interest loans and experienced mentorship.
-                </p>
+<article class="article-content">
 
-            </nav>
+    <header class="entry-header">
+        <nav>
+            <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
+            <h3 class="entry-description">
+                We create meaningful relationships between members and local food businesses.
+            </h3>
+            <p>
+                If you’re looking to invest your money and share our love for great food in your local community, you’re in the right place!
+                <br><br>
+                Or if you’re a food business in BC, we provide low interest loans and experienced mentorship.
+            </p>
+
+        </nav>
+        <img class="works-img" src= "<?php echo get_stylesheet_directory_uri()?>/assets/icons/icons-how-it-works-1.2@2x.png"/>
 
 
-        </header><!-- .entry-header -->
-        <div>
-            <div class="entry-content">
-                <nav>
-                    <ul class="steps-list">
-                        <?php
-                        $tmp = '';
-                        $tmpCount = 1;
-                        if (have_rows('steps')) {
-                            while (have_rows('steps')) {
-                                the_row();
-?>
     </header><!-- .entry-header -->
    
     <div class="entry-content" >
@@ -68,41 +57,40 @@ $testimonials = get_posts($args);
                             <p class="how-description">
                             ' . get_sub_field('step-content') . '
                             </p>';
-                                $tmp .= '<img src="' . $img . '" alt="knives forks icons" class="how-icons ' . $tmpClass . '">';
+                        $tmp .= '<img src="' . $img . '" alt="knives forks icons" class="how-icons ' . $tmpClass . '">';
 
 
-                                $tmp .= '</li>';
-                                $tmpCount++;
-                            }
-                        }
-                        echo $tmp;
-                        ?>
-                    </ul>
-                    <div class="btn-container">
-                        <a href="#" class="btn how-btn">Become a Member</a>
-                        <a href="#" class="btn how-btn">Become an Entrepreneur</a>
-                    </div>
-                </nav>
-            </div><!-- .entry-content -->
+                        $tmp .= '</li>';
+                        $tmpCount++;
+                    }
+                }
+                echo $tmp;
+                ?>
+            </ul>
+            <div class="btn-container">
+                <a href="#" class="btn how-btn">Become a Member</a>
+                <a href="#" class="btn how-btn">Become an Entrepreneur</a>
+            </div>
+        </nav>
+        <img src="<?= get_field('how-img'); ?>" alt="how-it-works-hands" class="how-img">
+    </div><!-- .entry-content -->
 
 
-    </article><!-- #post-## -->
-    <img src="<?= get_field('how-img'); ?>" alt="how-it-works-hands" class="how-img">
-</div>
+</article><!-- #post-## -->
 <!--section for TESTIMONY GUY-->
 <section class="testimonials">
     <h1 class="site-title knives-fork">
         <?= get_bloginfo('title') ?>
     </h1>
     <?php
-    if (count($testimonials) > 0) {
-        $tmp = '';
-        echo '<div class="carousel" data-flickity>';
-        foreach ($testimonials as $x) {
-            // the_post($x);
-            setup_postdata($x);
-            // $img=the_field('member_profile',$x->ID);
-            $tmp .= '
+                    if (count($testimonials) > 0) {
+                        $tmp = '';
+                        echo '<div class="carousel" data-flickity>';
+                        foreach ($testimonials as $x) {
+                            // the_post($x);
+                            setup_postdata($x);
+                            // $img=the_field('member_profile',$x->ID);
+                            $tmp .= '
                     
                         <nav class="carousel-cell">
                             <img src="' . get_field('member_profile', $x->ID) . '" alt="knives&fork-' . $x->post_title . '" class="profile-pic">
@@ -118,10 +106,10 @@ $testimonials = get_posts($args);
                         </nav>
                     
                     ';
-        }
-        echo $tmp;
-        echo '</div>';
-    }
+                        }
+                        echo $tmp;
+                        echo '</div>';
+                    }
     ?>
 
 </section>

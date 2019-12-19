@@ -10,8 +10,7 @@
   position: relative;
   overflow: hidden;
   height: inherit;
-  margin-top: 8%;
-  /* text-shadow: 0px 0px 3px white; */
+  margin-top: 0;
 }
 .investor-section .investor-bg-img {
   width: 100%;
@@ -59,7 +58,6 @@
 .investor-section div .investor-bottom .btn {
   width: 80%;
   margin: 0 auto;
-  text-shadow: unset;
 }
 .investor-section div .investor-bottom > * {
   width: 100%;
@@ -115,9 +113,6 @@
   .investor-section div .investor-mid ul {
     flex-flow: column nowrap;
     padding: 0 5%;
-  }
-  .investor-section div .investor-bottom {
-    padding-bottom: 50%;
   }
 }
 

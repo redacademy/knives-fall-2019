@@ -2,6 +2,10 @@
 
 @include desktop {
   .testimonials {
+    .flickity-enabled {
+      width: 75%;
+      margin: 0 auto;
+    }
     .knives-fork {
       color: hsla(0, 0%, 0%, 0.15);
     }
@@ -9,7 +13,7 @@
     nav {
       p {
         font-size: 2rem;
-        transform: translateY(-32%);
+        transform: translateY(-25%);
         padding: 1% 10% 0 10%;
       }
       .member-name,
@@ -21,6 +25,53 @@
       }
       .member-name {
         font-weight: 600;
+      }
+    }
+  }
+}
+@include tablet{
+  .testimonials{
+    width: 100%;
+    margin:0;
+    // .flickity-button{
+    //   display: none;
+    // }
+    .flickity-enabled{
+      width: 90%;
+      margin:0 auto;
+    }
+    .carousel-cell{
+      width: 95%;
+      margin: 0 auto;
+      p{
+        font-size: 1.2rem;
+        transform: translateY(-30%);
+      }
+      .member-name{
+        font-weight: bold;
+      }
+    }
+  }
+}
+@include mobile{
+  .testimonials{
+    width: 100%;
+    margin:0;
+    .flickity-button{
+      display: none;
+    }
+    .flickity-enabled{
+      width: 90%;
+      margin:0 auto;
+    }
+    .carousel-cell{
+      width: 95%;
+      margin: 0 auto;
+      p{
+        font-size: 1rem;
+      }
+      .member-name{
+        font-weight: bold;
       }
     }
   }
@@ -47,23 +98,23 @@ body {
   //   width: 65%;
   //   margin: 0 auto;
   // }
-  .flickity-enabled {
-    width: 75%;
-    margin: 0 auto;
-  }
+  
   .carousel-cell {
     // margin: 0 auto;
     // background: #8c8;
     counter-increment: gallery-cell;
+    width:80%;
+    margin:0 10%;
+  
     img {
       transform: translateY(-35%);
     }
   }
-  .carousel-cell.is-selected {
-    width: 100%;
+  // .carousel-cell.is-selected {
+  //   // width: 100%;
 
-    // height: fit-content;
-  }
+  //   // height: fit-content;
+  // }
 
   .flickity-page-dots .dot {
     width: 1em;
@@ -74,6 +125,7 @@ body {
     width: 10%;
     height: 10%;
     opacity: 0.8;
+    
     &:hover {
       background: transparent;
       opacity: 1;
@@ -114,10 +166,10 @@ body {
 }
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: white;
+  fill:rgba(91,123,86,.75);
 }
 .flickity-prev-next-button.no-svg {
-  color: white;
+  color: rgba(91,123,86,.75);
 }
 .flickity-prev-next-button:hover {
   background: transparent;

@@ -1255,6 +1255,7 @@ article .how-count {
     .testimonials .member-since {
       -webkit-transform: translateY(-2em);
               transform: translateY(-2em); } }
+<<<<<<< HEAD
 
 @media screen and (min-width: 500px) and (max-width: 999px) {
   .testimonials {
@@ -1333,6 +1334,8 @@ article .how-count {
           font-family: "Lato", sans-serif;
           font-size: 20px;
           text-align: right; } }
+=======
+>>>>>>> bb11f6a5af00685facab13137b71363c33b7deb2
 
 .page-apply-to-pitch .main-navigation,
 .page-become-investor .main-navigation {
@@ -1882,15 +1885,6 @@ article .how-count {
   .main-navigation .desktop-menu .current-menu-item a {
     border-bottom: 3px solid #378244; }
 
-.banner img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  -o-object-position: center;
-     object-position: center; }
-
 .hide {
   display: none; }
 
@@ -2249,14 +2243,26 @@ article .how-count {
           margin: 0;
           font-size: 1rem; }
 
+.banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  -o-object-position: center;
+     object-position: center; }
+
 @media all and (min-width: 1000px) {
+  .testimonials .flickity-enabled {
+    width: 75%;
+    margin: 0 auto; }
   .testimonials .knives-fork {
     color: rgba(0, 0, 0, 0.15); }
   .testimonials .carousel-cell p,
   .testimonials nav p {
     font-size: 2rem;
-    -webkit-transform: translateY(-32%);
-            transform: translateY(-32%);
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
     padding: 1% 10% 0 10%; }
   .testimonials .carousel-cell .member-name,
   .testimonials .carousel-cell .member-since,
@@ -2271,6 +2277,40 @@ article .how-count {
   .testimonials nav .member-name {
     font-weight: 600; } }
 
+@media screen and (min-width: 500px) and (max-width: 999px) {
+  .testimonials {
+    width: 100%;
+    margin: 0; }
+    .testimonials .flickity-enabled {
+      width: 90%;
+      margin: 0 auto; }
+    .testimonials .carousel-cell {
+      width: 95%;
+      margin: 0 auto; }
+      .testimonials .carousel-cell p {
+        font-size: 1.2rem;
+        -webkit-transform: translateY(-30%);
+                transform: translateY(-30%); }
+      .testimonials .carousel-cell .member-name {
+        font-weight: bold; } }
+
+@media all and (max-width: 499px) {
+  .testimonials {
+    width: 100%;
+    margin: 0; }
+    .testimonials .flickity-button {
+      display: none; }
+    .testimonials .flickity-enabled {
+      width: 90%;
+      margin: 0 auto; }
+    .testimonials .carousel-cell {
+      width: 95%;
+      margin: 0 auto; }
+      .testimonials .carousel-cell p {
+        font-size: 1rem; }
+      .testimonials .carousel-cell .member-name {
+        font-weight: bold; } }
+
 /* external css: flickity.css */
 * {
   -webkit-box-sizing: border-box;
@@ -2282,18 +2322,13 @@ body {
 .carousel {
   background: transparent; }
 
-.testimonials .flickity-enabled {
-  width: 75%;
-  margin: 0 auto; }
-
 .testimonials .carousel-cell {
-  counter-increment: gallery-cell; }
+  counter-increment: gallery-cell;
+  width: 80%;
+  margin: 0 10%; }
   .testimonials .carousel-cell img {
     -webkit-transform: translateY(-35%);
             transform: translateY(-35%); }
-
-.testimonials .carousel-cell.is-selected {
-  width: 100%; }
 
 .testimonials .flickity-page-dots .dot {
   width: 1em;
@@ -2331,10 +2366,10 @@ body {
 
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: white; }
+  fill: rgba(91, 123, 86, 0.75); }
 
 .flickity-prev-next-button.no-svg {
-  color: white; }
+  color: rgba(91, 123, 86, 0.75); }
 
 .flickity-prev-next-button:hover {
   background: transparent; }

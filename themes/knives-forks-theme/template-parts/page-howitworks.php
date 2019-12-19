@@ -34,10 +34,13 @@ $testimonials = get_posts($args);
 
 
     </header><!-- .entry-header -->
-
-    <div class="entry-content">
+    <?php
+            $bg_img = get_field('how-img');
+            ?>
+    <div class="entry-content" style="background-image:url( <?php echo $bg_img ?> )">
         <nav>
-            <ul class="steps-list">
+            
+            <ul class="steps-list" >
                 <?php
                 $tmp = '';
                 $tmpCount = 1;
@@ -49,7 +52,7 @@ $testimonials = get_posts($args);
                         $img = get_sub_field('step-icon');
                         $tmpClass = ($img) ? '' : 'hide-this';
                         // var_dump($img);
-                        $tmp .= '<li>
+                        $tmp .= '<li class=" li' . $tmpCount .' ">
                             <h3 class="how-count">' . $tmpCount . '</h3>
                             <p class="how-title"><b>' . get_sub_field('step-title') . '</b></p>
                             <p class="how-description">

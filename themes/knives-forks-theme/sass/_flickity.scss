@@ -31,6 +31,13 @@
         font-weight: 600;
       }
     }
+    &::before {
+      content: '';
+      width: 80%;
+      margin: 0 auto;
+      height: 40px;
+      border-top: 2px solid #e0dbdb;
+    }
   }
 }
 @include tablet {
@@ -45,6 +52,13 @@
       font-size: 4rem;
       margin: 0.33rem 0;
       font-family: $headfont;
+      &::before {
+        content: '';
+        width: 80%;
+        margin: 0 auto;
+        height: 40px;
+        border-top: 2px solid #e0dbdb;
+      }
     }
     .flickity-enabled {
       width: 90%;
@@ -175,6 +189,13 @@ body {
 
 .flickity-slider {
   margin-top: 5em;
+
+  @include tablet {
+    margin-top: 7rem;
+  }
+  @include desktop {
+    margin-top: 7rem;
+  }
 }
 
 /* cell number */

@@ -15,6 +15,10 @@ input {
 }
 .steps-list {
   margin-bottom: 5%;
+  @include mobile {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 //********* CONTENts area

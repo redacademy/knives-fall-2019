@@ -68,10 +68,9 @@
     const gFormCurrentPage = parseInt(
       $('.gf_step_active .gf_step_number').text()
     );
+    const formWrapper = $('.gform_wrapper');
     const gFormId = parseInt(
-      $('.gform_wrapper')
-        .attr('ID')
-        .replace('gform_wrapper_', '')
+      formWrapper.attr('ID').replace('gform_wrapper_', '')
     );
     const gField = '#gform_page_' + gFormId + '_' + gFormCurrentPage;
 

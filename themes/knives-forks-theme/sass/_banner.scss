@@ -1,7 +1,7 @@
 .banner {
   width: 100%;
   display: block;
-  //position: relative;
+  position: relative;
   .banner-img {
     // height: 60vmax;
     //height: 95vmax;
@@ -36,24 +36,38 @@
     }
   }
   .banner-content {
-    background: rgba(111, 143, 106, 0.76);
     position: absolute;
-    // bottom: 5%;
-    display: flex;
-    flex-flow: column nowrap;
-    overflow: hidden;
+    bottom: 5%;
+    //overflow: hidden;
     padding: 2% 0;
-    width: 70%;
+    width: 80%;
+    @include tablet {
+      bottom: 15%;
+    }
+    @include desktop {
+      width: 60%;
+      bottom: 50%;
+    }
 
     h2 {
+      background: rgba(111, 143, 106, 0.76);
       color: white;
       line-height: 1.5;
-      // margin: auto 10%;
-      // font-size: 1.75rem;
       font-weight: 600;
       width: 95%;
-      margin: 0 auto;
+      padding: 0 10px;
+      //margin: 0 auto;
       font-size: 1.25rem;
+      text-align: left;
+      @include tablet {
+        font-size: 2rem;
+      }
+      @include desktop {
+        font-size: 3rem;
+        // position: absolute;
+        // bottom: 50%;
+        // padding: 2%;
+      }
     }
   }
 }

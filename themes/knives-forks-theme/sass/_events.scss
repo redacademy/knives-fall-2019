@@ -419,27 +419,32 @@ h2.past-events-title {
   display: flex;
   flex-direction: column;
   margin: 0 10%;
+  padding-bottom: 20%;
 
-  .past-event {
-    display: flex;
-    max-width: 600px;
-    flex-direction: column;
-    margin: auto;
+  @include desktop {
+    padding-bottom: 15%;
+  }
+}
+
+.past-event {
+  display: flex;
+  max-width: 600px;
+  flex-direction: column;
+  margin: auto;
+  @include desktop {
+    margin: 0;
+
     @include desktop {
-      margin: 0;
-
-      @include desktop {
-        flex-direction: column;
-        max-width: 1000px;
-        margin: 0 5%;
-      }
+      flex-direction: column;
+      max-width: 1000px;
+      margin: 0 5%;
     }
   }
+}
 
-  .past-event {
-    @include desktop {
-      flex-direction: row;
-    }
+.past-event {
+  @include desktop {
+    flex-direction: row;
   }
 }
 

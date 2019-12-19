@@ -25,9 +25,11 @@ p.error-message {
   text-align: center;
   margin: 0 auto;
   padding-top: 4%;
-  width: 50%;
+  width: 85%;
   margin-top: 9%;
-  font-size: 1.12em;
+  font-size: 1em;
+  padding-bottom: 25%;
+  line-height: 1.5;
 
   @include desktop {
     font-size: 1.5em;
@@ -40,12 +42,14 @@ p.error-message {
 
 .btn-wide {
   &.home {
-    padding: 3% 18%;
+    padding: 3% 16%;
   }
 }
 
 .error-btn-container {
   margin-top: 20%;
+  padding-top: 5%;
+  padding-bottom: 10%;
 }
 
 .error-btn-container {

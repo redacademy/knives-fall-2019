@@ -1192,13 +1192,6 @@ h3.supported-by-title {
         text-align: right;
         -webkit-transform: translateY(-80%);
                 transform: translateY(-80%); }
-  .page-how-it-works .article-content {
-    padding: 0; }
-    .page-how-it-works .article-content .how-count {
-      color: #f2804a; }
-    .page-how-it-works .article-content .how-img {
-      width: 100%;
-      margin-top: 5%; }
   .page-how-it-works .entry-content nav {
     padding: 0 5%; }
   .page-how-it-works .entry-content .how-icons {
@@ -1230,6 +1223,8 @@ h3.supported-by-title {
 
 @media all and (min-width: 1000px) {
   .page-how-it-works .article-content {
+    width: 80%;
+    margin: 0 auto;
     overflow: hidden;
     position: relative; }
     .page-how-it-works .article-content .how-icons {
@@ -1244,8 +1239,6 @@ h3.supported-by-title {
       border-radius: 2em;
       display: none; }
   .page-how-it-works .entry-header {
-    width: 80%;
-    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1263,10 +1256,22 @@ h3.supported-by-title {
       font-size: 1rem; }
     .page-how-it-works .entry-header p {
       line-height: 1.5;
-      text-align: justify; } }
-
-.page-how-it-works .how-img {
-  width: 100%; }
+      text-align: justify; }
+  .page-how-it-works .how-img {
+    width: 100%; }
+  .page-how-it-works .steps-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .page-how-it-works .steps-list li {
+      width: 50%; } }
 
 .page-how-it-works .testimonials {
   padding-top: 1%;

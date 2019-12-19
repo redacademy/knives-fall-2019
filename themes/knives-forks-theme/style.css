@@ -359,50 +359,6 @@ input {
 .steps-list {
   margin-bottom: 5%; }
 
-.banner {
-  width: 100%;
-  display: block;
-  position: relative; }
-  .banner .banner-outer-content {
-    background: unset; }
-  .banner .banner-content {
-    background: rgba(111, 143, 106, 0.76);
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    width: 50%;
-    overflow: hidden;
-    padding: 2% 0; }
-    .banner .banner-content h2 {
-      color: white;
-      line-height: 1.5;
-      font-weight: 600;
-      width: 95%;
-      margin: 0 auto; }
-
-.banner-img {
-  width: 100%;
-  height: 60vmax; }
-  .banner-img img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 100%;
-    width: 100%; }
-    .banner-img img:before, .banner-img img:after {
-      -webkit-transition: ease-in-out 1s;
-      transition: ease-in-out 1s; }
-    @media screen and (min-width: 500px) and (max-width: 999px) {
-      .banner-img img {
-        height: 100vh; } }
-    @media all and (min-width: 1000px) {
-      .banner-img img {
-        height: 100%; } }
-
 article {
   width: 100%;
   height: inherit; }
@@ -443,16 +399,6 @@ article {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4; }
-
-@media screen and (min-width: 500px) and (max-width: 999px) {
-  .banner-img img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 100%;
-    width: 100%;
-    -o-object-position: right;
-       object-position: right;
-    position: absolute; } }
 
 @media all and (max-width: 499px) {
   .banner {
@@ -1053,23 +999,6 @@ article .how-count {
     padding: 0 2%; }
     .testimonials .carousel-cell p {
       font-size: 1.2rem; }
-  .banner .banner-img {
-    width: 100%;
-    height: 95vmax;
-    position: relative; }
-  .banner-image img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 100%;
-    width: auto;
-    position: absolute;
-    -o-object-position: right;
-       object-position: right;
-    right: -60%; }
-  .banner .banner-content {
-    width: 80%; }
-    .banner .banner-content h2 {
-      font-size: 1.25rem; }
   .how-title {
     margin-top: -10px; }
   .page-how-it-works .how-description {
@@ -1094,20 +1023,6 @@ article .how-count {
         font-size: 1rem; } }
 
 @media all and (max-width: 499px) {
-    article .banner .banner-img {
-      width: 100%;
-      height: 100vmax;
-      position: relative; }
-    article .banner-image img {
-      -o-object-fit: cover;
-         object-fit: cover;
-      height: 100%;
-      width: 100%;
-      position: absolute; }
-    article .banner .banner-content {
-      width: 80%; }
-      article .banner .banner-content h2 {
-        font-size: 1.25rem; }
     article .how-count {
       font-size: 4rem;
       color: #f29061;
@@ -2445,6 +2360,65 @@ article .how-count {
           margin: 0;
           font-size: 1rem; }
 
+.banner {
+  width: 100%;
+  display: block; }
+  .banner .banner-img {
+    position: relative;
+    width: 100%;
+    height: 100vmax;
+    position: relative; }
+    .banner .banner-img img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      height: 100%;
+      width: 100%;
+      width: auto;
+      position: absolute;
+      -o-object-position: center;
+         object-position: center;
+      object-fit: cover;
+      height: 100vh;
+      width: 100%; }
+      .banner .banner-img img:before, .banner .banner-img img:after {
+        -webkit-transition: ease-in-out 1s;
+        transition: ease-in-out 1s; }
+      @media screen and (min-width: 500px) and (max-width: 999px) {
+        .banner .banner-img img {
+          height: 100vh;
+          -o-object-fit: cover;
+             object-fit: cover;
+          height: 100%;
+          width: 100%;
+          -o-object-position: center;
+             object-position: center;
+          position: absolute; } }
+      @media all and (min-width: 1000px) {
+        .banner .banner-img img {
+          -o-object-position: right;
+             object-position: right;
+          width: 100%; } }
+  .banner .banner-content {
+    background: rgba(111, 143, 106, 0.76);
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    overflow: hidden;
+    padding: 2% 0;
+    width: 70%; }
+    .banner .banner-content h2 {
+      color: white;
+      line-height: 1.5;
+      font-weight: 600;
+      width: 95%;
+      margin: 0 auto;
+      font-size: 1.25rem; }
+
 .banner img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -2453,6 +2427,17 @@ article .how-count {
   position: absolute;
   -o-object-position: center;
      object-position: center; }
+
+.banner-outer-content {
+  background: unset; }
+
+.page-how-it-works .banner-image img {
+  -o-object-position: right;
+     object-position: right; }
+  @media all and (min-width: 1000px) {
+    .page-how-it-works .banner-image img {
+      -o-object-position: center;
+         object-position: center; } }
 
 @media all and (min-width: 1000px) {
   .testimonials .flickity-enabled {

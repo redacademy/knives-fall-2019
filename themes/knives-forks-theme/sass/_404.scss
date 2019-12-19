@@ -53,10 +53,15 @@ p.error-message {
 }
 
 .error-btn-container {
+  @include tablet {
+    margin-top: 0;
+  }
   .btn-wide {
     @include tablet {
-      display: none;
-      visibility: hidden;
+      display: block;
+      visibility: visible;
+      width: 40%;
+      margin: auto;
     }
     @include desktop {
       display: none;

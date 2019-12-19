@@ -1,5 +1,5 @@
-(function ($) {
-  $(document).ready(function () {
+(function($) {
+  $(document).ready(function() {
     $('.embed-container').fitVids();
 
     //***********instance and declarations */
@@ -18,7 +18,7 @@
     // END OF VICTOR'S VARIABLES
 
     //*************Refresh the DOM when change ORIENTATION */
-    $(window).on('orientationchange', function () {
+    $(window).on('orientationchange', function() {
       document.location.reload();
     });
 
@@ -26,15 +26,15 @@
 
     // add .btn to menu item
     investor.addClass('btn');
-    burger.click(function () {
+    burger.click(function() {
       mobileMenu.removeClass('hide');
       hiddenMenu.removeClass('hide');
     });
 
-    cross.click(function () {
+    cross.click(function() {
       mobileMenu.addClass('hide');
     });
-    hidCross.click(function () {
+    hidCross.click(function() {
       hiddenMenu.addClass('hide');
     });
 
@@ -54,15 +54,15 @@
     // BROOKE'S WORK BELOW
 
     //for downloading memorandum of association
-    $('.gform_page').on('click', '.download-agreement', function (event) {
+    $('.gform_page').on('click', '.download-agreement', function(event) {
       event.preventDefault();
       window.open(knivesForksVars.invest_download_file);
     });
 
     // button stylings
-    $('.gform_next_button').addClass('btn btn-wide');
-    $('.gform_previous_button').addClass('btn btn-wide');
-    $('.gform_button').addClass('btn btn-wide');
+    $('.gform_next_button').addClass('btn btn-gravity-form');
+    $('.gform_previous_button').addClass('btn btn-gravity-form');
+    $('.gform_button').addClass('btn btn-gravity-form');
 
     // adding icon as ::before to each form page
     const gFormCurrentPage = parseInt(
@@ -128,10 +128,10 @@
     $(document).on(
       'blur',
       gField +
-      ' input:not(.button):not([type="hidden"]), ' +
-      gField +
-      ' textarea',
-      function () {
+        ' input:not(.button):not([type="hidden"]), ' +
+        gField +
+        ' textarea',
+      function() {
         if ($(this).val() !== '') {
           $(this).addClass('filled');
         } else {

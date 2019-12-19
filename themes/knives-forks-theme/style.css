@@ -260,6 +260,10 @@ p {
     border-radius: 3em; }
   .btn.btn-full {
     min-width: 350px; }
+  .btn.btn-gravity-form {
+    min-width: 154px;
+    letter-spacing: 0.5px;
+    padding: 15px 0; }
   .btn.capitals {
     text-transform: capitalize; }
   .btn:hover {

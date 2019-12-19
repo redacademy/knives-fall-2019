@@ -71,13 +71,13 @@
 				echo '
 				
 					<section class="banner">
-						<nav class="banner-img">';
+						<div class="banner-img">';
 				the_post_thumbnail('full');
-				echo '	<nav class="banner-content">
+				echo '	<div class="banner-content">
 				<h2>
 					'. get_field('banner-description') .'
 				</h2>
-			</nav> </nav>
+			</div> </div>
 						
 					</section>
 					';

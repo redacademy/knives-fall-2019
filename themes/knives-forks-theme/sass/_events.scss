@@ -21,7 +21,7 @@
     }
     .banner-outer-content {
       position: absolute;
-      // top: 0;
+      top: 45%;
       // transform: translateY(-25rem);
       width: 80%;
       text-align: center;
@@ -54,6 +54,7 @@
         height: 90vmax;
         width: 100%;
         right: 0;
+        position: relative;
       }
     }
   }
@@ -63,6 +64,9 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
+    .banner-img {
+      height: auto;
+    }
   }
 }
 

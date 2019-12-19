@@ -470,6 +470,7 @@ article {
         font-weight: 600; }
     .banner .banner-outer-content {
       position: absolute;
+      top: 45%;
       width: 80%;
       text-align: center; }
       .banner .banner-outer-content .banner-content {
@@ -496,7 +497,8 @@ article {
                 transform: unset;
         height: 90vmax;
         width: 100%;
-        right: 0; }
+        right: 0;
+        position: relative; }
   .banner-content {
     color: white;
     display: -webkit-box;
@@ -508,7 +510,9 @@ article {
             flex-flow: column nowrap;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end; } }
+            justify-content: flex-end; }
+    .banner-content .banner-img {
+      height: auto; } }
 
 @media screen and (min-width: 500px) and (max-width: 999px) {
   .banner {
@@ -1013,19 +1017,19 @@ h3.supported-by-title {
       padding-top: 4em;
       color: #00883f; } }
 
-.page-how-it-works article .how-count {
+article .how-count {
   font-family: "Lora", serif; }
 
 @media all and (max-width: 499px) {
-  .page-how-it-works .testimonials .carousel-cell {
+  .testimonials .carousel-cell {
     padding: 0 2%; }
-    .page-how-it-works .testimonials .carousel-cell p {
+    .testimonials .carousel-cell p {
       font-size: 1.2rem; }
-  .page-how-it-works .banner .banner-img {
+  .banner .banner-img {
     width: 100%;
     height: 95vmax;
     position: relative; }
-  .page-how-it-works .banner-image img {
+  .banner-image img {
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%;
@@ -1034,64 +1038,60 @@ h3.supported-by-title {
     -o-object-position: right;
        object-position: right;
     right: -60%; }
-  .page-how-it-works .banner .banner-content {
+  .banner .banner-content {
     width: 80%; }
-    .page-how-it-works .banner .banner-content h2 {
+    .banner .banner-content h2 {
       font-size: 1.25rem; }
-  .page-how-it-works .how-title {
+  .how-title {
     margin-top: -10px; }
-  .page-how-it-works .how-icons {
+  .how-icons {
     display: none; }
-  .page-how-it-works .how-img {
-    width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain; }
-  .page-how-it-works .site-main {
+  .site-main {
     padding: 0; }
-  .page-how-it-works article {
+  article {
     line-height: 1.5; }
-    .page-how-it-works article .how-icons {
+    article .how-icons {
       display: block;
       width: 80%;
       height: auto;
       margin: 5% auto; } }
   @media all and (max-width: 499px) and (max-width: 499px) {
-    .page-how-it-works article .entry-header {
+    article .entry-header {
       width: 100%;
       padding: 0 5% 10% 5%;
       margin: 0 auto; }
-      .page-how-it-works article .entry-header p {
+      article .entry-header p {
         font-size: 1rem; } }
 
 @media all and (max-width: 499px) {
-    .page-how-it-works article .banner .banner-img {
+    article .banner .banner-img {
       width: 100%;
       height: 100vmax;
       position: relative; }
-    .page-how-it-works article .banner-image img {
+    article .banner-image img {
       -o-object-fit: cover;
          object-fit: cover;
       height: 100%;
       width: 100%;
       position: absolute; }
-    .page-how-it-works article .banner .banner-content {
+    article .banner .banner-content {
       width: 80%; }
-      .page-how-it-works article .banner .banner-content h2 {
+      article .banner .banner-content h2 {
         font-size: 1.25rem; }
-    .page-how-it-works article .how-count {
+    article .how-count {
       font-size: 4rem;
       color: #f29061;
       margin: 0; }
-    .page-how-it-works article .site-main {
+    article .site-main {
       padding: 0; }
-    .page-how-it-works article article {
+    article article {
       line-height: 1.5; }
-      .page-how-it-works article article .how-icons {
+      article article .how-icons {
         display: block;
         width: 80%;
         height: auto;
         margin: 5% auto; }
-      .page-how-it-works article article ul {
+      article article ul {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1105,7 +1105,7 @@ h3.supported-by-title {
         -ms-flex-line-pack: center;
             align-content: center;
         padding-bottom: 66%; }
-        .page-how-it-works article article ul li .how-btn {
+        article article ul li .how-btn {
           display: block;
           width: 70%;
           margin: 10% auto;
@@ -1116,28 +1116,28 @@ h3.supported-by-title {
           word-spacing: 0.3em;
           font-weight: 400;
           background: #00883f; }
-  .page-how-it-works .knives-fork {
+  .knives-fork {
     display: none; }
-  .page-how-it-works .profile-pic {
+  .profile-pic {
     height: 9em;
     width: 9em;
     position: relative;
     -webkit-transform: translateY(-40%);
             transform: translateY(-40%); }
-  .page-how-it-works p {
+  p {
     -webkit-transform: translateY(-10%);
             transform: translateY(-10%);
     font-size: 1.5rem; }
-  .page-how-it-works .member-name {
+  .member-name {
     font-size: 1.2rem;
     text-align: right; }
-  .page-how-it-works .member-since {
+  .member-since {
     font-size: 1.2rem;
     text-align: right;
     -webkit-transform: translateY(-80%);
             transform: translateY(-80%); } }
 
-.page-how-it-works .btn-container {
+.btn-container {
   margin: 0 auto;
   width: 100%;
   display: -webkit-box;
@@ -1149,80 +1149,82 @@ h3.supported-by-title {
           flex-direction: column;
   text-align: center; }
 
-.page-how-it-works .how-btn {
+.how-btn {
   margin: 1rem 0; }
 
 @media screen and (min-width: 500px) and (max-width: 999px) {
-  .page-how-it-works .entry-header {
+  .entry-header {
     padding: 0 1rem; } }
 
 @media screen and (min-width: 500px) and (max-width: 999px) {
-  .page-how-it-works .article-content {
+  .article-content {
     padding: 0; }
-    .page-how-it-works .article-content .how-count {
+    .article-content .how-count {
       font-size: 3rem;
       margin-bottom: 0;
       color: #f2804a; }
-    .page-how-it-works .article-content .how-title {
+    .article-content .how-title {
       margin-top: 0; }
-    .page-how-it-works .article-content .how-img {
+    .article-content .how-img {
       width: 100%;
       margin-top: 5%; }
-      .page-how-it-works .article-content .how-img nav {
+      .article-content .how-img nav {
         padding: 0 5%; }
-      .page-how-it-works .article-content .how-img .flickity-button {
+      .article-content .how-img .flickity-button {
         display: none; }
-      .page-how-it-works .article-content .how-img .profile-pic {
+      .article-content .how-img .profile-pic {
         height: 9em;
         width: 9em;
         position: relative;
         -webkit-transform: translateY(-40%);
                 transform: translateY(-40%); }
-      .page-how-it-works .article-content .how-img p {
+      .article-content .how-img p {
         -webkit-transform: translateY(-10%);
                 transform: translateY(-10%);
         font-size: 1.5rem; }
-      .page-how-it-works .article-content .how-img .member-name {
+      .article-content .how-img .member-name {
         font-size: 1.2rem;
         text-align: right; }
-      .page-how-it-works .article-content .how-img .member-since {
+      .article-content .how-img .member-since {
         font-size: 1.2rem;
         text-align: right;
         -webkit-transform: translateY(-80%);
-                transform: translateY(-80%); }
-  .page-how-it-works .article-content {
+                transform: translateY(-80%); } }
+
+@media screen and (min-width: 500px) and (max-width: 999px) and (min-width: 500px) and (max-width: 999px) {
+  .article-content {
     padding: 0; }
-    .page-how-it-works .article-content .how-count {
+    .article-content .how-count {
       color: #f2804a; }
-    .page-how-it-works .article-content .how-img {
+    .article-content .how-img {
       width: 100%;
       margin-top: 5%; }
-  .page-how-it-works .entry-content nav {
+  .entry-content nav {
     padding: 0 5%; }
-  .page-how-it-works .entry-content .how-icons {
+  .entry-content .how-icons {
     display: none; }
-  .page-how-it-works .testimonials {
+  .testimonials {
     width: 90%;
     margin: 0 auto;
     padding-top: 5%; }
-    .page-how-it-works .testimonials .knives-fork {
+    .testimonials .knives-fork {
       display: none; }
-    .page-how-it-works .testimonials .carousel-cell {
+    .testimonials .carousel-cell {
       padding: 0 10%; }
-    .page-how-it-works .testimonials .profile-pic {
+    .testimonials .profile-pic {
       -webkit-transform: translateY(-40%);
               transform: translateY(-40%);
       margin-bottom: 1em; }
-    .page-how-it-works .testimonials p {
+    .testimonials p {
       -webkit-transform: translateY(-40%);
               transform: translateY(-40%);
       line-height: 1.5; }
-    .page-how-it-works .testimonials .member-name,
-    .page-how-it-works .testimonials .member-since {
+    .testimonials .member-name,
+    .testimonials .member-since {
       text-align: right; }
-    .page-how-it-works .testimonials .member-name {
+    .testimonials .member-name {
       font-weight: bold; }
-    .page-how-it-works .testimonials .member-since {
+    .testimonials .member-since {
       -webkit-transform: translateY(-2em);
               transform: translateY(-2em); }
   .page-how-it-works .how-img {
@@ -1309,7 +1311,7 @@ h3.supported-by-title {
     position: relative;
     overflow: hidden;
     width: 100%; }
-    .page-how-it-works .testimonials .testimonials .site-title {
+    .page-how-it-works .testimonials .site-title {
       font-family: "Lora", serif;
       color: rgba(0, 0, 0, 0.15);
       font-size: calc(9rem - 100%);
@@ -1337,30 +1339,30 @@ h3.supported-by-title {
         -webkit-transform: translateY(-3em);
                 transform: translateY(-3em);
         text-align: justify; }
-    .page-how-it-works .testimonials .testimonials .testimonials {
+    .page-how-it-works .testimonials  {
       position: relative;
       overflow: hidden;
       width: 100%; }
-      .page-how-it-works .testimonials .testimonials .testimonials .site-title {
+      .page-how-it-works .testimonials .site-title {
         font-family: "Lora", serif;
         color: rgba(0, 0, 0, 0.15);
         font-size: calc(9rem - 100%);
         -webkit-transform: translateX(-11%);
                 transform: translateX(-11%);
         margin: 0; }
-      .page-how-it-works .testimonials .testimonials .testimonials nav {
+      .page-how-it-works .testimonials nav {
         padding: 2%;
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content;
         margin: 0 auto;
         height: auto; }
-        .page-how-it-works .testimonials .testimonials .testimonials nav img {
+        .page-how-it-works .testimonials nav img {
           position: relative;
           top: 0;
           -webkit-transform: translateY(-50%);
                   transform: translateY(-50%); }
-        .page-how-it-works .testimonials .testimonials .testimonials nav p {
+        .page-how-it-works .testimonials nav p {
           font-family: "Lato", sans-serif;
           font-size: 24px;
           width: 80%;
@@ -1369,14 +1371,14 @@ h3.supported-by-title {
           -webkit-transform: translateY(-3em);
                   transform: translateY(-3em);
           text-align: justify; }
-        .page-how-it-works .testimonials .testimonials .testimonials nav .member-name {
+        .page-how-it-works .testimonials nav .member-name {
           font-family: "Lora", serif;
           font-size: 28px;
           font-weight: 600;
           text-align: right;
           -webkit-transform: translateY(-2em);
                   transform: translateY(-2em); }
-        .page-how-it-works .testimonials .testimonials .testimonials nav .member-since {
+        .page-how-it-works .testimonials nav .member-since {
           font-family: "Lato", sans-serif;
           font-size: 20px;
           text-align: right; }

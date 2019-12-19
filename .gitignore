@@ -40,3 +40,4 @@ themes/knives-forks-theme/node_modules/*
 themes/knives-forks-theme/gulpfile.js
 themes/knives-forks-theme/build/*
 #gulpfile.#
+themes/knives-forks-theme/assets/login/_short-login.mp4

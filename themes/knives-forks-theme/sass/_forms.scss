@@ -136,6 +136,10 @@ wpcf7-submit input[type='‘submit’'] {
   font-family: $parafont;
   font-size: $fontsize;
   font-weight: 200;
+
+  @include tablet {
+    margin: 4%;
+  }
 }
 
 ////styles for the form text
@@ -173,7 +177,7 @@ wpcf7-submit input[type='‘submit’'] {
 }
 
 .wpcf7-form-control:focus {
-  border-color: $primary_green_med;
+  border: 2px solid $primary_green_med;
 }
 
 ////button control

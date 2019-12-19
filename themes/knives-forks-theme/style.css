@@ -242,7 +242,7 @@ p {
   color: white;
   border: 1px solid #378244;
   border-radius: 2em;
-  padding: 20px 0px;
+  padding: 16px 0px;
   font-size: 0.88em;
   font-family: "Lato", sans-serif;
   height: -webkit-min-content;
@@ -255,7 +255,9 @@ p {
   .btn.btn-medium {
     min-width: 200px; }
   .btn.btn-large {
-    min-width: 300px; }
+    min-width: 268px;
+    letter-spacing: 0.23px;
+    border-radius: 3em; }
   .btn.btn-full {
     min-width: 350px; }
   .btn.capitals {
@@ -267,14 +269,6 @@ p {
     background: white;
     font-weight: 500; }
 
-<<<<<<< HEAD
-=======
-.btn-event {
-  background: white;
-  border-color: #378244;
-  color: #378244; }
-
->>>>>>> cd584b9e0fe11e6a2eb1bc79da83fd7b9867271b
 .profile-pic {
   width: 14em;
   border-radius: 100%;
@@ -689,7 +683,7 @@ h2.upcoming-events-location {
   text-align: center; }
   @media all and (min-width: 1000px) {
     .embed-container {
-      width: 700px; } }
+      width: 850px; } }
 
 .video-section {
   display: -webkit-box;
@@ -722,7 +716,7 @@ h2.upcoming-events-location {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      width: 970px;
+      width: 1280px;
       margin: 0 auto; } }
 
 .summary-image img {
@@ -738,6 +732,9 @@ h2.upcoming-events-location {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @media all and (min-width: 1000px) {
+    .flex-item-container {
+      margin-top: 10%; } }
 
 h3.summary-title {
   font-size: 1.5em;
@@ -747,12 +744,19 @@ h3.summary-title {
   color: black;
   margin: 0;
   padding-bottom: 20px; }
+  @media all and (min-width: 1000px) {
+    h3.summary-title {
+      padding-bottom: 2%; } }
 
 p.summary-description {
   font-size: 1em;
   line-height: 1;
   text-align: center;
   max-width: 600px; }
+  @media all and (min-width: 1000px) {
+    p.summary-description {
+      letter-spacing: 0.27px;
+      line-height: 1.25; } }
 
 .apply-to-pitch-btn-green-flex {
   display: -webkit-box;
@@ -761,6 +765,9 @@ p.summary-description {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media all and (min-width: 1000px) {
+    .apply-to-pitch-btn-green-flex {
+      margin-top: 3%; } }
 
 h2.past-events-title {
   text-align: center;
@@ -772,7 +779,7 @@ h2.past-events-title {
     h2.past-events-title {
       text-align: left;
       font-size: 2.5em;
-      padding-left: 7%;
+      padding-left: 10.5%;
       padding-bottom: 3%; } }
 
 .past-events-wrapper {
@@ -846,7 +853,7 @@ h2.past-events-title {
   @media all and (min-width: 1000px) {
     .past-events-container img {
       margin-right: 2%;
-      margin: 0 3%; } }
+      margin: 0 6.5%; } }
 
 .past-events-date {
   font-size: 24px;
@@ -880,7 +887,7 @@ h2.past-events-title {
   @media all and (min-width: 1000px) {
     .past-events-description {
       text-align: left;
-      width: 470px;
+      width: 400px;
       height: 181px;
       letter-spacing: 0.27px;
       font-size: 16px; } }

@@ -26,6 +26,8 @@
       width: 80%;
       text-align: center;
       .banner-content {
+        background: rgba(111, 143, 106, 0.76);
+
         width: 100%;
         position: relative;
         margin-bottom: 5%;
@@ -59,6 +61,8 @@
     }
   }
   .banner-content {
+    background: rgba(111, 143, 106, 0.76);
+
     color: white;
     // top: 65%;
     display: flex;
@@ -82,37 +86,39 @@
       }
     }
     .banner-outer-content {
-      background: rgba(111, 143, 106, 0.76);
-      top: 20%;
-      position: absolute;
-      width: 60%;
-      padding-bottom: 5%;
-      text-align: center;
+      // background: rgba(111, 143, 106, 0.76);
+      // top: 20%;
+      // position: absolute;
+      // width: 60%;
+      // padding-bottom: 5%;
+      // text-align: center;
       .banner-content {
-        color: white;
-        display: flex;
-        flex-flow: row wrap;
-        text-align: center;
-        padding: 4% 2%;
-        justify-content: center;
-        position: relative;
-        width: 100%;
-        height: 100%;
+        background: rgba(111, 143, 106, 0.76);
+        // color: white;
+        // display: flex;
+        // flex-flow: row wrap;
+        // text-align: center;
+        // padding: 4% 2%;
+        // justify-content: center;
+        // position: relative;
+        // width: 100%;
+        // height: 100%;
         h2 {
-          width: 100%;
-          word-break: break-word;
-          font-size: calc((3rem - 100%) - 1.5vmin);
-          margin: 0;
-          text-align: left;
+          // width: 100%;
+          // word-break: break-word;
+          // font-size: calc((3rem - 100%) - 1.5vmin);
+          // margin: 0;
+          // text-align: left;
+          background-color: unset;
         }
         p {
-          display: none;
-          padding: 0;
+          // display: none;
+          // padding: 0;
         }
         .event-location {
-          display: block;
-          text-align: right;
-          width: 100%;
+          // display: block;
+          // text-align: right;
+          // width: 100%;
           font-size: calc((3em - 100%) - 1.5vmax);
         }
         .btn-event {
@@ -133,13 +139,15 @@
   .banner-content {
     top: 40%;
     text-align: center;
+    background: rgba(111, 143, 106, 0.76);
+
     h2 {
       font-size: calc(3em - 100%);
+      background-color: unset;
     }
   }
   .banner-outer-content {
     //style for this  outer background green content
-    position: absolute;
     // top: 20%;
     padding-bottom: 5%;
     text-align: center;
@@ -149,6 +157,8 @@
     text-align: center;
     .banner-content {
       width: 100%;
+      background: rgba(111, 143, 106, 0.76);
+
       position: relative;
       color: white;
       display: flex;
@@ -161,6 +171,7 @@
         width: 100%;
         word-break: break-word;
         font-size: calc(3em - 100%);
+        background-color: unset;
       }
       .event-location {
         width: 100%;

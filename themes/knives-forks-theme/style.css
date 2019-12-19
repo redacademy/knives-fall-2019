@@ -2104,7 +2104,7 @@ h3.supported-by-title {
         position: relative;
         margin: 1.5rem 0; }
         .site-info .subscribe .email-form .email-field {
-          border: 1px solid #dee3db;
+          border: 2px solid #dee3db;
           width: 85%;
           padding: 0.5rem;
           border-radius: 2rem; }
@@ -2369,6 +2369,9 @@ h3.supported-by-title {
             -ms-flex-pack: center;
                 justify-content: center; } }
     @media all and (max-width: 499px) {
+      .team .team-grid .team-member {
+        margin: 0 auto; } }
+    @media screen and (min-width: 500px) and (max-width: 999px) {
       .team .team-grid .team-member {
         margin: 0 auto; } }
     .team .team-grid .team-member:first-child {

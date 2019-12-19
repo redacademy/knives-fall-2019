@@ -23,6 +23,9 @@
       @include mobile {
         margin: 0 auto;
       }
+      @include tablet {
+        margin: 0 auto;
+      }
 
       &:first-child {
         grid-column: 1 / 3;

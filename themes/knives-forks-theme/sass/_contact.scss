@@ -18,7 +18,11 @@
     }
 
     h2.contact-opportunity {
-      padding-top: 10%;
+      padding-top: 3%;
+
+      @include desktop {
+        padding-top: 4%;
+      }
     }
 
     .media-enquiries {
@@ -114,7 +118,7 @@
   font-family: $headfont;
   text-align: center;
   min-width: 100%;
-  margin-top: 10%;
+  margin-top: 0;
 }
 
 //***************BRUTE FORCE Mobile STYLE

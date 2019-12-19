@@ -33,6 +33,11 @@
 }
 
 .page-our-story {
+  .custom-copy-block {
+    &::before {
+      display: none;
+    }
+  }
   .site-content div {
     &:nth-child(2) {
       order: 3;
@@ -48,6 +53,19 @@
 }
 
 .custom-copy-block {
+  &::before {
+    content: '';
+    height: 10px;
+    width: 90%;
+    margin: auto;
+    transform: translateY(-80px);
+    border-top: 2px solid #e0dbdb;
+    @include tablet {
+    }
+    @include desktop {
+      display: none;
+    }
+  }
   display: flex;
   flex-direction: column;
   margin-top: 60px;
@@ -138,6 +156,12 @@
     padding-right: 5%;
     margin-top: 150px;
     margin-left: 30px;
+    &::before {
+      transform: translateY(-60px);
+      @include tablet {
+        margin-left: 12%;
+      }
+    }
     @include tablet {
       margin-top: 60px;
     }
@@ -165,6 +189,12 @@
   &.copy-image {
     padding-left: 5%;
     margin-right: 30px;
+    &::before {
+      transform: translateY(-80px);
+      @include tablet {
+        margin-left: 7%;
+      }
+    }
     @include tablet {
       margin-right: 60px;
     }

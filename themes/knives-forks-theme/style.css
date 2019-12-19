@@ -2103,14 +2103,12 @@ h3.supported-by-title {
     .copy-text {
       line-height: 1.12rem; } }
 
-.blurb-container {
-  margin: 0 auto;
-  width: 80%; }
-  @media all and (min-width: 1000px) {
-    .blurb-container {
-      border-bottom: 2px solid #e0dbdb;
-      padding: 2rem 0 0;
-      width: 95%; } }
+@media all and (min-width: 1000px) {
+  .blurb-container {
+    border-bottom: 2px solid #e0dbdb;
+    padding: 2rem 0 0;
+    width: 95%;
+    margin: 0 auto; } }
 
 .page-our-story .site-content div:nth-child(2) {
   -webkit-box-ordinal-group: 4;
@@ -2135,6 +2133,9 @@ h3.supported-by-title {
   margin-top: 60px;
   width: 90%;
   margin: 60px auto 100px auto; }
+  @media screen and (min-width: 500px) and (max-width: 999px) {
+    .custom-copy-block {
+      width: 87%; } }
   @media all and (min-width: 1000px) {
     .custom-copy-block {
       -webkit-box-orient: horizontal;
@@ -2173,7 +2174,7 @@ h3.supported-by-title {
     @media all and (min-width: 1000px) {
       .custom-copy-block .copy-block-content .copy-block-text .copy-text {
         position: relative;
-        top: 40px; } }
+        top: 25px; } }
     .custom-copy-block .copy-block-content .copy-block-btn {
       display: block;
       position: relative;
@@ -2211,12 +2212,15 @@ h3.supported-by-title {
           width: 90%; } }
   .custom-copy-block.image-copy {
     padding-right: 5%;
-    margin-left: 30px; }
+    margin-left: 60px; }
     @media all and (min-width: 1000px) {
       .custom-copy-block.image-copy {
         margin-left: 0; } }
     .custom-copy-block.image-copy .copy-block-image {
       left: -70px; }
+      @media screen and (min-width: 500px) and (max-width: 999px) {
+        .custom-copy-block.image-copy .copy-block-image {
+          left: -100px; } }
       @media all and (min-width: 1000px) {
         .custom-copy-block.image-copy .copy-block-image {
           left: 50px; } }
@@ -2229,6 +2233,9 @@ h3.supported-by-title {
   .custom-copy-block.copy-image {
     padding-left: 5%;
     margin-right: 30px; }
+    @media screen and (min-width: 500px) and (max-width: 999px) {
+      .custom-copy-block.copy-image {
+        margin-right: 60px; } }
     @media all and (min-width: 1000px) {
       .custom-copy-block.copy-image {
         margin-right: 0; } }
@@ -2239,7 +2246,7 @@ h3.supported-by-title {
       right: -27%; }
       @media screen and (min-width: 500px) and (max-width: 999px) {
         .custom-copy-block.copy-image .copy-block-image {
-          right: -28%; } }
+          right: -33%; } }
       @media all and (min-width: 1000px) {
         .custom-copy-block.copy-image .copy-block-image {
           -webkit-box-ordinal-group: 2;

@@ -70,7 +70,7 @@
     );
     const gFormId = parseInt(
       $('.gform_wrapper')
-        .attr('id')
+        .attr('ID')
         .replace('gform_wrapper_', '')
     );
     const gField = '#gform_page_' + gFormId + '_' + gFormCurrentPage;

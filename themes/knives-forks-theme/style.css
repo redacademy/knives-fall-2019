@@ -1571,7 +1571,7 @@ h3.supported-by-title {
       top: 0px; } }
 
 .gform_name::before {
-  background-image: url("../../assets/icons/Form-Unfilled/unfilled-name.svg"); }
+  background-image: url("../../assets/icons/Forms-Unfilled/unfilled-name.svg"); }
 
 .gform_email::before {
   background-image: url("../../assets/icons/Forms-Unfilled/unfilled-email.svg"); }

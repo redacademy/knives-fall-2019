@@ -2358,16 +2358,16 @@ h3.supported-by-title {
           position: absolute; } }
   .banner .banner-content {
     position: absolute;
-    bottom: 5%;
+    bottom: 50px;
     padding: 2% 0;
     width: 80%; }
     @media screen and (min-width: 500px) and (max-width: 999px) {
       .banner .banner-content {
-        bottom: 15%; } }
+        bottom: 15%;
+        position: absolute; } }
     @media all and (min-width: 1000px) {
       .banner .banner-content {
-        width: 60%;
-        bottom: 50%; } }
+        width: 60%; } }
     .banner .banner-content h2 {
       background: rgba(111, 143, 106, 0.76);
       color: white;
@@ -2382,7 +2382,9 @@ h3.supported-by-title {
           font-size: 2rem; } }
       @media all and (min-width: 1000px) {
         .banner .banner-content h2 {
-          font-size: 3rem; } }
+          font-size: 3rem;
+          position: absolute;
+          top: -40%; } }
 
 .banner-outer-content {
   background: unset; }

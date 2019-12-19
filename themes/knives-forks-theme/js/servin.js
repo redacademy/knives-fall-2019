@@ -25,11 +25,11 @@
 
   if ($thePage !== 'events') {
     $('.banner-content').css({
-      top: $('.banner').height() * 0.85 - $('.banner-content h2').height()
+      //top: $('.banner').height() * 0.85 - $('.banner-content h2').height()
     });
   } else if ($thePage == 'events') {
     $('.banner-outer-content').css({
-      top: $('.banner').height() * 0.2
+      //top: $('.banner').height() * 0.2
       // 'margin-bottom': $('.main-navigation').height() * 2
     });
 

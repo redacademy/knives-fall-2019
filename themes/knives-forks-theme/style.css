@@ -1872,15 +1872,6 @@ article .how-count {
   .main-navigation .desktop-menu .current-menu-item a {
     border-bottom: 3px solid #378244; }
 
-.banner img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  -o-object-position: center;
-     object-position: center; }
-
 .hide {
   display: none; }
 
@@ -2238,6 +2229,15 @@ article .how-count {
         .team .team-grid .team-member .desc p.role {
           margin: 0;
           font-size: 1rem; }
+
+.banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  -o-object-position: center;
+     object-position: center; }
 
 @media all and (min-width: 1000px) {
   .testimonials .knives-fork {

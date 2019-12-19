@@ -304,6 +304,10 @@
         flex-wrap: wrap;
         li {
           width: 50%;
+          padding: 0 2%;
+          &:first-child .how-description {
+            margin: $margin * 2 0 0;
+          }
         }
       }
     }

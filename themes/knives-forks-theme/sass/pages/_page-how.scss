@@ -2,6 +2,10 @@
   article {
     .how-count {
       font-family: $headfont;
+      color: $secondary_orange_med;
+    }
+    .how-title {
+      margin-top: -5px;
     }
   }
   @include mobile {
@@ -15,29 +19,21 @@
     .banner .banner-img {
       width: 100%;
       height: 95vmax;
-      // overflow: hidden;
       position: relative;
-      // border: 1px dotted red;
     }
     .banner-image img {
       object-fit: cover;
       height: 100%;
       width: auto;
-      // object-position: right;
       position: absolute;
       object-position: right;
-      // transform: translateX(-26em);
       right: -60%;
     }
     .banner .banner-content {
       width: 80%;
-      // top: calc(80rem - 100%);
       h2 {
         font-size: 1.25rem;
       }
-    }
-    .how-title {
-      margin-top: -10px;
     }
     .how-description {
       font-size: $fontsize;
@@ -73,27 +69,22 @@
       .banner .banner-img {
         width: 100%;
         height: 100vmax;
-        // overflow: hidden;
         position: relative;
-        // border: 1px dotted red;
       }
       .banner-image img {
         object-fit: cover;
         height: 100%;
         width: 100%;
         position: absolute;
-        // transform: translateX(-26em);
       }
       .banner .banner-content {
         width: 80%;
-        // top: calc(80rem - 100%);
         h2 {
           font-size: 1.25rem;
         }
       }
       .how-count {
         font-size: 4rem;
-        color: $secondary_orange_med;
         margin: 0;
       }
       .site-main {
@@ -257,7 +248,6 @@
   @include desktop {
     //************How it Works CONTENTS AREA
     .article-content {
-      // padding-bottom: 5%;
       width: 80%;
       margin: 0 auto;
       overflow: hidden;
@@ -295,34 +285,33 @@
         line-height: 1.5;
         text-align: justify;
       }
-    }
-    .how-img {
-      width: 100%; // this works
-      // height: auto;
-      // left: 0;
-      // position: absolute;
-      // top: calc(124rem - 100%);
-      // z-index: -1;
-      // bottom: calc((63rem - 100%) - 1vmax);
-    }
-    .steps-list {
-      display: flex;
-      width: 50%;
-      flex-direction: row;
-      flex-wrap: wrap;
-      li {
+    } // end of entry-header
+    .entry-content {
+      position: relative;
+      .how-img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: $zdex - 1;
+      }
+      .how-count {
+        margin-bottom: 0;
+      }
+      .steps-list {
+        display: flex;
         width: 50%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li {
+          width: 50%;
+        }
       }
     }
   }
   //************styles for TESTimonials
   .testimonials {
-    // padding: 0 10% 5% 10%;
     padding-top: 1%;
     position: relative;
-    // background: url('../../assets/background-images/contact-bg@3x.png');
-    // background-size: cover;
-    // background-position: bottom right;
     overflow: hidden;
     width: 100%;
     .site-title {
@@ -333,10 +322,6 @@
       margin: 0;
     }
     nav {
-      // background: hsla(112, 18%, 41%, 0.75);
-      // color: white;
-      // border-radius: 1.5em;
-      // text-align: center;
       padding: 2%;
       width: fit-content;
       margin: 0 auto;
@@ -386,18 +371,13 @@
         height: auto;
         left: 0;
         position: absolute;
-        // top: calc(124rem - 100%);
         z-index: -1;
         bottom: calc((63rem - 100%) - 1vmax);
       }
     } //end of
     //************styles for TESTimonials
     .testimonials {
-      // padding: 0 10% 5% 10%;
       position: relative;
-      // background: url('../../assets/background-images/contact-bg@3x.png');
-      // background-size: cover;
-      // background-position: bottom right;
       overflow: hidden;
       width: 100%;
       .site-title {
@@ -408,10 +388,6 @@
         margin: 0;
       }
       nav {
-        // background: hsla(112, 18%, 41%, 0.75);
-        // color: white;
-        // border-radius: 1.5em;
-        // text-align: center;
         padding: 2%;
         width: fit-content;
         margin: 0 auto;
@@ -433,11 +409,7 @@
       }
       //************styles for TESTimonials
       .testimonials {
-        // padding: 0 10% 5% 10%;
         position: relative;
-        // background: url('../../assets/background-images/contact-bg@3x.png');
-        // background-size: cover;
-        // background-position: bottom right;
         overflow: hidden;
         width: 100%;
         .site-title {
@@ -448,10 +420,6 @@
           margin: 0;
         }
         nav {
-          // background: hsla(112, 18%, 41%, 0.75);
-          // color: white;
-          // border-radius: 1.5em;
-          // text-align: center;
           padding: 2%;
           width: fit-content;
           margin: 0 auto;

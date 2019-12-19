@@ -996,7 +996,15 @@ h3.supported-by-title {
       color: #00883f; } }
 
 .page-how-it-works article .how-count {
+<<<<<<< HEAD
   font-family: "Lora", serif; }
+=======
+  font-family: "Lora", serif;
+  color: #f29061; }
+
+.page-how-it-works article .how-title {
+  margin-top: -5px; }
+>>>>>>> 0c679ac2a7aad48dc19928ed0029d4eda469d2dd
 
 @media all and (max-width: 499px) {
   .page-how-it-works .testimonials .carousel-cell {
@@ -1020,8 +1028,11 @@ h3.supported-by-title {
     width: 80%; }
     .page-how-it-works .banner .banner-content h2 {
       font-size: 1.25rem; }
+<<<<<<< HEAD
   .page-how-it-works .how-title {
     margin-top: -10px; }
+=======
+>>>>>>> 0c679ac2a7aad48dc19928ed0029d4eda469d2dd
   .page-how-it-works .how-description {
     font-size: 1rem; }
   .page-how-it-works .how-icons {
@@ -1064,7 +1075,6 @@ h3.supported-by-title {
         font-size: 1.25rem; }
     .page-how-it-works article .how-count {
       font-size: 4rem;
-      color: #f29061;
       margin: 0; }
     .page-how-it-works article .site-main {
       padding: 0; }
@@ -1239,6 +1249,7 @@ h3.supported-by-title {
     .page-how-it-works .entry-header p {
       line-height: 1.5;
       text-align: justify; }
+<<<<<<< HEAD
   .page-how-it-works .how-img {
     width: 100%; }
   .page-how-it-works .steps-list {
@@ -1254,6 +1265,30 @@ h3.supported-by-title {
         flex-wrap: wrap; }
     .page-how-it-works .steps-list li {
       width: 50%; } }
+=======
+  .page-how-it-works .entry-content {
+    position: relative; }
+    .page-how-it-works .entry-content .how-img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1; }
+    .page-how-it-works .entry-content .how-count {
+      margin-bottom: 0; }
+    .page-how-it-works .entry-content .steps-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 50%;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .page-how-it-works .entry-content .steps-list li {
+        width: 50%; } }
+>>>>>>> 0c679ac2a7aad48dc19928ed0029d4eda469d2dd
 
 .page-how-it-works .testimonials {
   padding-top: 1%;

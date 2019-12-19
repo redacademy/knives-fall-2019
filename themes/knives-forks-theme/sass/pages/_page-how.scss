@@ -1,36 +1,85 @@
-.page-how-it-works {
-  article {
-    .how-count {
-      font-family: $headfont;
-      color: $secondary_orange_med;
-    }
-    .how-title {
-      margin-top: -5px;
+article {
+  .how-count {
+    font-family: $headfont;
+    color: $secondary_orange_med;
+  }
+  .how-title {
+    margin-top: -5px;
+  }
+}
+@include mobile {
+  //************How it Works CONTENTS AREA
+  .site-content {
+    margin-top: 100px;
+  }
+
+  .banner .banner-img {
+    width: 100%;
+    height: 95vmax;
+    position: relative;
+  }
+  .banner-image img {
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    object-position: right;
+    right: -60%;
+  }
+  .banner .banner-content {
+    width: 80%;
+    h2 {
+      font-size: 1.25rem;
     }
   }
-  @include mobile {
-    //************How it Works CONTENTS AREA
-    .site-content {
-      margin-top: 100px;
+  .how-description {
+    font-size: $fontsize;
+  }
+  .how-icons {
+    display: none;
+  }
+  .how-img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .site-main {
+    padding: 0;
+  }
+  article {
+    line-height: 1.5;
+    .how-icons {
+      display: block;
+      width: 80%;
+      height: auto;
+      margin: 5% auto;
     }
-    .testimonials .carousel-cell {
-      padding: 0 2%;
-      p {
-        font-size: 1.2rem;
+    .entry-header {
+      @include mobile {
+        width: 100%;
+        padding: 0 5% 10% 5%;
+        margin: 0 auto;
+        p {
+          font-size: $fontsize;
+        }
       }
+    }
+    .entry-title {
+      margin-bottom: 0;
+    }
+    .entry-description {
+      margin-top: 0;
+      padding: $padding 0 $padding * 3 0;
     }
     .banner .banner-img {
       width: 100%;
-      height: 95vmax;
+      height: 100vmax;
       position: relative;
     }
     .banner-image img {
       object-fit: cover;
       height: 100%;
-      width: auto;
+      width: 100%;
       position: absolute;
-      object-position: right;
-      right: -60%;
     }
     .banner .banner-content {
       width: 80%;
@@ -38,15 +87,9 @@
         font-size: 1.25rem;
       }
     }
-    .how-description {
-      font-size: $fontsize;
-    }
-    .how-icons {
-      display: none;
-    }
-    .how-img {
-      width: 100%;
-      object-fit: contain;
+    .how-count {
+      font-size: 4rem;
+      margin: 0;
     }
     .site-main {
       padding: 0;
@@ -59,348 +102,353 @@
         height: auto;
         margin: 5% auto;
       }
-      .entry-header {
-        @include mobile {
-          width: 100%;
-          padding: 0 5% 10% 5%;
-          margin: 0 auto;
-          p {
-            font-size: $fontsize;
-          }
+      ul {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        align-content: center;
+        padding-bottom: 66%;
+        li {
+          .how-btn {
+            display: block;
+            width: 70%;
+            margin: 10% auto;
+            padding: $padding * 0.9 0;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            word-spacing: 0.3em;
+            font-weight: 400;
+            background: $primary_green_light;
+          } // end of how-btn
+        } // end of li
+      } // end of ul
+    } // end of entry-content
+  } // end of article
+
+  .knives-fork {
+    display: none;
+  }
+} // end of @mobile
+
+.btn-container {
+  margin: 0 auto;
+  width: 70%;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @include tablet {
+    width: 50%;
+  }
+  @include desktop {
+    flex-direction: row;
+    width: 70%;
+    margin-left: 0;
+  }
+  .how-btn {
+    margin: $margin 0;
+    z-index: 10;
+    @include tablet {
+      z-index: 10;
+    }
+    @include desktop {
+      width: 230px;
+      margin: $margin;
+      margin-left: 0;
+    }
+  }
+}
+
+.entry-header {
+  .works-img {
+    display: none;
+  }
+  @include tablet {
+    padding: 0 10%;
+  }
+  @include desktop {
+    display: flex;
+    .works-img {
+      display: block;
+      width: 35%;
+      height: 100%;
+      position: relative;
+      top: 70px;
+    }
+  }
+}
+@include tablet {
+  .article-content {
+    padding: 0;
+    .steps-list {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      li {
+        width: 40%;
+        margin: 0 2.5%;
+      }
+      .li1 {
+        //background-color: blue;
+        .how-description {
+          margin-top: 2.1rem;
         }
       }
-      .entry-title {
-        margin-bottom: 0;
+    }
+    .how-count {
+      font-size: $fontsize * 3;
+      margin-bottom: 0;
+      color: $secondary_orange_dark;
+    }
+    .how-title {
+      margin-top: 0;
+    }
+
+    .how-img {
+      width: 100%;
+      margin-top: 0;
+      z-index: -10;
+      transform: translateY(-100px);
+
+      @include tablet {
+        transform: translateY(-100px);
       }
-      .entry-description {
-        margin-top: 0;
-        padding: $padding 0 $padding * 3 0;
+
+      nav {
+        padding: 0 5%;
       }
-      .banner .banner-img {
-        width: 100%;
-        height: 100vmax;
+      .flickity-button {
+        display: none;
+      }
+      .profile-pic {
+        height: 9em;
+        width: 9em;
         position: relative;
+        transform: translateY(-40%);
       }
-      .banner-image img {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-        position: absolute;
+      p {
+        transform: translateY(-10%);
+        font-size: 1.5rem;
       }
-      .banner .banner-content {
-        width: 80%;
-        h2 {
-          font-size: 1.25rem;
-        }
+      .member-name {
+        font-size: 1.2rem;
+        text-align: right;
       }
-      .how-count {
-        font-size: 4rem;
-        margin: 0;
+      .member-since {
+        font-size: 1.2rem;
+        text-align: right;
+        transform: translateY(-80%);
       }
-      .site-main {
-        padding: 0;
-      }
-      article {
-        line-height: 1.5;
-        .how-icons {
-          display: block;
-          width: 80%;
-          height: auto;
-          margin: 5% auto;
-        }
-        ul {
-          display: flex;
-          flex-flow: column nowrap;
-          align-items: center;
-          align-content: center;
-          padding-bottom: 66%;
-          li {
-            .how-btn {
-              display: block;
-              width: 70%;
-              margin: 10% auto;
-              padding: $padding * 0.9 0;
-              text-align: center;
-              text-transform: uppercase;
-              font-size: 0.8rem;
-              word-spacing: 0.3em;
-              font-weight: 400;
-              background: $primary_green_light;
-            } // end of how-btn
-          } // end of li
-        } // end of ul
-      } // end of entry-content
-    } // end of article
+    }
+  }
+
+  .entry-content {
+    nav {
+      padding: 0 5%;
+    }
+    .how-icons {
+      display: none;
+    }
+  }
+  .entry-title {
+    margin-bottom: 0;
+  }
+  .entry-description {
+    margin-top: 0;
+    padding: $padding 0 $padding * 3 0;
+  }
+
+  .testimonials {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5%;
 
     .knives-fork {
       display: none;
     }
-    .profile-pic {
-      height: 9em;
-      width: 9em;
-      position: relative;
-      transform: translateY(-40%);
-    }
-    p {
-      transform: translateY(-10%);
-      font-size: 1.5rem;
-    }
-    .member-name {
-      font-size: 1.2rem;
-      text-align: right;
-    }
-    .member-since {
-      font-size: 1.2rem;
-      text-align: right;
-      transform: translateY(-80%);
-    }
-  } // end of @mobile
-
-  .btn-container {
-    margin: 0 auto;
-    width: 70%;
-    min-width: 200px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    @include tablet {
-      width: 50%;
-    }
-    @include desktop {
-      flex-direction: row;
-      width: 70%;
-      margin-left: 0;
-    }
-    .how-btn {
-      margin: $margin 0;
-      z-index: 10;
-      @include tablet {
-        z-index: 10;
-      }
-      @include desktop {
-        width: 230px;
-        margin: $margin;
-        margin-left: 0;
-      }
-    }
-  }
-
-  .entry-header {
-    .works-img {
-      display: none;
-    }
-    @include tablet {
+    .carousel-cell {
       padding: 0 10%;
     }
-    @include desktop {
-      display: flex;
-      .works-img {
-        display: block;
-        width: 35%;
-        height: 100%;
-        position: relative;
-        top: 70px;
-      }
+    .profile-pic {
+      transform: translateY(-40%);
+      margin-bottom: 1em;
+    }
+    p {
+      transform: translateY(-40%);
+      line-height: 1.5;
+    }
+    .member-name,
+    .member-since {
+      text-align: right;
+    }
+    .member-name {
+      font-weight: bold;
+    }
+    .member-since {
+      transform: translateY(-2em);
     }
   }
-  @include tablet {
-    .article-content {
-      padding: 0;
-      .steps-list {
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        li {
-          width: 40%;
-          margin: 0 2.5%;
-        }
-        .li1 {
-          //background-color: blue;
-          .how-description {
-            margin-top: 2.1rem;
-          }
-        }
-      }
-      .how-count {
-        font-size: $fontsize * 3;
-        margin-bottom: 0;
-        color: $secondary_orange_dark;
-      }
-      .how-title {
-        margin-top: 0;
-      }
+} //end of
 
-      .how-img {
-        width: 100%;
-        margin-top: 0;
-        z-index: -10;
-        transform: translateY(-100px);
+@include desktop {
+  //************How it Works CONTENTS AREA
+  .article-content {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    .how-icons {
+      right: 0;
+      top: 13%;
+      width: auto;
+      height: 15vw;
+      -o-object-fit: cover;
+      object-fit: cover;
+      position: absolute;
+      background: white;
+      border-radius: 2em;
+      display: none;
+    }
+  }
+  .entry-header {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    padding-bottom: 5vh;
 
-        @include tablet {
-          transform: translateY(-100px);
-        }
-
-        nav {
-          padding: 0 5%;
-        }
-        .flickity-button {
-          display: none;
-        }
-        .profile-pic {
-          height: 9em;
-          width: 9em;
-          position: relative;
-          transform: translateY(-40%);
-        }
-        p {
-          transform: translateY(-10%);
-          font-size: 1.5rem;
-        }
-        .member-name {
-          font-size: 1.2rem;
-          text-align: right;
-        }
-        .member-since {
-          font-size: 1.2rem;
-          text-align: right;
-          transform: translateY(-80%);
-        }
+    nav {
+      width: 60%;
+      @include desktop {
+        width: 65%;
       }
     }
 
-    .entry-content {
-      nav {
-        padding: 0 5%;
-      }
-      .how-icons {
-        display: none;
-      }
-    }
     .entry-title {
+      font-size: 2.7rem;
       margin-bottom: 0;
     }
     .entry-description {
       margin-top: 0;
-      padding: $padding 0 $padding * 3 0;
-    }
-
-    .testimonials {
-      width: 90%;
-      margin: 0 auto;
-      padding-top: 5%;
-
-      .knives-fork {
-        display: none;
-      }
-      .carousel-cell {
-        padding: 0 10%;
-      }
-      .profile-pic {
-        transform: translateY(-40%);
-        margin-bottom: 1em;
-      }
-      p {
-        transform: translateY(-40%);
-        line-height: 1.5;
-      }
-      .member-name,
-      .member-since {
-        text-align: right;
-      }
-      .member-name {
-        font-weight: bold;
-      }
-      .member-since {
-        transform: translateY(-2em);
-      }
-    }
-  } //end of
-
-  @include desktop {
-    //************How it Works CONTENTS AREA
-    .article-content {
-      width: 80%;
-      margin: 0 auto;
-      overflow: hidden;
-      position: relative;
-      .how-icons {
-        right: 0;
-        top: 13%;
-        width: auto;
-        height: 15vw;
-        -o-object-fit: cover;
-        object-fit: cover;
-        position: absolute;
-        background: white;
-        border-radius: 2em;
-        display: none;
-      }
-    }
-    .entry-header {
-      display: flex;
-      flex-flow: row nowrap;
-      position: relative;
-      padding-bottom: 5vh;
-
-      nav {
-        width: 60%;
-        @include desktop {
-          width: 65%;
-        }
-      }
-
-      .entry-title {
-        font-size: 2.7rem;
-        margin-bottom: 0;
-      }
-      .entry-description {
-        margin-top: 0;
-        font-size: $fontsize * 1.25;
-        @include desktop {
-          width: 100%;
-        }
-      }
-      p {
-        line-height: 1.5;
-        text-align: justify;
-        @include desktop {
-          width: 70%;
-        }
-      }
-    } // end of entry-header
-    .entry-content {
-      position: relative;
-      .how-img {
+      font-size: $fontsize * 1.25;
+      @include desktop {
         width: 100%;
-        position: absolute;
-        top: 0;
-        z-index: $zdex - 1;
       }
-      .how-count {
-        margin-bottom: 0;
+    }
+    p {
+      line-height: 1.5;
+      text-align: justify;
+      @include desktop {
+        width: 70%;
       }
-      .steps-list {
-        display: flex;
-        width: 65%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        li {
-          width: 40%;
-          margin: 0 2.5%;
-        }
-        .li1 {
-          //background-color: blue;
-          .how-description {
-            margin-top: 2.1rem;
-          }
+    }
+  } // end of entry-header
+  .entry-content {
+    position: relative;
+    .how-img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: $zdex - 1;
+    }
+    .how-count {
+      margin-bottom: 0;
+    }
+    .steps-list {
+      display: flex;
+      width: 65%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      li {
+        width: 40%;
+        margin: 0 2.5%;
+      }
+      .li1 {
+        //background-color: blue;
+        .how-description {
+          margin-top: 2.1rem;
         }
       }
     }
   }
+}
+//************styles for TESTimonials
+.testimonials {
+  padding-top: 1%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  .site-title {
+    font-family: $headfont;
+    color: hsla(0, 0%, 0%, 0.15);
+    font-size: calc(9rem - 100%);
+    transform: translateX(-11%);
+    margin: 0;
+  }
+  nav {
+    padding: 2%;
+    width: fit-content;
+    margin: 0 auto;
+    height: auto;
+    img {
+      position: relative;
+      top: 0;
+      transform: translateY(-50%);
+    }
+    p {
+      font-family: $parafont;
+      // font-size: $title_sm;
+      width: 80%;
+      margin: 0 auto;
+      transform: translateY(-3em);
+
+      nav {
+        width: 60%;
+        padding: 2% 0;
+
+        .btn {
+          margin: 0 1%;
+          width: fit-content;
+          position: relative;
+          display: inline-flex;
+          justify-content: center;
+        }
+        ul {
+          display: flex;
+          flex-flow: row wrap;
+          margin-bottom: 5%;
+          text-align: left;
+          width: 100%;
+          li {
+            flex: 1 0 50%;
+            h3 {
+              font-family: $parafont;
+              font-size: $title_md;
+              color: $secondary_orange_dark;
+            }
+          }
+        }
+      }
+    }
+    .member-name {
+      text-align: right;
+      padding-top: 1em;
+      font-weight: bold;
+    }
+    .member-since {
+      text-align: right;
+    }
+    .how-img {
+      width: 100%;
+      height: auto;
+      left: 0;
+      position: absolute;
+      z-index: -1;
+      bottom: calc((63rem - 100%) - 1vmax);
+    }
+  } //end of
   //************styles for TESTimonials
   .testimonials {
-    padding-top: 1%;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -426,45 +474,11 @@
         font-size: $title_sm;
         width: 80%;
         margin: 0 auto;
-        padding-bottom: 5%;
-        nav {
-          width: 60%;
-          padding: 2% 0;
-          text-align: center;
-
-          .btn {
-            margin: 0 1%;
-            width: fit-content;
-            position: relative;
-            display: inline-flex;
-            justify-content: center;
-          }
-          ul {
-            display: flex;
-            flex-flow: row wrap;
-            margin-bottom: 5%;
-            text-align: left;
-            width: 100%;
-            li {
-              flex: 1 0 50%;
-              h3 {
-                font-family: $parafont;
-                font-size: $title_md;
-                color: $secondary_orange_dark;
-              }
-            }
-          }
-        }
+        line-height: 1.5;
+        transform: translateY(-3em);
+        text-align: justify;
       }
-      .how-img {
-        width: 100%;
-        height: auto;
-        left: 0;
-        position: absolute;
-        z-index: -1;
-        bottom: calc((63rem - 100%) - 1vmax);
-      }
-    } //end of
+    }
     //************styles for TESTimonials
     .testimonials {
       position: relative;
@@ -496,52 +510,19 @@
           transform: translateY(-3em);
           text-align: justify;
         }
-      }
-      //************styles for TESTimonials
-      .testimonials {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        .site-title {
+        .member-name {
           font-family: $headfont;
-          color: hsla(0, 0%, 0%, 0.15);
-          font-size: calc(9rem - 100%);
-          transform: translateX(-11%);
-          margin: 0;
+          font-size: $title_md;
+          font-weight: 600;
+          text-align: right;
+          transform: translateY(-2em);
         }
-        nav {
-          padding: 2%;
-          width: fit-content;
-          margin: 0 auto;
-          height: auto;
-          img {
-            position: relative;
-            top: 0;
-            transform: translateY(-50%);
-          }
-          p {
-            font-family: $parafont;
-            font-size: $title_sm;
-            width: 80%;
-            margin: 0 auto;
-            line-height: 1.5;
-            transform: translateY(-3em);
-            text-align: justify;
-          }
-          .member-name {
-            font-family: $headfont;
-            font-size: $title_md;
-            font-weight: 600;
-            text-align: right;
-            transform: translateY(-2em);
-          }
-          .member-since {
-            font-family: $parafont;
-            font-size: $content_md;
-            text-align: right;
-          }
+        .member-since {
+          font-family: $parafont;
+          font-size: $content_md;
+          text-align: right;
         }
-      } //****************END of HOW it WORKS PAGE
-    }
+      }
+    } //****************END of HOW it WORKS PAGE
   }
 }

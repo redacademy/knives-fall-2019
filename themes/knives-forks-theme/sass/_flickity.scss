@@ -2,29 +2,29 @@
 
 @include desktop {
   .testimonials {
-    .flickity-enabled {
-      width: 75%;
-      margin: 0 auto;
-    }
     .knives-fork {
       color: hsla(0, 0%, 0%, 0.15);
       font-size: 5rem;
       margin: 0.33rem 0;
       font-family: $headfont;
     }
-    .carousel-cell,
+    .carousel-cell {
+      width: 90%;
+      margin: 0 5% 0 5%;
+    }
+
     nav {
       p {
         font-size: 2rem;
-        transform: translateY(-25%);
-        padding: 1% 10% 0 10%;
+        transform: translateY(-15%);
+        // padding: 1% 10% 0 10%;
       }
       .member-name,
       .member-since {
         text-align: right;
       }
       .member-since {
-        transform: translateY(-1.75em);
+        transform: translateY(-0.75em);
       }
       .member-name {
         font-family: $headfont;
@@ -65,8 +65,8 @@
       margin: 0 auto;
     }
     .carousel-cell {
-      width: 95%;
-      margin: 0 auto;
+      width: 90%;
+      margin: 0 5% 0 5%;
       p {
         font-size: 1.2rem;
         transform: translateY(-25%);
@@ -75,6 +75,11 @@
       }
       .member-name {
         font-weight: bold;
+        text-align: right;
+      }
+      .member-since {
+        text-align: right;
+        transform: translateY(-1em);
       }
     }
   }
@@ -94,32 +99,40 @@
       justify-content: center;
       font-family: $headfont;
     }
+
     .flickity-button {
       display: none;
     }
     .flickity-enabled {
       width: 100%;
-      margin: 0;
-    }
-    .carousel-cell {
-      width: 100%;
-      margin: 0;
-      p {
-        font-size: 1rem;
-        width: 90%;
-        margin: 0 auto 6% auto;
-        transform: translateY(-25%);
-      }
-      .member-name {
-        font-weight: bold;
-      }
-    }
-    &::before {
-      content: '';
-      width: 80%;
       margin: 0 auto;
-      height: 40px;
-      border-top: 2px solid #e0dbdb;
+    }
+
+    .carousel-cell.is-selected {
+      width: 90%;
+      margin: 0 5% 0 5%;
+      // &:before,
+      // &:after {
+      //   width: 95%;
+      //   margin: 0 auto;
+      // }
+      .carousel-cell {
+        width: 100%;
+
+        // margin: 0 auto;
+        p {
+          font-size: 1.2rem;
+          width: 90%;
+          // margin: 0 auto 6% auto;
+        }
+        .member-name {
+          font-weight: bold;
+          text-align: right;
+        }
+        .member-since {
+          text-align: right;
+        }
+      }
     }
   }
 }
@@ -147,21 +160,10 @@ body {
   // }
 
   .carousel-cell {
-    // margin: 0 auto;
-    // background: #8c8;
-    counter-increment: gallery-cell;
-    width: 96%;
-    margin: 0 2%;
-
     img {
       transform: translateY(-35%);
     }
   }
-  // .carousel-cell.is-selected {
-  //   // width: 100%;
-
-  //   // height: fit-content;
-  // }
 
   .flickity-page-dots .dot {
     width: 1em;
@@ -206,7 +208,7 @@ body {
   line-height: 200px;
   font-size: 80px;
   color: white;
-  margin: 0 1%;
+  // margin: 0 1%;
 }
 .carousel-cell:after {
   height: 100%;
@@ -220,10 +222,12 @@ body {
 }
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: rgba(91, 123, 86, 0.75);
+  // fill: rgba(91, 123, 86, 0.75);
+  fill: white;
 }
 .flickity-prev-next-button.no-svg {
-  color: rgba(91, 123, 86, 0.75);
+  // fill: rgba(91, 123, 86, 0.75);
+  fill: white;
 }
 .flickity-prev-next-button:hover {
   background: transparent;
@@ -231,4 +235,10 @@ body {
 /* hide disabled button */
 .flickity-prev-next-button:disabled {
   display: none;
+}
+.flickity-prev-next-button.next {
+  right: 1em !important;
+}
+.flickity-prev-next-button.previous {
+  left: 1em !important;
 }

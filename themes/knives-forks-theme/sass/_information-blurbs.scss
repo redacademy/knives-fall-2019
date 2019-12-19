@@ -136,9 +136,14 @@
   }
   &.image-copy {
     padding-right: 5%;
+    margin-top: 150px;
     margin-left: 30px;
+    @include tablet {
+      margin-top: 60px;
+    }
     @include desktop {
       margin-left: 0;
+      margin-top: 60px;
     }
     .copy-block-image {
       left: -70px;

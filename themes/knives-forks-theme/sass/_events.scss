@@ -279,7 +279,7 @@ h2.upcoming-events-location {
   text-align: center;
 
   @include desktop {
-    width: 700px;
+    width: 850px;
   }
 }
 
@@ -309,7 +309,7 @@ h2.upcoming-events-location {
 
   @include desktop {
     flex-direction: row;
-    width: 970px;
+    width: 1280px;
     margin: 0 auto;
   }
 }
@@ -325,6 +325,10 @@ h2.upcoming-events-location {
   display: flex;
   margin: 0 60px;
   flex-direction: column;
+
+  @include desktop {
+    margin-top: 10%;
+  }
 }
 
 h3.summary-title {
@@ -335,6 +339,10 @@ h3.summary-title {
   color: black;
   margin: 0;
   padding-bottom: 20px;
+
+  @include desktop {
+    padding-bottom: 2%;
+  }
 }
 
 p.summary-description {
@@ -342,12 +350,21 @@ p.summary-description {
   line-height: 1;
   text-align: center;
   max-width: 600px;
-  // margin: auto;
-}
 
+  @include desktop {
+    letter-spacing: 0.27px;
+    line-height: 1.25;
+
+    // margin: auto;
+  }
+}
 .apply-to-pitch-btn-green-flex {
   display: flex;
   justify-content: center;
+
+  @include desktop {
+    margin-top: 3%;
+  }
 }
 
 // .btn-wide {
@@ -381,20 +398,20 @@ h2.past-events-title {
   @include desktop {
     text-align: left;
     font-size: 2.5em;
-    padding-left: 13%;
+    padding-left: 10.5%;
+    padding-bottom: 3%;
   }
 }
 
 .past-events-wrapper {
   background: #f2f7f7;
   width: 100%;
-  // margin-top: 20%;
 
   @include desktop {
     background-image: url(../../assets/events-images/pasteventsbg@2x-cropped.png);
     background-repeat: no-repeat;
-    background-position: 100% 7%;
-    background-size: 21%;
+    background-position: 110% -7%;
+    background-size: 32%;
   }
 }
 
@@ -414,7 +431,7 @@ h2.past-events-title {
       @include desktop {
         flex-direction: column;
         max-width: 1000px;
-        margin: 0 3%;
+        margin: 0 5%;
       }
     }
   }
@@ -435,7 +452,6 @@ h2.past-events-title {
 
   @include desktop {
     flex-direction: column;
-    width: 42%;
   }
 }
 .past-events-container {
@@ -449,6 +465,7 @@ h2.past-events-title {
 
     @include desktop {
       margin-right: 2%;
+      margin: 0 6.5%;
     }
   }
 }
@@ -456,13 +473,14 @@ h2.past-events-title {
 .past-events-date {
   font-size: 24px;
   text-align: center;
-  // padding-top: 0;
   font-family: $parafont;
   font-style: bold;
 
   @include desktop {
     text-align: left;
     font-size: 28px;
+    margin: 0;
+    padding-bottom: 1%;
   }
 }
 .past-events-location {
@@ -486,7 +504,7 @@ h2.past-events-title {
 
   @include desktop {
     text-align: left;
-    width: 470px;
+    width: 400px;
     height: 181px;
     letter-spacing: 0.27px;
     font-size: 16px;

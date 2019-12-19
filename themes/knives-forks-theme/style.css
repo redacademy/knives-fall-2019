@@ -242,7 +242,7 @@ p {
   color: white;
   border: 1px solid #378244;
   border-radius: 2em;
-  padding: 20px 0px;
+  padding: 16px 0px;
   font-size: 0.88em;
   font-family: "Lato", sans-serif;
   height: -webkit-min-content;
@@ -255,7 +255,9 @@ p {
   .btn.btn-medium {
     min-width: 200px; }
   .btn.btn-large {
-    min-width: 300px; }
+    min-width: 268px;
+    letter-spacing: 0.23px;
+    border-radius: 3em; }
   .btn.btn-full {
     min-width: 350px; }
   .btn.capitals {
@@ -685,7 +687,7 @@ h2.upcoming-events-location {
   text-align: center; }
   @media all and (min-width: 1000px) {
     .embed-container {
-      width: 700px; } }
+      width: 850px; } }
 
 .video-section {
   display: -webkit-box;
@@ -718,7 +720,7 @@ h2.upcoming-events-location {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      width: 970px;
+      width: 1280px;
       margin: 0 auto; } }
 
 .summary-image img {
@@ -734,6 +736,9 @@ h2.upcoming-events-location {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @media all and (min-width: 1000px) {
+    .flex-item-container {
+      margin-top: 10%; } }
 
 h3.summary-title {
   font-size: 1.5em;
@@ -743,12 +748,19 @@ h3.summary-title {
   color: black;
   margin: 0;
   padding-bottom: 20px; }
+  @media all and (min-width: 1000px) {
+    h3.summary-title {
+      padding-bottom: 2%; } }
 
 p.summary-description {
   font-size: 1em;
   line-height: 1;
   text-align: center;
   max-width: 600px; }
+  @media all and (min-width: 1000px) {
+    p.summary-description {
+      letter-spacing: 0.27px;
+      line-height: 1.25; } }
 
 .apply-to-pitch-btn-green-flex {
   display: -webkit-box;
@@ -757,6 +769,9 @@ p.summary-description {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media all and (min-width: 1000px) {
+    .apply-to-pitch-btn-green-flex {
+      margin-top: 3%; } }
 
 h2.past-events-title {
   text-align: center;
@@ -768,7 +783,8 @@ h2.past-events-title {
     h2.past-events-title {
       text-align: left;
       font-size: 2.5em;
-      padding-left: 13%; } }
+      padding-left: 10.5%;
+      padding-bottom: 3%; } }
 
 .past-events-wrapper {
   background: #f2f7f7;
@@ -777,8 +793,8 @@ h2.past-events-title {
     .past-events-wrapper {
       background-image: url(../../assets/events-images/pasteventsbg@2x-cropped.png);
       background-repeat: no-repeat;
-      background-position: 100% 7%;
-      background-size: 21%; } }
+      background-position: 110% -7%;
+      background-size: 32%; } }
 
 .past-events-container {
   display: -webkit-box;
@@ -809,7 +825,7 @@ h2.past-events-title {
           -ms-flex-direction: column;
               flex-direction: column;
       max-width: 1000px;
-      margin: 0 3%; } }
+      margin: 0 5%; } }
   @media all and (min-width: 1000px) {
     .past-events-container .past-event {
       -webkit-box-orient: horizontal;
@@ -828,8 +844,7 @@ h2.past-events-title {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column;
-      width: 42%; } }
+              flex-direction: column; } }
 
 .past-events-container img {
   -o-object-fit: cover;
@@ -841,7 +856,8 @@ h2.past-events-title {
   margin: 0 auto; }
   @media all and (min-width: 1000px) {
     .past-events-container img {
-      margin-right: 2%; } }
+      margin-right: 2%;
+      margin: 0 6.5%; } }
 
 .past-events-date {
   font-size: 24px;
@@ -851,7 +867,9 @@ h2.past-events-title {
   @media all and (min-width: 1000px) {
     .past-events-date {
       text-align: left;
-      font-size: 28px; } }
+      font-size: 28px;
+      margin: 0;
+      padding-bottom: 1%; } }
 
 .past-events-location {
   color: #00883f;
@@ -873,7 +891,7 @@ h2.past-events-title {
   @media all and (min-width: 1000px) {
     .past-events-description {
       text-align: left;
-      width: 470px;
+      width: 400px;
       height: 181px;
       letter-spacing: 0.27px;
       font-size: 16px; } }

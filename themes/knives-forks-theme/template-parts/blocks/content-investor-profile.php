@@ -13,14 +13,19 @@ $fields=get_field('custom_for_investor');
 
 
 if(count($fields)>0){
-    $img1=esc_url(get_field('investor-background'));
-    $img2=is_null(get_field('investor-background-down'))? $img1 : esc_url(get_field('investor-background-down'));
+    $imgLeft=esc_url(get_field('investor-bg-left'));
+    $imgRight=esc_url(get_field('investor-bg-right'));
+    $imgTop=esc_url(get_field('investor-bg-top'));
+    $imgBottom=esc_url(get_field('investor-bg-bottom'));
     // $test=is_null(get_field('investor-background-down'))? 'ITS NULL!':'image INSIDE!';
     // var_dump($test);
+    // <img src="'. $img1 .'"
+    // srcset="'. $img2 .' 599w, '. $img1 .' 900w"
+    //  alt="knives-fork-images" class="investor-bg-img">
 echo '<section class="'.$className.'-section" id="investment" >
-    <img src="'. $img1 .'"
-    srcset="'. $img2 .' 599w, '. $img1 .' 900w"
-     alt="knives-fork-images" class="investor-bg-img">
+        <img src="'. $imgLeft .'"
+        srcset="'. $imgLeft .' 599w, '. $imgTop .' 900w"
+        alt="knives-fork-images" class="investor-bg-1st">
     <div>
     
         <div class="'.$className.'-top">
@@ -67,6 +72,9 @@ echo '<section class="'.$className.'-section" id="investment" >
             </a>
         </div>
     </div>
+    <img src="'. $imgRight .'"
+        srcset="'. $imgRight .' 599w, '. $imgBottom .' 900w"
+        alt="knives-fork-images" class="investor-bg-1st">
 </section>';
 
                 }

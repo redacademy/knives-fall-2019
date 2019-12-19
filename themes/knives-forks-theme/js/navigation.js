@@ -110,6 +110,7 @@
 
 (function($) {
   //************DECLARATIONS and INSTANCES here */
+  let $userWidth = document.documentElement.clientWidth;
   let thePage = getTerms(location.pathname);
   let scrollIndex = 0;
   let prevIndex = 0;
@@ -128,38 +129,40 @@
   if (thePage == 'apply-to-pitch' || thePage == 'become-investor') {
     return;
   }
-  $(window).on('scroll', function() {
-    // console.clear();
-    scrollIndex = $(document).scrollTop();
-    // console.log(scrollIndex);
-    if (scrollIndex > 100 && scrollIndex < 130) {
-      tmpBool = true;
-      prevIndex = scrollIndex;
-      // console.log('outside nav menu HEIGHT');
-    } else if (scrollIndex < 100) {
-      prevIndex = 0;
-      tmpBool = false;
-      // console.log('back to DEFAULT');
-      return;
-    }
+  if ($userWidth > 500) {
+    $(window).on('scroll', function() {
+      // console.clear();
+      scrollIndex = $(document).scrollTop();
+      // console.log(scrollIndex);
+      if (scrollIndex > 100 && scrollIndex < 130) {
+        tmpBool = true;
+        prevIndex = scrollIndex;
+        // console.log('outside nav menu HEIGHT');
+      } else if (scrollIndex < 100) {
+        prevIndex = 0;
+        tmpBool = false;
+        // console.log('back to DEFAULT');
+        return;
+      }
 
-    if (scrollIndex > prevIndex) {
-      if (tmpBool) {
-        // console.log(scrollIndex + ' going DOWN! ' + prevIndex);
-        $('.main-navigation').fadeOut('fast');
+      if (scrollIndex > prevIndex) {
+        if (tmpBool) {
+          // console.log(scrollIndex + ' going DOWN! ' + prevIndex);
+          $('.main-navigation').fadeOut('fast');
+        }
+        tmpBool = false;
+        prevIndex = scrollIndex;
+      } else if (scrollIndex <= prevIndex) {
+        if (!tmpBool) {
+          // console.log(scrollIndex + ' going UP! ' + prevIndex);
+          $('.main-navigation').fadeIn('fast');
+        }
+        tmpBool = true;
+        prevIndex = scrollIndex;
+      } else {
+        tmpBool = false;
+        prevIndex = scrollIndex;
       }
-      tmpBool = false;
-      prevIndex = scrollIndex;
-    } else if (scrollIndex <= prevIndex) {
-      if (!tmpBool) {
-        // console.log(scrollIndex + ' going UP! ' + prevIndex);
-        $('.main-navigation').fadeIn('fast');
-      }
-      tmpBool = true;
-      prevIndex = scrollIndex;
-    } else {
-      tmpBool = false;
-      prevIndex = scrollIndex;
-    }
-  });
+    });
+  }
 })(jQuery);

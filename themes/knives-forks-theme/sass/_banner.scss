@@ -37,16 +37,17 @@
   }
   .banner-content {
     position: absolute;
-    bottom: 5%;
+    bottom: 50px;
     //overflow: hidden;
     padding: 2% 0;
     width: 80%;
     @include tablet {
       bottom: 15%;
+      position: absolute;
     }
     @include desktop {
       width: 60%;
-      bottom: 50%;
+      //position: unset;
     }
 
     h2 {
@@ -64,8 +65,8 @@
       }
       @include desktop {
         font-size: 3rem;
-        // position: absolute;
-        // bottom: 50%;
+        position: absolute;
+        top: -40%;
         // padding: 2%;
       }
     }

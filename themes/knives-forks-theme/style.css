@@ -1154,9 +1154,24 @@ h3.supported-by-title {
         margin: 1rem;
         margin-left: 0; } }
 
+.page-how-it-works .entry-header .works-img {
+  display: none; }
+
 @media screen and (min-width: 500px) and (max-width: 999px) {
   .page-how-it-works .entry-header {
     padding: 0 10%; } }
+
+@media all and (min-width: 1000px) {
+  .page-how-it-works .entry-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .page-how-it-works .entry-header .works-img {
+      display: block;
+      width: 35%;
+      height: 100%;
+      position: relative;
+      top: 70px; } }
 
 @media screen and (min-width: 500px) and (max-width: 999px) {
   .page-how-it-works .article-content {
@@ -1274,14 +1289,29 @@ h3.supported-by-title {
     position: relative;
     padding-bottom: 5vh; }
     .page-how-it-works .entry-header nav {
-      width: 60%; }
+      width: 60%; } }
+    @media all and (min-width: 1000px) and (min-width: 1000px) {
+      .page-how-it-works .entry-header nav {
+        width: 65%; } }
+
+@media all and (min-width: 1000px) {
     .page-how-it-works .entry-header .entry-title {
       font-size: 2.7rem; }
     .page-how-it-works .entry-header .entry-description {
-      font-size: 1rem; }
+      font-size: 1.25rem; } }
+    @media all and (min-width: 1000px) and (min-width: 1000px) {
+      .page-how-it-works .entry-header .entry-description {
+        width: 100%; } }
+
+@media all and (min-width: 1000px) {
     .page-how-it-works .entry-header p {
       line-height: 1.5;
-      text-align: justify; }
+      text-align: justify; } }
+    @media all and (min-width: 1000px) and (min-width: 1000px) {
+      .page-how-it-works .entry-header p {
+        width: 70%; } }
+
+@media all and (min-width: 1000px) {
   .page-how-it-works .entry-content {
     position: relative; }
     .page-how-it-works .entry-content .how-img {

@@ -179,8 +179,21 @@
   }
 
   .entry-header {
+    .works-img {
+      display: none;
+    }
     @include tablet {
       padding: 0 10%;
+    }
+    @include desktop {
+      display: flex;
+      .works-img {
+        display: block;
+        width: 35%;
+        height: 100%;
+        position: relative;
+        top: 70px;
+      }
     }
   }
   @include tablet {
@@ -317,17 +330,26 @@
 
       nav {
         width: 60%;
+        @include desktop {
+          width: 65%;
+        }
       }
 
       .entry-title {
         font-size: 2.7rem;
       }
       .entry-description {
-        font-size: $fontsize;
+        font-size: $fontsize * 1.25;
+        @include desktop {
+          width: 100%;
+        }
       }
       p {
         line-height: 1.5;
         text-align: justify;
+        @include desktop {
+          width: 70%;
+        }
       }
     } // end of entry-header
     .entry-content {

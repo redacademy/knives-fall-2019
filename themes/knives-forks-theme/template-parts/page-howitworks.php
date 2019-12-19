@@ -34,10 +34,8 @@ $testimonials = get_posts($args);
 
 
     </header><!-- .entry-header -->
-    <?php
-            $bg_img = get_field('how-img');
-            ?>
-    <div class="entry-content" style="background-image:url( <?php echo $bg_img ?> )">
+   
+    <div class="entry-content" >
         <nav>
             
             <ul class="steps-list" >

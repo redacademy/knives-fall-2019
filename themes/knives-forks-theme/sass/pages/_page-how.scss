@@ -166,6 +166,10 @@
     }
     .how-btn {
       margin: $margin 0;
+      z-index: 10;
+      @include tablet {
+        z-index: 10;
+      }
       @include desktop {
         width: 230px;
         margin: $margin;
@@ -208,7 +212,13 @@
       }
       .how-img {
         width: 100%;
-        margin-top: 5%;
+        margin-top: 0;
+        z-index: -10;
+        transform: translateY(-100px);
+
+        @include tablet {
+          transform: translateY(-100px);
+        }
 
         nav {
           padding: 0 5%;

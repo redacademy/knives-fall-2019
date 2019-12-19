@@ -69,6 +69,13 @@
           }
         }
       }
+      .entry-title {
+        margin-bottom: 0;
+      }
+      .entry-description {
+        margin-top: 0;
+        padding: $padding 0 $padding * 3 0;
+      }
       .banner .banner-img {
         width: 100%;
         height: 100vmax;
@@ -223,6 +230,7 @@
       .how-title {
         margin-top: 0;
       }
+
       .how-img {
         width: 100%;
         margin-top: 0;
@@ -268,6 +276,13 @@
       .how-icons {
         display: none;
       }
+    }
+    .entry-title {
+      margin-bottom: 0;
+    }
+    .entry-description {
+      margin-top: 0;
+      padding: $padding 0 $padding * 3 0;
     }
 
     .testimonials {
@@ -337,8 +352,10 @@
 
       .entry-title {
         font-size: 2.7rem;
+        margin-bottom: 0;
       }
       .entry-description {
+        margin-top: 0;
         font-size: $fontsize * 1.25;
         @include desktop {
           width: 100%;

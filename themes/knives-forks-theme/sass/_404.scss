@@ -28,11 +28,12 @@ p.error-message {
   width: 85%;
   margin-top: 9%;
   font-size: 1em;
-  padding-bottom: 25%;
+  padding-bottom: 15%;
   line-height: 1.5;
 
   @include desktop {
     font-size: 1.5em;
+    padding-bottom: 15%;
   }
 }
 
@@ -53,10 +54,15 @@ p.error-message {
 }
 
 .error-btn-container {
+  @include tablet {
+    margin-top: 0;
+  }
   .btn-wide {
     @include tablet {
-      display: none;
-      visibility: hidden;
+      display: block;
+      visibility: visible;
+      width: 40%;
+      margin: auto;
     }
     @include desktop {
       display: none;

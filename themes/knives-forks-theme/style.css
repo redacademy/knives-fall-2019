@@ -299,6 +299,9 @@ wpcf7-submit input[type='‘submit’'] {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   font-weight: 200; }
+  @media screen and (min-width: 500px) and (max-width: 999px) {
+    wpcf7-submit input[type='‘submit’'] {
+      margin: 4%; } }
 
 .wpcf7-form {
   color: #378244;
@@ -332,7 +335,7 @@ wpcf7-submit input[type='‘submit’'] {
   max-width: 100%; }
 
 .wpcf7-form-control:focus {
-  border-color: #378244; }
+  border: 2px solid #378244; }
 
 .wpcf7-submit {
   width: 100%;
@@ -864,11 +867,12 @@ p.error-message {
   width: 85%;
   margin-top: 9%;
   font-size: 1em;
-  padding-bottom: 25%;
+  padding-bottom: 15%;
   line-height: 1.5; }
   @media all and (min-width: 1000px) {
     p.error-message {
-      font-size: 1.5em; } }
+      font-size: 1.5em;
+      padding-bottom: 15%; } }
 
 .error-message span {
   font-weight: bold; }
@@ -882,9 +886,15 @@ p.error-message {
   padding-bottom: 10%; }
 
 @media screen and (min-width: 500px) and (max-width: 999px) {
+  .error-btn-container {
+    margin-top: 0; } }
+
+@media screen and (min-width: 500px) and (max-width: 999px) {
   .error-btn-container .btn-wide {
-    display: none;
-    visibility: hidden; } }
+    display: block;
+    visibility: visible;
+    width: 40%;
+    margin: auto; } }
 
 @media all and (min-width: 1000px) {
   .error-btn-container .btn-wide {
@@ -996,10 +1006,19 @@ h3.supported-by-title {
 
 .page-how-it-works article .how-title {
   margin-top: -5px; }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 
+<<<<<<< HEAD
+=======
 .page-how-it-works article .entry-description {
   color: #378244; }
+=======
+>>>>>>> 3efd911f0ae61f86b9b67dd78eaf02e1321e4992
+>>>>>>> c6c1d0518501563265b3b4ee7a0dc7cc4c4ffc57
 
+>>>>>>> 1df17b76af013137120b5d20d76db4bd2b3bacd1
 @media all and (max-width: 499px) {
   .page-how-it-works .site-content {
     margin-top: 100px; }
@@ -1050,6 +1069,11 @@ h3.supported-by-title {
         font-size: 1rem; } }
 
 @media all and (max-width: 499px) {
+    .page-how-it-works article .entry-title {
+      margin-bottom: 0; }
+    .page-how-it-works article .entry-description {
+      margin-top: 0;
+      padding: 1rem 0 3rem 0; }
     .page-how-it-works article .banner .banner-img {
       width: 100%;
       height: 100vmax;
@@ -1239,6 +1263,11 @@ h3.supported-by-title {
     padding: 0 5%; }
   .page-how-it-works .entry-content .how-icons {
     display: none; }
+  .page-how-it-works .entry-title {
+    margin-bottom: 0; }
+  .page-how-it-works .entry-description {
+    margin-top: 0;
+    padding: 1rem 0 3rem 0; }
   .page-how-it-works .testimonials {
     width: 90%;
     margin: 0 auto;
@@ -1299,8 +1328,10 @@ h3.supported-by-title {
 
 @media all and (min-width: 1000px) {
     .page-how-it-works .entry-header .entry-title {
-      font-size: 2.7rem; }
+      font-size: 2.7rem;
+      margin-bottom: 0; }
     .page-how-it-works .entry-header .entry-description {
+      margin-top: 0;
       font-size: 1.25rem; } }
     @media all and (min-width: 1000px) and (min-width: 1000px) {
       .page-how-it-works .entry-header .entry-description {
@@ -1309,7 +1340,12 @@ h3.supported-by-title {
 @media all and (min-width: 1000px) {
     .page-how-it-works .entry-header p {
       line-height: 1.5;
-      /* width: 340px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      width: 340px;
       padding: 2rem 0 0; }
   .page-how-it-works .computer-wrapper {
     position: relative; }
@@ -1338,7 +1374,10 @@ h3.supported-by-title {
       width: 40%;
       margin: 0 2.5%; }
     .page-how-it-works .entry-content .steps-list .li1 .how-description {
-      margin-top: 2.1rem; } } */
+      margin-top: 2.1rem; } }
+=======
+>>>>>>> 1df17b76af013137120b5d20d76db4bd2b3bacd1
+>>>>>>> c6c1d0518501563265b3b4ee7a0dc7cc4c4ffc57
       text-align: justify; } }
     @media all and (min-width: 1000px) and (min-width: 1000px) {
       .page-how-it-works .entry-header p {
@@ -1556,7 +1595,7 @@ h3.supported-by-title {
           -ms-flex-direction: row;
               flex-direction: row; } }
   .gform_wrapper form .gf_page_steps {
-    padding: 72px 10% 30px 10%;
+    padding: 100px 10% 30px 10%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1565,7 +1604,7 @@ h3.supported-by-title {
     .gform_wrapper form .gf_page_steps.sticky {
       position: -webkit-sticky;
       position: sticky;
-      top: 70px;
+      top: 20px;
       background-color: white;
       z-index: 98; }
     @media screen and (min-width: 500px) and (max-width: 999px) {
@@ -1906,12 +1945,20 @@ h3.supported-by-title {
 .entry-content-contact {
   width: 90%;
   margin: 0 auto; }
+  @media screen and (min-width: 500px) and (max-width: 999px) {
+    .entry-content-contact {
+      margin-left: 12%;
+      width: 80%; } }
   @media all and (min-width: 1000px) {
     .entry-content-contact {
       width: 70%; } }
 
 .media-enquiries {
   padding-left: 0px; }
+  @media screen and (min-width: 500px) and (max-width: 999px) {
+    .media-enquiries {
+      margin-left: 12%;
+      width: 80%; } }
   .media-enquiries p {
     margin: 0;
     margin-bottom: 5%; }
@@ -1921,6 +1968,9 @@ h3.supported-by-title {
     font-family: "Lato", sans-serif, sans-serif;
     font-size: 24px;
     margin: 0; }
+    @media screen and (min-width: 500px) and (max-width: 999px) {
+      .media-enquiries h3 {
+        margin-top: 8%; } }
 
 .contact-opportunity {
   line-height: 1.5em;
@@ -2167,7 +2217,7 @@ h3.supported-by-title {
         position: relative;
         margin: 1.5rem 0; }
         .site-info .subscribe .email-form .email-field {
-          border: 1px solid #dee3db;
+          border: 2px solid #dee3db;
           width: 85%;
           padding: 0.5rem;
           border-radius: 2rem; }
@@ -2432,6 +2482,9 @@ h3.supported-by-title {
             -ms-flex-pack: center;
                 justify-content: center; } }
     @media all and (max-width: 499px) {
+      .team .team-grid .team-member {
+        margin: 0 auto; } }
+    @media screen and (min-width: 500px) and (max-width: 999px) {
       .team .team-grid .team-member {
         margin: 0 auto; } }
     .team .team-grid .team-member:first-child {

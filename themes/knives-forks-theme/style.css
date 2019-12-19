@@ -1747,6 +1747,9 @@ h3.supported-by-title {
       .gform_wrapper form .gform_page .gform_fields textarea {
         border-radius: 5px; }
 
+.gfield .gsection_description {
+  margin-top: 20px; }
+
 .gform_confirmation_message {
   width: 80%;
   text-align: center;

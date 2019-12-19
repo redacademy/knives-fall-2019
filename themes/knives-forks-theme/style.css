@@ -1170,87 +1170,6 @@ article .how-count {
     .testimonials .member-since {
       -webkit-transform: translateY(-2em);
               transform: translateY(-2em); } }
-<<<<<<< HEAD
-
-@media screen and (min-width: 500px) and (max-width: 999px) {
-  .testimonials {
-    padding-top: 1%;
-    position: relative;
-    overflow: hidden;
-    width: 100%; }
-    .testimonials .site-title {
-      font-family: "Lora", serif;
-      color: rgba(0, 0, 0, 0.15);
-      font-size: calc(9rem - 100%);
-      -webkit-transform: translateX(-11%);
-              transform: translateX(-11%);
-      margin: 0; }
-    .testimonials nav {
-      padding: 2%;
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
-      width: fit-content;
-      margin: 0 auto;
-      height: auto; }
-      .testimonials nav img {
-        position: relative;
-        top: 0;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%); }
-      .testimonials nav p {
-        font-family: "Lato", sans-serif;
-        font-size: 24px;
-        width: 80%;
-        margin: 0 auto;
-        line-height: 1.5;
-        -webkit-transform: translateY(-3em);
-                transform: translateY(-3em);
-        text-align: justify; }
-    .testimonials .testimonials {
-      position: relative;
-      overflow: hidden;
-      width: 100%; }
-      .testimonials .testimonials .site-title {
-        font-family: "Lora", serif;
-        color: rgba(0, 0, 0, 0.15);
-        font-size: calc(9rem - 100%);
-        -webkit-transform: translateX(-11%);
-                transform: translateX(-11%);
-        margin: 0; }
-      .testimonials .testimonials nav {
-        padding: 2%;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-        margin: 0 auto;
-        height: auto; }
-        .testimonials .testimonials nav img {
-          position: relative;
-          top: 0;
-          -webkit-transform: translateY(-50%);
-                  transform: translateY(-50%); }
-        .testimonials .testimonials nav p {
-          font-family: "Lato", sans-serif;
-          font-size: 24px;
-          width: 80%;
-          margin: 0 auto;
-          line-height: 1.5;
-          -webkit-transform: translateY(-3em);
-                  transform: translateY(-3em);
-          text-align: justify; }
-        .testimonials .testimonials nav .member-name {
-          font-family: "Lora", serif;
-          font-size: 28px;
-          font-weight: 600;
-          text-align: right;
-          -webkit-transform: translateY(-2em);
-                  transform: translateY(-2em); }
-        .testimonials .testimonials nav .member-since {
-          font-family: "Lato", sans-serif;
-          font-size: 20px;
-          text-align: right; } }
-=======
->>>>>>> bb11f6a5af00685facab13137b71363c33b7deb2
 
 .page-apply-to-pitch .main-navigation,
 .page-become-investor .main-navigation {
@@ -2169,13 +2088,10 @@ article .how-count {
     .banner .banner-img img {
       -o-object-fit: cover;
          object-fit: cover;
-      height: 100%;
-      width: 100%;
-      width: auto;
+      margin-top: 60px;
       position: absolute;
       -o-object-position: center;
          object-position: center;
-      object-fit: cover;
       height: 100vh;
       width: 100%; }
       .banner .banner-img img:before, .banner .banner-img img:after {
@@ -2186,16 +2102,9 @@ article .how-count {
           height: 100vh;
           -o-object-fit: cover;
              object-fit: cover;
-          height: 100%;
-          width: 100%;
           -o-object-position: center;
              object-position: center;
           position: absolute; } }
-      @media all and (min-width: 1000px) {
-        .banner .banner-img img {
-          -o-object-position: right;
-             object-position: right;
-          width: 100%; } }
   .banner .banner-content {
     background: rgba(111, 143, 106, 0.76);
     position: absolute;
@@ -2217,23 +2126,14 @@ article .how-count {
       margin: 0 auto;
       font-size: 1.25rem; }
 
-.banner img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  -o-object-position: center;
-     object-position: center; }
-
 .banner-outer-content {
   background: unset; }
 
-.page-how-it-works .banner-image img {
+.page-id-44 .banner-image img {
   -o-object-position: right;
      object-position: right; }
   @media all and (min-width: 1000px) {
-    .page-how-it-works .banner-image img {
+    .page-id-44 .banner-image img {
       -o-object-position: center;
          object-position: center; } }
 

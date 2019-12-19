@@ -1047,6 +1047,11 @@ h3.supported-by-title {
         font-size: 1rem; } }
 
 @media all and (max-width: 499px) {
+    .page-how-it-works article .entry-title {
+      margin-bottom: 0; }
+    .page-how-it-works article .entry-description {
+      margin-top: 0;
+      padding: 1rem 0 3rem 0; }
     .page-how-it-works article .banner .banner-img {
       width: 100%;
       height: 100vmax;
@@ -1236,6 +1241,11 @@ h3.supported-by-title {
     padding: 0 5%; }
   .page-how-it-works .entry-content .how-icons {
     display: none; }
+  .page-how-it-works .entry-title {
+    margin-bottom: 0; }
+  .page-how-it-works .entry-description {
+    margin-top: 0;
+    padding: 1rem 0 3rem 0; }
   .page-how-it-works .testimonials {
     width: 90%;
     margin: 0 auto;
@@ -1299,6 +1309,7 @@ h3.supported-by-title {
       font-size: 2.7rem;
       margin-bottom: 0; }
     .page-how-it-works .entry-header .entry-description {
+      margin-top: 0;
       font-size: 1.25rem; } }
     @media all and (min-width: 1000px) and (min-width: 1000px) {
       .page-how-it-works .entry-header .entry-description {

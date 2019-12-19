@@ -23,7 +23,6 @@
       .banner-outer-content {
         position: absolute;
         top: 30%;
-        // transform: translateY(-25rem);
         width: 80%;
         text-align: center;
         background: rgba(111, 143, 106, 0.76);
@@ -68,9 +67,7 @@
     }
     .banner-content {
       background: rgba(111, 143, 106, 0.76);
-
       color: white;
-      // top: 65%;
       display: flex;
       flex-flow: column nowrap;
       justify-content: flex-end;
@@ -92,39 +89,13 @@
         }
       }
       .banner-outer-content {
-        // background: rgba(111, 143, 106, 0.76);
-        // top: 20%;
-        // position: absolute;
-        // width: 60%;
-        // padding-bottom: 5%;
-        // text-align: center;
         .banner-content {
           background: rgba(111, 143, 106, 0.76);
-          // color: white;
-          // display: flex;
-          // flex-flow: row wrap;
-          // text-align: center;
-          // padding: 4% 2%;
-          // justify-content: center;
-          // position: relative;
-          // width: 100%;
           height: 50%;
           h2 {
-            // width: 100%;
-            // word-break: break-word;
-            // font-size: calc((3rem - 100%) - 1.5vmin);
-            // margin: 0;
-            // text-align: left;
             background-color: unset;
           }
-          p {
-            // display: none;
-            // padding: 0;
-          }
           .event-location {
-            // display: block;
-            // text-align: right;
-            // width: 100%;
             color: white;
             padding-left: 2%;
             margin-bottom: 10%;
@@ -156,12 +127,8 @@
       }
     }
     .banner-outer-content {
-      //style for this  outer background green content
-      // top: 20%;
       padding-bottom: 5%;
       text-align: center;
-
-      // transform: translateY(-35rem);
       width: 50%;
       text-align: center;
       .banner-content {
@@ -271,24 +238,6 @@
     white-space: no-wrap;
   }
 
-  // .apply-to-pitch-btn {
-  //   background: #fff;
-  //   text-decoration: none;
-  //   color: $primary_green_light;
-  //   border: 3px solid $primary_green_light;
-  //   border-radius: 1.5em;
-  //   font-size: 0.9rem;
-  //   font-family: $parafont;
-  //   font-weight: 500;
-  //   text-transform: uppercase;
-  //   margin: 2% 28%;
-  //   padding: 12px;
-  //   max-width: 34vw;
-  //   position: relative;
-  //   width: 200px;
-  //   white-space: no-wrap;
-  // }
-
   ///video section styling
 
   // TO DO ADD PERCENTAGES TO THE EMBED
@@ -332,7 +281,7 @@
 
     @include desktop {
       flex-direction: row;
-      width: 1120px;
+      width: 100%;
       margin: 0 auto;
     }
   }

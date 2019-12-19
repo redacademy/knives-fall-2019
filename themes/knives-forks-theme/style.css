@@ -267,11 +267,6 @@ p {
     background: white;
     font-weight: 500; }
 
-.btn-event {
-  background: white;
-  border-color: #378244;
-  color: #378244; }
-
 .profile-pic {
   width: 14em;
   border-radius: 100%;
@@ -1045,6 +1040,8 @@ h3.supported-by-title {
       font-size: 1.25rem; }
   .page-how-it-works .how-title {
     margin-top: -10px; }
+  .page-how-it-works .how-description {
+    font-size: 1rem; }
   .page-how-it-works .how-icons {
     display: none; }
   .page-how-it-works .how-img {
@@ -1229,14 +1226,47 @@ h3.supported-by-title {
       font-weight: bold; }
     .page-how-it-works .testimonials .member-since {
       -webkit-transform: translateY(-2em);
-              transform: translateY(-2em); }
-  .page-how-it-works .how-img {
-    width: 100%;
-    height: auto;
-    left: 0;
-    position: absolute;
-    z-index: -1;
-    bottom: calc((63rem - 100%) - 1vmax); } }
+              transform: translateY(-2em); } }
+
+@media all and (min-width: 1000px) {
+  .page-how-it-works .article-content {
+    overflow: hidden;
+    position: relative; }
+    .page-how-it-works .article-content .how-icons {
+      right: 0;
+      top: 13%;
+      width: auto;
+      height: 15vw;
+      -o-object-fit: cover;
+      object-fit: cover;
+      position: absolute;
+      background: white;
+      border-radius: 2em;
+      display: none; }
+  .page-how-it-works .entry-header {
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    position: relative;
+    padding-bottom: 5vh; }
+    .page-how-it-works .entry-header nav {
+      width: 60%; }
+    .page-how-it-works .entry-header .entry-title {
+      font-size: 2.7rem; }
+    .page-how-it-works .entry-header .entry-description {
+      font-size: 1rem; }
+    .page-how-it-works .entry-header p {
+      line-height: 1.5;
+      text-align: justify; } }
+
+.page-how-it-works .how-img {
+  width: 100%; }
 
 .page-how-it-works .testimonials {
   padding-top: 1%;

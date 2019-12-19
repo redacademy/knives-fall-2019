@@ -39,6 +39,9 @@
     .how-title {
       margin-top: -10px;
     }
+    .how-description {
+      font-size: $fontsize;
+    }
     .how-icons {
       display: none;
     }
@@ -259,60 +262,60 @@
         transform: translateY(-2em);
       }
     }
-
-    @include desktop {
-      //************How it Works CONTENTS AREA
-      .article-content {
-        // padding-bottom: 5%;
-        overflow: hidden;
-        position: relative;
-        .how-icons {
-          right: 0;
-          top: 13%;
-          width: auto;
-          height: 15vw;
-          -o-object-fit: cover;
-          object-fit: cover;
-          position: absolute;
-          background: white;
-          border-radius: 2em;
-          display: none;
-        }
-      }
-      .entry-header {
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-flow: row nowrap;
-        position: relative;
-        padding-bottom: 5vh;
-
-        nav {
-          width: 60%;
-        }
-
-        .entry-title {
-          font-size: 2.7rem;
-        }
-        .entry-description {
-          font-size: $fontsize;
-        }
-        p {
-          line-height: 1.5;
-          text-align: justify;
-        }
-      }
-    }
-    .how-img {
-      width: 100%;
-      height: auto;
-      left: 0;
-      position: absolute;
-      // top: calc(124rem - 100%);
-      z-index: -1;
-      bottom: calc((63rem - 100%) - 1vmax);
-    }
   } //end of
+
+  @include desktop {
+    //************How it Works CONTENTS AREA
+    .article-content {
+      // padding-bottom: 5%;
+      overflow: hidden;
+      position: relative;
+      .how-icons {
+        right: 0;
+        top: 13%;
+        width: auto;
+        height: 15vw;
+        -o-object-fit: cover;
+        object-fit: cover;
+        position: absolute;
+        background: white;
+        border-radius: 2em;
+        display: none;
+      }
+    }
+    .entry-header {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: row nowrap;
+      position: relative;
+      padding-bottom: 5vh;
+
+      nav {
+        width: 60%;
+      }
+
+      .entry-title {
+        font-size: 2.7rem;
+      }
+      .entry-description {
+        font-size: $fontsize;
+      }
+      p {
+        line-height: 1.5;
+        text-align: justify;
+      }
+    }
+  }
+  .how-img {
+    width: 100%; // this works
+    // height: auto;
+    // left: 0;
+    // position: absolute;
+    // top: calc(124rem - 100%);
+    // z-index: -1;
+    // bottom: calc((63rem - 100%) - 1vmax);
+  }
   //************styles for TESTimonials
   .testimonials {
     // padding: 0 10% 5% 10%;

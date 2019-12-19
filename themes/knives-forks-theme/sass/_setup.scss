@@ -16,72 +16,7 @@ input {
 .steps-list {
   margin-bottom: 5%;
 }
-//*******************FEATURED BANNER IMAGE for each page
-.banner {
-  // top: 28%;
-  // margin-top: 5%;
-  width: 100%;
-  display: block;
-  position: relative;
-  .banner-outer-content {
-    background: unset;
-  }
-  .banner-content {
-    background: rgba(111, 143, 106, 0.76);
-    position: absolute;
-    // bottom: 5%;
-    display: flex;
-    flex-flow: column nowrap;
-    width: 50%;
-    overflow: hidden;
-    padding: 2% 0;
-    //height: auto;
-    @include desktop {
-      // bottom: 200px;
-    }
-    // justify-content: center;
-    // align-content: center;
-    // align-items: center;
-    // padding: 2.5%;
-    // top: 20px;
-    // transform: translateY(70vmin);
-    h2 {
-      color: white;
-      line-height: 1.5;
-      // margin: auto 10%;
-      // font-size: 1.75rem;
-      font-weight: 600;
-      width: 95%;
-      margin: 0 auto;
-      // @include tablet {
-      //   font-size: calc(12vh - 100%);
-      // }
-      // @include desktop {
-      //   font-size: 3rem;
-      // }
-    }
-  }
-}
-.banner-img {
-  width: 100%;
-  height: 60vmax;
 
-  img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    &:before,
-    &:after {
-      transition: ease-in-out 1s;
-    }
-    @include tablet {
-      height: 100vh;
-    }
-    @include desktop {
-      height: 100%;
-    }
-  }
-}
 //********* CONTENts area
 article {
   width: 100%;
@@ -123,13 +58,3 @@ article {
   order: 4;
 }
 
-//DEFAULT setup for BANNER
-@include tablet {
-  .banner-img img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    object-position: right;
-    position: absolute;
-  }
-}

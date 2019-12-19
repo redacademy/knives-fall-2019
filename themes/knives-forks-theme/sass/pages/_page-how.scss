@@ -7,9 +7,6 @@
     .how-title {
       margin-top: -5px;
     }
-    .entry-description {
-      color: $primary_green_med;
-    }
   }
   @include mobile {
     //************How it Works CONTENTS AREA
@@ -182,8 +179,21 @@
   }
 
   .entry-header {
+    .works-img {
+      display: none;
+    }
     @include tablet {
       padding: 0 10%;
+    }
+    @include desktop {
+      display: flex;
+      .works-img {
+        display: block;
+        width: 35%;
+        height: 100%;
+        position: relative;
+        top: 70px;
+      }
     }
   }
   @include tablet {
@@ -320,33 +330,36 @@
 
       nav {
         width: 60%;
+        @include desktop {
+          width: 65%;
+        }
       }
 
       .entry-title {
         font-size: 2.7rem;
       }
       .entry-description {
-        font-size: $fontsize;
+        font-size: $fontsize * 1.25;
+        @include desktop {
+          width: 100%;
+        }
       }
       p {
         line-height: 1.5;
-        width: 340px;
-        padding: $padding * 2 0 0;
+        text-align: justify;
+        @include desktop {
+          width: 70%;
+        }
       }
     } // end of entry-header
-    .computer-wrapper {
+    .entry-content {
       position: relative;
-
       .how-img {
-        object-fit: contain;
-        position: absolute;
         width: 100%;
-        bottom: 0;
-        right: 0;
+        position: absolute;
+        top: 0;
         z-index: $zdex - 1;
       }
-    }
-    .entry-content {
       .how-count {
         margin-bottom: 0;
       }

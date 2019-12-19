@@ -24,7 +24,7 @@
     flex-direction: row;
   }
   .gf_page_steps {
-    padding: 72px 10% 30px 10%;
+    padding: 100px 10% 30px 10%;
     display: flex;
     border: none;
     width: 100%;
@@ -32,7 +32,7 @@
     //margin-bottom: 30px;
     &.sticky {
       position: sticky;
-      top: 70px;
+      top: 20px;
       background-color: white;
       z-index: 98;
     }

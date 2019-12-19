@@ -996,15 +996,11 @@ h3.supported-by-title {
       color: #00883f; } }
 
 .page-how-it-works article .how-count {
-<<<<<<< HEAD
-  font-family: "Lora", serif; }
-=======
   font-family: "Lora", serif;
   color: #f29061; }
 
 .page-how-it-works article .how-title {
   margin-top: -5px; }
->>>>>>> 0c679ac2a7aad48dc19928ed0029d4eda469d2dd
 
 @media all and (max-width: 499px) {
   .page-how-it-works .testimonials .carousel-cell {
@@ -1028,11 +1024,6 @@ h3.supported-by-title {
     width: 80%; }
     .page-how-it-works .banner .banner-content h2 {
       font-size: 1.25rem; }
-<<<<<<< HEAD
-  .page-how-it-works .how-title {
-    margin-top: -10px; }
-=======
->>>>>>> 0c679ac2a7aad48dc19928ed0029d4eda469d2dd
   .page-how-it-works .how-description {
     font-size: 1rem; }
   .page-how-it-works .how-icons {
@@ -1249,23 +1240,6 @@ h3.supported-by-title {
     .page-how-it-works .entry-header p {
       line-height: 1.5;
       text-align: justify; }
-<<<<<<< HEAD
-  .page-how-it-works .how-img {
-    width: 100%; }
-  .page-how-it-works .steps-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 50%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .page-how-it-works .steps-list li {
-      width: 50%; } }
-=======
   .page-how-it-works .entry-content {
     position: relative; }
     .page-how-it-works .entry-content .how-img {
@@ -1288,7 +1262,6 @@ h3.supported-by-title {
           flex-wrap: wrap; }
       .page-how-it-works .entry-content .steps-list li {
         width: 50%; } }
->>>>>>> 0c679ac2a7aad48dc19928ed0029d4eda469d2dd
 
 .page-how-it-works .testimonials {
   padding-top: 1%;
@@ -2380,8 +2353,10 @@ h3.supported-by-title {
     width: 80%; }
     @media screen and (min-width: 500px) and (max-width: 999px) {
       .banner .banner-content {
-        bottom: 15%;
-        position: absolute; } }
+        top: 225px;
+        left: 0;
+        position: absolute;
+        width: 60%; } }
     @media all and (min-width: 1000px) {
       .banner .banner-content {
         width: 60%; } }
@@ -2396,12 +2371,12 @@ h3.supported-by-title {
       text-align: left; }
       @media screen and (min-width: 500px) and (max-width: 999px) {
         .banner .banner-content h2 {
-          font-size: 2rem; } }
+          font-size: 1.75rem; } }
       @media all and (min-width: 1000px) {
         .banner .banner-content h2 {
           font-size: 3rem;
           position: absolute;
-          top: -40%; } }
+          top: -50%; } }
 
 .banner-outer-content {
   background: unset; }

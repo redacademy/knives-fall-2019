@@ -4,7 +4,7 @@
   color: white;
   border: 1px solid $primary_green_med;
   border-radius: 2em;
-  padding: 20px 0px;
+  padding: 16px 0px;
   font-size: 0.88em;
   font-family: $parafont;
   height: min-content;
@@ -18,7 +18,9 @@
     min-width: 200px;
   }
   &.btn-large {
-    min-width: 300px;
+    min-width: 268px;
+    letter-spacing: 0.23px;
+    border-radius: 3em;
   }
   &.btn-full {
     min-width: 350px;

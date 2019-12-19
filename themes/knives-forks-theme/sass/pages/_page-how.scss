@@ -337,11 +337,12 @@
 
       .entry-title {
         font-size: 2.7rem;
+        margin-bottom: 0;
       }
       .entry-description {
         font-size: $fontsize * 1.25;
         @include desktop {
-          width: 100%;
+          width: 100%; 
         }
       }
       p {

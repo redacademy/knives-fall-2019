@@ -302,7 +302,51 @@
           text-align: justify;
         }
       }
-      .entry-content {
+    }
+    .how-img {
+      width: 100%;
+      height: auto;
+      left: 0;
+      position: absolute;
+      // top: calc(124rem - 100%);
+      z-index: -1;
+      bottom: calc((63rem - 100%) - 1vmax);
+    }
+  } //end of
+  //************styles for TESTimonials
+  .testimonials {
+    // padding: 0 10% 5% 10%;
+    padding-top: 1%;
+    position: relative;
+    // background: url('../../assets/background-images/contact-bg@3x.png');
+    // background-size: cover;
+    // background-position: bottom right;
+    overflow: hidden;
+    width: 100%;
+    .site-title {
+      font-family: $headfont;
+      color: hsla(0, 0%, 0%, 0.15);
+      font-size: calc(9rem - 100%);
+      transform: translateX(-11%);
+      margin: 0;
+    }
+    nav {
+      // background: hsla(112, 18%, 41%, 0.75);
+      // color: white;
+      // border-radius: 1.5em;
+      // text-align: center;
+      padding: 2%;
+      width: fit-content;
+      margin: 0 auto;
+      height: auto;
+      img {
+        position: relative;
+        top: 0;
+        transform: translateY(-50%);
+      }
+      p {
+        font-family: $parafont;
+        font-size: $title_sm;
         width: 80%;
         margin: 0 auto;
         padding-bottom: 5%;

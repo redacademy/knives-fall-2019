@@ -2,9 +2,10 @@
   article {
     .how-count {
       font-family: $headfont;
+      color: $secondary_orange_med;
     }
     .how-title {
-      margin-top: -10px;
+      margin-top: -5px;
     }
   }
   @include mobile {
@@ -84,7 +85,6 @@
       }
       .how-count {
         font-size: 4rem;
-        color: $secondary_orange_med;
         margin: 0;
       }
       .site-main {
@@ -294,14 +294,17 @@
         top: 0;
         z-index: $zdex - 1;
       }
-    }
-    .steps-list {
-      display: flex;
-      width: 50%;
-      flex-direction: row;
-      flex-wrap: wrap;
-      li {
+      .how-count {
+        margin-bottom: 0;
+      }
+      .steps-list {
+        display: flex;
         width: 50%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li {
+          width: 50%;
+        }
       }
     }
   }

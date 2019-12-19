@@ -882,9 +882,15 @@ p.error-message {
   padding-bottom: 10%; }
 
 @media screen and (min-width: 500px) and (max-width: 999px) {
+  .error-btn-container {
+    margin-top: 0; } }
+
+@media screen and (min-width: 500px) and (max-width: 999px) {
   .error-btn-container .btn-wide {
-    display: none;
-    visibility: hidden; } }
+    display: block;
+    visibility: visible;
+    width: 40%;
+    margin: auto; } }
 
 @media all and (min-width: 1000px) {
   .error-btn-container .btn-wide {
@@ -1674,6 +1680,9 @@ h3.supported-by-title {
               flex-direction: column; }
       .gform_wrapper form .gform_page .gform_fields textarea {
         border-radius: 5px; }
+
+.gfield .gsection_description {
+  margin-top: 20px; }
 
 .gform_confirmation_message {
   width: 80%;

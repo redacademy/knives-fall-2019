@@ -1246,84 +1246,6 @@ article .how-count {
       -webkit-transform: translateY(-2em);
               transform: translateY(-2em); } }
 
-@media screen and (min-width: 500px) and (max-width: 999px) {
-  .testimonials {
-    padding-top: 1%;
-    position: relative;
-    overflow: hidden;
-    width: 100%; }
-    .testimonials .site-title {
-      font-family: "Lora", serif;
-      color: rgba(0, 0, 0, 0.15);
-      font-size: calc(9rem - 100%);
-      -webkit-transform: translateX(-11%);
-              transform: translateX(-11%);
-      margin: 0; }
-    .testimonials nav {
-      padding: 2%;
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
-      width: fit-content;
-      margin: 0 auto;
-      height: auto; }
-      .testimonials nav img {
-        position: relative;
-        top: 0;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%); }
-      .testimonials nav p {
-        font-family: "Lato", sans-serif;
-        font-size: 24px;
-        width: 80%;
-        margin: 0 auto;
-        line-height: 1.5;
-        -webkit-transform: translateY(-3em);
-                transform: translateY(-3em);
-        text-align: justify; }
-    .testimonials .testimonials {
-      position: relative;
-      overflow: hidden;
-      width: 100%; }
-      .testimonials .testimonials .site-title {
-        font-family: "Lora", serif;
-        color: rgba(0, 0, 0, 0.15);
-        font-size: calc(9rem - 100%);
-        -webkit-transform: translateX(-11%);
-                transform: translateX(-11%);
-        margin: 0; }
-      .testimonials .testimonials nav {
-        padding: 2%;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-        margin: 0 auto;
-        height: auto; }
-        .testimonials .testimonials nav img {
-          position: relative;
-          top: 0;
-          -webkit-transform: translateY(-50%);
-                  transform: translateY(-50%); }
-        .testimonials .testimonials nav p {
-          font-family: "Lato", sans-serif;
-          font-size: 24px;
-          width: 80%;
-          margin: 0 auto;
-          line-height: 1.5;
-          -webkit-transform: translateY(-3em);
-                  transform: translateY(-3em);
-          text-align: justify; }
-        .testimonials .testimonials nav .member-name {
-          font-family: "Lora", serif;
-          font-size: 28px;
-          font-weight: 600;
-          text-align: right;
-          -webkit-transform: translateY(-2em);
-                  transform: translateY(-2em); }
-        .testimonials .testimonials nav .member-since {
-          font-family: "Lato", sans-serif;
-          font-size: 20px;
-          text-align: right; } }
-
 .page-apply-to-pitch .main-navigation,
 .page-become-investor .main-navigation {
   -webkit-box-shadow: none;
@@ -2240,13 +2162,16 @@ article .how-count {
      object-position: center; }
 
 @media all and (min-width: 1000px) {
+  .testimonials .flickity-enabled {
+    width: 75%;
+    margin: 0 auto; }
   .testimonials .knives-fork {
     color: rgba(0, 0, 0, 0.15); }
   .testimonials .carousel-cell p,
   .testimonials nav p {
     font-size: 2rem;
-    -webkit-transform: translateY(-32%);
-            transform: translateY(-32%);
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
     padding: 1% 10% 0 10%; }
   .testimonials .carousel-cell .member-name,
   .testimonials .carousel-cell .member-since,
@@ -2261,6 +2186,40 @@ article .how-count {
   .testimonials nav .member-name {
     font-weight: 600; } }
 
+@media screen and (min-width: 500px) and (max-width: 999px) {
+  .testimonials {
+    width: 100%;
+    margin: 0; }
+    .testimonials .flickity-enabled {
+      width: 90%;
+      margin: 0 auto; }
+    .testimonials .carousel-cell {
+      width: 95%;
+      margin: 0 auto; }
+      .testimonials .carousel-cell p {
+        font-size: 1.2rem;
+        -webkit-transform: translateY(-30%);
+                transform: translateY(-30%); }
+      .testimonials .carousel-cell .member-name {
+        font-weight: bold; } }
+
+@media all and (max-width: 499px) {
+  .testimonials {
+    width: 100%;
+    margin: 0; }
+    .testimonials .flickity-button {
+      display: none; }
+    .testimonials .flickity-enabled {
+      width: 90%;
+      margin: 0 auto; }
+    .testimonials .carousel-cell {
+      width: 95%;
+      margin: 0 auto; }
+      .testimonials .carousel-cell p {
+        font-size: 1rem; }
+      .testimonials .carousel-cell .member-name {
+        font-weight: bold; } }
+
 /* external css: flickity.css */
 * {
   -webkit-box-sizing: border-box;
@@ -2272,18 +2231,13 @@ body {
 .carousel {
   background: transparent; }
 
-.testimonials .flickity-enabled {
-  width: 75%;
-  margin: 0 auto; }
-
 .testimonials .carousel-cell {
-  counter-increment: gallery-cell; }
+  counter-increment: gallery-cell;
+  width: 80%;
+  margin: 0 10%; }
   .testimonials .carousel-cell img {
     -webkit-transform: translateY(-35%);
             transform: translateY(-35%); }
-
-.testimonials .carousel-cell.is-selected {
-  width: 100%; }
 
 .testimonials .flickity-page-dots .dot {
   width: 1em;
@@ -2321,10 +2275,10 @@ body {
 
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: white; }
+  fill: rgba(91, 123, 86, 0.75); }
 
 .flickity-prev-next-button.no-svg {
-  color: white; }
+  color: rgba(91, 123, 86, 0.75); }
 
 .flickity-prev-next-button:hover {
   background: transparent; }

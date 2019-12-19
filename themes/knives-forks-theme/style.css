@@ -267,11 +267,6 @@ p {
     background: white;
     font-weight: 500; }
 
-.btn-event {
-  background: white;
-  border-color: #378244;
-  color: #378244; }
-
 .profile-pic {
   width: 14em;
   border-radius: 100%;
@@ -1231,162 +1226,7 @@ article .how-count {
       font-weight: bold; }
     .testimonials .member-since {
       -webkit-transform: translateY(-2em);
-              transform: translateY(-2em); }
-  .page-how-it-works .how-img {
-    width: 100%;
-    height: auto;
-    left: 0;
-    position: absolute;
-    z-index: -1;
-    bottom: calc((63rem - 100%) - 1vmax); } }
-
-.page-how-it-works .testimonials {
-  padding-top: 1%;
-  position: relative;
-  overflow: hidden;
-  width: 100%; }
-  .page-how-it-works .testimonials .site-title {
-    font-family: "Lora", serif;
-    color: rgba(0, 0, 0, 0.15);
-    font-size: calc(9rem - 100%);
-    -webkit-transform: translateX(-11%);
-            transform: translateX(-11%);
-    margin: 0; }
-  .page-how-it-works .testimonials nav {
-    padding: 2%;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 0 auto;
-    height: auto; }
-    .page-how-it-works .testimonials nav img {
-      position: relative;
-      top: 0;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%); }
-    .page-how-it-works .testimonials nav p {
-      font-family: "Lato", sans-serif;
-      font-size: 24px;
-      width: 80%;
-      margin: 0 auto;
-      padding-bottom: 5%; }
-      .page-how-it-works .testimonials nav p nav {
-        width: 60%;
-        padding: 2% 0;
-        text-align: center; }
-        .page-how-it-works .testimonials nav p nav .btn {
-          margin: 0 1%;
-          width: -webkit-fit-content;
-          width: -moz-fit-content;
-          width: fit-content;
-          position: relative;
-          display: -webkit-inline-box;
-          display: -ms-inline-flexbox;
-          display: inline-flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center; }
-        .page-how-it-works .testimonials nav p nav ul {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-              -ms-flex-flow: row wrap;
-                  flex-flow: row wrap;
-          margin-bottom: 5%;
-          text-align: left;
-          width: 100%; }
-          .page-how-it-works .testimonials nav p nav ul li {
-            -webkit-box-flex: 1;
-                -ms-flex: 1 0 50%;
-                    flex: 1 0 50%; }
-            .page-how-it-works .testimonials nav p nav ul li h3 {
-              font-family: "Lato", sans-serif;
-              font-size: 28px;
-              color: #f2804a; }
-    .page-how-it-works .testimonials nav .how-img {
-      width: 100%;
-      height: auto;
-      left: 0;
-      position: absolute;
-      z-index: -1;
-      bottom: calc((63rem - 100%) - 1vmax); }
-  .page-how-it-works .testimonials .testimonials {
-    position: relative;
-    overflow: hidden;
-    width: 100%; }
-    .page-how-it-works .testimonials .site-title {
-      font-family: "Lora", serif;
-      color: rgba(0, 0, 0, 0.15);
-      font-size: calc(9rem - 100%);
-      -webkit-transform: translateX(-11%);
-              transform: translateX(-11%);
-      margin: 0; }
-    .page-how-it-works .testimonials .testimonials nav {
-      padding: 2%;
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
-      width: fit-content;
-      margin: 0 auto;
-      height: auto; }
-      .page-how-it-works .testimonials .testimonials nav img {
-        position: relative;
-        top: 0;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%); }
-      .page-how-it-works .testimonials .testimonials nav p {
-        font-family: "Lato", sans-serif;
-        font-size: 24px;
-        width: 80%;
-        margin: 0 auto;
-        line-height: 1.5;
-        -webkit-transform: translateY(-3em);
-                transform: translateY(-3em);
-        text-align: justify; }
-    .page-how-it-works .testimonials  {
-      position: relative;
-      overflow: hidden;
-      width: 100%; }
-      .page-how-it-works .testimonials .site-title {
-        font-family: "Lora", serif;
-        color: rgba(0, 0, 0, 0.15);
-        font-size: calc(9rem - 100%);
-        -webkit-transform: translateX(-11%);
-                transform: translateX(-11%);
-        margin: 0; }
-      .page-how-it-works .testimonials nav {
-        padding: 2%;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-        margin: 0 auto;
-        height: auto; }
-        .page-how-it-works .testimonials nav img {
-          position: relative;
-          top: 0;
-          -webkit-transform: translateY(-50%);
-                  transform: translateY(-50%); }
-        .page-how-it-works .testimonials nav p {
-          font-family: "Lato", sans-serif;
-          font-size: 24px;
-          width: 80%;
-          margin: 0 auto;
-          line-height: 1.5;
-          -webkit-transform: translateY(-3em);
-                  transform: translateY(-3em);
-          text-align: justify; }
-        .page-how-it-works .testimonials nav .member-name {
-          font-family: "Lora", serif;
-          font-size: 28px;
-          font-weight: 600;
-          text-align: right;
-          -webkit-transform: translateY(-2em);
-                  transform: translateY(-2em); }
-        .page-how-it-works .testimonials nav .member-since {
-          font-family: "Lato", sans-serif;
-          font-size: 20px;
-          text-align: right; }
+              transform: translateY(-2em); } }
 
 .page-apply-to-pitch .main-navigation,
 .page-become-investor .main-navigation {
@@ -2304,13 +2144,16 @@ article .how-count {
           font-size: 1rem; }
 
 @media all and (min-width: 1000px) {
+  .testimonials .flickity-enabled {
+    width: 75%;
+    margin: 0 auto; }
   .testimonials .knives-fork {
     color: rgba(0, 0, 0, 0.15); }
   .testimonials .carousel-cell p,
   .testimonials nav p {
     font-size: 2rem;
-    -webkit-transform: translateY(-32%);
-            transform: translateY(-32%);
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
     padding: 1% 10% 0 10%; }
   .testimonials .carousel-cell .member-name,
   .testimonials .carousel-cell .member-since,
@@ -2325,6 +2168,40 @@ article .how-count {
   .testimonials nav .member-name {
     font-weight: 600; } }
 
+@media screen and (min-width: 500px) and (max-width: 999px) {
+  .testimonials {
+    width: 100%;
+    margin: 0; }
+    .testimonials .flickity-enabled {
+      width: 90%;
+      margin: 0 auto; }
+    .testimonials .carousel-cell {
+      width: 95%;
+      margin: 0 auto; }
+      .testimonials .carousel-cell p {
+        font-size: 1.2rem;
+        -webkit-transform: translateY(-30%);
+                transform: translateY(-30%); }
+      .testimonials .carousel-cell .member-name {
+        font-weight: bold; } }
+
+@media all and (max-width: 499px) {
+  .testimonials {
+    width: 100%;
+    margin: 0; }
+    .testimonials .flickity-button {
+      display: none; }
+    .testimonials .flickity-enabled {
+      width: 90%;
+      margin: 0 auto; }
+    .testimonials .carousel-cell {
+      width: 95%;
+      margin: 0 auto; }
+      .testimonials .carousel-cell p {
+        font-size: 1rem; }
+      .testimonials .carousel-cell .member-name {
+        font-weight: bold; } }
+
 /* external css: flickity.css */
 * {
   -webkit-box-sizing: border-box;
@@ -2336,18 +2213,13 @@ body {
 .carousel {
   background: transparent; }
 
-.testimonials .flickity-enabled {
-  width: 75%;
-  margin: 0 auto; }
-
 .testimonials .carousel-cell {
-  counter-increment: gallery-cell; }
+  counter-increment: gallery-cell;
+  width: 80%;
+  margin: 0 10%; }
   .testimonials .carousel-cell img {
     -webkit-transform: translateY(-35%);
             transform: translateY(-35%); }
-
-.testimonials .carousel-cell.is-selected {
-  width: 100%; }
 
 .testimonials .flickity-page-dots .dot {
   width: 1em;
@@ -2385,10 +2257,10 @@ body {
 
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: white; }
+  fill: rgba(91, 123, 86, 0.75); }
 
 .flickity-prev-next-button.no-svg {
-  color: white; }
+  color: rgba(91, 123, 86, 0.75); }
 
 .flickity-prev-next-button:hover {
   background: transparent; }

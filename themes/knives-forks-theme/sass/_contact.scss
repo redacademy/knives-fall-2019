@@ -88,6 +88,11 @@
   width: 90%;
   margin: 0 auto;
 
+  @include tablet {
+    margin-left: 12%;
+    width: 80%;
+  }
+
   @include desktop {
     width: 70%;
   }
@@ -97,6 +102,11 @@
 
 .media-enquiries {
   padding-left: 0px;
+
+  @include tablet {
+    margin-left: 12%;
+    width: 80%;
+  }
   p {
     margin: 0;
     margin-bottom: 5%;
@@ -107,6 +117,9 @@
     font-family: $parafont, sans-serif;
     font-size: 24px;
     margin: 0;
+    @include tablet {
+      margin-top: 8%;
+    }
   }
 }
 

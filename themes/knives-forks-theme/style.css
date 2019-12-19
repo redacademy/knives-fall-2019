@@ -267,6 +267,14 @@ p {
     background: white;
     font-weight: 500; }
 
+<<<<<<< HEAD
+=======
+.btn-event {
+  background: white;
+  border-color: #378244;
+  color: #378244; }
+
+>>>>>>> cd584b9e0fe11e6a2eb1bc79da83fd7b9867271b
 .profile-pic {
   width: 14em;
   border-radius: 100%;
@@ -1596,7 +1604,7 @@ h3.supported-by-title {
 
 .gform_name::before,
 .gform_email::before,
-.gform_address::before,
+.gform_home::before,
 .gform_phone::before,
 .gform_company::before,
 .gform_details::before,
@@ -1607,9 +1615,8 @@ h3.supported-by-title {
   background-repeat: no-repeat;
   width: 200px;
   height: 200px;
-  content: 'abc';
-  font-size: 10rem;
-  color: rgba(0, 0, 0, 0);
+  content: '';
+  font-size: 0rem;
   display: block;
   position: relative;
   top: 0px;
@@ -1619,7 +1626,7 @@ h3.supported-by-title {
   @media screen and (min-width: 500px) and (max-width: 999px) {
     .gform_name::before,
     .gform_email::before,
-    .gform_address::before,
+    .gform_home::before,
     .gform_phone::before,
     .gform_company::before,
     .gform_details::before,
@@ -1630,7 +1637,7 @@ h3.supported-by-title {
   @media all and (min-width: 1000px) {
     .gform_name::before,
     .gform_email::before,
-    .gform_address::before,
+    .gform_home::before,
     .gform_phone::before,
     .gform_company::before,
     .gform_details::before,
@@ -1649,7 +1656,7 @@ h3.supported-by-title {
 .gform_email::before {
   background-image: url("../../assets/icons/Forms-Unfilled/unfilled-email.svg"); }
 
-.gform_address::before {
+.gform_home::before {
   background-image: url("../../assets/icons/Forms-Unfilled/unfilled-home.svg"); }
 
 .gform_phone::before {

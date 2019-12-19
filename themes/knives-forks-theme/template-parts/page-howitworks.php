@@ -31,6 +31,7 @@ $testimonials = get_posts($args);
             </p>
 
         </nav>
+        <img class="works-img" src= "<?php echo get_stylesheet_directory_uri()?>/assets/icons/icons-how-it-works-1.2@2x.png"/>
 
 
     </header><!-- .entry-header -->

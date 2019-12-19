@@ -2145,7 +2145,8 @@ h3.supported-by-title {
           -ms-flex-pack: justify;
               justify-content: space-between;
       margin-bottom: 15%;
-      width: 95%;
+      width: 100%;
+      margin-right: 0;
       -ms-flex-item-align: end;
           align-self: flex-end; } }
   .custom-copy-block .copy-block-content {
@@ -2354,6 +2355,12 @@ h3.supported-by-title {
           -o-object-position: center;
              object-position: center;
           position: absolute; } }
+    @media screen and (min-width: 500px) and (max-width: 999px) {
+      .banner .banner-img {
+        margin-bottom: 100px; } }
+    @media all and (min-width: 1000px) {
+      .banner .banner-img {
+        margin-bottom: 100px; } }
   .banner .banner-content {
     position: absolute;
     bottom: 50px;
@@ -2361,10 +2368,10 @@ h3.supported-by-title {
     width: 80%; }
     @media screen and (min-width: 500px) and (max-width: 999px) {
       .banner .banner-content {
-        top: 225px;
+        top: 200px;
         left: 0;
         position: absolute;
-        width: 60%; } }
+        width: 70%; } }
     @media all and (min-width: 1000px) {
       .banner .banner-content {
         width: 60%; } }
@@ -2379,7 +2386,7 @@ h3.supported-by-title {
       text-align: left; }
       @media screen and (min-width: 500px) and (max-width: 999px) {
         .banner .banner-content h2 {
-          font-size: 1.75rem; } }
+          font-size: 2rem; } }
       @media all and (min-width: 1000px) {
         .banner .banner-content h2 {
           font-size: 3rem;

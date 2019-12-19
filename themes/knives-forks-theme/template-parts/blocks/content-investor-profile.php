@@ -60,9 +60,9 @@ echo '<section class="'.$className.'-section" id="investment" >
         </blockquote>
         <div class="'.$className.'-bottom">
                 <h2 class="entry-title">
-                Want to see your business here
+                Want to see your business here?
             </h2>
-            <a href="#" alt="apply-to-pitch" class="btn">
+            <a href="#" alt="apply-to-pitch" class="btn btn-large">
                 Apply to Pitch
             </a>
         </div>

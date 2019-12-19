@@ -1226,111 +1226,34 @@ article .how-count {
       font-weight: bold; }
     .testimonials .member-since {
       -webkit-transform: translateY(-2em);
-              transform: translateY(-2em); }
-  .page-how-it-works .how-img {
-    width: 100%;
-    height: auto;
-    left: 0;
-    position: absolute;
-    z-index: -1;
-    bottom: calc((63rem - 100%) - 1vmax); } }
+              transform: translateY(-2em); } }
 
-.page-how-it-works .testimonials {
-  padding-top: 1%;
-  position: relative;
-  overflow: hidden;
-  width: 100%; }
-  .page-how-it-works .testimonials .site-title {
-    font-family: "Lora", serif;
-    color: rgba(0, 0, 0, 0.15);
-    font-size: calc(9rem - 100%);
-    -webkit-transform: translateX(-11%);
-            transform: translateX(-11%);
-    margin: 0; }
-  .page-how-it-works .testimonials nav {
-    padding: 2%;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 0 auto;
-    height: auto; }
-    .page-how-it-works .testimonials nav img {
-      position: relative;
-      top: 0;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%); }
-    .page-how-it-works .testimonials nav p {
-      font-family: "Lato", sans-serif;
-      font-size: 24px;
-      width: 80%;
-      margin: 0 auto;
-      padding-bottom: 5%; }
-      .page-how-it-works .testimonials nav p nav {
-        width: 60%;
-        padding: 2% 0;
-        text-align: center; }
-        .page-how-it-works .testimonials nav p nav .btn {
-          margin: 0 1%;
-          width: -webkit-fit-content;
-          width: -moz-fit-content;
-          width: fit-content;
-          position: relative;
-          display: -webkit-inline-box;
-          display: -ms-inline-flexbox;
-          display: inline-flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center; }
-        .page-how-it-works .testimonials nav p nav ul {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-              -ms-flex-flow: row wrap;
-                  flex-flow: row wrap;
-          margin-bottom: 5%;
-          text-align: left;
-          width: 100%; }
-          .page-how-it-works .testimonials nav p nav ul li {
-            -webkit-box-flex: 1;
-                -ms-flex: 1 0 50%;
-                    flex: 1 0 50%; }
-            .page-how-it-works .testimonials nav p nav ul li h3 {
-              font-family: "Lato", sans-serif;
-              font-size: 28px;
-              color: #f2804a; }
-    .page-how-it-works .testimonials nav .how-img {
-      width: 100%;
-      height: auto;
-      left: 0;
-      position: absolute;
-      z-index: -1;
-      bottom: calc((63rem - 100%) - 1vmax); }
-  .page-how-it-works .testimonials .testimonials {
+@media screen and (min-width: 500px) and (max-width: 999px) {
+  .testimonials {
+    padding-top: 1%;
     position: relative;
     overflow: hidden;
     width: 100%; }
-    .page-how-it-works .testimonials .site-title {
+    .testimonials .site-title {
       font-family: "Lora", serif;
       color: rgba(0, 0, 0, 0.15);
       font-size: calc(9rem - 100%);
       -webkit-transform: translateX(-11%);
               transform: translateX(-11%);
       margin: 0; }
-    .page-how-it-works .testimonials .testimonials nav {
+    .testimonials nav {
       padding: 2%;
       width: -webkit-fit-content;
       width: -moz-fit-content;
       width: fit-content;
       margin: 0 auto;
       height: auto; }
-      .page-how-it-works .testimonials .testimonials nav img {
+      .testimonials nav img {
         position: relative;
         top: 0;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%); }
-      .page-how-it-works .testimonials .testimonials nav p {
+      .testimonials nav p {
         font-family: "Lato", sans-serif;
         font-size: 24px;
         width: 80%;
@@ -1339,30 +1262,30 @@ article .how-count {
         -webkit-transform: translateY(-3em);
                 transform: translateY(-3em);
         text-align: justify; }
-    .page-how-it-works .testimonials  {
+    .testimonials .testimonials {
       position: relative;
       overflow: hidden;
       width: 100%; }
-      .page-how-it-works .testimonials .site-title {
+      .testimonials .testimonials .site-title {
         font-family: "Lora", serif;
         color: rgba(0, 0, 0, 0.15);
         font-size: calc(9rem - 100%);
         -webkit-transform: translateX(-11%);
                 transform: translateX(-11%);
         margin: 0; }
-      .page-how-it-works .testimonials nav {
+      .testimonials .testimonials nav {
         padding: 2%;
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content;
         margin: 0 auto;
         height: auto; }
-        .page-how-it-works .testimonials nav img {
+        .testimonials .testimonials nav img {
           position: relative;
           top: 0;
           -webkit-transform: translateY(-50%);
                   transform: translateY(-50%); }
-        .page-how-it-works .testimonials nav p {
+        .testimonials .testimonials nav p {
           font-family: "Lato", sans-serif;
           font-size: 24px;
           width: 80%;
@@ -1371,17 +1294,17 @@ article .how-count {
           -webkit-transform: translateY(-3em);
                   transform: translateY(-3em);
           text-align: justify; }
-        .page-how-it-works .testimonials nav .member-name {
+        .testimonials .testimonials nav .member-name {
           font-family: "Lora", serif;
           font-size: 28px;
           font-weight: 600;
           text-align: right;
           -webkit-transform: translateY(-2em);
                   transform: translateY(-2em); }
-        .page-how-it-works .testimonials nav .member-since {
+        .testimonials .testimonials nav .member-since {
           font-family: "Lato", sans-serif;
           font-size: 20px;
-          text-align: right; }
+          text-align: right; } }
 
 .page-apply-to-pitch .main-navigation,
 .page-become-investor .main-navigation {

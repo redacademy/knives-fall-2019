@@ -2363,8 +2363,10 @@ h3.supported-by-title {
     width: 80%; }
     @media screen and (min-width: 500px) and (max-width: 999px) {
       .banner .banner-content {
-        bottom: 15%;
-        position: absolute; } }
+        top: 225px;
+        left: 0;
+        position: absolute;
+        width: 60%; } }
     @media all and (min-width: 1000px) {
       .banner .banner-content {
         width: 60%; } }
@@ -2379,12 +2381,12 @@ h3.supported-by-title {
       text-align: left; }
       @media screen and (min-width: 500px) and (max-width: 999px) {
         .banner .banner-content h2 {
-          font-size: 2rem; } }
+          font-size: 1.75rem; } }
       @media all and (min-width: 1000px) {
         .banner .banner-content h2 {
           font-size: 3rem;
           position: absolute;
-          top: -40%; } }
+          top: -50%; } }
 
 .banner-outer-content {
   background: unset; }

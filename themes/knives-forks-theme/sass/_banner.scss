@@ -1,7 +1,76 @@
-.banner img {
-    object-fit: cover;
-    height: 100vh;
+.banner {
+  width: 100%;
+  display: block;
+  //position: relative;
+  .banner-img {
+    // height: 60vmax;
+    //height: 95vmax;
+    // overflow: hidden;
+    position: relative;
+
     width: 100%;
-    position: absolute;
-    object-position: center;
+    height: 100vmax;
+    // overflow: hidden;
+    position: relative;
+    // border: 1px dotted red;
+
+    img {
+      object-fit: cover;
+      margin-top: 60px;
+      position: absolute;
+      object-position: center;
+      height: 100vh;
+      width: 100%;
+      &:before,
+      &:after {
+        transition: ease-in-out 1s;
+      }
+      @include tablet {
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+      }
+      @include desktop {
+      }
+    }
   }
+  .banner-content {
+    background: rgba(111, 143, 106, 0.76);
+    position: absolute;
+    // bottom: 5%;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+    padding: 2% 0;
+    width: 70%;
+
+    h2 {
+      color: white;
+      line-height: 1.5;
+      // margin: auto 10%;
+      // font-size: 1.75rem;
+      font-weight: 600;
+      width: 95%;
+      margin: 0 auto;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.banner img {
+}
+
+.banner-outer-content {
+  background: unset;
+}
+
+//TODO FOR LATER
+.page-id-44 {
+  .banner-image img {
+    object-position: right;
+    @include desktop {
+      object-position: center;
+    }
+  }
+}

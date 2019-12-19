@@ -242,15 +242,24 @@ p {
   color: white;
   border: 1px solid #378244;
   border-radius: 2em;
-  padding: 2%;
-  font-size: 1rem;
+  padding: 20px 0px;
+  font-size: 0.88em;
   font-family: "Lato", sans-serif;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  text-transform: uppercase; }
-  .btn.btn-wide {
-    min-width: 120px; }
+  text-transform: uppercase;
+  min-width: 100px; }
+  .btn.btn-small {
+    min-width: 100px; }
+  .btn.btn-medium {
+    min-width: 200px; }
+  .btn.btn-large {
+    min-width: 300px; }
+  .btn.btn-full {
+    min-width: 350px; }
+  .btn.capitals {
+    text-transform: capitalize; }
   .btn:hover {
     cursor: pointer;
     border: 1px solid #378244;
@@ -664,23 +673,6 @@ h2.upcoming-events-location {
   width: 200px;
   white-space: no-wrap; }
 
-.apply-to-pitch-btn {
-  background: #fff;
-  text-decoration: none;
-  color: #00883f;
-  border: 3px solid #00883f;
-  border-radius: 1.5em;
-  font-size: 0.9rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin: 2% 28%;
-  padding: 12px;
-  max-width: 34vw;
-  position: relative;
-  width: 200px;
-  white-space: no-wrap; }
-
 .embed-container {
   position: relative;
   overflow: hidden;
@@ -747,14 +739,13 @@ h3.summary-title {
   font-display: bold;
   color: black;
   margin: 0;
-  padding-bottom: 8px; }
+  padding-bottom: 20px; }
 
 p.summary-description {
   font-size: 1em;
   line-height: 1;
   text-align: center;
-  max-width: 600px;
-  margin: auto; }
+  max-width: 600px; }
 
 .apply-to-pitch-btn-green-flex {
   display: -webkit-box;
@@ -764,12 +755,12 @@ p.summary-description {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.btn-wide.pitch {
-  padding: 1% 3%; }
-
 h2.past-events-title {
   text-align: center;
-  font-size: 1.5em; }
+  font-size: 1.75em;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  letter-spacing: 1px; }
   @media all and (min-width: 1000px) {
     h2.past-events-title {
       text-align: left;
@@ -778,8 +769,7 @@ h2.past-events-title {
 
 .past-events-wrapper {
   background: #f2f7f7;
-  width: 100%;
-  margin-top: 20%; }
+  width: 100%; }
   @media all and (min-width: 1000px) {
     .past-events-wrapper {
       background-image: url(../../assets/events-images/pasteventsbg@2x-cropped.png);
@@ -825,10 +815,11 @@ h2.past-events-title {
               flex-direction: row; } }
 
 .past-events-text {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
-  letter-spacing: 0.4px;
-  line-height: 1; }
+  letter-spacing: 0.67px;
+  line-height: 0.5;
+  font-size: 1rem; }
   @media all and (min-width: 1000px) {
     .past-events-text {
       -webkit-box-orient: vertical;
@@ -840,8 +831,8 @@ h2.past-events-title {
 .past-events-container img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 215px;
-  width: 215px;
+  height: 270px;
+  width: 270px;
   position: relative;
   padding-left: 0;
   margin: 0 auto; }
@@ -852,7 +843,6 @@ h2.past-events-title {
 .past-events-date {
   font-size: 24px;
   text-align: center;
-  padding-top: 0;
   font-family: "Lato", sans-serif;
   font-style: bold; }
   @media all and (min-width: 1000px) {
@@ -865,7 +855,8 @@ h2.past-events-title {
   font-size: 20px;
   text-align: center;
   font-family: "Lato", sans-serif;
-  font-weight: 500; }
+  font-weight: 500;
+  padding-bottom: 5%; }
   @media all and (min-width: 1000px) {
     .past-events-location {
       text-align: left;

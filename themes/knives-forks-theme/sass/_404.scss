@@ -3,6 +3,7 @@
 .error-404 {
   margin: 0 auto;
   text-align: center;
+  line-height: 1;
 }
 
 ////styles for image
@@ -21,17 +22,41 @@
 ///styles for error message text
 
 p.error-message {
-  line-height: 1;
   text-align: center;
   margin: 0 auto;
   padding-top: 4%;
+  width: 50%;
+  margin-top: 9%;
+  font-size: 1.12em;
 
   @include desktop {
-    font-size: 1.25em;
-    width: 50%;
+    font-size: 1.5em;
   }
 }
 
 .error-message span {
   font-weight: bold;
+}
+
+.btn-wide {
+  &.home {
+    padding: 3% 18%;
+  }
+}
+
+.error-btn-container {
+  margin-top: 20%;
+}
+
+.error-btn-container {
+  .btn-wide {
+    @include tablet {
+      display: none;
+      visibility: hidden;
+    }
+    @include desktop {
+      display: none;
+      visibility: hidden;
+    }
+  }
 }

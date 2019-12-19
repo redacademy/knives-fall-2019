@@ -108,6 +108,7 @@
       }
       .gf_step_label {
         padding: 2px 5px;
+        text-align: right;
       }
     }
 
@@ -169,66 +170,63 @@
       }
     }
   }
-  .icon-default::before {
-    background-image: url('../../assets/icons/Forms - Unfilled/unfilled-name.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    content: 'abc';
-    font-size: 10rem;
-    color: rgba(0, 0, 0, 0);
-    display: block;
-    position: relative;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    @include tablet {
-      width: 60%;
-    }
-    @include desktop {
-      height: 200px;
-      width: 33%;
-      display: block;
-      position: relative;
-      top: 0px;
-      //left: 200px;
-    }
-  }
-  .icon-complete::before {
-    background-image: url('../../assets/icons/Forms - filled/filled-name.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    content: 'abc';
-    font-size: 10rem;
-    color: rgba(0, 0, 0, 0);
-    display: block;
-    position: relative;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    @include tablet {
-      width: 60%;
-    }
-    @include desktop {
-      height: 200px;
-      width: 33%;
-      display: block;
-      position: relative;
-      top: 0px;
-      //left: 200px;
-    }
-    &:nth-of-type(2) {
-      background-image: url('../../assets/icons/Forms - filled/filled-email.svg');
-    }
-  }
+  // .icon-default::before {
+  //   background-image: url('../../assets/icons/Forms - Unfilled/unfilled-application.svg');
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   width: 200px;
+  //   height: 200px;
+  //   content: 'abc';
+  //   font-size: 10rem;
+  //   color: rgba(0, 0, 0, 0);
+  //   display: block;
+  //   position: relative;
+  //   top: 0px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   @include tablet {
+  //     width: 60%;
+  //   }
+  //   @include desktop {
+  //     height: 200px;
+  //     width: 33%;
+  //     display: block;
+  //     position: relative;
+  //     top: 0px;
+  //     //left: 200px;
+  //   }
+  // }
+  // .icon-complete::before {
+  //   background-image: url('../../assets/icons/Forms - filled/filled-application.svg');
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   width: 200px;
+  //   height: 200px;
+  //   content: 'abc';
+  //   font-size: 10rem;
+  //   color: rgba(0, 0, 0, 0);
+  //   display: block;
+  //   position: relative;
+  //   top: 0px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   @include tablet {
+  //     width: 60%;
+  //   }
+  //   @include desktop {
+  //     height: 200px;
+  //     width: 33%;
+  //     display: block;
+  //     position: relative;
+  //     top: 0px;
+  //     //left: 200px;
+  //   }
+  // }
 
-  //use nth-of-type()
-  .validation_error {
-    display: none;
-  }
+  // //use nth-of-type()
+  // .validation_error {
+  //   display: none;
+  // }
 }
 
 //gform confirmation message
@@ -242,10 +240,105 @@
     width: 60%;
     height: auto;
     @include tablet {
-      width: 40%;
+      width: 30%;
     }
     @include desktop {
-      width: 40%;
+      width: 25%;
     }
+  }
+  .thank-you-header {
+    font-family: $parafont;
+    font-size: 2rem;
+  }
+  .thank-you-text {
+    font-size: 1.5rem;
+    font-weight: $font_weight_body;
+  }
+}
+
+.gform_name::before,
+.gform_email::before,
+.gform_home::before,
+.gform_phone::before,
+.gform_company::before,
+.gform_details::before,
+.gform_application::before,
+.gform_memo::before,
+.gform_fee::before {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  content: '';
+  font-size: 0rem;
+  //color: rgba(0, 0, 0, 0);
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  @include tablet {
+    width: 60%;
+  }
+  @include desktop {
+    height: 200px;
+    width: 33%;
+    display: block;
+    position: relative;
+    top: 0px;
+    //left: 200px;
+  }
+}
+
+.gform_name::before {
+  background-image: url('../../assets/icons/Forms-Unfilled/unfilled-name.svg');
+}
+.gform_email::before {
+  background-image: url('../../assets/icons/Forms-Unfilled/unfilled-email.svg');
+}
+.gform_home::before {
+  background-image: url('../../assets/icons/Forms-Unfilled/unfilled-home.svg');
+}
+.gform_phone::before {
+  background-image: url('../../assets/icons/Forms-Unfilled/unfilled-phone.svg');
+}
+.gform_company::before {
+  background-image: url('../../assets/icons/Forms-Unfilled/unfilled-business.svg');
+}
+.gform_details::before {
+  background-image: url('../../assets/icons/Forms-Unfilled/unfilled-rules.svg');
+}
+.gform_application::before {
+  background-image: url('../../assets/icons/Forms-Unfilled/unfilled-application.svg');
+}
+.gform_memo::before {
+  background-image: url('../../assets/icons/Forms-Unfilled/unfilled-rules.svg');
+}
+.gform_fee::before {
+  background-image: url('../../assets/icons/Forms-Unfilled/unfilled-payment.svg');
+}
+
+.gform_check::after {
+  content: '\f00c';
+  font-family: 'Font Awesome 5 Free';
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  //transform: translateX(-50%);
+  color: $primary_green_med;
+  font-size: 110px;
+  font-weight: 900;
+
+  @include tablet {
+    top: 225px;
+    left: 75%;
+    transform: translateX(-50%);
+  }
+
+  @include desktop {
+    font-size: 100px;
+    top: 225px;
+    left: 72%;
+    transform: translateX(-50%);
   }
 }

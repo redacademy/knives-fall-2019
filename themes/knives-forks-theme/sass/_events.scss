@@ -1,3 +1,190 @@
+//************START of SERVIN's styling
+@include mobile {
+  //*************STYLES for Events Banner
+
+  .banner {
+    position: relative;
+    .btn-event {
+      padding: 3% 5%;
+      font-size: 0.75rem;
+      display: block;
+      margin-bottom: 2%;
+      width: 60%;
+      margin: 0 auto 2% auto;
+      text-align: center;
+      &:hover {
+        cursor: pointer;
+        background: $primary_green_light;
+        color: white;
+        font-weight: 600;
+      }
+    }
+    .banner-outer-content {
+      position: absolute;
+      top: 45%;
+      // transform: translateY(-25rem);
+      width: 80%;
+      text-align: center;
+      .banner-content {
+        width: 100%;
+        position: relative;
+        margin-bottom: 5%;
+        text-align: left;
+        padding: 3%;
+        .event-title {
+          margin: 0;
+          font-size: 1.5rem;
+        }
+        .event-location {
+          font-size: 1rem;
+          font-weight: 600;
+          font-style: italic;
+          text-align: right;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .banner-events {
+      z-index: -1;
+      position: inherit;
+      height: auto;
+      img {
+        transform: unset;
+        height: 90vmax;
+        width: 100%;
+        right: 0;
+        position: relative;
+      }
+    }
+  }
+  .banner-content {
+    color: white;
+    // top: 65%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    .banner-img {
+      height: auto;
+    }
+  }
+}
+
+@include tablet {
+  .banner {
+    overflow: hidden;
+    .banner-events {
+      .banner-img {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .banner-outer-content {
+      background: rgba(111, 143, 106, 0.76);
+      top: 20%;
+      position: absolute;
+      width: 60%;
+      padding-bottom: 5%;
+      text-align: center;
+      .banner-content {
+        color: white;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        padding: 4% 2%;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        h2 {
+          width: 100%;
+          word-break: break-word;
+          font-size: calc((3rem - 100%) - 1.5vmin);
+          margin: 0;
+          text-align: left;
+        }
+        p {
+          display: none;
+          padding: 0;
+        }
+        .event-location {
+          display: block;
+          text-align: right;
+          width: 100%;
+          font-size: calc((3em - 100%) - 1.5vmax);
+        }
+        .btn-event {
+          padding: 3%;
+          margin: 0 2%;
+          &:hover {
+            background: #378244;
+            color: white;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .banner-content {
+    top: 40%;
+    text-align: center;
+    h2 {
+      font-size: calc(3em - 100%);
+    }
+  }
+  .banner-outer-content {
+    //style for this  outer background green content
+    position: absolute;
+    // top: 20%;
+    padding-bottom: 5%;
+    text-align: center;
+
+    // transform: translateY(-35rem);
+    width: 50%;
+    text-align: center;
+    .banner-content {
+      width: 100%;
+      position: relative;
+      color: white;
+      display: flex;
+      flex-flow: row wrap;
+      padding: 2% 5%;
+      justify-content: center;
+      h2 {
+        margin: 0;
+        text-align: left;
+        width: 100%;
+        word-break: break-word;
+        font-size: calc(3em - 100%);
+      }
+      .event-location {
+        width: 100%;
+        text-align: right;
+        font-size: 2rem;
+      }
+      .btn-event {
+        font-size: 1rem;
+        margin: 0 1%;
+        text-transform: capitalize;
+        width: 30%;
+        font-weight: 600;
+        &:hover {
+          cursor: pointer;
+          background: #378244;
+          color: #fff;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+//*****************End of SERVIN's Style
 // /// front banner section
 
 .events-banner {
@@ -47,8 +234,8 @@ h2.upcoming-events-location {
 
 .buy-tickets-btn {
   background: #fff;
-  color: $primary_green_med;
-  border: 3px solid $primary_green_med;
+  color: $primary_green_light;
+  border: 3px solid $primary_green_light;
   border-radius: 1.5em;
   font-size: $fontsize;
   font-family: $parafont;
@@ -61,23 +248,23 @@ h2.upcoming-events-location {
   white-space: no-wrap;
 }
 
-.apply-to-pitch-btn {
-  background: #fff;
-  text-decoration: none;
-  color: $primary_green_light;
-  border: 3px solid $primary_green_light;
-  border-radius: 1.5em;
-  font-size: 0.9rem;
-  font-family: $parafont;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin: 2% 28%;
-  padding: 12px;
-  max-width: 34vw;
-  position: relative;
-  width: 200px;
-  white-space: no-wrap;
-}
+// .apply-to-pitch-btn {
+//   background: #fff;
+//   text-decoration: none;
+//   color: $primary_green_light;
+//   border: 3px solid $primary_green_light;
+//   border-radius: 1.5em;
+//   font-size: 0.9rem;
+//   font-family: $parafont;
+//   font-weight: 500;
+//   text-transform: uppercase;
+//   margin: 2% 28%;
+//   padding: 12px;
+//   max-width: 34vw;
+//   position: relative;
+//   width: 200px;
+//   white-space: no-wrap;
+// }
 
 ///video section styling
 
@@ -92,7 +279,7 @@ h2.upcoming-events-location {
   text-align: center;
 
   @include desktop {
-    width: 600px;
+    width: 700px;
   }
 }
 
@@ -101,20 +288,12 @@ h2.upcoming-events-location {
 .video-section {
   display: flex;
   justify-content: center;
-  margin-top: 75px;
-  background: linear-gradient(
-    to bottom,
-    rgba(white, 0) 25%,
-    rgba(242, 144, 97, 0.17) 25%
-  );
+  margin-top: 96px;
+
   padding-bottom: 4rem;
   margin-bottom: 0rem;
-  // margin-left: -6%;
-  // margin-right: -5.9%;
 
   @include desktop {
-    // margin-left: 6%;
-    // margin-right: 9%;
     margin-bottom: 10%;
   }
 }
@@ -131,7 +310,7 @@ h2.upcoming-events-location {
   @include desktop {
     flex-direction: row;
     width: 970px;
-    margin-left: 16%;
+    margin: 0 auto;
   }
 }
 
@@ -150,18 +329,20 @@ h2.upcoming-events-location {
 
 h3.summary-title {
   font-size: 1.5em;
-  font-family: $headfont, serif;
+  font-family: $parafont, sans-serif;
   text-align: center;
   font-display: bold;
   color: black;
   margin: 0;
+  padding-bottom: 20px;
 }
 
 p.summary-description {
-  font-size: 1.05em;
+  font-size: 1em;
+  line-height: 1;
   text-align: center;
-  max-width: 500px;
-  margin: auto;
+  max-width: 600px;
+  // margin: auto;
 }
 
 .apply-to-pitch-btn-green-flex {
@@ -169,48 +350,51 @@ p.summary-description {
   justify-content: center;
 }
 
-.apply-to-pitch-btn-green {
-  background: $primary_green_med;
-  color: white;
-  border: 1px solid transparent;
-  border-radius: 2em;
-  font-size: $fontsize;
-  font-family: $parafont;
-  text-align: center;
-  text-transform: uppercase;
-  width: 217px;
-  height: 45px;
-  text-decoration: none;
-  font-weight: 500;
-  overflow: hidden;
-}
+// .btn-wide {
+//   &.pitch {
+//     min-width: 150px;
+//   }
+// }
+
+// .btn-small {
+//   min-width: 100px;
+// }
+// .btn-medium {
+//   min-width: 200px;
+// }
+// .btn-large {
+//   min-width: 300px;
+// }
+// .btn-full {
+//   min-width: 350px;
+// }
 
 /////past events
 
 h2.past-events-title {
   text-align: center;
-  font-size: 28px;
-  position: relative;
-  padding: 29px;
+  font-size: 1.75em;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  letter-spacing: 1px;
 
   @include desktop {
     text-align: left;
-    padding-bottom: 10px;
-    font-size: 40px;
-    padding-left: 232px;
+    font-size: 2.5em;
+    padding-left: 13%;
   }
 }
 
 .past-events-wrapper {
   background: #f2f7f7;
   width: 100%;
-  margin-top: 0px;
+  // margin-top: 20%;
 
   @include desktop {
     background-image: url(../../assets/events-images/pasteventsbg@2x-cropped.png);
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 20%;
+    background-position: 100% 7%;
+    background-size: 21%;
   }
 }
 
@@ -243,10 +427,11 @@ h2.past-events-title {
 }
 
 .past-events-text {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
-  letter-spacing: 0.4px;
-  line-height: 0.5em;
+  letter-spacing: 0.67px;
+  line-height: 0.5;
+  font-size: $fontsize;
 
   @include desktop {
     flex-direction: column;
@@ -256,11 +441,11 @@ h2.past-events-title {
 .past-events-container {
   img {
     object-fit: cover;
-    height: 244px;
-    width: 244px;
+    height: 270px;
+    width: 270px;
     position: relative;
     padding-left: 0;
-    margin: 0 20%;
+    margin: 0 auto;
 
     @include desktop {
       margin-right: 2%;
@@ -271,7 +456,7 @@ h2.past-events-title {
 .past-events-date {
   font-size: 24px;
   text-align: center;
-  padding-top: 0;
+  // padding-top: 0;
   font-family: $parafont;
   font-style: bold;
 
@@ -286,6 +471,7 @@ h2.past-events-title {
   text-align: center;
   font-family: $parafont;
   font-weight: 500;
+  padding-bottom: 5%;
 
   @include desktop {
     text-align: left;
@@ -294,10 +480,9 @@ h2.past-events-title {
 }
 .past-events-description {
   font-size: 16px;
-  line-height: $fontsize;
   text-align: center;
   font-family: $parafont;
-  line-height: 1.3em;
+  line-height: 1.2;
 
   @include desktop {
     text-align: left;

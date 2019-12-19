@@ -23,6 +23,7 @@ $testimonials=get_posts($args);
          <h1 class="site-title knives-fork">
                 <?=get_bloginfo('title')?>
          </h1>
+         <!-- <div class="flick-container"> -->
          <?php
             if(count($testimonials)>0){
                 $tmp='';
@@ -54,7 +55,7 @@ $testimonials=get_posts($args);
 
             }
             ?>
-
+<!-- </div> -->
 
 
          
@@ -62,31 +63,5 @@ $testimonials=get_posts($args);
      
      
      
-     <section class="support-container">
-         <div>
-     <h3 class="initiative-title">An initiative by:</h3>
 
-
-     <div class="slowmoney-icon">
-
-<img class="slow-money" src='<?php echo get_stylesheet_directory_uri(); ?>/assets/homepage-images/slowmoney@2x.png' alt='slowmoney-icon' />
-<div class="slowmoney-icon-bg"></div>
-</div>
-        </div>
-
-<div>
-
-<h3 class="supported-by-title">Generously supported by:</h3>
-
-
-<div class="vancity-icon">
-
-<img class="vancity" src='<?php echo get_stylesheet_directory_uri(); ?>/assets/homepage-images/vancitylogo@3x.png' alt='vancity-icon' />
-<div class="vancity-icon-bg"></div>
-        </div>
-
-
-
-</section>
-        </div>
 <?php get_footer();?>

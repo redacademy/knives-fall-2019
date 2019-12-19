@@ -1,96 +1,3 @@
-// .become-member-container {
-//   margin: 100px 0 100px 5vw;
-//   display: flex;
-//   flex-flow: column nowrap;
-//   @include desktop {
-//     // flex-flow: row nowrap;
-//     // margin: 0;
-//     // width: 100vw;
-//     //height: 375px;
-//   }
-
-//   .become-member-copy-block {
-//     display: flex;
-//     flex-direction: column;
-//     flex-basis: 40%;
-//   }
-//   .become-member-text {
-//     //order: 1;
-//     // display: flex;
-//     // flex-flow: column nowrap;
-//     // padding-left: 20%;
-//     // padding-right: 5%;
-//     // transform: translateY(-10%);
-//     @include desktop {
-//       //   width: 45%;
-//       //   padding-left: 10%;
-//       //   padding-right: 5%;
-//       //   transform: translateY(-60px);
-//       //   align-self: flex-start;
-//     }
-//     .btn {
-//       width: 135px;
-//       height: 20px;
-//       align-self: flex-start;
-//       //transform: translateY(80%);
-//       //margin: auto;
-//       @include desktop {
-//         // transform: translateY(120px);
-//         // justify-self: center;
-//       }
-//     }
-//   }
-// }
-// .become-member-image {
-//   order: 0;
-//   //width: 70%;
-//   flex-basis: 40%;
-//   padding: 0;
-//   margin: 0;
-//   img {
-//     width: 100%;
-//     height: auto;
-//   }
-
-//   // transform: translate(-10%, -20%);
-//   @include desktop {
-//     // object-fit: cover;
-//     // transform: translate(40px, 50px);
-//     // width: 45%;
-//   }
-// }
-
-// .make-pitch-container {
-//   margin: 100px 5vw 100px 0;
-//   display: flex;
-//   flex-flow: column nowrap;
-//   @include desktop {
-//     flex-flow: row nowrap;
-//     margin-top: 600px;
-//   }
-//   .make-pitch-text {
-//     order: 1;
-//     margin-right: 20%;
-//     margin-left: 5%;
-//     transform: translateY(-10%);
-//   }
-
-//   .make-pitch-image {
-//     order: 0;
-//     width: 70%;
-//     height: auto;
-//     //transform: translate(50%, -20%);
-//     @include desktop {
-//     }
-//   }
-//   .btn {
-//     order: 2;
-//     width: 180px;
-//     transform: translateY(45%);
-//     align-self: center;
-//   }
-// }
-
 .copy-title {
   font-weight: $font_weight_header;
   font-size: 1.75rem;
@@ -99,25 +6,100 @@
   }
 }
 .copy-subtitle {
-  color: $primary_green_dark;
+  color: $primary_green_light;
   font-size: 1.25rem;
+  font-weight: 500;
 }
 .copy-text {
-  font-weight: $font_weight_body;
+  font-weight: $parafont;
   line-height: 1rem;
   text-align: unset;
+  @include desktop {
+    line-height: 1.12rem;
+  }
+}
+// .blurb-container {
+//   section {
+//     position: relative;
+
+//     &:nth-of-type(1) {
+//       &:after {
+//         display: none;
+//       }
+//     }
+
+//     &:after {
+//       border-top: 1px solid #a3a1a1;
+//       width: 1240px;
+//       height: 20px;
+//       content: '';
+//       top: -50px;
+//       position: absolute;
+//       left: 50%;
+//       transform: translateX(-50%);
+//     }
+//   }
+//}
+
+// TO DO:  THERE MIGHT BE AN EASIER WAY TO DO THIS IF SO PLEASE LMK!
+
+//   &:after {
+//     border-top: 1px solid #a3a1a1;
+//     width: 1240px;
+//     height: 20px;
+//     content: '';
+//     top: -50px;
+//     position: absolute;
+//     left: 50%;
+//     transform: translateX(-50%);
+//   }
+//   //}
+// }
+
+.blurb-container {
+  margin: 0 auto;
+  border-bottom: 2px solid #a3a1a1;
+  width: 80%;
+
+  @include desktop {
+    border-bottom: transparent;
+    padding: $padding * 2 0 0;
+    border-bottom: 2px solid #a3a1a1;
+    width: 95%;
+    // margin-left: -10%;
+    // margin-right: -5%;
+  }
+}
+
+.page-our-story {
+  .site-content div {
+    &:nth-child(2) {
+      order: 3;
+    }
+  }
+  .blurb-container {
+    margin: 0 auto;
+    border-bottom: transparent;
+    @include desktop {
+      width: 95%;
+    }
+  }
 }
 
 .custom-copy-block {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
-
+  margin-top: 60px;
+  width: 90%;
+  margin: 60px auto 100px auto;
   @include desktop {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 200px;
+    margin-bottom: 15%;
+    width: 95%;
+    align-self: flex-end;
   }
+
   .copy-block-content {
     order: 1;
     position: relative;
@@ -141,8 +123,7 @@
           position: relative;
         }
       }
-      .copy-subtitle {
-      }
+
       .copy-text {
         @include desktop {
           position: relative;
@@ -187,6 +168,7 @@
     }
   }
   &.image-copy {
+    padding-right: 5%;
     margin-left: 30px;
     @include desktop {
       margin-left: 0;
@@ -206,6 +188,7 @@
     }
   }
   &.copy-image {
+    padding-left: 5%;
     margin-right: 30px;
     @include desktop {
       margin-right: 0;
@@ -223,6 +206,7 @@
     }
     .copy-block-content {
       margin: 0 20% 10px 5%;
+      padding-left: 5%;
       order: 1;
       @include desktop {
         order: 0;
@@ -230,5 +214,10 @@
         margin-left: 20px;
       }
     }
+  }
+}
+.front-page {
+  .image-copy {
+    border-bottom: 1px solid grey;
   }
 }

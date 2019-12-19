@@ -13,32 +13,7 @@ get_header();
 <div id="primary" class="content-area">
 	<main id="main" class="site-main events-page" role="main">
 		
-		<style>
-			.events-banner {
-				background: url('<?php the_field("events_page_banner_image"); ?>') no-repeat center center/cover;
-				height: 100vh;
-			}
-		</style>
-	<!-- <section class="events-banner">
 	
-	
-	<section class="events-banner">
-	<section class="upcoming-events">
-		<h1 class="upcoming-events-title">
-			<?php //the_field('upcoming_event_title'); ?>
-			</h1>
-			<h2 class="upcoming-events-location">
-				<?php //the_field('upcoming_event_location'); ?>
-			</h2>	
-		</section> 
-
-			<section class="banner-links"> 
-		<button class="buy-tickets-btn">Buy Tickets</button>
-			<button class="apply-to-pitch-btn">Apply To Pitch</button>
-	
-
-	</section> 
-		</section> -->
 		
 		<div class="pitch-summary">
 <?php
@@ -62,7 +37,7 @@ get_header();
 		
 
 		</div>	
-		<div class="apply-to-pitch-btn-green-flex"><button class="apply-to-pitch-btn-green">Apply To Pitch</button></div>
+		<div class="apply-to-pitch-btn-green-flex"><button class="btn btn-large">Apply To Pitch</button></div>
 	 
 
 		</section>
@@ -71,7 +46,14 @@ get_header();
 		endif;
 		?>
 
-		<section class="video-section">
+
+<?php 
+$bg_color = get_field('video_background_color');
+?>
+
+		<section class="video-section" style="<?php echo  
+		'background: linear-gradient(to bottom,' . '#fff' . ' 25%,' . $bg_color . ' 25%)'
+		?>">
 
 
 		<div class="embed-container">
@@ -79,8 +61,6 @@ get_header();
 		</div>
 
 
-
-	<!-- <video controls poster="<?= get_template_directory_uri(); ?>/assets/events-images/event-video@3x.png"> -->
 
 
 

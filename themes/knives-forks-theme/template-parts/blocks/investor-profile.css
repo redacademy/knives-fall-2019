@@ -11,13 +11,14 @@
   overflow: hidden;
   height: inherit;
   margin-top: 8%;
-  text-shadow: 0px 0px 3px white;
-  order: 2;
+  /* text-shadow: 0px 0px 3px white; */
 }
 .investor-section .investor-bg-img {
   width: 100%;
   position: absolute;
   z-index: -1;
+  height: 100%;
+  object-fit: cover;
 }
 .investor-section div {
   width: 70%;
@@ -55,9 +56,10 @@
   line-height: 2;
   padding-bottom: 5%;
 }
-.investor-section div .investor-bottom a {
+.investor-section div .investor-bottom .btn {
   width: 80%;
   margin: 0 auto;
+  text-shadow: unset;
 }
 .investor-section div .investor-bottom > * {
   width: 100%;

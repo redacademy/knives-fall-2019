@@ -40,10 +40,6 @@
 						<?php wp_nav_menu(array('theme_location' => 'desktop', 'menu_id' => 'desktop-menu')); ?>
 						<?php // if (is_page(array('our-story', 'how-it-work', 'events', 'become-investor'))) { } 
 						?>
-						<?php if (is_page('our-story')) { ?>
-
-							<body <?php body_class('current'); ?>>
-							<?php } ?>
 					</div>
 					<i class="fas fa-bars hamburger" id="hamburger"></i>
 					<!-- hidden menu -->
@@ -58,17 +54,31 @@
 			<?php
 
 			if (is_page('how-it-works') || is_front_page() || is_page('our-story')) { //START for BANNER's featured IMAGE with sayings
+				// echo '
+				
+				// 	<section class="banner">
+				// 		<nav class="banner-img">';
+				// the_post_thumbnail('full');
+				// echo '	</nav>
+				// 		<nav class="banner-content">
+				// 			<h2>
+				// 				'. get_field('banner-description') .'
+				// 			</h2>
+				// 		</nav>
+				// 	</section>
+				// 	';
+
 				echo '
 				
 					<section class="banner">
 						<nav class="banner-img">';
-				the_post_thumbnail('large');
-				echo '	</nav>
-						<nav class="banner-content">
-							<h2>
-								'. get_field('banner-description') .'
-							</h2>
-						</nav>
+				the_post_thumbnail('full');
+				echo '	<nav class="banner-content">
+				<h2>
+					'. get_field('banner-description') .'
+				</h2>
+			</nav> </nav>
+						
 					</section>
 					';
 			} else if (is_page('events')) {
@@ -87,7 +97,7 @@
 						<section class="banner">
 							<nav class="banner-img banner-events">
 								<img src="' . $img . '" 
-								srcset="' . esc_url($img2) . ' 1000w, ' . $img . ' 600w" 
+								srcset="' . esc_url($img2) . ' 1000w, ' . $img . ' 499w" 
 								 alt="knives-fork-events">
 							</nav>
 								<div class="banner-outer-content">

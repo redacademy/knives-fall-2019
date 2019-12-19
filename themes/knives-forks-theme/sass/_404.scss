@@ -28,11 +28,12 @@ p.error-message {
   width: 85%;
   margin-top: 9%;
   font-size: 1em;
-  padding-bottom: 25%;
+  padding-bottom: 15%;
   line-height: 1.5;
 
   @include desktop {
     font-size: 1.5em;
+    padding-bottom: 15%;
   }
 }
 

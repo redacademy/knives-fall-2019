@@ -331,6 +331,9 @@ wpcf7-submit input[type='‘submit’'] {
   font-family: "Lato", sans-serif;
   max-width: 100%; }
 
+.wpcf7-form-control:focus {
+  border-color: #378244; }
+
 .wpcf7-submit {
   width: 100%;
   background-color: white;
@@ -1001,9 +1004,12 @@ h3.supported-by-title {
 
 .page-how-it-works article .how-title {
   margin-top: -5px; }
+<<<<<<< HEAD
 
 .page-how-it-works article .entry-description {
   color: #378244; }
+=======
+>>>>>>> 011fab949c085926326211cf201df3879b08fc0a
 
 @media all and (max-width: 499px) {
   .page-how-it-works .testimonials .carousel-cell {
@@ -1242,6 +1248,7 @@ h3.supported-by-title {
       font-size: 1rem; }
     .page-how-it-works .entry-header p {
       line-height: 1.5;
+<<<<<<< HEAD
       width: 340px;
       padding: 2rem 0 0; }
   .page-how-it-works .computer-wrapper {
@@ -1272,6 +1279,31 @@ h3.supported-by-title {
       padding: 0 2% 0 0; }
       .page-how-it-works .entry-content .steps-list li:first-child .how-description {
         margin: 2.2rem 0 0; } }
+=======
+      text-align: justify; }
+  .page-how-it-works .entry-content {
+    position: relative; }
+    .page-how-it-works .entry-content .how-img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1; }
+    .page-how-it-works .entry-content .how-count {
+      margin-bottom: 0; }
+    .page-how-it-works .entry-content .steps-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 50%;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .page-how-it-works .entry-content .steps-list li {
+        width: 50%; } }
+>>>>>>> 011fab949c085926326211cf201df3879b08fc0a
 
 .page-how-it-works .testimonials {
   padding-top: 1%;
@@ -1749,7 +1781,11 @@ h3.supported-by-title {
                 flex-direction: row;
         line-height: 1; }
       .page-contact-us h2.contact-opportunity {
-        padding-top: 10%; }
+        padding-top: 3%; } }
+    @media all and (min-width: 1000px) and (min-width: 1000px) {
+      .page-contact-us h2.contact-opportunity {
+        padding-top: 4%; } }
+  @media all and (min-width: 1000px) {
       .page-contact-us .media-enquiries {
         padding-left: 80px;
         height: 130px;
@@ -1826,7 +1862,7 @@ h3.supported-by-title {
   font-family: "Lora", serif;
   text-align: center;
   min-width: 100%;
-  margin-top: 10%; }
+  margin-top: 0; }
 
 @media all and (max-width: 499px) {
   div.wpcf7 .ajax-loader {
@@ -2071,14 +2107,15 @@ h3.supported-by-title {
           border-radius: 2rem; }
         .site-info .subscribe .email-form .sub-btn {
           position: absolute;
-          width: 28%;
+          width: 25%;
           right: 5px;
           top: 0;
           padding: 1rem 0;
           border-radius: 0 2rem 2rem 0;
           color: #fff;
           background-color: #378244;
-          font-family: "Lato", sans-serif; }
+          font-family: "Lato", sans-serif;
+          letter-spacing: 0.75px; }
     .site-info .logo-container .desktop-logo {
       padding: 0.3rem 0 0 0;
       margin: 0 auto; }
@@ -2105,16 +2142,12 @@ h3.supported-by-title {
     .copy-text {
       line-height: 1.12rem; } }
 
-.blurb-container {
-  margin: 0 auto;
-  border-bottom: 2px solid #a3a1a1;
-  width: 80%; }
-  @media all and (min-width: 1000px) {
-    .blurb-container {
-      border-bottom: transparent;
-      padding: 2rem 0 0;
-      border-bottom: 2px solid #a3a1a1;
-      width: 95%; } }
+@media all and (min-width: 1000px) {
+  .blurb-container {
+    border-bottom: 2px solid #e0dbdb;
+    padding: 2rem 0 0;
+    width: 95%;
+    margin: 0 auto; } }
 
 .page-our-story .site-content div:nth-child(2) {
   -webkit-box-ordinal-group: 4;
@@ -2139,6 +2172,9 @@ h3.supported-by-title {
   margin-top: 60px;
   width: 90%;
   margin: 60px auto 100px auto; }
+  @media screen and (min-width: 500px) and (max-width: 999px) {
+    .custom-copy-block {
+      width: 87%; } }
   @media all and (min-width: 1000px) {
     .custom-copy-block {
       -webkit-box-orient: horizontal;
@@ -2149,7 +2185,8 @@ h3.supported-by-title {
           -ms-flex-pack: justify;
               justify-content: space-between;
       margin-bottom: 15%;
-      width: 95%;
+      width: 100%;
+      margin-right: 0;
       -ms-flex-item-align: end;
           align-self: flex-end; } }
   .custom-copy-block .copy-block-content {
@@ -2176,14 +2213,16 @@ h3.supported-by-title {
     @media all and (min-width: 1000px) {
       .custom-copy-block .copy-block-content .copy-block-text .copy-text {
         position: relative;
-        top: 40px; } }
+        top: 25px; } }
     .custom-copy-block .copy-block-content .copy-block-btn {
       display: block;
       position: relative;
       bottom: -75px;
-      width: 160px;
+      width: 180px;
       margin: auto;
-      text-align: center; }
+      text-align: center;
+      padding: 15px 0;
+      letter-spacing: 0.1px; }
       @media screen and (min-width: 500px) and (max-width: 999px) {
         .custom-copy-block .copy-block-content .copy-block-btn {
           bottom: -80px; } }
@@ -2212,12 +2251,20 @@ h3.supported-by-title {
           width: 90%; } }
   .custom-copy-block.image-copy {
     padding-right: 5%;
+    margin-top: 150px;
     margin-left: 30px; }
+    @media screen and (min-width: 500px) and (max-width: 999px) {
+      .custom-copy-block.image-copy {
+        margin-top: 60px; } }
     @media all and (min-width: 1000px) {
       .custom-copy-block.image-copy {
-        margin-left: 0; } }
+        margin-left: 0;
+        margin-top: 60px; } }
     .custom-copy-block.image-copy .copy-block-image {
       left: -70px; }
+      @media screen and (min-width: 500px) and (max-width: 999px) {
+        .custom-copy-block.image-copy .copy-block-image {
+          left: -100px; } }
       @media all and (min-width: 1000px) {
         .custom-copy-block.image-copy .copy-block-image {
           left: 50px; } }
@@ -2230,6 +2277,9 @@ h3.supported-by-title {
   .custom-copy-block.copy-image {
     padding-left: 5%;
     margin-right: 30px; }
+    @media screen and (min-width: 500px) and (max-width: 999px) {
+      .custom-copy-block.copy-image {
+        margin-right: 60px; } }
     @media all and (min-width: 1000px) {
       .custom-copy-block.copy-image {
         margin-right: 0; } }
@@ -2240,7 +2290,7 @@ h3.supported-by-title {
       right: -27%; }
       @media screen and (min-width: 500px) and (max-width: 999px) {
         .custom-copy-block.copy-image .copy-block-image {
-          right: -28%; } }
+          right: -33%; } }
       @media all and (min-width: 1000px) {
         .custom-copy-block.copy-image .copy-block-image {
           -webkit-box-ordinal-group: 2;
@@ -2334,13 +2384,14 @@ h3.supported-by-title {
   .banner .banner-img {
     position: relative;
     width: 100%;
-    height: 100vmax;
+    height: 100vh;
     position: relative; }
     .banner .banner-img img {
       -o-object-fit: cover;
          object-fit: cover;
       margin-top: 60px;
       position: absolute;
+      margin-bottom: 100px;
       -o-object-position: center;
          object-position: center;
       height: 100vh;
@@ -2356,6 +2407,12 @@ h3.supported-by-title {
           -o-object-position: center;
              object-position: center;
           position: absolute; } }
+    @media screen and (min-width: 500px) and (max-width: 999px) {
+      .banner .banner-img {
+        margin-bottom: 100px; } }
+    @media all and (min-width: 1000px) {
+      .banner .banner-img {
+        margin-bottom: 100px; } }
   .banner .banner-content {
     position: absolute;
     bottom: 50px;
@@ -2363,8 +2420,10 @@ h3.supported-by-title {
     width: 80%; }
     @media screen and (min-width: 500px) and (max-width: 999px) {
       .banner .banner-content {
-        bottom: 15%;
-        position: absolute; } }
+        top: 200px;
+        left: 0;
+        position: absolute;
+        width: 65%; } }
     @media all and (min-width: 1000px) {
       .banner .banner-content {
         width: 60%; } }
@@ -2384,7 +2443,7 @@ h3.supported-by-title {
         .banner .banner-content h2 {
           font-size: 3rem;
           position: absolute;
-          top: -40%; } }
+          top: -50%; } }
 
 .banner-outer-content {
   background: unset; }
@@ -2416,16 +2475,19 @@ h3.supported-by-title {
     text-align: right; }
   .testimonials .carousel-cell .member-since,
   .testimonials nav .member-since {
-    -webkit-transform: translateY(-2em);
-            transform: translateY(-2em); }
+    -webkit-transform: translateY(-1.75em);
+            transform: translateY(-1.75em); }
   .testimonials .carousel-cell .member-name,
   .testimonials nav .member-name {
+    font-family: "Lora", serif;
     font-weight: 600; } }
 
 @media screen and (min-width: 500px) and (max-width: 999px) {
   .testimonials {
     width: 100%;
     margin: 0; }
+    .testimonials .knives-fork {
+      color: transparent; }
     .testimonials .flickity-enabled {
       width: 90%;
       margin: 0 auto; }
@@ -2434,8 +2496,10 @@ h3.supported-by-title {
       margin: 0 auto; }
       .testimonials .carousel-cell p {
         font-size: 1.2rem;
-        -webkit-transform: translateY(-30%);
-                transform: translateY(-30%); }
+        -webkit-transform: translateY(-25%);
+                transform: translateY(-25%);
+        width: 90%;
+        margin: 6% auto; }
       .testimonials .carousel-cell .member-name {
         font-weight: bold; } }
 
@@ -2443,16 +2507,22 @@ h3.supported-by-title {
   .testimonials {
     width: 100%;
     margin: 0; }
+    .testimonials .knives-fork {
+      color: transparent; }
     .testimonials .flickity-button {
       display: none; }
     .testimonials .flickity-enabled {
-      width: 90%;
-      margin: 0 auto; }
+      width: 100%;
+      margin: 0; }
     .testimonials .carousel-cell {
-      width: 95%;
-      margin: 0 auto; }
+      width: 100%;
+      margin: 0; }
       .testimonials .carousel-cell p {
-        font-size: 1rem; }
+        font-size: 1rem;
+        width: 90%;
+        margin: 0 auto 6% auto;
+        -webkit-transform: translateY(-25%);
+                transform: translateY(-25%); }
       .testimonials .carousel-cell .member-name {
         font-weight: bold; } }
 
@@ -2469,8 +2539,8 @@ body {
 
 .testimonials .carousel-cell {
   counter-increment: gallery-cell;
-  width: 80%;
-  margin: 0 10%; }
+  width: 96%;
+  margin: 0 2%; }
   .testimonials .carousel-cell img {
     -webkit-transform: translateY(-35%);
             transform: translateY(-35%); }

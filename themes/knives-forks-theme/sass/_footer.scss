@@ -115,7 +115,7 @@
         }
         .sub-btn {
           position: absolute;
-          width: 28%;
+          width: 25%;
           right: 5px;
           top: 0;
           padding: $padding 0;
@@ -123,6 +123,7 @@
           color: #fff;
           background-color: $primary_green_med;
           font-family: $parafont;
+          letter-spacing: 0.75px;
         }
       }
     }

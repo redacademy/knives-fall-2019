@@ -44,12 +44,25 @@ $testimonials = get_posts($args);
                         if (have_rows('steps')) {
                             while (have_rows('steps')) {
                                 the_row();
+?>
+    </header><!-- .entry-header -->
+   
+    <div class="entry-content" >
+        <nav>
+            
+            <ul class="steps-list" >
+                <?php
+                $tmp = '';
+                $tmpCount = 1;
+                if (have_rows('steps')) {
+                    while (have_rows('steps')) {
+                        the_row();
 
-                                // $img=is_null(get_sub_field('step-icon'))?null:get_sub_field('step-icon');
-                                $img = get_sub_field('step-icon');
-                                $tmpClass = ($img) ? '' : 'hide-this';
-                                // var_dump($img);
-                                $tmp .= '<li>
+                        // $img=is_null(get_sub_field('step-icon'))?null:get_sub_field('step-icon');
+                        $img = get_sub_field('step-icon');
+                        $tmpClass = ($img) ? '' : 'hide-this';
+                        // var_dump($img);
+                        $tmp .= '<li class=" li' . $tmpCount .' ">
                             <h3 class="how-count">' . $tmpCount . '</h3>
                             <p class="how-title"><b>' . get_sub_field('step-title') . '</b></p>
                             <p class="how-description">

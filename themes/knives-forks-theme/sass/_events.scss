@@ -1,517 +1,490 @@
 //************START of SERVIN's styling
-@include mobile {
-  //*************STYLES for Events Banner
+.page-events {
+  @include mobile {
+    //*************STYLES for Events Banner
 
-  .banner {
-    position: relative;
-    .btn-event {
-      padding: 3% 5%;
-      font-size: 0.75rem;
-      display: block;
-      margin-bottom: 2%;
-      width: 60%;
-      margin: 0 auto 2% auto;
-      text-align: center;
-      &:hover {
-        cursor: pointer;
-        background: $primary_green_light;
-        color: white;
-        font-weight: 600;
-      }
-    }
-    .banner-outer-content {
-      position: absolute;
-      top: 45%;
-      // transform: translateY(-25rem);
-      width: 80%;
-      text-align: center;
-      .banner-content {
-        width: 100%;
-        position: relative;
-        margin-bottom: 5%;
-        text-align: left;
-        padding: 3%;
-        .event-title {
-          margin: 0;
-          font-size: 1.5rem;
-        }
-        .event-location {
-          font-size: 1rem;
+    .banner {
+      position: relative;
+      .btn-event {
+        padding: 3% 5%;
+        font-size: 0.75rem;
+        display: block;
+        margin-bottom: 2%;
+        width: 60%;
+        margin: 0 auto 2% auto;
+        text-align: center;
+        &:hover {
+          cursor: pointer;
+          background: $primary_green_light;
+          color: white;
           font-weight: 600;
-          font-style: italic;
-          text-align: right;
-          text-transform: capitalize;
         }
       }
-    }
+      .banner-outer-content {
+        position: absolute;
+        top: 30%;
+        width: 80%;
+        text-align: center;
+        background: rgba(111, 143, 106, 0.76);
 
-    .banner-events {
-      z-index: -1;
-      position: inherit;
-      height: auto;
-      img {
-        transform: unset;
-        height: 90vmax;
-        width: 100%;
-        right: 0;
-        position: relative;
-      }
-    }
-  }
-  .banner-content {
-    color: white;
-    // top: 65%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
-    .banner-img {
-      height: auto;
-    }
-  }
-}
-
-@include tablet {
-  .banner {
-    overflow: hidden;
-    .banner-events {
-      .banner-img {
-        img {
+        .banner-content {
+          background: unset;
           width: 100%;
-          height: auto;
+          position: relative;
+          top: 5px;
+          margin: 0;
+          margin-bottom: 7%;
+          text-align: left;
+          padding: 3%;
+
+          .event-title {
+            margin: 0;
+            font-size: 1.5rem;
+            padding: 3%;
+            background: unset;
+          }
+          .event-location {
+            font-size: 1rem;
+            font-weight: 600;
+            font-style: italic;
+            text-transform: capitalize;
+          }
         }
+      }
+
+      .banner-events {
+        z-index: -1;
+        position: inherit;
+        height: auto;
+        img {
+          transform: unset;
+          height: 90vmax;
+          width: 100%;
+          right: 0;
+          position: relative;
+        }
+      }
+    }
+    .banner-content {
+      background: rgba(111, 143, 106, 0.76);
+      color: white;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+      .banner-img {
+        height: auto;
+      }
+    }
+  }
+
+  @include tablet {
+    .banner {
+      overflow: hidden;
+      .banner-events {
+        .banner-img {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+      .banner-outer-content {
+        .banner-content {
+          background: rgba(111, 143, 106, 0.76);
+          height: 50%;
+          h2 {
+            background-color: unset;
+          }
+          .event-location {
+            color: white;
+            padding-left: 2%;
+            margin-bottom: 10%;
+            font-size: calc((3em - 100%) - 1.5vmax);
+          }
+          .btn-event {
+            padding: 3%;
+            margin: 0 2%;
+            &:hover {
+              background: #378244;
+              color: white;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include desktop {
+    .banner-content {
+      top: 40%;
+      text-align: center;
+      background: rgba(111, 143, 106, 0.76);
+
+      h2 {
+        font-size: calc(3em - 100%);
+        background-color: unset;
       }
     }
     .banner-outer-content {
-      background: rgba(111, 143, 106, 0.76);
-      top: 20%;
-      position: absolute;
-      width: 60%;
       padding-bottom: 5%;
       text-align: center;
+      width: 50%;
+      text-align: center;
       .banner-content {
+        width: 60%;
+        background: rgba(111, 143, 106, 0.76);
+
+        position: absolute;
+        bottom: 20%;
         color: white;
         display: flex;
         flex-flow: row wrap;
-        text-align: center;
-        padding: 4% 2%;
+        padding: 2% 5%;
         justify-content: center;
-        position: relative;
-        width: 100%;
-        height: 100%;
         h2 {
-          width: 100%;
-          word-break: break-word;
-          font-size: calc((3rem - 100%) - 1.5vmin);
           margin: 0;
           text-align: left;
-        }
-        p {
-          display: none;
-          padding: 0;
+          width: 100%;
+          word-break: break-word;
+          font-size: calc(3em - 100%);
+          background-color: unset;
+          position: absolute;
+          top: 0;
         }
         .event-location {
-          display: block;
-          text-align: right;
           width: 100%;
-          font-size: calc((3em - 100%) - 1.5vmax);
+          text-align: right;
+          font-size: 2rem;
         }
         .btn-event {
-          padding: 3%;
-          margin: 0 2%;
+          font-size: 1rem;
+          margin: 0 1%;
+          text-transform: capitalize;
+          width: 30%;
+          font-weight: 600;
           &:hover {
+            cursor: pointer;
             background: #378244;
-            color: white;
+            color: #fff;
             font-weight: 600;
           }
         }
       }
     }
   }
-}
 
-@include desktop {
-  .banner-content {
-    top: 40%;
-    text-align: center;
-    h2 {
-      font-size: calc(3em - 100%);
+  //*****************End of SERVIN's Style
+  // /// front banner section
+
+  .events-banner {
+    background: url('../../assets/events-images/event-hero@3x.png') no-repeat;
+    height: 100vh;
+    background: contain;
+    background-position: bottom center;
+
+    @include desktop {
+      background-image: url('../../assets/events-images/coffee-cup.jpg');
+      background: contain center;
     }
   }
-  .banner-outer-content {
-    //style for this  outer background green content
-    position: absolute;
-    // top: 20%;
-    padding-bottom: 5%;
-    text-align: center;
 
-    // transform: translateY(-35rem);
-    width: 50%;
-    text-align: center;
-    .banner-content {
-      width: 100%;
-      position: relative;
-      color: white;
-      display: flex;
-      flex-flow: row wrap;
-      padding: 2% 5%;
-      justify-content: center;
-      h2 {
-        margin: 0;
-        text-align: left;
-        width: 100%;
-        word-break: break-word;
-        font-size: calc(3em - 100%);
-      }
-      .event-location {
-        width: 100%;
-        text-align: right;
-        font-size: 2rem;
-      }
-      .btn-event {
-        font-size: 1rem;
-        margin: 0 1%;
-        text-transform: capitalize;
-        width: 30%;
-        font-weight: 600;
-        &:hover {
-          cursor: pointer;
-          background: #378244;
-          color: #fff;
-          font-weight: 600;
-        }
-      }
-    }
+  .upcoming-events {
+    position: center;
+    background-color: #6f8f6a;
+    padding: 40px;
+    opacity: 0.85;
+    width: 80%;
+    height: 50%;
+    top: 25%;
   }
-}
 
-//*****************End of SERVIN's Style
-// /// front banner section
-
-.events-banner {
-  background: url('../../assets/events-images/event-hero@3x.png') no-repeat;
-  height: 100vh;
-  background: contain;
-  background-position: bottom center;
-
-  @include desktop {
-    background-image: url('../../assets/events-images/coffee-cup.jpg');
-    background: contain center;
+  h1.upcoming-events-title {
+    position: relative;
+    color: #fff;
+    font-family: $headfont;
+    font-style: bold;
+    font-size: 1.5em;
   }
-}
 
-.upcoming-events {
-  position: center;
-  background-color: #6f8f6a;
-  padding: 40px;
-  opacity: 0.85;
-  width: 80%;
-  height: 50%;
-  top: 25%;
-}
-
-h1.upcoming-events-title {
-  position: relative;
-  color: #fff;
-  font-family: $headfont;
-  font-style: bold;
-  font-size: 1.5em;
-}
-
-h2.upcoming-events-location {
-  position: relative;
-  color: #fff;
-  font-size: 1em;
-}
-
-.banner-links {
-  display: flex;
-  align-content: center;
-  padding: 20px;
-  flex-direction: column;
-  justify-content: space-around;
-  min-width: 1vw;
-}
-
-.buy-tickets-btn {
-  background: #fff;
-  color: $primary_green_light;
-  border: 3px solid $primary_green_light;
-  border-radius: 1.5em;
-  font-size: $fontsize;
-  font-family: $parafont;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin: 2% 28%;
-  padding: 12px;
-  width: 200px;
-  white-space: no-wrap;
-}
-
-// .apply-to-pitch-btn {
-//   background: #fff;
-//   text-decoration: none;
-//   color: $primary_green_light;
-//   border: 3px solid $primary_green_light;
-//   border-radius: 1.5em;
-//   font-size: 0.9rem;
-//   font-family: $parafont;
-//   font-weight: 500;
-//   text-transform: uppercase;
-//   margin: 2% 28%;
-//   padding: 12px;
-//   max-width: 34vw;
-//   position: relative;
-//   width: 200px;
-//   white-space: no-wrap;
-// }
-
-///video section styling
-
-// TO DO ADD PERCENTAGES TO THE EMBED
-
-.embed-container {
-  position: relative;
-  overflow: hidden;
-  height: auto;
-  width: 300px;
-  margin: 0 auto;
-  text-align: center;
-
-  @include desktop {
-    width: 850px;
+  h2.upcoming-events-location {
+    position: relative;
+    color: #fff;
+    font-size: 1em;
   }
-}
 
-///TO DO change the control button? TBD
-
-.video-section {
-  display: flex;
-  justify-content: center;
-  margin-top: 96px;
-
-  padding-bottom: 4rem;
-  margin-bottom: 0rem;
-
-  @include desktop {
-    margin-bottom: 10%;
+  .banner-links {
+    display: flex;
+    align-content: center;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 1vw;
   }
-}
 
-/// pitch summary section ///
-
-.pitch-summary {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 34px;
-
-  @include desktop {
-    flex-direction: row;
-    width: 1120px;
-    margin: 0 auto;
+  .buy-tickets-btn {
+    background: #fff;
+    color: $primary_green_light;
+    border: 3px solid $primary_green_light;
+    border-radius: 1.5em;
+    font-size: $fontsize;
+    font-family: $parafont;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 2% 28%;
+    padding: 12px;
+    width: 200px;
+    white-space: no-wrap;
   }
-}
 
-.summary-image {
-  img {
-    max-width: 100%;
+  ///video section styling
+
+  // TO DO ADD PERCENTAGES TO THE EMBED
+
+  .embed-container {
+    position: relative;
+    overflow: hidden;
     height: auto;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+
+    @include desktop {
+      width: 850px;
+    }
   }
-}
 
-.flex-item-container {
-  display: flex;
-  margin: 0 60px;
-  flex-direction: column;
+  ///TO DO change the control button? TBD
 
-  @include desktop {
-    margin-top: 10%;
+  .video-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 96px;
+
+    padding-bottom: 4rem;
+    margin-bottom: 0rem;
+
+    @include desktop {
+      margin-bottom: 10%;
+    }
   }
-}
 
-h3.summary-title {
-  font-size: 1.5em;
-  font-family: $parafont, sans-serif;
-  text-align: center;
-  font-display: bold;
-  color: black;
-  margin: 0;
-  padding-bottom: 20px;
+  /// pitch summary section ///
 
-  @include desktop {
-    padding-bottom: 2%;
+  .pitch-summary {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 34px;
+
+    @include desktop {
+      flex-direction: row;
+      width: 100%;
+      margin: 0 auto;
+    }
   }
-}
 
-p.summary-description {
-  font-size: 1em;
-  line-height: 1;
-  text-align: center;
-  max-width: 600px;
-
-  @include desktop {
-    letter-spacing: 0.27px;
-    line-height: 1.25;
-
-    // margin: auto;
+  .summary-image {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
-}
-.apply-to-pitch-btn-green-flex {
-  display: flex;
-  justify-content: center;
 
-  @include desktop {
-    margin-top: 3%;
+  .flex-item-container {
+    display: flex;
+    margin: 0 60px;
+    flex-direction: column;
+
+    @include desktop {
+      margin-top: 10%;
+    }
   }
-}
 
-// .btn-wide {
-//   &.pitch {
-//     min-width: 150px;
-//   }
-// }
-
-// .btn-small {
-//   min-width: 100px;
-// }
-// .btn-medium {
-//   min-width: 200px;
-// }
-// .btn-large {
-//   min-width: 300px;
-// }
-// .btn-full {
-//   min-width: 350px;
-// }
-
-/////past events
-
-h2.past-events-title {
-  text-align: center;
-  font-size: 1.75em;
-  padding-top: 6%;
-  padding-bottom: 6%;
-  letter-spacing: 1px;
-
-  @include desktop {
-    text-align: left;
-    font-size: 2.5em;
-    padding-left: 10.5%;
-    padding-bottom: 3%;
-  }
-}
-
-.past-events-wrapper {
-  background: #f2f7f7;
-  width: 100%;
-
-  @include desktop {
-    background-image: url(../../assets/events-images/pasteventsbg@2x-cropped.png);
-    background-repeat: no-repeat;
-    background-position: 110% -7%;
-    background-size: 32%;
-  }
-}
-
-.past-events-container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 10%;
-  padding-bottom: 20%;
-
-  @include desktop {
-    padding-bottom: 15%;
-  }
-}
-
-.past-event {
-  display: flex;
-  max-width: 600px;
-  flex-direction: column;
-  margin: auto;
-  @include desktop {
+  h3.summary-title {
+    font-size: 1.5em;
+    font-family: $parafont, sans-serif;
+    text-align: center;
+    font-display: bold;
+    color: black;
     margin: 0;
+    padding-bottom: 20px;
+
+    @include desktop {
+      padding-bottom: 2%;
+    }
+  }
+
+  p.summary-description {
+    font-size: 1em;
+    line-height: 1;
+    text-align: center;
+    max-width: 600px;
+
+    @include desktop {
+      letter-spacing: 0.27px;
+      line-height: 1.25;
+
+      // margin: auto;
+    }
+  }
+  .apply-to-pitch-btn-green-flex {
+    display: flex;
+    justify-content: center;
+
+    @include desktop {
+      margin-top: 3%;
+    }
+  }
+
+  // .btn-wide {
+  //   &.pitch {
+  //     min-width: 150px;
+  //   }
+  // }
+
+  // .btn-small {
+  //   min-width: 100px;
+  // }
+  // .btn-medium {
+  //   min-width: 200px;
+  // }
+  // .btn-large {
+  //   min-width: 300px;
+  // }
+  // .btn-full {
+  //   min-width: 350px;
+  // }
+
+  /////past events
+
+  h2.past-events-title {
+    text-align: center;
+    font-size: 1.75em;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    letter-spacing: 1px;
+
+    @include desktop {
+      text-align: left;
+      font-size: 2.5em;
+      padding-left: 10.5%;
+      padding-bottom: 3%;
+    }
+  }
+
+  .past-events-wrapper {
+    background: #f2f7f7;
+    width: 100%;
+
+    @include desktop {
+      background-image: url(../../assets/events-images/pasteventsbg@2x-cropped.png);
+      background-repeat: no-repeat;
+      background-position: 110% -7%;
+      background-size: 32%;
+    }
+  }
+
+  .past-events-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+    padding-bottom: 20%;
+
+    @include desktop {
+      padding-bottom: 15%;
+    }
+  }
+
+  .past-event {
+    display: flex;
+    max-width: 600px;
+    flex-direction: column;
+    margin: auto;
+    @include desktop {
+      margin: 0;
+
+      @include desktop {
+        flex-direction: column;
+        max-width: 1000px;
+        margin: 0 5%;
+      }
+    }
+  }
+
+  .past-event {
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+
+  .past-events-text {
+    width: 100%;
+    margin: 0 auto;
+    letter-spacing: 0.67px;
+    line-height: 0.5;
+    font-size: $fontsize;
 
     @include desktop {
       flex-direction: column;
-      max-width: 1000px;
-      margin: 0 5%;
     }
   }
-}
+  .past-events-container {
+    img {
+      object-fit: cover;
+      height: 270px;
+      width: 270px;
+      position: relative;
+      padding-left: 0;
+      margin: 0 auto;
 
-.past-event {
-  @include desktop {
-    flex-direction: row;
+      @include desktop {
+        margin-right: 2%;
+        margin: 0 6.5%;
+      }
+    }
   }
-}
 
-.past-events-text {
-  width: 100%;
-  margin: 0 auto;
-  letter-spacing: 0.67px;
-  line-height: 0.5;
-  font-size: $fontsize;
-
-  @include desktop {
-    flex-direction: column;
-  }
-}
-.past-events-container {
-  img {
-    object-fit: cover;
-    height: 270px;
-    width: 270px;
-    position: relative;
-    padding-left: 0;
-    margin: 0 auto;
+  .past-events-date {
+    font-size: 24px;
+    text-align: center;
+    font-family: $parafont;
+    font-style: bold;
 
     @include desktop {
-      margin-right: 2%;
-      margin: 0 6.5%;
+      text-align: left;
+      font-size: 28px;
+      margin: 0;
+      padding-bottom: 1%;
     }
   }
-}
+  .past-events-location {
+    color: $primary_green_light;
+    font-size: 20px;
+    text-align: center;
+    font-family: $parafont;
+    font-weight: 500;
+    padding-bottom: 5%;
 
-.past-events-date {
-  font-size: 24px;
-  text-align: center;
-  font-family: $parafont;
-  font-style: bold;
-
-  @include desktop {
-    text-align: left;
-    font-size: 28px;
-    margin: 0;
-    padding-bottom: 1%;
+    @include desktop {
+      text-align: left;
+      font-size: 24px;
+    }
   }
-}
-.past-events-location {
-  color: $primary_green_light;
-  font-size: 20px;
-  text-align: center;
-  font-family: $parafont;
-  font-weight: 500;
-  padding-bottom: 5%;
-
-  @include desktop {
-    text-align: left;
-    font-size: 24px;
-  }
-}
-.past-events-description {
-  font-size: 16px;
-  text-align: center;
-  font-family: $parafont;
-  line-height: 1.2;
-
-  @include desktop {
-    text-align: left;
-    width: 400px;
-    height: 181px;
-    letter-spacing: 0.27px;
+  .past-events-description {
     font-size: 16px;
+    text-align: center;
+    font-family: $parafont;
+    line-height: 1.2;
+
+    @include desktop {
+      text-align: left;
+      width: 400px;
+      height: 181px;
+      letter-spacing: 0.27px;
+      font-size: 16px;
+    }
   }
 }

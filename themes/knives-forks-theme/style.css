@@ -2105,13 +2105,11 @@ h3.supported-by-title {
 
 .blurb-container {
   margin: 0 auto;
-  border-bottom: 2px solid #e0dbdb;
   width: 80%; }
   @media all and (min-width: 1000px) {
     .blurb-container {
-      border-bottom: transparent;
-      padding: 2rem 0 0;
       border-bottom: 2px solid #e0dbdb;
+      padding: 2rem 0 0;
       width: 95%; } }
 
 .page-our-story .site-content div:nth-child(2) {

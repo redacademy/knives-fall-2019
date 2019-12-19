@@ -258,7 +258,7 @@
 
 .gform_name::before,
 .gform_email::before,
-.gform_address::before,
+.gform_home::before,
 .gform_phone::before,
 .gform_company::before,
 .gform_details::before,
@@ -269,9 +269,9 @@
   background-repeat: no-repeat;
   width: 200px;
   height: 200px;
-  content: 'abc';
-  font-size: 10rem;
-  color: rgba(0, 0, 0, 0);
+  content: '';
+  font-size: 0rem;
+  //color: rgba(0, 0, 0, 0);
   display: block;
   position: relative;
   top: 0px;
@@ -296,7 +296,7 @@
 .gform_email::before {
   background-image: url('../../assets/icons/Forms-Unfilled/unfilled-email.svg');
 }
-.gform_address::before {
+.gform_home::before {
   background-image: url('../../assets/icons/Forms-Unfilled/unfilled-home.svg');
 }
 .gform_phone::before {

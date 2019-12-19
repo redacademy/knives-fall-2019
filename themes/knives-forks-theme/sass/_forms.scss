@@ -172,6 +172,10 @@ wpcf7-submit input[type='‘submit’'] {
   max-width: 100%;
 }
 
+.wpcf7-form-control:focus {
+  border-color: $primary_green_med;
+}
+
 ////button control
 
 .wpcf7-submit {

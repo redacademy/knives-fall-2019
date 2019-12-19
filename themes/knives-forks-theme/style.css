@@ -331,6 +331,9 @@ wpcf7-submit input[type='‘submit’'] {
   font-family: "Lato", sans-serif;
   max-width: 100%; }
 
+.wpcf7-form-control:focus {
+  border-color: #378244; }
+
 .wpcf7-submit {
   width: 100%;
   background-color: white;
@@ -996,15 +999,11 @@ h3.supported-by-title {
       color: #00883f; } }
 
 .page-how-it-works article .how-count {
-<<<<<<< HEAD
-  font-family: "Lora", serif; }
-=======
   font-family: "Lora", serif;
   color: #f29061; }
 
 .page-how-it-works article .how-title {
   margin-top: -5px; }
->>>>>>> 0c679ac2a7aad48dc19928ed0029d4eda469d2dd
 
 @media all and (max-width: 499px) {
   .page-how-it-works .testimonials .carousel-cell {
@@ -1028,11 +1027,6 @@ h3.supported-by-title {
     width: 80%; }
     .page-how-it-works .banner .banner-content h2 {
       font-size: 1.25rem; }
-<<<<<<< HEAD
-  .page-how-it-works .how-title {
-    margin-top: -10px; }
-=======
->>>>>>> 0c679ac2a7aad48dc19928ed0029d4eda469d2dd
   .page-how-it-works .how-description {
     font-size: 1rem; }
   .page-how-it-works .how-icons {
@@ -1249,23 +1243,6 @@ h3.supported-by-title {
     .page-how-it-works .entry-header p {
       line-height: 1.5;
       text-align: justify; }
-<<<<<<< HEAD
-  .page-how-it-works .how-img {
-    width: 100%; }
-  .page-how-it-works .steps-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 50%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .page-how-it-works .steps-list li {
-      width: 50%; } }
-=======
   .page-how-it-works .entry-content {
     position: relative; }
     .page-how-it-works .entry-content .how-img {
@@ -1288,7 +1265,6 @@ h3.supported-by-title {
           flex-wrap: wrap; }
       .page-how-it-works .entry-content .steps-list li {
         width: 50%; } }
->>>>>>> 0c679ac2a7aad48dc19928ed0029d4eda469d2dd
 
 .page-how-it-works .testimonials {
   padding-top: 1%;
@@ -1766,7 +1742,11 @@ h3.supported-by-title {
                 flex-direction: row;
         line-height: 1; }
       .page-contact-us h2.contact-opportunity {
-        padding-top: 10%; }
+        padding-top: 3%; } }
+    @media all and (min-width: 1000px) and (min-width: 1000px) {
+      .page-contact-us h2.contact-opportunity {
+        padding-top: 4%; } }
+  @media all and (min-width: 1000px) {
       .page-contact-us .media-enquiries {
         padding-left: 80px;
         height: 130px;
@@ -1843,7 +1823,7 @@ h3.supported-by-title {
   font-family: "Lora", serif;
   text-align: center;
   min-width: 100%;
-  margin-top: 10%; }
+  margin-top: 0; }
 
 @media all and (max-width: 499px) {
   div.wpcf7 .ajax-loader {
@@ -2088,14 +2068,15 @@ h3.supported-by-title {
           border-radius: 2rem; }
         .site-info .subscribe .email-form .sub-btn {
           position: absolute;
-          width: 28%;
+          width: 25%;
           right: 5px;
           top: 0;
           padding: 1rem 0;
           border-radius: 0 2rem 2rem 0;
           color: #fff;
           background-color: #378244;
-          font-family: "Lato", sans-serif; }
+          font-family: "Lato", sans-serif;
+          letter-spacing: 0.75px; }
     .site-info .logo-container .desktop-logo {
       padding: 0.3rem 0 0 0;
       margin: 0 auto; }
@@ -2124,13 +2105,13 @@ h3.supported-by-title {
 
 .blurb-container {
   margin: 0 auto;
-  border-bottom: 2px solid #a3a1a1;
+  border-bottom: 2px solid #e0dbdb;
   width: 80%; }
   @media all and (min-width: 1000px) {
     .blurb-container {
       border-bottom: transparent;
       padding: 2rem 0 0;
-      border-bottom: 2px solid #a3a1a1;
+      border-bottom: 2px solid #e0dbdb;
       width: 95%; } }
 
 .page-our-story .site-content div:nth-child(2) {
@@ -2198,9 +2179,11 @@ h3.supported-by-title {
       display: block;
       position: relative;
       bottom: -75px;
-      width: 160px;
+      width: 180px;
       margin: auto;
-      text-align: center; }
+      text-align: center;
+      padding: 15px 0;
+      letter-spacing: 0.1px; }
       @media screen and (min-width: 500px) and (max-width: 999px) {
         .custom-copy-block .copy-block-content .copy-block-btn {
           bottom: -80px; } }

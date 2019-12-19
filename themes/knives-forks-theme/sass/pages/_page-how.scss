@@ -7,6 +7,9 @@
     .how-title {
       margin-top: -5px;
     }
+    .entry-description {
+      color: $primary_green_med;
+    }
   }
   @include mobile {
     //************How it Works CONTENTS AREA
@@ -283,17 +286,23 @@
       }
       p {
         line-height: 1.5;
-        text-align: justify;
+        width: 340px;
+        padding: $padding * 2 0 0;
       }
     } // end of entry-header
-    .entry-content {
+    .computer-wrapper {
       position: relative;
+
       .how-img {
-        width: 100%;
+        object-fit: contain;
         position: absolute;
-        top: 0;
+        width: 100%;
+        bottom: 0;
+        right: 0;
         z-index: $zdex - 1;
       }
+    }
+    .entry-content {
       .how-count {
         margin-bottom: 0;
       }
@@ -304,9 +313,9 @@
         flex-wrap: wrap;
         li {
           width: 50%;
-          padding: 0 2%;
+          padding: 0 2% 0 0;
           &:first-child .how-description {
-            margin: $margin * 2 0 0;
+            margin: $margin * 2.2 0 0;
           }
         }
       }

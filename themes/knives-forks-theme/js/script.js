@@ -60,9 +60,9 @@
     });
 
     // button stylings
-    $('.gform_next_button').addClass('btn btn-wide');
-    $('.gform_previous_button').addClass('btn btn-wide');
-    $('.gform_button').addClass('btn btn-wide');
+    $('.gform_next_button').addClass('btn btn-gravity-form');
+    $('.gform_previous_button').addClass('btn btn-gravity-form');
+    $('.gform_button').addClass('btn btn-gravity-form');
 
     // adding icon as ::before to each form page
     const gFormCurrentPage = parseInt(

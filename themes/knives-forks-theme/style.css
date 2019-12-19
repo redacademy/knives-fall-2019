@@ -260,6 +260,10 @@ p {
     border-radius: 3em; }
   .btn.btn-full {
     min-width: 350px; }
+  .btn.btn-gravity-form {
+    min-width: 154px;
+    letter-spacing: 0.5px;
+    padding: 15px 0; }
   .btn.capitals {
     text-transform: capitalize; }
   .btn:hover {
@@ -994,6 +998,9 @@ h3.supported-by-title {
 .page-how-it-works article .how-count {
   font-family: "Lora", serif; }
 
+.page-how-it-works article .how-title {
+  margin-top: -10px; }
+
 @media all and (max-width: 499px) {
   .page-how-it-works .testimonials .carousel-cell {
     padding: 0 2%; }
@@ -1016,8 +1023,6 @@ h3.supported-by-title {
     width: 80%; }
     .page-how-it-works .banner .banner-content h2 {
       font-size: 1.25rem; }
-  .page-how-it-works .how-title {
-    margin-top: -10px; }
   .page-how-it-works .how-description {
     font-size: 1rem; }
   .page-how-it-works .how-icons {
@@ -1235,8 +1240,13 @@ h3.supported-by-title {
     .page-how-it-works .entry-header p {
       line-height: 1.5;
       text-align: justify; }
-  .page-how-it-works .how-img {
-    width: 100%; }
+  .page-how-it-works .entry-content {
+    position: relative; }
+    .page-how-it-works .entry-content .how-img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1; }
   .page-how-it-works .steps-list {
     display: -webkit-box;
     display: -ms-flexbox;

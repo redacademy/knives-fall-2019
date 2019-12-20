@@ -2,6 +2,7 @@
 .copy-title {
   font-weight: $font_weight_header;
   font-size: 1.75rem;
+  line-height: 1.12em;
   @include desktop {
     font-size: 2.5rem;
   }
@@ -10,13 +11,19 @@
   color: $primary_green_light;
   font-size: 1.25rem;
   font-weight: 500;
+  line-height: 1.25;
 }
 .copy-text {
   font-weight: $parafont;
-  line-height: 1rem;
   text-align: unset;
+  letter-spacing: 0.3px;
+  width: 100%;
+  padding-top: 12%;
+
   @include desktop {
-    line-height: 1.12rem;
+    line-height: 1.25rem;
+    font-size: 1.05em;
+    max-width: 80%;
   }
 }
 

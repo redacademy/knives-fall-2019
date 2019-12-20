@@ -5,18 +5,21 @@
   line-height: 1.12em;
   @include desktop {
     font-size: 2.5rem;
+    margin-bottom: 1%;
   }
 }
 .copy-subtitle {
   color: $primary_green_light;
-  font-size: 1.25rem;
+  font-family: $parafont;
+  font-size: 1.12rem;
   font-weight: 500;
   line-height: 1.25;
+  letter-spacing: 0.33px;
 }
 .copy-text {
   font-weight: $parafont;
   text-align: unset;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.4px;
   width: 100%;
   padding-top: 12%;
 
@@ -24,6 +27,7 @@
     line-height: 1.25rem;
     font-size: 1.05em;
     max-width: 80%;
+    padding-top: 1px;
   }
 }
 

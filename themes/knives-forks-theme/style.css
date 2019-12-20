@@ -2225,25 +2225,29 @@ article .how-title {
   line-height: 1.12em; }
   @media all and (min-width: 1000px) {
     .copy-title {
-      font-size: 2.5rem; } }
+      font-size: 2.5rem;
+      margin-bottom: 1%; } }
 
 .copy-subtitle {
   color: #00883f;
-  font-size: 1.25rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.12rem;
   font-weight: 500;
-  line-height: 1.25; }
+  line-height: 1.25;
+  letter-spacing: 0.33px; }
 
 .copy-text {
   font-weight: "Lato", sans-serif;
   text-align: unset;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.4px;
   width: 100%;
   padding-top: 12%; }
   @media all and (min-width: 1000px) {
     .copy-text {
       line-height: 1.25rem;
       font-size: 1.05em;
-      max-width: 80%; } }
+      max-width: 80%;
+      padding-top: 1px; } }
 
 @media all and (min-width: 1000px) {
   .blurb-container {

@@ -2627,17 +2627,6 @@ article .how-title {
   .testimonials {
     width: 100%;
     margin: 0; }
-    .testimonials .knives-fork {
-      color: rgba(0, 0, 0, 0.15);
-      font-size: 4rem;
-      margin: 0.33rem 0;
-      font-family: "Lora", serif; }
-      .testimonials .knives-fork::before {
-        content: '';
-        width: 80%;
-        margin: 0 auto;
-        height: 40px;
-        border-top: 2px solid #e0dbdb; }
     .testimonials .flickity-enabled {
       width: 90%;
       margin: 0 auto; }

@@ -48,16 +48,23 @@
     //   display: none;
     // }
     .knives-fork {
-      color: hsla(0, 0%, 0%, 0.15);
-      font-size: 4rem;
-      margin: 0.33rem 0;
-      font-family: $headfont;
-      &::before {
-        content: '';
-        width: 80%;
-        margin: 0 auto;
-        height: 40px;
-        border-top: 2px solid #e0dbdb;
+      @include mobile {
+        display: none;
+      }
+
+      @include desktop {
+        display: inline-block;
+        color: hsla(0, 0%, 0%, 0.15);
+        font-size: 4rem;
+        margin: 0.33rem 0;
+        font-family: $headfont;
+        &::before {
+          content: '';
+          width: 80%;
+          margin: 0 auto;
+          height: 40px;
+          border-top: 2px solid #e0dbdb;
+        }
       }
     }
     .flickity-enabled {

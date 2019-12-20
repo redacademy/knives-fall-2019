@@ -1861,19 +1861,6 @@ article .how-title {
         padding-top: 4%;
         text-align: left;
         padding-left: 15%; } }
-  .page-contact-us .media-enquiries {
-    height: 130px;
-    width: 470px; }
-    @media screen and (min-width: 500px) and (max-width: 999px) {
-      .page-contact-us .media-enquiries {
-        padding-top: 0;
-        padding-left: 0;
-        margin: 0;
-        width: 93%; } }
-    @media all and (min-width: 1000px) {
-      .page-contact-us .media-enquiries {
-        margin: 0 auto;
-        padding-top: 5%; } }
   .page-contact-us .contact-opportunity {
     line-height: 1.5em;
     font-size: 1.25em;
@@ -1944,15 +1931,20 @@ article .how-title {
   padding-left: 0; }
   @media screen and (min-width: 500px) and (max-width: 999px) {
     .media-enquiries {
-      margin-left: 12%;
-      width: 100%; } }
+      padding-top: 0;
+      padding-left: 0;
+      margin: 0;
+      width: 93%; } }
   @media all and (min-width: 1000px) {
     .media-enquiries {
-      width: 100%; } }
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 5%; } }
   .media-enquiries p {
     margin: 0;
     margin-bottom: 5%; }
   .media-enquiries h3 {
+    width: 60%;
     border-top: 1px solid black;
     padding-top: 20px;
     font-family: "Lato", sans-serif, sans-serif;

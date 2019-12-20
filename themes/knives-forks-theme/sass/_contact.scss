@@ -36,23 +36,23 @@
     }
   }
 
-  .media-enquiries {
-    height: 200px;
-    width: 470px;
+  // .media-enquiries {
+  //   height: 200px;
+  //   width: 470px;
 
-    @include tablet {
-      padding-top: 0;
-      padding-left: 0;
-      margin: 0;
-      width: 93%;
-    }
+  //   @include tablet {
+  //     padding-top: 0;
+  //     padding-left: 0;
+  //     margin: 0;
+  //     width: 93%;
+  //   }
 
-    @include desktop {
-      margin: 0 auto;
-      // padding-left: 10%;
-      padding-top: 5%;
-    }
-  }
+  //   @include desktop {
+  //     margin: 0 auto;
+  //     // padding-left: 10%;
+  //     padding-top: 5%;
+  //   }
+  // }
 
   .contact-opportunity {
     line-height: 1.5em;
@@ -138,12 +138,18 @@
   padding-left: 0;
 
   @include tablet {
-    margin-left: 12%;
-    width: 100%;
+    padding-top: 0;
+    padding-left: 0;
+    margin: 0;
+    width: 93%;
   }
   @include desktop {
     width: 100%;
+    margin: 0 auto;
+    // padding-left: 10%;
+    padding-top: 5%;
   }
+
   p {
     margin: 0;
     margin-bottom: 5%;

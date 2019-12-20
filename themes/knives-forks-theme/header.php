@@ -102,7 +102,7 @@
 							</nav>
 								<div class="banner-outer-content">
 									<nav class="banner-content">
-										<h2 class="event-title">
+										<h2 class="event-title-banner">
 										' . esc_attr(get_field('upcoming_event_title')) . '
 										</h2>
 										<p class="event-location">

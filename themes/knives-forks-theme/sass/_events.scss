@@ -123,7 +123,7 @@
       background: rgba(111, 143, 106, 0.76);
 
       h2 {
-        font-size: calc(3em - 100%);
+        // font-size: calc(3em - 100%);
         background-color: unset;
       }
     }
@@ -135,20 +135,20 @@
       .banner-content {
         width: 60%;
         background: rgba(111, 143, 106, 0.76);
-
         position: absolute;
         bottom: 20%;
         color: white;
         display: flex;
         flex-flow: row wrap;
+        // flex-wrap: wrap;
         padding: 2% 5%;
         justify-content: center;
         h2 {
           margin: 0;
           text-align: left;
           width: 100%;
-          word-break: break-word;
-          font-size: calc(3em - 100%);
+          // word-break: break-word;
+          // font-size: calc(3em - 100%);
           background-color: unset;
           position: absolute;
           top: 0;
@@ -159,6 +159,19 @@
           font-size: 2rem;
         }
       }
+    }
+  }
+
+  h2.event-title-banner {
+    @include desktop {
+      font-size: 2.5em;
+      word-break: break-word;
+      line-height: 61px;
+      letter-spacing: 0.8px;
+      font-weight: 600;
+      width: 40%;
+      text-align: left;
+      width: 80%;
     }
   }
 

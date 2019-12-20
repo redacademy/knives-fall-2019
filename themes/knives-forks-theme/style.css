@@ -564,7 +564,6 @@ article {
     text-align: center;
     background: rgba(111, 143, 106, 0.76); }
     .page-events .banner-content h2 {
-      font-size: calc(3em - 100%);
       background-color: unset; }
   .page-events .banner-outer-content {
     padding-bottom: 5%;
@@ -592,8 +591,6 @@ article {
         margin: 0;
         text-align: left;
         width: 100%;
-        word-break: break-word;
-        font-size: calc(3em - 100%);
         background-color: unset;
         position: absolute;
         top: 0; }
@@ -601,6 +598,17 @@ article {
         width: 100%;
         text-align: right;
         font-size: 2rem; } }
+
+@media all and (min-width: 1000px) {
+  .page-events h2.event-title-banner {
+    font-size: 2.5em;
+    word-break: break-word;
+    line-height: 61px;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    width: 40%;
+    text-align: left;
+    width: 80%; } }
 
 .page-events .events-banner {
   background: url("../../assets/events-images/event-hero@3x.png") no-repeat;

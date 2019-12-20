@@ -11,13 +11,18 @@
   overflow: hidden;
   height: inherit;
   margin-top: 0;
+  display: flex;
 }
-.investor-section .investor-bg-img {
-  width: 100%;
+.investor-section .first {
+  left: 0;
+}
+.investor-section .second {
+  right: -5%;
+}
+.investor-section .investor-bg {
+  height: 100%;
   position: absolute;
   z-index: -1;
-  height: 100%;
-  object-fit: cover;
 }
 .investor-section div {
   width: 70%;
@@ -56,7 +61,7 @@
   padding-bottom: 5%;
 }
 .investor-section div .investor-bottom .btn {
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
 }
 .investor-section div .investor-bottom > * {
@@ -66,16 +71,24 @@
 }
 
 @media only screen and (min-width: 500px) and (max-width: 900px) {
-  .investor-section div {
-    width: 90%;
+  .investor-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 45%;
+    padding-top: 20%;
   }
-
-  .investor-section .investor-bg-img {
-    width: auto;
+  .investor-section .first {
+    top: 0;
+  }
+  .investor-section .second {
+    bottom: -5%;
+  }
+  .investor-section .investor-bg {
+    width: 100%;
+    height: auto;
     position: absolute;
     z-index: -1;
-    height: 100%;
-    transform: translateX(-12%);
   }
 
   .investor-section div .investor-mid ul {
@@ -86,10 +99,21 @@
 @media only screen and (min-width: 250px) and (max-width: 499px) {
   .investor-section {
     margin: 0 !important;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 40%;
   }
-  .investor-section .investor-bg-img {
-    height: 100%;
-    width: auto;
+  .investor-section .first {
+    top: 0;
+  }
+  .investor-section .second {
+    bottom: -2%;
+  }
+  .investor-section .investor-bg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
   }
   .investor-section div {
     width: 100% !important;

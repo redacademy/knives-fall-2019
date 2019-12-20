@@ -23,9 +23,9 @@ if(count($fields)>0){
     // srcset="'. $img2 .' 599w, '. $img1 .' 900w"
     //  alt="knives-fork-images" class="investor-bg-img">
 echo '<section class="'.$className.'-section" id="investment" >
-        <img src="'. $imgLeft .'"
-        srcset="'. $imgLeft .' 599w, '. $imgTop .' 900w"
-        alt="knives-fork-images" class="investor-bg-1st">
+        <img src="'. $imgLeft .'"   
+        srcset="'. $imgTop .' 800w, '. $imgLeft .' 2000w"
+        alt="knives-fork-images" class="investor-bg first">
     <div>
     
         <div class="'.$className.'-top">
@@ -72,9 +72,9 @@ echo '<section class="'.$className.'-section" id="investment" >
             </a>
         </div>
     </div>
-    <img src="'. $imgRight .'"
-        srcset="'. $imgRight .' 599w, '. $imgBottom .' 900w"
-        alt="knives-fork-images" class="investor-bg-1st">
+    <img src="'. $imgRight.'" 
+        srcset="'. $imgBottom  .' 800w, '. $imgRight  .' 2000w"
+        alt="knives-fork-images" class="investor-bg second">
 </section>';
 
                 }

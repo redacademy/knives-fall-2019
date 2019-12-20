@@ -170,63 +170,12 @@
       }
     }
   }
-  // .icon-default::before {
-  //   background-image: url('../../assets/icons/Forms - Unfilled/unfilled-application.svg');
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-  //   width: 200px;
-  //   height: 200px;
-  //   content: 'abc';
-  //   font-size: 10rem;
-  //   color: rgba(0, 0, 0, 0);
-  //   display: block;
-  //   position: relative;
-  //   top: 0px;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   @include tablet {
-  //     width: 60%;
-  //   }
-  //   @include desktop {
-  //     height: 200px;
-  //     width: 33%;
-  //     display: block;
-  //     position: relative;
-  //     top: 0px;
-  //     //left: 200px;
-  //   }
-  // }
-  // .icon-complete::before {
-  //   background-image: url('../../assets/icons/Forms - filled/filled-application.svg');
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-  //   width: 200px;
-  //   height: 200px;
-  //   content: 'abc';
-  //   font-size: 10rem;
-  //   color: rgba(0, 0, 0, 0);
-  //   display: block;
-  //   position: relative;
-  //   top: 0px;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   @include tablet {
-  //     width: 60%;
-  //   }
-  //   @include desktop {
-  //     height: 200px;
-  //     width: 33%;
-  //     display: block;
-  //     position: relative;
-  //     top: 0px;
-  //     //left: 200px;
-  //   }
-  // }
+}
 
-  // //use nth-of-type()
-  // .validation_error {
-  //   display: none;
-  // }
+.gfield {
+  .gsection_description {
+    margin-top: 20px;
+  }
 }
 
 //gform confirmation message

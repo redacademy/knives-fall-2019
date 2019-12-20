@@ -1853,7 +1853,13 @@ article .how-title {
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
+        width: 100%;
         line-height: 1; }
+        .page-contact-us .contact-form-container .wpcf7 {
+          width: 50%;
+          padding: 0 3rem 0 0; }
+        .page-contact-us .contact-form-container .media-enquiries {
+          width: 50%; }
       .page-contact-us h2.contact-opportunity {
         padding-top: 3%;
         text-align: center; } }

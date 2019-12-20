@@ -9,7 +9,6 @@ get_header(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class('contact-wrapper'); ?>>
 				<header class="entry-header-contact">
 
-					<!-- add a comment to test deploy -->
 
 
 				</header><!-- .entry-header -->
@@ -18,7 +17,6 @@ get_header(); ?>
 					We’d love to hear from you. </h2>
 				<div class="entry-content-contact">
 
-					<!-- //TO DO make a custom field to make it dynamic later// -->
 
 
 

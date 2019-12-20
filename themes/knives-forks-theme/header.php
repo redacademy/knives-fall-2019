@@ -109,7 +109,7 @@
 											' . esc_attr(get_field('upcoming_event_location')) . '
 										<p>
 									</nav>
-									<a href="#" alt="Buy Tickets" class="btn btn-event">buy tickets</a>
+									<a href="#" alt="Buy Tickets" class="btn btn-event">Buy Tickets</a>
 									<a href="#" alt="Apply to Pitch" class="btn btn-event">apply to pitch</a>
 								</div>
 						</section>

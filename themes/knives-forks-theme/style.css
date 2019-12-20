@@ -266,6 +266,20 @@ p {
     padding: 11px 0; }
   .btn.capitals {
     text-transform: capitalize; }
+  .btn.btn-event {
+    background: white;
+    color: #378244;
+    border: 3px solid #378244;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 0 1%;
+    width: 30%;
+    font-weight: 400;
+    padding: 11px 0; }
+    .btn.btn-event:hover {
+      cursor: pointer;
+      background: #378244;
+      color: #fff; }
   .btn:hover {
     cursor: pointer;
     border: 1px solid #378244;
@@ -298,8 +312,8 @@ p {
        object-fit: cover; } }
 
 .wpcf7-form .wpcf7-textarea,
-input[type="text"],
-input[type="email"] {
+input[type='text'],
+input[type='email'] {
   border: 1px solid black;
   border-radius: 5px;
   color: black;
@@ -311,18 +325,18 @@ input[type="email"] {
   margin: 0 auto; }
 
 .wpcf7-form .wpcf7-textarea,
-input[type="textarea"] {
+input[type='textarea'] {
   height: 120px; }
   @media screen and (min-width: 500px) and (max-width: 999px) {
     .wpcf7-form .wpcf7-textarea,
-    input[type="textarea"] {
+    input[type='textarea'] {
       height: 150px; } }
   @media all and (min-width: 1000px) {
     .wpcf7-form .wpcf7-textarea,
-    input[type="textarea"] {
+    input[type='textarea'] {
       height: 170px; } }
 
-wpcf7-submit input[type="‘submit’"] {
+wpcf7-submit input[type='‘submit’'] {
   color: #378244;
   border-color: 1px solid #378244;
   background: white;
@@ -331,7 +345,7 @@ wpcf7-submit input[type="‘submit’"] {
   font-size: 1rem;
   font-weight: 200; }
   @media screen and (min-width: 500px) and (max-width: 999px) {
-    wpcf7-submit input[type="‘submit’"] {
+    wpcf7-submit input[type='‘submit’'] {
       margin: 4%; } }
 
 .wpcf7-form {
@@ -360,7 +374,7 @@ wpcf7-submit input[type="‘submit’"] {
           -ms-flex-pack: start;
               justify-content: flex-start; } }
 
-.wpcf7-form-control [type="‘submit’"] {
+.wpcf7-form-control [type='‘submit’'] {
   border: 2px solid #378244;
   border-radius: 5px;
   color: #378244;
@@ -586,18 +600,7 @@ article {
       .page-events .banner-outer-content .banner-content .event-location {
         width: 100%;
         text-align: right;
-        font-size: 2rem; }
-      .page-events .banner-outer-content .banner-content .btn-event {
-        font-size: 1rem;
-        margin: 0 1%;
-        text-transform: capitalize;
-        width: 30%;
-        font-weight: 600; }
-        .page-events .banner-outer-content .banner-content .btn-event:hover {
-          cursor: pointer;
-          background: #378244;
-          color: #fff;
-          font-weight: 600; } }
+        font-size: 2rem; } }
 
 .page-events .events-banner {
   background: url("../../assets/events-images/event-hero@3x.png") no-repeat;
@@ -702,7 +705,7 @@ article {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      width: 100%;
+      width: 90%;
       margin: 0 auto; } }
 
 .page-events .summary-image img {
@@ -718,9 +721,6 @@ article {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media all and (min-width: 1000px) {
-    .page-events .flex-item-container {
-      margin-top: 10%; } }
 
 .page-events h3.summary-title {
   font-size: 1.5em;

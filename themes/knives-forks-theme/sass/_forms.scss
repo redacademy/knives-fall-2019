@@ -36,6 +36,24 @@
     text-transform: capitalize;
   }
 
+  &.btn-event {
+    background: white;
+    color: $primary_green_med;
+    border: 3px solid $primary_green_med;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 0 1%;
+    width: 30%;
+    font-weight: 400;
+    padding: 11px 0;
+
+    &:hover {
+      cursor: pointer;
+      background: $primary_green_med;
+      color: #fff;
+    }
+  }
+
   &:hover {
     cursor: pointer;
     border: 1px solid $primary_green_med;
@@ -124,8 +142,8 @@
 ///styles for the inside the form//
 
 .wpcf7-form .wpcf7-textarea,
-input[type="text"],
-input[type="email"] {
+input[type='text'],
+input[type='email'] {
   border: 1px solid black;
   border-radius: 5px;
   color: black;
@@ -138,7 +156,7 @@ input[type="email"] {
 }
 
 .wpcf7-form .wpcf7-textarea,
-input[type="textarea"] {
+input[type='textarea'] {
   height: 120px;
 
   @include tablet {
@@ -152,7 +170,7 @@ input[type="textarea"] {
 
 ////styles for the button
 
-wpcf7-submit input[type="‘submit’"] {
+wpcf7-submit input[type='‘submit’'] {
   color: $primary_green_med;
   border-color: 1px solid $primary_green_med;
   background: white;
@@ -204,7 +222,7 @@ wpcf7-submit input[type="‘submit’"] {
   }
 }
 
-.wpcf7-form-control [type="‘submit’"] {
+.wpcf7-form-control [type='‘submit’'] {
   border: 2px solid $primary_green_med;
   border-radius: 5px;
   color: $primary_green_med;

@@ -31,7 +31,10 @@ get_header(); ?>
 
 					<div class="error-btn-container">
 
-					<a class="btn btn-wide home" href="#">Home</a></div>
+					<a href="<?php echo get_site_url(); ?>/front-page/'"><a class="btn btn-wide home" href="<?php echo bloginfo('url')?>">Home</a></div>
+	 
+
+					
 				
 			</section><!-- .error-404 -->
 

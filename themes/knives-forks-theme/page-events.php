@@ -37,7 +37,8 @@ get_header();
 		
 
 		</div>	
-		<div class="apply-to-pitch-btn-green-flex"><button class="btn btn-large">Apply To Pitch</button></div>
+		<div class="apply-to-pitch-btn-green-flex">
+		<a href="<?php echo get_site_url(); ?>/apply-to-pitch/'"><button class="btn  btn-large">Apply to Pitch</button></a></div>
 	 
 
 		</section>

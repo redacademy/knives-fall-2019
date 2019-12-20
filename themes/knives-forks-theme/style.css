@@ -298,30 +298,31 @@ p {
        object-fit: cover; } }
 
 .wpcf7-form .wpcf7-textarea,
-input[type='text'],
-input[type='email'] {
+input[type="text"],
+input[type="email"] {
   border: 1px solid black;
   border-radius: 5px;
   color: black;
   font-family: "Lato", sans-serif, serif;
   max-width: 100%;
+  width: 100%;
   resize: none;
   line-height: 2em;
   margin: 0 auto; }
 
 .wpcf7-form .wpcf7-textarea,
-input[type='textarea'] {
+input[type="textarea"] {
   height: 120px; }
   @media screen and (min-width: 500px) and (max-width: 999px) {
     .wpcf7-form .wpcf7-textarea,
-    input[type='textarea'] {
+    input[type="textarea"] {
       height: 150px; } }
   @media all and (min-width: 1000px) {
     .wpcf7-form .wpcf7-textarea,
-    input[type='textarea'] {
+    input[type="textarea"] {
       height: 170px; } }
 
-wpcf7-submit input[type='‘submit’'] {
+wpcf7-submit input[type="‘submit’"] {
   color: #378244;
   border-color: 1px solid #378244;
   background: white;
@@ -330,7 +331,7 @@ wpcf7-submit input[type='‘submit’'] {
   font-size: 1rem;
   font-weight: 200; }
   @media screen and (min-width: 500px) and (max-width: 999px) {
-    wpcf7-submit input[type='‘submit’'] {
+    wpcf7-submit input[type="‘submit’"] {
       margin: 4%; } }
 
 .wpcf7-form {
@@ -359,7 +360,7 @@ wpcf7-submit input[type='‘submit’'] {
           -ms-flex-pack: start;
               justify-content: flex-start; } }
 
-.wpcf7-form-control [type='‘submit’'] {
+.wpcf7-form-control [type="‘submit’"] {
   border: 2px solid #378244;
   border-radius: 5px;
   color: #378244;
@@ -1934,7 +1935,7 @@ article .how-title {
       padding-top: 0;
       padding-left: 0;
       margin: 0;
-      width: 93%; } }
+      width: 100%; } }
   @media all and (min-width: 1000px) {
     .media-enquiries {
       width: 100%;
@@ -1944,7 +1945,7 @@ article .how-title {
     margin: 0;
     margin-bottom: 5%; }
   .media-enquiries h3 {
-    width: 60%;
+    width: 100%;
     border-top: 1px solid black;
     padding-top: 20px;
     font-family: "Lato", sans-serif, sans-serif;

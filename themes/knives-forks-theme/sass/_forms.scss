@@ -124,20 +124,21 @@
 ///styles for the inside the form//
 
 .wpcf7-form .wpcf7-textarea,
-input[type='text'],
-input[type='email'] {
+input[type="text"],
+input[type="email"] {
   border: 1px solid black;
   border-radius: 5px;
   color: black;
   font-family: $parafont, serif;
   max-width: 100%;
+  width: 100%;
   resize: none;
   line-height: 2em;
   margin: 0 auto;
 }
 
 .wpcf7-form .wpcf7-textarea,
-input[type='textarea'] {
+input[type="textarea"] {
   height: 120px;
 
   @include tablet {
@@ -151,7 +152,7 @@ input[type='textarea'] {
 
 ////styles for the button
 
-wpcf7-submit input[type='‘submit’'] {
+wpcf7-submit input[type="‘submit’"] {
   color: $primary_green_med;
   border-color: 1px solid $primary_green_med;
   background: white;
@@ -203,7 +204,7 @@ wpcf7-submit input[type='‘submit’'] {
   }
 }
 
-.wpcf7-form-control [type='‘submit’'] {
+.wpcf7-form-control [type="‘submit’"] {
   border: 2px solid $primary_green_med;
   border-radius: 5px;
   color: $primary_green_med;

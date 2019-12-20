@@ -21,7 +21,7 @@ get_header(); ?>
 	
 	
 	<h2 class="contact-opportunity" >Looking for an opportunity? <br>
-	We’d love to hear from you </h2> 
+	We’d love to hear from you. </h2> 
 	<section class="contact-form-container"> 
 	<?php the_content(); ?>
 

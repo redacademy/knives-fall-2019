@@ -304,9 +304,22 @@ input[type='email'] {
   border-radius: 5px;
   color: black;
   font-family: "Lato", sans-serif, serif;
-  width: 100%;
+  max-width: 100%;
   resize: none;
-  line-height: 2em; }
+  line-height: 2em;
+  margin: 0 auto; }
+
+.wpcf7-form .wpcf7-textarea,
+input[type='textarea'] {
+  height: 120px; }
+  @media screen and (min-width: 500px) and (max-width: 999px) {
+    .wpcf7-form .wpcf7-textarea,
+    input[type='textarea'] {
+      height: 150px; } }
+  @media all and (min-width: 1000px) {
+    .wpcf7-form .wpcf7-textarea,
+    input[type='textarea'] {
+      height: 170px; } }
 
 wpcf7-submit input[type='‘submit’'] {
   color: #378244;
@@ -328,6 +341,9 @@ wpcf7-submit input[type='‘submit’'] {
 .wpcf7-form p {
   font-size: 1em;
   line-height: 1.75em; }
+  @media all and (min-width: 1000px) {
+    .wpcf7-form p {
+      font-size: 1.05em; } }
 
 .contact-submit-button {
   display: -webkit-box;
@@ -346,7 +362,7 @@ wpcf7-submit input[type='‘submit’'] {
 .wpcf7-form-control [type='‘submit’'] {
   border: 2px solid #378244;
   border-radius: 5px;
-  color: #296133;
+  color: #378244;
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
   max-width: 100%; }
@@ -647,7 +663,7 @@ article {
   position: relative;
   overflow: hidden;
   height: auto;
-  width: 300px;
+  width: 80%;
   margin: 0 auto;
   text-align: center; }
   @media all and (min-width: 1000px) {
@@ -1838,27 +1854,46 @@ article .how-title {
                 flex-direction: row;
         line-height: 1; }
       .page-contact-us h2.contact-opportunity {
-        padding-top: 3%; } }
+        padding-top: 3%;
+        text-align: center; } }
     @media all and (min-width: 1000px) and (min-width: 1000px) {
       .page-contact-us h2.contact-opportunity {
-        padding-top: 4%; } }
-  @media all and (min-width: 1000px) {
-      .page-contact-us .media-enquiries {
-        padding-left: 80px;
-        height: 130px;
-        width: 470px; }
-      .page-contact-us .contact-opportunity {
-        line-height: 1.5em;
-        font-size: 2em;
-        font-family: "Lora", serif;
+        padding-top: 4%;
         text-align: left;
-        margin-left: 46px; } }
-    @media all and (min-width: 1000px) and (min-width: 1000px) {
+        padding-left: 15%; } }
+  .page-contact-us .media-enquiries {
+    height: 130px;
+    width: 470px; }
+    @media screen and (min-width: 500px) and (max-width: 999px) {
+      .page-contact-us .media-enquiries {
+        padding-top: 0;
+        padding-left: 0;
+        margin: 0;
+        width: 93%; } }
+    @media all and (min-width: 1000px) {
+      .page-contact-us .media-enquiries {
+        margin: 0 auto;
+        padding-top: 5%; } }
+  .page-contact-us .contact-opportunity {
+    line-height: 1.5em;
+    font-size: 1.25em;
+    font-family: "Lora", serif;
+    text-align: center; }
+    @media screen and (min-width: 500px) and (max-width: 999px) {
       .page-contact-us .contact-opportunity {
-        padding-left: 160px; } }
+        font-size: 1.75em;
+        text-align: center;
+        padding-top: 2%; } }
+    @media all and (min-width: 1000px) {
+      .page-contact-us .contact-opportunity {
+        font-size: 2em;
+        padding-left: 1%; } }
+
+.asterix {
+  display: none; }
   @media all and (min-width: 1000px) {
-      .page-contact-us .asterix {
-        display: none; } }
+    .asterix {
+      display: inline-block; } }
 
 .social-icons {
   display: -webkit-box;
@@ -1899,18 +1934,21 @@ article .how-title {
   margin: 0 auto; }
   @media screen and (min-width: 500px) and (max-width: 999px) {
     .entry-content-contact {
-      margin-left: 12%;
-      width: 80%; } }
+      width: 70%;
+      padding: 2%; } }
   @media all and (min-width: 1000px) {
     .entry-content-contact {
       width: 70%; } }
 
 .media-enquiries {
-  padding-left: 0px; }
+  padding-left: 0; }
   @media screen and (min-width: 500px) and (max-width: 999px) {
     .media-enquiries {
       margin-left: 12%;
-      width: 80%; } }
+      width: 100%; } }
+  @media all and (min-width: 1000px) {
+    .media-enquiries {
+      width: 100%; } }
   .media-enquiries p {
     margin: 0;
     margin-bottom: 5%; }
@@ -1922,7 +1960,8 @@ article .how-title {
     margin: 0; }
     @media screen and (min-width: 500px) and (max-width: 999px) {
       .media-enquiries h3 {
-        margin-top: 8%; } }
+        margin-top: 8%;
+        font-size: 1.5em; } }
 
 .contact-opportunity {
   line-height: 1.5em;
@@ -1934,9 +1973,7 @@ article .how-title {
 
 @media all and (max-width: 499px) {
   div.wpcf7 .ajax-loader {
-    display: none; }
-  .contact-opportunity {
-    margin-top: 20%; } }
+    display: none; } }
 
 .current {
   border-bottom: 2px solid #378244; }

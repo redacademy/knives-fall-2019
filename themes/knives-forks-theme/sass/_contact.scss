@@ -19,33 +19,66 @@
 
     h2.contact-opportunity {
       padding-top: 3%;
+      text-align: center;
+
+      // font-size: 1.12em;
+
+      @include tablet {
+        // padding-left: 15%;
+        // text-align: center;
+      }
 
       @include desktop {
         padding-top: 4%;
+        text-align: left;
+        padding-left: 15%;
       }
     }
+  }
 
-    .media-enquiries {
-      padding-left: 80px;
-      height: 130px;
-      width: 470px;
+  .media-enquiries {
+    height: 130px;
+    width: 470px;
+
+    @include tablet {
+      padding-top: 0;
+      padding-left: 0;
+      margin: 0;
+      width: 93%;
     }
 
-    .contact-opportunity {
-      line-height: 1.5em;
+    @include desktop {
+      margin: 0 auto;
+      // padding-left: 10%;
+      padding-top: 5%;
+    }
+  }
+
+  .contact-opportunity {
+    line-height: 1.5em;
+    font-size: 1.25em;
+    font-family: $headfont;
+    text-align: center;
+
+    @include tablet {
+      font-size: 1.75em;
+      // margin-left: 0px;
+      text-align: center;
+      padding-top: 2%;
+    }
+
+    @include desktop {
       font-size: 2em;
-      font-family: $headfont;
-      text-align: left;
-      margin-left: 46px;
-
-      @include desktop {
-        padding-left: 160px;
-      }
+      padding-left: 1%;
     }
+  }
+}
 
-    .asterix {
-      display: none;
-    }
+.asterix {
+  display: none;
+
+  @include desktop {
+    display: inline-block;
   }
 }
 
@@ -89,8 +122,9 @@
   margin: 0 auto;
 
   @include tablet {
-    margin-left: 12%;
-    width: 80%;
+    // margin-left: 12%;
+    width: 70%;
+    padding: 2%;
   }
 
   @include desktop {
@@ -101,11 +135,14 @@
 //// section for media enquiries
 
 .media-enquiries {
-  padding-left: 0px;
+  padding-left: 0;
 
   @include tablet {
     margin-left: 12%;
-    width: 80%;
+    width: 100%;
+  }
+  @include desktop {
+    width: 100%;
   }
   p {
     margin: 0;
@@ -117,9 +154,10 @@
     font-family: $parafont, sans-serif;
     font-size: 24px;
     margin: 0;
+
     @include tablet {
       margin-top: 8%;
-      font-size: 28px;
+      font-size: 1.5em;
     }
   }
 }
@@ -135,12 +173,12 @@
   margin-top: 0;
 }
 
-//***************BRUTE FORCE Mobile STYLE
 @include mobile {
   div.wpcf7 .ajax-loader {
     display: none;
   }
-  .contact-opportunity {
-    margin-top: 20%;
-  }
 }
+//   .contact-opportunity {
+//     // margin-top: 20%;
+//   }
+// }
